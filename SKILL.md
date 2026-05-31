@@ -1,6 +1,6 @@
 ---
 name: scenario-maker
-description: Use when creating, refining, critiquing, or batching prompts for AI image and video generation, including text-to-image, text-to-video, image-to-video, ComfyUI wildcards, prompt variants, tag prompts, Danbooru tags, negative prompts, Wan video prompts, and model-aware prompts for SDXL, Illustrious, NoobAI, or Pony.
+description: Use when creating, refining, critiquing, or batching prompts for AI image and video generation, including character profiles, text-to-image, text-to-video, image-to-video, ComfyUI wildcards, prompt variants, tag prompts, Danbooru tags, negative prompts, Wan video prompts, and model-aware prompts for SDXL, Illustrious, NoobAI, or Pony.
 ---
 
 # Scenario Maker
@@ -16,17 +16,19 @@ Build visual prompt packages for AI image and video models. The skill turns roug
 - Read `references/danbooru-tags.md` for Danbooru Version, Danbooru tags, tag validation, alias lookup, or related-tag expansion.
 - Read `references/video-prompts.md` for text-to-video, image-to-video, and Wan video prompts.
 - Read `references/wildcards.md` before creating ComfyUI wildcard `.txt` files.
+- Read `references/characters.md` when creating original characters, character profiles, character prompt fragments, or randomized character batches.
 
 ## Workflow
 
-1. Identify the request type: normal prompt, tag prompt, Danbooru tags, text-to-image, text-to-video, image-to-video, Wan video, model-aware image prompt, negative prompt, critique, variants, or wildcard batch.
+1. Identify the request type: normal prompt, character generator/profile, tag prompt, Danbooru tags, text-to-image, text-to-video, image-to-video, Wan video, model-aware image prompt, negative prompt, critique, variants, or wildcard batch.
 2. Extract subject, setting, action, style, lighting, composition, mood, constraints, target model, length, count, and save path.
 3. Fill missing details with sensible visual defaults. Ask only when the target medium, source-image intent, safety constraints, or save location is genuinely ambiguous.
 4. Keep prompts observable: describe appearance, environment, lighting, motion, camera behavior, weather, composition, and visible atmosphere. Avoid hidden thoughts, backstory, smells, lore, or internal emotions unless the user explicitly asks.
 5. If a supported target model is explicitly named, apply its profile from `references/model-prompts.md`. The model profile overrides generic Normal, Tag, and Danbooru defaults only for that model-targeted request.
 6. For Danbooru Version requests, use `scripts/danbooru_lookup.py` to validate uncertain tags, resolve aliases, and find related tags instead of reading the raw CSV files.
-7. Return a prompt package by default: ready prompt first, then variants or supporting fields only when useful. For supported model requests, use `Positive prompt`, `Negative prompt` when useful, and compact `Model notes`.
-8. When wildcard batches are requested, create newline-separated `.txt` files automatically under `./wildcards` unless the user provides another path.
+7. For randomized character requests, use `scripts/character_generator.py` and follow `references/characters.md`.
+8. Return a prompt package by default: ready prompt first, then variants or supporting fields only when useful. For supported model requests, use `Positive prompt`, `Negative prompt` when useful, and compact `Model notes`.
+9. When wildcard batches are requested, create newline-separated `.txt` files automatically under `./wildcards` unless the user provides another path.
 
 ## Default Choices
 
