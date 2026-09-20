@@ -1,0 +1,311 @@
+{
+  "kind": "model-advisory-analysis-not-acceptance",
+  "analyzed_at": "2026-09-20T17:56:41.327Z",
+  "human": false,
+  "authority": "advisory-only",
+  "reviewer": "model:assistant",
+  "method": "Two independent read-only scout slices, integrated and evidence-checked by the main assistant. Exact subagent provider/model identities are not recorded.",
+  "scope": {
+    "cards": 42,
+    "criteria": 94,
+    "excludes_six_already_human_reviewed_cards": true
+  },
+  "proposed_counts": {
+    "passed": 92,
+    "failed": 2,
+    "not-run": 0
+  },
+  "proposed_counts_by_criterion": {
+    "C08-PRESERVE": {
+      "severity": "hard",
+      "passed": 3,
+      "failed": 0,
+      "not-run": 0
+    },
+    "C08-STYLE": {
+      "severity": "advisory",
+      "passed": 3,
+      "failed": 0,
+      "not-run": 0
+    },
+    "C03-OUTPUT": {
+      "severity": "hard",
+      "passed": 2,
+      "failed": 0,
+      "not-run": 0
+    },
+    "C03-REVISION": {
+      "severity": "hard",
+      "passed": 2,
+      "failed": 0,
+      "not-run": 0
+    },
+    "C04-SCOPE": {
+      "severity": "hard",
+      "passed": 2,
+      "failed": 0,
+      "not-run": 0
+    },
+    "C04-DETAILS": {
+      "severity": "hard",
+      "passed": 2,
+      "failed": 0,
+      "not-run": 0
+    },
+    "C14-ROUTE": {
+      "severity": "hard",
+      "passed": 3,
+      "failed": 0,
+      "not-run": 0
+    },
+    "C14-MOTION": {
+      "severity": "hard",
+      "passed": 3,
+      "failed": 0,
+      "not-run": 0
+    },
+    "C14-STYLE": {
+      "severity": "advisory",
+      "passed": 3,
+      "failed": 0,
+      "not-run": 0
+    },
+    "C05-OUTPUT": {
+      "severity": "hard",
+      "passed": 3,
+      "failed": 0,
+      "not-run": 0
+    },
+    "C05-EXCLUSION": {
+      "severity": "hard",
+      "passed": 3,
+      "failed": 0,
+      "not-run": 0
+    },
+    "C05-STYLE": {
+      "severity": "advisory",
+      "passed": 3,
+      "failed": 0,
+      "not-run": 0
+    },
+    "C01-OUTPUT": {
+      "severity": "hard",
+      "passed": 3,
+      "failed": 0,
+      "not-run": 0
+    },
+    "C01-PROFILE": {
+      "severity": "hard",
+      "passed": 3,
+      "failed": 0,
+      "not-run": 0
+    },
+    "C01-STYLE": {
+      "severity": "advisory",
+      "passed": 3,
+      "failed": 0,
+      "not-run": 0
+    },
+    "C02-OUTPUT": {
+      "severity": "hard",
+      "passed": 2,
+      "failed": 0,
+      "not-run": 0
+    },
+    "C02-PRESERVE": {
+      "severity": "hard",
+      "passed": 2,
+      "failed": 0,
+      "not-run": 0
+    },
+    "C02-PROFILE": {
+      "severity": "hard",
+      "passed": 2,
+      "failed": 0,
+      "not-run": 0
+    },
+    "C09-ROUTING": {
+      "severity": "hard",
+      "passed": 2,
+      "failed": 0,
+      "not-run": 0
+    },
+    "C09-QUALITY": {
+      "severity": "advisory",
+      "passed": 2,
+      "failed": 0,
+      "not-run": 0
+    },
+    "C06-TEXT-BINDING": {
+      "severity": "hard",
+      "passed": 3,
+      "failed": 0,
+      "not-run": 0
+    },
+    "C11-PROFILE": {
+      "severity": "hard",
+      "passed": 2,
+      "failed": 0,
+      "not-run": 0
+    },
+    "C11-CONSTRAINTS": {
+      "severity": "hard",
+      "passed": 2,
+      "failed": 0,
+      "not-run": 0
+    },
+    "C11-LOOKUP-EVIDENCE": {
+      "severity": "hard",
+      "passed": 2,
+      "failed": 0,
+      "not-run": 0
+    },
+    "C16-FRAGMENTS": {
+      "severity": "hard",
+      "passed": 3,
+      "failed": 0,
+      "not-run": 0
+    },
+    "C16-REPORT": {
+      "severity": "hard",
+      "passed": 3,
+      "failed": 0,
+      "not-run": 0
+    },
+    "C13-PROFILE": {
+      "severity": "hard",
+      "passed": 3,
+      "failed": 0,
+      "not-run": 0
+    },
+    "C13-PRESERVE": {
+      "severity": "hard",
+      "passed": 1,
+      "failed": 2,
+      "not-run": 0
+    },
+    "C15-ROUTE": {
+      "severity": "hard",
+      "passed": 2,
+      "failed": 0,
+      "not-run": 0
+    },
+    "C15-PRESERVE": {
+      "severity": "hard",
+      "passed": 2,
+      "failed": 0,
+      "not-run": 0
+    },
+    "C12-PROFILE": {
+      "severity": "hard",
+      "passed": 3,
+      "failed": 0,
+      "not-run": 0
+    },
+    "C12-PRESERVE": {
+      "severity": "hard",
+      "passed": 3,
+      "failed": 0,
+      "not-run": 0
+    },
+    "C07-DISTINCTNESS": {
+      "severity": "hard",
+      "passed": 3,
+      "failed": 0,
+      "not-run": 0
+    },
+    "C07-PRESERVE": {
+      "severity": "hard",
+      "passed": 3,
+      "failed": 0,
+      "not-run": 0
+    },
+    "C10-ROUTING": {
+      "severity": "hard",
+      "passed": 3,
+      "failed": 0,
+      "not-run": 0
+    },
+    "C10-ANALYSIS": {
+      "severity": "advisory",
+      "passed": 3,
+      "failed": 0,
+      "not-run": 0
+    }
+  },
+  "authoritative_counts": {
+    "mechanical": {
+      "passed": 63,
+      "failed": 0,
+      "not-run": 0
+    },
+    "maintainer": {
+      "passed": 14,
+      "failed": 0,
+      "not-run": 94
+    }
+  },
+  "observations": [
+    {
+      "id": "explicit-workbench-binding",
+      "classification": "criterion-level proposed failures; human interpretation required",
+      "cards": [
+        "card-krb79qmyde4x",
+        "card-66zr8kvjuve3"
+      ],
+      "criterion_id": "C13-PRESERVE",
+      "detail": "Two prompts juxtapose brass-clock repair and wooden workbench tags without explicitly locating the repair at the bench. A third NoobAI output says leaning over a wooden workbench. Recommendations apply the explicit-binding requirement, while acknowledging that a human may accept tag-list context."
+    },
+    {
+      "id": "unscored-invention-boundary",
+      "classification": "coverage limitation; not an additional scored criterion",
+      "cards": [
+        "card-4kdqw86nfpq8",
+        "card-9z7ag8f8hdqy",
+        "card-gvn3tzzx5o6s",
+        "card-14nqylc8ncy3",
+        "card-tj82bmifokh5",
+        "card-krb79qmyde4x",
+        "card-vdt1ufnzrzuz",
+        "card-ajy9q39axxp7",
+        "card-66zr8kvjuve3"
+      ],
+      "detail": "NoobAI outputs add screwdrivers, tool collections and workshop details; Pony outputs add benches/shelters/tracks; SDXL outputs add plants and coastal treatment. Some additions may exceed the settled Balanced boundary on new independent props. The declared criteria for these cases do not comprehensively test that boundary. A criterion-specific pass must not be presented as full compliance with every settled policy; no new criteria or cohort were introduced."
+    },
+    {
+      "id": "comparison-profile-boundary",
+      "classification": "advisory coverage limitation",
+      "cards": [
+        "card-9l5yii0xkd0j",
+        "card-7uvl3uo6kqy0",
+        "card-tu376plipx8u"
+      ],
+      "detail": "All comparison outputs explicitly describe the selected old skill’s SDXL prose preference and absent Krea profile. That is accurate provenance but is not the future SDXL-phrases/Krea-prose profile behavior. C10-ANALYSIS asks for separate fidelity/expression/ambiguity assessment and is advisory; its recommended pass does not establish Phase 4 completion."
+    }
+  ],
+  "request_record": "evals/reviews/2026-09-20-model-analysis-request.json",
+  "packet": "evals/results/2026-09-20-cwd-correction/review-packet.jsonl",
+  "packet_sha256": "f947acd2ca9da14720838baf11bb4d13930df45f3914f9e635abc261ab345186",
+  "presentation": "evals/reviews/2026-09-20-anonymous-review.txt",
+  "presentation_sha256": "084a3599be5e19c9a0538932db2024056bb375a0b1635e4e2584f8b064f05e7c",
+  "recommendations": "evals/reviews/2026-09-20-model-recommendations.jsonl",
+  "recommendations_sha256": "62657c6ae7936a28229f9f3e9f5515b120830b0c157d60b14aa4cc07de72d568",
+  "human_reviews": "evals/reviews/2026-09-20-maintainer-semantic.jsonl",
+  "human_reviews_sha256": "7e4746081fc14c613b0bdb6d1c185f73994b71026328a1175ab87f77479bf298",
+  "authoritative_evaluation": "evals/results/2026-09-20-human-review-01",
+  "model_recommendations_imported_into_evaluator": false,
+  "phase_acceptance": false,
+  "baseline_rerun": false,
+  "integration_corrections": [
+    "Dropped one out-of-slice duplicate and two invalid card-10? rows from the second scout; independently reviewed the two missing card-7uvl3uo6kqy0 criteria against its complete output.",
+    "Rejected two unsupported first-scout profile failures: fixed Illustrious allows the quality starters used, and fixed NoobAI allows masterpiece/best quality/newest with optional very awa.",
+    "Corrected three scout word-count claims using Unicode-whitespace counts: 51, 50, and 48, all within 55.",
+    "Changed two NoobAI preservation recommendations from passed to failed under explicit workbench-relationship binding, preserving interpretive uncertainty for maintainer review."
+  ],
+  "limitations": [
+    "All recommendations remain model advice. User delegation of analysis is not approval of the recommendations.",
+    "Criterion-specific passes do not establish untested invention-boundary compliance or completion of future profile work.",
+    "Advisory style assessments are not paired baseline/candidate preferences and cannot compensate for hard failures.",
+    "All raw evidence, prior evaluations and retained anonymous labels are preserved."
+  ]
+}

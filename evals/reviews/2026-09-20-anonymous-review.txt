@@ -1,0 +1,2472 @@
+SCENARIO MAKER — ANONYMOUS SEMANTIC REVIEW
+
+Open this file in a text editor. Enable word wrap (VS Code: Alt+Z) if useful.
+All 48 cards retain the existing packet order and labels. No attempt/revision identity mapping is included.
+No judgments are suggested or granted in this presentation. Judge each criterion from its evidence.
+States: passed / failed / not-run. Missing review is not-run. Advisory criteria do not override hard failures.
+Image fixture: open the actual PNG in the editor; a text description is not a substitute.
+Reviewing prompt text and captured files does not establish generated-media quality.
+
+==============================================================================
+CARD card-kkmcj13ks279
+Revise only a jacket color
+==============================================================================
+
+REQUEST (verbatim)
+Revise only the jacket color in this prompt from yellow to red. Return only the revised prompt and preserve everything else exactly in meaning: A woman with a short black bob wears a yellow denim jacket and silver hoop earrings, standing beside a blue bicycle under an overcast sky.
+
+CONTEXT
+operation: revise
+task: text-to-image
+scope: full-scene
+target_profile: generic
+output_contract: One revised prompt only.
+
+REQUIRED DETAILS
+- woman with a short black bob
+- red denim jacket
+- silver hoop earrings
+- blue bicycle
+- overcast sky
+
+PROHIBITED CHANGES
+- Do not change anything except the jacket color from yellow to red
+- Do not add labels, commentary, alternatives, or generation actions
+
+CRITERION-LEVEL REQUIREMENTS
+C03-OUTPUT [hard; due Phase 2]
+The response contains only the revised prompt, not an explanation, comparison, or prompt package.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/18#issuecomment-5746540497
+
+C03-REVISION [hard; due Phase 3]
+Only the jacket color changes from yellow to red; every other supplied fact and relationship remains unchanged in meaning.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/17#issuecomment-5746449221
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+A woman with a short black bob wears a red denim jacket and silver hoop earrings, standing beside a blue bicycle under an overcast sky.
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+None.
+
+==============================================================================
+CARD card-kdzeyrk5ecir
+Adapt a supplied scene prompt to local Krea 2
+==============================================================================
+
+REQUEST (verbatim)
+Adapt this supplied prompt for local Krea 2 RAW/Turbo. Preserve every scene fact and return only one ready-to-paste prompt with no label, negative prompt, notes, variants, or explanation. Source prompt: A red ceramic teapot sits image-left of a white cup on a dark walnut table. Morning light enters from the right, and the plain cream wall behind them is empty.
+
+CONTEXT
+operation: adapt
+task: text-to-image
+scope: full-scene
+target_profile: local Krea 2 RAW/Turbo
+output_contract: One unlabeled natural-language Krea 2 prompt and nothing else.
+
+REQUIRED DETAILS
+- red ceramic teapot image-left of a white cup
+- dark walnut table
+- morning light from the right
+- plain empty cream wall
+
+PROHIBITED CHANGES
+- Do not add, remove, recolor, relocate, or replace subjects, props, surfaces, lighting direction, or background details
+- Do not add a negative prompt, labels, notes, variants, or explanation
+- Do not invoke image or video generation
+
+CRITERION-LEVEL REQUIREMENTS
+C02-OUTPUT [hard; due Phase 2]
+The response is exactly one unlabeled prompt, without a package, negative field, notes, variants, or explanation.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/18#issuecomment-5746540497
+
+C02-PRESERVE [hard; due Phase 3]
+The adaptation preserves the two objects, their colors and image-left relationship, table, right-side morning light, and empty cream wall without adding visual facts.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/17#issuecomment-5746449221
+
+C02-PROFILE [hard; due Phase 4]
+The result uses a coherent natural-language paragraph suitable for the selected local Krea 2 RAW/Turbo contract; detail does not become invention.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/19#issuecomment-5746665421
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+A red ceramic teapot sits to the left of a white cup as viewed in the image, both resting on a dark walnut table. Morning light enters from the right, with a plain, empty cream wall behind them.
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+None.
+
+==============================================================================
+CARD card-ixdq35gg6b9l
+Illustrious Danbooru output with targeted local lookup
+==============================================================================
+
+REQUEST (verbatim)
+Write one positive prompt for Illustrious in explicitly requested Danbooru Version for one adult woman with grey hair, green eyes, a black turtleneck, and white gloves, standing in a library. Before answering, use the existing local Danbooru lookup script to confirm the canonical spelling `grey_hair`; do not read raw CSV files and do not add related candidates. Return only the comma-separated positive prompt, with no negative prompt, notes, or explanation.
+
+CONTEXT
+operation: create
+task: text-to-image
+scope: full-scene
+target_profile: Illustrious
+output_contract: One unlabeled comma-separated Illustrious Danbooru positive prompt only.
+
+REQUIRED DETAILS
+- one adult woman
+- canonical grey_hair tag confirmed through local lookup
+- green eyes
+- black turtleneck
+- white gloves
+- standing in a library
+- Illustrious Danbooru-style positive prompt
+
+PROHIBITED CHANGES
+- Do not read raw Danbooru CSV files
+- Do not add related-tag candidates or uncertain character/source tags
+- Do not use Pony score/source/rating tags
+- Do not add a negative prompt, notes, explanation, web research, or generation
+
+CRITERION-LEVEL REQUIREMENTS
+C11-PROFILE [hard; due Phase 4]
+The prompt preserves the existing Illustrious convention: comma-separated Danbooru-style tags with restrained quality/composition guidance, lower_snake_case canonical forms where applicable, and no Pony prefix.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/19#issuecomment-5746665421
+
+C11-CONSTRAINTS [hard; due Phase 5]
+The canonical grey-hair result is used for the requested woman, all requested visible facts remain represented, and no optional related candidate changes the scene.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/20#issuecomment-5746782536
+
+C11-LOOKUP-EVIDENCE [hard; due Phase 5]
+The captured tool results confirm grey_hair using the selected revision’s local lookup script. A mere spelling echo is not confirmation; missing usable trace evidence is not-run.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/20#issuecomment-5746782536
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+masterpiece, best_quality, highres, 1girl, solo, mature_female, grey_hair, green_eyes, black_sweater, turtleneck, white_gloves, standing, library, indoors, bookshelf, full_body
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+None.
+
+CAPTURED LOOKUP EVIDENCE (anonymous packet; identity paths redacted)
+{
+  "availability": "available",
+  "calls": [
+    {
+      "args": {
+        "command": "python3 scripts/danbooru_lookup.py tag grey_hair",
+        "cwd": "<redacted>"
+      },
+      "result_content": [
+        {
+          "text": "grey_hair [general] count=574323\naliases: 白髪, 銀髪, 銀髪ロング\n\n\nWall time: 33.59 seconds",
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "trace_complete": true
+}
+
+==============================================================================
+CARD card-86uwqdkzos3f
+Image-to-video from a fixed geometric source
+==============================================================================
+
+REQUEST (verbatim)
+Inspect the supplied source image and write one image-to-video prompt that starts from it. Preserve its simple synthetic subject shapes, colors, initial composition, and flat graphic style. Animate only subtle water ripples and a slow cloud drift, with a very gentle camera push-in. Apart from these authorized temporal changes, do not add, remove, recolor, or reposition objects. Return only the prompt, with no label, notes, variants, or generation.
+
+CONTEXT
+operation: adapt
+task: image-to-video
+scope: full-scene
+target_profile: generic image-to-video
+output_contract: One unlabeled image-to-video prompt grounded in the fixed source image.
+
+REQUIRED DETAILS
+- source image used as the first frame
+- source shapes, colors, composition, and flat graphic style preserved
+- subtle water ripples
+- slow cloud drift
+- very gentle camera push-in
+
+PROHIBITED CHANGES
+- Do not add, remove, recolor, or reposition source-image objects
+- Do not invent details absent from the visible fixture
+- Do not invoke image or video generation
+
+CRITERION-LEVEL REQUIREMENTS
+C15-ROUTE [hard; due Phase 2]
+The response is an image-to-video prompt grounded in the supplied image as the first frame, not a text-to-video scene re-creation.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/16#issuecomment-5746288781
+
+C15-PRESERVE [hard; due Phase 3]
+The prompt accurately preserves the fixture's visible synthetic shapes, colors, composition, and flat style while limiting changes to the requested motions and gentle push-in.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/17#issuecomment-5746449221
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+Start from the supplied image, preserving the red geometric sailboat, white left sail, yellow right sail, dark mast, blue water, pale cyan sky, and single white cloud in their exact initial composition and flat graphic style. Keep the boat motionless; animate only subtle water ripples and a slow drift of the existing cloud, with a very gentle camera push-in. Preserve all shapes and colors; introduce no additional objects, textures, lighting changes, or object movement beyond these authorized changes.
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+Open: evals/fixtures/case15-geometric-source.png
+Availability: available binary fixture; inspect the repository path
+SHA-256: 96d3453296fdd1239b21aeda140412632b643d96cb3980986739da4470bd8ded
+Bytes: 522
+
+CAPTURED GENERATED ARTIFACTS
+None.
+
+==============================================================================
+CARD card-nvueo8fv8z3c
+Character design without scene expansion
+==============================================================================
+
+REQUEST (verbatim)
+Create a character-design prompt for an adult lighthouse keeper. Give her weathered olive skin, tightly curled gray hair, a navy cable-knit sweater, orange waterproof bib trousers, black rubber boots, and a brass whistle on a cord. Describe character design only. Return one prompt with no scene, pose, expression, action, camera, lighting, weather, or story.
+
+CONTEXT
+operation: create
+task: text-to-image
+scope: character-design
+target_profile: generic
+output_contract: One character-design-only prompt.
+
+REQUIRED DETAILS
+- adult woman
+- weathered olive skin
+- tightly curled gray hair
+- navy cable-knit sweater
+- orange waterproof bib trousers
+- black rubber boots
+- brass whistle on a cord
+
+PROHIBITED CHANGES
+- Do not invent a scene, pose, expression, action, camera, lighting, weather, or story
+- Do not invoke the randomized character generator or image/video generation
+
+CRITERION-LEVEL REQUIREMENTS
+C04-SCOPE [hard; due Phase 3]
+The prompt remains strictly within character appearance, clothing, and equipment, without scene or presentation expansion.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/17#issuecomment-5746449221
+
+C04-DETAILS [hard; due Phase 3]
+All supplied physical, clothing, and equipment details remain attached to the single adult lighthouse keeper without incompatible invention.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/17#issuecomment-5746449221
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+An adult female lighthouse keeper with weathered olive skin, fine facial lines, and tightly curled gray hair. Her clothing consists of a navy cable-knit sweater with thick ribbed cuffs, orange waterproof bib trousers with broad adjustable straps and reinforced seams, and sturdy black rubber boots; a brass whistle hangs from a simple cord around her neck.
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+None.
+
+==============================================================================
+CARD card-2lghoa3bekxi
+Critique without silent replacement
+==============================================================================
+
+REQUEST (verbatim)
+Critique the following image prompt for visible clarity, composition, and ambiguity. Identify strengths and concrete problems, but do not rewrite it, provide a replacement prompt, or add variants. Prompt: `A mysterious traveler in a beautiful place, cinematic, amazing lighting, dynamic composition.`
+
+CONTEXT
+operation: critique
+task: text-to-image
+scope: full-scene
+target_profile: generic
+output_contract: A critique only, retaining the requested analytical shape and containing no replacement prompt.
+
+REQUIRED DETAILS
+- analysis of visible clarity
+- analysis of composition
+- analysis of ambiguity
+- strengths and concrete problems
+
+PROHIBITED CHANGES
+- Do not rewrite or replace the supplied prompt
+- Do not provide variants or invoke image generation
+
+CRITERION-LEVEL REQUIREMENTS
+C09-ROUTING [hard; due Phase 2]
+The response is an analysis of the supplied prompt and does not silently turn into prompt writing, rewriting, or variants.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/18#issuecomment-5746540497
+
+C09-QUALITY [advisory; due Phase 2]
+The critique distinguishes useful strengths from specific visible-clarity, composition, and ambiguity problems.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/18#issuecomment-5746540497
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+**Overall:** The prompt establishes a mood, but gives little control over what will actually be visible. It works better as an open-ended creative seed than as a clear image specification.
+
+### Strengths
+- **Simple subject–setting structure:** A traveler in a location is easy to interpret, with no competing subjects or contradictory instructions.
+- **Consistent tonal direction:** “Mysterious” and “cinematic” suggest an atmospheric image.
+- **Creative flexibility:** Its brevity leaves room for unexpected results, if predictability is not the goal.
+
+### Concrete problems
+- **“Mysterious traveler” lacks visible cues.** Neither the traveler’s appearance nor their pose, clothing, expression, or activity is defined. Mystery is an intended impression, not a specified visual feature.
+- **“Beautiful place” does not identify a setting.** It leaves landscape versus architecture, scale, weather, and environmental character unresolved. “Beautiful” expresses a preference rather than describing something drawable.
+- **“Amazing lighting” is evaluative, not descriptive.** It establishes no light source, direction, softness, color, or contrast, so it offers little control over atmosphere or subject visibility.
+- **“Dynamic composition” names an effect without defining its structure.** Framing, viewpoint, subject placement, depth, and directional movement are unspecified. It is unclear whether the traveler or the surrounding place should dominate.
+- **“Cinematic” is broad.** It suggests a film-like treatment but does not settle the visual medium, palette, or camera treatment.
+
+**Main issue:** Most of the wording describes desired impressions rather than observable features. The ambiguity is not inherently wrong, but it makes both visual clarity and compositional consistency difficult to predict.
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+None.
+
+==============================================================================
+CARD card-b7bapv2nfkry
+Expand a brief within 55 words
+==============================================================================
+
+REQUEST (verbatim)
+Expand this brief into one ready-to-paste text-to-image prompt of at most 55 words: `A rust-red rowboat tied to a weathered dock on a still lake before dawn.` Return only the prompt. Do not add people, buildings, other boats, animals, or active weather.
+
+CONTEXT
+operation: expand
+task: text-to-image
+scope: full-scene
+target_profile: generic
+output_contract: One unlabeled prompt; the entire final response is at most 55 Unicode whitespace-separated words.
+
+REQUIRED DETAILS
+- rust-red rowboat
+- tied to a weathered dock
+- still lake
+- before dawn
+- at most 55 words
+
+PROHIBITED CHANGES
+- Do not exceed 55 words in the entire response
+- Do not add people, buildings, other boats, animals, or active weather
+- Do not add labels, notes, variants, or image generation
+
+CRITERION-LEVEL REQUIREMENTS
+C08-PRESERVE [hard; due Phase 3]
+The expansion preserves every supplied scene fact and adds no forbidden subject, prop, or active weather.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/17#issuecomment-5746449221
+
+C08-STYLE [advisory; due Phase 3]
+Within the limit, the prompt adds useful visible detail rather than padding or hidden story.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/17#issuecomment-5746449221
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+A rust-red rowboat with peeling paint is tied by a coarse rope to a weathered wooden dock on a glass-still lake before dawn. Low-angle photographic framing places silver-gray planks diagonally across the foreground, with crisp reflections beneath the hull, cool blue shadows, and a faint pale glow along the empty horizon.
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+None.
+
+==============================================================================
+CARD card-6g2bhamgkahx
+Revise only a jacket color
+==============================================================================
+
+REQUEST (verbatim)
+Revise only the jacket color in this prompt from yellow to red. Return only the revised prompt and preserve everything else exactly in meaning: A woman with a short black bob wears a yellow denim jacket and silver hoop earrings, standing beside a blue bicycle under an overcast sky.
+
+CONTEXT
+operation: revise
+task: text-to-image
+scope: full-scene
+target_profile: generic
+output_contract: One revised prompt only.
+
+REQUIRED DETAILS
+- woman with a short black bob
+- red denim jacket
+- silver hoop earrings
+- blue bicycle
+- overcast sky
+
+PROHIBITED CHANGES
+- Do not change anything except the jacket color from yellow to red
+- Do not add labels, commentary, alternatives, or generation actions
+
+CRITERION-LEVEL REQUIREMENTS
+C03-OUTPUT [hard; due Phase 2]
+The response contains only the revised prompt, not an explanation, comparison, or prompt package.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/18#issuecomment-5746540497
+
+C03-REVISION [hard; due Phase 3]
+Only the jacket color changes from yellow to red; every other supplied fact and relationship remains unchanged in meaning.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/17#issuecomment-5746449221
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+A woman with a short black bob wears a red denim jacket and silver hoop earrings, standing beside a blue bicycle under an overcast sky.
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+None.
+
+==============================================================================
+CARD card-cla5vsr1pwy3
+Character design without scene expansion
+==============================================================================
+
+REQUEST (verbatim)
+Create a character-design prompt for an adult lighthouse keeper. Give her weathered olive skin, tightly curled gray hair, a navy cable-knit sweater, orange waterproof bib trousers, black rubber boots, and a brass whistle on a cord. Describe character design only. Return one prompt with no scene, pose, expression, action, camera, lighting, weather, or story.
+
+CONTEXT
+operation: create
+task: text-to-image
+scope: character-design
+target_profile: generic
+output_contract: One character-design-only prompt.
+
+REQUIRED DETAILS
+- adult woman
+- weathered olive skin
+- tightly curled gray hair
+- navy cable-knit sweater
+- orange waterproof bib trousers
+- black rubber boots
+- brass whistle on a cord
+
+PROHIBITED CHANGES
+- Do not invent a scene, pose, expression, action, camera, lighting, weather, or story
+- Do not invoke the randomized character generator or image/video generation
+
+CRITERION-LEVEL REQUIREMENTS
+C04-SCOPE [hard; due Phase 3]
+The prompt remains strictly within character appearance, clothing, and equipment, without scene or presentation expansion.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/17#issuecomment-5746449221
+
+C04-DETAILS [hard; due Phase 3]
+All supplied physical, clothing, and equipment details remain attached to the single adult lighthouse keeper without incompatible invention.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/17#issuecomment-5746449221
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+An adult female lighthouse keeper with weathered olive skin, fine facial lines, and tightly curled gray hair. Her clothing consists of a navy cable-knit sweater with thick ribbed cuffs, orange waterproof bib trousers with broad shoulder straps and reinforced seams, and black rubber boots with sturdy soles; a brass whistle on a simple cord completes her character design.
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+None.
+
+==============================================================================
+CARD card-wmnkno58x2o7
+Preserve the existing Wan text-to-video route
+==============================================================================
+
+REQUEST (verbatim)
+Write one Wan text-to-video prompt. A yellow paper boat drifts along a narrow rain-filled gutter beside a gray curb; raindrops ripple the water and push tiny leaves past it. The camera makes a slow low tracking move alongside the boat, then gently pulls back as it reaches a storm drain. Photorealistic macro cinematography, cool overcast light. Return one cohesive paragraph only, with no shot list, label, notes, variants, or generation.
+
+CONTEXT
+operation: create
+task: text-to-video
+scope: full-scene
+target_profile: Wan
+output_contract: One unlabeled cohesive Wan video-prompt paragraph.
+
+REQUIRED DETAILS
+- yellow paper boat
+- rain-filled gutter beside a gray curb
+- ripples and tiny moving leaves
+- slow low tracking move
+- gentle pullback at a storm drain
+- photorealistic macro cinematography
+- cool overcast light
+
+PROHIBITED CHANGES
+- Do not convert the prompt into a shot list or multiple variants
+- Do not add dialogue, sound, hidden story, labels, notes, or video generation
+
+CRITERION-LEVEL REQUIREMENTS
+C14-ROUTE [hard; due Phase 2]
+The output follows the existing Wan route as one cohesive cinematic paragraph rather than a shot list or image prompt.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/16#issuecomment-5746288781
+
+C14-MOTION [hard; due Phase 3]
+The paragraph preserves subject motion, environmental motion, camera progression, scene, atmosphere, and stylization without invisible story or audio invention.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/16#issuecomment-5746288781
+
+C14-STYLE [advisory; due Phase 3]
+Camera language and progression are clear without becoming muddy or repetitive.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/16#issuecomment-5746288781
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+A yellow paper boat drifts and gently bobs along a narrow rain-filled gutter beside a wet gray curb, its folded edges sharply detailed as raindrops scatter overlapping ripples and nudge tiny leaves past its hull. In one continuous shot, the camera tracks slowly alongside at water level, then gently pulls back as the boat reaches a storm drain, revealing water streaming through the dark grate. Photorealistic macro cinematography, shallow depth of field, cool overcast light, soft reflections on rain-darkened concrete.
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+None.
+
+==============================================================================
+CARD card-9oc4wvfbek6f
+Empty courtyard with no people
+==============================================================================
+
+REQUEST (verbatim)
+Write one text-to-image prompt for an empty sunlit stone courtyard with a dry fountain, ivy on the walls, and closed wooden doors. No people, animals, statues, silhouettes, or reflections of figures may appear. Return only the prompt and do not add a negative-prompt field.
+
+CONTEXT
+operation: create
+task: text-to-image
+scope: full-scene
+target_profile: generic
+output_contract: One prompt only, with the scene exclusion expressed without a separate negative field.
+
+REQUIRED DETAILS
+- empty sunlit stone courtyard
+- dry fountain
+- ivy on the walls
+- closed wooden doors
+- absence of people, animals, statues, silhouettes, and reflected figures
+
+PROHIBITED CHANGES
+- Do not introduce any person, animal, statue, silhouette, or reflected figure
+- Do not create a separate negative prompt
+- Do not invoke image or video generation
+
+CRITERION-LEVEL REQUIREMENTS
+C05-OUTPUT [hard; due Phase 2]
+The response is one prompt only and does not create an unsolicited negative-prompt field.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/18#issuecomment-5746540497
+
+C05-EXCLUSION [hard; due Phase 5]
+The positive scene remains an empty courtyard and does not introduce any excluded living or figure-like subject directly or through optional detail.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/20#issuecomment-5746782536
+
+C05-STYLE [advisory; due Phase 5]
+The exclusion is communicated naturally without overwhelming the requested visual scene.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/20#issuecomment-5746782536
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+A wide, photorealistic view of an empty sunlit stone courtyard, centered on a plain circular fountain with a completely dry basin, ivy climbing weathered walls, and closed wooden doors. Warm light reveals rough masonry and worn paving, with shadows cast only by architecture and foliage; no people, animals, statues, silhouettes, or reflections of figures appear anywhere.
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+None.
+
+==============================================================================
+CARD card-4kdqw86nfpq8
+SDXL tags only without negative prompt
+==============================================================================
+
+REQUEST (verbatim)
+Write one SDXL text-to-image prompt for a glass greenhouse on a windswept cliff at sunrise. Use comma-separated visual phrases only. Return only the prompt: no label, negative prompt, notes, variants, or explanation.
+
+CONTEXT
+operation: create
+task: text-to-image
+scope: full-scene
+target_profile: SDXL
+output_contract: One unlabeled comma-separated SDXL tag-style prompt and nothing else.
+
+REQUIRED DETAILS
+- glass greenhouse
+- windswept cliff
+- sunrise
+- comma-separated visual phrases only
+
+PROHIBITED CHANGES
+- Do not add a negative prompt, labels, notes, variants, or explanatory prose
+- Do not invoke image or video generation
+
+CRITERION-LEVEL REQUIREMENTS
+C01-OUTPUT [hard; due Phase 2]
+The response is exactly one unlabeled comma-separated visual-phrase prompt, with no negative prompt, notes, variants, or wrapper.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/18#issuecomment-5746540497
+
+C01-PROFILE [hard; due Phase 4]
+The prompt expresses the requested greenhouse, cliff, wind, and sunrise in a compact SDXL-compatible phrase dialect without importing another profile's boilerplate.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/19#issuecomment-5746665421
+
+C01-STYLE [advisory; due Phase 4]
+The selected visual phrasing is concise, coherent, and immediately usable.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/19#issuecomment-5746665421
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+glass greenhouse on a windswept coastal cliff at sunrise, slender weathered steel framework, transparent panes reflecting peach and gold skies, lush plants visible inside, cliffside grasses bent by strong wind, white surf far below, drifting sea mist, low sun casting warm light through glass, long shadows across rugged stone, wide three-quarter view, photorealistic architectural landscape photography
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+None.
+
+==============================================================================
+CARD card-ouxio9sav5s7
+Adapt a supplied scene prompt to local Krea 2
+==============================================================================
+
+REQUEST (verbatim)
+Adapt this supplied prompt for local Krea 2 RAW/Turbo. Preserve every scene fact and return only one ready-to-paste prompt with no label, negative prompt, notes, variants, or explanation. Source prompt: A red ceramic teapot sits image-left of a white cup on a dark walnut table. Morning light enters from the right, and the plain cream wall behind them is empty.
+
+CONTEXT
+operation: adapt
+task: text-to-image
+scope: full-scene
+target_profile: local Krea 2 RAW/Turbo
+output_contract: One unlabeled natural-language Krea 2 prompt and nothing else.
+
+REQUIRED DETAILS
+- red ceramic teapot image-left of a white cup
+- dark walnut table
+- morning light from the right
+- plain empty cream wall
+
+PROHIBITED CHANGES
+- Do not add, remove, recolor, relocate, or replace subjects, props, surfaces, lighting direction, or background details
+- Do not add a negative prompt, labels, notes, variants, or explanation
+- Do not invoke image or video generation
+
+CRITERION-LEVEL REQUIREMENTS
+C02-OUTPUT [hard; due Phase 2]
+The response is exactly one unlabeled prompt, without a package, negative field, notes, variants, or explanation.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/18#issuecomment-5746540497
+
+C02-PRESERVE [hard; due Phase 3]
+The adaptation preserves the two objects, their colors and image-left relationship, table, right-side morning light, and empty cream wall without adding visual facts.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/17#issuecomment-5746449221
+
+C02-PROFILE [hard; due Phase 4]
+The result uses a coherent natural-language paragraph suitable for the selected local Krea 2 RAW/Turbo contract; detail does not become invention.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/19#issuecomment-5746665421
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+A red ceramic teapot sits to the left of a white cup as viewed in the image, both on a dark walnut table. Morning light enters from the right, with an empty, plain cream wall behind them.
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+None.
+
+==============================================================================
+CARD card-mpxjgq32yquo
+Critique without silent replacement
+==============================================================================
+
+REQUEST (verbatim)
+Critique the following image prompt for visible clarity, composition, and ambiguity. Identify strengths and concrete problems, but do not rewrite it, provide a replacement prompt, or add variants. Prompt: `A mysterious traveler in a beautiful place, cinematic, amazing lighting, dynamic composition.`
+
+CONTEXT
+operation: critique
+task: text-to-image
+scope: full-scene
+target_profile: generic
+output_contract: A critique only, retaining the requested analytical shape and containing no replacement prompt.
+
+REQUIRED DETAILS
+- analysis of visible clarity
+- analysis of composition
+- analysis of ambiguity
+- strengths and concrete problems
+
+PROHIBITED CHANGES
+- Do not rewrite or replace the supplied prompt
+- Do not provide variants or invoke image generation
+
+CRITERION-LEVEL REQUIREMENTS
+C09-ROUTING [hard; due Phase 2]
+The response is an analysis of the supplied prompt and does not silently turn into prompt writing, rewriting, or variants.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/18#issuecomment-5746540497
+
+C09-QUALITY [advisory; due Phase 2]
+The critique distinguishes useful strengths from specific visible-clarity, composition, and ambiguity problems.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/18#issuecomment-5746540497
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+## Strengths
+- **Simple subject hierarchy:** A single traveler gives the image a potential focal point without competing subjects.
+- **Consistent mood:** “Mysterious” and “cinematic” suggest an atmospheric scene.
+- **Creative latitude:** The brevity leaves room for interpretation, which can be useful for exploration rather than a predictable result.
+
+## Concrete problems
+
+### Visible clarity
+- **“Mysterious traveler” describes an impression more than an appearance.** There are no visible cues in clothing, posture, expression, or equipment that establish either mystery or travel.
+- **“A beautiful place” does not identify a setting.** The environment, terrain, architecture, weather, and time of day are all unspecified. “Beautiful” is subjective rather than a concrete visual feature.
+- **“Amazing lighting” expresses approval, not lighting behavior.** It gives no source, direction, color, softness, or contrast to guide the result.
+
+### Composition
+- **“Dynamic composition” names a goal without defining spatial relationships.** Framing, camera angle, subject placement, and foreground/background structure are absent.
+- **The traveler’s visual importance is unresolved.** A close portrait and a distant figure within a vast landscape both fit the prompt, but produce very different images.
+- **No pose or action supports the requested dynamism.** A static figure is still a valid interpretation; any sense of movement or visual tension must be invented.
+
+### Ambiguity
+- **“Cinematic” is a broad aesthetic cue**, not a clear choice of medium, palette, lens feel, or film style.
+- **The terms are not contradictory, but they are weak constraints.** Most of the image’s defining decisions are left to the generator.
+
+**Overall:** This is a coherent mood brief, but an under-specified image prompt. Its main weakness is not brevity—it is that most of its wording describes a desired impression rather than observable details.
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+None.
+
+==============================================================================
+CARD card-49t6jyd9891x
+Preserve exact required lettering
+==============================================================================
+
+REQUEST (verbatim)
+Write one text-to-image prompt for a small neighborhood bakery at dusk. A rectangular sign centered above the door must visibly read exactly `OPEN` in uppercase, with no other visible lettering anywhere. Return only the prompt.
+
+CONTEXT
+operation: create
+task: text-to-image
+scope: full-scene
+target_profile: generic
+output_contract: One prompt only, preserving exact lettering and its sign relationship.
+
+REQUIRED DETAILS
+- small neighborhood bakery at dusk
+- rectangular sign centered above the door
+- exact uppercase lettering OPEN
+- no other visible lettering
+
+PROHIBITED CHANGES
+- Do not alter the spelling or case of OPEN
+- Do not attach OPEN to anything except the centered sign above the door
+- Do not introduce other visible lettering or invoke image generation
+
+CRITERION-LEVEL REQUIREMENTS
+C06-TEXT-BINDING [hard; due Phase 3]
+The prompt clearly binds exact uppercase OPEN to the rectangular sign centered above the bakery door and excludes other visible lettering.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/17#issuecomment-5746449221
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+A photorealistic, straight-on view of a small neighborhood bakery at dusk, with warm amber light spilling through windows displaying crusty loaves and pastries onto a quiet sidewalk beneath a blue-violet sky. A rectangular sign centered directly above the door clearly reads exactly “OPEN” in crisp uppercase letters; this sign is the only visible lettering anywhere, with no other text, numbers, logos, labels, or watermarks.
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+None.
+
+==============================================================================
+CARD card-x57k8ljfq7hs
+Illustrious Danbooru output with targeted local lookup
+==============================================================================
+
+REQUEST (verbatim)
+Write one positive prompt for Illustrious in explicitly requested Danbooru Version for one adult woman with grey hair, green eyes, a black turtleneck, and white gloves, standing in a library. Before answering, use the existing local Danbooru lookup script to confirm the canonical spelling `grey_hair`; do not read raw CSV files and do not add related candidates. Return only the comma-separated positive prompt, with no negative prompt, notes, or explanation.
+
+CONTEXT
+operation: create
+task: text-to-image
+scope: full-scene
+target_profile: Illustrious
+output_contract: One unlabeled comma-separated Illustrious Danbooru positive prompt only.
+
+REQUIRED DETAILS
+- one adult woman
+- canonical grey_hair tag confirmed through local lookup
+- green eyes
+- black turtleneck
+- white gloves
+- standing in a library
+- Illustrious Danbooru-style positive prompt
+
+PROHIBITED CHANGES
+- Do not read raw Danbooru CSV files
+- Do not add related-tag candidates or uncertain character/source tags
+- Do not use Pony score/source/rating tags
+- Do not add a negative prompt, notes, explanation, web research, or generation
+
+CRITERION-LEVEL REQUIREMENTS
+C11-PROFILE [hard; due Phase 4]
+The prompt preserves the existing Illustrious convention: comma-separated Danbooru-style tags with restrained quality/composition guidance, lower_snake_case canonical forms where applicable, and no Pony prefix.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/19#issuecomment-5746665421
+
+C11-CONSTRAINTS [hard; due Phase 5]
+The canonical grey-hair result is used for the requested woman, all requested visible facts remain represented, and no optional related candidate changes the scene.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/20#issuecomment-5746782536
+
+C11-LOOKUP-EVIDENCE [hard; due Phase 5]
+The captured tool results confirm grey_hair using the selected revision’s local lookup script. A mere spelling echo is not confirmation; missing usable trace evidence is not-run.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/20#issuecomment-5746782536
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+masterpiece, best_quality, highres, 1girl, solo, mature_female, grey_hair, green_eyes, black_sweater, turtleneck, white_gloves, standing, library
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+None.
+
+CAPTURED LOOKUP EVIDENCE (anonymous packet; identity paths redacted)
+{
+  "availability": "available",
+  "calls": [
+    {
+      "args": {
+        "command": "python3 scripts/danbooru_lookup.py tag grey_hair",
+        "cwd": "<redacted>"
+      },
+      "result_content": [
+        {
+          "text": "grey_hair [general] count=574323\naliases: 白髪, 銀髪, 銀髪ロング\n\n\nWall time: 32.25 seconds",
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "trace_complete": true
+}
+
+==============================================================================
+CARD card-q1p729slyllq
+Export four clothing-only wildcard fragments
+==============================================================================
+
+REQUEST (verbatim)
+Create a ComfyUI wildcard file at `outputs/clothing-fragments.txt` containing exactly four distinct clothing-only fragments suitable for insertion at `[CLOTHING SLOT]` in this host: `score_9, score_8_up, score_7_up, source_anime, rating_safe, 1girl, black hair, [CLOTHING SLOT]`. Each fragment must be one nonempty physical line and describe only one garment or coordinated outfit; do not repeat the host prefix, subject, hair, pose, action, setting, camera, lighting, comments, numbering, headings, or blank lines. After saving, report the actual path, entry count, and that the file is fragment mode outside the file.
+
+CONTEXT
+operation: create
+task: text-to-image
+scope: clothing
+target_profile: Pony host with model-neutral clothing fragments
+output_contract: Save outputs/clothing-fragments.txt as plain UTF-8 with exactly four unique nonblank clothing-fragment lines; separately report actual path, count 4, and fragment mode.
+
+REQUIRED DETAILS
+- outputs/clothing-fragments.txt
+- exactly four distinct clothing-only fragments
+- one nonempty physical line per entry
+- external completion report with actual path, count, and fragment mode
+
+PROHIBITED CHANGES
+- Do not repeat global Pony prefixes, subject declarations, black hair, or unrelated scene/presentation content in fragments
+- Do not add headings, bullets, numbering, comments, blank lines, or explanations inside the file
+- Do not write any other artifact or invoke generation
+
+CRITERION-LEVEL REQUIREMENTS
+C16-FRAGMENTS [hard; due Phase 6]
+Each of the four entries is a distinct insertion-compatible clothing-only fragment; none repeats host-owned prefixes or introduces subject, hair, pose, action, setting, camera, or lighting content.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/21#issuecomment-5746874984
+
+C16-REPORT [hard; due Phase 6]
+The response truthfully reports the actual saved path, actual count of four, and fragment mode outside the selection file.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/21#issuecomment-5746874984
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+Saved `outputs/clothing-fragments.txt` with **4 distinct entries** in **fragment mode**. Each line contains clothing only, ready for insertion at `[CLOTHING SLOT]`.
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+Requested path: outputs/clothing-fragments.txt
+Availability: available
+FILE CONTENT — BEGIN VERBATIM
+navy blue long-sleeved dress, white Peter Pan collar, pleated knee-length skirt
+cream cable-knit sweater, brown corduroy trousers
+sage green overalls, white short-sleeved shirt
+burgundy tailored blazer, matching straight-leg trousers, ivory blouse
+
+FILE CONTENT — END VERBATIM
+
+==============================================================================
+CARD card-9z7ag8f8hdqy
+Preserve the existing NoobAI profile
+==============================================================================
+
+REQUEST (verbatim)
+Write one NoobAI positive prompt for one adult man with long white hair, amber eyes, a brown leather apron, and blue work gloves, repairing a brass clock at a wooden bench. Return only the comma-separated positive prompt. Use NoobAI's normalized space-separated tag style; no negative prompt, notes, labels, or variants.
+
+CONTEXT
+operation: create
+task: text-to-image
+scope: full-scene
+target_profile: NoobAI
+output_contract: One unlabeled comma-separated NoobAI positive prompt only.
+
+REQUIRED DETAILS
+- one adult man
+- long white hair
+- amber eyes
+- brown leather apron
+- blue work gloves
+- repairing a brass clock at a wooden bench
+- NoobAI normalized tag style
+
+PROHIBITED CHANGES
+- Do not normalize visible tags with underscores
+- Do not use Pony score/source/rating tags
+- Do not add lore, hidden personality, negative prompt, notes, labels, variants, or generation
+
+CRITERION-LEVEL REQUIREMENTS
+C13-PROFILE [hard; due Phase 4]
+The result preserves the existing NoobAI ordered tag convention, including its quality/model preference opening and space-normalized visible tags, without Pony syntax.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/19#issuecomment-5746665421
+
+C13-PRESERVE [hard; due Phase 3]
+All supplied subject attributes, clothing, action, clock, and workbench relationship remain explicit and correctly bound.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/17#issuecomment-5746449221
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+masterpiece, best quality, newest, 1boy, solo, adult man, long hair, white hair, amber eyes, brown leather apron, blue work gloves, repairing a brass clock, holding a small screwdriver, exposed clock gears, leaning over a wooden workbench, clockwork tools, workshop, warm window light, three quarter view, upper body, detailed hands
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+None.
+
+==============================================================================
+CARD card-404y6qvi9hsi
+Image-to-video from a fixed geometric source
+==============================================================================
+
+REQUEST (verbatim)
+Inspect the supplied source image and write one image-to-video prompt that starts from it. Preserve its simple synthetic subject shapes, colors, initial composition, and flat graphic style. Animate only subtle water ripples and a slow cloud drift, with a very gentle camera push-in. Apart from these authorized temporal changes, do not add, remove, recolor, or reposition objects. Return only the prompt, with no label, notes, variants, or generation.
+
+CONTEXT
+operation: adapt
+task: image-to-video
+scope: full-scene
+target_profile: generic image-to-video
+output_contract: One unlabeled image-to-video prompt grounded in the fixed source image.
+
+REQUIRED DETAILS
+- source image used as the first frame
+- source shapes, colors, composition, and flat graphic style preserved
+- subtle water ripples
+- slow cloud drift
+- very gentle camera push-in
+
+PROHIBITED CHANGES
+- Do not add, remove, recolor, or reposition source-image objects
+- Do not invent details absent from the visible fixture
+- Do not invoke image or video generation
+
+CRITERION-LEVEL REQUIREMENTS
+C15-ROUTE [hard; due Phase 2]
+The response is an image-to-video prompt grounded in the supplied image as the first frame, not a text-to-video scene re-creation.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/16#issuecomment-5746288781
+
+C15-PRESERVE [hard; due Phase 3]
+The prompt accurately preserves the fixture's visible synthetic shapes, colors, composition, and flat style while limiting changes to the requested motions and gentle push-in.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/17#issuecomment-5746449221
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+Start from the supplied image exactly: a geometric sailboat with a red hull, white left sail, yellow right sail, and dark mast on blue water beneath a pale blue sky and one white cloud. Preserve the simple shapes, original colors, initial composition, and flat graphic style. Animate only subtle water ripples and slow cloud drift, with a very gentle camera push-in. Keep the boat motionless without rocking or sail movement; otherwise add, remove, recolor, or reposition nothing.
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+Open: evals/fixtures/case15-geometric-source.png
+Availability: available binary fixture; inspect the repository path
+SHA-256: 96d3453296fdd1239b21aeda140412632b643d96cb3980986739da4470bd8ded
+Bytes: 522
+
+CAPTURED GENERATED ARTIFACTS
+None.
+
+==============================================================================
+CARD card-h7fkpsumfssq
+Expand a brief within 55 words
+==============================================================================
+
+REQUEST (verbatim)
+Expand this brief into one ready-to-paste text-to-image prompt of at most 55 words: `A rust-red rowboat tied to a weathered dock on a still lake before dawn.` Return only the prompt. Do not add people, buildings, other boats, animals, or active weather.
+
+CONTEXT
+operation: expand
+task: text-to-image
+scope: full-scene
+target_profile: generic
+output_contract: One unlabeled prompt; the entire final response is at most 55 Unicode whitespace-separated words.
+
+REQUIRED DETAILS
+- rust-red rowboat
+- tied to a weathered dock
+- still lake
+- before dawn
+- at most 55 words
+
+PROHIBITED CHANGES
+- Do not exceed 55 words in the entire response
+- Do not add people, buildings, other boats, animals, or active weather
+- Do not add labels, notes, variants, or image generation
+
+CRITERION-LEVEL REQUIREMENTS
+C08-PRESERVE [hard; due Phase 3]
+The expansion preserves every supplied scene fact and adds no forbidden subject, prop, or active weather.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/17#issuecomment-5746449221
+
+C08-STYLE [advisory; due Phase 3]
+Within the limit, the prompt adds useful visible detail rather than padding or hidden story.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/17#issuecomment-5746449221
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+A rust-red rowboat with chipped paint is tied by coarse rope to a weathered wooden dock on a still lake before dawn. In a low, wide composition, silver-gray planks lead toward the boat; its crisp reflection rests on glassy water beneath a pale indigo sky, rendered in naturalistic photographic detail.
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+None.
+
+==============================================================================
+CARD card-p3x5b95gm47t
+Character design without scene expansion
+==============================================================================
+
+REQUEST (verbatim)
+Create a character-design prompt for an adult lighthouse keeper. Give her weathered olive skin, tightly curled gray hair, a navy cable-knit sweater, orange waterproof bib trousers, black rubber boots, and a brass whistle on a cord. Describe character design only. Return one prompt with no scene, pose, expression, action, camera, lighting, weather, or story.
+
+CONTEXT
+operation: create
+task: text-to-image
+scope: character-design
+target_profile: generic
+output_contract: One character-design-only prompt.
+
+REQUIRED DETAILS
+- adult woman
+- weathered olive skin
+- tightly curled gray hair
+- navy cable-knit sweater
+- orange waterproof bib trousers
+- black rubber boots
+- brass whistle on a cord
+
+PROHIBITED CHANGES
+- Do not invent a scene, pose, expression, action, camera, lighting, weather, or story
+- Do not invoke the randomized character generator or image/video generation
+
+CRITERION-LEVEL REQUIREMENTS
+C04-SCOPE [hard; due Phase 3]
+The prompt remains strictly within character appearance, clothing, and equipment, without scene or presentation expansion.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/17#issuecomment-5746449221
+
+C04-DETAILS [hard; due Phase 3]
+All supplied physical, clothing, and equipment details remain attached to the single adult lighthouse keeper without incompatible invention.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/17#issuecomment-5746449221
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+An adult female lighthouse keeper with weathered olive skin, fine facial lines, and tightly curled gray hair. Her practical wardrobe consists of a navy cable-knit sweater with thick ribbed cuffs, orange waterproof bib trousers with broad adjustable straps and reinforced seams, sturdy black rubber boots with thick soles, and a small brass whistle on a cord around her neck.
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+None.
+
+==============================================================================
+CARD card-bucl479khfa5
+Preserve the existing Wan text-to-video route
+==============================================================================
+
+REQUEST (verbatim)
+Write one Wan text-to-video prompt. A yellow paper boat drifts along a narrow rain-filled gutter beside a gray curb; raindrops ripple the water and push tiny leaves past it. The camera makes a slow low tracking move alongside the boat, then gently pulls back as it reaches a storm drain. Photorealistic macro cinematography, cool overcast light. Return one cohesive paragraph only, with no shot list, label, notes, variants, or generation.
+
+CONTEXT
+operation: create
+task: text-to-video
+scope: full-scene
+target_profile: Wan
+output_contract: One unlabeled cohesive Wan video-prompt paragraph.
+
+REQUIRED DETAILS
+- yellow paper boat
+- rain-filled gutter beside a gray curb
+- ripples and tiny moving leaves
+- slow low tracking move
+- gentle pullback at a storm drain
+- photorealistic macro cinematography
+- cool overcast light
+
+PROHIBITED CHANGES
+- Do not convert the prompt into a shot list or multiple variants
+- Do not add dialogue, sound, hidden story, labels, notes, or video generation
+
+CRITERION-LEVEL REQUIREMENTS
+C14-ROUTE [hard; due Phase 2]
+The output follows the existing Wan route as one cohesive cinematic paragraph rather than a shot list or image prompt.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/16#issuecomment-5746288781
+
+C14-MOTION [hard; due Phase 3]
+The paragraph preserves subject motion, environmental motion, camera progression, scene, atmosphere, and stylization without invisible story or audio invention.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/16#issuecomment-5746288781
+
+C14-STYLE [advisory; due Phase 3]
+Camera language and progression are clear without becoming muddy or repetitive.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/16#issuecomment-5746288781
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+A yellow paper boat gently bobs along a narrow rain-filled gutter beside a gray curb, its folded edges crisp against the dark water as raindrops spread overlapping ripples and nudge tiny leaves past its hull. In one continuous movement, the camera tracks slowly alongside at water level, then gently pulls back as the boat reaches a storm drain, revealing the wet grate ahead. Photorealistic macro cinematography, shallow depth of field, detailed paper fibers and rain-darkened concrete, cool overcast light and soft reflections.
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+None.
+
+==============================================================================
+CARD card-gvn3tzzx5o6s
+Preserve the existing Pony profile
+==============================================================================
+
+REQUEST (verbatim)
+Write one Pony Diffusion V6 XL positive prompt for one adult woman with auburn hair, round glasses, a teal raincoat, and a folded red umbrella, standing at an empty tram stop at night. Use the safe anime source/rating dialect. Return only the comma-separated positive prompt: no negative prompt, notes, labels, or variants.
+
+CONTEXT
+operation: create
+task: text-to-image
+scope: full-scene
+target_profile: Pony Diffusion V6 XL
+output_contract: One unlabeled comma-separated Pony positive prompt only.
+
+REQUIRED DETAILS
+- one adult woman
+- auburn hair
+- round glasses
+- teal raincoat
+- folded red umbrella
+- empty tram stop at night
+- safe anime source/rating dialect
+
+PROHIBITED CHANGES
+- Do not omit or rebind supplied attributes
+- Do not use generic masterpiece/best quality boilerplate
+- Do not add negative prompt, notes, labels, variants, or generation
+
+CRITERION-LEVEL REQUIREMENTS
+C12-PROFILE [hard; due Phase 4]
+The positive prompt starts with the existing Pony score/source/rating convention, uses source_anime and rating_safe, remains comma-separated, and avoids generic masterpiece/best quality boilerplate.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/19#issuecomment-5746665421
+
+C12-PRESERVE [hard; due Phase 3]
+The single adult subject retains every supplied attribute and prop, and the tram stop remains empty apart from her.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/17#issuecomment-5746449221
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+score_9, score_8_up, score_7_up, source_anime, rating_safe, 1girl, solo, adult woman, auburn hair, round glasses, teal raincoat, holding a folded red umbrella at her side, standing, empty tram stop, night, vacant bench, tram tracks, wet pavement, streetlamp glow, soft reflections, full body, wide shot
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+None.
+
+==============================================================================
+CARD card-14nqylc8ncy3
+SDXL tags only without negative prompt
+==============================================================================
+
+REQUEST (verbatim)
+Write one SDXL text-to-image prompt for a glass greenhouse on a windswept cliff at sunrise. Use comma-separated visual phrases only. Return only the prompt: no label, negative prompt, notes, variants, or explanation.
+
+CONTEXT
+operation: create
+task: text-to-image
+scope: full-scene
+target_profile: SDXL
+output_contract: One unlabeled comma-separated SDXL tag-style prompt and nothing else.
+
+REQUIRED DETAILS
+- glass greenhouse
+- windswept cliff
+- sunrise
+- comma-separated visual phrases only
+
+PROHIBITED CHANGES
+- Do not add a negative prompt, labels, notes, variants, or explanatory prose
+- Do not invoke image or video generation
+
+CRITERION-LEVEL REQUIREMENTS
+C01-OUTPUT [hard; due Phase 2]
+The response is exactly one unlabeled comma-separated visual-phrase prompt, with no negative prompt, notes, variants, or wrapper.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/18#issuecomment-5746540497
+
+C01-PROFILE [hard; due Phase 4]
+The prompt expresses the requested greenhouse, cliff, wind, and sunrise in a compact SDXL-compatible phrase dialect without importing another profile's boilerplate.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/19#issuecomment-5746665421
+
+C01-STYLE [advisory; due Phase 4]
+The selected visual phrasing is concise, coherent, and immediately usable.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/19#issuecomment-5746665421
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+glass greenhouse on a rugged windswept coastal cliff at sunrise, slender weathered steel frame, transparent panes glowing with golden reflections, lush plants visible inside, cliffside grasses bent in one direction, white surf far below, windblown sea mist, pale peach sky, warm backlighting and cool blue shadows, wide three-quarter view, photorealistic architectural photography
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+None.
+
+==============================================================================
+CARD card-tj82bmifokh5
+Preserve the existing Pony profile
+==============================================================================
+
+REQUEST (verbatim)
+Write one Pony Diffusion V6 XL positive prompt for one adult woman with auburn hair, round glasses, a teal raincoat, and a folded red umbrella, standing at an empty tram stop at night. Use the safe anime source/rating dialect. Return only the comma-separated positive prompt: no negative prompt, notes, labels, or variants.
+
+CONTEXT
+operation: create
+task: text-to-image
+scope: full-scene
+target_profile: Pony Diffusion V6 XL
+output_contract: One unlabeled comma-separated Pony positive prompt only.
+
+REQUIRED DETAILS
+- one adult woman
+- auburn hair
+- round glasses
+- teal raincoat
+- folded red umbrella
+- empty tram stop at night
+- safe anime source/rating dialect
+
+PROHIBITED CHANGES
+- Do not omit or rebind supplied attributes
+- Do not use generic masterpiece/best quality boilerplate
+- Do not add negative prompt, notes, labels, variants, or generation
+
+CRITERION-LEVEL REQUIREMENTS
+C12-PROFILE [hard; due Phase 4]
+The positive prompt starts with the existing Pony score/source/rating convention, uses source_anime and rating_safe, remains comma-separated, and avoids generic masterpiece/best quality boilerplate.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/19#issuecomment-5746665421
+
+C12-PRESERVE [hard; due Phase 3]
+The single adult subject retains every supplied attribute and prop, and the tram stop remains empty apart from her.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/17#issuecomment-5746449221
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+score_9, score_8_up, score_7_up, source_anime, rating_safe, 1girl, solo, adult woman, auburn hair, round glasses, teal raincoat, holding a folded red umbrella at her side, standing, empty tram stop, night, vacant bench, glass shelter, tram tracks, wet pavement, streetlamp reflections, soft rim lighting, full body, detailed background
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+None.
+
+==============================================================================
+CARD card-zy1k27db4dkv
+Empty courtyard with no people
+==============================================================================
+
+REQUEST (verbatim)
+Write one text-to-image prompt for an empty sunlit stone courtyard with a dry fountain, ivy on the walls, and closed wooden doors. No people, animals, statues, silhouettes, or reflections of figures may appear. Return only the prompt and do not add a negative-prompt field.
+
+CONTEXT
+operation: create
+task: text-to-image
+scope: full-scene
+target_profile: generic
+output_contract: One prompt only, with the scene exclusion expressed without a separate negative field.
+
+REQUIRED DETAILS
+- empty sunlit stone courtyard
+- dry fountain
+- ivy on the walls
+- closed wooden doors
+- absence of people, animals, statues, silhouettes, and reflected figures
+
+PROHIBITED CHANGES
+- Do not introduce any person, animal, statue, silhouette, or reflected figure
+- Do not create a separate negative prompt
+- Do not invoke image or video generation
+
+CRITERION-LEVEL REQUIREMENTS
+C05-OUTPUT [hard; due Phase 2]
+The response is one prompt only and does not create an unsolicited negative-prompt field.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/18#issuecomment-5746540497
+
+C05-EXCLUSION [hard; due Phase 5]
+The positive scene remains an empty courtyard and does not introduce any excluded living or figure-like subject directly or through optional detail.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/20#issuecomment-5746782536
+
+C05-STYLE [advisory; due Phase 5]
+The exclusion is communicated naturally without overwhelming the requested visual scene.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/20#issuecomment-5746782536
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+A wide, eye-level view of an empty sunlit stone courtyard, centered on a plain, unadorned dry fountain with a visibly waterless basin, ivy climbing weathered walls, and closed wooden doors. Warm sunlight reveals rough stone textures and casts crisp architectural shadows across worn paving; the entire scene contains no people, animals, statues, silhouettes, or reflections of figures.
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+None.
+
+==============================================================================
+CARD card-p9ku17hug6vq
+Preserve exact required lettering
+==============================================================================
+
+REQUEST (verbatim)
+Write one text-to-image prompt for a small neighborhood bakery at dusk. A rectangular sign centered above the door must visibly read exactly `OPEN` in uppercase, with no other visible lettering anywhere. Return only the prompt.
+
+CONTEXT
+operation: create
+task: text-to-image
+scope: full-scene
+target_profile: generic
+output_contract: One prompt only, preserving exact lettering and its sign relationship.
+
+REQUIRED DETAILS
+- small neighborhood bakery at dusk
+- rectangular sign centered above the door
+- exact uppercase lettering OPEN
+- no other visible lettering
+
+PROHIBITED CHANGES
+- Do not alter the spelling or case of OPEN
+- Do not attach OPEN to anything except the centered sign above the door
+- Do not introduce other visible lettering or invoke image generation
+
+CRITERION-LEVEL REQUIREMENTS
+C06-TEXT-BINDING [hard; due Phase 3]
+The prompt clearly binds exact uppercase OPEN to the rectangular sign centered above the bakery door and excludes other visible lettering.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/17#issuecomment-5746449221
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+A photorealistic, straight-on view of a small neighborhood bakery at dusk, warm amber light spilling through windows filled with unlabelled bread and pastries onto a quiet sidewalk beneath a blue-violet sky. A rectangular sign centered directly above the entrance door clearly reads exactly “OPEN” in crisp, uppercase letters; this sign is the only visible lettering anywhere, with no additional text, numbers, logos, labels, or watermarks.
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+None.
+
+==============================================================================
+CARD card-jdm3pqwmixcr
+Four controlled composition variants
+==============================================================================
+
+REQUEST (verbatim)
+Create exactly four genuinely different composition variants of this fixed scene. Number them 1 through 4 and give one complete prompt per numbered entry. Vary only composition (framing, viewpoint, and placement within the image); hold lighting and all physical scene facts fixed. Fixed scene: a red cube image-left of a blue sphere on a gray table; a sign behind them reads exactly `OPEN`; both objects and the sign are fully visible; plain gray backdrop; diffuse frontal light with weak shadows.
+
+CONTEXT
+operation: create
+task: text-to-image
+scope: full-scene
+target_profile: generic
+output_contract: Exactly four numbered complete prompts, each a semantically distinct composition treatment of the same fixed scene.
+
+REQUIRED DETAILS
+- exactly four composition variants
+- red cube image-left of a blue sphere
+- gray table
+- sign behind them reading OPEN
+- all objects and sign fully visible
+- plain gray backdrop
+- diffuse frontal light with weak shadows
+
+PROHIBITED CHANGES
+- Do not vary object identity, color, physical left-right relation, table, sign text, visibility, backdrop, or lighting
+- Do not count the unchanged source as a variant or pad with paraphrases
+- Do not invoke image generation
+
+CRITERION-LEVEL REQUIREMENTS
+C07-DISTINCTNESS [hard; due Phase 6]
+All four entries communicate genuinely different compositions rather than paraphrases or changes outside composition.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/21#issuecomment-5746874984
+
+C07-PRESERVE [hard; due Phase 6]
+Every variant preserves all non-composition facts, exact lettering, visibility, and fixed lighting while maintaining the cube's image-left relation to the sphere.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/21#issuecomment-5746874984
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+1. A tight, centered, straight-on composition of a red cube image-left of a blue sphere on a gray table, with a sign behind them reading exactly `OPEN`. Frame the complete grouping with narrow margins; both objects and the entire sign are fully visible and unobstructed. Plain gray backdrop; diffuse frontal light with weak shadows.
+
+2. A wide, straight-on composition of a red cube image-left of a blue sphere on a gray table, with a sign behind them reading exactly `OPEN`. Place the complete grouping in the lower-left portion of the image, leaving generous gray negative space above and to the right; both objects and the entire sign remain fully visible and unobstructed. Plain gray backdrop; diffuse frontal light with weak shadows.
+
+3. A moderately elevated, three-quarter view of a red cube image-left of a blue sphere on a gray table, with a sign behind them reading exactly `OPEN`. Look gently downward across the tabletop and frame the complete grouping right of center, leaving open space on the left; both objects and the entire sign are fully visible and unobstructed, with the lettering clearly readable. Plain gray backdrop; diffuse frontal light with weak shadows.
+
+4. A low frontal viewpoint, just above tabletop height, showing a red cube image-left of a blue sphere on a gray table, with a sign behind them reading exactly `OPEN`. Frame the complete grouping across the upper-middle of the image, with a broad expanse of tabletop in the foreground; both objects and the entire sign are fully visible and unobstructed. Plain gray backdrop; diffuse frontal light with weak shadows.
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+None.
+
+==============================================================================
+CARD card-1tbr7u1m07kh
+Preserve exact required lettering
+==============================================================================
+
+REQUEST (verbatim)
+Write one text-to-image prompt for a small neighborhood bakery at dusk. A rectangular sign centered above the door must visibly read exactly `OPEN` in uppercase, with no other visible lettering anywhere. Return only the prompt.
+
+CONTEXT
+operation: create
+task: text-to-image
+scope: full-scene
+target_profile: generic
+output_contract: One prompt only, preserving exact lettering and its sign relationship.
+
+REQUIRED DETAILS
+- small neighborhood bakery at dusk
+- rectangular sign centered above the door
+- exact uppercase lettering OPEN
+- no other visible lettering
+
+PROHIBITED CHANGES
+- Do not alter the spelling or case of OPEN
+- Do not attach OPEN to anything except the centered sign above the door
+- Do not introduce other visible lettering or invoke image generation
+
+CRITERION-LEVEL REQUIREMENTS
+C06-TEXT-BINDING [hard; due Phase 3]
+The prompt clearly binds exact uppercase OPEN to the rectangular sign centered above the bakery door and excludes other visible lettering.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/17#issuecomment-5746449221
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+A small neighborhood bakery at dusk, photographed straight-on with warm amber windows displaying bread and pastries, a brick facade, and a quiet sidewalk beneath a blue-violet sky. A rectangular sign centered directly above the door prominently and legibly reads exactly “OPEN” in crisp uppercase letters; this sign is the only visible lettering anywhere in the image, with no other text, numbers, logos, labels, or watermarks.
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+None.
+
+==============================================================================
+CARD card-7l0l7rf5l13e
+Expand a brief within 55 words
+==============================================================================
+
+REQUEST (verbatim)
+Expand this brief into one ready-to-paste text-to-image prompt of at most 55 words: `A rust-red rowboat tied to a weathered dock on a still lake before dawn.` Return only the prompt. Do not add people, buildings, other boats, animals, or active weather.
+
+CONTEXT
+operation: expand
+task: text-to-image
+scope: full-scene
+target_profile: generic
+output_contract: One unlabeled prompt; the entire final response is at most 55 Unicode whitespace-separated words.
+
+REQUIRED DETAILS
+- rust-red rowboat
+- tied to a weathered dock
+- still lake
+- before dawn
+- at most 55 words
+
+PROHIBITED CHANGES
+- Do not exceed 55 words in the entire response
+- Do not add people, buildings, other boats, animals, or active weather
+- Do not add labels, notes, variants, or image generation
+
+CRITERION-LEVEL REQUIREMENTS
+C08-PRESERVE [hard; due Phase 3]
+The expansion preserves every supplied scene fact and adds no forbidden subject, prop, or active weather.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/17#issuecomment-5746449221
+
+C08-STYLE [advisory; due Phase 3]
+Within the limit, the prompt adds useful visible detail rather than padding or hidden story.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/17#issuecomment-5746449221
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+A rust-red rowboat with chipped paint rests on a mirror-still lake before dawn, secured by a frayed rope to a weathered wooden dock. The dock leads diagonally toward the boat, its silver-gray grain sharply detailed in soft blue predawn light, with crisp reflections beneath a pale, empty horizon.
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+None.
+
+==============================================================================
+CARD card-oaxcmt0c1x5h
+Image-to-video from a fixed geometric source
+==============================================================================
+
+REQUEST (verbatim)
+Inspect the supplied source image and write one image-to-video prompt that starts from it. Preserve its simple synthetic subject shapes, colors, initial composition, and flat graphic style. Animate only subtle water ripples and a slow cloud drift, with a very gentle camera push-in. Apart from these authorized temporal changes, do not add, remove, recolor, or reposition objects. Return only the prompt, with no label, notes, variants, or generation.
+
+CONTEXT
+operation: adapt
+task: image-to-video
+scope: full-scene
+target_profile: generic image-to-video
+output_contract: One unlabeled image-to-video prompt grounded in the fixed source image.
+
+REQUIRED DETAILS
+- source image used as the first frame
+- source shapes, colors, composition, and flat graphic style preserved
+- subtle water ripples
+- slow cloud drift
+- very gentle camera push-in
+
+PROHIBITED CHANGES
+- Do not add, remove, recolor, or reposition source-image objects
+- Do not invent details absent from the visible fixture
+- Do not invoke image or video generation
+
+CRITERION-LEVEL REQUIREMENTS
+C15-ROUTE [hard; due Phase 2]
+The response is an image-to-video prompt grounded in the supplied image as the first frame, not a text-to-video scene re-creation.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/16#issuecomment-5746288781
+
+C15-PRESERVE [hard; due Phase 3]
+The prompt accurately preserves the fixture's visible synthetic shapes, colors, composition, and flat style while limiting changes to the requested motions and gentle push-in.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/17#issuecomment-5746449221
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+Start from the supplied image exactly: a red geometric sailboat with a dark mast, white left sail and yellow right sail on blue water beneath a pale blue sky, with one white cloud at upper right. Preserve the simple shapes, original colors, initial composition, and flat graphic style. Animate only subtle rippling of the existing pale water marks and slow cloud drift, with a very gentle, smooth camera push-in. Keep the boat and sails motionless and unchanged; add, remove, recolor, or reposition nothing except through these authorized motions.
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+Open: evals/fixtures/case15-geometric-source.png
+Availability: available binary fixture; inspect the repository path
+SHA-256: 96d3453296fdd1239b21aeda140412632b643d96cb3980986739da4470bd8ded
+Bytes: 522
+
+CAPTURED GENERATED ARTIFACTS
+None.
+
+==============================================================================
+CARD card-c9yfn5rblcrl
+Four controlled composition variants
+==============================================================================
+
+REQUEST (verbatim)
+Create exactly four genuinely different composition variants of this fixed scene. Number them 1 through 4 and give one complete prompt per numbered entry. Vary only composition (framing, viewpoint, and placement within the image); hold lighting and all physical scene facts fixed. Fixed scene: a red cube image-left of a blue sphere on a gray table; a sign behind them reads exactly `OPEN`; both objects and the sign are fully visible; plain gray backdrop; diffuse frontal light with weak shadows.
+
+CONTEXT
+operation: create
+task: text-to-image
+scope: full-scene
+target_profile: generic
+output_contract: Exactly four numbered complete prompts, each a semantically distinct composition treatment of the same fixed scene.
+
+REQUIRED DETAILS
+- exactly four composition variants
+- red cube image-left of a blue sphere
+- gray table
+- sign behind them reading OPEN
+- all objects and sign fully visible
+- plain gray backdrop
+- diffuse frontal light with weak shadows
+
+PROHIBITED CHANGES
+- Do not vary object identity, color, physical left-right relation, table, sign text, visibility, backdrop, or lighting
+- Do not count the unchanged source as a variant or pad with paraphrases
+- Do not invoke image generation
+
+CRITERION-LEVEL REQUIREMENTS
+C07-DISTINCTNESS [hard; due Phase 6]
+All four entries communicate genuinely different compositions rather than paraphrases or changes outside composition.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/21#issuecomment-5746874984
+
+C07-PRESERVE [hard; due Phase 6]
+Every variant preserves all non-composition facts, exact lettering, visibility, and fixed lighting while maintaining the cube's image-left relation to the sphere.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/21#issuecomment-5746874984
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+1. A tight, straight-on composition of a red cube image-left of a blue sphere on a gray table, with a sign behind them reading exactly `OPEN`. Center the group so it fills most of the frame, leaving a narrow margin around both objects and the sign, all fully visible and unobstructed. Use a plain gray backdrop and diffuse frontal light with weak shadows.
+
+2. A wide, straight-on composition of a red cube image-left of a blue sphere on a gray table, with a sign behind them reading exactly `OPEN`. Frame the entire group small in the lower-left portion of the image, leaving extensive empty gray backdrop above and to the right. Both objects and the sign are fully visible and unobstructed. Use diffuse frontal light with weak shadows.
+
+3. A moderately elevated frontal view of a red cube image-left of a blue sphere on a gray table, with a sign behind them reading exactly `OPEN`. Look gently downward to emphasize the tabletop foreground, keeping the group centered horizontally in the upper half of the image. Both objects and the sign are fully visible and unobstructed. Use a plain gray backdrop and diffuse frontal light with weak shadows.
+
+4. A low frontal viewpoint, just above tabletop height, showing a red cube image-left of a blue sphere on a gray table, with a sign behind them reading exactly `OPEN`. Use medium-wide framing and place the group in the right third of the image, leaving open gray space to the left; both objects and the sign remain fully visible and unobstructed. Use a plain gray backdrop and diffuse frontal light with weak shadows.
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+None.
+
+==============================================================================
+CARD card-o7cnzr6l2xrn
+Export four clothing-only wildcard fragments
+==============================================================================
+
+REQUEST (verbatim)
+Create a ComfyUI wildcard file at `outputs/clothing-fragments.txt` containing exactly four distinct clothing-only fragments suitable for insertion at `[CLOTHING SLOT]` in this host: `score_9, score_8_up, score_7_up, source_anime, rating_safe, 1girl, black hair, [CLOTHING SLOT]`. Each fragment must be one nonempty physical line and describe only one garment or coordinated outfit; do not repeat the host prefix, subject, hair, pose, action, setting, camera, lighting, comments, numbering, headings, or blank lines. After saving, report the actual path, entry count, and that the file is fragment mode outside the file.
+
+CONTEXT
+operation: create
+task: text-to-image
+scope: clothing
+target_profile: Pony host with model-neutral clothing fragments
+output_contract: Save outputs/clothing-fragments.txt as plain UTF-8 with exactly four unique nonblank clothing-fragment lines; separately report actual path, count 4, and fragment mode.
+
+REQUIRED DETAILS
+- outputs/clothing-fragments.txt
+- exactly four distinct clothing-only fragments
+- one nonempty physical line per entry
+- external completion report with actual path, count, and fragment mode
+
+PROHIBITED CHANGES
+- Do not repeat global Pony prefixes, subject declarations, black hair, or unrelated scene/presentation content in fragments
+- Do not add headings, bullets, numbering, comments, blank lines, or explanations inside the file
+- Do not write any other artifact or invoke generation
+
+CRITERION-LEVEL REQUIREMENTS
+C16-FRAGMENTS [hard; due Phase 6]
+Each of the four entries is a distinct insertion-compatible clothing-only fragment; none repeats host-owned prefixes or introduces subject, hair, pose, action, setting, camera, or lighting content.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/21#issuecomment-5746874984
+
+C16-REPORT [hard; due Phase 6]
+The response truthfully reports the actual saved path, actual count of four, and fragment mode outside the selection file.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/21#issuecomment-5746874984
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+Saved `outputs/clothing-fragments.txt`.
+
+- **Entry count:** 4 distinct clothing-only fragments
+- **Mode:** Fragment mode, for insertion at `[CLOTHING SLOT]`
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+Requested path: outputs/clothing-fragments.txt
+Availability: available
+FILE CONTENT — BEGIN VERBATIM
+navy blue midi dress, long sleeves, white Peter Pan collar, pleated skirt
+cream cable-knit sweater, brown plaid ankle-length skirt
+sage green overalls, white short-sleeved T-shirt
+burgundy velvet pantsuit, matching tailored blazer and trousers, ivory blouse
+
+FILE CONTENT — END VERBATIM
+
+==============================================================================
+CARD card-tmxoxw9hu0vn
+Revise only a jacket color
+==============================================================================
+
+REQUEST (verbatim)
+Revise only the jacket color in this prompt from yellow to red. Return only the revised prompt and preserve everything else exactly in meaning: A woman with a short black bob wears a yellow denim jacket and silver hoop earrings, standing beside a blue bicycle under an overcast sky.
+
+CONTEXT
+operation: revise
+task: text-to-image
+scope: full-scene
+target_profile: generic
+output_contract: One revised prompt only.
+
+REQUIRED DETAILS
+- woman with a short black bob
+- red denim jacket
+- silver hoop earrings
+- blue bicycle
+- overcast sky
+
+PROHIBITED CHANGES
+- Do not change anything except the jacket color from yellow to red
+- Do not add labels, commentary, alternatives, or generation actions
+
+CRITERION-LEVEL REQUIREMENTS
+C03-OUTPUT [hard; due Phase 2]
+The response contains only the revised prompt, not an explanation, comparison, or prompt package.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/18#issuecomment-5746540497
+
+C03-REVISION [hard; due Phase 3]
+Only the jacket color changes from yellow to red; every other supplied fact and relationship remains unchanged in meaning.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/17#issuecomment-5746449221
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+A woman with a short black bob wears a red denim jacket and silver hoop earrings, standing beside a blue bicycle under an overcast sky.
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+None.
+
+==============================================================================
+CARD card-krb79qmyde4x
+Preserve the existing NoobAI profile
+==============================================================================
+
+REQUEST (verbatim)
+Write one NoobAI positive prompt for one adult man with long white hair, amber eyes, a brown leather apron, and blue work gloves, repairing a brass clock at a wooden bench. Return only the comma-separated positive prompt. Use NoobAI's normalized space-separated tag style; no negative prompt, notes, labels, or variants.
+
+CONTEXT
+operation: create
+task: text-to-image
+scope: full-scene
+target_profile: NoobAI
+output_contract: One unlabeled comma-separated NoobAI positive prompt only.
+
+REQUIRED DETAILS
+- one adult man
+- long white hair
+- amber eyes
+- brown leather apron
+- blue work gloves
+- repairing a brass clock at a wooden bench
+- NoobAI normalized tag style
+
+PROHIBITED CHANGES
+- Do not normalize visible tags with underscores
+- Do not use Pony score/source/rating tags
+- Do not add lore, hidden personality, negative prompt, notes, labels, variants, or generation
+
+CRITERION-LEVEL REQUIREMENTS
+C13-PROFILE [hard; due Phase 4]
+The result preserves the existing NoobAI ordered tag convention, including its quality/model preference opening and space-normalized visible tags, without Pony syntax.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/19#issuecomment-5746665421
+
+C13-PRESERVE [hard; due Phase 3]
+All supplied subject attributes, clothing, action, clock, and workbench relationship remain explicit and correctly bound.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/17#issuecomment-5746449221
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+masterpiece, best quality, newest, 1boy, solo, adult man, long hair, white hair, amber eyes, brown leather apron, blue work gloves, repairing a brass clock, holding a small screwdriver, exposed clock gears, wooden workbench, scattered clockmaking tools, workshop interior, warm task lighting, three-quarter view, upper body
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+None.
+
+==============================================================================
+CARD card-vdt1ufnzrzuz
+Preserve the existing Pony profile
+==============================================================================
+
+REQUEST (verbatim)
+Write one Pony Diffusion V6 XL positive prompt for one adult woman with auburn hair, round glasses, a teal raincoat, and a folded red umbrella, standing at an empty tram stop at night. Use the safe anime source/rating dialect. Return only the comma-separated positive prompt: no negative prompt, notes, labels, or variants.
+
+CONTEXT
+operation: create
+task: text-to-image
+scope: full-scene
+target_profile: Pony Diffusion V6 XL
+output_contract: One unlabeled comma-separated Pony positive prompt only.
+
+REQUIRED DETAILS
+- one adult woman
+- auburn hair
+- round glasses
+- teal raincoat
+- folded red umbrella
+- empty tram stop at night
+- safe anime source/rating dialect
+
+PROHIBITED CHANGES
+- Do not omit or rebind supplied attributes
+- Do not use generic masterpiece/best quality boilerplate
+- Do not add negative prompt, notes, labels, variants, or generation
+
+CRITERION-LEVEL REQUIREMENTS
+C12-PROFILE [hard; due Phase 4]
+The positive prompt starts with the existing Pony score/source/rating convention, uses source_anime and rating_safe, remains comma-separated, and avoids generic masterpiece/best quality boilerplate.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/19#issuecomment-5746665421
+
+C12-PRESERVE [hard; due Phase 3]
+The single adult subject retains every supplied attribute and prop, and the tram stop remains empty apart from her.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/17#issuecomment-5746449221
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+score_9, score_8_up, score_7_up, source_anime, rating_safe, 1girl, solo, adult woman, auburn hair, round glasses, teal raincoat, holding a folded red umbrella at her side, standing, empty tram stop, night, glass shelter, empty bench, tram tracks, wet pavement, streetlight reflections, soft overhead lighting, full body
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+None.
+
+==============================================================================
+CARD card-8slupya958gu
+Critique without silent replacement
+==============================================================================
+
+REQUEST (verbatim)
+Critique the following image prompt for visible clarity, composition, and ambiguity. Identify strengths and concrete problems, but do not rewrite it, provide a replacement prompt, or add variants. Prompt: `A mysterious traveler in a beautiful place, cinematic, amazing lighting, dynamic composition.`
+
+CONTEXT
+operation: critique
+task: text-to-image
+scope: full-scene
+target_profile: generic
+output_contract: A critique only, retaining the requested analytical shape and containing no replacement prompt.
+
+REQUIRED DETAILS
+- analysis of visible clarity
+- analysis of composition
+- analysis of ambiguity
+- strengths and concrete problems
+
+PROHIBITED CHANGES
+- Do not rewrite or replace the supplied prompt
+- Do not provide variants or invoke image generation
+
+CRITERION-LEVEL REQUIREMENTS
+C09-ROUTING [hard; due Phase 2]
+The response is an analysis of the supplied prompt and does not silently turn into prompt writing, rewriting, or variants.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/18#issuecomment-5746540497
+
+C09-QUALITY [advisory; due Phase 2]
+The critique distinguishes useful strengths from specific visible-clarity, composition, and ambiguity problems.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/18#issuecomment-5746540497
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+## Overall assessment
+The prompt communicates a mood, but not a clearly defined image. Its main weakness is **underspecification rather than contradiction**: the terms are compatible, yet leave most visible decisions to the generator.
+
+### Strengths
+- **Simple subject–setting structure:** A traveler in a location is easy to parse, without competing subjects or overloaded instructions.
+- **Coherent aesthetic intent:** “Mysterious” and “cinematic” suggest an atmospheric scene.
+- **Creative flexibility:** The brevity allows broad interpretation, which can be useful for exploration, though less useful for consistent results.
+
+### Concrete problems
+- **Visible clarity — “mysterious traveler”:** “Traveler” establishes a role but gives no appearance, clothing, equipment, pose, or action. “Mysterious” supplies an impression without specifying what makes that impression visible.
+- **Setting — “beautiful place”:** This is a subjective judgment, not an environment description. There is no terrain, architecture, weather, or time of day to anchor the scene.
+- **Lighting — “amazing lighting”:** This evaluates the desired result rather than describing it. Light source, direction, softness, color, and contrast are all unspecified.
+- **Composition — “dynamic composition”:** No framing, viewpoint, subject placement, directional lines, or spatial relationships establish what “dynamic” means. The prompt also leaves unclear whether the traveler or the setting should dominate.
+- **Style ambiguity — “cinematic”:** This is a useful broad cue, but it does not settle the visual medium, palette, lens feel, or film aesthetic. Different interpretations could produce substantially different images.
+
+**Bottom line:** This works as a loose mood brief, but offers limited control over subject readability, visual hierarchy, and composition. More adjectives would not resolve the issue; the missing information is concrete visual direction.
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+None.
+
+==============================================================================
+CARD card-5ozqf2p0o2bx
+Empty courtyard with no people
+==============================================================================
+
+REQUEST (verbatim)
+Write one text-to-image prompt for an empty sunlit stone courtyard with a dry fountain, ivy on the walls, and closed wooden doors. No people, animals, statues, silhouettes, or reflections of figures may appear. Return only the prompt and do not add a negative-prompt field.
+
+CONTEXT
+operation: create
+task: text-to-image
+scope: full-scene
+target_profile: generic
+output_contract: One prompt only, with the scene exclusion expressed without a separate negative field.
+
+REQUIRED DETAILS
+- empty sunlit stone courtyard
+- dry fountain
+- ivy on the walls
+- closed wooden doors
+- absence of people, animals, statues, silhouettes, and reflected figures
+
+PROHIBITED CHANGES
+- Do not introduce any person, animal, statue, silhouette, or reflected figure
+- Do not create a separate negative prompt
+- Do not invoke image or video generation
+
+CRITERION-LEVEL REQUIREMENTS
+C05-OUTPUT [hard; due Phase 2]
+The response is one prompt only and does not create an unsolicited negative-prompt field.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/18#issuecomment-5746540497
+
+C05-EXCLUSION [hard; due Phase 5]
+The positive scene remains an empty courtyard and does not introduce any excluded living or figure-like subject directly or through optional detail.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/20#issuecomment-5746782536
+
+C05-STYLE [advisory; due Phase 5]
+The exclusion is communicated naturally without overwhelming the requested visual scene.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/20#issuecomment-5746782536
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+A wide, eye-level view of an empty sunlit stone courtyard, centered on a plain dry fountain with a visibly empty basin, ivy climbing weathered walls, and closed wooden doors. Warm light reveals rough stone textures and casts crisp architectural and leafy shadows across the paving; the entire scene contains no people, animals, statues, silhouettes, or reflections of figures.
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+None.
+
+==============================================================================
+CARD card-19jlfprfwh9p
+Adapt a supplied scene prompt to local Krea 2
+==============================================================================
+
+REQUEST (verbatim)
+Adapt this supplied prompt for local Krea 2 RAW/Turbo. Preserve every scene fact and return only one ready-to-paste prompt with no label, negative prompt, notes, variants, or explanation. Source prompt: A red ceramic teapot sits image-left of a white cup on a dark walnut table. Morning light enters from the right, and the plain cream wall behind them is empty.
+
+CONTEXT
+operation: adapt
+task: text-to-image
+scope: full-scene
+target_profile: local Krea 2 RAW/Turbo
+output_contract: One unlabeled natural-language Krea 2 prompt and nothing else.
+
+REQUIRED DETAILS
+- red ceramic teapot image-left of a white cup
+- dark walnut table
+- morning light from the right
+- plain empty cream wall
+
+PROHIBITED CHANGES
+- Do not add, remove, recolor, relocate, or replace subjects, props, surfaces, lighting direction, or background details
+- Do not add a negative prompt, labels, notes, variants, or explanation
+- Do not invoke image or video generation
+
+CRITERION-LEVEL REQUIREMENTS
+C02-OUTPUT [hard; due Phase 2]
+The response is exactly one unlabeled prompt, without a package, negative field, notes, variants, or explanation.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/18#issuecomment-5746540497
+
+C02-PRESERVE [hard; due Phase 3]
+The adaptation preserves the two objects, their colors and image-left relationship, table, right-side morning light, and empty cream wall without adding visual facts.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/17#issuecomment-5746449221
+
+C02-PROFILE [hard; due Phase 4]
+The result uses a coherent natural-language paragraph suitable for the selected local Krea 2 RAW/Turbo contract; detail does not become invention.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/19#issuecomment-5746665421
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+A red ceramic teapot sits to the left of a white cup as viewed in the image, both resting on a dark walnut table. Morning light enters from the right, illuminating the objects against an empty, plain cream wall.
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+None.
+
+==============================================================================
+CARD card-j0so19yp45vk
+Export four clothing-only wildcard fragments
+==============================================================================
+
+REQUEST (verbatim)
+Create a ComfyUI wildcard file at `outputs/clothing-fragments.txt` containing exactly four distinct clothing-only fragments suitable for insertion at `[CLOTHING SLOT]` in this host: `score_9, score_8_up, score_7_up, source_anime, rating_safe, 1girl, black hair, [CLOTHING SLOT]`. Each fragment must be one nonempty physical line and describe only one garment or coordinated outfit; do not repeat the host prefix, subject, hair, pose, action, setting, camera, lighting, comments, numbering, headings, or blank lines. After saving, report the actual path, entry count, and that the file is fragment mode outside the file.
+
+CONTEXT
+operation: create
+task: text-to-image
+scope: clothing
+target_profile: Pony host with model-neutral clothing fragments
+output_contract: Save outputs/clothing-fragments.txt as plain UTF-8 with exactly four unique nonblank clothing-fragment lines; separately report actual path, count 4, and fragment mode.
+
+REQUIRED DETAILS
+- outputs/clothing-fragments.txt
+- exactly four distinct clothing-only fragments
+- one nonempty physical line per entry
+- external completion report with actual path, count, and fragment mode
+
+PROHIBITED CHANGES
+- Do not repeat global Pony prefixes, subject declarations, black hair, or unrelated scene/presentation content in fragments
+- Do not add headings, bullets, numbering, comments, blank lines, or explanations inside the file
+- Do not write any other artifact or invoke generation
+
+CRITERION-LEVEL REQUIREMENTS
+C16-FRAGMENTS [hard; due Phase 6]
+Each of the four entries is a distinct insertion-compatible clothing-only fragment; none repeats host-owned prefixes or introduces subject, hair, pose, action, setting, camera, or lighting content.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/21#issuecomment-5746874984
+
+C16-REPORT [hard; due Phase 6]
+The response truthfully reports the actual saved path, actual count of four, and fragment mode outside the selection file.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/21#issuecomment-5746874984
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+Saved `outputs/clothing-fragments.txt` with exactly **4 distinct entries** in **fragment mode**—one clothing-only fragment per line.
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+Requested path: outputs/clothing-fragments.txt
+Availability: available
+FILE CONTENT — BEGIN VERBATIM
+navy blue sailor dress, white collar, red neck ribbon, long sleeves, pleated skirt
+cream cable-knit turtleneck sweater, brown plaid midi skirt
+forest green hooded duffle coat, wooden toggle fastenings, patch pockets
+white collared blouse, burgundy buttoned vest, charcoal tailored trousers
+
+FILE CONTENT — END VERBATIM
+
+==============================================================================
+CARD card-r0nl7n1wn6ln
+Illustrious Danbooru output with targeted local lookup
+==============================================================================
+
+REQUEST (verbatim)
+Write one positive prompt for Illustrious in explicitly requested Danbooru Version for one adult woman with grey hair, green eyes, a black turtleneck, and white gloves, standing in a library. Before answering, use the existing local Danbooru lookup script to confirm the canonical spelling `grey_hair`; do not read raw CSV files and do not add related candidates. Return only the comma-separated positive prompt, with no negative prompt, notes, or explanation.
+
+CONTEXT
+operation: create
+task: text-to-image
+scope: full-scene
+target_profile: Illustrious
+output_contract: One unlabeled comma-separated Illustrious Danbooru positive prompt only.
+
+REQUIRED DETAILS
+- one adult woman
+- canonical grey_hair tag confirmed through local lookup
+- green eyes
+- black turtleneck
+- white gloves
+- standing in a library
+- Illustrious Danbooru-style positive prompt
+
+PROHIBITED CHANGES
+- Do not read raw Danbooru CSV files
+- Do not add related-tag candidates or uncertain character/source tags
+- Do not use Pony score/source/rating tags
+- Do not add a negative prompt, notes, explanation, web research, or generation
+
+CRITERION-LEVEL REQUIREMENTS
+C11-PROFILE [hard; due Phase 4]
+The prompt preserves the existing Illustrious convention: comma-separated Danbooru-style tags with restrained quality/composition guidance, lower_snake_case canonical forms where applicable, and no Pony prefix.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/19#issuecomment-5746665421
+
+C11-CONSTRAINTS [hard; due Phase 5]
+The canonical grey-hair result is used for the requested woman, all requested visible facts remain represented, and no optional related candidate changes the scene.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/20#issuecomment-5746782536
+
+C11-LOOKUP-EVIDENCE [hard; due Phase 5]
+The captured tool results confirm grey_hair using the selected revision’s local lookup script. A mere spelling echo is not confirmation; missing usable trace evidence is not-run.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/20#issuecomment-5746782536
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+masterpiece, highres, 1girl, solo, mature_female, grey_hair, green_eyes, black_sweater, turtleneck, white_gloves, standing, library
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+None.
+
+CAPTURED LOOKUP EVIDENCE (anonymous packet; identity paths redacted)
+{
+  "availability": "available",
+  "calls": [
+    {
+      "args": {
+        "command": "python3 scripts/danbooru_lookup.py tag grey_hair",
+        "cwd": "<redacted>"
+      },
+      "result_content": [
+        {
+          "text": "grey_hair [general] count=574323\naliases: 白髪, 銀髪, 銀髪ロング\n\n\nWall time: 32.83 seconds",
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "trace_complete": true
+}
+
+==============================================================================
+CARD card-ihgtdan7wvuv
+Four controlled composition variants
+==============================================================================
+
+REQUEST (verbatim)
+Create exactly four genuinely different composition variants of this fixed scene. Number them 1 through 4 and give one complete prompt per numbered entry. Vary only composition (framing, viewpoint, and placement within the image); hold lighting and all physical scene facts fixed. Fixed scene: a red cube image-left of a blue sphere on a gray table; a sign behind them reads exactly `OPEN`; both objects and the sign are fully visible; plain gray backdrop; diffuse frontal light with weak shadows.
+
+CONTEXT
+operation: create
+task: text-to-image
+scope: full-scene
+target_profile: generic
+output_contract: Exactly four numbered complete prompts, each a semantically distinct composition treatment of the same fixed scene.
+
+REQUIRED DETAILS
+- exactly four composition variants
+- red cube image-left of a blue sphere
+- gray table
+- sign behind them reading OPEN
+- all objects and sign fully visible
+- plain gray backdrop
+- diffuse frontal light with weak shadows
+
+PROHIBITED CHANGES
+- Do not vary object identity, color, physical left-right relation, table, sign text, visibility, backdrop, or lighting
+- Do not count the unchanged source as a variant or pad with paraphrases
+- Do not invoke image generation
+
+CRITERION-LEVEL REQUIREMENTS
+C07-DISTINCTNESS [hard; due Phase 6]
+All four entries communicate genuinely different compositions rather than paraphrases or changes outside composition.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/21#issuecomment-5746874984
+
+C07-PRESERVE [hard; due Phase 6]
+Every variant preserves all non-composition facts, exact lettering, visibility, and fixed lighting while maintaining the cube's image-left relation to the sphere.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/21#issuecomment-5746874984
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+1. A straight-on, medium-wide composition with the entire arrangement centered and balanced margins around it. A red cube sits image-left of a blue sphere on a gray table, with a sign behind them reading exactly `OPEN`. Both objects and the entire sign are fully visible and unobstructed, with the lettering clearly legible. Plain gray backdrop; diffuse frontal light with weak shadows.
+
+2. A wide, straight-on composition with the entire arrangement small in the lower-left portion of the image, leaving generous empty gray space above and to the right. A red cube sits image-left of a blue sphere on a gray table, with a sign behind them reading exactly `OPEN`. Both objects and the entire sign remain fully visible and unobstructed. Plain gray backdrop; diffuse frontal light with weak shadows.
+
+3. A tight, straight-on composition in which the entire arrangement nearly fills the frame, with narrow but clear margins and no cropping. A red cube sits image-left of a blue sphere on a gray table, with a sign behind them reading exactly `OPEN`. Both objects and the entire sign are fully visible and unobstructed, with clearly legible lettering. Plain gray backdrop; diffuse frontal light with weak shadows.
+
+4. A moderately elevated frontal viewpoint looking gently downward, showing more of the tabletop and the cube’s top face, with the entire arrangement placed in the right half of the frame and open space to the left. A red cube sits image-left of a blue sphere on a gray table; a sign behind them reads exactly `OPEN`. Both objects and the entire sign are fully visible and unobstructed. Plain gray backdrop; diffuse frontal light with weak shadows.
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+None.
+
+==============================================================================
+CARD card-9l5yii0xkd0j
+Compare supplied SDXL and Krea 2 prompts
+==============================================================================
+
+REQUEST (verbatim)
+Compare these two supplied prompts for fidelity to the same brief, model-appropriate expression, and likely ambiguity. Keep the answer as a labeled comparison; do not merge, rewrite, or replace either prompt and do not produce a third prompt. Brief: a green bicycle leaning against a white brick wall in soft overcast daylight. SDXL prompt: `green bicycle leaning against a white brick wall, soft overcast daylight, eye-level medium shot, restrained color palette`. Krea 2 prompt: `A green bicycle rests against a white brick wall under soft, even overcast daylight, framed at eye level with a restrained palette.`
+
+CONTEXT
+operation: compare
+task: text-to-image
+scope: full-scene
+target_profile: SDXL and local Krea 2 RAW/Turbo
+output_contract: A labeled two-prompt comparison, not a generated prompt or merged alternative.
+
+REQUIRED DETAILS
+- separate assessment of the supplied SDXL prompt
+- separate assessment of the supplied Krea 2 prompt
+- comparison of fidelity, model expression, and ambiguity
+
+PROHIBITED CHANGES
+- Do not merge, rewrite, or replace either prompt
+- Do not produce a third prompt or invoke generation
+
+CRITERION-LEVEL REQUIREMENTS
+C10-ROUTING [hard; due Phase 2]
+The response remains a labeled comparison of both supplied prompts and does not collapse into one new or rewritten prompt.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/18#issuecomment-5746540497
+
+C10-ANALYSIS [advisory; due Phase 4]
+The comparison separately addresses scene fidelity, profile-appropriate expression, and ambiguity for both prompts.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/19#issuecomment-5746665421
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+### 1. Fidelity to the brief
+- **SDXL prompt:** Explicitly preserves every core requirement: green bicycle, leaning against a white brick wall, and soft overcast daylight.
+- **Krea 2 prompt:** Preserves the subject, wall, and lighting. “Rests against” strongly suggests leaning but is slightly less explicit about the bicycle’s tilt.
+- **Shared additions:** Eye-level framing and a restrained palette are compatible with the brief but not required. SDXL additionally specifies a medium shot; Krea 2 leaves shot size open.
+
+### 2. Model-appropriate expression
+- **SDXL prompt:** Its concise, concrete visual phrases are readily interpretable. However, the selected skill recommends natural descriptive prose for SDXL, rather than treating comma-separated phrasing as its preferred dialect. This is a stylistic mismatch with that guidance, not evidence the prompt will fail.
+- **Krea 2 prompt:** The full sentence clearly connects subject, setting, lighting, and viewpoint. It fits the skill’s generic natural-language guidance, but the skill provides no Krea 2-specific profile, so a model-specific advantage cannot be established.
+
+### 3. Likely ambiguity
+- **SDXL prompt:** “Medium shot” narrows framing, but its application to a bicycle is imprecise and could produce cropping. “Leaning against” makes the intended physical relationship clearer.
+- **Krea 2 prompt:** The absence of a shot size allows more variation in subject scale and surrounding wall. “Rests against” leaves slightly more latitude in posture.
+- **Both:** “Restrained palette” could mean fewer colors or muted saturation, potentially reducing the green’s vividness. Neither specifies viewing direction or the bicycle’s contact point with the wall; these are ordinary open details, not contradictions.
+
+### Overall comparison
+**SDXL is marginally more literal and compositionally constrained; Krea 2 is more fluidly expressed but leaves framing and posture slightly more open.** Both closely match the brief. Their wording alone does not establish which model would produce the more faithful image.
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+None.
+
+==============================================================================
+CARD card-7uvl3uo6kqy0
+Compare supplied SDXL and Krea 2 prompts
+==============================================================================
+
+REQUEST (verbatim)
+Compare these two supplied prompts for fidelity to the same brief, model-appropriate expression, and likely ambiguity. Keep the answer as a labeled comparison; do not merge, rewrite, or replace either prompt and do not produce a third prompt. Brief: a green bicycle leaning against a white brick wall in soft overcast daylight. SDXL prompt: `green bicycle leaning against a white brick wall, soft overcast daylight, eye-level medium shot, restrained color palette`. Krea 2 prompt: `A green bicycle rests against a white brick wall under soft, even overcast daylight, framed at eye level with a restrained palette.`
+
+CONTEXT
+operation: compare
+task: text-to-image
+scope: full-scene
+target_profile: SDXL and local Krea 2 RAW/Turbo
+output_contract: A labeled two-prompt comparison, not a generated prompt or merged alternative.
+
+REQUIRED DETAILS
+- separate assessment of the supplied SDXL prompt
+- separate assessment of the supplied Krea 2 prompt
+- comparison of fidelity, model expression, and ambiguity
+
+PROHIBITED CHANGES
+- Do not merge, rewrite, or replace either prompt
+- Do not produce a third prompt or invoke generation
+
+CRITERION-LEVEL REQUIREMENTS
+C10-ROUTING [hard; due Phase 2]
+The response remains a labeled comparison of both supplied prompts and does not collapse into one new or rewritten prompt.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/18#issuecomment-5746540497
+
+C10-ANALYSIS [advisory; due Phase 4]
+The comparison separately addresses scene fidelity, profile-appropriate expression, and ambiguity for both prompts.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/19#issuecomment-5746665421
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+### 1. Fidelity to the brief
+- **SDXL prompt:** Explicitly preserves all four essentials: green bicycle, leaning against a white brick wall, and soft overcast daylight. Eye-level framing, a medium shot, and a restrained palette add direction not required by the brief, without directly contradicting it.
+- **Krea 2 prompt:** Preserves the subject, wall, and lighting. “Rests against” strongly suggests the intended leaning relationship but is slightly less explicit than “leaning against.” “Even” is consistent with overcast light. Eye-level framing and a restrained palette are compatible additions.
+
+### 2. Model-appropriate expression
+- **SDXL prompt:** Short, concrete, and readily interpretable. However, its comma-separated phrase structure is less aligned with the selected skill’s SDXL preference for concise natural-language prose. This is a stylistic mismatch, not a reason to assume poor results; it avoids excessive tags and irrelevant quality boilerplate.
+- **Krea 2 prompt:** A coherent natural-language sentence with clearly connected visual details. The selected skill does not provide a Krea 2 profile, so its general clarity can be assessed, but a model-specific advantage cannot be established from that guidance.
+
+### 3. Likely ambiguity
+- **SDXL prompt:** “Medium shot” gives additional framing direction but can be imprecise for a bicycle: it does not guarantee that both wheels remain fully visible. The leaning relationship is explicit.
+- **Krea 2 prompt:** Eye level specifies viewpoint but not shot size, leaving more freedom over cropping and subject scale. “Rests against” leaves slightly more latitude in the bicycle’s posture.
+- **Both:** “Restrained palette” is subjective and could encourage muted green rather than a vivid green. Neither specifies bicycle orientation or the exact point of contact with the wall; these are open choices rather than failures to satisfy the brief.
+
+### Overall comparison
+**The SDXL prompt has a slight edge in literal fidelity and framing specificity. The Krea 2 prompt has smoother prose but leaves shot size more open.** Both closely match the brief; neither wording alone establishes superior generated results.
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+None.
+
+==============================================================================
+CARD card-ajy9q39axxp7
+SDXL tags only without negative prompt
+==============================================================================
+
+REQUEST (verbatim)
+Write one SDXL text-to-image prompt for a glass greenhouse on a windswept cliff at sunrise. Use comma-separated visual phrases only. Return only the prompt: no label, negative prompt, notes, variants, or explanation.
+
+CONTEXT
+operation: create
+task: text-to-image
+scope: full-scene
+target_profile: SDXL
+output_contract: One unlabeled comma-separated SDXL tag-style prompt and nothing else.
+
+REQUIRED DETAILS
+- glass greenhouse
+- windswept cliff
+- sunrise
+- comma-separated visual phrases only
+
+PROHIBITED CHANGES
+- Do not add a negative prompt, labels, notes, variants, or explanatory prose
+- Do not invoke image or video generation
+
+CRITERION-LEVEL REQUIREMENTS
+C01-OUTPUT [hard; due Phase 2]
+The response is exactly one unlabeled comma-separated visual-phrase prompt, with no negative prompt, notes, variants, or wrapper.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/18#issuecomment-5746540497
+
+C01-PROFILE [hard; due Phase 4]
+The prompt expresses the requested greenhouse, cliff, wind, and sunrise in a compact SDXL-compatible phrase dialect without importing another profile's boilerplate.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/19#issuecomment-5746665421
+
+C01-STYLE [advisory; due Phase 4]
+The selected visual phrasing is concise, coherent, and immediately usable.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/19#issuecomment-5746665421
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+glass greenhouse on a rugged windswept coastal cliff at sunrise, slender steel framework, golden reflections across transparent panes, lush plants visible inside, cliffside grasses bent by strong wind, ocean whitecaps far below, drifting sea mist, low amber sun on the horizon, warm backlighting and cool blue shadows, wide three-quarter view, photorealistic architectural landscape photography
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+None.
+
+==============================================================================
+CARD card-tu376plipx8u
+Compare supplied SDXL and Krea 2 prompts
+==============================================================================
+
+REQUEST (verbatim)
+Compare these two supplied prompts for fidelity to the same brief, model-appropriate expression, and likely ambiguity. Keep the answer as a labeled comparison; do not merge, rewrite, or replace either prompt and do not produce a third prompt. Brief: a green bicycle leaning against a white brick wall in soft overcast daylight. SDXL prompt: `green bicycle leaning against a white brick wall, soft overcast daylight, eye-level medium shot, restrained color palette`. Krea 2 prompt: `A green bicycle rests against a white brick wall under soft, even overcast daylight, framed at eye level with a restrained palette.`
+
+CONTEXT
+operation: compare
+task: text-to-image
+scope: full-scene
+target_profile: SDXL and local Krea 2 RAW/Turbo
+output_contract: A labeled two-prompt comparison, not a generated prompt or merged alternative.
+
+REQUIRED DETAILS
+- separate assessment of the supplied SDXL prompt
+- separate assessment of the supplied Krea 2 prompt
+- comparison of fidelity, model expression, and ambiguity
+
+PROHIBITED CHANGES
+- Do not merge, rewrite, or replace either prompt
+- Do not produce a third prompt or invoke generation
+
+CRITERION-LEVEL REQUIREMENTS
+C10-ROUTING [hard; due Phase 2]
+The response remains a labeled comparison of both supplied prompts and does not collapse into one new or rewritten prompt.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/18#issuecomment-5746540497
+
+C10-ANALYSIS [advisory; due Phase 4]
+The comparison separately addresses scene fidelity, profile-appropriate expression, and ambiguity for both prompts.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/19#issuecomment-5746665421
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+### 1. Fidelity to the brief
+- **SDXL prompt:** Explicitly preserves every core element: green bicycle, leaning pose, white brick wall, and soft overcast daylight. Eye-level medium framing and a restrained palette add constraints not required by the brief, but do not directly contradict it.
+- **Krea 2 prompt:** Preserves the subject, wall, and lighting. “Rests against” strongly suggests leaning, though it is slightly less explicit. “Even” is consistent with overcast illumination. Eye-level framing and a restrained palette are additional choices.
+
+### 2. Model-appropriate expression
+- **SDXL prompt:** Its short, concrete, comma-separated phrases are readily interpretable. However, the selected skill’s SDXL profile favors concise natural-language prose rather than tag-style phrasing. This is a mild stylistic mismatch, not grounds to expect failure.
+- **Krea 2 prompt:** The cohesive sentence clearly connects subject, setting, and lighting, fitting generic natural-language image-prompt guidance. The selected skill provides no Krea 2-specific profile, so it does not support a stronger claim about optimal syntax or comparative model performance.
+
+### 3. Likely ambiguity
+- **SDXL prompt:** “Leaning against” makes the physical relationship explicit. “Medium shot” narrows framing, but its meaning for a bicycle is less standardized than for a person; full-wheel visibility remains uncertain.
+- **Krea 2 prompt:** “Rests against” leaves slightly more latitude in the bicycle’s posture. Eye level specifies viewpoint but not shot distance, allowing more variation in crop and surrounding wall.
+- **Both:** “Restrained palette” could mean fewer colors or reduced saturation, potentially muting the bicycle’s green. Neither specifies viewing direction or exact bicycle placement, which are reasonable freedoms under this brief.
+
+### 4. Overall comparison
+**The SDXL prompt is marginally more explicit about the required leaning pose and more constrained in framing. The Krea 2 prompt is more fluid prose but leaves framing more open.** Both closely match the brief; the wording alone does not establish which model will produce the more faithful image.
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+None.
+
+==============================================================================
+CARD card-66zr8kvjuve3
+Preserve the existing NoobAI profile
+==============================================================================
+
+REQUEST (verbatim)
+Write one NoobAI positive prompt for one adult man with long white hair, amber eyes, a brown leather apron, and blue work gloves, repairing a brass clock at a wooden bench. Return only the comma-separated positive prompt. Use NoobAI's normalized space-separated tag style; no negative prompt, notes, labels, or variants.
+
+CONTEXT
+operation: create
+task: text-to-image
+scope: full-scene
+target_profile: NoobAI
+output_contract: One unlabeled comma-separated NoobAI positive prompt only.
+
+REQUIRED DETAILS
+- one adult man
+- long white hair
+- amber eyes
+- brown leather apron
+- blue work gloves
+- repairing a brass clock at a wooden bench
+- NoobAI normalized tag style
+
+PROHIBITED CHANGES
+- Do not normalize visible tags with underscores
+- Do not use Pony score/source/rating tags
+- Do not add lore, hidden personality, negative prompt, notes, labels, variants, or generation
+
+CRITERION-LEVEL REQUIREMENTS
+C13-PROFILE [hard; due Phase 4]
+The result preserves the existing NoobAI ordered tag convention, including its quality/model preference opening and space-normalized visible tags, without Pony syntax.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/19#issuecomment-5746665421
+
+C13-PRESERVE [hard; due Phase 3]
+All supplied subject attributes, clothing, action, clock, and workbench relationship remain explicit and correctly bound.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/17#issuecomment-5746449221
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+masterpiece, best quality, newest, 1boy, solo, adult man, long hair, white hair, amber eyes, brown leather apron, blue work gloves, repairing a brass clock, holding a small screwdriver, exposed clock gears, wooden workbench, scattered clockmaking tools, workshop, warm task lighting, three quarter view, upper body, detailed hands
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+None.
+
+==============================================================================
+CARD card-lh7ugo5b6sme
+Preserve the existing Wan text-to-video route
+==============================================================================
+
+REQUEST (verbatim)
+Write one Wan text-to-video prompt. A yellow paper boat drifts along a narrow rain-filled gutter beside a gray curb; raindrops ripple the water and push tiny leaves past it. The camera makes a slow low tracking move alongside the boat, then gently pulls back as it reaches a storm drain. Photorealistic macro cinematography, cool overcast light. Return one cohesive paragraph only, with no shot list, label, notes, variants, or generation.
+
+CONTEXT
+operation: create
+task: text-to-video
+scope: full-scene
+target_profile: Wan
+output_contract: One unlabeled cohesive Wan video-prompt paragraph.
+
+REQUIRED DETAILS
+- yellow paper boat
+- rain-filled gutter beside a gray curb
+- ripples and tiny moving leaves
+- slow low tracking move
+- gentle pullback at a storm drain
+- photorealistic macro cinematography
+- cool overcast light
+
+PROHIBITED CHANGES
+- Do not convert the prompt into a shot list or multiple variants
+- Do not add dialogue, sound, hidden story, labels, notes, or video generation
+
+CRITERION-LEVEL REQUIREMENTS
+C14-ROUTE [hard; due Phase 2]
+The output follows the existing Wan route as one cohesive cinematic paragraph rather than a shot list or image prompt.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/16#issuecomment-5746288781
+
+C14-MOTION [hard; due Phase 3]
+The paragraph preserves subject motion, environmental motion, camera progression, scene, atmosphere, and stylization without invisible story or audio invention.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/16#issuecomment-5746288781
+
+C14-STYLE [advisory; due Phase 3]
+Camera language and progression are clear without becoming muddy or repetitive.
+Authority: https://github.com/lfelipegg/scenario-maker-skill/issues/16#issuecomment-5746288781
+
+ACTUAL OUTPUT — BEGIN VERBATIM
+A yellow paper boat drifts and gently bobs along a narrow rain-filled gutter beside a gray curb, as falling raindrops spread overlapping ripples and nudge tiny leaves past its folded hull. In one continuous movement, the camera tracks slowly alongside at water level, then gently pulls back as the boat reaches a storm drain, revealing the wet grate and converging current. Photorealistic macro cinematography, shallow depth of field, detailed paper fibers and glistening concrete under soft, cool overcast light.
+ACTUAL OUTPUT — END VERBATIM
+
+FIXTURES
+None.
+
+CAPTURED GENERATED ARTIFACTS
+None.
+

@@ -1,0 +1,47 @@
+{
+  "kind": "partial-maintainer-semantic-review",
+  "recorded_at": "2026-09-20T17:52:39.946Z",
+  "capture_cohort": "evals/baseline/2026-09-20-original",
+  "previous_evaluation": "evals/results/2026-09-20-cwd-correction",
+  "baseline_revision": "5fcc3d0eded83c6a9aaf472a1dc8d5ce24011d9d",
+  "evaluator_sha256": "454be4addf369c5bb7e5be14c92ded3b7476bb8d0e8b0e2d0f4e76e64d6c9f8e",
+  "cases_sha256": "0df2333edfbea2f25cfc777d8d6d1039a451ca2c897bd4e03032703970f57037",
+  "rubric_sha256": "891d7c57fda90a5bd901c2d470cca85675445e45b3e05af9aea24fa363491cb6",
+  "reviews": "evals/reviews/2026-09-20-maintainer-semantic.jsonl",
+  "reviews_sha256": "7e4746081fc14c613b0bdb6d1c185f73994b71026328a1175ab87f77479bf298",
+  "review_provenance": "evals/reviews/2026-09-20-maintainer-semantic-provenance.jsonl",
+  "anonymous_packet": "evals/results/2026-09-20-cwd-correction/review-packet.jsonl",
+  "anonymous_packet_sha256": "f947acd2ca9da14720838baf11bb4d13930df45f3914f9e635abc261ab345186",
+  "private_mapping": "evals/results/2026-09-20-cwd-correction/review-mapping.jsonl",
+  "private_mapping_sha256": "d62f78cd7eccaba6f07cb514e9808ae909d1d24c886c9a1c7fb770aac81a2cb5",
+  "review_presentation": "evals/reviews/2026-09-20-anonymous-review.txt",
+  "review_presentation_sha256": "084a3599be5e19c9a0538932db2024056bb375a0b1635e4e2584f8b064f05e7c",
+  "judgments": {
+    "mechanical": {
+      "passed": 63,
+      "failed": 0,
+      "not-run": 0
+    },
+    "maintainer": {
+      "passed": 14,
+      "failed": 0,
+      "not-run": 94
+    }
+  },
+  "generation_repeated": false,
+  "raw_evidence_changed": false,
+  "case_or_rubric_changed": false,
+  "execution_environment_changed": false,
+  "labels_regenerated": false,
+  "evaluation_change": "Only 14 explicit human criterion judgments imported. Model recommendations are excluded; remaining 94 semantic judgments are not-run.",
+  "acceptance": "not granted; Phase 1 remains open",
+  "summary_caveat": "The existing evaluator may label a partially reviewed criterion unstable-baseline or mixed_outcomes when passed and not-run coexist. Pending review is not an observed failure; use explicit state counts.",
+  "evaluation_procedure": {
+    "executable": "python3",
+    "arguments": [
+      "-c",
+      "import importlib.util,json\nfrom pathlib import Path\ns=importlib.util.spec_from_file_location('evaluator','evals/evaluate.py')\ne=importlib.util.module_from_spec(s);s.loader.exec_module(e)\ncases=e.load_cases(Path('evals/cases.jsonl'))\ncriteria={c['id']:(case['id'],c) for case in cases for c in case['criteria']}\nroot=Path('evals/baseline/2026-09-20-original').resolve()\nattempts,warnings=e.discover_attempts(root,{c['id'] for c in cases})\nreviews=e.load_reviews(Path('evals/reviews/2026-09-20-maintainer-semantic.jsonl'),criteria)\nrows,groups=e.score_all(cases,attempts,reviews,root)\nsummary=e.summarize(cases,rows,groups,e.result_kinds(root,groups),warnings)\nassert len(rows)==48 and len(reviews)==14\nprint(json.dumps({'scores':rows,'summary':summary}))\n"
+    ],
+    "note": "Calls existing load_cases/discover_attempts/load_reviews/score_all/summarize; intentionally does not call review_material so retained anonymous labels remain unchanged."
+  }
+}

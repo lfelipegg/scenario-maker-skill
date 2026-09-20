@@ -1,0 +1,54 @@
+{
+  "recorded_at": "2026-09-20T17:57:53.849Z",
+  "scope": "Phase 1 only",
+  "human_review_method": "OMP interactive ask; exact evidence approved in option descriptions",
+  "reviewer": "human:maintainer",
+  "authoritative_counts": {
+    "mechanical": {
+      "passed": 63,
+      "failed": 0,
+      "not-run": 0
+    },
+    "maintainer": {
+      "passed": 14,
+      "failed": 0,
+      "not-run": 94
+    }
+  },
+  "authoritative_evaluation": "evals/results/2026-09-20-human-review-01",
+  "human_reviews": "evals/reviews/2026-09-20-maintainer-semantic.jsonl",
+  "human_provenance": "evals/reviews/2026-09-20-maintainer-semantic-provenance.jsonl",
+  "anonymous_presentation": "evals/reviews/2026-09-20-anonymous-review.txt",
+  "private_mapping": "evals/results/2026-09-20-cwd-correction/review-mapping.jsonl",
+  "model_analysis_requested": true,
+  "model_recommendations": "evals/reviews/2026-09-20-model-recommendations.jsonl",
+  "readable_model_analysis": "evals/reviews/2026-09-20-model-recommendations.txt",
+  "model_analysis_summary": "evals/reviews/2026-09-20-model-analysis-summary.json",
+  "model_proposed_counts": {
+    "passed": 92,
+    "failed": 2,
+    "not-run": 0
+  },
+  "model_recommendations_are_human_acceptance": false,
+  "phase_acceptance": "not granted",
+  "next_action": "Maintainer may inspect the full anonymous cards and model advice, then provide explicit criterion-level human judgments through ask. Keep missing human judgments not-run. Do not close Phase 1 without maintainer acceptance or start Phase 2 without explicit authorization.",
+  "evidence_policy": {
+    "baseline_revision": "5fcc3d0eded83c6a9aaf472a1dc8d5ce24011d9d",
+    "baseline_rerun": false,
+    "raw_evidence_modified": false,
+    "prior_evaluations_modified": false,
+    "anonymous_labels_regenerated": false,
+    "prompt_rules_modified": false,
+    "unrelated_worktree_changes_touched": false,
+    "staged_or_committed": false,
+    "tracker_mutated": false
+  },
+  "verification": {
+    "human_reviews_accepted": 14,
+    "model_advice_rejected_by_evaluator_review_loader": true,
+    "remaining_criteria_recommendations": 94,
+    "full_outputs_presented_exactly": 48,
+    "fixture_hashes_match": true,
+    "evaluator_warnings": []
+  }
+}

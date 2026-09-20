@@ -1,0 +1,576 @@
+SCENARIO MAKER — MODEL ADVICE, NOT HUMAN ACCEPTANCE
+
+Scope: 42 remaining anonymous cards; 94 criterion recommendations.
+Proposed: 92 passed / 2 failed / 0 not-run. These are MODEL recommendations only.
+Authoritative evaluation: 63 mechanical passes; 14 human passes; 94 human judgments NOT-RUN.
+No Phase 1 acceptance, no Phase 2 authorization, no generated-media quality claim.
+Full outputs: evals/reviews/2026-09-20-anonymous-review.txt
+
+PRIORITY FINDINGS
+
+explicit-workbench-binding
+Classification: criterion-level proposed failures; human interpretation required
+Two prompts juxtapose brass-clock repair and wooden workbench tags without explicitly locating the repair at the bench. A third NoobAI output says leaning over a wooden workbench. Recommendations apply the explicit-binding requirement, while acknowledging that a human may accept tag-list context.
+Cards: card-krb79qmyde4x, card-66zr8kvjuve3
+
+unscored-invention-boundary
+Classification: coverage limitation; not an additional scored criterion
+NoobAI outputs add screwdrivers, tool collections and workshop details; Pony outputs add benches/shelters/tracks; SDXL outputs add plants and coastal treatment. Some additions may exceed the settled Balanced boundary on new independent props. The declared criteria for these cases do not comprehensively test that boundary. A criterion-specific pass must not be presented as full compliance with every settled policy; no new criteria or cohort were introduced.
+Cards: card-4kdqw86nfpq8, card-9z7ag8f8hdqy, card-gvn3tzzx5o6s, card-14nqylc8ncy3, card-tj82bmifokh5, card-krb79qmyde4x, card-vdt1ufnzrzuz, card-ajy9q39axxp7, card-66zr8kvjuve3
+
+comparison-profile-boundary
+Classification: advisory coverage limitation
+All comparison outputs explicitly describe the selected old skill’s SDXL prose preference and absent Krea profile. That is accurate provenance but is not the future SDXL-phrases/Krea-prose profile behavior. C10-ANALYSIS asks for separate fidelity/expression/ambiguity assessment and is advisory; its recommended pass does not establish Phase 4 completion.
+Cards: card-9l5yii0xkd0j, card-7uvl3uo6kqy0, card-tu376plipx8u
+
+CRITERION-LEVEL RECOMMENDATIONS
+
+==============================================================================
+CARD card-b7bapv2nfkry — Expand a brief within 55 words
+Full evidence starts at line 331 of evals/reviews/2026-09-20-anonymous-review.txt
+
+C08-PRESERVE [hard] — PROPOSED PASSED
+Requirement: The expansion preserves every supplied scene fact and adds no forbidden subject, prop, or active weather.
+Evidence: Output retains rust-red rowboat, weathered dock, still lake, and before dawn; it adds no people, buildings, boats, animals, or active weather.
+
+C08-STYLE [advisory] — PROPOSED PASSED
+Requirement: Within the limit, the prompt adds useful visible detail rather than padding or hidden story.
+Evidence: The 51-word prompt adds visible paint, rope, planks, reflections, shadows, and horizon light without hidden story or padding. Favorable criterion-specific assessment, not a paired preference or acceptance gate.
+
+==============================================================================
+CARD card-6g2bhamgkahx — Revise only a jacket color
+Full evidence starts at line 377 of evals/reviews/2026-09-20-anonymous-review.txt
+
+C03-OUTPUT [hard] — PROPOSED PASSED
+Requirement: The response contains only the revised prompt, not an explanation, comparison, or prompt package.
+Evidence: Raw output is only the revised prompt sentence, with no explanation, comparison, package, or variants.
+
+C03-REVISION [hard] — PROPOSED PASSED
+Requirement: Only the jacket color changes from yellow to red; every other supplied fact and relationship remains unchanged in meaning.
+Evidence: The output changes yellow denim jacket to red denim jacket and preserves the woman, bob, earrings, bicycle, and overcast sky.
+
+==============================================================================
+CARD card-cla5vsr1pwy3 — Character design without scene expansion
+Full evidence starts at line 422 of evals/reviews/2026-09-20-anonymous-review.txt
+
+C04-SCOPE [hard] — PROPOSED PASSED
+Requirement: The prompt remains strictly within character appearance, clothing, and equipment, without scene or presentation expansion.
+Evidence: Output stays on character design: adult keeper, skin, hair, clothing, boots, and whistle; it contains no scene, pose, expression, action, camera, lighting, or weather.
+
+C04-DETAILS [hard] — PROPOSED PASSED
+Requirement: All supplied physical, clothing, and equipment details remain attached to the single adult lighthouse keeper without incompatible invention.
+Evidence: All requested details are explicitly present: adult female, weathered olive skin, tightly curled gray hair, navy sweater, orange bib trousers, black boots, and brass whistle on cord.
+
+==============================================================================
+CARD card-wmnkno58x2o7 — Preserve the existing Wan text-to-video route
+Full evidence starts at line 469 of evals/reviews/2026-09-20-anonymous-review.txt
+
+C14-ROUTE [hard] — PROPOSED PASSED
+Requirement: The output follows the existing Wan route as one cohesive cinematic paragraph rather than a shot list or image prompt.
+Evidence: Output is one cohesive paragraph and explicitly says “In one continuous shot”; it is not a shot list or image prompt package.
+
+C14-MOTION [hard] — PROPOSED PASSED
+Requirement: The paragraph preserves subject motion, environmental motion, camera progression, scene, atmosphere, and stylization without invisible story or audio invention.
+Evidence: It preserves boat drift/bobbing, raindrop ripples, moving leaves, low tracking, pullback at storm drain, gutter/curb, macro style, and cool overcast light; no dialogue, audio, or hidden story.
+
+C14-STYLE [advisory] — PROPOSED PASSED
+Requirement: Camera language and progression are clear without becoming muddy or repetitive.
+Evidence: Camera progression is clear and non-repetitive: tracks alongside at water level, then gently pulls back at the drain. Favorable criterion-specific assessment, not a paired preference or acceptance gate.
+
+==============================================================================
+CARD card-9oc4wvfbek6f — Empty courtyard with no people
+Full evidence starts at line 520 of evals/reviews/2026-09-20-anonymous-review.txt
+
+C05-OUTPUT [hard] — PROPOSED PASSED
+Requirement: The response is one prompt only and does not create an unsolicited negative-prompt field.
+Evidence: Raw output is one prompt only and has no separate negative-prompt field.
+
+C05-EXCLUSION [hard] — PROPOSED PASSED
+Requirement: The positive scene remains an empty courtyard and does not introduce any excluded living or figure-like subject directly or through optional detail.
+Evidence: It explicitly states no people, animals, statues, silhouettes, or reflections of figures anywhere, while retaining the empty courtyard, fountain, ivy, and doors.
+
+C05-STYLE [advisory] — PROPOSED PASSED
+Requirement: The exclusion is communicated naturally without overwhelming the requested visual scene.
+Evidence: The exclusion is a concise final clause and does not overwhelm the architectural scene description. Favorable criterion-specific assessment, not a paired preference or acceptance gate.
+
+==============================================================================
+CARD card-4kdqw86nfpq8 — SDXL tags only without negative prompt
+Full evidence starts at line 570 of evals/reviews/2026-09-20-anonymous-review.txt
+
+C01-OUTPUT [hard] — PROPOSED PASSED
+Requirement: The response is exactly one unlabeled comma-separated visual-phrase prompt, with no negative prompt, notes, variants, or wrapper.
+Evidence: Output is one unlabeled comma-separated visual-phrase line with no negative field, notes, variants, or wrapper.
+
+C01-PROFILE [hard] — PROPOSED PASSED
+Requirement: The prompt expresses the requested greenhouse, cliff, wind, and sunrise in a compact SDXL-compatible phrase dialect without importing another profile's boilerplate.
+Evidence: It uses compact comma-separated SDXL-compatible phrases for greenhouse, coastal cliff, wind, and sunrise without Pony boilerplate.
+
+C01-STYLE [advisory] — PROPOSED PASSED
+Requirement: The selected visual phrasing is concise, coherent, and immediately usable.
+Evidence: Phrases are coherent and immediately usable, progressing from subject and environment through lighting and composition. Favorable criterion-specific assessment, not a paired preference or acceptance gate.
+
+==============================================================================
+CARD card-ouxio9sav5s7 — Adapt a supplied scene prompt to local Krea 2
+Full evidence starts at line 618 of evals/reviews/2026-09-20-anonymous-review.txt
+
+C02-OUTPUT [hard] — PROPOSED PASSED
+Requirement: The response is exactly one unlabeled prompt, without a package, negative field, notes, variants, or explanation.
+Evidence: Output is exactly one natural-language prompt, with no package, field labels, notes, variants, or explanation.
+
+C02-PRESERVE [hard] — PROPOSED PASSED
+Requirement: The adaptation preserves the two objects, their colors and image-left relationship, table, right-side morning light, and empty cream wall without adding visual facts.
+Evidence: It preserves red teapot left of white cup, dark walnut table, right-side morning light, and plain empty cream wall; no scene fact is added.
+
+C02-PROFILE [hard] — PROPOSED PASSED
+Requirement: The result uses a coherent natural-language paragraph suitable for the selected local Krea 2 RAW/Turbo contract; detail does not become invention.
+Evidence: The result is concise coherent natural-language prose suitable for Krea 2 RAW/Turbo and does not invent details.
+
+==============================================================================
+CARD card-mpxjgq32yquo — Critique without silent replacement
+Full evidence starts at line 667 of evals/reviews/2026-09-20-anonymous-review.txt
+
+C09-ROUTING [hard] — PROPOSED PASSED
+Requirement: The response is an analysis of the supplied prompt and does not silently turn into prompt writing, rewriting, or variants.
+Evidence: The response is headed Strengths and Concrete problems and analyzes the supplied prompt; it does not provide a replacement prompt or variants.
+
+C09-QUALITY [advisory] — PROPOSED PASSED
+Requirement: The critique distinguishes useful strengths from specific visible-clarity, composition, and ambiguity problems.
+Evidence: It identifies strengths, then specific visible-clarity problems (traveler/setting/lighting), composition gaps (framing/placement/action), and ambiguity in cinematic/impression language. Favorable criterion-specific assessment, not a paired preference or acceptance gate.
+
+==============================================================================
+CARD card-49t6jyd9891x — Preserve exact required lettering
+Full evidence starts at line 732 of evals/reviews/2026-09-20-anonymous-review.txt
+
+C06-TEXT-BINDING [hard] — PROPOSED PASSED
+Requirement: The prompt clearly binds exact uppercase OPEN to the rectangular sign centered above the bakery door and excludes other visible lettering.
+Evidence: Output binds exact uppercase “OPEN” to the rectangular sign centered directly above the door and states it is the only visible lettering, excluding text, numbers, logos, labels, and watermarks.
+
+==============================================================================
+CARD card-x57k8ljfq7hs — Illustrious Danbooru output with targeted local lookup
+Full evidence starts at line 773 of evals/reviews/2026-09-20-anonymous-review.txt
+
+C11-PROFILE [hard] — PROPOSED PASSED
+Requirement: The prompt preserves the existing Illustrious convention: comma-separated Danbooru-style tags with restrained quality/composition guidance, lower_snake_case canonical forms where applicable, and no Pony prefix.
+Evidence: The output uses comma-separated lower_snake_case Danbooru-style tags, with masterpiece/best_quality/highres quality guidance and no Pony prefix. Those quality starters are explicitly allowed by the fixed Illustrious profile. black_sweater and turtleneck jointly express the requested garment; there is no requirement to use a single literal black-turtleneck token.
+
+C11-CONSTRAINTS [hard] — PROPOSED PASSED
+Requirement: The canonical grey-hair result is used for the requested woman, all requested visible facts remain represented, and no optional related candidate changes the scene.
+Evidence: Output has one adult woman via 1girl/mature_female, grey_hair, green_eyes, black sweater/turtleneck, white gloves, standing, and library; no related candidates are added.
+
+C11-LOOKUP-EVIDENCE [hard] — PROPOSED PASSED
+Requirement: The captured tool results confirm grey_hair using the selected revision’s local lookup script. A mere spelling echo is not confirmation; missing usable trace evidence is not-run.
+Evidence: Captured trace is complete and records `python3 scripts/danbooru_lookup.py tag grey_hair` returning `grey_hair [general]`; this is usable lookup evidence, not a spelling echo.
+
+==============================================================================
+CARD card-q1p729slyllq — Export four clothing-only wildcard fragments
+Full evidence starts at line 846 of evals/reviews/2026-09-20-anonymous-review.txt
+
+C16-FRAGMENTS [hard] — PROPOSED PASSED
+Requirement: Each of the four entries is a distinct insertion-compatible clothing-only fragment; none repeats host-owned prefixes or introduces subject, hair, pose, action, setting, camera, or lighting content.
+Evidence: Saved artifact text contains exactly four distinct nonblank lines, each describing clothing/outfit only; no host prefix, subject, hair, pose, scene, camera, or lighting appears.
+
+C16-REPORT [hard] — PROPOSED PASSED
+Requirement: The response truthfully reports the actual saved path, actual count of four, and fragment mode outside the selection file.
+Evidence: External raw output reports `outputs/clothing-fragments.txt`, 4 distinct entries, and fragment mode; artifact metadata confirms that path and four lines.
+
+==============================================================================
+CARD card-9z7ag8f8hdqy — Preserve the existing NoobAI profile
+Full evidence starts at line 899 of evals/reviews/2026-09-20-anonymous-review.txt
+
+C13-PROFILE [hard] — PROPOSED PASSED
+Requirement: The result preserves the existing NoobAI ordered tag convention, including its quality/model preference opening and space-normalized visible tags, without Pony syntax.
+Evidence: The opening masterpiece, best quality, newest matches the fixed NoobAI quality/model convention; very awa is explicitly optional. Visible tags use spaces, the prompt remains comma-separated, and no Pony syntax appears.
+
+C13-PRESERVE [hard] — PROPOSED PASSED
+Requirement: All supplied subject attributes, clothing, action, clock, and workbench relationship remain explicit and correctly bound.
+Evidence: It explicitly includes adult man, long white hair, amber eyes, brown leather apron, blue work gloves, repairing brass clock, and a wooden workbench relationship.
+
+==============================================================================
+CARD card-404y6qvi9hsi — Image-to-video from a fixed geometric source
+Full evidence starts at line 947 of evals/reviews/2026-09-20-anonymous-review.txt
+
+C15-ROUTE [hard] — PROPOSED PASSED
+Requirement: The response is an image-to-video prompt grounded in the supplied image as the first frame, not a text-to-video scene re-creation.
+Evidence: Prompt begins “Start from the supplied image exactly” and frames changes as animation from that fixed image, clearly using image-to-video rather than recreating text-to-video.
+
+C15-PRESERVE [hard] — PROPOSED PASSED
+Requirement: The prompt accurately preserves the fixture's visible synthetic shapes, colors, composition, and flat style while limiting changes to the requested motions and gentle push-in.
+Evidence: Inspected PNG visibly shows a geometric sailboat with red hull, white left sail, yellow right sail, dark mast, blue water, pale blue sky, and one white cloud; output preserves these and limits animation to ripples, cloud drift, and gentle push-in.
+
+==============================================================================
+CARD card-h7fkpsumfssq — Expand a brief within 55 words
+Full evidence starts at line 996 of evals/reviews/2026-09-20-anonymous-review.txt
+
+C08-PRESERVE [hard] — PROPOSED PASSED
+Requirement: The expansion preserves every supplied scene fact and adds no forbidden subject, prop, or active weather.
+Evidence: Output retains rust-red rowboat, weathered dock, still lake, and before dawn; it adds no forbidden subjects or active weather.
+
+C08-STYLE [advisory] — PROPOSED PASSED
+Requirement: Within the limit, the prompt adds useful visible detail rather than padding or hidden story.
+Evidence: The 50-word prompt adds visible paint, rope, composition, reflection, sky, and photographic treatment without hidden story or padding. Favorable criterion-specific assessment, not a paired preference or acceptance gate.
+
+==============================================================================
+CARD card-p3x5b95gm47t — Character design without scene expansion
+Full evidence starts at line 1042 of evals/reviews/2026-09-20-anonymous-review.txt
+
+C04-SCOPE [hard] — PROPOSED PASSED
+Requirement: The prompt remains strictly within character appearance, clothing, and equipment, without scene or presentation expansion.
+Evidence: Output remains character-design-only: no scene, pose, expression, action, camera, lighting, weather, or story is introduced.
+
+C04-DETAILS [hard] — PROPOSED PASSED
+Requirement: All supplied physical, clothing, and equipment details remain attached to the single adult lighthouse keeper without incompatible invention.
+Evidence: All requested adult woman/keeper, olive skin, tightly curled gray hair, navy sweater, orange bib trousers, black boots, and brass whistle-on-cord details are explicit.
+
+==============================================================================
+CARD card-bucl479khfa5 — Preserve the existing Wan text-to-video route
+Full evidence starts at line 1089 of evals/reviews/2026-09-20-anonymous-review.txt
+
+C14-ROUTE [hard] — PROPOSED PASSED
+Requirement: The output follows the existing Wan route as one cohesive cinematic paragraph rather than a shot list or image prompt.
+Evidence: Output is one cohesive Wan paragraph with continuous movement, not a shot list, labels, or package.
+
+C14-MOTION [hard] — PROPOSED PASSED
+Requirement: The paragraph preserves subject motion, environmental motion, camera progression, scene, atmosphere, and stylization without invisible story or audio invention.
+Evidence: It preserves boat motion, raindrop ripples, leaves, low tracking, pullback at storm drain, gutter/curb, macro cinematography, and cool overcast light without story/audio invention.
+
+C14-STYLE [advisory] — PROPOSED PASSED
+Requirement: Camera language and progression are clear without becoming muddy or repetitive.
+Evidence: The camera path is clear: slow alongside tracking at water level followed by a gentle pullback at the drain. Favorable criterion-specific assessment, not a paired preference or acceptance gate.
+
+==============================================================================
+CARD card-gvn3tzzx5o6s — Preserve the existing Pony profile
+Full evidence starts at line 1140 of evals/reviews/2026-09-20-anonymous-review.txt
+
+C12-PROFILE [hard] — PROPOSED PASSED
+Requirement: The positive prompt starts with the existing Pony score/source/rating convention, uses source_anime and rating_safe, remains comma-separated, and avoids generic masterpiece/best quality boilerplate.
+Evidence: Prompt starts with exact settled Pony prefix `score_9, score_8_up, score_7_up, source_anime, rating_safe`, remains comma-separated, and avoids masterpiece/best quality.
+
+C12-PRESERVE [hard] — PROPOSED PASSED
+Requirement: The single adult subject retains every supplied attribute and prop, and the tram stop remains empty apart from her.
+Evidence: It includes one adult woman, auburn hair, round glasses, teal raincoat, folded red umbrella, standing, and empty tram stop at night; added bench/tracks remain compatible with the empty stop.
+
+==============================================================================
+CARD card-14nqylc8ncy3 — SDXL tags only without negative prompt
+Full evidence starts at line 1188 of evals/reviews/2026-09-20-anonymous-review.txt
+
+C01-OUTPUT [hard] — PROPOSED PASSED
+Requirement: The response is exactly one unlabeled comma-separated visual-phrase prompt, with no negative prompt, notes, variants, or wrapper.
+Evidence: Output is one unlabeled comma-separated phrase prompt with no negative prompt, notes, variants, or wrapper.
+
+C01-PROFILE [hard] — PROPOSED PASSED
+Requirement: The prompt expresses the requested greenhouse, cliff, wind, and sunrise in a compact SDXL-compatible phrase dialect without importing another profile's boilerplate.
+Evidence: It uses compact SDXL-compatible comma-separated phrases for greenhouse, cliff, wind, and sunrise without another model's boilerplate.
+
+C01-STYLE [advisory] — PROPOSED PASSED
+Requirement: The selected visual phrasing is concise, coherent, and immediately usable.
+Evidence: The selected phrases are concise, coherent, and directly usable, with clear subject, environment, lighting, and framing. Favorable criterion-specific assessment, not a paired preference or acceptance gate.
+
+==============================================================================
+CARD card-tj82bmifokh5 — Preserve the existing Pony profile
+Full evidence starts at line 1236 of evals/reviews/2026-09-20-anonymous-review.txt
+
+C12-PROFILE [hard] — PROPOSED PASSED
+Requirement: The positive prompt starts with the existing Pony score/source/rating convention, uses source_anime and rating_safe, remains comma-separated, and avoids generic masterpiece/best quality boilerplate.
+Evidence: Prompt starts with settled Pony score/source/rating tags, uses comma-separated syntax, and contains no generic masterpiece/best quality boilerplate.
+
+C12-PRESERVE [hard] — PROPOSED PASSED
+Requirement: The single adult subject retains every supplied attribute and prop, and the tram stop remains empty apart from her.
+Evidence: It explicitly preserves adult woman, auburn hair, round glasses, teal raincoat, folded red umbrella, and empty tram stop at night.
+
+==============================================================================
+CARD card-zy1k27db4dkv — Empty courtyard with no people
+Full evidence starts at line 1284 of evals/reviews/2026-09-20-anonymous-review.txt
+
+C05-OUTPUT [hard] — PROPOSED PASSED
+Requirement: The response is one prompt only and does not create an unsolicited negative-prompt field.
+Evidence: Raw output is a single prompt only with no separate negative field.
+
+C05-EXCLUSION [hard] — PROPOSED PASSED
+Requirement: The positive scene remains an empty courtyard and does not introduce any excluded living or figure-like subject directly or through optional detail.
+Evidence: It retains the empty courtyard and explicitly excludes people, animals, statues, silhouettes, and reflected figures.
+
+C05-STYLE [advisory] — PROPOSED PASSED
+Requirement: The exclusion is communicated naturally without overwhelming the requested visual scene.
+Evidence: The absence clause is natural and brief relative to the courtyard, fountain, ivy, doors, and lighting description. Favorable criterion-specific assessment, not a paired preference or acceptance gate.
+
+==============================================================================
+CARD card-p9ku17hug6vq — Preserve exact required lettering
+Full evidence starts at line 1334 of evals/reviews/2026-09-20-anonymous-review.txt
+
+C06-TEXT-BINDING [hard] — PROPOSED PASSED
+Requirement: The prompt clearly binds exact uppercase OPEN to the rectangular sign centered above the bakery door and excludes other visible lettering.
+Evidence: Output explicitly binds exact uppercase “OPEN” to the rectangular sign centered above the entrance door and declares it the only visible lettering.
+
+==============================================================================
+CARD card-jdm3pqwmixcr — Four controlled composition variants
+Full evidence starts at line 1375 of evals/reviews/2026-09-20-anonymous-review.txt
+
+C07-DISTINCTNESS [hard] — PROPOSED PASSED
+Requirement: All four entries communicate genuinely different compositions rather than paraphrases or changes outside composition.
+Evidence: All four numbered entries vary composition through tight versus wide framing, viewpoint elevation, and image placement; they are not mere wording changes.
+
+C07-PRESERVE [hard] — PROPOSED PASSED
+Requirement: Every variant preserves all non-composition facts, exact lettering, visibility, and fixed lighting while maintaining the cube's image-left relation to the sphere.
+Evidence: Every entry retains the red cube image-left of blue sphere, gray table, OPEN sign, full visibility, plain gray backdrop, and diffuse frontal light with weak shadows; no object identity or color changes are introduced.
+
+==============================================================================
+CARD card-1tbr7u1m07kh — Preserve exact required lettering
+Full evidence starts at line 1429 of evals/reviews/2026-09-20-anonymous-review.txt
+
+C06-TEXT-BINDING [hard] — PROPOSED PASSED
+Requirement: The prompt clearly binds exact uppercase OPEN to the rectangular sign centered above the bakery door and excludes other visible lettering.
+Evidence: The prompt binds exact uppercase OPEN to the rectangular sign centered directly above the bakery door and explicitly declares that sign the only visible lettering anywhere.
+
+==============================================================================
+CARD card-7l0l7rf5l13e — Expand a brief within 55 words
+Full evidence starts at line 1470 of evals/reviews/2026-09-20-anonymous-review.txt
+
+C08-PRESERVE [hard] — PROPOSED PASSED
+Requirement: The expansion preserves every supplied scene fact and adds no forbidden subject, prop, or active weather.
+Evidence: The 48-word prompt preserves the rust-red rowboat, weathered dock, still lake, and before-dawn setting, while adding no people, buildings, other boats, animals, or active weather.
+
+C08-STYLE [advisory] — PROPOSED PASSED
+Requirement: Within the limit, the prompt adds useful visible detail rather than padding or hidden story.
+Evidence: Within the stated limit, it adds visible details such as chipped paint, frayed rope, diagonal dock direction, reflections, and predawn light rather than hidden story or padding. Favorable criterion-specific assessment, not a paired preference or acceptance gate.
+
+==============================================================================
+CARD card-oaxcmt0c1x5h — Image-to-video from a fixed geometric source
+Full evidence starts at line 1516 of evals/reviews/2026-09-20-anonymous-review.txt
+
+C15-ROUTE [hard] — PROPOSED PASSED
+Requirement: The response is an image-to-video prompt grounded in the supplied image as the first frame, not a text-to-video scene re-creation.
+Evidence: The prompt begins “Start from the supplied image exactly” and describes preserving the source as the initial composition while specifying image-to-video-only motion; it does not recreate the scene as text-to-video.
+
+C15-PRESERVE [hard] — PROPOSED PASSED
+Requirement: The prompt accurately preserves the fixture's visible synthetic shapes, colors, composition, and flat style while limiting changes to the requested motions and gentle push-in.
+Evidence: The inspected 128×80 PNG visibly contains a flat red sailboat with dark mast, white left sail, yellow right sail, blue water, pale blue sky, and one white upper-right cloud. The output preserves those shapes, colors, composition, and flat style, and limits animation to water-mark ripples, cloud drift, and gentle push-in.
+
+==============================================================================
+CARD card-c9yfn5rblcrl — Four controlled composition variants
+Full evidence starts at line 1565 of evals/reviews/2026-09-20-anonymous-review.txt
+
+C07-DISTINCTNESS [hard] — PROPOSED PASSED
+Requirement: All four entries communicate genuinely different compositions rather than paraphrases or changes outside composition.
+Evidence: The four entries provide distinct tight, wide lower-left, elevated centered, and low/right-third treatments, with materially different framing, viewpoint, or placement.
+
+C07-PRESERVE [hard] — PROPOSED PASSED
+Requirement: Every variant preserves all non-composition facts, exact lettering, visibility, and fixed lighting while maintaining the cube's image-left relation to the sphere.
+Evidence: All entries retain the red cube image-left of the blue sphere, gray table, exact OPEN sign, full unobstructed visibility, plain gray backdrop, and diffuse frontal weak-shadow lighting.
+
+==============================================================================
+CARD card-o7cnzr6l2xrn — Export four clothing-only wildcard fragments
+Full evidence starts at line 1619 of evals/reviews/2026-09-20-anonymous-review.txt
+
+C16-FRAGMENTS [hard] — PROPOSED PASSED
+Requirement: Each of the four entries is a distinct insertion-compatible clothing-only fragment; none repeats host-owned prefixes or introduces subject, hair, pose, action, setting, camera, or lighting content.
+Evidence: The captured file has four nonblank physical lines, each describing clothing only; none repeats the Pony host prefix or adds subject, hair, pose, action, setting, camera, or lighting content.
+
+C16-REPORT [hard] — PROPOSED PASSED
+Requirement: The response truthfully reports the actual saved path, actual count of four, and fragment mode outside the selection file.
+Evidence: The external report states `outputs/clothing-fragments.txt`, entry count 4, and fragment mode; the artifact is available at that path with four lines.
+
+==============================================================================
+CARD card-tmxoxw9hu0vn — Revise only a jacket color
+Full evidence starts at line 1675 of evals/reviews/2026-09-20-anonymous-review.txt
+
+C03-OUTPUT [hard] — PROPOSED PASSED
+Requirement: The response contains only the revised prompt, not an explanation, comparison, or prompt package.
+Evidence: The raw response is exactly one revised prompt sentence with no label, explanation, comparison, package, or alternatives.
+
+C03-REVISION [hard] — PROPOSED PASSED
+Requirement: Only the jacket color changes from yellow to red; every other supplied fact and relationship remains unchanged in meaning.
+Evidence: The only requested change is present: yellow denim jacket becomes red denim jacket; woman, short black bob, silver hoops, blue bicycle, and overcast sky remain explicit and semantically unchanged.
+
+==============================================================================
+CARD card-krb79qmyde4x — Preserve the existing NoobAI profile
+Full evidence starts at line 1720 of evals/reviews/2026-09-20-anonymous-review.txt
+
+C13-PROFILE [hard] — PROPOSED PASSED
+Requirement: The result preserves the existing NoobAI ordered tag convention, including its quality/model preference opening and space-normalized visible tags, without Pony syntax.
+Evidence: The prompt opens with `masterpiece, best quality, newest`, uses comma-separated space-normalized visible tags such as `adult man`, `long hair`, and `wooden workbench`, and contains no Pony score/source/rating syntax.
+
+C13-PRESERVE [hard] — PROPOSED FAILED
+Requirement: All supplied subject attributes, clothing, action, clock, and workbench relationship remain explicit and correctly bound.
+Evidence: All listed subject attributes and brass-clock repair are present, but “wooden workbench” is only a separate tag. The output does not explicitly bind the repair action or clock to being at/on that bench, unlike the other NoobAI card’s “leaning over a wooden workbench.” C13-PRESERVE explicitly requires the workbench relationship to remain explicit and correctly bound.
+Uncertainty: Interpretive boundary for human review: a maintainer may accept adjacency in a single-subject tag list as sufficient relational expression. This recommendation uses the criterion’s explicit-binding requirement; it is not an authoritative failure.
+
+==============================================================================
+CARD card-vdt1ufnzrzuz — Preserve the existing Pony profile
+Full evidence starts at line 1768 of evals/reviews/2026-09-20-anonymous-review.txt
+
+C12-PROFILE [hard] — PROPOSED PASSED
+Requirement: The positive prompt starts with the existing Pony score/source/rating convention, uses source_anime and rating_safe, remains comma-separated, and avoids generic masterpiece/best quality boilerplate.
+Evidence: The prompt starts with `score_9, score_8_up, score_7_up, source_anime, rating_safe`, remains comma-separated, and contains no generic masterpiece/best-quality boilerplate.
+
+C12-PRESERVE [hard] — PROPOSED PASSED
+Requirement: The single adult subject retains every supplied attribute and prop, and the tram stop remains empty apart from her.
+Evidence: It retains one adult woman, auburn hair, round glasses, teal raincoat, folded red umbrella, and an otherwise empty tram stop at night; added shelter/bench/tracks are scene details and no second subject is introduced.
+
+==============================================================================
+CARD card-8slupya958gu — Critique without silent replacement
+Full evidence starts at line 1816 of evals/reviews/2026-09-20-anonymous-review.txt
+
+C09-ROUTING [hard] — PROPOSED PASSED
+Requirement: The response is an analysis of the supplied prompt and does not silently turn into prompt writing, rewriting, or variants.
+Evidence: The response is an analysis with strengths, concrete problems, and a bottom line; it does not provide a replacement prompt, variants, or generation.
+
+C09-QUALITY [advisory] — PROPOSED PASSED
+Requirement: The critique distinguishes useful strengths from specific visible-clarity, composition, and ambiguity problems.
+Evidence: It separately identifies visible-clarity gaps in the traveler, setting, and lighting, composition ambiguity, and the subjective/underspecified terms, while also naming coherent strengths. Favorable criterion-specific assessment, not a paired preference or acceptance gate.
+
+==============================================================================
+CARD card-5ozqf2p0o2bx — Empty courtyard with no people
+Full evidence starts at line 1875 of evals/reviews/2026-09-20-anonymous-review.txt
+
+C05-OUTPUT [hard] — PROPOSED PASSED
+Requirement: The response is one prompt only and does not create an unsolicited negative-prompt field.
+Evidence: The response is one unlabeled scene prompt and contains no separate negative-prompt field, notes, variants, or generation action.
+
+C05-EXCLUSION [hard] — PROPOSED PASSED
+Requirement: The positive scene remains an empty courtyard and does not introduce any excluded living or figure-like subject directly or through optional detail.
+Evidence: It describes an empty courtyard and explicitly excludes people, animals, statues, silhouettes, and reflections of figures in the positive prompt itself.
+
+C05-STYLE [advisory] — PROPOSED PASSED
+Requirement: The exclusion is communicated naturally without overwhelming the requested visual scene.
+Evidence: The exclusion is a single natural closing clause while the prompt still foregrounds the courtyard, fountain, ivy, doors, light, and stone detail; it does not overwhelm the scene. Favorable criterion-specific assessment, not a paired preference or acceptance gate.
+
+==============================================================================
+CARD card-19jlfprfwh9p — Adapt a supplied scene prompt to local Krea 2
+Full evidence starts at line 1925 of evals/reviews/2026-09-20-anonymous-review.txt
+
+C02-OUTPUT [hard] — PROPOSED PASSED
+Requirement: The response is exactly one unlabeled prompt, without a package, negative field, notes, variants, or explanation.
+Evidence: The response is exactly one unlabeled natural-language prompt with no package, negative field, notes, variants, or explanation.
+
+C02-PRESERVE [hard] — PROPOSED PASSED
+Requirement: The adaptation preserves the two objects, their colors and image-left relationship, table, right-side morning light, and empty cream wall without adding visual facts.
+Evidence: It preserves the red ceramic teapot image-left of the white cup, dark walnut table, right-side morning light, and empty plain cream wall without adding a new visual subject or prop.
+
+C02-PROFILE [hard] — PROPOSED PASSED
+Requirement: The result uses a coherent natural-language paragraph suitable for the selected local Krea 2 RAW/Turbo contract; detail does not become invention.
+Evidence: The result is a coherent concise natural-language paragraph suitable for the local Krea 2 RAW/Turbo contract and does not import another model’s boilerplate or tag syntax.
+
+==============================================================================
+CARD card-j0so19yp45vk — Export four clothing-only wildcard fragments
+Full evidence starts at line 1974 of evals/reviews/2026-09-20-anonymous-review.txt
+
+C16-FRAGMENTS [hard] — PROPOSED PASSED
+Requirement: Each of the four entries is a distinct insertion-compatible clothing-only fragment; none repeats host-owned prefixes or introduces subject, hair, pose, action, setting, camera, or lighting content.
+Evidence: The captured clothing file contains exactly four distinct nonblank lines, each limited to garments/outfits and free of host prefixes, subject, hair, pose, action, setting, camera, lighting, headings, or numbering.
+
+C16-REPORT [hard] — PROPOSED PASSED
+Requirement: The response truthfully reports the actual saved path, actual count of four, and fragment mode outside the selection file.
+Evidence: The external response reports `outputs/clothing-fragments.txt`, exactly 4 distinct entries, and fragment mode; this matches the available captured artifact.
+
+==============================================================================
+CARD card-r0nl7n1wn6ln — Illustrious Danbooru output with targeted local lookup
+Full evidence starts at line 2027 of evals/reviews/2026-09-20-anonymous-review.txt
+
+C11-PROFILE [hard] — PROPOSED PASSED
+Requirement: The prompt preserves the existing Illustrious convention: comma-separated Danbooru-style tags with restrained quality/composition guidance, lower_snake_case canonical forms where applicable, and no Pony prefix.
+Evidence: The prompt is comma-separated Danbooru-style syntax with canonical lower_snake_case tags (`grey_hair`, `green_eyes`, `black_sweater`, `white_gloves`), restrained quality guidance, and no Pony prefix.
+
+C11-CONSTRAINTS [hard] — PROPOSED PASSED
+Requirement: The canonical grey-hair result is used for the requested woman, all requested visible facts remain represented, and no optional related candidate changes the scene.
+Evidence: It uses `grey_hair`, includes the adult woman, green eyes, black turtleneck representation (`black_sweater, turtleneck`), white gloves, standing, and library, with no related-tag candidate added.
+
+C11-LOOKUP-EVIDENCE [hard] — PROPOSED PASSED
+Requirement: The captured tool results confirm grey_hair using the selected revision’s local lookup script. A mere spelling echo is not confirmation; missing usable trace evidence is not-run.
+Evidence: The complete captured lookup trace records `python3 scripts/danbooru_lookup.py tag grey_hair` and returns `grey_hair [general] count=574323`, with `trace_complete: true`.
+
+==============================================================================
+CARD card-ihgtdan7wvuv — Four controlled composition variants
+Full evidence starts at line 2100 of evals/reviews/2026-09-20-anonymous-review.txt
+
+C07-DISTINCTNESS [hard] — PROPOSED PASSED
+Requirement: All four entries communicate genuinely different compositions rather than paraphrases or changes outside composition.
+Evidence: The four entries are materially different: centered medium-wide, wide lower-left, tight near-fill, and elevated/right-half compositions.
+
+C07-PRESERVE [hard] — PROPOSED PASSED
+Requirement: Every variant preserves all non-composition facts, exact lettering, visibility, and fixed lighting while maintaining the cube's image-left relation to the sphere.
+Evidence: Every variant retains the red cube image-left of blue sphere, gray table, exact OPEN lettering, full visibility, plain gray backdrop, and diffuse frontal weak-shadow lighting.
+
+==============================================================================
+CARD card-9l5yii0xkd0j — Compare supplied SDXL and Krea 2 prompts
+Full evidence starts at line 2154 of evals/reviews/2026-09-20-anonymous-review.txt
+
+C10-ROUTING [hard] — PROPOSED PASSED
+Requirement: The response remains a labeled comparison of both supplied prompts and does not collapse into one new or rewritten prompt.
+Evidence: The response is a labeled comparison with separate sections for fidelity, model expression, ambiguity, and overall comparison; it does not merge or rewrite the supplied prompts.
+
+C10-ANALYSIS [advisory] — PROPOSED PASSED
+Requirement: The comparison separately addresses scene fidelity, profile-appropriate expression, and ambiguity for both prompts.
+Evidence: It separately assesses both SDXL and Krea 2 for fidelity, expression/profile fit, and ambiguity, including the explicit leaning versus weaker rests-against distinction and framing uncertainty. Favorable criterion-specific assessment, not a paired preference or acceptance gate.
+Uncertainty: The comparison accurately describes the fixed baseline skill’s prose preference and absent Krea profile rather than the settled future defaults. Coverage of both models is present, but this advisory pass does not prove the future profile implementation is complete.
+
+==============================================================================
+CARD card-7uvl3uo6kqy0 — Compare supplied SDXL and Krea 2 prompts
+Full evidence starts at line 2212 of evals/reviews/2026-09-20-anonymous-review.txt
+
+C10-ROUTING [hard] — PROPOSED PASSED
+Requirement: The response remains a labeled comparison of both supplied prompts and does not collapse into one new or rewritten prompt.
+Evidence: The complete response separates fidelity, model expression, ambiguity and overall comparison for the supplied SDXL and Krea 2 prompts; it supplies no replacement or third prompt.
+
+C10-ANALYSIS [advisory] — PROPOSED PASSED
+Requirement: The comparison separately addresses scene fidelity, profile-appropriate expression, and ambiguity for both prompts.
+Evidence: Both supplied prompts receive fidelity, expression and ambiguity analysis, including leaning versus rests-against, shot size, crop and palette. Favorable criterion-specific advisory assessment, not a paired preference.
+Uncertainty: It accurately describes the fixed baseline skill’s prose preference and absent Krea profile, but does not teach the settled future SDXL/Krea defaults. The declared criterion tests separate coverage, not compliance with those future defaults.
+
+==============================================================================
+CARD card-ajy9q39axxp7 — SDXL tags only without negative prompt
+Full evidence starts at line 2269 of evals/reviews/2026-09-20-anonymous-review.txt
+
+C01-OUTPUT [hard] — PROPOSED PASSED
+Requirement: The response is exactly one unlabeled comma-separated visual-phrase prompt, with no negative prompt, notes, variants, or wrapper.
+Evidence: The response is one unlabeled comma-separated visual-phrase prompt with no negative field, notes, variants, wrapper, or explanation.
+
+C01-PROFILE [hard] — PROPOSED PASSED
+Requirement: The prompt expresses the requested greenhouse, cliff, wind, and sunrise in a compact SDXL-compatible phrase dialect without importing another profile's boilerplate.
+Evidence: It expresses the greenhouse, cliff, wind, and sunrise using compact comma-separated SDXL-compatible visual phrases and imports no Pony boilerplate.
+
+C01-STYLE [advisory] — PROPOSED PASSED
+Requirement: The selected visual phrasing is concise, coherent, and immediately usable.
+Evidence: The phrases are concise, concrete, coherent, and directly pasteable, with details such as steel framework, panes, grasses, whitecaps, and sunrise lighting. Favorable criterion-specific assessment, not a paired preference or acceptance gate.
+
+==============================================================================
+CARD card-tu376plipx8u — Compare supplied SDXL and Krea 2 prompts
+Full evidence starts at line 2317 of evals/reviews/2026-09-20-anonymous-review.txt
+
+C10-ROUTING [hard] — PROPOSED PASSED
+Requirement: The response remains a labeled comparison of both supplied prompts and does not collapse into one new or rewritten prompt.
+Evidence: The response is a labeled comparison of both supplied prompts and does not merge, rewrite, replace, or generate a third prompt.
+
+C10-ANALYSIS [advisory] — PROPOSED PASSED
+Requirement: The comparison separately addresses scene fidelity, profile-appropriate expression, and ambiguity for both prompts.
+Evidence: It separately covers fidelity, model expression, and likely ambiguity for SDXL and Krea 2, including framing, posture, palette, and model-profile limitations. Favorable criterion-specific assessment, not a paired preference or acceptance gate.
+Uncertainty: The comparison accurately describes the fixed baseline skill’s prose preference and absent Krea profile rather than the settled future defaults. Coverage of both models is present, but this advisory pass does not prove the future profile implementation is complete.
+
+==============================================================================
+CARD card-66zr8kvjuve3 — Preserve the existing NoobAI profile
+Full evidence starts at line 2374 of evals/reviews/2026-09-20-anonymous-review.txt
+
+C13-PROFILE [hard] — PROPOSED PASSED
+Requirement: The result preserves the existing NoobAI ordered tag convention, including its quality/model preference opening and space-normalized visible tags, without Pony syntax.
+Evidence: The result opens with the existing NoobAI quality/model sequence `masterpiece, best quality, newest`, uses normalized space-separated visible tags, and has no Pony syntax.
+
+C13-PRESERVE [hard] — PROPOSED FAILED
+Requirement: All supplied subject attributes, clothing, action, clock, and workbench relationship remain explicit and correctly bound.
+Evidence: All listed subject attributes and brass-clock repair are present, but “wooden workbench” is only a separate tag. The output does not explicitly bind the repair action or clock to being at/on that bench, unlike the other NoobAI card’s “leaning over a wooden workbench.” C13-PRESERVE explicitly requires the workbench relationship to remain explicit and correctly bound.
+Uncertainty: Interpretive boundary for human review: a maintainer may accept adjacency in a single-subject tag list as sufficient relational expression. This recommendation uses the criterion’s explicit-binding requirement; it is not an authoritative failure.
+
+==============================================================================
+CARD card-lh7ugo5b6sme — Preserve the existing Wan text-to-video route
+Full evidence starts at line 2422 of evals/reviews/2026-09-20-anonymous-review.txt
+
+C14-ROUTE [hard] — PROPOSED PASSED
+Requirement: The output follows the existing Wan route as one cohesive cinematic paragraph rather than a shot list or image prompt.
+Evidence: The response is one cohesive cinematic paragraph, not a shot list, with no labels, variants, dialogue, sound, hidden story, or generation action.
+
+C14-MOTION [hard] — PROPOSED PASSED
+Requirement: The paragraph preserves subject motion, environmental motion, camera progression, scene, atmosphere, and stylization without invisible story or audio invention.
+Evidence: It preserves the yellow paper boat, rain-filled gutter, gray curb, ripples, moving leaves, low tracking move, pullback at the storm drain, macro photorealism, and cool overcast light without adding invisible story or audio.
+
+C14-STYLE [advisory] — PROPOSED PASSED
+Requirement: Camera language and progression are clear without becoming muddy or repetitive.
+Evidence: Camera progression is unambiguous: continuous water-level tracking alongside the boat followed by a gentle pullback at the storm drain; the language is not repetitive or muddled. Favorable criterion-specific assessment, not a paired preference or acceptance gate.
+
