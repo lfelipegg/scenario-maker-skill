@@ -1,0 +1,14 @@
+{
+  "scope": "Phase 1 evaluation inputs only; not semantic output judgment or phase acceptance",
+  "reviewer": "human:maintainer",
+  "recorded_at": "2026-09-20T15:07:29.120Z",
+  "method": "OMP interactive ask",
+  "authorization_response": "Authorize Phase 1 only",
+  "portfolio_response": "Approve portfolio and run",
+  "portfolio_cases": 16,
+  "attempts_per_case": 3,
+  "baseline_revision": "5fcc3d0eded83c6a9aaf472a1dc8d5ce24011d9d",
+  "cases_sha256": "0df2333edfbea2f25cfc777d8d6d1039a451ca2c897bd4e03032703970f57037",
+  "rubric_sha256": "891d7c57fda90a5bd901c2d470cca85675445e45b3e05af9aea24fa363491cb6",
+  "semantic_review": "not-run"
+}

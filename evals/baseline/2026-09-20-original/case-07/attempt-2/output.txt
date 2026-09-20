@@ -1,0 +1,7 @@
+1. A tight, straight-on composition of a red cube image-left of a blue sphere on a gray table, with a sign behind them reading exactly `OPEN`. Center the group so it fills most of the frame, leaving a narrow margin around both objects and the sign, all fully visible and unobstructed. Use a plain gray backdrop and diffuse frontal light with weak shadows.
+
+2. A wide, straight-on composition of a red cube image-left of a blue sphere on a gray table, with a sign behind them reading exactly `OPEN`. Frame the entire group small in the lower-left portion of the image, leaving extensive empty gray backdrop above and to the right. Both objects and the sign are fully visible and unobstructed. Use diffuse frontal light with weak shadows.
+
+3. A moderately elevated frontal view of a red cube image-left of a blue sphere on a gray table, with a sign behind them reading exactly `OPEN`. Look gently downward to emphasize the tabletop foreground, keeping the group centered horizontally in the upper half of the image. Both objects and the sign are fully visible and unobstructed. Use a plain gray backdrop and diffuse frontal light with weak shadows.
+
+4. A low frontal viewpoint, just above tabletop height, showing a red cube image-left of a blue sphere on a gray table, with a sign behind them reading exactly `OPEN`. Use medium-wide framing and place the group in the right third of the image, leaving open gray space to the left; both objects and the sign remain fully visible and unobstructed. Use a plain gray backdrop and diffuse frontal light with weak shadows.

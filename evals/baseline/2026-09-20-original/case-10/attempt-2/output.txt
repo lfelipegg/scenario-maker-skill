@@ -1,0 +1,15 @@
+### 1. Fidelity to the brief
+- **SDXL prompt:** Explicitly preserves every core element: green bicycle, leaning pose, white brick wall, and soft overcast daylight. Eye-level medium framing and a restrained palette add constraints not required by the brief, but do not directly contradict it.
+- **Krea 2 prompt:** Preserves the subject, wall, and lighting. “Rests against” strongly suggests leaning, though it is slightly less explicit. “Even” is consistent with overcast illumination. Eye-level framing and a restrained palette are additional choices.
+
+### 2. Model-appropriate expression
+- **SDXL prompt:** Its short, concrete, comma-separated phrases are readily interpretable. However, the selected skill’s SDXL profile favors concise natural-language prose rather than tag-style phrasing. This is a mild stylistic mismatch, not grounds to expect failure.
+- **Krea 2 prompt:** The cohesive sentence clearly connects subject, setting, and lighting, fitting generic natural-language image-prompt guidance. The selected skill provides no Krea 2-specific profile, so it does not support a stronger claim about optimal syntax or comparative model performance.
+
+### 3. Likely ambiguity
+- **SDXL prompt:** “Leaning against” makes the physical relationship explicit. “Medium shot” narrows framing, but its meaning for a bicycle is less standardized than for a person; full-wheel visibility remains uncertain.
+- **Krea 2 prompt:** “Rests against” leaves slightly more latitude in the bicycle’s posture. Eye level specifies viewpoint but not shot distance, allowing more variation in crop and surrounding wall.
+- **Both:** “Restrained palette” could mean fewer colors or reduced saturation, potentially muting the bicycle’s green. Neither specifies viewing direction or exact bicycle placement, which are reasonable freedoms under this brief.
+
+### 4. Overall comparison
+**The SDXL prompt is marginally more explicit about the required leaning pose and more constrained in framing. The Krea 2 prompt is more fluid prose but leaves framing more open.** Both closely match the brief; the wording alone does not establish which model will produce the more faithful image.

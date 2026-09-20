@@ -1,0 +1,30 @@
+{
+  "kind": "evaluation-only-correction",
+  "recorded_at": "2026-09-20T15:18:02.409Z",
+  "capture_cohort": "evals/baseline/2026-09-20-original",
+  "previous_evaluation": "evals/results/2026-09-20-original",
+  "baseline_revision": "5fcc3d0eded83c6a9aaf472a1dc8d5ce24011d9d",
+  "original_evaluator_sha256": "2dbc0b7a4439e62e9d40952144f0ad16ba5723f8bffdd61574e8361463ef8b35",
+  "evaluator_sha256": "454be4addf369c5bb7e5be14c92ded3b7476bb8d0e8b0e2d0f4e76e64d6c9f8e",
+  "cases_sha256": "0df2333edfbea2f25cfc777d8d6d1039a451ca2c897bd4e03032703970f57037",
+  "rubric_sha256": "891d7c57fda90a5bd901c2d470cca85675445e45b3e05af9aea24fa363491cb6",
+  "reason": "Resolve observed local shell cwd against captured workspace before classifying the selected lookup script; make corresponding anonymous raw lookup evidence available.",
+  "generation_repeated": false,
+  "raw_evidence_changed": false,
+  "case_or_rubric_changed": false,
+  "execution_environment_changed": false,
+  "initial_mechanical_counts": {
+    "passed": 60,
+    "failed": 0,
+    "not-run": 3
+  },
+  "corrected_mechanical_counts": {
+    "passed": 63,
+    "failed": 0,
+    "not-run": 0
+  },
+  "semantic_review": "not-run",
+  "comparison_claim": "No paired revision comparison; corrected scoring of the same immutable original baseline",
+  "regression_command": "python3 -m unittest discover -s evals -p test_evaluate.py",
+  "regression_result": "1 test passed"
+}

@@ -1,0 +1,15 @@
+### 1. Fidelity to the brief
+- **SDXL prompt:** Explicitly preserves all four essentials: green bicycle, leaning against a white brick wall, and soft overcast daylight. Eye-level framing, a medium shot, and a restrained palette add direction not required by the brief, without directly contradicting it.
+- **Krea 2 prompt:** Preserves the subject, wall, and lighting. “Rests against” strongly suggests the intended leaning relationship but is slightly less explicit than “leaning against.” “Even” is consistent with overcast light. Eye-level framing and a restrained palette are compatible additions.
+
+### 2. Model-appropriate expression
+- **SDXL prompt:** Short, concrete, and readily interpretable. However, its comma-separated phrase structure is less aligned with the selected skill’s SDXL preference for concise natural-language prose. This is a stylistic mismatch, not a reason to assume poor results; it avoids excessive tags and irrelevant quality boilerplate.
+- **Krea 2 prompt:** A coherent natural-language sentence with clearly connected visual details. The selected skill does not provide a Krea 2 profile, so its general clarity can be assessed, but a model-specific advantage cannot be established from that guidance.
+
+### 3. Likely ambiguity
+- **SDXL prompt:** “Medium shot” gives additional framing direction but can be imprecise for a bicycle: it does not guarantee that both wheels remain fully visible. The leaning relationship is explicit.
+- **Krea 2 prompt:** Eye level specifies viewpoint but not shot size, leaving more freedom over cropping and subject scale. “Rests against” leaves slightly more latitude in the bicycle’s posture.
+- **Both:** “Restrained palette” is subjective and could encourage muted green rather than a vivid green. Neither specifies bicycle orientation or the exact point of contact with the wall; these are open choices rather than failures to satisfy the brief.
+
+### Overall comparison
+**The SDXL prompt has a slight edge in literal fidelity and framing specificity. The Krea 2 prompt has smoother prose but leaves shot size more open.** Both closely match the brief; neither wording alone establishes superior generated results.

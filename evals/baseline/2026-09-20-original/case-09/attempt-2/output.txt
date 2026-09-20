@@ -1,0 +1,22 @@
+## Strengths
+- **Simple subject hierarchy:** A single traveler gives the image a potential focal point without competing subjects.
+- **Consistent mood:** “Mysterious” and “cinematic” suggest an atmospheric scene.
+- **Creative latitude:** The brevity leaves room for interpretation, which can be useful for exploration rather than a predictable result.
+
+## Concrete problems
+
+### Visible clarity
+- **“Mysterious traveler” describes an impression more than an appearance.** There are no visible cues in clothing, posture, expression, or equipment that establish either mystery or travel.
+- **“A beautiful place” does not identify a setting.** The environment, terrain, architecture, weather, and time of day are all unspecified. “Beautiful” is subjective rather than a concrete visual feature.
+- **“Amazing lighting” expresses approval, not lighting behavior.** It gives no source, direction, color, softness, or contrast to guide the result.
+
+### Composition
+- **“Dynamic composition” names a goal without defining spatial relationships.** Framing, camera angle, subject placement, and foreground/background structure are absent.
+- **The traveler’s visual importance is unresolved.** A close portrait and a distant figure within a vast landscape both fit the prompt, but produce very different images.
+- **No pose or action supports the requested dynamism.** A static figure is still a valid interpretation; any sense of movement or visual tension must be invented.
+
+### Ambiguity
+- **“Cinematic” is a broad aesthetic cue**, not a clear choice of medium, palette, lens feel, or film style.
+- **The terms are not contradictory, but they are weak constraints.** Most of the image’s defining decisions are left to the generator.
+
+**Overall:** This is a coherent mood brief, but an under-specified image prompt. Its main weakness is not brevity—it is that most of its wording describes a desired impression rather than observable details.

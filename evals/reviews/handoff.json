@@ -1,0 +1,69 @@
+{
+  "recorded_at": "2026-09-20T15:20:32.937Z",
+  "reviewer": "human:maintainer",
+  "method": "OMP interactive ask",
+  "response": "Handoff with review pending",
+  "phase_issue": "https://github.com/lfelipegg/scenario-maker-skill/issues/3",
+  "phase_state": "open; claimed; awaiting maintainer semantic review and acceptance",
+  "decision_map_state": "left open",
+  "later_phases": "not started; dependency chain unchanged",
+  "baseline_revision": "5fcc3d0eded83c6a9aaf472a1dc8d5ce24011d9d",
+  "capture": "evals/baseline/2026-09-20-original",
+  "current_evaluation": "evals/results/2026-09-20-cwd-correction",
+  "anonymous_review_packet": "evals/results/2026-09-20-cwd-correction/review-packet.jsonl",
+  "private_mapping": "evals/results/2026-09-20-cwd-correction/review-mapping.jsonl",
+  "pending_review_template": "evals/results/2026-09-20-cwd-correction/pending-reviews.jsonl",
+  "execution": {
+    "attempts": 48,
+    "completed": 48,
+    "errors": 0,
+    "timeouts": 0,
+    "outputs": 48,
+    "trace_complete": 48,
+    "semantic_review": "not-run",
+    "acceptance": "not assessed"
+  },
+  "judgments": {
+    "mechanical": {
+      "passed": 63,
+      "failed": 0,
+      "not-run": 0
+    },
+    "maintainer": {
+      "passed": 0,
+      "failed": 0,
+      "not-run": 108
+    }
+  },
+  "verification": {
+    "attempts": 48,
+    "raw_checksums": 240,
+    "artifact_checksums": 3,
+    "context_sessions": 48,
+    "provider_requests": 154,
+    "model_ids": [
+      "openai-codex/gpt-6-astra"
+    ],
+    "tools": [
+      "bash",
+      "glob",
+      "grep",
+      "read",
+      "write"
+    ],
+    "unexpected": []
+  },
+  "not_run": [
+    "108 human criterion judgments",
+    "candidate comparison",
+    "existing utility tests (separate; reported assertion defect untouched)",
+    "image/video generation and frame extraction"
+  ],
+  "limitations": [
+    "Requested/observed model alias is not an immutable provider snapshot",
+    "Seed, fingerprint, hidden provider state unavailable",
+    "Local-tool policy is not an OS sandbox",
+    "No generated-image/video quality claim"
+  ],
+  "next_action": "Maintainer reviews anonymous output cards, records criterion-level human evidence, and decides Phase 1 acceptance. Do not silently convert pending rows into passes or advance Phase 2."
+}

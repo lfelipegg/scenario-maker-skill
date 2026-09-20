@@ -1,0 +1,1 @@
+Saved `outputs/clothing-fragments.txt` with **4 distinct entries** in **fragment mode**. Each line contains clothing only, ready for insertion at `[CLOTHING SLOT]`.

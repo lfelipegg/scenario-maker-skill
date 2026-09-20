@@ -1,0 +1,3 @@
+Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.
+
+Critique the following image prompt for visible clarity, composition, and ambiguity. Identify strengths and concrete problems, but do not rewrite it, provide a replacement prompt, or add variants. Prompt: `A mysterious traveler in a beautiful place, cinematic, amazing lighting, dynamic composition.`

@@ -1,0 +1,43 @@
+{
+  "kind": "capture-smoke",
+  "created_at": "2026-09-20T14:51:43.129557+00:00",
+  "baseline_revision": "5fcc3d0eded83c6a9aaf472a1dc8d5ce24011d9d",
+  "candidate_revision": null,
+  "omp_version": "omp v18.2.6",
+  "model_requested": "openai-codex/gpt-6-astra",
+  "reasoning_requested": "high",
+  "resolved_immutable_snapshot": null,
+  "unknown_metadata": [
+    "immutable provider snapshot",
+    "provider seed",
+    "system fingerprint",
+    "hidden provider instructions"
+  ],
+  "tools_requested": [
+    "read",
+    "grep",
+    "glob",
+    "bash",
+    "write"
+  ],
+  "permissions": "auto-approved local tools; not an OS sandbox",
+  "environment": {
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "TZ": "UTC",
+    "LC_ALL": "C.UTF-8"
+  },
+  "timeout_seconds": 180,
+  "jobs": 1,
+  "scheduling": "case-major submission, repetition ascending; completion order may differ",
+  "attempts_per_case": 1,
+  "evaluation_files": {
+    "generator-system.txt": "97054199856c144ef0116fac7c86cede435c4716cdc12600f71cec780b27cb12",
+    "omp-config.json": "a5c567979a4be809fbea54473f20408634ddb02979a83400cbfcb6cdf084d1c6",
+    "capture.ts": "2a98058006940052f357b0558c0665a48cd9d050e21ca1a6c71847fa4715fd20",
+    "run_baseline.py": "f1b34f2a638412008b9ff9982bab3007cdc13c799f0a3c4a01266b8f0829f0da"
+  },
+  "fixtures": {},
+  "redactions": [],
+  "trace_boundary": "OMP client JSON events and allowlisted provider request body fields; no headers/credentials"
+}

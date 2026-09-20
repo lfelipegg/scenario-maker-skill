@@ -1,0 +1,3 @@
+Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.
+
+Compare these two supplied prompts for fidelity to the same brief, model-appropriate expression, and likely ambiguity. Keep the answer as a labeled comparison; do not merge, rewrite, or replace either prompt and do not produce a third prompt. Brief: a green bicycle leaning against a white brick wall in soft overcast daylight. SDXL prompt: `green bicycle leaning against a white brick wall, soft overcast daylight, eye-level medium shot, restrained color palette`. Krea 2 prompt: `A green bicycle rests against a white brick wall under soft, even overcast daylight, framed at eye level with a restrained palette.`
