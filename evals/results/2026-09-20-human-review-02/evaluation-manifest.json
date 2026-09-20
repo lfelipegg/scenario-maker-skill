@@ -1,0 +1,128 @@
+{
+  "kind": "partial-maintainer-semantic-review",
+  "recorded_at": "2026-09-20T21:49:01.851Z",
+  "capture_cohort": "evals/baseline/2026-09-20-original",
+  "previous_evaluation": "evals/results/2026-09-20-human-review-01",
+  "baseline_revision": "5fcc3d0eded83c6a9aaf472a1dc8d5ce24011d9d",
+  "evaluator_sha256": "454be4addf369c5bb7e5be14c92ded3b7476bb8d0e8b0e2d0f4e76e64d6c9f8e",
+  "cases_sha256": "0df2333edfbea2f25cfc777d8d6d1039a451ca2c897bd4e03032703970f57037",
+  "rubric_sha256": "891d7c57fda90a5bd901c2d470cca85675445e45b3e05af9aea24fa363491cb6",
+  "reviews": "evals/results/2026-09-20-human-review-02/reviews-input.jsonl",
+  "reviews_sha256": "ca37e98f0b57ed42e394cd6e0b88c333a77b36a57589f8f6cf21f6692853682c",
+  "review_provenance": "evals/results/2026-09-20-human-review-02/review-provenance-input.jsonl",
+  "anonymous_packet": "evals/results/2026-09-20-cwd-correction/review-packet.jsonl",
+  "anonymous_packet_sha256": "f947acd2ca9da14720838baf11bb4d13930df45f3914f9e635abc261ab345186",
+  "private_mapping": "evals/results/2026-09-20-cwd-correction/review-mapping.jsonl",
+  "private_mapping_sha256": "d62f78cd7eccaba6f07cb514e9808ae909d1d24c886c9a1c7fb770aac81a2cb5",
+  "review_presentation": "evals/reviews/2026-09-20-anonymous-review.txt",
+  "review_presentation_sha256": "084a3599be5e19c9a0538932db2024056bb375a0b1635e4e2584f8b064f05e7c",
+  "judgments": {
+    "mechanical": {
+      "passed": 63,
+      "failed": 0,
+      "not-run": 0
+    },
+    "maintainer": {
+      "passed": 16,
+      "failed": 0,
+      "not-run": 92
+    }
+  },
+  "generation_repeated": false,
+  "raw_evidence_changed": false,
+  "case_or_rubric_changed": false,
+  "execution_environment_changed": false,
+  "labels_regenerated": false,
+  "evaluation_change": "Two explicit human C13-PRESERVE passes appended. Prior 14 human approvals preserved. No model recommendation imported; remaining 92 semantic judgments are not-run.",
+  "acceptance": "not granted; Phase 1 remains open",
+  "summary_caveat": "The existing evaluator may label a partially reviewed criterion unstable-baseline or mixed_outcomes when passed and not-run coexist. Pending review is not an observed failure; use explicit state counts.",
+  "evaluation_procedure": {
+    "executable": "python3",
+    "arguments": [
+      "-B",
+      "-c",
+      "import importlib.util,json\nfrom pathlib import Path\ns=importlib.util.spec_from_file_location('evaluator','evals/evaluate.py')\ne=importlib.util.module_from_spec(s);s.loader.exec_module(e)\ncases=e.load_cases(Path('evals/cases.jsonl'))\ncriteria={c['id']:(case['id'],c) for case in cases for c in case['criteria']}\nroot=Path('evals/baseline/2026-09-20-original').resolve()\nattempts,warnings=e.discover_attempts(root,{c['id'] for c in cases})\nreviews=e.load_reviews(Path('evals/results/2026-09-20-human-review-02/reviews-input.jsonl'),criteria)\nrows,groups=e.score_all(cases,attempts,reviews,root)\nsummary=e.summarize(cases,rows,groups,e.result_kinds(root,groups),warnings)\nassert len(rows)==48 and len(reviews)==16\nprint(json.dumps({'scores':rows,'summary':summary}))\n"
+    ],
+    "note": "Uses snapshotted human reviews and existing evaluator functions. Does not call review_material; retained anonymous labels and packet order are unchanged. Prints scores and summary without generating prompts."
+  },
+  "review_provenance_sha256": "008571f5a7b722d5c712e7bca8170874529d8abbe77174dc5f2472c789a0bc26",
+  "cumulative_reviews": "evals/reviews/2026-09-20-maintainer-semantic.jsonl",
+  "cumulative_review_provenance": "evals/reviews/2026-09-20-maintainer-semantic-provenance.jsonl",
+  "human_review_step": {
+    "method": "OMP interactive ask",
+    "reviewer": "human:maintainer",
+    "reviewed_at": "2026-09-20T21:46:49.274Z",
+    "cards": [
+      "card-krb79qmyde4x",
+      "card-66zr8kvjuve3"
+    ],
+    "criterion_id": "C13-PRESERVE",
+    "responses": [
+      "Passed",
+      "Passed"
+    ],
+    "approved_evidence": "All supplied details are retained; this single-subject tag list sufficiently binds clock repair to the wooden workbench.",
+    "scope": "Only these two criterion judgments; no profile approval, added-prop compliance judgment, Phase 1 acceptance, or Phase 2 authorization.",
+    "prior_human_judgments_superseded": []
+  },
+  "model_advice": {
+    "recommendations": "evals/reviews/2026-09-20-model-recommendations.jsonl",
+    "sha256": "62657c6ae7936a28229f9f3e9f5515b120830b0c157d60b14aa4cc07de72d568",
+    "historical_proposed_counts": {
+      "passed": 92,
+      "failed": 2,
+      "not-run": 0
+    },
+    "unchanged": true,
+    "human_accepted_flagged_relationships": true,
+    "remaining_human_judgments": 92,
+    "limitations": [
+      "Declared criteria do not comprehensively test Balanced invention boundaries; no retroactive criteria or cohort changes.",
+      "Comparison advisory passes describe the old skill profiles and do not establish future profile implementation."
+    ]
+  },
+  "verification": {
+    "human_reviews_accepted": 16,
+    "previous_human_review_prefix_unchanged": true,
+    "duplicate_human_keys": 0,
+    "scored_attempts": 48,
+    "changed_criterion_states": [
+      {
+        "case_id": "case-13",
+        "attempt": 1,
+        "criterion_id": "C13-PRESERVE",
+        "before": "not-run",
+        "after": "passed"
+      },
+      {
+        "case_id": "case-13",
+        "attempt": 2,
+        "criterion_id": "C13-PRESERVE",
+        "before": "not-run",
+        "after": "passed"
+      }
+    ],
+    "preserved_evidence_sha256": {
+      "evals/results/2026-09-20-cwd-correction/review-packet.jsonl": "f947acd2ca9da14720838baf11bb4d13930df45f3914f9e635abc261ab345186",
+      "evals/results/2026-09-20-cwd-correction/review-mapping.jsonl": "d62f78cd7eccaba6f07cb514e9808ae909d1d24c886c9a1c7fb770aac81a2cb5",
+      "evals/reviews/2026-09-20-anonymous-review.txt": "084a3599be5e19c9a0538932db2024056bb375a0b1635e4e2584f8b064f05e7c",
+      "evals/reviews/2026-09-20-model-recommendations.jsonl": "62657c6ae7936a28229f9f3e9f5515b120830b0c157d60b14aa4cc07de72d568",
+      "evals/reviews/2026-09-20-model-recommendations.txt": "e7882724c7203489c37ae0f6ac8d4d4eff3bc08043a4cd3d467817ded0192aac",
+      "evals/results/2026-09-20-human-review-01/summary.json": "0c3b7e300d3c169b5cb6098ac0625ff3c503561da787f9f08d5e82ee67aabd80",
+      "evals/cases.jsonl": "0df2333edfbea2f25cfc777d8d6d1039a451ca2c897bd4e03032703970f57037",
+      "evals/rubric.md": "891d7c57fda90a5bd901c2d470cca85675445e45b3e05af9aea24fa363491cb6"
+    },
+    "evaluator_warnings": []
+  },
+  "tracker": {
+    "mutated": false,
+    "decision_map_state": "OPEN",
+    "decision_children_closed": 16,
+    "phase1_state": "OPEN",
+    "phase1_assignee": "lfelipegg",
+    "phase1_open_blockers": 0,
+    "later_phases": "All six open, unassigned, and each has one open blocker at live preparation check."
+  },
+  "next_action": "Arrange another bounded maintainer review through OMP ask if requested. Use readable anonymous evidence and short questions. No further judgments or phase acceptance are inferred.",
+  "staged_or_committed": false
+}
