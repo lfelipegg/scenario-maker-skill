@@ -1,0 +1,655 @@
+{
+  "kind": "partial-maintainer-semantic-review",
+  "recorded_at": "2026-09-21T00:09:52.145Z",
+  "capture_cohort": "evals/baseline/2026-09-20-original",
+  "previous_evaluation": "evals/results/2026-09-20-human-review-04",
+  "baseline_revision": "5fcc3d0eded83c6a9aaf472a1dc8d5ce24011d9d",
+  "evaluator_sha256": "454be4addf369c5bb7e5be14c92ded3b7476bb8d0e8b0e2d0f4e76e64d6c9f8e",
+  "cases_sha256": "0df2333edfbea2f25cfc777d8d6d1039a451ca2c897bd4e03032703970f57037",
+  "rubric_sha256": "891d7c57fda90a5bd901c2d470cca85675445e45b3e05af9aea24fa363491cb6",
+  "reviews": "evals/results/2026-09-20-human-review-05/reviews-input.jsonl",
+  "reviews_sha256": "4cf25c4a3c1055d56c05067017508714c71acb3a953656e66efa80db5c889de6",
+  "review_provenance": "evals/results/2026-09-20-human-review-05/review-provenance-input.jsonl",
+  "review_provenance_sha256": "705b4f8bf4bacb4332546d098b94f40fca65f5c7bf795111049ba93a75f2cb77",
+  "cumulative_reviews": "evals/reviews/2026-09-20-maintainer-semantic.jsonl",
+  "cumulative_review_provenance": "evals/reviews/2026-09-20-maintainer-semantic-provenance.jsonl",
+  "anonymous_packet": "evals/results/2026-09-20-cwd-correction/review-packet.jsonl",
+  "anonymous_packet_sha256": "f947acd2ca9da14720838baf11bb4d13930df45f3914f9e635abc261ab345186",
+  "private_mapping": "evals/results/2026-09-20-cwd-correction/review-mapping.jsonl",
+  "private_mapping_sha256": "d62f78cd7eccaba6f07cb514e9808ae909d1d24c886c9a1c7fb770aac81a2cb5",
+  "review_presentation": "evals/reviews/2026-09-20-anonymous-review.txt",
+  "review_presentation_sha256": "084a3599be5e19c9a0538932db2024056bb375a0b1635e4e2584f8b064f05e7c",
+  "judgments": {
+    "mechanical": {
+      "passed": 63,
+      "failed": 0,
+      "not-run": 0
+    },
+    "maintainer": {
+      "passed": 31,
+      "failed": 0,
+      "not-run": 77
+    }
+  },
+  "generation_repeated": false,
+  "raw_evidence_changed": false,
+  "case_or_rubric_changed": false,
+  "execution_environment_changed": false,
+  "labels_regenerated": false,
+  "evaluation_change": "Six explicit human passes appended across two cards, including C01-STYLE passed with the maintainer’s verbatim Very Short detail-level caveat after explicit state clarification. Prior 25 human approvals preserved. No model recommendation imported; remaining 77 semantic judgments are not-run.",
+  "acceptance": "not granted; Phase 1 remains open",
+  "summary_caveat": "The existing evaluator may label a partially reviewed criterion unstable-baseline or mixed_outcomes when passed and not-run coexist. Pending review is not an observed failure; use explicit state counts.",
+  "evaluation_procedure": {
+    "executable": "python3",
+    "arguments": [
+      "-B",
+      "-c",
+      "import importlib.util,json\nfrom pathlib import Path\ns=importlib.util.spec_from_file_location('evaluator','evals/evaluate.py')\ne=importlib.util.module_from_spec(s);s.loader.exec_module(e)\ncases=e.load_cases(Path('evals/cases.jsonl'))\ncriteria={c['id']:(case['id'],c) for case in cases for c in case['criteria']}\nroot=Path('evals/baseline/2026-09-20-original').resolve()\nattempts,warnings=e.discover_attempts(root,{c['id'] for c in cases})\nreviews=e.load_reviews(Path('evals/results/2026-09-20-human-review-05/reviews-input.jsonl'),criteria)\nrows,groups=e.score_all(cases,attempts,reviews,root)\nsummary=e.summarize(cases,rows,groups,e.result_kinds(root,groups),warnings)\nassert len(rows)==48 and len(reviews)==31\nprint(json.dumps({'scores':rows,'summary':summary}))\n"
+    ],
+    "note": "Uses snapshotted human reviews and existing evaluator functions. Does not call review_material; retained anonymous labels and packet order are unchanged. Prints scores and summary without generating prompts."
+  },
+  "human_review_step": {
+    "method": "OMP interactive ask",
+    "reviewer": "human:maintainer",
+    "cards": [
+      "card-9oc4wvfbek6f",
+      "card-4kdqw86nfpq8"
+    ],
+    "approved_judgments": [
+      {
+        "card_id": "card-9oc4wvfbek6f",
+        "criterion_id": "C05-OUTPUT",
+        "response": "Passed",
+        "approved_evidence": "One prompt only, with no separate negative-prompt field.",
+        "reviewed_at": "2026-09-20T23:44:03.572Z"
+      },
+      {
+        "card_id": "card-9oc4wvfbek6f",
+        "criterion_id": "C05-EXCLUSION",
+        "response": "Passed",
+        "approved_evidence": "Courtyard stays empty; no people, animals, statues, silhouettes or reflected figures are introduced, including through optional detail.",
+        "reviewed_at": "2026-09-20T23:44:03.572Z"
+      },
+      {
+        "card_id": "card-9oc4wvfbek6f",
+        "criterion_id": "C05-STYLE",
+        "response": "Passed",
+        "approved_evidence": "The closing exclusion clause is natural and does not overwhelm the courtyard scene. Advisory only; not a paired preference.",
+        "reviewed_at": "2026-09-20T23:44:03.572Z"
+      },
+      {
+        "card_id": "card-4kdqw86nfpq8",
+        "criterion_id": "C01-OUTPUT",
+        "response": "Passed",
+        "approved_evidence": "One unlabeled comma-separated visual-phrase prompt; no negative field, notes, variants, explanation or wrapper.",
+        "reviewed_at": "2026-09-20T23:47:01.848Z"
+      },
+      {
+        "card_id": "card-4kdqw86nfpq8",
+        "criterion_id": "C01-PROFILE",
+        "response": "Passed",
+        "approved_evidence": "Greenhouse, cliff, wind and sunrise use compact SDXL-compatible phrases without another profile's boilerplate. Added-detail permission is not approved.",
+        "reviewed_at": "2026-09-20T23:47:01.848Z"
+      },
+      {
+        "card_id": "card-4kdqw86nfpq8",
+        "criterion_id": "C01-STYLE",
+        "response": "Passed with caveat",
+        "approved_evidence": "The prompt is coherent, but it is a bit more detailed than I would expect from the SDXL profile’s default Very Short setting. Issue #19 says the approximate Very Short guide is around 75 tokens and is not a strict minimum or maximum, so this is not a failure. Advisory only; not a paired preference, hard acceptance gate, or approval of invention boundaries.",
+        "reviewed_at": "2026-09-21T00:06:48.364Z"
+      }
+    ],
+    "scope": "Only these six criterion judgments. C05-STYLE and C01-STYLE are advisory, not paired preferences or hard acceptance gates. SDXL added plants/coastal details remain an unscored invention-boundary coverage limitation. No Phase 1 acceptance or Phase 2 authorization is implied.",
+    "style_caveat": {
+      "card_id": "card-4kdqw86nfpq8",
+      "criterion_id": "C01-STYLE",
+      "original_response": "The prompt is coherent, but it is a bit more detailed than I would expect from the SDXL profile’s default Very Short setting. Issue #19 says the approximate Very Short guide is around 75 tokens and is not a strict minimum or maximum, so this is not a failure.",
+      "clarified_state": "passed",
+      "clarification_response": "Passed with caveat",
+      "reviewed_at": "2026-09-21T00:06:48.364Z"
+    },
+    "prior_human_judgments_superseded": []
+  },
+  "session_decisions": [
+    {
+      "method": "OMP interactive ask",
+      "response": "Review two cards",
+      "interpretation": "Review first two pending cards in retained packet order, using full anonymous evidence in VS Code and short criterion questions; save only explicit judgments in new evaluation evidence."
+    },
+    {
+      "method": "OMP interactive ask",
+      "response": "Passed with caveat",
+      "interpretation": "C01-STYLE only. The maintainer explicitly selected passed after supplying the preserved detail-level comment; not a failure was not inferred to mean passed."
+    }
+  ],
+  "model_advice": {
+    "recommendations": "evals/reviews/2026-09-20-model-recommendations.jsonl",
+    "sha256": "62657c6ae7936a28229f9f3e9f5515b120830b0c157d60b14aa4cc07de72d568",
+    "historical_proposed_counts": {
+      "passed": 92,
+      "failed": 2,
+      "not-run": 0
+    },
+    "unchanged": true,
+    "human_accepted_flagged_relationships": true,
+    "remaining_human_judgments": 77,
+    "limitations": [
+      "Declared criteria do not comprehensively test Balanced invention boundaries; no retroactive criteria or cohort changes.",
+      "Comparison advisory passes describe the old skill profiles and do not establish future profile implementation."
+    ]
+  },
+  "verification": {
+    "human_reviews_accepted": 31,
+    "previous_human_review_prefix_unchanged": true,
+    "previous_provenance_prefix_unchanged": true,
+    "duplicate_human_keys": 0,
+    "scored_attempts": 48,
+    "changed_criterion_states": [
+      {
+        "case_id": "case-01",
+        "attempt": 3,
+        "criterion_id": "C01-OUTPUT",
+        "before": "not-run",
+        "after": "passed"
+      },
+      {
+        "case_id": "case-01",
+        "attempt": 3,
+        "criterion_id": "C01-PROFILE",
+        "before": "not-run",
+        "after": "passed"
+      },
+      {
+        "case_id": "case-01",
+        "attempt": 3,
+        "criterion_id": "C01-STYLE",
+        "before": "not-run",
+        "after": "passed"
+      },
+      {
+        "case_id": "case-05",
+        "attempt": 1,
+        "criterion_id": "C05-OUTPUT",
+        "before": "not-run",
+        "after": "passed"
+      },
+      {
+        "case_id": "case-05",
+        "attempt": 1,
+        "criterion_id": "C05-EXCLUSION",
+        "before": "not-run",
+        "after": "passed"
+      },
+      {
+        "case_id": "case-05",
+        "attempt": 1,
+        "criterion_id": "C05-STYLE",
+        "before": "not-run",
+        "after": "passed"
+      }
+    ],
+    "unchanged_other_criterion_records": true,
+    "unchanged_other_criterion_record_count": 165,
+    "saved_scores_and_summary_reproduced": true,
+    "preserved_evidence_sha256": {
+      "evals/results/2026-09-20-cwd-correction/review-packet.jsonl": "f947acd2ca9da14720838baf11bb4d13930df45f3914f9e635abc261ab345186",
+      "evals/results/2026-09-20-cwd-correction/review-mapping.jsonl": "d62f78cd7eccaba6f07cb514e9808ae909d1d24c886c9a1c7fb770aac81a2cb5",
+      "evals/reviews/2026-09-20-anonymous-review.txt": "084a3599be5e19c9a0538932db2024056bb375a0b1635e4e2584f8b064f05e7c",
+      "evals/reviews/2026-09-20-model-recommendations.jsonl": "62657c6ae7936a28229f9f3e9f5515b120830b0c157d60b14aa4cc07de72d568",
+      "evals/reviews/2026-09-20-model-recommendations.txt": "e7882724c7203489c37ae0f6ac8d4d4eff3bc08043a4cd3d467817ded0192aac",
+      "evals/results/2026-09-20-human-review-01/summary.json": "0c3b7e300d3c169b5cb6098ac0625ff3c503561da787f9f08d5e82ee67aabd80",
+      "evals/cases.jsonl": "0df2333edfbea2f25cfc777d8d6d1039a451ca2c897bd4e03032703970f57037",
+      "evals/rubric.md": "891d7c57fda90a5bd901c2d470cca85675445e45b3e05af9aea24fa363491cb6",
+      "evals/results/2026-09-20-human-review-02/reviews-input.jsonl": "ca37e98f0b57ed42e394cd6e0b88c333a77b36a57589f8f6cf21f6692853682c",
+      "evals/results/2026-09-20-human-review-02/review-provenance-input.jsonl": "008571f5a7b722d5c712e7bca8170874529d8abbe77174dc5f2472c789a0bc26",
+      "evals/evaluate.py": "454be4addf369c5bb7e5be14c92ded3b7476bb8d0e8b0e2d0f4e76e64d6c9f8e",
+      "evals/results/2026-09-20-human-review-02/evaluation-manifest.json": "c7e9415a0092ba202d9997e2ea1a5dc69f0346ab4d51a3d82a9b871c593d2078",
+      "evals/results/2026-09-20-human-review-02/summary.json": "677489c3e6c890f1a3623294cd72a43beb071d13bb0228e10a6bec72dd16e7ad",
+      "evals/results/2026-09-20-human-review-02/scores.jsonl": "7f481c99c75e042ec81e4cc1f92cb9272be4c54c50694b548954bcea2991d8b9",
+      "evals/results/2026-09-20-human-review-03/evaluation-manifest.json": "07a835fe3d3a5a2d34da718e8df7a1809c8d530f551aa792aa1b5c9490b7d7ee",
+      "evals/results/2026-09-20-human-review-03/summary.json": "723971ef3ea1b2843b55df4d3ee7e7da20aba788af162130979e0077274b6000",
+      "evals/results/2026-09-20-human-review-03/scores.jsonl": "091c0a1bd7365136b313ee35b2c06b437586b9ebc91b09d556dfe3d23dee27c3",
+      "evals/results/2026-09-20-human-review-03/reviews-input.jsonl": "cbc853dae1738138f56c3a6148d9f574a06f7628eeabfa2fd886e49fc43afe89",
+      "evals/results/2026-09-20-human-review-03/review-provenance-input.jsonl": "bc6ecd48b1f659d780d1fb4fbf1d729402ea04c6427c07bd659c4ab6a1fc4d01",
+      "evals/reviews/2026-09-20-model-analysis-request.json": "35121d052db6bd4fd78d7f710be1f2eeeaaec7cdd75f059dc8e58a3fbddf040a",
+      "evals/reviews/2026-09-20-model-analysis-summary.json": "3cc335613df64f13145a696b18b72d7172794553a1ecccb0e52db2dd5e949248",
+      "evals/results/2026-09-20-human-review-04/evaluation-manifest.json": "c3b4fae8a649167bcc9278268618640bc5089c1b50f4296c7778c64e97608d85",
+      "evals/results/2026-09-20-human-review-04/summary.json": "0656d8379181d1c11b979b6ce900f50292c061d16df8250eaa4b7d7c9a2a2dd6",
+      "evals/results/2026-09-20-human-review-04/scores.jsonl": "f63f9fda6b98545065b971b24fec4dcccd3cae9e2ba4883780d63e887b6de096",
+      "evals/results/2026-09-20-human-review-04/reviews-input.jsonl": "7844a7d7a8fa86932dfdc151d4efae6c7a6a62286a2ad67cb4c67ba075f8ff2d",
+      "evals/results/2026-09-20-human-review-04/review-provenance-input.jsonl": "62374a1bee5152f4e5cb5b5c374d15fa11281c2b8fa0d4bb1f55c041d9a92f06"
+    },
+    "evaluator_warnings": []
+  },
+  "tracker": {
+    "checked_at": "2026-09-20T23:34:38.525Z",
+    "mutated": false,
+    "decision_map": {
+      "number": 1,
+      "state": "OPEN",
+      "assignees": [],
+      "comments": []
+    },
+    "decision_children": [
+      {
+        "number": 10,
+        "state": "closed",
+        "assignees": [
+          "lfelipegg"
+        ],
+        "open_blockers": 0,
+        "comments": [
+          {
+            "url": "https://github.com/lfelipegg/scenario-maker-skill/issues/10#issuecomment-5745989230",
+            "created_at": "2026-09-19T23:05:44Z",
+            "updated_at": "2026-09-19T23:05:44Z"
+          },
+          {
+            "url": "https://github.com/lfelipegg/scenario-maker-skill/issues/10#issuecomment-5746034624",
+            "created_at": "2026-09-19T23:14:36Z",
+            "updated_at": "2026-09-19T23:14:36Z"
+          }
+        ]
+      },
+      {
+        "number": 11,
+        "state": "closed",
+        "assignees": [
+          "lfelipegg"
+        ],
+        "open_blockers": 0,
+        "comments": [
+          {
+            "url": "https://github.com/lfelipegg/scenario-maker-skill/issues/11#issuecomment-5745989432",
+            "created_at": "2026-09-19T23:05:47Z",
+            "updated_at": "2026-09-19T23:05:47Z"
+          },
+          {
+            "url": "https://github.com/lfelipegg/scenario-maker-skill/issues/11#issuecomment-5746035559",
+            "created_at": "2026-09-19T23:14:48Z",
+            "updated_at": "2026-09-19T23:14:48Z"
+          }
+        ]
+      },
+      {
+        "number": 12,
+        "state": "closed",
+        "assignees": [
+          "lfelipegg"
+        ],
+        "open_blockers": 0,
+        "comments": [
+          {
+            "url": "https://github.com/lfelipegg/scenario-maker-skill/issues/12#issuecomment-5745989720",
+            "created_at": "2026-09-19T23:05:51Z",
+            "updated_at": "2026-09-19T23:05:51Z"
+          },
+          {
+            "url": "https://github.com/lfelipegg/scenario-maker-skill/issues/12#issuecomment-5746036506",
+            "created_at": "2026-09-19T23:14:59Z",
+            "updated_at": "2026-09-19T23:14:59Z"
+          }
+        ]
+      },
+      {
+        "number": 13,
+        "state": "closed",
+        "assignees": [
+          "lfelipegg"
+        ],
+        "open_blockers": 0,
+        "comments": [
+          {
+            "url": "https://github.com/lfelipegg/scenario-maker-skill/issues/13#issuecomment-5745989926",
+            "created_at": "2026-09-19T23:05:54Z",
+            "updated_at": "2026-09-19T23:05:54Z"
+          },
+          {
+            "url": "https://github.com/lfelipegg/scenario-maker-skill/issues/13#issuecomment-5746037561",
+            "created_at": "2026-09-19T23:15:12Z",
+            "updated_at": "2026-09-19T23:15:12Z"
+          }
+        ]
+      },
+      {
+        "number": 14,
+        "state": "closed",
+        "assignees": [
+          "lfelipegg"
+        ],
+        "open_blockers": 0,
+        "comments": [
+          {
+            "url": "https://github.com/lfelipegg/scenario-maker-skill/issues/14#issuecomment-5745990130",
+            "created_at": "2026-09-19T23:05:56Z",
+            "updated_at": "2026-09-19T23:05:56Z"
+          },
+          {
+            "url": "https://github.com/lfelipegg/scenario-maker-skill/issues/14#issuecomment-5746038724",
+            "created_at": "2026-09-19T23:15:25Z",
+            "updated_at": "2026-09-19T23:15:25Z"
+          }
+        ]
+      },
+      {
+        "number": 15,
+        "state": "closed",
+        "assignees": [
+          "lfelipegg"
+        ],
+        "open_blockers": 0,
+        "comments": [
+          {
+            "url": "https://github.com/lfelipegg/scenario-maker-skill/issues/15#issuecomment-5745990332",
+            "created_at": "2026-09-19T23:05:59Z",
+            "updated_at": "2026-09-19T23:05:59Z"
+          },
+          {
+            "url": "https://github.com/lfelipegg/scenario-maker-skill/issues/15#issuecomment-5746039777",
+            "created_at": "2026-09-19T23:15:37Z",
+            "updated_at": "2026-09-19T23:15:37Z"
+          }
+        ]
+      },
+      {
+        "number": 16,
+        "state": "closed",
+        "assignees": [
+          "lfelipegg"
+        ],
+        "open_blockers": 0,
+        "comments": [
+          {
+            "url": "https://github.com/lfelipegg/scenario-maker-skill/issues/16#issuecomment-5746288781",
+            "created_at": "2026-09-20T00:05:47Z",
+            "updated_at": "2026-09-20T00:05:47Z"
+          }
+        ]
+      },
+      {
+        "number": 17,
+        "state": "closed",
+        "assignees": [
+          "lfelipegg"
+        ],
+        "open_blockers": 0,
+        "comments": [
+          {
+            "url": "https://github.com/lfelipegg/scenario-maker-skill/issues/17#issuecomment-5746449221",
+            "created_at": "2026-09-20T00:34:30Z",
+            "updated_at": "2026-09-20T00:34:30Z"
+          }
+        ]
+      },
+      {
+        "number": 18,
+        "state": "closed",
+        "assignees": [
+          "lfelipegg"
+        ],
+        "open_blockers": 0,
+        "comments": [
+          {
+            "url": "https://github.com/lfelipegg/scenario-maker-skill/issues/18#issuecomment-5746540497",
+            "created_at": "2026-09-20T00:54:29Z",
+            "updated_at": "2026-09-20T00:54:29Z"
+          }
+        ]
+      },
+      {
+        "number": 19,
+        "state": "closed",
+        "assignees": [
+          "lfelipegg"
+        ],
+        "open_blockers": 0,
+        "comments": [
+          {
+            "url": "https://github.com/lfelipegg/scenario-maker-skill/issues/19#issuecomment-5746665421",
+            "created_at": "2026-09-20T01:21:27Z",
+            "updated_at": "2026-09-20T01:21:27Z"
+          }
+        ]
+      },
+      {
+        "number": 20,
+        "state": "closed",
+        "assignees": [
+          "lfelipegg"
+        ],
+        "open_blockers": 0,
+        "comments": [
+          {
+            "url": "https://github.com/lfelipegg/scenario-maker-skill/issues/20#issuecomment-5746782536",
+            "created_at": "2026-09-20T01:39:48Z",
+            "updated_at": "2026-09-20T01:39:48Z"
+          }
+        ]
+      },
+      {
+        "number": 21,
+        "state": "closed",
+        "assignees": [
+          "lfelipegg"
+        ],
+        "open_blockers": 0,
+        "comments": [
+          {
+            "url": "https://github.com/lfelipegg/scenario-maker-skill/issues/21#issuecomment-5746874984",
+            "created_at": "2026-09-20T01:56:39Z",
+            "updated_at": "2026-09-20T01:56:39Z"
+          }
+        ]
+      },
+      {
+        "number": 22,
+        "state": "closed",
+        "assignees": [
+          "lfelipegg"
+        ],
+        "open_blockers": 0,
+        "comments": [
+          {
+            "url": "https://github.com/lfelipegg/scenario-maker-skill/issues/22#issuecomment-5747970474",
+            "created_at": "2026-09-20T05:52:41Z",
+            "updated_at": "2026-09-20T05:52:41Z"
+          }
+        ]
+      },
+      {
+        "number": 23,
+        "state": "closed",
+        "assignees": [
+          "lfelipegg"
+        ],
+        "open_blockers": 0,
+        "comments": [
+          {
+            "url": "https://github.com/lfelipegg/scenario-maker-skill/issues/23#issuecomment-5748283635",
+            "created_at": "2026-09-20T07:03:08Z",
+            "updated_at": "2026-09-20T07:03:08Z"
+          }
+        ]
+      },
+      {
+        "number": 24,
+        "state": "closed",
+        "assignees": [
+          "lfelipegg"
+        ],
+        "open_blockers": 0,
+        "comments": [
+          {
+            "url": "https://github.com/lfelipegg/scenario-maker-skill/issues/24#issuecomment-5748446394",
+            "created_at": "2026-09-20T07:38:46Z",
+            "updated_at": "2026-09-20T07:38:46Z"
+          }
+        ]
+      },
+      {
+        "number": 25,
+        "state": "closed",
+        "assignees": [
+          "lfelipegg"
+        ],
+        "open_blockers": 0,
+        "comments": [
+          {
+            "url": "https://github.com/lfelipegg/scenario-maker-skill/issues/25#issuecomment-5750413381",
+            "created_at": "2026-09-20T14:28:04Z",
+            "updated_at": "2026-09-20T14:28:04Z"
+          }
+        ]
+      }
+    ],
+    "roadmap": {
+      "number": 2,
+      "state": "OPEN",
+      "comments": []
+    },
+    "phases": [
+      {
+        "number": 3,
+        "state": "open",
+        "assignees": [
+          "lfelipegg"
+        ],
+        "open_blockers": 0,
+        "dependencies": [
+          {
+            "number": 16,
+            "state": "closed"
+          }
+        ],
+        "comments": [
+          {
+            "url": "https://github.com/lfelipegg/scenario-maker-skill/issues/3#issuecomment-5750540725",
+            "created_at": "2026-09-20T14:52:03Z"
+          },
+          {
+            "url": "https://github.com/lfelipegg/scenario-maker-skill/issues/3#issuecomment-5750704047",
+            "created_at": "2026-09-20T15:21:44Z"
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "state": "open",
+        "assignees": [],
+        "open_blockers": 1,
+        "dependencies": [
+          {
+            "number": 3,
+            "state": "open"
+          },
+          {
+            "number": 18,
+            "state": "closed"
+          }
+        ],
+        "comments": []
+      },
+      {
+        "number": 5,
+        "state": "open",
+        "assignees": [],
+        "open_blockers": 1,
+        "dependencies": [
+          {
+            "number": 4,
+            "state": "open"
+          },
+          {
+            "number": 17,
+            "state": "closed"
+          }
+        ],
+        "comments": []
+      },
+      {
+        "number": 6,
+        "state": "open",
+        "assignees": [],
+        "open_blockers": 1,
+        "dependencies": [
+          {
+            "number": 5,
+            "state": "open"
+          },
+          {
+            "number": 19,
+            "state": "closed"
+          }
+        ],
+        "comments": []
+      },
+      {
+        "number": 7,
+        "state": "open",
+        "assignees": [],
+        "open_blockers": 1,
+        "dependencies": [
+          {
+            "number": 6,
+            "state": "open"
+          },
+          {
+            "number": 20,
+            "state": "closed"
+          }
+        ],
+        "comments": []
+      },
+      {
+        "number": 8,
+        "state": "open",
+        "assignees": [],
+        "open_blockers": 1,
+        "dependencies": [
+          {
+            "number": 7,
+            "state": "open"
+          },
+          {
+            "number": 21,
+            "state": "closed"
+          }
+        ],
+        "comments": []
+      },
+      {
+        "number": 9,
+        "state": "open",
+        "assignees": [],
+        "open_blockers": 1,
+        "dependencies": [
+          {
+            "number": 8,
+            "state": "open"
+          },
+          {
+            "number": 22,
+            "state": "closed"
+          },
+          {
+            "number": 23,
+            "state": "closed"
+          },
+          {
+            "number": 24,
+            "state": "closed"
+          },
+          {
+            "number": 25,
+            "state": "closed"
+          }
+        ],
+        "comments": []
+      }
+    ],
+    "note": "The existing Phase 1 implementation handoff still reports pre-review counts. No tracker update was authorized in this bounded review step."
+  },
+  "next_action": "Bounded two-card review complete. If further review is requested, arrange another bounded step through OMP ask using retained anonymous evidence and short questions. The next pending card in packet order is card-ouxio9sav5s7 at presentation line 618. Do not infer further judgments, phase acceptance, Phase 2 authorization, or permission to commit or push.",
+  "staged_or_committed": false,
+  "publication": "No staging, commit, push, or tracker mutation was performed in this session."
+}
