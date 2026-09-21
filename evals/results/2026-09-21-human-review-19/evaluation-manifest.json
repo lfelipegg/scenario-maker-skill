@@ -1,0 +1,440 @@
+{
+  "acceptance": "not granted; Phase 1 remains open",
+  "anonymous_packet": "evals/results/2026-09-20-cwd-correction/review-packet.jsonl",
+  "anonymous_packet_sha256": "f947acd2ca9da14720838baf11bb4d13930df45f3914f9e635abc261ab345186",
+  "baseline_revision": "5fcc3d0eded83c6a9aaf472a1dc8d5ce24011d9d",
+  "capture_cohort": "evals/baseline/2026-09-20-original",
+  "case_or_rubric_changed": false,
+  "cases_sha256": "0df2333edfbea2f25cfc777d8d6d1039a451ca2c897bd4e03032703970f57037",
+  "cumulative_review_provenance": "evals/reviews/2026-09-20-maintainer-semantic-provenance.jsonl",
+  "cumulative_reviews": "evals/reviews/2026-09-20-maintainer-semantic.jsonl",
+  "evaluation_change": "Four explicit human passes appended across two cards: both remaining first Pony criteria and both remaining first critique criteria. All 78 prior approvals, historical evidence, and the verbatim C01-STYLE caveat were preserved. C12-PRESERVE carries the maintainer’s explicit mild invention concern; C09-QUALITY remains advisory. No model recommendations imported; remaining 26 semantic judgments are not-run.",
+  "evaluation_procedure": {
+    "arguments": [
+      "-B",
+      "-c",
+      "import importlib.util,json\nfrom pathlib import Path\ns=importlib.util.spec_from_file_location('evaluator','evals/evaluate.py')\ne=importlib.util.module_from_spec(s);s.loader.exec_module(e)\ncases=e.load_cases(Path('evals/cases.jsonl'))\ncriteria={c['id']:(case['id'],c) for case in cases for c in case['criteria']}\nroot=Path('evals/baseline/2026-09-20-original').resolve()\nattempts,warnings=e.discover_attempts(root,{c['id'] for c in cases})\nreviews=e.load_reviews(Path('evals/results/2026-09-21-human-review-19/reviews-input.jsonl'),criteria)\nrows,groups=e.score_all(cases,attempts,reviews,root)\nsummary=e.summarize(cases,rows,groups,e.result_kinds(root,groups),warnings)\nassert len(rows)==48 and len(reviews)==82\nPath('evals/results/2026-09-21-human-review-19/scores.jsonl').write_text(''.join(json.dumps(row,ensure_ascii=False,sort_keys=True)+'\\n' for row in rows),encoding='utf-8')\nPath('evals/results/2026-09-21-human-review-19/summary.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2,sort_keys=True)+'\\n',encoding='utf-8')\nprint(json.dumps({'rows':len(rows),'reviews':len(reviews),'warnings':warnings,'state_counts':summary.get('state_counts'),'summary_keys':sorted(summary)},ensure_ascii=False,sort_keys=True))"
+    ],
+    "executable": "python3",
+    "note": "Uses snapshotted human reviews and existing evaluator functions. Does not call review_material; retained anonymous labels and packet order are unchanged. Writes the retained-label scores and summary without generating prompts."
+  },
+  "evaluator_sha256": "454be4addf369c5bb7e5be14c92ded3b7476bb8d0e8b0e2d0f4e76e64d6c9f8e",
+  "execution_environment_changed": false,
+  "generation_repeated": false,
+  "human_review_step": {
+    "approved_judgments": [
+      {
+        "approved_evidence": "Lines 1806–1808 start with `score_9, score_8_up, score_7_up, source_anime, rating_safe`, remain comma-separated, and contain no `masterpiece` or `best quality` boilerplate.",
+        "card_id": "card-vdt1ufnzrzuz",
+        "criterion_id": "C12-PROFILE",
+        "response": "Passed",
+        "reviewed_at": "2026-09-21T05:29:28Z"
+      },
+      {
+        "approved_evidence": "The single adult woman retains auburn hair, round glasses, teal raincoat, folded red umbrella, standing, empty tram stop, and night; `1girl` and `solo` support empty apart from her. Added scene specifics create a mild invention concern, not a failure under C12-PRESERVE.",
+        "card_id": "card-vdt1ufnzrzuz",
+        "criterion_id": "C12-PRESERVE",
+        "response": "Passed with concern",
+        "reviewed_at": "2026-09-21T05:29:28Z"
+      },
+      {
+        "approved_evidence": "Lines 1850–1867 analyze the supplied prompt only; they provide no rewrite, replacement prompt, variants, or generation.",
+        "card_id": "card-8slupya958gu",
+        "criterion_id": "C09-ROUTING",
+        "response": "Passed",
+        "reviewed_at": "2026-09-21T05:29:28Z"
+      },
+      {
+        "approved_evidence": "The critique separates useful strengths from concrete visible-clarity, composition, setting, lighting, and ambiguity problems.",
+        "card_id": "card-8slupya958gu",
+        "criterion_id": "C09-QUALITY",
+        "response": "Passed",
+        "reviewed_at": "2026-09-21T05:29:28Z"
+      }
+    ],
+    "cards": [
+      "card-vdt1ufnzrzuz",
+      "card-8slupya958gu"
+    ],
+    "fixture_inspection": {
+      "actual_fixture_inspected": false,
+      "reason": "Neither reviewed card is image-to-video and neither has a source-image fixture."
+    },
+    "method": "OMP interactive ask",
+    "preserved_prior_style_caveat": {
+      "card_id": "card-4kdqw86nfpq8",
+      "clarification_response": "Passed with caveat",
+      "clarified_state": "passed",
+      "criterion_id": "C01-STYLE",
+      "original_response": "The prompt is coherent, but it is a bit more detailed than I would expect from the SDXL profile’s default Very Short setting. Issue #19 says the approximate Very Short guide is around 75 tokens and is not a strict minimum or maximum, so this is not a failure.",
+      "reviewed_at": "2026-09-21T00:06:48.364Z"
+    },
+    "prior_human_judgments_superseded": [],
+    "reviewer": "human:maintainer",
+    "scope": "Only C12-PROFILE, C12-PRESERVE, C09-ROUTING, and advisory C09-QUALITY are approved. The C12-PRESERVE pass explicitly retains a mild invention concern; C09-QUALITY does not become a hard gate or paired preference. No broader invention-boundary approval, model recommendation import, phase acceptance, later-phase authorization, tracker update, commit, or push is implied."
+  },
+  "judgments": {
+    "maintainer": {
+      "failed": 0,
+      "not-run": 26,
+      "passed": 82
+    },
+    "mechanical": {
+      "failed": 0,
+      "not-run": 0,
+      "passed": 63
+    }
+  },
+  "kind": "partial-maintainer-semantic-review",
+  "labels_regenerated": false,
+  "model_advice": {
+    "historical_proposed_counts": {
+      "failed": 2,
+      "not-run": 0,
+      "passed": 92
+    },
+    "human_accepted_flagged_relationships": true,
+    "limitations": [
+      "Declared criteria do not comprehensively test Balanced invention boundaries; no retroactive criteria or cohort changes.",
+      "Comparison advisory passes describe the old skill profiles and do not establish future profile implementation."
+    ],
+    "recommendations": "evals/reviews/2026-09-20-model-recommendations.jsonl",
+    "remaining_human_judgments": 26,
+    "sha256": "62657c6ae7936a28229f9f3e9f5515b120830b0c157d60b14aa4cc07de72d568",
+    "unchanged": true
+  },
+  "next_action": "Bounded two-card review complete. Next pending card: card-5ozqf2p0o2bx, presentation line 1876. Arrange any further bounded step through OMP ask. No Phase 1 acceptance, Phase 2 authorization, tracker update, commit, or push is implied.",
+  "previous_evaluation": "evals/results/2026-09-21-human-review-18",
+  "private_mapping": "evals/results/2026-09-20-cwd-correction/review-mapping.jsonl",
+  "private_mapping_sha256": "d62f78cd7eccaba6f07cb514e9808ae909d1d24c886c9a1c7fb770aac81a2cb5",
+  "publication": "No staging, commit, push, or tracker mutation was performed in this session.",
+  "raw_evidence_changed": false,
+  "recorded_at": "2026-09-21T05:29:28Z",
+  "review_presentation": "evals/reviews/2026-09-20-anonymous-review.txt",
+  "review_presentation_sha256": "084a3599be5e19c9a0538932db2024056bb375a0b1635e4e2584f8b064f05e7c",
+  "review_provenance": "evals/results/2026-09-21-human-review-19/review-provenance-input.jsonl",
+  "review_provenance_sha256": "5cd13527af3372b4f5b44ee10fa4be3603d421576f9159f56549fbbb10f0b55f",
+  "reviews": "evals/results/2026-09-21-human-review-19/reviews-input.jsonl",
+  "reviews_sha256": "f41bb80870144f5e9c2ccb8bdbb5142257a86cfc3012a09412d09dd7d5aeb572",
+  "rubric_sha256": "891d7c57fda90a5bd901c2d470cca85675445e45b3e05af9aea24fa363491cb6",
+  "session_decisions": [
+    {
+      "interpretation": "Review exactly card-vdt1ufnzrzuz and card-8slupya958gu in retained order, recording both declared criteria for each. Preserve the Pony mild invention concern and the critique quality criterion’s advisory status. No commit, push, tracker update, phase acceptance, or Phase 2 authorization was granted.",
+      "method": "OMP interactive ask",
+      "response": "Review 2 cards"
+    }
+  ],
+  "staged_or_committed": false,
+  "summary_caveat": "The existing evaluator may label a partially reviewed criterion unstable-baseline or mixed_outcomes when passed and not-run coexist. Pending review is not an observed failure; use explicit state counts.",
+  "tracker": {
+    "checked_in_this_session": true,
+    "dependencies": [
+      {
+        "blockers": [
+          {
+            "number": 16,
+            "state": "closed"
+          }
+        ],
+        "issue": 3
+      },
+      {
+        "blockers": [
+          {
+            "number": 3,
+            "state": "open"
+          },
+          {
+            "number": 18,
+            "state": "closed"
+          }
+        ],
+        "issue": 4
+      },
+      {
+        "blockers": [
+          {
+            "number": 4,
+            "state": "open"
+          },
+          {
+            "number": 17,
+            "state": "closed"
+          }
+        ],
+        "issue": 5
+      },
+      {
+        "blockers": [
+          {
+            "number": 5,
+            "state": "open"
+          },
+          {
+            "number": 19,
+            "state": "closed"
+          }
+        ],
+        "issue": 6
+      },
+      {
+        "blockers": [
+          {
+            "number": 6,
+            "state": "open"
+          },
+          {
+            "number": 20,
+            "state": "closed"
+          }
+        ],
+        "issue": 7
+      },
+      {
+        "blockers": [
+          {
+            "number": 7,
+            "state": "open"
+          },
+          {
+            "number": 21,
+            "state": "closed"
+          }
+        ],
+        "issue": 8
+      },
+      {
+        "blockers": [
+          {
+            "number": 8,
+            "state": "open"
+          },
+          {
+            "number": 22,
+            "state": "closed"
+          },
+          {
+            "number": 23,
+            "state": "closed"
+          },
+          {
+            "number": 24,
+            "state": "closed"
+          },
+          {
+            "number": 25,
+            "state": "closed"
+          }
+        ],
+        "issue": 9
+      }
+    ],
+    "later_phases": [
+      {
+        "assignees": [],
+        "comments": 0,
+        "number": 4,
+        "open_blockers": 1,
+        "state": "open"
+      },
+      {
+        "assignees": [],
+        "comments": 0,
+        "number": 5,
+        "open_blockers": 1,
+        "state": "open"
+      },
+      {
+        "assignees": [],
+        "comments": 0,
+        "number": 6,
+        "open_blockers": 1,
+        "state": "open"
+      },
+      {
+        "assignees": [],
+        "comments": 0,
+        "number": 7,
+        "open_blockers": 1,
+        "state": "open"
+      },
+      {
+        "assignees": [],
+        "comments": 0,
+        "number": 8,
+        "open_blockers": 1,
+        "state": "open"
+      },
+      {
+        "assignees": [],
+        "comments": 0,
+        "number": 9,
+        "open_blockers": 1,
+        "state": "open"
+      }
+    ],
+    "map": {
+      "all_children_closed": true,
+      "children": 16,
+      "comments": 0,
+      "number": 1,
+      "state": "open"
+    },
+    "mutated": false,
+    "phase_one": {
+      "assignees": [
+        "lfelipegg"
+      ],
+      "comments": 2,
+      "handoff_comment_counts": "Historical pre-review counts, not current evaluation",
+      "number": 3,
+      "open_blockers": 0,
+      "state": "open"
+    },
+    "roadmap": {
+      "comments": 0,
+      "number": 2,
+      "state": "open"
+    }
+  },
+  "verification": {
+    "changed_criterion_states": [
+      {
+        "after": "passed",
+        "attempt": 1,
+        "before": "not-run",
+        "case_id": "case-12",
+        "criterion_id": "C12-PROFILE"
+      },
+      {
+        "after": "passed",
+        "attempt": 1,
+        "before": "not-run",
+        "case_id": "case-12",
+        "criterion_id": "C12-PRESERVE"
+      },
+      {
+        "after": "passed",
+        "attempt": 1,
+        "before": "not-run",
+        "case_id": "case-09",
+        "criterion_id": "C09-ROUTING"
+      },
+      {
+        "after": "passed",
+        "attempt": 1,
+        "before": "not-run",
+        "case_id": "case-09",
+        "criterion_id": "C09-QUALITY"
+      }
+    ],
+    "duplicate_human_keys": 0,
+    "duplicate_provenance_keys": 0,
+    "evaluator_warnings": [],
+    "human_reviews_accepted": 82,
+    "preserved_evidence_sha256": {
+      "evals/cases.jsonl": "0df2333edfbea2f25cfc777d8d6d1039a451ca2c897bd4e03032703970f57037",
+      "evals/evaluate.py": "454be4addf369c5bb7e5be14c92ded3b7476bb8d0e8b0e2d0f4e76e64d6c9f8e",
+      "evals/results/2026-09-20-cwd-correction/review-mapping.jsonl": "d62f78cd7eccaba6f07cb514e9808ae909d1d24c886c9a1c7fb770aac81a2cb5",
+      "evals/results/2026-09-20-cwd-correction/review-packet.jsonl": "f947acd2ca9da14720838baf11bb4d13930df45f3914f9e635abc261ab345186",
+      "evals/results/2026-09-20-human-review-01/summary.json": "0c3b7e300d3c169b5cb6098ac0625ff3c503561da787f9f08d5e82ee67aabd80",
+      "evals/results/2026-09-20-human-review-02/evaluation-manifest.json": "c7e9415a0092ba202d9997e2ea1a5dc69f0346ab4d51a3d82a9b871c593d2078",
+      "evals/results/2026-09-20-human-review-02/review-provenance-input.jsonl": "008571f5a7b722d5c712e7bca8170874529d8abbe77174dc5f2472c789a0bc26",
+      "evals/results/2026-09-20-human-review-02/reviews-input.jsonl": "ca37e98f0b57ed42e394cd6e0b88c333a77b36a57589f8f6cf21f6692853682c",
+      "evals/results/2026-09-20-human-review-02/scores.jsonl": "7f481c99c75e042ec81e4cc1f92cb9272be4c54c50694b548954bcea2991d8b9",
+      "evals/results/2026-09-20-human-review-02/summary.json": "677489c3e6c890f1a3623294cd72a43beb071d13bb0228e10a6bec72dd16e7ad",
+      "evals/results/2026-09-20-human-review-03/evaluation-manifest.json": "07a835fe3d3a5a2d34da718e8df7a1809c8d530f551aa792aa1b5c9490b7d7ee",
+      "evals/results/2026-09-20-human-review-03/review-provenance-input.jsonl": "bc6ecd48b1f659d780d1fb4fbf1d729402ea04c6427c07bd659c4ab6a1fc4d01",
+      "evals/results/2026-09-20-human-review-03/reviews-input.jsonl": "cbc853dae1738138f56c3a6148d9f574a06f7628eeabfa2fd886e49fc43afe89",
+      "evals/results/2026-09-20-human-review-03/scores.jsonl": "091c0a1bd7365136b313ee35b2c06b437586b9ebc91b09d556dfe3d23dee27c3",
+      "evals/results/2026-09-20-human-review-03/summary.json": "723971ef3ea1b2843b55df4d3ee7e7da20aba788af162130979e0077274b6000",
+      "evals/results/2026-09-20-human-review-04/evaluation-manifest.json": "c3b4fae8a649167bcc9278268618640bc5089c1b50f4296c7778c64e97608d85",
+      "evals/results/2026-09-20-human-review-04/review-provenance-input.jsonl": "62374a1bee5152f4e5cb5b5c374d15fa11281c2b8fa0d4bb1f55c041d9a92f06",
+      "evals/results/2026-09-20-human-review-04/reviews-input.jsonl": "7844a7d7a8fa86932dfdc151d4efae6c7a6a62286a2ad67cb4c67ba075f8ff2d",
+      "evals/results/2026-09-20-human-review-04/scores.jsonl": "f63f9fda6b98545065b971b24fec4dcccd3cae9e2ba4883780d63e887b6de096",
+      "evals/results/2026-09-20-human-review-04/summary.json": "0656d8379181d1c11b979b6ce900f50292c061d16df8250eaa4b7d7c9a2a2dd6",
+      "evals/results/2026-09-20-human-review-05/evaluation-manifest.json": "244b118a49f8971d69782ed96e1092ebc0673fc68ff39db24fd6031ed667bf3c",
+      "evals/results/2026-09-20-human-review-05/review-provenance-input.jsonl": "705b4f8bf4bacb4332546d098b94f40fca65f5c7bf795111049ba93a75f2cb77",
+      "evals/results/2026-09-20-human-review-05/reviews-input.jsonl": "4cf25c4a3c1055d56c05067017508714c71acb3a953656e66efa80db5c889de6",
+      "evals/results/2026-09-20-human-review-05/scores.jsonl": "835f83248a7c7dcf37780df3ff683917bdee29bdb0da754a8b63e5c37cf83708",
+      "evals/results/2026-09-20-human-review-05/summary.json": "0c355201fcdd922cf643794ee59b8ace6b41e01abdffc45ebe61e29f1df5caff",
+      "evals/results/2026-09-21-human-review-06/evaluation-manifest.json": "58d2baf968715a23ea788fa9ddf6f5e442ae6d6bc618649df78e0d27cac880e0",
+      "evals/results/2026-09-21-human-review-06/review-provenance-input.jsonl": "d35547eb8cc5e877c5e5662613e39a08e207b6fa6e6be681e4ce9f2469c9a6a7",
+      "evals/results/2026-09-21-human-review-06/reviews-input.jsonl": "9080ede16bafd54ffbadf5a226df158e8e054a6397faaacd464c59931a1e088e",
+      "evals/results/2026-09-21-human-review-06/scores.jsonl": "4787192f0c261c691280098c9c56c960ed489aeb2acd2c828a6e806a1bc46898",
+      "evals/results/2026-09-21-human-review-06/summary.json": "db0416545de761a96ba7366a38c4e58795a5907a7af8cf0f40bd6917470e7baf",
+      "evals/results/2026-09-21-human-review-07/evaluation-manifest.json": "825b5a5a73e45aa3f0f6a14bf600f4f8acf24966d5ce187f67ea004eed1911ac",
+      "evals/results/2026-09-21-human-review-07/review-provenance-input.jsonl": "aa0b6341d9c086c8b061397d3cff1752ea199f1ad6a760cbfc08eb3c8f721e0d",
+      "evals/results/2026-09-21-human-review-07/reviews-input.jsonl": "044868c4f73a4dde3ea0447cdabdf059d77145480eb7072430f9f16f0fe9dd0f",
+      "evals/results/2026-09-21-human-review-07/scores.jsonl": "f7ebfdbae556dff58263999d2f36503a95ce0b0f79614d4102a630e9fa9a413d",
+      "evals/results/2026-09-21-human-review-07/summary.json": "d35ff2fcd4d66acf1c0756e36d0f4922d462017797fc7d640f24050636158bd6",
+      "evals/results/2026-09-21-human-review-08/evaluation-manifest.json": "6b9b70215238a41286db0bb6325ceec275c31c02b38a768f7a61b5b41443962f",
+      "evals/results/2026-09-21-human-review-08/review-provenance-input.jsonl": "0796c55d9667ce440443a69d7f8e9cb105bf6cb0c66b399d06acf208e38d9ce0",
+      "evals/results/2026-09-21-human-review-08/reviews-input.jsonl": "1d05dbe2124a846be89a68fae15a1a47ac4a9b3fabdb41f2a2e1d86b1014f98b",
+      "evals/results/2026-09-21-human-review-08/scores.jsonl": "1267be5d66670c17ab0469d069d4f17b1378f62a490ebb6a2dc2946275bc5e37",
+      "evals/results/2026-09-21-human-review-08/summary.json": "c70fa8bc2f06db7eb6061c87b646ef8cdc2f563e5aa1b7c4721bd637e0fc959a",
+      "evals/results/2026-09-21-human-review-09/evaluation-manifest.json": "dfed6fabaf22ac8d0d193519b3f3565ed1815c6f57a58f81f94e3f76f01e5cf6",
+      "evals/results/2026-09-21-human-review-09/review-provenance-input.jsonl": "0dbf1f4091accf3dad59fc4e1aef0bb28776f3b734f4e13267dafe15b3b7614f",
+      "evals/results/2026-09-21-human-review-09/reviews-input.jsonl": "0e98855ba7a7688652725b5264914e47cbbea18d0fc2c5d7217c6e80f3de4374",
+      "evals/results/2026-09-21-human-review-09/scores.jsonl": "c28edf086835add52d772f912bb94e12c68832c4fd90f10a76d2ec883f9cd4cb",
+      "evals/results/2026-09-21-human-review-09/summary.json": "f36a3576bdd90fa51f70bad44b60585945f19da985cd776187b80ea187de10e0",
+      "evals/results/2026-09-21-human-review-10/evaluation-manifest.json": "70d4ba486ac872c84a4d4c8784c620ec2e04335f1d720f66195da35f49eaca9d",
+      "evals/results/2026-09-21-human-review-10/review-provenance-input.jsonl": "08b67bba50d85f19ccdfa0ec452f1d2452e504ecf8ac5f20a51438dc7850f0b5",
+      "evals/results/2026-09-21-human-review-10/reviews-input.jsonl": "1592d51803c8fbd803ba95d050edf10ccee59939893101c7e0852a41f3125b8e",
+      "evals/results/2026-09-21-human-review-10/scores.jsonl": "d18790b84d1edfd1cf26dd96416d4d167129e334bdd797420988948f02440bc5",
+      "evals/results/2026-09-21-human-review-10/summary.json": "8bc76b71662d6642f2f5038bf4550bf57bcffda1b76222bc33521f483ba89b14",
+      "evals/results/2026-09-21-human-review-11/evaluation-manifest.json": "d1364058997863cfdcf05c48c523ae7537b5df12eccd86916a352d8324f70003",
+      "evals/results/2026-09-21-human-review-11/review-provenance-input.jsonl": "d145c7eaa2b36e9b2712a2d031b60b7ccdac3d881a85ae456b231de10fd94f80",
+      "evals/results/2026-09-21-human-review-11/reviews-input.jsonl": "4f75f9ae6b64ebccb1e833b4c4eb20cbc0029a128a34436661e0a13824f4e84f",
+      "evals/results/2026-09-21-human-review-11/scores.jsonl": "76ef54aed24bc774a93e024df28096a2b16c6fd8280a8fb599ca5f582282fce4",
+      "evals/results/2026-09-21-human-review-11/summary.json": "6052f8db5dcaae9d3cfd37816036a06d7607b9463815f5beae5278fbd7b0d1aa",
+      "evals/results/2026-09-21-human-review-12/evaluation-manifest.json": "da9a7ef8dbc6f5a7b51c4d182f52cba333d7ffc5128d5bdc2f4daaeab2c8e5e9",
+      "evals/results/2026-09-21-human-review-12/review-provenance-input.jsonl": "9dbaaa6092945dd4ccaa59db36215b3810630255439db8eec83b4558dbc6bbac",
+      "evals/results/2026-09-21-human-review-12/reviews-input.jsonl": "23c37876830dacf0d063a0835dd6f2de02e4a964294b3438fe8967a85475720b",
+      "evals/results/2026-09-21-human-review-12/scores.jsonl": "b3aceb7db230920229691efcaf51d4b134fc9fa41c8e84f3de80940dcb405bad",
+      "evals/results/2026-09-21-human-review-12/summary.json": "7acf78e4dcfd8d1f1be4d39e2ab0b09cd88cb26010e92310927012a557689ce7",
+      "evals/results/2026-09-21-human-review-13/evaluation-manifest.json": "ac1a0eb033578615ff597afac0e32672d4d2f3072f82dd73a4a41675dfb212c2",
+      "evals/results/2026-09-21-human-review-13/review-provenance-input.jsonl": "662e8e41079f9c53a567af39524f735d63ac19b7d3b48765d8d90692193de2fe",
+      "evals/results/2026-09-21-human-review-13/reviews-input.jsonl": "09f533ea8d462d33917d85befbbe80fb5832210caafc3ea826a3c12ec5a8bb9f",
+      "evals/results/2026-09-21-human-review-13/scores.jsonl": "4b8dea3831451fa5eb68083368dcb558c537db3b90165ddb81e09b3ef451c157",
+      "evals/results/2026-09-21-human-review-13/summary.json": "18f4df05e26e4a13e8353955dd540b663bc8130a2afac460e163c37b43f9e93e",
+      "evals/results/2026-09-21-human-review-14/evaluation-manifest.json": "58c062e88c5b670b447706025bf3f09d377b4d69b2981aff9d35fbbadca691fe",
+      "evals/results/2026-09-21-human-review-14/review-provenance-input.jsonl": "5264220f2784703a5c7cbdfb5b206ee5cfb1c77ef536bb794a0ca7307a06a82f",
+      "evals/results/2026-09-21-human-review-14/reviews-input.jsonl": "6feb5d51cfe9ee99f652514932619700b3958491b050d2b06b06d63d40238730",
+      "evals/results/2026-09-21-human-review-14/scores.jsonl": "763f2c8bfb127d2c6229e362524720d7dfc71925542d87ebd1e5a1930d00c22e",
+      "evals/results/2026-09-21-human-review-14/summary.json": "ef152445c1c6e8064eb9c8a937be060c0fc1cd3c93ef22f656d0a58a273767e5",
+      "evals/results/2026-09-21-human-review-15/evaluation-manifest.json": "b8d61a54bedad0603f99fea66069746d4495abf75354a0afec3592bb7167339c",
+      "evals/results/2026-09-21-human-review-15/review-provenance-input.jsonl": "a72ae35c7c122854889e950e3f88441fd5a8b470d7a0f3511077cae2023736bd",
+      "evals/results/2026-09-21-human-review-15/reviews-input.jsonl": "a113d74b40a25f58e2935ef68499aa9c06896100e7c133d40b9d9115558742c8",
+      "evals/results/2026-09-21-human-review-15/scores.jsonl": "0574f9da5c96b47804a9dd8033d09abdc571410493d8ba0c04c929acc98d92d9",
+      "evals/results/2026-09-21-human-review-15/summary.json": "8817fe233b2686fbd23d85d73d47c222998db84835338aa744fbed63cd8bb98f",
+      "evals/results/2026-09-21-human-review-16/evaluation-manifest.json": "731dba37cdf48725ac4b7b674c55bf9c45bb1e16317d56566f99a1792ab3dec8",
+      "evals/results/2026-09-21-human-review-16/review-provenance-input.jsonl": "731022930020ce44f4ac98238faa188e3b63ae92ef8e11ece0718d0f59ff5f2a",
+      "evals/results/2026-09-21-human-review-16/reviews-input.jsonl": "f259025195ff1bbd67017d1b5dca7732a3fbe54619ce6b879ae4aac1879217fc",
+      "evals/results/2026-09-21-human-review-16/scores.jsonl": "2d34bc57cd5aeadae9537ecb816e2186f8fed580d72976317a24673ef0798392",
+      "evals/results/2026-09-21-human-review-16/summary.json": "1ade0fcd9cc2f931a92164b6e44d9cbd4f3b5336deb0dc199aa64de264fdc99a",
+      "evals/results/2026-09-21-human-review-17/evaluation-manifest.json": "d72495e07f1a022d152fdfe4366ae53a401392cbc12914402308d9b7ca9aa532",
+      "evals/results/2026-09-21-human-review-17/review-provenance-input.jsonl": "183866578f73b730771ca1806690e224c9ca58c824e6adf8748268e01908eb5c",
+      "evals/results/2026-09-21-human-review-17/reviews-input.jsonl": "d7af2620b7459d72f02c5e0efcb43eacf16d3187400411c2423eeb7d65e1af6a",
+      "evals/results/2026-09-21-human-review-17/scores.jsonl": "0e38f0be0652f5a78effb1f3208f4a7ad66fc458a1d50bb2517ac2cbafa5bba5",
+      "evals/results/2026-09-21-human-review-17/summary.json": "93bb4426c4d8b01ac919a46055f7bf7b9d8c905d9eec8ed1b43d86d056b352b7",
+      "evals/reviews/2026-09-20-anonymous-review.txt": "084a3599be5e19c9a0538932db2024056bb375a0b1635e4e2584f8b064f05e7c",
+      "evals/reviews/2026-09-20-model-analysis-request.json": "35121d052db6bd4fd78d7f710be1f2eeeaaec7cdd75f059dc8e58a3fbddf040a",
+      "evals/reviews/2026-09-20-model-analysis-summary.json": "3cc335613df64f13145a696b18b72d7172794553a1ecccb0e52db2dd5e949248",
+      "evals/reviews/2026-09-20-model-recommendations.jsonl": "62657c6ae7936a28229f9f3e9f5515b120830b0c157d60b14aa4cc07de72d568",
+      "evals/reviews/2026-09-20-model-recommendations.txt": "e7882724c7203489c37ae0f6ac8d4d4eff3bc08043a4cd3d467817ded0192aac",
+      "evals/rubric.md": "891d7c57fda90a5bd901c2d470cca85675445e45b3e05af9aea24fa363491cb6",
+      "evals/results/2026-09-21-human-review-18/evaluation-manifest.json": "c3b6b0da59d30435bca18e6b0219279dd43fbdf011bdf8e7db6aa6f2a63c2f22",
+      "evals/results/2026-09-21-human-review-18/review-provenance-input.jsonl": "7a5bcf9c3b1f527fdd6926f63f0b1ef058d2453b63a9a65b080b4a989132a4a7",
+      "evals/results/2026-09-21-human-review-18/reviews-input.jsonl": "1ae00ce0433240dba5a815670d88b22b06dba93ac70c531835790b5dec2d10b7",
+      "evals/results/2026-09-21-human-review-18/scores.jsonl": "ff8f7dff17ca67f1cec852a5e2746d431f5612eba2344efb3ab528df86169ac6",
+      "evals/results/2026-09-21-human-review-18/summary.json": "7defa709364813e62abed82ac074199e341238a5a1a552422cc37f25fce0e383"
+    },
+    "previous_human_review_prefix_unchanged": true,
+    "previous_provenance_prefix_unchanged": true,
+    "saved_scores_and_summary_reproduced": true,
+    "scored_attempts": 48,
+    "unchanged_other_criterion_record_count": 167,
+    "unchanged_other_criterion_records": true
+  }
+}
