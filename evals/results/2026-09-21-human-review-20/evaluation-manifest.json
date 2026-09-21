@@ -1,0 +1,181 @@
+{
+  "acceptance": "not granted; Phase 1 remains open",
+  "anonymous_packet": "evals/results/2026-09-20-cwd-correction/review-packet.jsonl",
+  "anonymous_packet_sha256": "f947acd2ca9da14720838baf11bb4d13930df45f3914f9e635abc261ab345186",
+  "baseline_revision": "5fcc3d0eded83c6a9aaf472a1dc8d5ce24011d9d",
+  "capture_cohort": "evals/baseline/2026-09-20-original",
+  "case_or_rubric_changed": false,
+  "cases_sha256": "0df2333edfbea2f25cfc777d8d6d1039a451ca2c897bd4e03032703970f57037",
+  "cumulative_review_provenance": "evals/reviews/2026-09-20-maintainer-semantic-provenance.jsonl",
+  "cumulative_reviews": "evals/reviews/2026-09-20-maintainer-semantic.jsonl",
+  "evaluation_change": "Six explicit human passes appended across two cards: all three second empty-courtyard criteria and all three second Krea 2 adaptation criteria. All 82 prior approvals and historical evidence were preserved, including the verbatim C01-STYLE caveat. C05-STYLE remains advisory. No model recommendations were imported; 20 semantic judgments remain not-run.",
+  "evaluation_procedure": {
+    "executable": "python3",
+    "mode": "Imported evals/evaluate.py and called load_cases, discover_attempts, load_reviews, score_all, summarize, and _write_jsonl against snapshotted reviews.",
+    "note": "Did not call review_material; retained anonymous labels and packet order were not regenerated. No generation attempt was repeated."
+  },
+  "evaluator_sha256": "454be4addf369c5bb7e5be14c92ded3b7476bb8d0e8b0e2d0f4e76e64d6c9f8e",
+  "execution_environment_changed": false,
+  "generation_repeated": false,
+  "human_review_step": {
+    "approved_judgments": [
+      {
+        "approved_evidence": "Lines 1915–1917 contain one prompt only and no separate negative-prompt field.",
+        "card_id": "card-5ozqf2p0o2bx",
+        "criterion_id": "C05-OUTPUT",
+        "response": "Passed",
+        "reviewed_at": "2026-09-21T05:49:36Z"
+      },
+      {
+        "approved_evidence": "The courtyard remains explicitly empty, and the output introduces no people, animals, statues, silhouettes, or reflections of figures through optional visual detail.",
+        "card_id": "card-5ozqf2p0o2bx",
+        "criterion_id": "C05-EXCLUSION",
+        "response": "Passed",
+        "reviewed_at": "2026-09-21T05:49:36Z"
+      },
+      {
+        "approved_evidence": "The exclusion is communicated naturally after the requested visual scene and does not overwhelm it.",
+        "card_id": "card-5ozqf2p0o2bx",
+        "criterion_id": "C05-STYLE",
+        "response": "Passed",
+        "reviewed_at": "2026-09-21T05:49:36Z"
+      },
+      {
+        "approved_evidence": "Lines 1964–1966 contain exactly one unlabeled prompt paragraph, with no package, negative field, notes, variants, or explanation.",
+        "card_id": "card-19jlfprfwh9p",
+        "criterion_id": "C02-OUTPUT",
+        "response": "Passed",
+        "reviewed_at": "2026-09-21T05:49:36Z"
+      },
+      {
+        "approved_evidence": "The two objects, colors, image-left relationship, table, right-side morning light, and empty cream wall are preserved without added visual facts.",
+        "card_id": "card-19jlfprfwh9p",
+        "criterion_id": "C02-PRESERVE",
+        "response": "Passed",
+        "reviewed_at": "2026-09-21T05:49:36Z"
+      },
+      {
+        "approved_evidence": "The result is a coherent natural-language paragraph suitable for local Krea 2 RAW/Turbo, without invention.",
+        "card_id": "card-19jlfprfwh9p",
+        "criterion_id": "C02-PROFILE",
+        "response": "Passed",
+        "reviewed_at": "2026-09-21T05:49:36Z"
+      }
+    ],
+    "cards": [
+      "card-5ozqf2p0o2bx",
+      "card-19jlfprfwh9p"
+    ],
+    "fixture_inspection": {
+      "actual_fixture_inspected": false,
+      "reason": "Neither reviewed card uses a source-image fixture."
+    },
+    "method": "OMP interactive ask",
+    "preserved_prior_style_caveat": {
+      "card_id": "card-4kdqw86nfpq8",
+      "criterion_id": "C01-STYLE",
+      "original_response": "The prompt is coherent, but it is a bit more detailed than I would expect from the SDXL profile’s default Very Short setting. Issue #19 says the approximate Very Short guide is around 75 tokens and is not a strict minimum or maximum, so this is not a failure."
+    },
+    "reviewer": "human:maintainer",
+    "scope": "Only C05-OUTPUT, C05-EXCLUSION, advisory C05-STYLE, C02-OUTPUT, C02-PRESERVE, and C02-PROFILE are approved. No broader exclusion or invention rule, model recommendation import, phase acceptance, later-phase authorization, tracker update, commit, or push is implied."
+  },
+  "judgments": {
+    "maintainer": {
+      "failed": 0,
+      "not-run": 20,
+      "passed": 88
+    },
+    "mechanical": {
+      "failed": 0,
+      "not-run": 0,
+      "passed": 63
+    }
+  },
+  "kind": "partial-maintainer-semantic-review",
+  "labels_regenerated": false,
+  "next_action": "Bounded two-card review complete. Next pending card: card-j0so19yp45vk, presentation line 1975. Arrange any further bounded step through OMP ask. No Phase 1 acceptance, Phase 2 authorization, tracker update, commit, or push is implied.",
+  "previous_evaluation": "evals/results/2026-09-21-human-review-19",
+  "private_mapping": "evals/results/2026-09-20-cwd-correction/review-mapping.jsonl",
+  "private_mapping_sha256": "d62f78cd7eccaba6f07cb514e9808ae909d1d24c886c9a1c7fb770aac81a2cb5",
+  "publication": "No staging, commit, push, or tracker mutation was performed in this session.",
+  "raw_evidence_changed": false,
+  "recorded_at": "2026-09-21T05:49:36Z",
+  "review_presentation": "evals/reviews/2026-09-20-anonymous-review.txt",
+  "review_presentation_sha256": "084a3599be5e19c9a0538932db2024056bb375a0b1635e4e2584f8b064f05e7c",
+  "review_provenance": "evals/results/2026-09-21-human-review-20/review-provenance-input.jsonl",
+  "review_provenance_sha256": "06447ccf443d20999f45d46a1e0ada7561475c6bcb317e8227b930a4391a5d33",
+  "reviews": "evals/results/2026-09-21-human-review-20/reviews-input.jsonl",
+  "reviews_sha256": "dba403ed262922fa38df183b9fbb9d8969a9cff4df520551ef8b10e7443d9100",
+  "rubric_sha256": "891d7c57fda90a5bd901c2d470cca85675445e45b3e05af9aea24fa363491cb6",
+  "session_decisions": [
+    {
+      "interpretation": "Review exactly the next two retained-order cards, card-5ozqf2p0o2bx and card-19jlfprfwh9p, and record criterion-level judgments only. No commit, push, tracker update, phase acceptance, or Phase 2 authorization was granted.",
+      "method": "OMP interactive ask",
+      "response": "Review the next 2 cards"
+    }
+  ],
+  "staged_or_committed": false,
+  "summary_caveat": "The existing evaluator may label a partially reviewed criterion unstable-baseline or mixed_outcomes when passed and not-run coexist. Pending review is not an observed failure; use explicit state counts.",
+  "tracker": {
+    "checked_in_this_session": true,
+    "decision_map": {
+      "all_children_closed": true,
+      "child_count": 16,
+      "number": 1,
+      "state": "open"
+    },
+    "dependencies": [
+      {"issue": 3, "blockers": [{"number": 16, "state": "closed"}]},
+      {"issue": 4, "blockers": [{"number": 3, "state": "open"}, {"number": 18, "state": "closed"}]},
+      {"issue": 5, "blockers": [{"number": 4, "state": "open"}, {"number": 17, "state": "closed"}]},
+      {"issue": 6, "blockers": [{"number": 5, "state": "open"}, {"number": 19, "state": "closed"}]},
+      {"issue": 7, "blockers": [{"number": 6, "state": "open"}, {"number": 20, "state": "closed"}]},
+      {"issue": 8, "blockers": [{"number": 7, "state": "open"}, {"number": 21, "state": "closed"}]},
+      {"issue": 9, "blockers": [{"number": 8, "state": "open"}, {"number": 22, "state": "closed"}, {"number": 23, "state": "closed"}, {"number": 24, "state": "closed"}, {"number": 25, "state": "closed"}]}
+    ],
+    "later_phases": [
+      {"number": 4, "state": "open", "assignees": [], "open_blockers": 1},
+      {"number": 5, "state": "open", "assignees": [], "open_blockers": 1},
+      {"number": 6, "state": "open", "assignees": [], "open_blockers": 1},
+      {"number": 7, "state": "open", "assignees": [], "open_blockers": 1},
+      {"number": 8, "state": "open", "assignees": [], "open_blockers": 1},
+      {"number": 9, "state": "open", "assignees": [], "open_blockers": 1}
+    ],
+    "mutated": false,
+    "phase_one": {
+      "assignees": ["lfelipegg"],
+      "comments": 2,
+      "handoff_comment_counts": "Historical pre-review counts, not current evaluation",
+      "number": 3,
+      "open_blockers": 0,
+      "state": "open"
+    },
+    "roadmap": {
+      "number": 2,
+      "state": "open"
+    }
+  },
+  "verification": {
+    "changed_criterion_states": [
+      {"case_id": "case-05", "attempt": 2, "criterion_id": "C05-OUTPUT", "before": "not-run", "after": "passed"},
+      {"case_id": "case-05", "attempt": 2, "criterion_id": "C05-EXCLUSION", "before": "not-run", "after": "passed"},
+      {"case_id": "case-05", "attempt": 2, "criterion_id": "C05-STYLE", "before": "not-run", "after": "passed"},
+      {"case_id": "case-02", "attempt": 2, "criterion_id": "C02-OUTPUT", "before": "not-run", "after": "passed"},
+      {"case_id": "case-02", "attempt": 2, "criterion_id": "C02-PRESERVE", "before": "not-run", "after": "passed"},
+      {"case_id": "case-02", "attempt": 2, "criterion_id": "C02-PROFILE", "before": "not-run", "after": "passed"}
+    ],
+    "duplicate_human_keys": 0,
+    "duplicate_provenance_keys": 0,
+    "evaluator_warnings": [],
+    "human_reviews_accepted": 88,
+    "previous_human_review_prefix_unchanged": true,
+    "previous_provenance_prefix_unchanged": true,
+    "preserved_c01_style_caveat_verbatim": true,
+    "saved_scores_and_summary_reproduced": true,
+    "scored_attempts": 48,
+    "scores_sha256": "25900e327305f159f0ca931e6237c7dbc48d05a895addb5b05e2d20412fa4e06",
+    "summary_sha256": "a578de504454749fe7b729966edd76507a3e6ad8248ae9e268bb81d0d7e7d3e9",
+    "unchanged_other_criterion_record_count": 165,
+    "unchanged_other_criterion_records": true
+  }
+}
