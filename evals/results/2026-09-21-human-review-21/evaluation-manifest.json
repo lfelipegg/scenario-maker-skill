@@ -1,0 +1,178 @@
+{
+  "acceptance": "not granted; Phase 1 remains open",
+  "anonymous_packet": "evals/results/2026-09-20-cwd-correction/review-packet.jsonl",
+  "anonymous_packet_sha256": "f947acd2ca9da14720838baf11bb4d13930df45f3914f9e635abc261ab345186",
+  "baseline_revision": "5fcc3d0eded83c6a9aaf472a1dc8d5ce24011d9d",
+  "capture_cohort": "evals/baseline/2026-09-20-original",
+  "case_or_rubric_changed": false,
+  "cases_sha256": "0df2333edfbea2f25cfc777d8d6d1039a451ca2c897bd4e03032703970f57037",
+  "cumulative_review_provenance": "evals/reviews/2026-09-20-maintainer-semantic-provenance.jsonl",
+  "cumulative_reviews": "evals/reviews/2026-09-20-maintainer-semantic.jsonl",
+  "evaluation_change": "Five explicit human passes appended across two cards: both second clothing-fragment criteria and all three third Illustrious Danbooru criteria. The maintainer explicitly corrected the initial C11-CONSTRAINTS failure selection to passed. All 88 prior approvals and historical evidence were preserved, including the verbatim C01-STYLE caveat. No model recommendations were imported; 15 semantic judgments remain not-run.",
+  "evaluation_procedure": {
+    "executable": "python3",
+    "mode": "Imported evals/evaluate.py and called load_cases, discover_attempts, load_reviews, score_all, summarize, and _write_jsonl against snapshotted reviews.",
+    "note": "Did not call review_material; retained anonymous labels and packet order were not regenerated. No generation attempt was repeated."
+  },
+  "evaluator_sha256": "454be4addf369c5bb7e5be14c92ded3b7476bb8d0e8b0e2d0f4e76e64d6c9f8e",
+  "execution_environment_changed": false,
+  "generation_repeated": false,
+  "human_review_step": {
+    "approved_judgments": [
+      {
+        "approved_evidence": "All four captured entries are distinct insertion-compatible clothing-only fragments and contain no host-owned or scene content.",
+        "card_id": "card-j0so19yp45vk",
+        "criterion_id": "C16-FRAGMENTS",
+        "response": "Passed",
+        "reviewed_at": "2026-09-21T06:04:56Z"
+      },
+      {
+        "approved_evidence": "The response truthfully reports outputs/clothing-fragments.txt, count four, and fragment mode outside the file.",
+        "card_id": "card-j0so19yp45vk",
+        "criterion_id": "C16-REPORT",
+        "response": "Passed",
+        "reviewed_at": "2026-09-21T06:04:56Z"
+      },
+      {
+        "approved_evidence": "The output is a restrained comma-separated Illustrious Danbooru-style positive prompt with canonical forms where applicable and no Pony prefix.",
+        "card_id": "card-r0nl7n1wn6ln",
+        "criterion_id": "C11-PROFILE",
+        "response": "Passed",
+        "reviewed_at": "2026-09-21T06:04:56Z"
+      },
+      {
+        "approved_evidence": "The requested adult woman, grey hair, green eyes, black turtleneck, white gloves, standing pose, and library are represented without a related candidate changing the scene. The maintainer explicitly corrected the initial failure selection and confirmed that it works.",
+        "card_id": "card-r0nl7n1wn6ln",
+        "criterion_id": "C11-CONSTRAINTS",
+        "response": "Passed",
+        "reviewed_at": "2026-09-21T06:04:56Z"
+      },
+      {
+        "approved_evidence": "The complete local-script trace confirms grey_hair through a canonical lookup result rather than a spelling echo.",
+        "card_id": "card-r0nl7n1wn6ln",
+        "criterion_id": "C11-LOOKUP-EVIDENCE",
+        "response": "Passed",
+        "reviewed_at": "2026-09-21T06:04:56Z"
+      }
+    ],
+    "cards": [
+      "card-j0so19yp45vk",
+      "card-r0nl7n1wn6ln"
+    ],
+    "fixture_inspection": {
+      "actual_fixture_inspected": false,
+      "reason": "Neither reviewed card uses a source-image fixture."
+    },
+    "method": "OMP interactive ask",
+    "preserved_prior_style_caveat": {
+      "card_id": "card-4kdqw86nfpq8",
+      "criterion_id": "C01-STYLE",
+      "original_response": "The prompt is coherent, but it is a bit more detailed than I would expect from the SDXL profile’s default Very Short setting. Issue #19 says the approximate Very Short guide is around 75 tokens and is not a strict minimum or maximum, so this is not a failure."
+    },
+    "reviewer": "human:maintainer",
+    "scope": "Only C16-FRAGMENTS, C16-REPORT, C11-PROFILE, C11-CONSTRAINTS, and C11-LOOKUP-EVIDENCE are approved. No broader wildcard, optional-tag, invention-boundary, or model recommendation rule, phase acceptance, later-phase authorization, tracker update, commit, or push is implied."
+  },
+  "judgments": {
+    "maintainer": {
+      "failed": 0,
+      "not-run": 15,
+      "passed": 93
+    },
+    "mechanical": {
+      "failed": 0,
+      "not-run": 0,
+      "passed": 63
+    }
+  },
+  "kind": "partial-maintainer-semantic-review",
+  "labels_regenerated": false,
+  "next_action": "Bounded two-card review complete. Next pending card: card-ihgtdan7wvuv, presentation line 2101. Arrange any further bounded step through OMP ask. No Phase 1 acceptance, Phase 2 authorization, tracker update, commit, or push is implied.",
+  "previous_evaluation": "evals/results/2026-09-21-human-review-20",
+  "private_mapping": "evals/results/2026-09-20-cwd-correction/review-mapping.jsonl",
+  "private_mapping_sha256": "d62f78cd7eccaba6f07cb514e9808ae909d1d24c886c9a1c7fb770aac81a2cb5",
+  "publication": "No staging, commit, push, or tracker mutation was performed in this session.",
+  "raw_evidence_changed": false,
+  "recorded_at": "2026-09-21T06:04:56Z",
+  "review_presentation": "evals/reviews/2026-09-20-anonymous-review.txt",
+  "review_presentation_sha256": "084a3599be5e19c9a0538932db2024056bb375a0b1635e4e2584f8b064f05e7c",
+  "review_provenance": "evals/results/2026-09-21-human-review-21/review-provenance-input.jsonl",
+  "review_provenance_sha256": "4ef83c376f1f5d9a2774ff8d33afac9e342ac4146d670bfc5fba7374a3c9fef5",
+  "reviews": "evals/results/2026-09-21-human-review-21/reviews-input.jsonl",
+  "reviews_sha256": "9302b85776910ed5a131b6084340dc309f1caa1a43c39ba2f9fb92cf0d945ec2",
+  "rubric_sha256": "891d7c57fda90a5bd901c2d470cca85675445e45b3e05af9aea24fa363491cb6",
+  "session_decisions": [
+    {
+      "interpretation": "Review exactly the next two retained-order cards, card-j0so19yp45vk and card-r0nl7n1wn6ln, and record criterion-level judgments only. No commit, push, tracker update, phase acceptance, or Phase 2 authorization was granted.",
+      "method": "OMP interactive ask",
+      "response": "Review a small batch"
+    },
+    {
+      "interpretation": "The initial C11-CONSTRAINTS failed selection was explicitly withdrawn and replaced by a passed judgment.",
+      "method": "OMP interactive ask",
+      "response": "Made a mistake, it does work."
+    }
+  ],
+  "staged_or_committed": false,
+  "summary_caveat": "The existing evaluator may label a partially reviewed criterion unstable-baseline or mixed_outcomes when passed and not-run coexist. Pending review is not an observed failure; use explicit state counts.",
+  "tracker": {
+    "checked_in_this_session": true,
+    "decision_map": {
+      "all_children_closed": true,
+      "child_count": 16,
+      "number": 1,
+      "state": "open"
+    },
+    "dependencies": [
+      {"issue": 3, "blockers": [{"number": 16, "state": "closed"}]},
+      {"issue": 4, "blockers": [{"number": 3, "state": "open"}, {"number": 18, "state": "closed"}]},
+      {"issue": 5, "blockers": [{"number": 4, "state": "open"}, {"number": 17, "state": "closed"}]},
+      {"issue": 6, "blockers": [{"number": 5, "state": "open"}, {"number": 19, "state": "closed"}]},
+      {"issue": 7, "blockers": [{"number": 6, "state": "open"}, {"number": 20, "state": "closed"}]},
+      {"issue": 8, "blockers": [{"number": 7, "state": "open"}, {"number": 21, "state": "closed"}]},
+      {"issue": 9, "blockers": [{"number": 8, "state": "open"}, {"number": 22, "state": "closed"}, {"number": 23, "state": "closed"}, {"number": 24, "state": "closed"}, {"number": 25, "state": "closed"}]}
+    ],
+    "later_phases": [
+      {"number": 4, "state": "open", "assignees": [], "open_blockers": 1},
+      {"number": 5, "state": "open", "assignees": [], "open_blockers": 1},
+      {"number": 6, "state": "open", "assignees": [], "open_blockers": 1},
+      {"number": 7, "state": "open", "assignees": [], "open_blockers": 1},
+      {"number": 8, "state": "open", "assignees": [], "open_blockers": 1},
+      {"number": 9, "state": "open", "assignees": [], "open_blockers": 1}
+    ],
+    "mutated": false,
+    "phase_one": {
+      "assignees": ["lfelipegg"],
+      "comments": 2,
+      "handoff_comment_counts": "Historical pre-review counts, not current evaluation",
+      "number": 3,
+      "open_blockers": 0,
+      "state": "open"
+    },
+    "roadmap": {
+      "number": 2,
+      "state": "open"
+    }
+  },
+  "verification": {
+    "changed_criterion_states": [
+      {"case_id": "case-11", "attempt": 3, "criterion_id": "C11-PROFILE", "before": "not-run", "after": "passed"},
+      {"case_id": "case-11", "attempt": 3, "criterion_id": "C11-CONSTRAINTS", "before": "not-run", "after": "passed"},
+      {"case_id": "case-11", "attempt": 3, "criterion_id": "C11-LOOKUP-EVIDENCE", "before": "not-run", "after": "passed"},
+      {"case_id": "case-16", "attempt": 2, "criterion_id": "C16-FRAGMENTS", "before": "not-run", "after": "passed"},
+      {"case_id": "case-16", "attempt": 2, "criterion_id": "C16-REPORT", "before": "not-run", "after": "passed"}
+    ],
+    "duplicate_human_keys": 0,
+    "duplicate_provenance_keys": 0,
+    "evaluator_warnings": [],
+    "human_reviews_accepted": 93,
+    "previous_human_review_prefix_unchanged": true,
+    "previous_provenance_prefix_unchanged": true,
+    "preserved_c01_style_caveat_verbatim": true,
+    "saved_scores_and_summary_reproduced": true,
+    "scored_attempts": 48,
+    "scores_sha256": "1aed73149eb78b666e63d28e64db0a64f7a7b8a0a089bd34e030ef6e65ade542",
+    "summary_sha256": "1c968ce851e4fd78aa7809a777450bd4c68ca4921880f57de8fdf36c9c4535db",
+    "unchanged_other_criterion_record_count": 166,
+    "unchanged_other_criterion_records": true
+  }
+}
