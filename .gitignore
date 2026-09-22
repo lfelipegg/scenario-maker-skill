@@ -7,3 +7,4 @@ docs/danbooru_tags/*.sqlite
 docs/danbooru_tags/*.sqlite-*
 docs/danbooru_tags/*.sqlite.tmp
 wildcards
+./wildcards
