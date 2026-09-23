@@ -1,0 +1,18 @@
+subject_definitions:
+<Subject 1> is Jo (S1), whose appearance comes from <Picture 1>.
+S2 is an independent unseen narrator, not Jo, with no visual depiction.
+
+summary:
+[reference generation] An unseen narrator speaks first, then <Subject 1> physically speaks in response.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1]): fully_preserved - retain Jo's appearance from <Picture 1>. Transfer appearance only, not the reference's pose, background, or composition.
+
+detailed_description:
+[Shot 1] Show <Subject 1> with Jo's referenced appearance. The independent unseen narrator (S2) says exactly <d>[English] Listen.</d> Jo does not mouth the narrator's words. After the narrator finishes, Jo (S1) physically says exactly <d>[English] I am listening.</d> Jo's visible mouth movements synchronize with Jo's own line. Do not depict the narrator.
+
+overall_soundscape:
+The narrator's independent voice is heard first, followed by Jo's on-screen speech in the specified order. Ambience is unspecified.
+
+non_diegetic_music:
+Unspecified

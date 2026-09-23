@@ -1,0 +1,17 @@
+subject_definitions:
+<Subject 1> is Noor, whose appearance comes from <Picture 1>. The picture supplies appearance only, not pose, background, or audio.
+
+summary:
+[reference generation] The target video shows <Subject 1> speaking, with a sign behind her displaying the exact text "OPEN!!".
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1]): fully_preserved - Noor's appearance from <Picture 1> is retained within its assigned appearance-only role.
+
+detailed_description:
+[Shot 1] <Subject 1> (S1), with Noor's appearance from <Picture 1>, says exactly, <d>[English] Wait... really?!</d> A sign behind her reads exactly "OPEN!!". Preserve every punctuation mark in the dialogue and sign text. No additional action is specified.
+
+overall_soundscape:
+Unspecified
+
+non_diegetic_music:
+Unspecified

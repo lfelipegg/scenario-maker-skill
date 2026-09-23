@@ -1,0 +1,3 @@
+The ordinary native local H3 FL2VA ComfyUI workflow consumes **positive conditioning only** through `BasicGuider`; it has no separate negative-text path.
+
+May I include “exclude logos” explicitly in the positive prompt, or do you want a labeled negative field as standalone text that this workflow will not consume? Also, should the red balloon move, or should the opening image remain a still hold?

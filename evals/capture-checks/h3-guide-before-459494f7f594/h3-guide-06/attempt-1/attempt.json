@@ -1,0 +1,84 @@
+{
+  "case_id": "h3-guide-06",
+  "attempt": 1,
+  "revision": "worktree-sha256-9c543ad84bb8136a80b8797f05b76a58d6b1d65c39c431b8889ce5f7b8643208",
+  "started_at": "2026-09-23T14:20:30.598379+00:00",
+  "elapsed_seconds": 41.964,
+  "command": [
+    "omp",
+    "--cwd",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/h3-guide-before-459494f7f594/workspaces-blnszoc1/baseline/h3-guide-06/attempt-1",
+    "--print",
+    "--mode",
+    "json",
+    "--model",
+    "openai-codex/gpt-6-astra",
+    "--thinking",
+    "high",
+    "--no-session",
+    "--no-title",
+    "--no-prewalk",
+    "--no-skills",
+    "--no-rules",
+    "--no-extensions",
+    "--no-lsp",
+    "--no-pty",
+    "--tools",
+    "read,grep,glob,bash,write",
+    "--approval-mode",
+    "yolo",
+    "--config",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/omp-config.json",
+    "--system-prompt",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/generator-system.txt",
+    "--extension",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/capture.ts",
+    "--max-time",
+    "300s",
+    "Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.\n\nUse native local MiniMax H3. Author only prompt text, not generation. Use the default H3 structured format and return prompt only. Ref2VA. Picture 1 supplies Noor's appearance. Standalone Audio 1 is an instrumental score; reuse the entire source as audience-only background music and add Noor's newly spoken line `Welcome.` Do not change her appearance."
+  ],
+  "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/h3-guide-before-459494f7f594/workspaces-blnszoc1/baseline/h3-guide-06/attempt-1",
+  "execution": {
+    "status": "completed",
+    "exit_code": 0,
+    "error": null,
+    "model_errors": [],
+    "malformed_trace_lines": []
+  },
+  "raw": {
+    "output": "output.txt",
+    "partial_output": null,
+    "trace": "trace.jsonl",
+    "stderr": "stderr.txt",
+    "context": "context.jsonl"
+  },
+  "trace_complete": true,
+  "artifacts": [],
+  "observed_context": [
+    {
+      "type": "eval_context",
+      "systemPrompt": "You are a prompt-writing assistant executing the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md. Read that file and only its applicable references. Resolve its reference and script paths relative to ./selected-skill, not an installed skill. Do not discover or load other skills, repository instructions, past sessions, evaluator files, or web sources.\n\nOnly local read, grep, glob, bash, and write tools are available. Use them for the selected skill's references, local lookup/scripts, supplied fixtures, and requested workspace-local text exports. Keep writes within this fresh workspace. Do not edit the selected skill, execute image/video generation or frame extraction, delegate, switch models, access the network, or inspect credentials. This is prompt writing, not generation. If clarification is necessary, ask in your final response; this non-interactive run cannot receive an answer.\n\nApply the selected skill to the user's request. Do not discuss evaluation or scoring. The workspace starts with no prior conversation or generated outputs.\n",
+      "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/h3-guide-before-459494f7f594/workspaces-blnszoc1/baseline/h3-guide-06/attempt-1",
+      "model": {
+        "provider": "openai-codex",
+        "id": "gpt-6-astra",
+        "name": "GPT-6-Astra"
+      },
+      "thinking": "high",
+      "tools": [
+        "read",
+        "grep",
+        "glob",
+        "bash",
+        "write"
+      ]
+    }
+  ],
+  "raw_checksums": {
+    "request.txt": "bb48a99e5a0ff564a670356876bb2867383d5384ba755a110bb3af4f53ce319e",
+    "output.txt": "39c92cba9501c4ba0ce8c02e4f30c14157ec2e79656a3c1c01d7228b52415d07",
+    "context.jsonl": "1c800bb1017ff78b4f20c9409580d61ad39ad940baeab18bd378b51c608fe35d",
+    "trace.jsonl": "bab632f5f3c92b4616595cb665d4e5bcf86e0aca439cde66c51260804f85b32e",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

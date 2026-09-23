@@ -1,0 +1,19 @@
+subject_definitions:
+<Subject 1> is Noor (S1), whose appearance comes from <Picture 1> and remains unchanged.
+<Audio 1> is the standalone instrumental score, reused in its entirety as audience-only background music, not as Noor’s voice reference.
+
+summary:
+[reference generation + audio reuse] Noor says “Welcome.” while the entire instrumental source <Audio 1> plays as non-diegetic background music.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1]): fully_preserved - retain Noor’s appearance from <Picture 1>; transfer no unassigned pose, background, or camera properties.
+<Audio 1>: fully_copy - reuse the entire source as the background-music layer, not as the complete final audio track. Noor’s newly spoken dialogue is added separately.
+
+detailed_description:
+[Shot 1] <Subject 1> (S1), with her appearance unchanged from <Picture 1>, speaks the exact line <d>[English] Welcome.</d> Her speech is newly produced, not derived from the instrumental score. Camera behavior remains unspecified.
+
+overall_soundscape:
+Noor’s newly spoken “Welcome.” accompanies the reused score. Other ambience and sound effects are unspecified.
+
+non_diegetic_music:
+Reuse all of <Audio 1>, from beginning to end, as audience-only instrumental background music alongside Noor’s dialogue. It is not an in-scene performance or a replacement for her speech.

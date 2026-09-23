@@ -1,0 +1,3 @@
+I can’t promise the gesture is retained: if the target frame count truncates it before H3 Ref2VA consumes the reference, prompt wording cannot recover that missing motion. A `fully_preserved` marker expresses intent, not a guarantee.
+
+Can you supply a trimmed reference that includes the complete gesture within the consumed segment, or increase the target frame count enough to include it? If neither is possible, describe the gesture precisely so I can author it as a text-directed action—not claim it was retained from the reference.

@@ -1,0 +1,25 @@
+I can request strong fidelity, but **cannot guarantee pixel-perfect identity, exact rendered lettering, or flawless edit fidelity**. The selected skill does not establish an INT8 filename, GPU requirement, sampling steps, or installation commands. I won’t invent those details or put execution settings into the visual prompt.
+
+For the native `H3-Base-Ref2VA` → `MiniMaxH3ReferenceToVideo` path, the prompt below treats image A as `<Picture 1>`, assuming it is the first consumed image reference. No particular lettering or edit was supplied.
+
+```text
+subject_definitions:
+<Subject 1> is the subject whose identity comes from connected image A, <Picture 1>. The image supplies identity only.
+
+summary:
+[reference generation] The target video depicts <Subject 1> with the identity established by <Picture 1>.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1]): fully_preserved - retain the subject's identity-defining characteristics throughout the shot. Preservation applies only to the assigned identity role.
+
+detailed_description:
+[Shot 1] Depict <Subject 1> with the same recognizable identity and distinguishing identity features as in <Picture 1>. Maintain these characteristics consistently throughout the shot. The reference supplies identity, not clothing, pose, background, composition, lettering, or camera behavior. It is not a hard opening-frame anchor. Target action, setting, camera behavior, visible text, and specific edits remain unspecified.
+
+overall_soundscape:
+Unspecified
+
+non_diegetic_music:
+Unspecified
+```
+
+Would you like an in-chat enhancement that preserves this reference role and these constraints?

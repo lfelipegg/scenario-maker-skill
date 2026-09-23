@@ -1,0 +1,21 @@
+subject_definitions:
+<Audio 1> is connected standalone audio A, used only as the warm, breathy voice-timbre reference for the target narrator (S1), not as a source of words, rhythm, or background sound.
+
+summary:
+[audio reference] The target narrator delivers the exact supplied line using only the warm, breathy timbre referenced from <Audio 1>.
+
+retention_analysis:
+<Audio 1>: reference — transfer only its warm, breathy timbre to the target narrator. Do not copy its signal, unrelated speech, rhythm, or background sound.
+
+detailed_description:
+[Shot 1] The narrator (S1), with the warm, breathy timbre referenced from <Audio 1>, says in an off-screen voiceover, <d>[English] The harbor opens at dawn.</d> Speak exactly this line without additions or substitutions, using phrasing and rhythm independent of <Audio 1>. Visual content and camera behavior remain unspecified.
+
+overall_soundscape:
+Unspecified; do not reuse background sound from <Audio 1>.
+
+non_diegetic_music:
+Unspecified
+
+---
+
+Would you like an in-chat enhancement that preserves these references and constraints?

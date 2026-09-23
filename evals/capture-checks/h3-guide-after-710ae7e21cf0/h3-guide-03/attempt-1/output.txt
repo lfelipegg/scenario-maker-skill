@@ -1,0 +1,17 @@
+subject_definitions:
+<Subject 1> is Jo, whose appearance comes from <Picture 1>.
+
+summary:
+[reference generation] The target video shows <Subject 1> as an independent unseen narrator speaks first, followed by Jo speaking physically on screen. The narrator is never depicted.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1]): fully_preserved - Jo's appearance from <Picture 1> is retained; no background, pose, or other unassigned properties are transferred.
+
+detailed_description:
+[Shot 1] <Subject 1> is visible with Jo's appearance from <Picture 1>. The independent unseen narrator (S1) says in an off-screen voiceover, <d>[English] Listen.</d> Then <Subject 1> (S2) physically speaks on screen with visible mouth movements matching the exact words, <d>[English] I am listening.</d> Jo's line is in-scene speech, not voiceover. Do not depict the narrator.
+
+overall_soundscape:
+Unspecified
+
+non_diegetic_music:
+Unspecified

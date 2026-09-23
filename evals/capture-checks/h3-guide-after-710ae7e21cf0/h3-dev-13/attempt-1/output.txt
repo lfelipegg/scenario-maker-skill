@@ -1,0 +1,23 @@
+subject_definitions:
+<Picture 1> is connected image A, the visual edit base showing a bronze lamp on a white desk.
+<Subject 1> is the lamp from <Picture 1>; only its bronze finish changes to matte black.
+
+summary:
+[keyframe completion] The first generated output frame is an edited still based on <Picture 1>, with <Subject 1> already matte black, preserving the white desk and original composition.
+
+retention_analysis:
+<Picture 1> ([Shot 1] edited opening keyframe): partially_preserved - preserve the desk, composition, framing, and all visual content except the lamp’s finish.
+<Subject 1> (appears in [Shot 1]): partially_preserved - preserve the lamp’s shape, size, and placement; replace its bronze finish with matte black.
+
+detailed_description:
+[Shot 1] The first generated output frame already shows the complete edit: the same lamp on the same white desk, with a matte black finish instead of bronze. Preserve the original composition and all other visual details of <Picture 1>. Do not defer the finish change to a later transition. Later motion and camera behavior are unspecified.
+
+overall_soundscape:
+Unspecified
+
+non_diegetic_music:
+Unspecified
+
+---
+
+Would you like an in-chat enhancement that preserves these references and constraints?

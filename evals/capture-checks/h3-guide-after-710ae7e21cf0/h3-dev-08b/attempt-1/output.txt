@@ -1,0 +1,7 @@
+For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.
+
+integrated_multimodal_description: [Shot 1] Preserve the connected opening image of the ceramic bowl on a shelf as an intentional, uninterrupted still hold throughout the entire video. Keep the bowl, shelf, and all other visible content exactly as established in <Picture 1>, retaining their appearance, placement, relationships, composition, and visual style. No subject movement, environmental movement, or temporal transformation occurs. Lighting, shadows, colors, and focus remain unchanged. The camera stays completely fixed, with no pan, tilt, zoom, shake, or reframing. No cuts or transitions occur.
+
+overall_soundscape: N/A — complete silence throughout; no voices, ambience, or sound effects.
+
+non_diegetic_music: N/A — no music.

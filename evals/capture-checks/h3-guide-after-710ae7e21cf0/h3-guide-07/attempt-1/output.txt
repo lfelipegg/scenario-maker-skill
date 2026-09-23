@@ -1,0 +1,7 @@
+For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.
+
+integrated_multimodal_description: [Shot 1] Begin with the adult at the table beside the radio and the sign reading exactly "营业中!!" as shown in <Picture 1>. Preserve the image’s identity, clothing, objects, spatial relationships, composition, lighting, and visual style. The unseen radio singer (S1) sings through the radio, <d>[Spanish] Hola!</d>, as diegetic sound audible in the room, not voiceover. The singer remains unseen; the visible adult does not speak or sing. The adult touches the table once, producing a single tap precisely at contact. Preserve the sign’s exact lettering throughout. Limit the soundtrack to the requested radio singing, single table tap, quiet room tone, and audience-only slow piano.
+
+overall_soundscape: Quiet room tone and one table tap synchronized with the adult’s touch; no additional ambient or physical sounds.
+
+non_diegetic_music: Slow piano music heard only by the audience, not emitted by the radio or audible to the adult.

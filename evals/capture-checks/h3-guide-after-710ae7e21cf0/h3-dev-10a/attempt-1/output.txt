@@ -1,0 +1,11 @@
+For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.
+
+integrated_multimodal_description: [Shot 1] Begin exactly from the connected opening image of Arun wearing a red coat at the bus stop, preserving its visual style, composition, lighting, and spatial relationships. The coat is red in the opening frame. Only after the opening, the same coat gradually changes color from red to blue in one continuous transition, becoming fully blue. Preserve the coat’s shape, fabric texture, folds, and fit; only its color changes. Arun’s identity, face, expression, pose, position, and other clothing remain unchanged. The bus stop and all surrounding content stay still and unchanged. The camera remains fixed with identical framing throughout, without cuts or lighting shifts.
+
+overall_soundscape: Unspecified
+
+non_diegetic_music: Unspecified
+
+---
+
+Would you like an in-chat enhancement that preserves these references and constraints?

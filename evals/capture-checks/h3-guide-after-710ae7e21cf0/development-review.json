@@ -1,0 +1,83 @@
+{
+  "kind": "h3-guide-development-agent-review",
+  "cohort": "h3-guide-after-710ae7e21cf0",
+  "semantic_acceptance": "not-run",
+  "human_acceptance": "not-run",
+  "media_generation": "not-run",
+  "review_scope": {
+    "new_h3_guide_probes": 14,
+    "existing_h3_probes": 44,
+    "original_portfolio_cases": 16,
+    "attempts_per_case": 1
+  },
+  "before_observations": {
+    "cohort": "h3-guide-before-459494f7f594",
+    "already_satisfied": [
+      "h3-guide-07",
+      "h3-guide-08",
+      "h3-guide-09",
+      "h3-guide-10",
+      "h3-guide-11",
+      "h3-guide-12",
+      "h3-guide-13",
+      "h3-guide-14"
+    ],
+    "observed_defects": {
+      "h3-guide-01": "Speaker IDs followed subject order instead of first vocal event; the group line did not use the compound ID.",
+      "h3-guide-02": "The requested voiceover did not use the exact `says in an off-screen voiceover` serialization.",
+      "h3-guide-03": "Speaker IDs followed subject order instead of first vocal event.",
+      "h3-guide-04": "The cross-cut utterance omitted the default cut-time notation and both `<scenetrans>` markers.",
+      "h3-guide-05": "The terminally interrupted utterance omitted `<cutoff>`.",
+      "h3-guide-06": "The whole BGM mixed with new dialogue was incorrectly marked `fully_copy` instead of `partially_copy`."
+    }
+  },
+  "after_observations": {
+    "new_h3_guide_probes": {
+      "satisfied": [
+        "h3-guide-01",
+        "h3-guide-02",
+        "h3-guide-03",
+        "h3-guide-04",
+        "h3-guide-05",
+        "h3-guide-06",
+        "h3-guide-07",
+        "h3-guide-08",
+        "h3-guide-09",
+        "h3-guide-10",
+        "h3-guide-11",
+        "h3-guide-12",
+        "h3-guide-13",
+        "h3-guide-14"
+      ],
+      "observed_defects": []
+    },
+    "existing_h3_probes": {
+      "satisfied": 44,
+      "observed_semantic_defects": [],
+      "trace_limitations": [
+        "h3-dev-21c completed with output and no execution error, but trace_complete is false. The output itself satisfied its Illustrious-format development expectation."
+      ]
+    },
+    "original_portfolio": {
+      "no_regression_observed": 16,
+      "observed_semantic_defects": [],
+      "notes": [
+        "case-11 executed the required local `danbooru_lookup.py tag grey_hair` lookup.",
+        "case-15 used the supplied fixture and preserved its inspected visible content.",
+        "case-16 retained a four-line clothing-fragment artifact and reported its path, count, and fragment mode."
+      ]
+    }
+  },
+  "execution": {
+    "completed": 74,
+    "outputs": 74,
+    "trace_complete": 73,
+    "errors": 0,
+    "timeouts": 0
+  },
+  "limitations": [
+    "These are single-run development observations, not the formal paired acceptance cohort.",
+    "No H3 checkpoint, ComfyUI workflow, rendered media, or frame extraction was run.",
+    "Prompt-output observations do not establish rendered-media quality."
+  ]
+}

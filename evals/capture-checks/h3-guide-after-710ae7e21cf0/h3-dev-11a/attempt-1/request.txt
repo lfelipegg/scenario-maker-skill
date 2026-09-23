@@ -1,0 +1,3 @@
+Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.
+
+Write a Medium H3 Ref2VA full-reference prompt. Connected picture A supplies a glass marble; the target shows it rolling down a wooden ramp. I have no camera preference.

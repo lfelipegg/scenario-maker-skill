@@ -1,0 +1,23 @@
+subject_definitions:
+<Subject 1> is the courier, with identity and red hair from <Picture 1> and riding motion only from <Video 1>.
+<Subject 2> is her green bicycle from <Picture 2>.
+<Video 2> supplies only camera motion.
+<Audio 2> is the standalone timbre reference for <Subject 2>’s bell, not a signal to copy.
+
+summary:
+[reference generation + audio reference] <Subject 1> rides <Subject 2> and rings its bell once while riding, with camera motion from <Video 2> and bell timbre from <Audio 2>.
+
+retention_analysis:
+<Subject 1> ([Shot 1]): fully_preserved - retain the courier’s identity and red hair; use only the riding motion from <Video 1>.
+<Subject 2> ([Shot 1]): fully_preserved - retain the referenced bicycle and its green color.
+<Video 2> ([Shot 1]): fully_preserved - retain only its camera motion.
+<Audio 2>: reference - apply only its timbre to the bicycle bell without copying the source signal or other audio properties.
+
+detailed_description:
+[Shot 1] <Subject 1>, retaining her identity and red hair from <Picture 1>, rides the green <Subject 2> from <Picture 2> with riding motion referenced only from <Video 1>. The camera follows only the camera motion of <Video 2>. While riding, she rings the bicycle bell exactly once; the audible ring coincides with that action and uses only the timbre referenced from <Audio 2>. Transfer no unassigned properties from any reference. Do not reuse or reference the separately connected metronome soundtrack of <Video 2> in target audio.
+
+overall_soundscape:
+One diegetic bicycle-bell ring with timbre referenced from <Audio 2>. All other sound is unspecified.
+
+non_diegetic_music:
+Unspecified

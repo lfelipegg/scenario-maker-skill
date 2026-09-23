@@ -1,0 +1,20 @@
+subject_definitions:
+<Picture 1> is the visual edit base: a blue ceramic vase on a white table.
+<Subject 1> is the vase from <Picture 1>.
+<Picture 2> supplies only the herringbone texture of its red jacket.
+
+summary:
+[keyframe completion + reference generation] The first generated output frame shows the complete edit to <Picture 1>: transfer only the herringbone texture from <Picture 2> onto <Subject 1>, retaining its blue color and everything else unchanged.
+
+retention_analysis:
+<Picture 1>: partially_preserved - only the vase’s surface texture changes; preserve its blue color, ceramic material, shape, size, position, white table, background, composition, framing, and lighting.
+<Picture 2>: attribute_transfer - transfer only the jacket’s herringbone texture to the vase, not its red color, garment form, or other properties.
+
+detailed_description:
+[Shot 1] The first generated output frame already shows the same blue ceramic vase with the herringbone texture from <Picture 2> applied to its surface. Keep all other content exactly as in <Picture 1>. Do not introduce the jacket or transfer its red color. No delayed texture transformation; the edit is complete in the first output frame. Later motion and camera behavior are unspecified.
+
+overall_soundscape:
+Unspecified
+
+non_diegetic_music:
+Unspecified

@@ -1,0 +1,26 @@
+subject_definitions:
+<Video 1> is the source video being edited: one yellow tram crosses a stone bridge at dusk while pedestrians wait on the north sidewalk.
+<Subject 1> is the tram in <Video 1>.
+<Subject 2> is only the exact dark green color supplied by <Picture 1>, used as the paint-color donor for <Subject 1>.
+
+summary:
+[video editing] The target video is an edited version of <Video 1>. Replace only <Subject 1>'s yellow paint with <Subject 2>'s exact dark green; preserve everything else visually.
+
+retention_analysis:
+<Video 1> (setting, composition, motion, camera, lighting, and timing): fully_preserved — retain the stone bridge, dusk, pedestrians waiting on the north sidewalk, and original visual structure.
+<Subject 1>: partially_preserved — only its yellow paint changes; all other tram characteristics remain unchanged.
+<Subject 2>: attribute_transfer — transfer only the exact dark green color from <Picture 1> to <Subject 1>'s yellow-painted surfaces.
+
+detailed_description:
+Retain <Video 1>'s original visual style.
+[Shot 1] From the first output frame onward, the same single tram crosses the stone bridge with its originally yellow-painted surfaces dark green, matching <Picture 1>'s color while retaining the original surface texture, finish, shading, and reflections. Preserve its trajectory, speed, geometry, and all non-yellow details. Keep the pedestrians waiting on the north sidewalk, all surroundings, dusk lighting, framing, camera behavior, and timing unchanged. Import no other attributes or content from <Picture 1>.
+
+overall_soundscape:
+Unspecified
+
+non_diegetic_music:
+Unspecified
+
+---
+
+Would you like an in-chat enhancement that preserves these references and constraints?

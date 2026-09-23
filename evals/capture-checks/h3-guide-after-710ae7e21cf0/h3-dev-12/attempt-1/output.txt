@@ -1,0 +1,24 @@
+subject_definitions:
+<Subject 1> is Jo, using the connected identity image <Picture 1>.
+<Subject 2> is Lin, using the connected identity image <Picture 2>.
+
+summary:
+[reference generation] Two shots: <Subject 1> closes the shop gate while <Subject 2> waits across the street, then <Subject 2> crosses toward <Subject 1>, with a bicycle bell bridging the cut.
+
+retention_analysis:
+<Subject 1> (both shots): fully_preserved — retain Jo’s referenced identity only.
+<Subject 2> (both shots): fully_preserved — retain Lin’s referenced identity only.
+
+detailed_description:
+[Shot 1] <Subject 1> closes the shop gate while <Subject 2> waits across the street. As the gate hits the ground, a bicycle bell begins ringing.
+[Shot 2] Cut to <Subject 2> crossing the street toward <Subject 1>. The same bicycle bell continues uninterrupted across the cut and during the crossing, without restarting. <Subject 1> does not wave during the crossing; only after <Subject 2> reaches the curb on Jo’s side does <Subject 1> wave.
+
+overall_soundscape:
+A bicycle bell begins at the gate’s contact with the ground and carries continuously into the second shot.
+
+non_diegetic_music:
+Unspecified
+
+---
+
+Would you like an in-chat enhancement that preserves these references, action order, and sound overlap?

@@ -1,0 +1,3 @@
+Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.
+
+Use native local MiniMax H3. Author only prompt text, not generation. Return one plain English paragraph only, with no headings, XML-like tags, or speaker-ID notation. Ref2VA. Picture 1 supplies Ari's appearance. Ari says exactly `Stay with me.` A requested untimed cut occurs after `Stay`; the rest of the same line continues uninterrupted in the next shot.

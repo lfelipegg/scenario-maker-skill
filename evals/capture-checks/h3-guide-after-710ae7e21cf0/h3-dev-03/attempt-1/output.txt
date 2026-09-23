@@ -1,0 +1,27 @@
+subject_definitions:
+<Video 1> is the source video being edited.
+<Subject 1> is the image-left baker in <Video 1>, originally wearing a white apron.
+<Subject 2> is the image-right baker in <Video 1>, wearing a black apron.
+<Subject 3> is only the blue floral fabric from <Picture 1>, supplying fabric appearance for <Subject 1>'s apron.
+
+summary:
+[video editing] The target video is an edited version of <Video 1>. Change only <Subject 1>'s white apron to <Subject 3>'s blue floral fabric.
+
+retention_analysis:
+<Video 1> (composition, setting, lighting, camera behavior, and timing): fully_preserved — retain both bakers' positions behind the pine counter and the unchanged wall sign reading "Open late!".
+<Subject 1>: partially_preserved — only the apron fabric changes; preserve the baker's identity, appearance, actions, other clothing, and apron shape.
+<Subject 2>: fully_preserved — retain the baker and black apron unchanged.
+<Subject 3>: attribute_transfer — transfer only the blue floral fabric appearance to <Subject 1>'s apron, not to any other garment or surface.
+
+detailed_description:
+[Shot 1] Preserve <Video 1>'s original framing, lighting, camera behavior, timing, and actions. Both bakers remain in their original positions behind the same pine counter. From the first output frame onward, only the image-left baker's formerly white apron uses the blue floral fabric from <Picture 1>, retaining its original shape and fit. Keep the image-right baker's black apron unchanged. Preserve the wall sign exactly as "Open late!". Import no other content from <Picture 1>. No hats. Make no other visual changes.
+
+overall_soundscape:
+Unspecified
+
+non_diegetic_music:
+Unspecified
+
+---
+
+Would you like an in-chat enhancement that preserves these references and constraints?

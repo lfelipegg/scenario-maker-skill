@@ -1,0 +1,17 @@
+subject_definitions:
+<Subject 1> is Noor (S1), whose appearance comes from <Picture 1>.
+
+summary:
+[reference generation] Noor says "Wait... really?!" with a sign behind her displaying exactly "OPEN!!".
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1]): fully_preserved - retain Noor's appearance from <Picture 1>. The reference supplies appearance only, not pose, background, action, or sound.
+
+detailed_description:
+[Shot 1] <Subject 1> (S1) appears with a sign behind her reading exactly "OPEN!!". Noor says exactly <d>[English] Wait... really?!</d> Preserve every punctuation mark in the dialogue and sign text. No additional action is specified; camera behavior remains unspecified.
+
+overall_soundscape:
+Noor's specified dialogue; other sound is unspecified.
+
+non_diegetic_music:
+Unspecified

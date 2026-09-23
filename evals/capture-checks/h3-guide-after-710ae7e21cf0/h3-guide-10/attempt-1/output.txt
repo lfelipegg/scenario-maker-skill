@@ -1,0 +1,1 @@
+The mandatory cut to Shot 2 at 5 seconds falls outside the 4-second video. Both constraints cannot remain unchanged in a valid timeline. Which may be relaxed: the duration or the cut time?

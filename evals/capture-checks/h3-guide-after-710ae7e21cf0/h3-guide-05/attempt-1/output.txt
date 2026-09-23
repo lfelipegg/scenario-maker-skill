@@ -1,0 +1,7 @@
+For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.
+
+integrated_multimodal_description: [Shot 1] Begin with Ari standing at the counter exactly as shown in <Picture 1>, preserving Ari’s identity, appearance, clothing, position, the counter, surrounding scene, composition, lighting, and visual style. Ari (S1) physically speaks on-screen, with visible mouth movements matching the exact unfinished words: <d>[English] If you open<cutoff></d> The video ends abruptly immediately after “open,” interrupting the unfinished utterance. Do not complete the sentence, add another word, or continue into a pause or reaction.
+
+overall_soundscape: Ari’s specified speech is the only audible sound. No ambience, physical sounds, non-verbal vocal sounds, or diegetic music.
+
+non_diegetic_music: N/A

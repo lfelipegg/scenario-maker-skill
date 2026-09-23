@@ -1,0 +1,21 @@
+subject_definitions:
+<Subject 1> is the brass compass from Picture A (<Picture 1>), which supplies only its identity and appearance. Video A (<Video 1>) supplies only its slow rotational motion.
+
+summary:
+[reference generation] <Subject 1> rotates slowly on plain gray cloth, retaining its referenced brass appearance and following the rotation from <Video 1>.
+
+retention_analysis:
+<Subject 1> ([Shot 1]): fully_preserved — preserve the compass’s identity and appearance from <Picture 1>; apply only the slow rotation from <Video 1>.
+
+detailed_description:
+[Shot 1] The brass compass turns at the unhurried pace referenced from <Video 1>, its changing orientation carrying the visual action against plain gray cloth. Preserve the compass’s form and brass appearance as supplied by <Picture 1>, without embellishment. Keep the scene limited to the compass and cloth. Neither reference contributes additional objects, backgrounds, lighting, camera behavior, or sound; <Video 1> contributes no appearance attributes. Camera behavior and lighting remain unspecified.
+
+overall_soundscape:
+Unspecified
+
+non_diegetic_music:
+Unspecified
+
+---
+
+Would you like a further in-chat wording refinement with these same bindings and constraints?

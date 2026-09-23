@@ -1,0 +1,3 @@
+Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.
+
+Use native local MiniMax H3. Author only prompt text, not generation. Use the default H3 structured format and return prompt only. FL2VA one-opening-image route. Picture 1 contains an adult at a table beside a radio and a sign reading exactly `营业中!!`. Only the following sound is requested: radio singing `Hola!`, one tap on the table when the person touches it, quiet room tone, and audience-only slow piano music. The radio singer remains unseen.

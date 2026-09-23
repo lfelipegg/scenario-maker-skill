@@ -1,0 +1,21 @@
+subject_definitions:
+<Subject 1> is the white paper boat from <Picture 1> (connected picture A), which supplies only its identity and appearance.
+
+summary:
+[reference generation] The target video shows <Subject 1> drifting through a narrow rain gutter.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1]): fully_preserved — retain the same boat’s white paper, folded shape, and proportions from <Picture 1>. The reference background and composition are not transferred.
+
+detailed_description:
+[Shot 1] <Subject 1> floats on water flowing along a narrow rain gutter, drifting with the current through the confined channel. Preserve its reference-defined appearance throughout the drift, keeping the white paper and folded structure recognizable as the same boat from <Picture 1>.
+
+overall_soundscape:
+Unspecified
+
+non_diegetic_music:
+Unspecified
+
+---
+
+Would you like an in-chat enhancement that preserves these references and constraints?

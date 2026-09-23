@@ -1,0 +1,23 @@
+subject_definitions:
+<Video 1> is connected video A, the visual edit base. Its first visible frame, where a closed blue door fills the center, supplies the intended opening composition.
+<Subject 1> is that closed door; only its blue color changes to green.
+
+summary:
+[reference generation] The first generated output frame is an edited still based on <Video 1>'s first visible frame. <Subject 1> is already green, with all other visible content preserved.
+
+retention_analysis:
+<Video 1> (opening-image visual base): partially_preserved — retain the first visible frame’s content, composition, framing, lighting, and style, except for the requested door-color change.
+<Subject 1>: partially_preserved — retain the door’s closed state, central placement, shape, surface detail, and hardware; change only its blue color to green.
+
+detailed_description:
+[Shot 1] The first generated output frame already contains the complete edit: the same closed door fills the center, now green rather than blue. Preserve its texture, shading, and highlights while changing only its color. Preserve every other visible element from the source frame, including any lettering, surrounding objects, background, spatial relationships, framing, and lighting. Do not show an initial blue-door frame or a gradual color transition. Later motion and camera behavior are unspecified.
+
+overall_soundscape:
+Unspecified
+
+non_diegetic_music:
+Unspecified
+
+---
+
+Would you like an in-chat enhancement that preserves these references and constraints?

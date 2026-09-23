@@ -1,0 +1,9 @@
+For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.
+
+integrated_multimodal_description: [Shot 1] Preserve the connected opening image’s appearance, style, composition, and colors. The woman stands motionless beside the window, with the sign behind her displaying exactly "KEEP CLEAR". Only the curtain moves gently. Keep the woman’s identity, clothing, pose, position, gaze, and expression unchanged, with no blinking or other bodily movement. Preserve the sign’s position, appearance, and exact lettering throughout. The window and all other objects remain unchanged. Maintain the original lighting and fixed framing, with no camera movement, zoom, or cuts. The entire shot is silent.
+
+overall_soundscape: N/A — complete silence throughout.
+
+non_diegetic_music: N/A — no music.
+
+Would you like an in-chat enhancement that preserves these references and constraints?

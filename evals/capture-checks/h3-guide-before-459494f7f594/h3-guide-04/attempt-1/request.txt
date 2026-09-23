@@ -1,0 +1,3 @@
+Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.
+
+Use native local MiniMax H3. Author only prompt text, not generation. Use the default H3 structured format and return prompt only. Ref2VA. Picture 1 supplies Ari's identity. Requested duration 6 seconds. Shot 1 shows Ari facing forward; cut at 3.5 seconds to a close-up of the same Ari. Ari's exact line is `Stay with me.` The word `Stay` is heard before the cut and ` with me.` afterward as one uninterrupted utterance. No other sound or music.

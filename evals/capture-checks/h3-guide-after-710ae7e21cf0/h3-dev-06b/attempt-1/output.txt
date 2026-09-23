@@ -1,0 +1,3 @@
+No prompt can guarantee active image conditioning with the video VAE disconnected. Native H3 Ref2VA image/video latent references depend on that VAE; an accepted image connection, `<Picture 1>` label, or `fully_preserved` instruction cannot replace it.
+
+Can you reconnect the video VAE and verify that the appearance image is consumed by the reference-conditioning path? That prerequisite must be resolved before writing a prompt that relies on the image. Even then, the prompt expresses appearance-preservation intent—not a guarantee of visual fidelity.

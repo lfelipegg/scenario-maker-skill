@@ -1,0 +1,18 @@
+subject_definitions:
+<Subject 1> is Ari, whose identity comes from <Picture 1>.
+
+summary:
+[reference generation] A 6-second video shows <Subject 1> facing forward, then cuts to a close-up of the same Ari while one uninterrupted utterance continues across the cut.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1] and [Shot 2]): fully_preserved - Ari's identity from <Picture 1> remains consistent across both shots. The picture supplies identity only.
+
+detailed_description:
+[Shot 1] <Subject 1> faces forward. <Subject 1> (S1) begins speaking before the cut, <d>[English] Stay<scenetrans></d>. The same audio continues uninterrupted across the cut.
+[Shot 2] At 00:03.500, the shot cuts to a close-up of the same <Subject 1>. <Subject 1> (S1) continues the utterance without pausing, repeating, or restarting, <d>[English] <scenetrans> with me.</d>, completing the line before the 6-second video ends.
+
+overall_soundscape:
+Only Ari's specified speech is audible. No ambience, sound effects, non-verbal vocal sounds, or other sound.
+
+non_diegetic_music:
+N/A

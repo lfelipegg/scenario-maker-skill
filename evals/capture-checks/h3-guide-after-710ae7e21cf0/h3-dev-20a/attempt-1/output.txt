@@ -1,0 +1,5 @@
+Scenario Maker writes prompts only; I can’t generate a video, extract its first frame, or return a generated image here.
+
+Hosted **MiniMax-H3-Max Context-IR** and its requested **2K workflow** are outside this skill’s supported routes. I won’t silently substitute **H3-Base-Ref2VA**: that is a distinct, reference-based workflow, not an equivalent text-only route.
+
+Would you like a **generic text-to-video prompt**, or a **local H3-Base-Ref2VA prompt** for later execution? Please provide your scene or text prompt; for the local route, also provide a reference image/video or description and specify what it should contribute.

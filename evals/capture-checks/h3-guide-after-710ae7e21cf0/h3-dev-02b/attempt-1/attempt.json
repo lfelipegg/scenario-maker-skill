@@ -1,0 +1,84 @@
+{
+  "case_id": "h3-dev-02b",
+  "attempt": 1,
+  "revision": "worktree-sha256-7ef416750c49a0a8fe479f862492ca729fdc7a8e0c03b62c1eb70f1e420fa602",
+  "started_at": "2026-09-23T14:38:50.320878+00:00",
+  "elapsed_seconds": 41.296,
+  "command": [
+    "omp",
+    "--cwd",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/h3-guide-after-710ae7e21cf0/workspaces-z4nult68/baseline/h3-dev-02b/attempt-1",
+    "--print",
+    "--mode",
+    "json",
+    "--model",
+    "openai-codex/gpt-6-astra",
+    "--thinking",
+    "high",
+    "--no-session",
+    "--no-title",
+    "--no-prewalk",
+    "--no-skills",
+    "--no-rules",
+    "--no-extensions",
+    "--no-lsp",
+    "--no-pty",
+    "--tools",
+    "read,grep,glob,bash,write",
+    "--approval-mode",
+    "yolo",
+    "--config",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/omp-config.json",
+    "--system-prompt",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/generator-system.txt",
+    "--extension",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/capture.ts",
+    "--max-time",
+    "300s",
+    "Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.\n\nFor native local H3 Ref2VA, write one prompt only. Connected consumed order: image A supplies the courier's identity and red hair; image B supplies her green bicycle. Video A supplies only riding motion and has no connected soundtrack. Video B supplies only camera motion; its separately connected metronome soundtrack must not be reused or referenced in target audio. Standalone audio A supplies only the timbre for the bicycle bell, which the courier rings once while riding. Use only these target actions and reference roles; all other sound and music are unspecified."
+  ],
+  "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/h3-guide-after-710ae7e21cf0/workspaces-z4nult68/baseline/h3-dev-02b/attempt-1",
+  "execution": {
+    "status": "completed",
+    "exit_code": 0,
+    "error": null,
+    "model_errors": [],
+    "malformed_trace_lines": []
+  },
+  "raw": {
+    "output": "output.txt",
+    "partial_output": null,
+    "trace": "trace.jsonl",
+    "stderr": "stderr.txt",
+    "context": "context.jsonl"
+  },
+  "trace_complete": true,
+  "artifacts": [],
+  "observed_context": [
+    {
+      "type": "eval_context",
+      "systemPrompt": "You are a prompt-writing assistant executing the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md. Read that file and only its applicable references. Resolve its reference and script paths relative to ./selected-skill, not an installed skill. Do not discover or load other skills, repository instructions, past sessions, evaluator files, or web sources.\n\nOnly local read, grep, glob, bash, and write tools are available. Use them for the selected skill's references, local lookup/scripts, supplied fixtures, and requested workspace-local text exports. Keep writes within this fresh workspace. Do not edit the selected skill, execute image/video generation or frame extraction, delegate, switch models, access the network, or inspect credentials. This is prompt writing, not generation. If clarification is necessary, ask in your final response; this non-interactive run cannot receive an answer.\n\nApply the selected skill to the user's request. Do not discuss evaluation or scoring. The workspace starts with no prior conversation or generated outputs.\n",
+      "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/h3-guide-after-710ae7e21cf0/workspaces-z4nult68/baseline/h3-dev-02b/attempt-1",
+      "model": {
+        "provider": "openai-codex",
+        "id": "gpt-6-astra",
+        "name": "GPT-6-Astra"
+      },
+      "thinking": "high",
+      "tools": [
+        "read",
+        "grep",
+        "glob",
+        "bash",
+        "write"
+      ]
+    }
+  ],
+  "raw_checksums": {
+    "request.txt": "2b6010a6444f4c6cab7616fa832e3c9f0819e1f9809495f74e54b0ddf4dbce38",
+    "output.txt": "67c67a585be32842aff747eaef93e154667174246cfc95487e9759f7a21038c3",
+    "context.jsonl": "0bcf93898507227b2ecda05bff65a7f056047a230b4483000051ea5db8af8de7",
+    "trace.jsonl": "48b02767c30faf306b515ac8da67f63b6e4133712862874eb24842f4e8687843",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

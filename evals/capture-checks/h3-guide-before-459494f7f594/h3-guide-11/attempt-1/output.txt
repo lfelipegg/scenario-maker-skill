@@ -1,0 +1,7 @@
+For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.
+
+integrated_multimodal_description: [Shot 1] Begin with the vase on the table exactly as established in <Picture 1>, preserving its opening composition, appearance, colors, lighting, and spatial relationships. Keep the vase and table completely still throughout. Perform a slow, smooth optical zoom in toward the vase by gradually increasing the lens focal length, tightening the framing while the camera body remains stationary in position and orientation. No dolly movement, forward translation, or camera-induced parallax; the closer view results solely from optical magnification. Preserve the scene's content and lighting without other changes.
+
+overall_soundscape: Unspecified
+
+non_diegetic_music: Unspecified

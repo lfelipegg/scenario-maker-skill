@@ -1,0 +1,3 @@
+The connected soundtrack of video B is `<Audio 1>`; standalone audio A is `<Audio 2>`. Video A creates no audio label.
+
+Should the metronome be copied into the output, used only as a rhythm reference, or left unused? And should `<Audio 2>` guide the bicycle’s bell sound, or another intended bell sound?

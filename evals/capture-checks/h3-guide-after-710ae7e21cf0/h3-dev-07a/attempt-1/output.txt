@@ -1,0 +1,23 @@
+subject_definitions:
+<Subject 1> is Nia, using only the facial identity from <Picture 1> (Picture A): an oval face, close-cropped black hair, and a small scar over her right eyebrow.
+<Video 1> (Video A) supplies only the slow clockwise camera orbit around a standing subject.
+
+summary:
+[reference generation] <Subject 1> stands beside a plain red mailbox while the camera follows the slow clockwise orbit from <Video 1>.
+
+retention_analysis:
+<Subject 1>: fully_preserved — retain Nia’s defined facial identity from <Picture 1>; no other picture attributes transfer.
+<Video 1>: fully_preserved — retain the assigned camera orbit and its slow clockwise movement only, without transferring its subject, setting, appearance, or soundtrack.
+
+detailed_description:
+[Shot 1] Nia stands beside a plain red mailbox. Preserve her oval face, close-cropped black hair, and small scar over her right eyebrow. The camera slowly orbits clockwise around Nia, following the camera movement referenced from <Video 1>, while she remains standing beside the mailbox.
+
+overall_soundscape:
+Unspecified
+
+non_diegetic_music:
+Unspecified
+
+---
+
+Would you like an in-chat enhancement that preserves these references and constraints?

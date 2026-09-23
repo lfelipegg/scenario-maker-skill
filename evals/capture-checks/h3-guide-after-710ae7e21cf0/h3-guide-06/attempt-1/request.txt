@@ -1,0 +1,3 @@
+Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.
+
+Use native local MiniMax H3. Author only prompt text, not generation. Use the default H3 structured format and return prompt only. Ref2VA. Picture 1 supplies Noor's appearance. Standalone Audio 1 is an instrumental score; reuse the entire source as audience-only background music and add Noor's newly spoken line `Welcome.` Do not change her appearance.

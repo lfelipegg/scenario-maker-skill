@@ -1,0 +1,23 @@
+subject_definitions:
+<Picture 1> is connected image A, the visual edit base for the first generated output frame.
+<Subject 1> is the white mug in <Picture 1>, bearing the exact lettering "今日は、雨。"
+
+summary:
+[keyframe completion] The first generated output frame is an edited still based on <Picture 1>, with only <Subject 1>'s white surface changed to orange.
+
+retention_analysis:
+<Picture 1>: partially_preserved — preserve the original composition, framing, lighting, background, and all other content; only the mug color changes.
+<Subject 1>: partially_preserved — preserve the same mug, shape, position, material appearance, and exact lettering; change white to orange.
+
+detailed_description:
+[Shot 1] The first generated output frame already contains the complete edit: <Subject 1> is orange rather than white. Preserve the mug's lettering exactly as "今日は、雨。", including its punctuation, appearance, color, and placement. Leave everything else in <Picture 1> unchanged. Do not defer the recoloring to a later transition. Later motion and camera behavior are unspecified.
+
+overall_soundscape:
+Unspecified
+
+non_diegetic_music:
+Unspecified
+
+---
+
+Would you like an in-chat enhancement that preserves these references and constraints?

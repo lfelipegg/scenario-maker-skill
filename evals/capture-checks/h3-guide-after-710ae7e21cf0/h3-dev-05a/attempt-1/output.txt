@@ -1,0 +1,25 @@
+subject_definitions:
+<Audio 1> is the separately connected soundtrack of <Video 1>, reused unchanged as the complete final audio track, including the voice of <Subject 1> (S1).
+<Video 1> is the source video to edit.
+<Subject 1> is the single speaker seated at the wooden desk in <Video 1>.
+
+summary:
+[video editing + audio reuse] The target video is an edited version of <Video 1>. Change only the gray wall to white, preserving all other content and reusing <Audio 1> unchanged.
+
+retention_analysis:
+<Audio 1>: fully_copy — reuse the complete soundtrack without adding, replacing, or removing audio.
+<Video 1>: partially_preserved — change only the wall color; preserve the wooden desk, remaining room, framing, lighting, camera behavior, actions, and timing.
+<Subject 1>: fully_preserved — retain the speaker’s identity, appearance, clothing, expressions, and movements.
+
+detailed_description:
+[Shot 1] Preserve the source composition and action throughout. Change the gray wall to white from the first output frame onward, retaining its original shape and texture. The same <Subject 1> (S1) remains seated at the unchanged wooden desk and says, <d>[English] Meet me at six.</d> Reuse this original utterance directly from <Audio 1>, preserving its exact words, speaker identity, delivery, timing, and synchronization with the original mouth movements. Do not regenerate or duplicate the speech. Make no other visual changes; add no other speech, sounds, or music.
+
+overall_soundscape:
+Retain any existing ambience and physical sounds within the unchanged <Audio 1>; add none.
+
+non_diegetic_music:
+Add no music; preserve the reused soundtrack unchanged.
+
+---
+
+Would you like an in-chat enhancement that preserves these references and constraints?

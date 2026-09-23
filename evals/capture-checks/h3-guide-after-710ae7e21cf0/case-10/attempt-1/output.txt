@@ -1,0 +1,13 @@
+### Labeled comparison
+
+| Criterion | SDXL prompt | Krea 2 prompt |
+|---|---|---|
+| **Fidelity to the brief** | Explicitly preserves every core element: green bicycle, leaning relationship, white brick wall, and soft overcast daylight. Adds eye-level framing, a medium shot, and a restrained color palette beyond the brief. | Preserves the subject, colors, wall material, and lighting. “Rests against” strongly suggests leaning but is slightly less explicit. Adds eye-level framing and a restrained palette; “even” is a compatible clarification of overcast light. |
+| **Model-appropriate expression** | Compact, comma-separated ordinary-English phrases suit SDXL’s recommended presentation. The bicycle–wall relationship stays intact rather than becoming disconnected keywords. | A cohesive natural-language sentence suits Krea 2’s open RAW/Turbo guidance. Its brevity is appropriate for this sparse scene; a longer default is not a minimum or a reason to add detail. |
+| **Likely ambiguity** | “Medium shot” gives a framing cue but does not unambiguously establish whether the entire bicycle is visible. “Restrained color palette” could mean limited colors or reduced saturation, potentially muting the green. | “Rests against” leaves the bicycle’s precise lean slightly less defined. Eye level specifies viewpoint but not shot distance, leaving framing more open than in the SDXL prompt. “Restrained palette” carries the same color-treatment ambiguity. |
+
+### Overall comparison
+
+**Both are strongly faithful and appropriately expressed for their respective model profiles.** The SDXL prompt has a slight advantage in literal fidelity because it retains “leaning against” explicitly. The Krea 2 prompt conveys essentially the same scene in fluent prose but leaves shot distance unspecified.
+
+Neither is a strictly brief-only rendering: both introduce camera and palette choices. Those additions are compatible with the scene, but they narrow its interpretation. These are wording-level distinctions, not evidence that either model will produce a better image.

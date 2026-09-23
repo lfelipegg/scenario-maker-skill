@@ -1,0 +1,1 @@
+These requirements conflict: perfectly fixed framing cannot also change throughout a continuous handheld push-in. Which constraint may be relaxed—the fixed framing or the framing-changing handheld push-in?

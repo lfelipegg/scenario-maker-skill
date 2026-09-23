@@ -1,0 +1,22 @@
+subject_definitions:
+<Subject 1> is Kai, using <Picture 1> only for facial identity.
+<Picture 2> is the storyboard reference for composition and shot order only: <Subject 1> is image-left in [Shot 1] and centered in [Shot 2]. It is not a concrete frame anchor.
+<Video 1> supplies only the slow rightward camera truck in [Shot 2], not scene content, subject action, or soundtrack.
+
+summary:
+[reference generation] Show <Subject 1> in two shots following <Picture 2>'s composition and order, preserving Kai's facial identity from <Picture 1>. Apply <Video 1>'s slow rightward camera truck only in [Shot 2].
+
+retention_analysis:
+<Subject 1> ([Shot 1], [Shot 2]): fully_preserved - retain Kai's facial identity only; no other properties transfer from <Picture 1>.
+<Picture 2> ([Shot 1], [Shot 2]): fully_preserved - retain the assigned composition and order: image-left, then centered. No appearance, setting, or style transfers.
+<Video 1> ([Shot 2] camera): fully_preserved - retain only the slow rightward truck; no other source properties transfer.
+
+detailed_description:
+[Shot 1] <Subject 1>, with Kai's facial identity from <Picture 1>, appears image-left according to <Picture 2>'s first-shot composition. Camera behavior is unspecified.
+[Shot 2] Cut to <Subject 1> centered according to <Picture 2>'s second-shot composition, retaining the same facial identity. The camera trucks slowly rightward as referenced from <Video 1>, translating sideways rather than panning. Use the storyboard solely for composition and order, not as an opening-image anchor.
+
+overall_soundscape:
+Unspecified
+
+non_diegetic_music:
+Unspecified

@@ -1,0 +1,24 @@
+subject_definitions:
+<Audio 1> is the separately connected dialogue soundtrack of <Video 1>, containing <Subject 1> (S1), for direct reuse as the complete final audio track.
+<Video 1> is the source video being edited.
+<Subject 1> is the actor in <Video 1>, preserved unchanged.
+
+summary:
+[video editing + audio reuse] The target video is an edited version of <Video 1>. Change only the wall from red to blue; preserve the actor, framing, actions, and exact dialogue.
+
+retention_analysis:
+<Video 1>: partially_preserved — only the wall color changes; all other visual content and timing remain unchanged.
+<Subject 1>: fully_preserved — retain the actor’s identity, appearance, expressions, and actions.
+<Audio 1>: fully_copy — reuse the dialogue soundtrack unchanged as the complete final audio track, with no additional sounds.
+
+detailed_description:
+Preserve <Video 1>’s visual style.
+[Shot 1] Keep the original composition, framing, camera behavior, lighting, actions, and timing. The wall is blue instead of red from the first output frame throughout the clip; retain its original texture and shading. <Subject 1> (S1) says, <d>[Spanish] No vuelvas aquí.</d> Directly reuse this dialogue from <Audio 1>, preserving its delivery, timing, and synchronization with the actor. Make no other visual changes.
+
+overall_soundscape:
+Silence except for the dialogue specified above. No ambience, physical sound effects, or additional vocal sounds.
+
+non_diegetic_music:
+N/A — no non-diegetic music.
+
+Would you like an in-chat enhancement that preserves these references and constraints?

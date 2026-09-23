@@ -1,0 +1,19 @@
+subject_definitions:
+<Subject 1> is Noor, with facial identity supplied only by <Picture 1>.
+<Picture 2> supplies only broad similarity to its blue-and-white watercolor style, not its subjects or layout.
+
+summary:
+[reference generation] <Subject 1> stands in a plain gray room, with facial identity retained from <Picture 1> and broad watercolor-style similarity to <Picture 2>.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1]): fully_preserved - retain Noor's facial identity exactly as the reference intent from <Picture 1>; no other properties are transferred.
+<Picture 2>: weak_reference - broadly resemble its blue-and-white watercolor style only; exclude its depicted subjects and layout.
+
+detailed_description:
+[Shot 1] Noor stands in a plain gray room. Preserve Noor's facial identity from <Picture 1> without importing its clothing, pose, background, or composition. Use broad similarity to <Picture 2>'s blue-and-white watercolor treatment while keeping the room plainly gray and retaining Noor's facial identity. Do not reproduce <Picture 2>'s subjects or layout. Camera behavior is unspecified.
+
+overall_soundscape:
+Unspecified
+
+non_diegetic_music:
+Unspecified

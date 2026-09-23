@@ -1,0 +1,18 @@
+subject_definitions:
+<Subject 1> is Ari (S1), whose identity comes from <Picture 1>.
+
+summary:
+[reference generation] A 6-second video shows Ari facing forward, then cuts at 3.5 seconds to a close-up of the same Ari. One uninterrupted utterance bridges the cut.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1] and [Shot 2]): fully_preserved - retain Ari's identity from <Picture 1> across both shots. The reference supplies identity only.
+
+detailed_description:
+[Shot 1, 0–3.5 seconds] <Subject 1> (S1) faces forward. Ari begins the single exact line <d>[English] Stay with me.</d>, with “Stay” heard before the cut.
+[Shot 2, 3.5–6 seconds] Cut at 3.5 seconds to a close-up of the same <Subject 1> (S1). The remaining words “ with me.” are heard after the cut, continuing the same utterance without interruption, restart, repetition, or a cut-induced pause. Maintain the same speaker and continuous vocal delivery across the visual cut.
+
+overall_soundscape:
+Only Ari's single spoken line is audible. No other voices, ambience, sound effects, or other sounds.
+
+non_diegetic_music:
+N/A — no music.

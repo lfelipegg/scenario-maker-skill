@@ -1,0 +1,3 @@
+Ordinary native H3 Ref2VA supports **at most 9 reference images**, so ten separate images cannot all remain independently connected and role-bound in one prompt. Adding a `<Picture 10>` label would not create a tenth conditioning input.
+
+Which constraint may change: reduce the references to nine, or relax the single ordinary native Ref2VA workflow requirement?

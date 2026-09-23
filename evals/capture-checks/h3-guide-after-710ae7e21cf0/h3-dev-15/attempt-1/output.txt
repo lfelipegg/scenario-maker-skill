@@ -1,0 +1,5 @@
+Those requirements conflict: if the red umbrella remains closed until the end of the generated video, it must be closed in the first generated frame. That same frame cannot also show it open.
+
+For an H3 Ref2VA frame-derived still edit, the complete requested edit must already appear in the first output frame; the later opening in video A does not resolve this conflict.
+
+Which requirement may change: **allow the umbrella to be open from the first frame**, or **extract a later frame instead of the first**? I can’t write a consistent prompt while keeping all requirements unchanged.

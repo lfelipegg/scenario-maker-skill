@@ -1,0 +1,162 @@
+{
+  "kind": "h3-guide-development-smoke",
+  "stage": "before",
+  "created_at": "2026-09-23T14:19:47.879174+00:00",
+  "omp_version": "omp v18.2.9",
+  "model_requested": "openai-codex/gpt-6-astra",
+  "repetitions": 1,
+  "candidate_revision": "worktree-sha256-9c543ad84bb8136a80b8797f05b76a58d6b1d65c39c431b8889ce5f7b8643208",
+  "source_files": {
+    "SKILL.md": "f11db79cf16a5080f93558ebe3108ad035031a6526bc0ca9dce483be07c814f3",
+    "docs/danbooru_tags/danbooru_tags.csv": "a48e1e63b81e8e4fc3091c660fd763e9d05e19beea3b98d1ee78d00ed10ac9d3",
+    "docs/danbooru_tags/danbooru_tags_cooccurrence.csv": "29bf95d3dd2f4b1038ac26b3fee371ebbe67d9b622b32d274c9486dbde56077a",
+    "references/characters.md": "88e020a5d1cce0adf6d6a8f4617299809612d9ae3639de4fa4b56c5ce5681eef",
+    "references/constraints-and-revisions.md": "38e40dd175f4923f4e4f4f5b1a5a34c882f15c315f3df46337b84b22a6b76102",
+    "references/danbooru-tags.md": "b221bc80c15d6722d60fad93a5c336d03a0753f0f42d656011387a24f96a66b5",
+    "references/model-prompts.md": "a0af42cebeb8f7e2577b27b844594e86822f67fff5fe538c9e07507f5b795a03",
+    "references/models/illustrious.md": "e133da9dedaeffb42de8b2e6f22638222ce0d5abfd1e29e30fbdedbf5ef53bd0",
+    "references/models/krea-2.md": "19b1b2517fe66a52505adbd72a3d24cf0bf55746330a4c6f51e819a2709b2748",
+    "references/models/minimax-h3.md": "3675cbe2220ba98c2e7a14d22e4e25695426fbcc617822f63d074e9fb619b974",
+    "references/models/minimax_h3/VIDEO_PROMPT_WRITING_GUIDE_base_en.md": "2cfebc096a6e08370f288d468d90b60f7f9bcb938f94bf090816e910e48e75fc",
+    "references/models/minimax_h3/VIDEO_PROMPT_WRITING_GUIDE_ref_en.md": "1e574f356716ad55612247ffb7bbccbcdb484ad96599d63c7dca1af186b1fab7",
+    "references/models/noobai.md": "0f251e9b5bff7bdd330e979765cf8441eb25cb3499722ab8ddf0f84ad2e51c63",
+    "references/models/pony-v6.md": "00ec07731b7844371a88db9c652cae9a4d440daf6b32926bc500d6ee910179af",
+    "references/models/sdxl.md": "cd776ab3f9e575f3c21832c17bab1a3080763981fe374455bd61dcc8488ef8af",
+    "references/output-contracts.md": "0b2f1294927409e89597c97449e16f8fe25b11f7d59767733544f5bd91011d18",
+    "references/prompt-types.md": "87c6b71d41ee934b64bb99939653d1df09cef542a1f65ad9709f0690be030d08",
+    "references/routing.md": "c96813c27e0b7c0f402404d89dc5d3ba8ccf0a86743290d93800427420648e78",
+    "references/scene-composition.md": "77c87c239346c1858cf2fb375055241474327675b32682a08c08525ebb45e282",
+    "references/video-prompts.md": "395f0f1ae4837f8813e469db2099c29cc6f0246e09db8adc79e0723a1bf713a4",
+    "references/wildcard/legs.txt": "173f9e526cb771b523fdcf67f919e3385fff72e1098541069a766681f0c44178",
+    "references/wildcard/partial.txt": "c1abd5817ca348faebd54a5bb7d18937cce86b1d00c3391eb527dc2dd5c7d1df",
+    "references/wildcards.md": "4b8bd8963cd20e822101e8a4947eabe98f42ed9687dcf3e112dfd1c244a43268",
+    "scripts/build_danbooru_index.py": "cbc860318e67d69f79fbec792e34f252daa386460e803a9807116c67f5a1f986",
+    "scripts/character_generator.py": "2bcc1fb2b3f417b56a5c568277efdd177074b00326593f284b556e80df9d995e",
+    "scripts/danbooru_lookup.py": "f399f42d7a6350bac1913b329ba0b4908b4c3f56c0042184a331f5f1d2cb7389"
+  },
+  "case_files": {
+    "evals/h3-guide-probes.jsonl": "e5ad62ac602ab972f0b144e900b04be4446ca990982e6a4e0110dcd540cfe251"
+  },
+  "capture_files": {
+    "run_baseline.py": "9539a25f8eebc2f723162f1d9dee5cfcdfde6efc6c6de5407cdcf694484c76ce",
+    "omp-config.json": "8b998cb4a4b640775cb33a35acc3b3447f1012babb2602b874f7147aecf35b85",
+    "generator-system.txt": "97054199856c144ef0116fac7c86cede435c4716cdc12600f71cec780b27cb12",
+    "capture.ts": "2a98058006940052f357b0558c0665a48cd9d050e21ca1a6c71847fa4715fd20"
+  },
+  "cases": [
+    {
+      "id": "h3-guide-01",
+      "request": "Use native local MiniMax H3. Author only prompt text, not generation. Use the default H3 structured format and return prompt only. Ref2VA. Connected Picture 1 supplies Mira's appearance; Picture 2 supplies Jo's appearance; standalone Audio 1 supplies only Mira's warm timbre. Define Mira as Subject 1 and Jo as Subject 2. Jo says exactly `Ready?`, Mira says exactly `Yes!`, then both say exactly `Go!` together. No other sound or music is requested.",
+      "fixtures": [],
+      "expected_behavior": [
+        "Jo is `(S1)`, Mira `(S2)`; Audio 1's voice definition binds Mira `(S2)`, not S1. Group line uses `(S1,S2)`. Exact dialogue stays inside language-tagged `<d>` blocks; no IDs in retention, invented traits, or extra audio."
+      ]
+    },
+    {
+      "id": "h3-guide-02",
+      "request": "Use native local MiniMax H3. Author only prompt text, not generation. Use the default H3 structured format and return prompt only. FL2VA one-opening-image route. Picture 1 shows Noor seated at a desk with her mouth closed. Hold the image still. Noor's own off-screen voiceover says exactly `I remember.` Her lips must not move. No other audio.",
+      "fixtures": [],
+      "expected_behavior": [
+        "Exact I2VA anchor and three fields; stable Noor voice ID; exact `says in an off-screen voiceover`; closed-lips statement immediately after dialogue; no visible speech, motion, or extra sound."
+      ]
+    },
+    {
+      "id": "h3-guide-03",
+      "request": "Use native local MiniMax H3. Author only prompt text, not generation. Use the default H3 structured format and return prompt only. Ref2VA. Picture 1 supplies Jo's appearance. An independent unseen narrator says exactly `Listen.` Then Jo physically says exactly `I am listening.` Do not depict the narrator. Music and ambience are unspecified.",
+      "fixtures": [],
+      "expected_behavior": [
+        "Narrator `(S1)` remains independent and unseen; Jo `(S2)` visibly speaks. No invented narrator body or blanket closed-lips instruction applied to Jo. Unknown ambience/score remains `Unspecified`."
+      ]
+    },
+    {
+      "id": "h3-guide-04",
+      "request": "Use native local MiniMax H3. Author only prompt text, not generation. Use the default H3 structured format and return prompt only. Ref2VA. Picture 1 supplies Ari's identity. Requested duration 6 seconds. Shot 1 shows Ari facing forward; cut at 3.5 seconds to a close-up of the same Ari. Ari's exact line is `Stay with me.` The word `Stay` is heard before the cut and ` with me.` afterward as one uninterrupted utterance. No other sound or music.",
+      "fixtures": [],
+      "expected_behavior": [
+        "`[Shot 2] At 00:03.500, ...`; same speaker on both sides; `<scenetrans>` at both fragment boundaries plus continuity prose; fragments concatenate to the exact line without repeated words. No cut timestamp on Shot 1."
+      ]
+    },
+    {
+      "id": "h3-guide-05",
+      "request": "Use native local MiniMax H3. Author only prompt text, not generation. Use the default H3 structured format and return prompt only. FL2VA one-opening-image route. Picture 1 shows Ari standing at a counter. Ari physically says the exact unfinished words `If you open` and the video ends immediately, interrupting that phrase. Do not complete the sentence. No other sound or music.",
+      "fixtures": [],
+      "expected_behavior": [
+        "I2VA structure; stable vocal ID and exact unfinished words with `<cutoff>` at termination; no invented completion or false cross-cut marker."
+      ]
+    },
+    {
+      "id": "h3-guide-06",
+      "request": "Use native local MiniMax H3. Author only prompt text, not generation. Use the default H3 structured format and return prompt only. Ref2VA. Picture 1 supplies Noor's appearance. Standalone Audio 1 is an instrumental score; reuse the entire source as audience-only background music and add Noor's newly spoken line `Welcome.` Do not change her appearance.",
+      "fixtures": [],
+      "expected_behavior": [
+        "Audio 1 is `partially_copy`, not `fully_copy`, because the final track adds dialogue. Score is in `non_diegetic_music`; exact speech and speaker in the timeline; source BGM is not assigned a narrator."
+      ]
+    },
+    {
+      "id": "h3-guide-07",
+      "request": "Use native local MiniMax H3. Author only prompt text, not generation. Use the default H3 structured format and return prompt only. FL2VA one-opening-image route. Picture 1 contains an adult at a table beside a radio and a sign reading exactly `营业中!!`. Only the following sound is requested: radio singing `Hola!`, one tap on the table when the person touches it, quiet room tone, and audience-only slow piano music. The radio singer remains unseen.",
+      "fixtures": [],
+      "expected_behavior": [
+        "Sign text is quoted unchanged and not spoken. Radio lyric and timed tap are in the timeline; room tone in soundscape; slow piano in score. Radio is not mistaken for non-diegetic music; no lyric duplication or invented visible singer."
+      ]
+    },
+    {
+      "id": "h3-guide-08",
+      "request": "Use native local MiniMax H3. Author only prompt text, not generation. Use the default H3 structured format and return prompt only. Ref2VA frame-derived still edit. Picture 1 is the edit base: a blue ceramic vase on a white table. Picture 2 shows a red jacket with a herringbone texture. Transfer only that texture to the vase, keeping the vase blue and everything else unchanged. Complete the edit in the first generated frame.",
+      "fixtures": [],
+      "expected_behavior": [
+        "A separately tracked texture donor uses `attribute_transfer` with the vase as target; no red color, wearer, jacket shape, or background transfer. First generated frame already contains the edit; no I2VA hard anchor or later transformation."
+      ]
+    },
+    {
+      "id": "h3-guide-09",
+      "request": "Use native local MiniMax H3. Author only prompt text, not generation. Use the default H3 structured format and return prompt only. Ref2VA. Picture 1 supplies only Kai's facial identity. Picture 2 is a storyboard used only for composition and order: Shot 1 places Kai image-left; Shot 2 places Kai centered. Video 1 supplies only a slow rightward camera truck in Shot 2. Audio is unspecified; no cut times are supplied.",
+      "fixtures": [],
+      "expected_behavior": [
+        "Face provenance can remain inside Kai's subject definition; storyboard and separately tracked camera structure have definitions/retention entries and shot mappings. Two untimed ordered shots; no mandatory timing question, appearance leakage, or hard first-frame anchor."
+      ]
+    },
+    {
+      "id": "h3-guide-10",
+      "request": "Use native local MiniMax H3. Author only prompt text, not generation. Use the default H3 structured format and return prompt only. Ref2VA. Picture 1 supplies a cube's appearance. The requested video is 4 seconds long, with Shot 1 showing the cube and a mandatory cut to Shot 2 at 5 seconds. Both duration and cut time must remain unchanged.",
+      "fixtures": [],
+      "expected_behavior": [
+        "Clarifies the contradiction; does not silently extend duration, move the cut, drop a shot, generate media, or offer enhancement after clarification."
+      ]
+    },
+    {
+      "id": "h3-guide-11",
+      "request": "Use native local MiniMax H3. Author only prompt text, not generation. Use the default H3 structured format and return prompt only. FL2VA one-opening-image route. Picture 1 shows a vase on a table. Keep the vase and table still. Request a slow optical zoom in with the camera body stationary, not a dolly or forward translation. Sound is unspecified.",
+      "fixtures": [],
+      "expected_behavior": [
+        "I2VA anchor; optical zoom is preserved without a push-in/dolly, extra camera movement, invented amplitude, or audio."
+      ]
+    },
+    {
+      "id": "h3-guide-12",
+      "request": "Use native local MiniMax H3. Author only prompt text, not generation. Use the default H3 structured format and return prompt only. Ref2VA. Picture 1 supplies Noor's appearance. Noor must say exactly `Wait... really?!` A sign behind her must read exactly `OPEN!!`. Preserve every punctuation mark. No other audio or action is requested.",
+      "fixtures": [],
+      "expected_behavior": [
+        "Exact dialogue and sign survive; no upstream punctuation normalization, translation, word completion, or conversion of the sign into speech."
+      ]
+    },
+    {
+      "id": "h3-guide-13",
+      "request": "Use native local MiniMax H3. Author only prompt text, not generation. Return one plain English paragraph only, with no headings, XML-like tags, or speaker-ID notation. Ref2VA. Picture 1 supplies Ari's appearance. Ari says exactly `Stay with me.` A requested untimed cut occurs after `Stay`; the rest of the same line continues uninterrupted in the next shot.",
+      "fixtures": [],
+      "expected_behavior": [
+        "One paragraph, no sections/tags/Sx notation or enhancement offer; source relationship, same speaker, exact words, and cross-cut continuity remain explicit. No clarification merely because official serialization is suppressed."
+      ]
+    },
+    {
+      "id": "h3-guide-14",
+      "request": "Use native local MiniMax H3. Author only prompt text, not generation. Use the default H3 structured format and return prompt only. Ref2VA. Picture 1 supplies only Noor's facial identity, retained exactly as reference intent. Picture 2 supplies only broad similarity to its blue-and-white watercolor style, not its depicted subjects or layout. Target Noor stands in an explicitly requested plain gray room. Audio and camera are unspecified.",
+      "fixtures": [],
+      "expected_behavior": [
+        "Identity `fully_preserved`; separately tracked style `weak_reference`; new authorized room does not downgrade identity. No source-layout/subject transfer, camera invention, or sound; style does not become an exact-copy promise."
+      ]
+    }
+  ],
+  "semantic_acceptance": "not-run",
+  "media_generation": "not-run"
+}
