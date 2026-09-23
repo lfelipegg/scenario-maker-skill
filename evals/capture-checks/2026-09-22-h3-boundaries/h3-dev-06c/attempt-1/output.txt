@@ -1,0 +1,3 @@
+I can’t promise the gesture is retained: H3 Ref2VA cannot reference a gesture in frames removed before consumption. Prompt wording or a `fully_preserved` marker cannot restore that missing conditioning.
+
+Can you increase the target frame count enough to include the gesture, or supply a trimmed reference clip that places the complete gesture within the consumed segment? That input conflict needs resolving before I can author a faithful reference-bound prompt; even then, the prompt specifies intent, not guaranteed generation fidelity.

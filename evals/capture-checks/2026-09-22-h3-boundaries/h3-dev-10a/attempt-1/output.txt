@@ -1,0 +1,7 @@
+For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.
+
+integrated_multimodal_description: [Shot 1] Preserve the connected opening image exactly as the starting state: Arun at the bus stop wearing the red coat. Only after the opening, the same coat gradually changes color from red to blue in a smooth, continuous transition, becoming fully blue by the end. Preserve the coat’s shape, fit, texture, and folds throughout; only its color changes. Arun’s identity, expression, pose, position, and all other clothing remain unchanged and still. Preserve the bus stop, surrounding objects, background, lighting, and composition from <Picture 1>. The camera remains fixed with unchanged framing throughout this single continuous shot.
+
+overall_soundscape: Unspecified
+
+non_diegetic_music: Unspecified

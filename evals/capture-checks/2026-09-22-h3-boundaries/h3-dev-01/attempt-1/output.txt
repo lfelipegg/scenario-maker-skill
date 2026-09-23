@@ -1,0 +1,22 @@
+subject_definitions:
+<Subject 1> is Mira: identity and face only from <Picture 1>, silver raincoat only from <Picture 2>.
+<Video 1> supplies only the dancer’s footwork and locked-off camera.
+<Audio 1> supplies only violin timbre.
+
+summary:
+[reference generation + audio reference] Mira performs the referenced footwork in the silver raincoat on an otherwise empty station platform, with no dialogue.
+
+retention_analysis:
+<Picture 1>: fully_preserved — Mira’s identity and face only.
+<Picture 2>: attribute_transfer — silver raincoat only.
+<Video 1>: attribute_transfer — footwork and locked-off camera only; exclude the dancer’s appearance, setting, and soundtrack.
+<Audio 1>: reference — violin timbre only, without copying the recording, melody, or rhythm.
+
+detailed_description:
+[Shot 1] <Subject 1> wears the silver raincoat from <Picture 2> and performs the footwork from <Video 1>, retaining its step sequence and timing. Preserve Mira’s identity and face from <Picture 1>. The station platform remains empty apart from Mira. Maintain a locked-off camera throughout. Import no unassigned poses, backgrounds, or other reference attributes.
+
+overall_soundscape:
+No dialogue. Other environmental sound is unspecified.
+
+non_diegetic_music:
+Violin accompaniment using only the timbre referenced by <Audio 1>.

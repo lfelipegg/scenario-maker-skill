@@ -1,0 +1,84 @@
+{
+  "case_id": "h3-dev-03",
+  "attempt": 1,
+  "revision": "worktree-sha256-5a9792ff30d21c0b366ff51272e951bdd502ae54529ade48a083406e8963edb7",
+  "started_at": "2026-09-23T05:44:07.427823+00:00",
+  "elapsed_seconds": 37.517,
+  "command": [
+    "omp",
+    "--cwd",
+    "/tmp/h3-smoke-mwqex8vc/baseline/h3-dev-03/attempt-1",
+    "--print",
+    "--mode",
+    "json",
+    "--model",
+    "openai-codex/gpt-6-astra",
+    "--thinking",
+    "high",
+    "--no-session",
+    "--no-title",
+    "--no-prewalk",
+    "--no-skills",
+    "--no-rules",
+    "--no-extensions",
+    "--no-lsp",
+    "--no-pty",
+    "--tools",
+    "read,grep,glob,bash,write",
+    "--approval-mode",
+    "yolo",
+    "--config",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/omp-config.json",
+    "--system-prompt",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/generator-system.txt",
+    "--extension",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/capture.ts",
+    "--max-time",
+    "300s",
+    "Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.\n\nFor H3 Ref2VA, edit the described connected base video: two bakers stand behind a pine counter, the baker on image-left wears a white apron, the baker on image-right wears a black apron, and a wall sign reads exactly \"Open late!\". A connected supplemental image supplies only a blue floral fabric. Change only the image-left baker's apron to that fabric; keep both bakers, their positions, the other apron, counter, lighting, and sign unchanged. Exclude hats."
+  ],
+  "cwd": "/tmp/h3-smoke-mwqex8vc/baseline/h3-dev-03/attempt-1",
+  "execution": {
+    "status": "completed",
+    "exit_code": 0,
+    "error": null,
+    "model_errors": [],
+    "malformed_trace_lines": []
+  },
+  "raw": {
+    "output": "output.txt",
+    "partial_output": null,
+    "trace": "trace.jsonl",
+    "stderr": "stderr.txt",
+    "context": "context.jsonl"
+  },
+  "trace_complete": true,
+  "artifacts": [],
+  "observed_context": [
+    {
+      "type": "eval_context",
+      "systemPrompt": "You are a prompt-writing assistant executing the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md. Read that file and only its applicable references. Resolve its reference and script paths relative to ./selected-skill, not an installed skill. Do not discover or load other skills, repository instructions, past sessions, evaluator files, or web sources.\n\nOnly local read, grep, glob, bash, and write tools are available. Use them for the selected skill's references, local lookup/scripts, supplied fixtures, and requested workspace-local text exports. Keep writes within this fresh workspace. Do not edit the selected skill, execute image/video generation or frame extraction, delegate, switch models, access the network, or inspect credentials. This is prompt writing, not generation. If clarification is necessary, ask in your final response; this non-interactive run cannot receive an answer.\n\nApply the selected skill to the user's request. Do not discuss evaluation or scoring. The workspace starts with no prior conversation or generated outputs.\n",
+      "cwd": "/tmp/h3-smoke-mwqex8vc/baseline/h3-dev-03/attempt-1",
+      "model": {
+        "provider": "openai-codex",
+        "id": "gpt-6-astra",
+        "name": "GPT-6-Astra"
+      },
+      "thinking": "high",
+      "tools": [
+        "read",
+        "grep",
+        "glob",
+        "bash",
+        "write"
+      ]
+    }
+  ],
+  "raw_checksums": {
+    "request.txt": "476d8123e3098b3661cb4954cc9128f7f1ca84cd92b87854ab4a96a509504d84",
+    "output.txt": "9fd8cf9d6b10147773919ae8e0c7edbf9fc46bd0ee66a1978fa34d6bf90d5229",
+    "context.jsonl": "5fbe3a3cd232d18ea9e3175cb0e5c543da398d7e2517b3ffe10af4521c48678c",
+    "trace.jsonl": "7334118818fe5cf2b9a8171516eeb49ce3902f01469000b6e5a71c45823ac27b",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

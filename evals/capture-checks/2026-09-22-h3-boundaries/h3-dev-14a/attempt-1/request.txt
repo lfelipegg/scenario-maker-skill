@@ -1,0 +1,3 @@
+Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.
+
+Write an H3 Ref2VA frame-derived still-edit prompt using connected video A as the visual base. Use its first visible frame, where a closed blue door fills the center, as the intended opening image; make the door green in the first generated output frame and preserve all other visible content.

@@ -1,0 +1,19 @@
+subject_definitions:
+<Subject 1> is Nia. <Picture 1> (Picture A) supplies only her facial identity: oval face, close-cropped black hair, and a small scar over her right eyebrow.
+<Video 1> (Video A) supplies only the slow clockwise camera orbit around a standing subject.
+
+summary:
+[reference generation] Nia stands beside a plain red mailbox while the camera follows the slow clockwise orbit referenced from <Video 1>.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1]): fully_preserved — retain Nia’s specified facial identity from <Picture 1>, without transferring other appearance, clothing, pose, or background.
+<Video 1>: attribute_transfer — transfer only its slow clockwise camera orbit, not its subject, setting, style, or soundtrack.
+
+detailed_description:
+[Shot 1] <Subject 1> stands beside a plain red mailbox. Preserve her oval face, close-cropped black hair, and small scar over her right eyebrow throughout the shot. The camera slowly orbits clockwise around Nia, following <Video 1>’s camera movement while she remains standing beside the mailbox.
+
+overall_soundscape:
+Unspecified
+
+non_diegetic_music:
+Unspecified

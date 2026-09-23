@@ -1,0 +1,3 @@
+Ordinary native H3 Ref2VA supports **at most 9 reference-image inputs**, so ten separate images cannot all remain independently role-bound in one native run. Writing `<Picture 10>` would not create a tenth conditioning input.
+
+Which constraint may change: reduce the set to nine images, or relax the single-run/native-workflow requirement? I won’t silently drop or merge a reference.

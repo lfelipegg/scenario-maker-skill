@@ -1,0 +1,84 @@
+{
+  "case_id": "h3-dev-12",
+  "attempt": 1,
+  "revision": "worktree-sha256-ecc91ff2fc6f1784da9dc539859d52376588a2dd65c456ae3e1fe77a09f4eac6",
+  "started_at": "2026-09-23T05:52:00.341190+00:00",
+  "elapsed_seconds": 36.934,
+  "command": [
+    "omp",
+    "--cwd",
+    "/tmp/h3-smoke-8diwnhxd/baseline/h3-dev-12/attempt-1",
+    "--print",
+    "--mode",
+    "json",
+    "--model",
+    "openai-codex/gpt-6-astra",
+    "--thinking",
+    "high",
+    "--no-session",
+    "--no-title",
+    "--no-prewalk",
+    "--no-skills",
+    "--no-rules",
+    "--no-extensions",
+    "--no-lsp",
+    "--no-pty",
+    "--tools",
+    "read,grep,glob,bash,write",
+    "--approval-mode",
+    "yolo",
+    "--config",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/omp-config.json",
+    "--system-prompt",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/generator-system.txt",
+    "--extension",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/capture.ts",
+    "--max-time",
+    "300s",
+    "Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.\n\nWrite an H3 Ref2VA prompt for this requested two-shot sequence using connected identity images for Jo and Lin. Shot 1: Jo closes the shop gate while Lin waits across the street; as the gate hits the ground, a bicycle bell begins. Cut to shot 2: Lin crosses toward Jo while the same bell continues and Jo waves only after Lin reaches the curb. Keep that order and overlap; do not add timestamps."
+  ],
+  "cwd": "/tmp/h3-smoke-8diwnhxd/baseline/h3-dev-12/attempt-1",
+  "execution": {
+    "status": "completed",
+    "exit_code": 0,
+    "error": null,
+    "model_errors": [],
+    "malformed_trace_lines": []
+  },
+  "raw": {
+    "output": "output.txt",
+    "partial_output": null,
+    "trace": "trace.jsonl",
+    "stderr": "stderr.txt",
+    "context": "context.jsonl"
+  },
+  "trace_complete": true,
+  "artifacts": [],
+  "observed_context": [
+    {
+      "type": "eval_context",
+      "systemPrompt": "You are a prompt-writing assistant executing the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md. Read that file and only its applicable references. Resolve its reference and script paths relative to ./selected-skill, not an installed skill. Do not discover or load other skills, repository instructions, past sessions, evaluator files, or web sources.\n\nOnly local read, grep, glob, bash, and write tools are available. Use them for the selected skill's references, local lookup/scripts, supplied fixtures, and requested workspace-local text exports. Keep writes within this fresh workspace. Do not edit the selected skill, execute image/video generation or frame extraction, delegate, switch models, access the network, or inspect credentials. This is prompt writing, not generation. If clarification is necessary, ask in your final response; this non-interactive run cannot receive an answer.\n\nApply the selected skill to the user's request. Do not discuss evaluation or scoring. The workspace starts with no prior conversation or generated outputs.\n",
+      "cwd": "/tmp/h3-smoke-8diwnhxd/baseline/h3-dev-12/attempt-1",
+      "model": {
+        "provider": "openai-codex",
+        "id": "gpt-6-astra",
+        "name": "GPT-6-Astra"
+      },
+      "thinking": "high",
+      "tools": [
+        "read",
+        "grep",
+        "glob",
+        "bash",
+        "write"
+      ]
+    }
+  ],
+  "raw_checksums": {
+    "request.txt": "7df4cec4070474bb50f450948455ba68c4032224f0977b2016d2e30aae96c5e7",
+    "output.txt": "747037cee2beb025ee1f502922072a18b9eb2674f72edad08d948106486bb9b5",
+    "context.jsonl": "6a50d98e2028165b833d81acd2d4122cda6133a575bb7dba7db71d5a18035a52",
+    "trace.jsonl": "327bdb807ab216c4d6ccd71232006afdb36d3b111e16b574ad60b45ff7591fde",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

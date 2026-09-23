@@ -1,0 +1,84 @@
+{
+  "case_id": "h3-dev-08a",
+  "attempt": 1,
+  "revision": "worktree-sha256-5a9792ff30d21c0b366ff51272e951bdd502ae54529ade48a083406e8963edb7",
+  "started_at": "2026-09-23T05:44:47.428174+00:00",
+  "elapsed_seconds": 20.92,
+  "command": [
+    "omp",
+    "--cwd",
+    "/tmp/h3-smoke-mwqex8vc/baseline/h3-dev-08a/attempt-1",
+    "--print",
+    "--mode",
+    "json",
+    "--model",
+    "openai-codex/gpt-6-astra",
+    "--thinking",
+    "high",
+    "--no-session",
+    "--no-title",
+    "--no-prewalk",
+    "--no-skills",
+    "--no-rules",
+    "--no-extensions",
+    "--no-lsp",
+    "--no-pty",
+    "--tools",
+    "read,grep,glob,bash,write",
+    "--approval-mode",
+    "yolo",
+    "--config",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/omp-config.json",
+    "--system-prompt",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/generator-system.txt",
+    "--extension",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/capture.ts",
+    "--max-time",
+    "300s",
+    "Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.\n\nUse H3 FL2VA to animate this connected opening image: a child stands beside a paper kite under a cloudy sky. Return a ready prompt."
+  ],
+  "cwd": "/tmp/h3-smoke-mwqex8vc/baseline/h3-dev-08a/attempt-1",
+  "execution": {
+    "status": "completed",
+    "exit_code": 0,
+    "error": null,
+    "model_errors": [],
+    "malformed_trace_lines": []
+  },
+  "raw": {
+    "output": "output.txt",
+    "partial_output": null,
+    "trace": "trace.jsonl",
+    "stderr": "stderr.txt",
+    "context": "context.jsonl"
+  },
+  "trace_complete": true,
+  "artifacts": [],
+  "observed_context": [
+    {
+      "type": "eval_context",
+      "systemPrompt": "You are a prompt-writing assistant executing the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md. Read that file and only its applicable references. Resolve its reference and script paths relative to ./selected-skill, not an installed skill. Do not discover or load other skills, repository instructions, past sessions, evaluator files, or web sources.\n\nOnly local read, grep, glob, bash, and write tools are available. Use them for the selected skill's references, local lookup/scripts, supplied fixtures, and requested workspace-local text exports. Keep writes within this fresh workspace. Do not edit the selected skill, execute image/video generation or frame extraction, delegate, switch models, access the network, or inspect credentials. This is prompt writing, not generation. If clarification is necessary, ask in your final response; this non-interactive run cannot receive an answer.\n\nApply the selected skill to the user's request. Do not discuss evaluation or scoring. The workspace starts with no prior conversation or generated outputs.\n",
+      "cwd": "/tmp/h3-smoke-mwqex8vc/baseline/h3-dev-08a/attempt-1",
+      "model": {
+        "provider": "openai-codex",
+        "id": "gpt-6-astra",
+        "name": "GPT-6-Astra"
+      },
+      "thinking": "high",
+      "tools": [
+        "read",
+        "grep",
+        "glob",
+        "bash",
+        "write"
+      ]
+    }
+  ],
+  "raw_checksums": {
+    "request.txt": "13e76344d6e8de0e415cb6d9d48a0d246410b599ec2e4ef72ac388642ca27346",
+    "output.txt": "3209ecb0a6210de5daaad1de96e69fbf32f1f7d6111e6630e584933c17973719",
+    "context.jsonl": "42f02323ba4cd92ee6aa2746436a5207965f9237a4245fb528ada87fe0933c6b",
+    "trace.jsonl": "e85ad9eac2f6d0d8905df893b9e1e34c282b17980f659c5fcf8f1f0327a6896e",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

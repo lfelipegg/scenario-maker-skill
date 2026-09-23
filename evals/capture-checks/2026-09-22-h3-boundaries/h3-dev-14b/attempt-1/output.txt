@@ -1,0 +1,1 @@
+Which moment in connected video A should define the first generated output frame: daylight, sunset, or night? You can also specify a timestamp. The chair will already be removed in that opening frame, with the rest of the chosen room view preserved.

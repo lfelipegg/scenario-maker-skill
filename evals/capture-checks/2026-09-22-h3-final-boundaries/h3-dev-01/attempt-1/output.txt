@@ -1,0 +1,1 @@
+Should the referenced violin timbre be used for background music or for violin sound within the station scene? The timbre-only role leaves the intended target sound and its placement unspecified.

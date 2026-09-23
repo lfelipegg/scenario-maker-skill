@@ -1,0 +1,84 @@
+{
+  "case_id": "h3-dev-20b",
+  "attempt": 1,
+  "revision": "worktree-sha256-5a9792ff30d21c0b366ff51272e951bdd502ae54529ade48a083406e8963edb7",
+  "started_at": "2026-09-23T05:46:00.932825+00:00",
+  "elapsed_seconds": 48.36,
+  "command": [
+    "omp",
+    "--cwd",
+    "/tmp/h3-smoke-mwqex8vc/baseline/h3-dev-20b/attempt-1",
+    "--print",
+    "--mode",
+    "json",
+    "--model",
+    "openai-codex/gpt-6-astra",
+    "--thinking",
+    "high",
+    "--no-session",
+    "--no-title",
+    "--no-prewalk",
+    "--no-skills",
+    "--no-rules",
+    "--no-extensions",
+    "--no-lsp",
+    "--no-pty",
+    "--tools",
+    "read,grep,glob,bash,write",
+    "--approval-mode",
+    "yolo",
+    "--config",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/omp-config.json",
+    "--system-prompt",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/generator-system.txt",
+    "--extension",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/capture.ts",
+    "--max-time",
+    "300s",
+    "Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.\n\nWrite a prompt for the native local H3-Base-Ref2VA path using connected image A as an identity reference. Guarantee pixel-perfect identity, exact lettering, and flawless edit fidelity, and include the INT8 filename, GPU requirement, steps, and installation commands in the prompt."
+  ],
+  "cwd": "/tmp/h3-smoke-mwqex8vc/baseline/h3-dev-20b/attempt-1",
+  "execution": {
+    "status": "completed",
+    "exit_code": 0,
+    "error": null,
+    "model_errors": [],
+    "malformed_trace_lines": []
+  },
+  "raw": {
+    "output": "output.txt",
+    "partial_output": null,
+    "trace": "trace.jsonl",
+    "stderr": "stderr.txt",
+    "context": "context.jsonl"
+  },
+  "trace_complete": true,
+  "artifacts": [],
+  "observed_context": [
+    {
+      "type": "eval_context",
+      "systemPrompt": "You are a prompt-writing assistant executing the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md. Read that file and only its applicable references. Resolve its reference and script paths relative to ./selected-skill, not an installed skill. Do not discover or load other skills, repository instructions, past sessions, evaluator files, or web sources.\n\nOnly local read, grep, glob, bash, and write tools are available. Use them for the selected skill's references, local lookup/scripts, supplied fixtures, and requested workspace-local text exports. Keep writes within this fresh workspace. Do not edit the selected skill, execute image/video generation or frame extraction, delegate, switch models, access the network, or inspect credentials. This is prompt writing, not generation. If clarification is necessary, ask in your final response; this non-interactive run cannot receive an answer.\n\nApply the selected skill to the user's request. Do not discuss evaluation or scoring. The workspace starts with no prior conversation or generated outputs.\n",
+      "cwd": "/tmp/h3-smoke-mwqex8vc/baseline/h3-dev-20b/attempt-1",
+      "model": {
+        "provider": "openai-codex",
+        "id": "gpt-6-astra",
+        "name": "GPT-6-Astra"
+      },
+      "thinking": "high",
+      "tools": [
+        "read",
+        "grep",
+        "glob",
+        "bash",
+        "write"
+      ]
+    }
+  ],
+  "raw_checksums": {
+    "request.txt": "d6a97208395cda6de3171fa4447f2ec9e1b2fbc53b4a41d2edeb35cf16517a0e",
+    "output.txt": "31b866a1ab93fee175ec08e1cf0b72ad543a5c032fd2e9228121b876ce51290f",
+    "context.jsonl": "20dccb84e87bc1efb5efee7838144a9ebed4c1ba900a4105e6e2d4d4e2471e5c",
+    "trace.jsonl": "c8ecd3516e580479cad8f8ddc911ad513fd9d453c8f1bf645a33c1058b5ac726",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

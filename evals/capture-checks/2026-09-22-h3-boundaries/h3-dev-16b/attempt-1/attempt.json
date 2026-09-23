@@ -1,0 +1,84 @@
+{
+  "case_id": "h3-dev-16b",
+  "attempt": 1,
+  "revision": "worktree-sha256-5a9792ff30d21c0b366ff51272e951bdd502ae54529ade48a083406e8963edb7",
+  "started_at": "2026-09-23T05:45:30.308344+00:00",
+  "elapsed_seconds": 19.837,
+  "command": [
+    "omp",
+    "--cwd",
+    "/tmp/h3-smoke-mwqex8vc/baseline/h3-dev-16b/attempt-1",
+    "--print",
+    "--mode",
+    "json",
+    "--model",
+    "openai-codex/gpt-6-astra",
+    "--thinking",
+    "high",
+    "--no-session",
+    "--no-title",
+    "--no-prewalk",
+    "--no-skills",
+    "--no-rules",
+    "--no-extensions",
+    "--no-lsp",
+    "--no-pty",
+    "--tools",
+    "read,grep,glob,bash,write",
+    "--approval-mode",
+    "yolo",
+    "--config",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/omp-config.json",
+    "--system-prompt",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/generator-system.txt",
+    "--extension",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/capture.ts",
+    "--max-time",
+    "300s",
+    "Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.\n\nFor H3 FL2VA, use connected opening image A of a white paper boat in a rain gutter. Write one Very Short Spanish paragraph only, with no headings or notes, describing the boat drifting forward while retaining the 0.00-second source relationship."
+  ],
+  "cwd": "/tmp/h3-smoke-mwqex8vc/baseline/h3-dev-16b/attempt-1",
+  "execution": {
+    "status": "completed",
+    "exit_code": 0,
+    "error": null,
+    "model_errors": [],
+    "malformed_trace_lines": []
+  },
+  "raw": {
+    "output": "output.txt",
+    "partial_output": null,
+    "trace": "trace.jsonl",
+    "stderr": "stderr.txt",
+    "context": "context.jsonl"
+  },
+  "trace_complete": true,
+  "artifacts": [],
+  "observed_context": [
+    {
+      "type": "eval_context",
+      "systemPrompt": "You are a prompt-writing assistant executing the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md. Read that file and only its applicable references. Resolve its reference and script paths relative to ./selected-skill, not an installed skill. Do not discover or load other skills, repository instructions, past sessions, evaluator files, or web sources.\n\nOnly local read, grep, glob, bash, and write tools are available. Use them for the selected skill's references, local lookup/scripts, supplied fixtures, and requested workspace-local text exports. Keep writes within this fresh workspace. Do not edit the selected skill, execute image/video generation or frame extraction, delegate, switch models, access the network, or inspect credentials. This is prompt writing, not generation. If clarification is necessary, ask in your final response; this non-interactive run cannot receive an answer.\n\nApply the selected skill to the user's request. Do not discuss evaluation or scoring. The workspace starts with no prior conversation or generated outputs.\n",
+      "cwd": "/tmp/h3-smoke-mwqex8vc/baseline/h3-dev-16b/attempt-1",
+      "model": {
+        "provider": "openai-codex",
+        "id": "gpt-6-astra",
+        "name": "GPT-6-Astra"
+      },
+      "thinking": "high",
+      "tools": [
+        "read",
+        "grep",
+        "glob",
+        "bash",
+        "write"
+      ]
+    }
+  ],
+  "raw_checksums": {
+    "request.txt": "5595bf9938551214c33056293588b54ea82c9be70205b130fb7404ad0dec6e82",
+    "output.txt": "d8c6dcc60ad5daf0cb30620e691e6aed1f470c2972d23631b4d3b562443c0fd8",
+    "context.jsonl": "c53eb94149054c0ad66d1707574e82d6b5a3ec0e3a42f1aba528701e502b7cc0",
+    "trace.jsonl": "e6a96c31e7f84c1fd4b57a878588479db91eda7c8701bbb1340479f01025b764",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

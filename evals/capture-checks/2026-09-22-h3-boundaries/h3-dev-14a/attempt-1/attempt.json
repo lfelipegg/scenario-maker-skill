@@ -1,0 +1,84 @@
+{
+  "case_id": "h3-dev-14a",
+  "attempt": 1,
+  "revision": "worktree-sha256-5a9792ff30d21c0b366ff51272e951bdd502ae54529ade48a083406e8963edb7",
+  "started_at": "2026-09-23T05:45:11.136494+00:00",
+  "elapsed_seconds": 28.992,
+  "command": [
+    "omp",
+    "--cwd",
+    "/tmp/h3-smoke-mwqex8vc/baseline/h3-dev-14a/attempt-1",
+    "--print",
+    "--mode",
+    "json",
+    "--model",
+    "openai-codex/gpt-6-astra",
+    "--thinking",
+    "high",
+    "--no-session",
+    "--no-title",
+    "--no-prewalk",
+    "--no-skills",
+    "--no-rules",
+    "--no-extensions",
+    "--no-lsp",
+    "--no-pty",
+    "--tools",
+    "read,grep,glob,bash,write",
+    "--approval-mode",
+    "yolo",
+    "--config",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/omp-config.json",
+    "--system-prompt",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/generator-system.txt",
+    "--extension",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/capture.ts",
+    "--max-time",
+    "300s",
+    "Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.\n\nWrite an H3 Ref2VA frame-derived still-edit prompt using connected video A as the visual base. Use its first visible frame, where a closed blue door fills the center, as the intended opening image; make the door green in the first generated output frame and preserve all other visible content."
+  ],
+  "cwd": "/tmp/h3-smoke-mwqex8vc/baseline/h3-dev-14a/attempt-1",
+  "execution": {
+    "status": "completed",
+    "exit_code": 0,
+    "error": null,
+    "model_errors": [],
+    "malformed_trace_lines": []
+  },
+  "raw": {
+    "output": "output.txt",
+    "partial_output": null,
+    "trace": "trace.jsonl",
+    "stderr": "stderr.txt",
+    "context": "context.jsonl"
+  },
+  "trace_complete": true,
+  "artifacts": [],
+  "observed_context": [
+    {
+      "type": "eval_context",
+      "systemPrompt": "You are a prompt-writing assistant executing the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md. Read that file and only its applicable references. Resolve its reference and script paths relative to ./selected-skill, not an installed skill. Do not discover or load other skills, repository instructions, past sessions, evaluator files, or web sources.\n\nOnly local read, grep, glob, bash, and write tools are available. Use them for the selected skill's references, local lookup/scripts, supplied fixtures, and requested workspace-local text exports. Keep writes within this fresh workspace. Do not edit the selected skill, execute image/video generation or frame extraction, delegate, switch models, access the network, or inspect credentials. This is prompt writing, not generation. If clarification is necessary, ask in your final response; this non-interactive run cannot receive an answer.\n\nApply the selected skill to the user's request. Do not discuss evaluation or scoring. The workspace starts with no prior conversation or generated outputs.\n",
+      "cwd": "/tmp/h3-smoke-mwqex8vc/baseline/h3-dev-14a/attempt-1",
+      "model": {
+        "provider": "openai-codex",
+        "id": "gpt-6-astra",
+        "name": "GPT-6-Astra"
+      },
+      "thinking": "high",
+      "tools": [
+        "read",
+        "grep",
+        "glob",
+        "bash",
+        "write"
+      ]
+    }
+  ],
+  "raw_checksums": {
+    "request.txt": "27a247f0afed7cbad492bbde33c114b5c70484b74114c37eec3e8d121882ab18",
+    "output.txt": "c8b86a8224be775b7050320c9559ec706acf1780a29dee77887f35121f6156aa",
+    "context.jsonl": "cfacf3e26d447fe7e68afd06f83c26b53affa3909441a89d8c9e17e925591203",
+    "trace.jsonl": "f7d244730862ea559f805e1754ef14fdf91c72fc5a9f36ec5060107674048a87",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

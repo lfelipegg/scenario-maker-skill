@@ -1,0 +1,7 @@
+For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.
+
+integrated_multimodal_description: [Shot 1] Preserve the connected opening image, including the woman standing beside the window and the sign behind her displaying exactly "KEEP CLEAR". Only the curtain moves gently. The woman remains completely motionless, with her identity, appearance, clothing, pose, position, and expression unchanged; no blinking or gestures. Keep the sign, its lettering, the window, and all other objects unchanged. Preserve the original lighting, colors, composition, and framing throughout. The camera remains fixed, with no cuts, zoom, or reframing.
+
+overall_soundscape: Complete silence; no dialogue, ambience, curtain rustling, or other sounds.
+
+non_diegetic_music: None.

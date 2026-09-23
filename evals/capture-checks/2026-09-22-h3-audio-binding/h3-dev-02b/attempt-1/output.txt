@@ -1,0 +1,24 @@
+subject_definitions:
+<Subject 1> is the courier, with identity and red hair from <Picture 1>.
+<Subject 2> is her green bicycle from <Picture 2>.
+<Video 1> supplies only riding motion; <Video 2> supplies only camera motion.
+<Audio 2> supplies only the timbre of the bicycle bell, not a copied audio signal.
+
+summary:
+[reference generation + audio reference] <Subject 1> rides <Subject 2> and rings its bell once while riding.
+
+retention_analysis:
+<Picture 1>: fully_preserved - courier identity and red hair only.
+<Picture 2>: fully_preserved - green bicycle only.
+<Video 1>: attribute_transfer - riding motion only.
+<Video 2>: attribute_transfer - camera motion only; its separately connected soundtrack is not reused or used as an audio reference.
+<Audio 2>: reference - bicycle-bell timbre only.
+
+detailed_description:
+[Shot 1] The red-haired courier rides her green bicycle using the riding motion from <Video 1>. Camera motion follows <Video 2>. While riding, she rings the bicycle bell exactly once. Transfer only the assigned reference properties.
+
+overall_soundscape:
+One bicycle-bell ring synchronized with the courier’s action, using only the timbre from <Audio 2>. All other sound is unspecified.
+
+non_diegetic_music:
+Unspecified

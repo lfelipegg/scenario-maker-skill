@@ -1,0 +1,143 @@
+{
+  "kind": "h3-development-smoke",
+  "created_at": "2026-09-23T05:55:30.472042+00:00",
+  "model": "openai-codex/gpt-6-astra",
+  "repetitions": 1,
+  "candidate_revision": "worktree-sha256-8885f65e0fdd804ed068964586da8554839dc84d5be706fca362adff726db24f",
+  "source_files": {
+    "SKILL.md": "f11db79cf16a5080f93558ebe3108ad035031a6526bc0ca9dce483be07c814f3",
+    "docs/danbooru_tags/danbooru_tags.csv": "a48e1e63b81e8e4fc3091c660fd763e9d05e19beea3b98d1ee78d00ed10ac9d3",
+    "docs/danbooru_tags/danbooru_tags_cooccurrence.csv": "29bf95d3dd2f4b1038ac26b3fee371ebbe67d9b622b32d274c9486dbde56077a",
+    "references/characters.md": "88e020a5d1cce0adf6d6a8f4617299809612d9ae3639de4fa4b56c5ce5681eef",
+    "references/constraints-and-revisions.md": "38e40dd175f4923f4e4f4f5b1a5a34c882f15c315f3df46337b84b22a6b76102",
+    "references/danbooru-tags.md": "b221bc80c15d6722d60fad93a5c336d03a0753f0f42d656011387a24f96a66b5",
+    "references/model-prompts.md": "a0af42cebeb8f7e2577b27b844594e86822f67fff5fe538c9e07507f5b795a03",
+    "references/models/illustrious.md": "e133da9dedaeffb42de8b2e6f22638222ce0d5abfd1e29e30fbdedbf5ef53bd0",
+    "references/models/krea-2.md": "19b1b2517fe66a52505adbd72a3d24cf0bf55746330a4c6f51e819a2709b2748",
+    "references/models/minimax-h3.md": "3675cbe2220ba98c2e7a14d22e4e25695426fbcc617822f63d074e9fb619b974",
+    "references/models/noobai.md": "0f251e9b5bff7bdd330e979765cf8441eb25cb3499722ab8ddf0f84ad2e51c63",
+    "references/models/pony-v6.md": "00ec07731b7844371a88db9c652cae9a4d440daf6b32926bc500d6ee910179af",
+    "references/models/sdxl.md": "cd776ab3f9e575f3c21832c17bab1a3080763981fe374455bd61dcc8488ef8af",
+    "references/output-contracts.md": "0b2f1294927409e89597c97449e16f8fe25b11f7d59767733544f5bd91011d18",
+    "references/prompt-types.md": "87c6b71d41ee934b64bb99939653d1df09cef542a1f65ad9709f0690be030d08",
+    "references/routing.md": "c96813c27e0b7c0f402404d89dc5d3ba8ccf0a86743290d93800427420648e78",
+    "references/scene-composition.md": "77c87c239346c1858cf2fb375055241474327675b32682a08c08525ebb45e282",
+    "references/video-prompts.md": "395f0f1ae4837f8813e469db2099c29cc6f0246e09db8adc79e0723a1bf713a4",
+    "references/wildcard/legs.txt": "173f9e526cb771b523fdcf67f919e3385fff72e1098541069a766681f0c44178",
+    "references/wildcard/partial.txt": "c1abd5817ca348faebd54a5bb7d18937cce86b1d00c3391eb527dc2dd5c7d1df",
+    "references/wildcards.md": "4b8bd8963cd20e822101e8a4947eabe98f42ed9687dcf3e112dfd1c244a43268",
+    "scripts/build_danbooru_index.py": "cbc860318e67d69f79fbec792e34f252daa386460e803a9807116c67f5a1f986",
+    "scripts/character_generator.py": "2bcc1fb2b3f417b56a5c568277efdd177074b00326593f284b556e80df9d995e",
+    "scripts/danbooru_lookup.py": "f399f42d7a6350bac1913b329ba0b4908b4c3f56c0042184a331f5f1d2cb7389"
+  },
+  "cases": [
+    {
+      "id": "h3-dev-01",
+      "request": "Write a Medium-detail prompt for H3 Ref2VA full-reference generation. Connected references: the first image is Mira's identity and face only; the second image supplies only her silver raincoat; the first video supplies only the dancer's footwork and locked-off camera; the first standalone audio supplies only the violin timbre. Create Mira performing that footwork in the silver raincoat on the described empty station platform, with no dialogue.",
+      "fixtures": [],
+      "expected_behavior": [
+        "Keeps identity, garment, motion, camera, and timbre attached to their assigned references without unassigned transfer. Asks what intended target sound should use the violin timbre rather than inventing musical accompaniment or a diegetic/non-diegetic role. Uses the six-section structure only when the consequential target role is resolved."
+      ],
+      "decision_url": "https://github.com/lfelipegg/scenario-maker-skill/issues/25#issuecomment-5750413381",
+      "acceptance_case": 1
+    },
+    {
+      "id": "h3-dev-16b",
+      "request": "For H3 FL2VA, use connected opening image A of a white paper boat in a rain gutter. Write one Very Short Spanish paragraph only, with no headings or notes, describing the boat drifting forward while retaining the 0.00-second source relationship.",
+      "fixtures": [],
+      "expected_behavior": [
+        "Honors the explicit Spanish, Very Short, paragraph-only presentation over defaults while preserving the opening-anchor meaning, source relationship, and authorized forward motion without padding."
+      ],
+      "decision_url": "https://github.com/lfelipegg/scenario-maker-skill/issues/25#issuecomment-5750413381",
+      "acceptance_case": 16
+    },
+    {
+      "id": "h3-dev-19a",
+      "request": "Write an H3 Ref2VA full-reference prompt from connected picture A, which supplies a brass compass, and connected video A, which supplies only slow rotation. The target is the compass rotating on plain gray cloth. Audio is unspecified.",
+      "fixtures": [],
+      "expected_behavior": [
+        "Returns one faithful pasteable prompt and, because the response format permits it, briefly offers optional in-chat enhancement afterward without automatically producing a second version or claiming an external enhancer."
+      ],
+      "decision_url": "https://github.com/lfelipegg/scenario-maker-skill/issues/25#issuecomment-5750413381",
+      "acceptance_case": 19
+    },
+    {
+      "id": "h3-dev-19b",
+      "request": "Write an H3 Ref2VA full-reference prompt from connected picture A, which supplies a brass compass, and connected video A, which supplies only slow rotation. The target is the compass rotating on plain gray cloth. Audio is unspecified. Return prompt only, with nothing before or after it.",
+      "fixtures": [],
+      "expected_behavior": [
+        "Returns only the pasteable prompt and suppresses the optional enhancement offer, notes, variants, and other material under the explicit output restriction."
+      ],
+      "decision_url": "https://github.com/lfelipegg/scenario-maker-skill/issues/25#issuecomment-5750413381",
+      "acceptance_case": 19
+    },
+    {
+      "id": "case-02",
+      "title": "Adapt a supplied scene prompt to local Krea 2",
+      "request": "Adapt this supplied prompt for local Krea 2 RAW/Turbo. Preserve every scene fact and return only one ready-to-paste prompt with no label, negative prompt, notes, variants, or explanation. Source prompt: A red ceramic teapot sits image-left of a white cup on a dark walnut table. Morning light enters from the right, and the plain cream wall behind them is empty.",
+      "fixtures": [],
+      "operation": "adapt",
+      "task": "text-to-image",
+      "scope": "full-scene",
+      "target_profile": "local Krea 2 RAW/Turbo",
+      "required_details": [
+        "red ceramic teapot image-left of a white cup",
+        "dark walnut table",
+        "morning light from the right",
+        "plain empty cream wall"
+      ],
+      "prohibited_changes": [
+        "Do not add, remove, recolor, relocate, or replace subjects, props, surfaces, lighting direction, or background details",
+        "Do not add a negative prompt, labels, notes, variants, or explanation",
+        "Do not invoke image or video generation"
+      ],
+      "output_contract": "One unlabeled natural-language Krea 2 prompt and nothing else.",
+      "criteria": [
+        {
+          "id": "C02-OUTPUT",
+          "description": "The response is exactly one unlabeled prompt, without a package, negative field, notes, variants, or explanation.",
+          "method": "maintainer",
+          "check": null,
+          "severity": "hard",
+          "mandatory_phase": 2,
+          "decision_url": "https://github.com/lfelipegg/scenario-maker-skill/issues/18#issuecomment-5746540497"
+        },
+        {
+          "id": "C02-PRESERVE",
+          "description": "The adaptation preserves the two objects, their colors and image-left relationship, table, right-side morning light, and empty cream wall without adding visual facts.",
+          "method": "maintainer",
+          "check": null,
+          "severity": "hard",
+          "mandatory_phase": 3,
+          "decision_url": "https://github.com/lfelipegg/scenario-maker-skill/issues/17#issuecomment-5746449221"
+        },
+        {
+          "id": "C02-PROFILE",
+          "description": "The result uses a coherent natural-language paragraph suitable for the selected local Krea 2 RAW/Turbo contract; detail does not become invention.",
+          "method": "maintainer",
+          "check": null,
+          "severity": "hard",
+          "mandatory_phase": 4,
+          "decision_url": "https://github.com/lfelipegg/scenario-maker-skill/issues/19#issuecomment-5746665421"
+        },
+        {
+          "id": "C02-TRACE",
+          "description": "Observable execution uses no prohibited research, delegation, model switching, or image/video generation actions.",
+          "method": "mechanical",
+          "check": {
+            "type": "trace_policy"
+          },
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "decision_url": "https://github.com/lfelipegg/scenario-maker-skill/issues/16#issuecomment-5746288781"
+        }
+      ]
+    }
+  ],
+  "semantic_acceptance": "not-run: maintainer review required; development observations only",
+  "media_generation": "not-run",
+  "capture_runner_sha256": "9539a25f8eebc2f723162f1d9dee5cfcdfde6efc6c6de5407cdcf694484c76ce",
+  "generator_system_sha256": "97054199856c144ef0116fac7c86cede435c4716cdc12600f71cec780b27cb12",
+  "capture_extension_sha256": "2a98058006940052f357b0558c0665a48cd9d050e21ca1a6c71847fa4715fd20",
+  "config_sha256": "8b998cb4a4b640775cb33a35acc3b3447f1012babb2602b874f7147aecf35b85"
+}

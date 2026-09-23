@@ -1,0 +1,3 @@
+A prompt cannot activate a disconnected conditioning path. In native H3 Ref2VA, image-reference latent conditioning requires the **video VAE**. Accepting the image socket—or mentioning `<Picture 1>` and `fully_preserved`—does not make that conditioning active.
+
+Can you reconnect the video VAE and confirm the image is consumed as a reference? The prompt can then specify appearance transfer, but it cannot repair graph wiring or guarantee visual fidelity.

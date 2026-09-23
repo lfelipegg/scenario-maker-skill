@@ -1,0 +1,3 @@
+These requirements conflict: if the red umbrella remains closed until the end of the generated video, it must be closed in the first generated frame—the frame extracted by this H3 Ref2VA still-edit route. Video A’s late opening cannot make that first frame show it open while preserving the timing requirement.
+
+Which requirement may change: the umbrella being open in the still, its remaining closed until the end, or extracting the first frame rather than a later one?

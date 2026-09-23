@@ -1,0 +1,23 @@
+subject_definitions:
+<Picture 1> supplies only the blue floral fabric for the apron.
+<Video 1> is the source video being edited.
+<Subject 1> is the image-left baker wearing the white apron in <Video 1>.
+<Subject 2> is the image-right baker wearing the black apron in <Video 1>.
+
+summary:
+[video editing] The target video is an edited version of <Video 1>. Change only <Subject 1>'s white apron to the blue floral fabric from <Picture 1>.
+
+retention_analysis:
+<Picture 1>: attribute_transfer — transfer only its blue floral fabric to <Subject 1>'s apron; import no other content.
+<Subject 1>: partially_preserved — retain identity, position, actions, and all other appearance; change only the apron fabric.
+<Subject 2>: fully_preserved — retain the baker and black apron unchanged.
+<Video 1> (surroundings and presentation): fully_preserved — retain the pine counter, lighting, composition, camera behavior, timing, and wall sign reading exactly "Open late!".
+
+detailed_description:
+From the first output frame throughout the video, both bakers remain in their original positions behind the pine counter. Replace only the image-left baker's white apron fabric with the blue floral fabric from <Picture 1>, preserving the apron's shape and fit. Keep the image-right baker's black apron unchanged. Preserve all other source visuals and actions, including the wall sign's exact lettering "Open late!". No hats.
+
+overall_soundscape:
+Unspecified
+
+non_diegetic_music:
+Unspecified

@@ -1,0 +1,3 @@
+Scenario Maker writes prompts only; I can’t generate a video or image, run Context-IR, or extract a frame here. Its H3 guidance covers selected native local routes—not hosted MiniMax-H3-Max Context-IR or 2K generation—and I won’t silently substitute a different workflow.
+
+What should the scene depict? I can write a generic text-to-video prompt, or prepare a local H3-Base-Ref2VA prompt if you provide reference media or clear descriptions and specify how each should be used. Generation and first-frame extraction would remain separate steps outside this skill.

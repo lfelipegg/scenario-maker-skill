@@ -1,0 +1,52 @@
+{
+  "kind": "agent-development-observations",
+  "maintainer_semantic_acceptance": "not-run",
+  "media_generation": "not-run",
+  "probe_count": 44,
+  "approved_categories": 21,
+  "existing_cases": 16,
+  "captures": 79,
+  "capture_failures": 0,
+  "original_case_mechanical_checks": {
+    "passed": 21,
+    "failed": 0,
+    "scope": "Initial attempt 1 only; repetitions 2 and 3 and all maintainer judgments remain not-run."
+  },
+  "final_source_revision": "worktree-sha256-8885f65e0fdd804ed068964586da8554839dc84d5be706fca362adff726db24f",
+  "source_review_reports": [
+    "## Concrete defect\n\n- **h3-dev-01 — acceptance_case 1, audio role overreach/invented target sound.** The request says the standalone audio supplies **“only the violin timbre”** and asks for Mira’s footwork on an empty station platform with no dialogue. The output says `non_diegetic_music: Violin accompaniment using only the timbre referenced by <Audio 1>.` This converts a timbre-only reference into an affirmative non-diegetic violin accompaniment. The contract requires audio to be authored only when requested or supplied as part of the intended contract and says a reference’s assigned property must not silently acquire a broader target role. At minimum, the output should leave music/target audio unspecified unless accompaniment is explicitly requested. Evidence: `h3-dev-01/attempt-1/output.txt`, quoted above.\n\n## Ambiguous / not counted as defects\n\n- **h3-dev-05a — “reusing <Audio 1> unchanged” and `fully_copy`.** The wording is strong, but the request explicitly asks to reuse the connected soundtrack and preserve the exact line. It reads as intended direct signal reuse, not a claim of guaranteed waveform equality; therefore not flagged. If interpreted as a fidelity guarantee, it would violate the contract’s preservation-marker qualification, but the smoke output alone is insufficient to make that call.\n- **h3-dev-04b — `partially_preserved` for Video 2.** This is appropriate because the bus and muted treatment are authorized changes; the output correctly identifies Video 2 as the edit base, keeps Video 1 scoped to muted color, and has no audio labels. The `[video editing + reference generation]` prefix is somewhat broad but does not materially change the requested source-edit semantics.\n\n## Reviewed IDs with no observed defect\n\n- **Acceptance case 1:** h3-dev-01 (except the concrete audio defect above).\n- **Acceptance case 2:** h3-dev-02.\n- **Acceptance case 3:** h3-dev-03.\n- **Acceptance case 4:** h3-dev-04, h3-dev-04b.\n- **Acceptance case 5:** h3-dev-05a, h3-dev-05b.\n- **Acceptance case 6:** h3-dev-06a, h3-dev-06b, h3-dev-06c.\n- **Acceptance case 7:** h3-dev-07a, h3-dev-07b.\n- **Acceptance case 8:** h3-dev-08a, h3-dev-08b.\n- **Acceptance case 9:** h3-dev-09.\n- **Acceptance case 10:** h3-dev-10a, h3-dev-10b.\n- **Acceptance case 11:** h3-dev-11a, h3-dev-11b.\n- **Acceptance case 12:** h3-dev-12.\n\nNo execution validation, tests, formatters, linters, builds, or generation were run.",
+    "Concrete defects: none observed.\n\nReviewed IDs without observed defects:\n- Case 13: h3-dev-13 — output explicitly says the lamp is matte black in the first generated frame and does not invent a transition, camera move, or later motion.\n- Case 14: h3-dev-14a, h3-dev-14b — identifies the selected first visible frame when explicit; asks for the source moment when ambiguous; does not claim extraction.\n- Case 15: h3-dev-15 — directly identifies the conflict between an open extracted first frame and closed-until-end timing, then asks which requirement may change.\n- Case 16: h3-dev-16a, h3-dev-16b — applies English/Medium defaults and explicit Spanish/Very Short/paragraph-only overrides without padding or extra packages.\n- Case 17: h3-dev-17a, h3-dev-17b — preserves exact Japanese and Spanish content; distinguishes Unspecified audio from explicit silence/no music.\n- Case 18: h3-dev-18a, h3-dev-18b — explains that BasicGuider consumes no separate negative text and supplies standalone negative text only when explicitly requested for notes.\n- Case 19: h3-dev-19a, h3-dev-19b, h3-dev-19c — enhancement is offered only when permitted, suppressed by prompt-only, and performed only when requested.\n- Case 20: h3-dev-20a, h3-dev-20b — refuses hosted-route substitution, generation/extraction, fidelity guarantees, and runtime/package instructions.\n- h3-dev-21h — three distinct artifacts are present. FL2VA contains the official anchor and red-forward motion only; synthesis uses Ref2VA role-bound appearance/reference language and six sections; frame-derived editing uses six sections and explicitly places the green edit in the first output frame.\n\nQuoted evidence supporting clean results:\n- Case 13: “The first generated output frame already contains the complete edit” and “Do not begin with the bronze lamp and transition to black later.”\n- Case 14b: “Which moment in connected video A should define the first generated output frame: daylight, sunset, or night?”\n- Case 15: “These requirements conflict” and “Which requirement may change…”\n- Case 16b: “A los 0.00 segundos del video…” (Spanish paragraph-only response preserving the opening relationship).\n- Case 17b: “Only the reused dialogue from <Audio 1> is audible. Otherwise, complete silence…” and “N/A — no non-diegetic music.”\n- Case 18a: “The ordinary native local H3 FL2VA ComfyUI path consumes only positive conditioning through BasicGuider; it has no separate negative-text path.”\n- Case 20a: “I won’t silently substitute a different workflow.”\n- 21h frame-derived artifact: “The complete green-paint edit is present in the very first generated output frame.”\n\nAmbiguity/qualification (not a defect): h3-dev-18a asks an additional question about balloon motion after resolving the negative-channel mismatch: “Should the red balloon move, or should the opening image remain a still hold?” The original request asks for a positive prompt but specifies no motion, so this is a reasonable consequential clarification rather than an observed contract violation. No other material ambiguity was found in the reviewed outputs."
+  ],
+  "findings": [
+    {
+      "id": "audio-role-overreach",
+      "initial_evidence": "evals/capture-checks/2026-09-22-h3-boundaries/h3-dev-01/attempt-1/output.txt",
+      "observed": "Timbre-only input became unrequested violin accompaniment.",
+      "change": "Bind reference properties to an established target sound; ask about consequential missing role without adding optional scenery questions.",
+      "latest_evidence": "evals/capture-checks/2026-09-22-h3-output-precedence/h3-dev-01/attempt-1/output.txt",
+      "latest_observation": "Asks only whether intended violin sound is background music or in-scene; invents neither.",
+      "positive_boundary": "evals/capture-checks/2026-09-22-h3-final-boundaries/h3-dev-02b/attempt-1/output.txt"
+    },
+    {
+      "id": "enhancement-offer-precedence",
+      "initial_evidence": "evals/capture-checks/2026-09-22-h3-final-boundaries/h3-dev-19a/attempt-1/output.txt",
+      "observed": "Offer omitted on an ordinary H3 prompt request.",
+      "change": "Distinguish inferred single-prompt output from explicit prompt-only restriction in routing, output contract, and entry point.",
+      "latest_evidence": "evals/capture-checks/2026-09-22-h3-output-precedence/h3-dev-19a/attempt-1/output.txt",
+      "latest_observation": "Brief enhancement offer follows the pasteable prompt.",
+      "negative_boundaries": [
+        "evals/capture-checks/2026-09-22-h3-output-precedence/h3-dev-19b/attempt-1/output.txt",
+        "evals/capture-checks/2026-09-22-h3-output-precedence/h3-dev-16b/attempt-1/output.txt",
+        "evals/capture-checks/2026-09-22-h3-output-precedence/case-02/attempt-1/output.txt"
+      ]
+    }
+  ],
+  "cohorts": [
+    "evals/capture-checks/2026-09-22-h3-boundaries",
+    "evals/capture-checks/2026-09-22-h3-audio-role-repair",
+    "evals/capture-checks/2026-09-22-h3-audio-binding",
+    "evals/capture-checks/2026-09-22-h3-final-boundaries",
+    "evals/capture-checks/2026-09-22-h3-output-precedence"
+  ],
+  "qualification": "Single-run development review and focused reruns, not a paired three-repetition human acceptance cohort. Original failures and all prior raw evidence retained unchanged. Source files changed only through reviewed H3 implementation; no commit or push."
+}

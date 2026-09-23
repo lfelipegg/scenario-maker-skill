@@ -1,0 +1,3 @@
+Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.
+
+Write an H3 Ref2VA prompt. Connected standalone audio A is a reference only for the narrator's warm, breathy timbre and contains unrelated speech. The target narrator must say exactly "The harbor opens at dawn." Do not reuse any words, rhythm, or background sound from audio A.

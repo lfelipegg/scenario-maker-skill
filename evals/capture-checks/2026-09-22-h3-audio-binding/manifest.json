@@ -1,0 +1,51 @@
+{
+  "kind": "h3-development-smoke",
+  "created_at": "2026-09-23T05:52:33.164615+00:00",
+  "model": "openai-codex/gpt-6-astra",
+  "repetitions": 1,
+  "candidate_revision": "worktree-sha256-ecc91ff2fc6f1784da9dc539859d52376588a2dd65c456ae3e1fe77a09f4eac6",
+  "source_files": {
+    "SKILL.md": "85eb85a432b5595fb750d2eec97a6be25d752776c3492687b9df129dc07b018d",
+    "docs/danbooru_tags/danbooru_tags.csv": "a48e1e63b81e8e4fc3091c660fd763e9d05e19beea3b98d1ee78d00ed10ac9d3",
+    "docs/danbooru_tags/danbooru_tags_cooccurrence.csv": "29bf95d3dd2f4b1038ac26b3fee371ebbe67d9b622b32d274c9486dbde56077a",
+    "references/characters.md": "88e020a5d1cce0adf6d6a8f4617299809612d9ae3639de4fa4b56c5ce5681eef",
+    "references/constraints-and-revisions.md": "38e40dd175f4923f4e4f4f5b1a5a34c882f15c315f3df46337b84b22a6b76102",
+    "references/danbooru-tags.md": "b221bc80c15d6722d60fad93a5c336d03a0753f0f42d656011387a24f96a66b5",
+    "references/model-prompts.md": "a0af42cebeb8f7e2577b27b844594e86822f67fff5fe538c9e07507f5b795a03",
+    "references/models/illustrious.md": "e133da9dedaeffb42de8b2e6f22638222ce0d5abfd1e29e30fbdedbf5ef53bd0",
+    "references/models/krea-2.md": "19b1b2517fe66a52505adbd72a3d24cf0bf55746330a4c6f51e819a2709b2748",
+    "references/models/minimax-h3.md": "4440b2b9b3a134ea8fcbc003147aed3fe1940a1aca1f6b5921067f1a4c905e02",
+    "references/models/noobai.md": "0f251e9b5bff7bdd330e979765cf8441eb25cb3499722ab8ddf0f84ad2e51c63",
+    "references/models/pony-v6.md": "00ec07731b7844371a88db9c652cae9a4d440daf6b32926bc500d6ee910179af",
+    "references/models/sdxl.md": "cd776ab3f9e575f3c21832c17bab1a3080763981fe374455bd61dcc8488ef8af",
+    "references/output-contracts.md": "9d740afc95c279d6bdcefd502316882a35eea48595d3f81c7180f383c7885b72",
+    "references/prompt-types.md": "87c6b71d41ee934b64bb99939653d1df09cef542a1f65ad9709f0690be030d08",
+    "references/routing.md": "a8c32b1f97275cc35aac2f4bafdb854a86617e8b9870ad5a52c81c8d9911cf2b",
+    "references/scene-composition.md": "77c87c239346c1858cf2fb375055241474327675b32682a08c08525ebb45e282",
+    "references/video-prompts.md": "395f0f1ae4837f8813e469db2099c29cc6f0246e09db8adc79e0723a1bf713a4",
+    "references/wildcard/legs.txt": "173f9e526cb771b523fdcf67f919e3385fff72e1098541069a766681f0c44178",
+    "references/wildcard/partial.txt": "c1abd5817ca348faebd54a5bb7d18937cce86b1d00c3391eb527dc2dd5c7d1df",
+    "references/wildcards.md": "4b8bd8963cd20e822101e8a4947eabe98f42ed9687dcf3e112dfd1c244a43268",
+    "scripts/build_danbooru_index.py": "cbc860318e67d69f79fbec792e34f252daa386460e803a9807116c67f5a1f986",
+    "scripts/character_generator.py": "2bcc1fb2b3f417b56a5c568277efdd177074b00326593f284b556e80df9d995e",
+    "scripts/danbooru_lookup.py": "f399f42d7a6350bac1913b329ba0b4908b4c3f56c0042184a331f5f1d2cb7389"
+  },
+  "cases": [
+    {
+      "id": "h3-dev-02b",
+      "request": "For native local H3 Ref2VA, write one prompt only. Connected consumed order: image A supplies the courier's identity and red hair; image B supplies her green bicycle. Video A supplies only riding motion and has no connected soundtrack. Video B supplies only camera motion; its separately connected metronome soundtrack must not be reused or referenced in target audio. Standalone audio A supplies only the timbre for the bicycle bell, which the courier rings once while riding. Use only these target actions and reference roles; all other sound and music are unspecified.",
+      "fixtures": [],
+      "expected_behavior": [
+        "Authors the prompt without unnecessary clarification: Picture 1 identity, Picture 2 bicycle, Video 1 riding, Video 2 camera. The unused video B soundtrack occupies Audio 1; the target bicycle bell uses the standalone Audio 2 timbre. Does not invent a metronome track, accompaniment, additional bell rings, or missing inputs."
+      ],
+      "decision_url": "https://github.com/lfelipegg/scenario-maker-skill/issues/25#issuecomment-5750413381",
+      "acceptance_case": 2
+    }
+  ],
+  "semantic_acceptance": "not-run: maintainer review required; development observations only",
+  "media_generation": "not-run",
+  "capture_runner_sha256": "9539a25f8eebc2f723162f1d9dee5cfcdfde6efc6c6de5407cdcf694484c76ce",
+  "generator_system_sha256": "97054199856c144ef0116fac7c86cede435c4716cdc12600f71cec780b27cb12",
+  "capture_extension_sha256": "2a98058006940052f357b0558c0665a48cd9d050e21ca1a6c71847fa4715fd20",
+  "config_sha256": "8b998cb4a4b640775cb33a35acc3b3447f1012babb2602b874f7147aecf35b85"
+}

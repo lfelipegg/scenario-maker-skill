@@ -1,0 +1,22 @@
+I can request strong identity preservation, but cannot guarantee pixel-perfect identity, exact rendered lettering, or flawless edit fidelity. The selected references do not verify an INT8 filename, GPU requirement, sampling-step count, or installation commands; those are runtime configuration, not visual prompt content, so I won’t invent them.
+
+The prompt below treats connected image A as the first consumed image, `<Picture 1>`, and uses it **only for identity**. Exact lettering and a specific edit require the text, its placement, and the intended change.
+
+subject_definitions:
+<Picture 1> is connected image A, the identity reference for <Subject 1>.
+<Subject 1> is the subject whose identity is established by <Picture 1>.
+
+summary:
+[reference generation] The target video depicts <Subject 1>, retaining the identity established by <Picture 1>.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1]): fully_preserved — preserve the subject’s identity from <Picture 1>. This relationship applies only to identity; it does not assign the reference’s clothing, pose, background, composition, or style to the target.
+
+detailed_description:
+[Shot 1] Depict <Subject 1> with consistent identity-defining visual features from <Picture 1> throughout the shot. Use the image as an identity reference, not as a prescribed opening frame or visual edit base. Scene, action, camera behavior, lettering, and edit instructions remain unspecified.
+
+overall_soundscape:
+Unspecified
+
+non_diegetic_music:
+Unspecified

@@ -1,0 +1,21 @@
+subject_definitions:
+<Picture 1> supplies only the exact dark green paint color.
+<Video 1> is the source video being edited.
+<Subject 1> is the single yellow tram in <Video 1>.
+
+summary:
+[video editing] The target video is an edited version of <Video 1>. Replace only <Subject 1>'s yellow paint with the exact dark green from <Picture 1>; preserve all other visual content.
+
+retention_analysis:
+<Picture 1>: attribute_transfer — transfer only its exact green color, not its objects, materials, lighting, or composition.
+<Subject 1>: partially_preserved — only the yellow paint color changes; retain the tram's design, surface finish, details, and motion.
+<Video 1> (all unaffected visual content): fully_preserved — retain the stone bridge, dusk lighting, pedestrians waiting on the north sidewalk, composition, camera behavior, and timing.
+
+detailed_description:
+Follow <Video 1> throughout: one tram crosses the stone bridge at dusk while pedestrians wait on the north sidewalk. From the first output frame onward, wherever the tram's yellow paint is visible, replace it with the reference dark green while retaining the original shading and surface detail. Preserve all non-yellow tram details and every other visual element, action, spatial relationship, and temporal progression unchanged.
+
+overall_soundscape:
+Unspecified
+
+non_diegetic_music:
+Unspecified

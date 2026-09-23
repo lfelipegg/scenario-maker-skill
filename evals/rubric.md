@@ -78,6 +78,16 @@ Run the full 96-attempt paired cohort against the fixed original revision. All h
 
 After this milestone, collect actual ordinary-use failures before proposing broader implementation. Synthetic probes, baseline failures, and hypothetical risks are not ordinary-use reports. Keep later phases unstarted; Phase Four authorization does not authorize committing or pushing.
 
+## H3 implementation development coverage
+
+On 2026-09-22 the maintainer explicitly requested implementation of the settled [H3 contract](https://github.com/lfelipegg/scenario-maker-skill/issues/25#issuecomment-5750413381), bringing these bounded additions forward without accepting the broader phase chain. The four scoped units are [full-reference generation](https://github.com/lfelipegg/scenario-maker-skill/issues/26), [source-video editing](https://github.com/lfelipegg/scenario-maker-skill/issues/27), [first-frame video](https://github.com/lfelipegg/scenario-maker-skill/issues/28), and [frame-derived still editing](https://github.com/lfelipegg/scenario-maker-skill/issues/29).
+
+`evals/h3-probes.jsonl` contains 44 supplemental development probes mapped by `acceptance_case` to all 21 approved H3 categories. Opposite branches exercise required clarification versus valid authoring, opening anchoring versus a completed edited output frame, audio reuse versus reference, explicit silence versus unspecified audio, and enhancement/negative-output permissions. Category 21 also exercises existing model dialects and task separation. These probes do not replace or modify the original 16-case portfolio.
+
+The initial isolated capture in `evals/capture-checks/2026-09-22-h3-boundaries/` retains the selected runtime snapshot, requests, outputs, manifests, and traces: one attempt for the original 43 probes plus one for each original case. It retains a discovered audio-role defect rather than relabeling it as a pass. Subsequent `2026-09-22-h3-audio-role-repair`, `2026-09-22-h3-audio-binding`, `2026-09-22-h3-final-boundaries`, and `2026-09-22-h3-output-precedence` capture directories retain focused reruns, the added explicit-target-audio probe, and the correction distinguishing inferred output shape from an explicit prompt-only restriction. Generating sessions receive requests and declared fixtures, never expected behaviors or reviewer criteria.
+
+`evals/results/2026-09-22-h3-development/` holds separate mechanical results and `development-review.json`, which records the 79 captures, observed defects, corrective evidence, and final source identity. Omitted repetitions and maintainer judgments remain `not-run`, not inferred passes. Development observations are neither three-repetition acceptance nor generated-media quality evidence. No generation or frame extraction is part of this evaluation.
+
 ## Fixed fixture
 
 `evals/fixtures/case15-geometric-source.png` is a deterministic 128 × 80 RGBA PNG authored from flat geometric raster primitives. It depicts pale-cyan sky above blue water, a red-hulled sailboat with a dark mast, a yellow right sail and white left sail, a white cloud in the upper right, and three pale horizontal ripple marks. It contains no generated or private material.

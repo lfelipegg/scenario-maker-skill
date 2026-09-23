@@ -1,0 +1,19 @@
+subject_definitions:
+<Video 1> is connected video A, the visual edit base. Its first visible frame, where a closed blue door fills the center, supplies the intended opening composition.
+<Subject 1> is that door; only its blue color changes to green.
+
+summary:
+[keyframe completion] The first generated output frame is an edited still based on the first visible frame of <Video 1>, with <Subject 1> already green and all other visible content preserved.
+
+retention_analysis:
+<Video 1> (first visible frame): partially_preserved - retain all visible content, composition, framing, lighting, and style except the door’s blue color.
+<Subject 1>: partially_preserved - preserve the same door, closed state, central placement, shape, texture, and details; change only blue to green.
+
+detailed_description:
+[Shot 1] Match the first visible frame of <Video 1>. The closed door fills the center and is green from the very first generated output frame, not blue followed by a color transition. Preserve everything else visible without alteration. Later motion, camera behavior, and whole-clip stillness are unspecified.
+
+overall_soundscape:
+Unspecified
+
+non_diegetic_music:
+Unspecified

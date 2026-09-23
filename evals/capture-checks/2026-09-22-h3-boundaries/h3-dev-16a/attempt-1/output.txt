@@ -1,0 +1,17 @@
+subject_definitions:
+<Subject 1> is the white paper boat from connected picture A, <Picture 1>, which supplies its identity and appearance.
+
+summary:
+[reference generation] The target video shows <Subject 1> drifting through a narrow rain gutter.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1]): fully_preserved - retain the same boat’s white paper, folded shape, and proportions from <Picture 1>. The reference supplies the boat, not its original surroundings or composition.
+
+detailed_description:
+[Shot 1] <Subject 1> floats on the water flowing through a narrow rain gutter, carried along by the current. Preserve its referenced identity and appearance throughout the drift, with its white paper and folded form remaining recognizable as it moves between the gutter’s close sides.
+
+overall_soundscape:
+Unspecified
+
+non_diegetic_music:
+Unspecified

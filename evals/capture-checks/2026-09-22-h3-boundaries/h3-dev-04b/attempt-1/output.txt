@@ -1,0 +1,21 @@
+subject_definitions:
+<Video 1> is video A, used only as a reference for muted color treatment.
+<Video 2> is video B, the source video to edit.
+<Subject 1> is the yellow bus beside the white shelter in <Video 2>.
+
+summary:
+[video editing + reference generation] The target video is an edited version of <Video 2>. Change only the bus from yellow to red and apply <Video 1>'s muted color treatment.
+
+retention_analysis:
+<Video 1>: attribute_transfer - transfer only its muted color treatment, not its subjects, setting, action, or camera behavior.
+<Video 2>: partially_preserved - retain all source content, people, shelter, action, framing, camera behavior, and timing, except for the bus recoloring and requested color treatment.
+<Subject 1>: partially_preserved - preserve the same bus and all its details, changing only its yellow color to red.
+
+detailed_description:
+From the first output frame onward, the bus in <Video 2> is red rather than yellow. Apply <Video 1>'s muted color treatment throughout while keeping the bus recognizably red and the shelter white. Preserve <Video 2>'s people, shelter, spatial relationships, actions, framing, and all other content. Import no other properties from <Video 1>.
+
+overall_soundscape:
+Unspecified
+
+non_diegetic_music:
+Unspecified

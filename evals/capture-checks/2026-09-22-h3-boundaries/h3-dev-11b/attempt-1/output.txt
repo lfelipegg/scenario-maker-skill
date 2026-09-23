@@ -1,0 +1,1 @@
+Perfectly fixed framing and a continuous handheld push-in that changes framing are mutually incompatible. Which requirement may be relaxed: the fixed framing or the handheld push-in?

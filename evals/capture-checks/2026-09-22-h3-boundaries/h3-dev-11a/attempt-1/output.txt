@@ -1,0 +1,17 @@
+subject_definitions:
+<Subject 1> is the glass marble from connected picture A, <Picture 1>, which supplies its identity and appearance only.
+
+summary:
+[reference generation] The target video shows <Subject 1> rolling down a wooden ramp.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1]): fully_preserved - retain the marble’s identity and glass appearance from <Picture 1>, without transferring the reference background or composition.
+
+detailed_description:
+[Shot 1] <Subject 1> rolls downhill along the wooden ramp, rotating as it advances and maintaining contact with the wood. Preserve its reference appearance throughout the continuous descent. The ramp’s visible wood grain contrasts with the marble’s glass surface. Camera behavior remains unspecified.
+
+overall_soundscape:
+Unspecified
+
+non_diegetic_music:
+Unspecified

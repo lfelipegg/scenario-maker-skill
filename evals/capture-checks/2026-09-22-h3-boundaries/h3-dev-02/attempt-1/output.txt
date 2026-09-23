@@ -1,0 +1,26 @@
+subject_definitions:
+<Picture 1> supplies the identity of <Subject 1>, the red-haired courier.
+<Picture 2> supplies the appearance of <Subject 2>, her green bicycle.
+<Video 1> supplies only <Subject 1>’s riding motion; no soundtrack input is connected for this video.
+<Audio 1> is the separately connected metronome soundtrack of <Video 2>; no target-audio reuse or rhythm-transfer role is specified.
+<Video 2> supplies only camera motion.
+<Audio 2> is the standalone bell-timbre reference, not a signal-reuse source.
+
+summary:
+[reference generation + audio reference] <Subject 1> rides <Subject 2>, using <Video 1> for riding motion and <Video 2> for camera motion. <Audio 2> guides bell timbre only.
+
+retention_analysis:
+<Picture 1>: fully_preserved — retain the courier’s identity and red hair within its identity-reference role.
+<Picture 2>: fully_preserved — retain her bicycle’s appearance and green color.
+<Video 1>: attribute_transfer — riding motion only.
+<Video 2>: attribute_transfer — camera motion only.
+<Audio 2>: reference — bell timbre only, without copying its waveform or timing.
+
+detailed_description:
+[Shot 1] The red-haired courier identified by <Picture 1> rides her green bicycle from <Picture 2>. Apply the riding motion from <Video 1> to the courier and the camera motion from <Video 2> to the shot. Do not transfer reference backgrounds, unrelated subjects, or other unassigned properties. The connected metronome soundtrack does not establish target sound or synchronization.
+
+overall_soundscape:
+Use <Audio 2> solely as the bell-timbre reference; bell timing and other sound remain unspecified. No reuse of <Audio 1> is requested.
+
+non_diegetic_music:
+Unspecified

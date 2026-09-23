@@ -1,0 +1,18 @@
+subject_definitions:
+<Subject 1> (S1) is the target narrator.
+<Audio 1> is connected standalone audio A, used only as a reference for S1’s warm, breathy timbre.
+
+summary:
+[audio reference] The target narrator speaks the supplied line using only the warm, breathy timbre referenced from <Audio 1>, without reusing its speech or sound.
+
+retention_analysis:
+<Audio 1>: reference — transfer timbre only. Do not copy its audio signal, original words, rhythm, cadence, timing, or background sound.
+
+detailed_description:
+[Shot 1] S1 says exactly <d>[English] The harbor opens at dawn.</d> Use a newly performed delivery with phrasing and rhythm independent of <Audio 1>. Add no other spoken words. Visual content and camera behavior are unspecified.
+
+overall_soundscape:
+The requested narration uses the referenced warm, breathy timbre. No background sound from <Audio 1> is reused; other ambience is unspecified.
+
+non_diegetic_music:
+Unspecified

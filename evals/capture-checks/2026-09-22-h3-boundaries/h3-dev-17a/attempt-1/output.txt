@@ -1,0 +1,19 @@
+subject_definitions:
+<Picture 1> is connected image A, the visual edit base for the first generated output frame.
+<Subject 1> is the white mug in <Picture 1>, bearing the exact lettering "今日は、雨。".
+
+summary:
+[keyframe completion] The first generated output frame is an edited still based on <Picture 1>, changing only the mug’s white surface to orange.
+
+retention_analysis:
+<Picture 1> ([Shot 1] edited opening keyframe): partially_preserved - preserve all content, composition, framing, lighting, and style except the requested mug color change.
+<Subject 1>: partially_preserved - retain the mug’s shape, position, surface detail, and exact lettering "今日は、雨。", including its appearance and placement; change only the white surface to orange.
+
+detailed_description:
+[Shot 1] The complete edit is already present in the first generated output frame: the same mug is orange, not white. Preserve its lettering exactly as "今日は、雨。" without recoloring, replacing, or altering the characters or punctuation. Keep all other image content unchanged. Do not defer the edit to a later color transition. Later motion and camera behavior are unspecified.
+
+overall_soundscape:
+Unspecified
+
+non_diegetic_music:
+Unspecified

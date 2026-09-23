@@ -1,0 +1,3 @@
+Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.
+
+Create an H3 Ref2VA frame-derived still-edit prompt. Connected image A is the visual edit base: a bronze lamp on a white desk. In the first generated output frame, the lamp must already be matte black; preserve the desk and composition. No later motion is specified, and soundtrack is irrelevant.

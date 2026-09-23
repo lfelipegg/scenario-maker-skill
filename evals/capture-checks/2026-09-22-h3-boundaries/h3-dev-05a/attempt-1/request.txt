@@ -1,0 +1,3 @@
+Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.
+
+Write an H3 Ref2VA source-video edit prompt. The connected source video shows one speaker seated at a wooden desk in a gray room saying "Meet me at six." Change only the gray wall to white, preserving the speaker, desk, framing, and actions. Use the video's separately connected soundtrack as audio to reuse. Preserve the spoken line exactly and keep the same speaker identity. Do not add any other speech or music.

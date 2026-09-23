@@ -1,0 +1,91 @@
+{
+  "case_id": "case-16",
+  "attempt": 1,
+  "revision": "worktree-sha256-5a9792ff30d21c0b366ff51272e951bdd502ae54529ade48a083406e8963edb7",
+  "started_at": "2026-09-23T05:47:36.477874+00:00",
+  "elapsed_seconds": 25.79,
+  "command": [
+    "omp",
+    "--cwd",
+    "/tmp/h3-smoke-mwqex8vc/baseline/case-16/attempt-1",
+    "--print",
+    "--mode",
+    "json",
+    "--model",
+    "openai-codex/gpt-6-astra",
+    "--thinking",
+    "high",
+    "--no-session",
+    "--no-title",
+    "--no-prewalk",
+    "--no-skills",
+    "--no-rules",
+    "--no-extensions",
+    "--no-lsp",
+    "--no-pty",
+    "--tools",
+    "read,grep,glob,bash,write",
+    "--approval-mode",
+    "yolo",
+    "--config",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/omp-config.json",
+    "--system-prompt",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/generator-system.txt",
+    "--extension",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/capture.ts",
+    "--max-time",
+    "300s",
+    "Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.\n\nCreate a ComfyUI wildcard file at `outputs/clothing-fragments.txt` containing exactly four distinct clothing-only fragments suitable for insertion at `[CLOTHING SLOT]` in this host: `score_9, score_8_up, score_7_up, source_anime, rating_safe, 1girl, black hair, [CLOTHING SLOT]`. Each fragment must be one nonempty physical line and describe only one garment or coordinated outfit; do not repeat the host prefix, subject, hair, pose, action, setting, camera, lighting, comments, numbering, headings, or blank lines. After saving, report the actual path, entry count, and that the file is fragment mode outside the file."
+  ],
+  "cwd": "/tmp/h3-smoke-mwqex8vc/baseline/case-16/attempt-1",
+  "execution": {
+    "status": "completed",
+    "exit_code": 0,
+    "error": null,
+    "model_errors": [],
+    "malformed_trace_lines": []
+  },
+  "raw": {
+    "output": "output.txt",
+    "partial_output": null,
+    "trace": "trace.jsonl",
+    "stderr": "stderr.txt",
+    "context": "context.jsonl"
+  },
+  "trace_complete": true,
+  "artifacts": [
+    {
+      "path": "outputs/clothing-fragments.txt",
+      "stored_path": "artifacts/outputs/clothing-fragments.txt",
+      "sha256": "525e5835e1a53e21d15f779fa9c901f282acbb033df66468015863037f4d8660",
+      "bytes": 267
+    }
+  ],
+  "observed_context": [
+    {
+      "type": "eval_context",
+      "systemPrompt": "You are a prompt-writing assistant executing the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md. Read that file and only its applicable references. Resolve its reference and script paths relative to ./selected-skill, not an installed skill. Do not discover or load other skills, repository instructions, past sessions, evaluator files, or web sources.\n\nOnly local read, grep, glob, bash, and write tools are available. Use them for the selected skill's references, local lookup/scripts, supplied fixtures, and requested workspace-local text exports. Keep writes within this fresh workspace. Do not edit the selected skill, execute image/video generation or frame extraction, delegate, switch models, access the network, or inspect credentials. This is prompt writing, not generation. If clarification is necessary, ask in your final response; this non-interactive run cannot receive an answer.\n\nApply the selected skill to the user's request. Do not discuss evaluation or scoring. The workspace starts with no prior conversation or generated outputs.\n",
+      "cwd": "/tmp/h3-smoke-mwqex8vc/baseline/case-16/attempt-1",
+      "model": {
+        "provider": "openai-codex",
+        "id": "gpt-6-astra",
+        "name": "GPT-6-Astra"
+      },
+      "thinking": "high",
+      "tools": [
+        "read",
+        "grep",
+        "glob",
+        "bash",
+        "write"
+      ]
+    }
+  ],
+  "raw_checksums": {
+    "request.txt": "f1ddec4e45826584ec7544f47e449d4ce6ca02a4afa1fa5e7d384c4f34531914",
+    "output.txt": "677defb877c7f9f1d711b23e096c0154be67ecc21d906e9ab71631eaa2ec6068",
+    "context.jsonl": "7f888bebcbca4f11a76ba575381e21a9efe6925353c94553393d4be1ef37fd93",
+    "trace.jsonl": "e99712f88fbb2b245ddcd997da3f8dc685f3916e0f1a02746d3b5fe06a326b7d",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

@@ -1,0 +1,21 @@
+subject_definitions:
+<Audio 1> is the separately connected soundtrack of <Video 1>, to be reused as the complete final audio track.
+<Video 1> is the source video being edited.
+<Subject 1> (S1) is the single speaker seated at the wooden desk in <Video 1>.
+
+summary:
+[video editing + audio reuse] The target video is an edited version of <Video 1>. Change only the gray wall to white, preserving everything else and reusing <Audio 1> unchanged.
+
+retention_analysis:
+<Video 1>: partially_preserved — only the wall color changes; preserve the wooden desk, room geometry, composition, framing, lighting, camera behavior, actions, and timing.
+<Subject 1>: fully_preserved — retain the same speaker identity, appearance, clothing, seated position, expressions, and movements.
+<Audio 1>: fully_copy — reuse the original soundtrack directly, preserving S1’s voice, delivery, timing, and exact line “Meet me at six.”
+
+detailed_description:
+[Shot 1] Follow the source video’s original action and framing. The gray wall is white from the first output frame throughout the clip; this is a color edit, not an on-screen transformation. Keep <Subject 1> seated at the unchanged wooden desk, preserving the original performance and lip synchronization with <Audio 1>. Make no other visual changes.
+
+overall_soundscape:
+Reuse <Audio 1> unchanged, not as a voice-style reference or newly performed dialogue. S1’s spoken line remains exactly “Meet me at six.” Add no other speech or sounds.
+
+non_diegetic_music:
+Add no music; retain only the reused soundtrack.

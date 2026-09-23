@@ -1,0 +1,61 @@
+### 1. H3 FL2VA — First-frame video
+
+```text
+For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.
+
+integrated_multimodal_description:
+[Shot 1] <Picture 1> is connected image A, showing the red toy boat. Begin with this image as the actual opening state, preserving the boat's red color, appearance, position, surroundings, composition, and lighting. After the opening frame, the boat moves forward in the direction its bow faces, retaining its red color and original design. Preserve the source scene rather than replacing it with a new setting. Camera behavior is unspecified.
+
+overall_soundscape:
+Unspecified
+
+non_diegetic_music:
+Unspecified
+```
+
+### 2. H3 Ref2VA — Appearance-reference synthesis
+
+```text
+subject_definitions:
+<Picture 1> is connected image A, used only as the boat's appearance reference.
+<Subject 1> is the red toy boat whose shape, proportions, surface details, and red color come from <Picture 1>.
+
+summary:
+[reference generation] The target video shows <Subject 1> in a new harbor scene, using <Picture 1> only for the boat's appearance.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1]): fully_preserved - preserve the boat's referenced appearance, including its red color and toy proportions. Do not transfer the reference image's background, placement, composition, lighting, or camera viewpoint.
+
+detailed_description:
+[Shot 1] Show <Subject 1> on the water in a new harbor setting. Preserve its recognizable toy-boat design and red appearance from <Picture 1>, rather than turning it into a full-size vessel. The harbor scene is newly composed; <Picture 1> is not an opening-frame anchor. Subject motion and camera behavior are unspecified.
+
+overall_soundscape:
+Unspecified
+
+non_diegetic_music:
+Unspecified
+```
+
+### 3. H3 Ref2VA — Frame-derived still edit
+
+```text
+subject_definitions:
+<Picture 1> is connected image A, the visual edit base for the first generated output frame.
+<Subject 1> is the red toy boat in <Picture 1>; only its red paint changes to green.
+
+summary:
+[keyframe completion] The first generated output frame is an edited still based on <Picture 1>, already showing the same toy boat painted green.
+
+retention_analysis:
+<Picture 1> ([Shot 1] edited opening keyframe): partially_preserved - retain the original surroundings, composition, framing, lighting, and object relationships; change only the boat's red paint to green.
+<Subject 1>: partially_preserved - preserve the boat's shape, proportions, surface details, position, and all features unaffected by the paint-color edit.
+
+detailed_description:
+[Shot 1] The complete edit is present in the first generated output frame: the same boat is already green wherever its paint was red in <Picture 1>. Preserve all other source-image content. Do not begin with the red boat and transition to green, and do not depict a painting process. Later motion, camera behavior, and whole-clip stillness are unspecified.
+
+overall_soundscape:
+Unspecified
+
+non_diegetic_music:
+Unspecified
+```

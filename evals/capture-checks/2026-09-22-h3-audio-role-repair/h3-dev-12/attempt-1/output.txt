@@ -1,0 +1,21 @@
+subject_definitions:
+<Subject 1> is Jo, using the connected <Picture 1> as Jo’s identity reference.
+<Subject 2> is Lin, using the connected <Picture 2> as Lin’s identity reference.
+
+summary:
+[reference generation] Two shots: Jo closes the shop gate while Lin waits across the street, then Lin crosses toward Jo. A bicycle bell begins as the gate hits the ground and continues across the cut. Jo waves only after Lin reaches the curb on Jo’s side.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1] and [Shot 2]): fully_preserved — retain Jo’s identity from <Picture 1>.
+<Subject 2> (appears in [Shot 1] and [Shot 2]): fully_preserved — retain Lin’s identity from <Picture 2>.
+Both images supply identity only, not pose, background, or camera behavior.
+
+detailed_description:
+[Shot 1] Jo closes the shop gate while Lin waits across the street. As the gate hits the ground, a bicycle bell begins. Cut to [Shot 2] with that same bell still sounding.
+[Shot 2] Lin crosses the street toward Jo while the bell continues uninterrupted. Jo does not wave during Lin’s crossing. Only after Lin reaches the curb on Jo’s side does Jo wave.
+
+overall_soundscape:
+The bicycle bell starts at the gate’s contact with the ground in [Shot 1] and carries continuously across the cut into Lin’s crossing in [Shot 2], without stopping or restarting.
+
+non_diegetic_music:
+Unspecified

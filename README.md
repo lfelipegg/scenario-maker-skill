@@ -9,6 +9,7 @@ Scenario Maker is an agent skill for writing, refining, critiquing, and batching
 - Create or expand scene descriptions, character designs, clothing descriptions, and isolated assets.
 - Adapt prompts for SDXL, local Krea 2 RAW/Turbo, Illustrious, NoobAI, and Pony Diffusion V6 XL.
 - Write text-to-video and image-to-video prompts, including Wan prompts.
+- Write native local MiniMax H3 full-reference generation, source-video editing, first-frame video, and frame-derived still-edit prompts.
 - Convert between natural-language prose, general tag prompts, and Danbooru-style tags.
 - Revise specific details without changing the rest of a prompt.
 - Critique prompts or compare model-specific approaches without silently rewriting them.
@@ -27,12 +28,25 @@ The skill provides model-specific **prompt-writing guidance**, not model executi
 | [NoobAI XL](references/models/noobai.md) | 1.1 epsilon-prediction and V-Pred 1.0 | Tags and short visual phrases, with spaces instead of underscores. |
 | [Pony Diffusion](references/models/pony-v6.md) | V6 XL; aliases include `Pony` and `PDXL` | Tags and short visual phrases using applicable score/source/rating conventions. |
 | [Wan](references/video-prompts.md#wan-video-format) | Wan-style text-to-video and image-to-video guidance; no version-specific profile | One cohesive cinematic paragraph describing authorized motion and scene details. |
+| [MiniMax H3 Ref2VA](references/models/minimax-h3.md) | Native local H3-Base-Ref2VA through `MiniMaxH3ReferenceToVideo` | Six-section reference generation/editing prompt; English and Medium detail by default. |
+| [MiniMax H3 FL2VA](references/models/minimax-h3.md#fl2va-first-frame-video) | Native local H3-Base-FL2VA through `MiniMaxH3ImageToVideo`, one opening image | Opening-frame anchor followed by three sections; English and Medium detail by default. |
 
 Explicit format requests override these presentation defaults. For example, you can ask for Illustrious prose or an SDXL tag prompt.
 
 **Coverage boundaries:** local Krea 2 guidance does not cover hosted Medium, Large, or Medium Turbo. Model-family names do not automatically extend support to newer releases, fine-tunes, or merges. Specify the exact checkpoint and interface when their differences matter.
 
 For other models, the skill can write generic image or video prompts, but it does not claim model-specific syntax or capabilities without supporting guidance. With no model named, it uses generic task guidance rather than guessing a target.
+
+### MiniMax H3 task boundaries
+
+- **Full-reference generation:** combine image, video, and audio references with explicit roles; an appearance source does not donate its background or soundtrack.
+- **Source-video editing:** identify the video being edited, the requested changes, and the content to preserve.
+- **First-frame video:** the supplied opening image anchors time zero. Describe authorized motion or later transformations; changing that same opening requires resolving the route or timing.
+- **Frame-derived still editing:** describe the complete edit in the first generated output frame. Your downstream workflow generates reference-guided video and extracts that frame; Scenario Maker does neither.
+
+Provide inspectable media or sufficiently clear descriptions/transcripts for prompt authoring. Actual generation still needs the correctly connected media. These routes do not cover hosted H3/H3-Max, older Hailuo, or every adjacent native workflow. The ordinary selected native templates consume positive conditioning only, not a separate negative-text field. Reference retention expresses intent, not a fidelity guarantee.
+
+Audio left unspecified remains `Unspecified`, not silence. Explicit formats override section defaults while preserving source roles and temporal meaning. See the [H3 profile](references/models/minimax-h3.md) for examples of all four tasks and native input boundaries.
 
 ## Getting started
 
@@ -49,7 +63,7 @@ filled with blue fog. Use natural-language prose, under 60 words.
 
 You do not need to fill out a schema. When useful, include:
 
-- **Task:** still image, image editing, text-to-video, or image-to-video.
+- **Task:** still image, image editing, text-to-video, image-to-video, reference-video generation, or source-video editing.
 - **Scope:** full scene, character design, clothing, or isolated asset.
 - **Target:** the exact model or checkpoint, if known.
 - **Output:** prose, tags, positive/negative pair, variants, critique, or files.
@@ -67,9 +81,9 @@ For image-to-video requests, provide the starting image or describe it. Naming a
 
 For strictly canonical Danbooru output, say **canonical-only**. If canonical tags cannot faithfully express a required detail, the assistant asks how to resolve the conflict rather than dropping it.
 
-Your explicit format and length take precedence over model presentation defaults. Without a named model or explicit format, the skill uses Normal Version. The default length is Very Short unless a selected profile supplies another default; local Krea 2 defaults to Medium.
+Your explicit format and length take precedence over model presentation defaults. Without a named model or explicit format, the skill uses Normal Version. The default length is Very Short unless a selected profile supplies another default; local Krea 2 and MiniMax H3 default to Medium.
 
-A single prompt-writing request returns the prompt only. Ask explicitly for explanations, negative prompts, alternatives, or a positive/negative pair. Critique and comparison requests return analysis rather than an unsolicited rewrite.
+A single prompt-writing request returns the prompt only. For H3, the assistant also briefly offers optional in-chat enhancement after the prompt when your requested format permits it; say **“prompt only”** to suppress the offer. Enhancement is never automatic. Ask explicitly for explanations, negative prompts, alternatives, or a positive/negative pair. Critique and comparison requests return analysis rather than an unsolicited rewrite.
 
 ## Controlling changes
 
@@ -109,6 +123,17 @@ Write a Wan image-to-video prompt from this starting frame:
 a small sailboat on calm water beneath an overcast sky.
 Let the boat drift slowly left as the camera stays fixed.
 Preserve the lighting and add no other boats.
+```
+
+### Edit a still through H3 reference generation
+
+```text
+Write a prompt for native local H3 Ref2VA frame-derived still editing.
+Connected Picture 1 is the edit base: a yellow mug on a wooden table,
+with "MORNING" printed on the mug. Change only the mug to cobalt blue,
+already complete in the first generated output frame.
+Preserve the table, composition, lighting, and exact lettering.
+Leave later motion and audio unspecified. Return prompt only.
 ```
 
 ### Create controlled variants

@@ -1,0 +1,18 @@
+subject_definitions:
+<Subject 1> is the brass compass supplied by Picture A (<Picture 1>), which provides only the compass’s identity and appearance. Video A (<Video 1>) supplies only its slow rotational motion.
+
+summary:
+[reference generation] The target video shows <Subject 1> turning slowly on plain gray cloth, retaining the compass’s referenced appearance and the motion reference’s unhurried pace.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1]): fully_preserved — retain the brass compass’s identity and appearance from <Picture 1>, without importing its surroundings.
+<Video 1>: attribute_transfer — transfer only slow rotation, not its subjects, setting, camera behavior, style, or soundtrack.
+
+detailed_description:
+[Shot 1] The brass compass rotates slowly on plain gray cloth. Its gradual turning follows <Video 1>, while its appearance remains faithful to <Picture 1>. Keep the visual emphasis on the compass’s changing orientation against the plain gray fabric. The scene contains only the compass and cloth; introduce no additional objects or actions. Camera behavior and lighting remain unspecified.
+
+overall_soundscape:
+Unspecified
+
+non_diegetic_music:
+Unspecified
