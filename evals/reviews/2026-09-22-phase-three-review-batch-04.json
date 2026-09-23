@@ -1,0 +1,357 @@
+{
+  "batch": 4,
+  "start": 8,
+  "count": 3,
+  "questions": [
+    {
+      "id": "pair-6c8ddaf23785_C12-PROFILE",
+      "question": "REVIEW 9/48 — pair-6c8ddaf23785\n\nREQUEST\nWrite one Pony Diffusion V6 XL positive prompt for one adult woman with auburn hair, round glasses, a teal raincoat, and a folded red umbrella, standing at an empty tram stop at night. Use the safe anime source/rating dialect. Return only the comma-separated positive prompt: no negative prompt, notes, labels, or variants.\n\nOUTPUT A\nscore_9, score_8_up, score_7_up, source_anime, rating_safe, 1girl, solo, adult woman, auburn hair, round glasses, teal raincoat, holding a folded red umbrella at her side, standing, empty tram stop, night, vacant bench, tram tracks, softly lit shelter, wet pavement, streetlight reflections, full body, three-quarter view\n\nOUTPUT B\nscore_9, score_8_up, score_7_up, source_anime, rating_safe, 1girl, solo, adult woman, auburn hair, round glasses, teal raincoat, holding a folded red umbrella, standing at an otherwise empty tram stop, night\n\nCRITERION C12-PROFILE (hard)\nThe positive prompt starts with the existing Pony score/source/rating convention, uses source_anime and rating_safe, remains comma-separated, and avoids generic masterpiece/best quality boilerplate.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "9/48 C12-PROFILE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-6c8ddaf23785_C12-PRESERVE",
+      "question": "REVIEW 9/48 — pair-6c8ddaf23785\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C12-PRESERVE (hard)\nThe single adult subject retains every supplied attribute and prop, and the tram stop remains empty apart from her.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "9/48 C12-PRESERVE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-d9ab61c54d4a_C15-ROUTE",
+      "question": "REVIEW 10/48 — pair-d9ab61c54d4a\n\nREQUEST\nInspect the supplied source image and write one image-to-video prompt that starts from it. Preserve its simple synthetic subject shapes, colors, initial composition, and flat graphic style. Animate only subtle water ripples and a slow cloud drift, with a very gentle camera push-in. Apart from these authorized temporal changes, do not add, remove, recolor, or reposition objects. Return only the prompt, with no label, notes, variants, or generation.\n\nOUTPUT A\nStart from the supplied image exactly: a geometric sailboat with a red hull, dark mast, white left sail and yellow right sail on blue water beneath a pale blue sky, with one white cloud at upper right and three pale horizontal ripple marks. Preserve the simple shapes, colors, initial composition, and flat graphic style. Animate only subtle rippling in the existing water marks and slow cloud drift, with a very gentle camera push-in. Keep the boat and sails rigid and stationary; apart from these authorized changes, do not add, remove, recolor, reshape, or reposition anything.\n\nOUTPUT B\nStarting from the supplied image as the exact first frame, preserve the geometric sailboat’s red hull, white and yellow triangular sails, dark mast, blue water, pale blue sky, white cloud, and initial composition in the same flat graphic style. Animate only subtle ripples in the existing water marks and a slow drift of the cloud, with a very gentle camera push-in; keep the boat motionless, shapes and colors unchanged, and all other objects fixed relative to the scene, without additions, removals, morphing, or new detail.\n\nCRITERION C15-ROUTE (hard)\nThe response is an image-to-video prompt grounded in the supplied image as the first frame, not a text-to-video scene re-creation.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "10/48 C15-ROUTE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-d9ab61c54d4a_C15-PRESERVE",
+      "question": "REVIEW 10/48 — pair-d9ab61c54d4a\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C15-PRESERVE (hard)\nThe prompt accurately preserves the fixture's visible synthetic shapes, colors, composition, and flat style while limiting changes to the requested motions and gentle push-in.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "10/48 C15-PRESERVE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-0daf11f5afd9_C14-ROUTE",
+      "question": "REVIEW 11/48 — pair-0daf11f5afd9\n\nREQUEST\nWrite one Wan text-to-video prompt. A yellow paper boat drifts along a narrow rain-filled gutter beside a gray curb; raindrops ripple the water and push tiny leaves past it. The camera makes a slow low tracking move alongside the boat, then gently pulls back as it reaches a storm drain. Photorealistic macro cinematography, cool overcast light. Return one cohesive paragraph only, with no shot list, label, notes, variants, or generation.\n\nOUTPUT A\nA yellow paper boat drifts slowly along a narrow rain-filled gutter beside a wet gray curb, gently bobbing as raindrops spread overlapping ripples and nudge tiny leaves past its folded hull. In one continuous shot, the camera tracks alongside at water level, then gently pulls back as the boat reaches a storm drain, revealing water streaming between the dark metal bars. Photorealistic macro cinematography, shallow depth of field, detailed paper fibers and wet concrete, cool overcast light and soft reflections.\n\nOUTPUT B\nA yellow paper boat drifts along a narrow rain-filled gutter beside a gray curb, its folded paper texture sharply visible as raindrops scatter expanding ripples across the water and push tiny leaves past it. The camera tracks slowly alongside the boat at water level, then gently pulls back as it reaches a storm drain, maintaining a smooth, continuous movement. Photorealistic macro cinematography captures delicate water reflections and wet curb textures under cool, diffuse overcast light.\n\nCRITERION C14-ROUTE (hard)\nThe output follows the existing Wan route as one cohesive cinematic paragraph rather than a shot list or image prompt.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "11/48 C14-ROUTE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-0daf11f5afd9_C14-MOTION",
+      "question": "REVIEW 11/48 — pair-0daf11f5afd9\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C14-MOTION (hard)\nThe paragraph preserves subject motion, environmental motion, camera progression, scene, atmosphere, and stylization without invisible story or audio invention.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "11/48 C14-MOTION",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-0daf11f5afd9_C14-STYLE",
+      "question": "REVIEW 11/48 — pair-0daf11f5afd9\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C14-STYLE (advisory)\nCamera language and progression are clear without becoming muddy or repetitive.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "11/48 C14-STYLE",
+      "multi": false,
+      "recommended": null
+    }
+  ],
+  "response": {
+    "text": "User answers:\npair-6c8ddaf23785_C12-PROFILE: Both pass\npair-6c8ddaf23785_C12-PRESERVE: \"A fails, B Pass. or preservation, B keeps the requested subject attributes and prop intact and explicitly says standing at an otherwise empty tram stop.\n\nA preserves those required details, but adds several independent scene/presentation facts not supplied by the brief: vacant bench, tram tracks, softly lit shelter, wet pavement, streetlight reflections, plus framing details. Under the linked create→Balanced rule, those extra independent scene props/details exceed the allowed invention boundary for this criterion.\"\npair-d9ab61c54d4a_C15-ROUTE: Both pass\npair-d9ab61c54d4a_C15-PRESERVE: Both pass\npair-0daf11f5afd9_C14-ROUTE: Both pass\npair-0daf11f5afd9_C14-MOTION: Both pass\npair-0daf11f5afd9_C14-STYLE: Both pass",
+    "details": {
+      "results": [
+        {
+          "id": "pair-6c8ddaf23785_C12-PROFILE",
+          "question": "REVIEW 9/48 — pair-6c8ddaf23785\n\nREQUEST\nWrite one Pony Diffusion V6 XL positive prompt for one adult woman with auburn hair, round glasses, a teal raincoat, and a folded red umbrella, standing at an empty tram stop at night. Use the safe anime source/rating dialect. Return only the comma-separated positive prompt: no negative prompt, notes, labels, or variants.\n\nOUTPUT A\nscore_9, score_8_up, score_7_up, source_anime, rating_safe, 1girl, solo, adult woman, auburn hair, round glasses, teal raincoat, holding a folded red umbrella at her side, standing, empty tram stop, night, vacant bench, tram tracks, softly lit shelter, wet pavement, streetlight reflections, full body, three-quarter view\n\nOUTPUT B\nscore_9, score_8_up, score_7_up, source_anime, rating_safe, 1girl, solo, adult woman, auburn hair, round glasses, teal raincoat, holding a folded red umbrella, standing at an otherwise empty tram stop, night\n\nCRITERION C12-PROFILE (hard)\nThe positive prompt starts with the existing Pony score/source/rating convention, uses source_anime and rating_safe, remains comma-separated, and avoids generic masterpiece/best quality boilerplate.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-6c8ddaf23785_C12-PRESERVE",
+          "question": "REVIEW 9/48 — pair-6c8ddaf23785\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C12-PRESERVE (hard)\nThe single adult subject retains every supplied attribute and prop, and the tram stop remains empty apart from her.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [],
+          "customInput": "A fails, B Pass. or preservation, B keeps the requested subject attributes and prop intact and explicitly says standing at an otherwise empty tram stop.\n\nA preserves those required details, but adds several independent scene/presentation facts not supplied by the brief: vacant bench, tram tracks, softly lit shelter, wet pavement, streetlight reflections, plus framing details. Under the linked create→Balanced rule, those extra independent scene props/details exceed the allowed invention boundary for this criterion."
+        },
+        {
+          "id": "pair-d9ab61c54d4a_C15-ROUTE",
+          "question": "REVIEW 10/48 — pair-d9ab61c54d4a\n\nREQUEST\nInspect the supplied source image and write one image-to-video prompt that starts from it. Preserve its simple synthetic subject shapes, colors, initial composition, and flat graphic style. Animate only subtle water ripples and a slow cloud drift, with a very gentle camera push-in. Apart from these authorized temporal changes, do not add, remove, recolor, or reposition objects. Return only the prompt, with no label, notes, variants, or generation.\n\nOUTPUT A\nStart from the supplied image exactly: a geometric sailboat with a red hull, dark mast, white left sail and yellow right sail on blue water beneath a pale blue sky, with one white cloud at upper right and three pale horizontal ripple marks. Preserve the simple shapes, colors, initial composition, and flat graphic style. Animate only subtle rippling in the existing water marks and slow cloud drift, with a very gentle camera push-in. Keep the boat and sails rigid and stationary; apart from these authorized changes, do not add, remove, recolor, reshape, or reposition anything.\n\nOUTPUT B\nStarting from the supplied image as the exact first frame, preserve the geometric sailboat’s red hull, white and yellow triangular sails, dark mast, blue water, pale blue sky, white cloud, and initial composition in the same flat graphic style. Animate only subtle ripples in the existing water marks and a slow drift of the cloud, with a very gentle camera push-in; keep the boat motionless, shapes and colors unchanged, and all other objects fixed relative to the scene, without additions, removals, morphing, or new detail.\n\nCRITERION C15-ROUTE (hard)\nThe response is an image-to-video prompt grounded in the supplied image as the first frame, not a text-to-video scene re-creation.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-d9ab61c54d4a_C15-PRESERVE",
+          "question": "REVIEW 10/48 — pair-d9ab61c54d4a\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C15-PRESERVE (hard)\nThe prompt accurately preserves the fixture's visible synthetic shapes, colors, composition, and flat style while limiting changes to the requested motions and gentle push-in.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-0daf11f5afd9_C14-ROUTE",
+          "question": "REVIEW 11/48 — pair-0daf11f5afd9\n\nREQUEST\nWrite one Wan text-to-video prompt. A yellow paper boat drifts along a narrow rain-filled gutter beside a gray curb; raindrops ripple the water and push tiny leaves past it. The camera makes a slow low tracking move alongside the boat, then gently pulls back as it reaches a storm drain. Photorealistic macro cinematography, cool overcast light. Return one cohesive paragraph only, with no shot list, label, notes, variants, or generation.\n\nOUTPUT A\nA yellow paper boat drifts slowly along a narrow rain-filled gutter beside a wet gray curb, gently bobbing as raindrops spread overlapping ripples and nudge tiny leaves past its folded hull. In one continuous shot, the camera tracks alongside at water level, then gently pulls back as the boat reaches a storm drain, revealing water streaming between the dark metal bars. Photorealistic macro cinematography, shallow depth of field, detailed paper fibers and wet concrete, cool overcast light and soft reflections.\n\nOUTPUT B\nA yellow paper boat drifts along a narrow rain-filled gutter beside a gray curb, its folded paper texture sharply visible as raindrops scatter expanding ripples across the water and push tiny leaves past it. The camera tracks slowly alongside the boat at water level, then gently pulls back as it reaches a storm drain, maintaining a smooth, continuous movement. Photorealistic macro cinematography captures delicate water reflections and wet curb textures under cool, diffuse overcast light.\n\nCRITERION C14-ROUTE (hard)\nThe output follows the existing Wan route as one cohesive cinematic paragraph rather than a shot list or image prompt.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-0daf11f5afd9_C14-MOTION",
+          "question": "REVIEW 11/48 — pair-0daf11f5afd9\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C14-MOTION (hard)\nThe paragraph preserves subject motion, environmental motion, camera progression, scene, atmosphere, and stylization without invisible story or audio invention.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-0daf11f5afd9_C14-STYLE",
+          "question": "REVIEW 11/48 — pair-0daf11f5afd9\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C14-STYLE (advisory)\nCamera language and progression are clear without becoming muddy or repetitive.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        }
+      ]
+    }
+  },
+  "recorded_at": "2026-09-23T01:04:30.991Z"
+}

@@ -1,0 +1,15 @@
+### 1. Fidelity to the brief
+- **SDXL prompt:** Explicitly preserves every required element: a green bicycle, leaning against a white brick wall, in soft overcast daylight. Eye-level framing, a medium shot, and a restrained palette are additional choices, not requirements of the brief.
+- **Krea 2 prompt:** Preserves the subject, wall, and lighting. “Rests against” strongly suggests the intended pose but is slightly less explicit than “leaning against.” “Even” is consistent with overcast lighting. Eye-level framing and a restrained palette are additions here as well.
+
+### 2. Model-appropriate expression
+- **SDXL prompt:** Concise and visually concrete. Its comma-separated descriptive phrases are usable, although the selected skill’s SDXL guidance favors compact natural-language prose over tag-like lists. This is a mild stylistic mismatch, not a fundamental problem.
+- **Krea 2 prompt:** Uses a coherent natural-language sentence with clear relationships between subject, setting, and lighting. The selected skill provides no Krea 2-specific profile, so this supports a general clarity assessment—not a claim that the wording is optimized for that model.
+
+### 3. Likely ambiguity
+- **SDXL prompt:** “Medium shot” adds framing control, but its meaning for a bicycle is imprecise and may permit cropped wheels or other parts. “Eye-level” establishes viewpoint without fixing an exact camera height.
+- **Krea 2 prompt:** Omits shot size, leaving more latitude in camera distance and how much of the bicycle appears. “Rests against” leaves slightly more latitude in the bicycle’s angle and support.
+- **Both:** “Restrained palette” could mean fewer colors or reduced saturation; the latter could make the green less vivid. Neither specifies bicycle orientation or exact wall-contact points, though the brief does not require those details.
+
+### Overall comparison
+**SDXL is marginally more literal and more constrained in framing; Krea 2 is more fluidly expressed but leaves framing more open.** Both closely match the brief. The wording alone does not establish which model would produce the more faithful image.

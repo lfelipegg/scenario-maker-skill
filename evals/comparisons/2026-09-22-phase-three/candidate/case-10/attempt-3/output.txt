@@ -1,0 +1,15 @@
+### Fidelity to the brief
+- **SDXL prompt:** Explicitly preserves all core details: a green bicycle, leaning against a white brick wall, in soft overcast daylight. Eye-level framing, a medium shot, and a restrained palette are additions beyond the brief, though compatible with it.
+- **Krea 2 prompt:** Preserves the subject, colors, wall material, and lighting. “Rests against” strongly suggests leaning but is slightly less explicit than “leaning against.” Eye-level framing and a restrained palette are also additions; “even” is a reasonable elaboration of soft overcast light.
+
+### Model-appropriate expression
+- **SDXL prompt:** The compact comma-separated phrases are clear and usable. The selected skill favors natural descriptive prose for SDXL, but that is a preference, not a syntax requirement; this short phrase list is not inherently unsuitable.
+- **Krea 2 prompt:** The sentence is coherent and clearly connects the bicycle, wall, and lighting. The selected skill does not establish a Krea 2-specific profile, so its expression can be assessed as clear general image-prompt prose—not verified as optimal for that model.
+
+### Likely ambiguity
+- **SDXL prompt:** “Leaning against” makes the physical relationship explicit. “Medium shot” provides a framing cue but does not establish whether both wheels and the entire bicycle remain visible.
+- **Krea 2 prompt:** “Rests against” leaves slightly more latitude in the bicycle’s posture. Eye level specifies viewpoint, but without a shot-size cue, crop and camera distance remain more open.
+- **Both:** “Restrained palette” could mean fewer colors or reduced saturation, potentially muting the green. Neither specifies a precise green shade or photographic versus illustrated treatment; those are open choices in the brief, not fidelity failures.
+
+### Overall comparison
+**Both closely match the brief.** The SDXL prompt has a slight edge in explicit leaning posture and framing specificity; the Krea 2 prompt offers smoother prose but leaves shot size more open. Wording alone does not establish which model will render the scene more faithfully.

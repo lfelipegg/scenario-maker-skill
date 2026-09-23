@@ -1,0 +1,358 @@
+{
+  "batch": 11,
+  "start": 29,
+  "count": 3,
+  "questions": [
+    {
+      "id": "pair-57f044a689c8_C06-TEXT-BINDING",
+      "question": "REVIEW 30/48 — pair-57f044a689c8\n\nREQUEST\nWrite one text-to-image prompt for a small neighborhood bakery at dusk. A rectangular sign centered above the door must visibly read exactly `OPEN` in uppercase, with no other visible lettering anywhere. Return only the prompt.\n\nOUTPUT A\nA small neighborhood bakery at dusk, viewed straight on, with a warm amber-lit storefront against cool blue evening light. A rectangular sign centered directly above the entrance door clearly reads exactly “OPEN” in large, crisp uppercase letters; the sign is fully visible and unobstructed, and there is no other visible lettering anywhere in the image.\n\nOUTPUT B\nA photorealistic, straight-on view of a small neighborhood bakery at dusk, warm amber windows displaying bread and pastries against a blue-violet sky, brick facade and quiet sidewalk. Centered directly above the door, a clearly visible rectangular sign reads exactly “OPEN” in large, crisp uppercase letters; this is the only visible lettering anywhere, with no additional text, numbers, logos, labels, posters, or watermarks.\n\nCRITERION C06-TEXT-BINDING (hard)\nThe prompt clearly binds exact uppercase OPEN to the rectangular sign centered above the bakery door and excludes other visible lettering.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "30/48 C06-TEXT-BINDING",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-0fd6c6fceb2b_C01-OUTPUT",
+      "question": "REVIEW 31/48 — pair-0fd6c6fceb2b\n\nREQUEST\nWrite one SDXL text-to-image prompt for a glass greenhouse on a windswept cliff at sunrise. Use comma-separated visual phrases only. Return only the prompt: no label, negative prompt, notes, variants, or explanation.\n\nOUTPUT A\nglass greenhouse on a windswept coastal cliff at sunrise, slender weathered steel framework, transparent panes reflecting peach and gold skies, lush plants visible inside, cliffside grasses bent by strong wind, white surf far below, sea mist trailing across jagged rocks, low sunlight glowing through glass, long shadows over rugged ground, wide three-quarter view, photorealistic architectural landscape photography\n\nOUTPUT B\nglass greenhouse perched on a windswept cliff at sunrise, transparent panes in a slender weathered metal frame, steep rugged rock face, exposed wind-scoured cliff edge, low golden sunlight glowing through the glass, pale peach sky, cool blue shadows, crisp reflections, wide landscape composition, photorealistic architectural detail\n\nCRITERION C01-OUTPUT (hard)\nThe response is exactly one unlabeled comma-separated visual-phrase prompt, with no negative prompt, notes, variants, or wrapper.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "31/48 C01-OUTPUT",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-0fd6c6fceb2b_C01-PROFILE",
+      "question": "REVIEW 31/48 — pair-0fd6c6fceb2b\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C01-PROFILE (hard)\nThe prompt expresses the requested greenhouse, cliff, wind, and sunrise in a compact SDXL-compatible phrase dialect without importing another profile's boilerplate.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "31/48 C01-PROFILE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-0fd6c6fceb2b_C01-STYLE",
+      "question": "REVIEW 31/48 — pair-0fd6c6fceb2b\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C01-STYLE (advisory)\nThe selected visual phrasing is concise, coherent, and immediately usable.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "31/48 C01-STYLE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-6bb9cd2cad5f_C02-OUTPUT",
+      "question": "REVIEW 32/48 — pair-6bb9cd2cad5f\n\nREQUEST\nAdapt this supplied prompt for local Krea 2 RAW/Turbo. Preserve every scene fact and return only one ready-to-paste prompt with no label, negative prompt, notes, variants, or explanation. Source prompt: A red ceramic teapot sits image-left of a white cup on a dark walnut table. Morning light enters from the right, and the plain cream wall behind them is empty.\n\nOUTPUT A\nA red ceramic teapot sits to the left of a white cup in the image, both on a dark walnut table. Morning light enters from the right, with a plain, empty cream wall behind them.\n\nOUTPUT B\nA red ceramic teapot sits to the left of a white cup as viewed in the image, both resting on a dark walnut table. Morning light enters from the right, illuminating the objects against a plain, empty cream wall.\n\nCRITERION C02-OUTPUT (hard)\nThe response is exactly one unlabeled prompt, without a package, negative field, notes, variants, or explanation.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "32/48 C02-OUTPUT",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-6bb9cd2cad5f_C02-PRESERVE",
+      "question": "REVIEW 32/48 — pair-6bb9cd2cad5f\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C02-PRESERVE (hard)\nThe adaptation preserves the two objects, their colors and image-left relationship, table, right-side morning light, and empty cream wall without adding visual facts.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "32/48 C02-PRESERVE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-6bb9cd2cad5f_C02-PROFILE",
+      "question": "REVIEW 32/48 — pair-6bb9cd2cad5f\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C02-PROFILE (hard)\nThe result uses a coherent natural-language paragraph suitable for the selected local Krea 2 RAW/Turbo contract; detail does not become invention.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "32/48 C02-PROFILE",
+      "multi": false,
+      "recommended": null
+    }
+  ],
+  "response": {
+    "text": "User answers:\npair-57f044a689c8_C06-TEXT-BINDING: Both pass\npair-0fd6c6fceb2b_C01-OUTPUT: Both pass\npair-0fd6c6fceb2b_C01-PROFILE: Both pass\npair-0fd6c6fceb2b_C01-STYLE: Both pass\npair-6bb9cd2cad5f_C02-OUTPUT: Both pass\npair-6bb9cd2cad5f_C02-PRESERVE: Both pass\npair-6bb9cd2cad5f_C02-PROFILE: Both pass",
+    "details": {
+      "results": [
+        {
+          "id": "pair-57f044a689c8_C06-TEXT-BINDING",
+          "question": "REVIEW 30/48 — pair-57f044a689c8\n\nREQUEST\nWrite one text-to-image prompt for a small neighborhood bakery at dusk. A rectangular sign centered above the door must visibly read exactly `OPEN` in uppercase, with no other visible lettering anywhere. Return only the prompt.\n\nOUTPUT A\nA small neighborhood bakery at dusk, viewed straight on, with a warm amber-lit storefront against cool blue evening light. A rectangular sign centered directly above the entrance door clearly reads exactly “OPEN” in large, crisp uppercase letters; the sign is fully visible and unobstructed, and there is no other visible lettering anywhere in the image.\n\nOUTPUT B\nA photorealistic, straight-on view of a small neighborhood bakery at dusk, warm amber windows displaying bread and pastries against a blue-violet sky, brick facade and quiet sidewalk. Centered directly above the door, a clearly visible rectangular sign reads exactly “OPEN” in large, crisp uppercase letters; this is the only visible lettering anywhere, with no additional text, numbers, logos, labels, posters, or watermarks.\n\nCRITERION C06-TEXT-BINDING (hard)\nThe prompt clearly binds exact uppercase OPEN to the rectangular sign centered above the bakery door and excludes other visible lettering.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-0fd6c6fceb2b_C01-OUTPUT",
+          "question": "REVIEW 31/48 — pair-0fd6c6fceb2b\n\nREQUEST\nWrite one SDXL text-to-image prompt for a glass greenhouse on a windswept cliff at sunrise. Use comma-separated visual phrases only. Return only the prompt: no label, negative prompt, notes, variants, or explanation.\n\nOUTPUT A\nglass greenhouse on a windswept coastal cliff at sunrise, slender weathered steel framework, transparent panes reflecting peach and gold skies, lush plants visible inside, cliffside grasses bent by strong wind, white surf far below, sea mist trailing across jagged rocks, low sunlight glowing through glass, long shadows over rugged ground, wide three-quarter view, photorealistic architectural landscape photography\n\nOUTPUT B\nglass greenhouse perched on a windswept cliff at sunrise, transparent panes in a slender weathered metal frame, steep rugged rock face, exposed wind-scoured cliff edge, low golden sunlight glowing through the glass, pale peach sky, cool blue shadows, crisp reflections, wide landscape composition, photorealistic architectural detail\n\nCRITERION C01-OUTPUT (hard)\nThe response is exactly one unlabeled comma-separated visual-phrase prompt, with no negative prompt, notes, variants, or wrapper.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-0fd6c6fceb2b_C01-PROFILE",
+          "question": "REVIEW 31/48 — pair-0fd6c6fceb2b\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C01-PROFILE (hard)\nThe prompt expresses the requested greenhouse, cliff, wind, and sunrise in a compact SDXL-compatible phrase dialect without importing another profile's boilerplate.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-0fd6c6fceb2b_C01-STYLE",
+          "question": "REVIEW 31/48 — pair-0fd6c6fceb2b\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C01-STYLE (advisory)\nThe selected visual phrasing is concise, coherent, and immediately usable.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-6bb9cd2cad5f_C02-OUTPUT",
+          "question": "REVIEW 32/48 — pair-6bb9cd2cad5f\n\nREQUEST\nAdapt this supplied prompt for local Krea 2 RAW/Turbo. Preserve every scene fact and return only one ready-to-paste prompt with no label, negative prompt, notes, variants, or explanation. Source prompt: A red ceramic teapot sits image-left of a white cup on a dark walnut table. Morning light enters from the right, and the plain cream wall behind them is empty.\n\nOUTPUT A\nA red ceramic teapot sits to the left of a white cup in the image, both on a dark walnut table. Morning light enters from the right, with a plain, empty cream wall behind them.\n\nOUTPUT B\nA red ceramic teapot sits to the left of a white cup as viewed in the image, both resting on a dark walnut table. Morning light enters from the right, illuminating the objects against a plain, empty cream wall.\n\nCRITERION C02-OUTPUT (hard)\nThe response is exactly one unlabeled prompt, without a package, negative field, notes, variants, or explanation.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-6bb9cd2cad5f_C02-PRESERVE",
+          "question": "REVIEW 32/48 — pair-6bb9cd2cad5f\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C02-PRESERVE (hard)\nThe adaptation preserves the two objects, their colors and image-left relationship, table, right-side morning light, and empty cream wall without adding visual facts.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-6bb9cd2cad5f_C02-PROFILE",
+          "question": "REVIEW 32/48 — pair-6bb9cd2cad5f\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C02-PROFILE (hard)\nThe result uses a coherent natural-language paragraph suitable for the selected local Krea 2 RAW/Turbo contract; detail does not become invention.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        }
+      ]
+    }
+  },
+  "recorded_at": "2026-09-23T01:15:00.508Z"
+}

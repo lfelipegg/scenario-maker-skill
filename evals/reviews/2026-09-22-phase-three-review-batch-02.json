@@ -1,0 +1,308 @@
+{
+  "batch": 2,
+  "start": 2,
+  "count": 3,
+  "questions": [
+    {
+      "id": "pair-1806ee7843f1_C13-PROFILE",
+      "question": "REVIEW 3/48 — pair-1806ee7843f1\n\nREQUEST\nWrite one NoobAI positive prompt for one adult man with long white hair, amber eyes, a brown leather apron, and blue work gloves, repairing a brass clock at a wooden bench. Return only the comma-separated positive prompt. Use NoobAI's normalized space-separated tag style; no negative prompt, notes, labels, or variants.\n\nOUTPUT A\nmasterpiece, best quality, newest, 1boy, solo, adult man, long hair, white hair, amber eyes, brown leather apron, blue work gloves, repairing a brass clock, holding a small screwdriver, exposed clock gears, wooden workbench, clockmaker workshop, soft window light, three quarter view, upper body, hands and clock in frame\n\nOUTPUT B\nmasterpiece, best quality, newest, 1boy, solo, adult man, long hair, white hair, amber eyes, brown leather apron, blue work gloves, repairing a brass clock at a wooden bench\n\nCRITERION C13-PROFILE (hard)\nThe result preserves the existing NoobAI ordered tag convention, including its quality/model preference opening and space-normalized visible tags, without Pony syntax.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "3/48 C13-PROFILE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-1806ee7843f1_C13-PRESERVE",
+      "question": "REVIEW 3/48 — pair-1806ee7843f1\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C13-PRESERVE (hard)\nAll supplied subject attributes, clothing, action, clock, and workbench relationship remain explicit and correctly bound.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "3/48 C13-PRESERVE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-d22bceb917bb_C09-ROUTING",
+      "question": "REVIEW 4/48 — pair-d22bceb917bb\n\nREQUEST\nCritique the following image prompt for visible clarity, composition, and ambiguity. Identify strengths and concrete problems, but do not rewrite it, provide a replacement prompt, or add variants. Prompt: `A mysterious traveler in a beautiful place, cinematic, amazing lighting, dynamic composition.`\n\nOUTPUT A\n## Strengths\n- **Simple scene structure:** One traveler within a setting gives the image a clear subject–environment foundation without overcrowding.\n- **Consistent mood:** “Mysterious” and “cinematic” suggest an atmospheric treatment without directly conflicting.\n- **Room for exploration:** Its brevity leaves substantial creative freedom, which can be useful when a specific result is not essential.\n\n## Concrete problems\n\n### Visible clarity\n- **“Mysterious traveler” names a role and an impression, not a visible appearance.** No clothing, silhouette, pose, or activity establishes what makes the figure recognizable as a traveler or mysterious.\n- **“Beautiful place” provides no identifiable environment.** It expresses a preference rather than specifying visible terrain, architecture, or other setting features.\n- **“Amazing lighting” is evaluative rather than descriptive.** Light direction, softness, color, and contrast remain unspecified, so it offers little control over visibility or atmosphere.\n\n### Composition\n- **“Dynamic composition” requests an effect without defining its structure.** Framing, viewpoint, subject placement, and directional relationships are all open.\n- **The visual hierarchy is unresolved.** The traveler could dominate the frame or appear tiny within the scenery; both would satisfy the wording but communicate differently.\n- **There is no concrete relationship beyond being “in” the place.** The prompt does not establish how the traveler visually engages with the surroundings.\n\n### Ambiguity\n- **“Cinematic” is a broad stylistic cue.** It does not reliably determine medium, palette, framing, or a particular film aesthetic.\n- **The adjectives permit widely different interpretations.** Mystery could come from obscured identity, surroundings, or lighting, while beauty is entirely subjective. None is prioritized.\n\n**Overall:** This works as a mood seed, but not as a controlled visual brief. Its main weakness is underspecification rather than contradiction: it states the desired impression while leaving nearly all observable decisions to the generator.\n\nOUTPUT B\n## Strengths\n- **Simple subject–setting structure:** One traveler in one location gives the image a manageable starting point without competing subjects.\n- **Consistent mood:** “Mysterious” and “cinematic” suggest an atmospheric treatment and do not inherently conflict.\n- **Creative latitude:** The brevity leaves room for interpretation, which can be useful for exploratory generation.\n\n## Concrete problems\n\n### Visible clarity\n- **“Mysterious traveler” gives a role and mood, but little visible identity.** Appearance, clothing, posture, expression, and equipment are unspecified. Nothing establishes how the viewer would recognize either travel or mystery.\n- **“Beautiful place” is a judgment, not a setting description.** It supplies no terrain, architecture, weather, or distinguishing feature, leaving most of the image undefined.\n- **“Amazing lighting” describes a desired quality rather than a lighting setup.** Source, direction, softness, color, and contrast are all unspecified.\n\n### Composition\n- **“Dynamic composition” does not establish an arrangement.** Framing, viewpoint, subject placement, visual lines, and depth relationships remain open.\n- **The focal hierarchy is unclear.** The prompt does not indicate whether the traveler should dominate or appear small within an expansive environment.\n- **There is no pose or action to support the requested dynamism.** A static scene can still have a dynamic composition, but this prompt supplies neither bodily movement nor spatial structure to create it.\n\n### Ambiguity\n- **“Cinematic” is broad shorthand.** It can influence the overall look, but does not reliably specify a medium, palette, lens feel, or framing.\n- **The modifiers overlap without adding much concrete information.** “Beautiful,” “amazing,” and “cinematic” express aesthetic preferences more than observable features, so outputs may vary widely while loosely satisfying every term.\n\n**Overall:** This works as a mood seed, but not as a controlled visual brief. Its main weakness is not brevity; it is that nearly all its descriptive language evaluates the desired image rather than defining what should be visible.\n\nCRITERION C09-ROUTING (hard)\nThe response is an analysis of the supplied prompt and does not silently turn into prompt writing, rewriting, or variants.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "4/48 C09-ROUTING",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-d22bceb917bb_C09-QUALITY",
+      "question": "REVIEW 4/48 — pair-d22bceb917bb\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C09-QUALITY (advisory)\nThe critique distinguishes useful strengths from specific visible-clarity, composition, and ambiguity problems.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "4/48 C09-QUALITY",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-01619ee3881c_C04-SCOPE",
+      "question": "REVIEW 5/48 — pair-01619ee3881c\n\nREQUEST\nCreate a character-design prompt for an adult lighthouse keeper. Give her weathered olive skin, tightly curled gray hair, a navy cable-knit sweater, orange waterproof bib trousers, black rubber boots, and a brass whistle on a cord. Describe character design only. Return one prompt with no scene, pose, expression, action, camera, lighting, weather, or story.\n\nOUTPUT A\nDesign an adult female lighthouse keeper with weathered olive skin, fine facial lines, and tightly curled gray hair. Her clothing consists of a thick navy cable-knit sweater, orange waterproof bib trousers with broad shoulder straps and reinforced seams, and sturdy black rubber boots with heavy tread; a small brass whistle hangs from a simple cord around her neck.\n\nOUTPUT B\nAn adult female lighthouse keeper with weathered olive skin and tightly curled gray hair. She wears a navy cable-knit sweater beneath orange waterproof bib trousers, black rubber boots, and a brass whistle on a cord around her neck.\n\nCRITERION C04-SCOPE (hard)\nThe prompt remains strictly within character appearance, clothing, and equipment, without scene or presentation expansion.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "5/48 C04-SCOPE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-01619ee3881c_C04-DETAILS",
+      "question": "REVIEW 5/48 — pair-01619ee3881c\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C04-DETAILS (hard)\nAll supplied physical, clothing, and equipment details remain attached to the single adult lighthouse keeper without incompatible invention.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "5/48 C04-DETAILS",
+      "multi": false,
+      "recommended": null
+    }
+  ],
+  "response": {
+    "text": "User answers:\npair-1806ee7843f1_C13-PROFILE: Both pass\npair-1806ee7843f1_C13-PRESERVE: \"A Fail, B Pass. For `pair-1806ee7843f1`:\n\n| Criterion    |        A |    B |\n| ------------ | -------: | ---: |\n| C13-PROFILE  |     Pass | Pass |\n| C13-PRESERVE | **Fail** | Pass |\n\nEvaluator answers:\n\n* `1806ee7843f1 — C13-PROFILE`: **A and B**\n* `1806ee7843f1 — C13-PRESERVE`: **B**\n\nBoth preserve the expected NoobAI structure: `masterpiece, best quality, newest`, comma-separated space-normalized visible tags, with no Pony syntax.\n\nFor preservation, B explicitly retains the required action–object–workbench relationship:\n\n> `repairing a brass clock at a wooden bench`\n\nA instead gives:\n\n> `repairing a brass clock ... wooden workbench`\n\nas separate tags. That does not explicitly bind the repair action to the workbench, which the criterion specifically requires. A also adds extra props and presentation details such as a screwdriver, exposed gears, workshop, lighting, and framing, but the decisive issue is the missing explicit workbench relationship.\n\n**Result: C13-PROFILE → A and B; C13-PRESERVE → B.**\n\"\npair-d22bceb917bb_C09-ROUTING: Both pass\npair-d22bceb917bb_C09-QUALITY: Both pass\npair-01619ee3881c_C04-SCOPE: Both pass\npair-01619ee3881c_C04-DETAILS: Both pass",
+    "details": {
+      "results": [
+        {
+          "id": "pair-1806ee7843f1_C13-PROFILE",
+          "question": "REVIEW 3/48 — pair-1806ee7843f1\n\nREQUEST\nWrite one NoobAI positive prompt for one adult man with long white hair, amber eyes, a brown leather apron, and blue work gloves, repairing a brass clock at a wooden bench. Return only the comma-separated positive prompt. Use NoobAI's normalized space-separated tag style; no negative prompt, notes, labels, or variants.\n\nOUTPUT A\nmasterpiece, best quality, newest, 1boy, solo, adult man, long hair, white hair, amber eyes, brown leather apron, blue work gloves, repairing a brass clock, holding a small screwdriver, exposed clock gears, wooden workbench, clockmaker workshop, soft window light, three quarter view, upper body, hands and clock in frame\n\nOUTPUT B\nmasterpiece, best quality, newest, 1boy, solo, adult man, long hair, white hair, amber eyes, brown leather apron, blue work gloves, repairing a brass clock at a wooden bench\n\nCRITERION C13-PROFILE (hard)\nThe result preserves the existing NoobAI ordered tag convention, including its quality/model preference opening and space-normalized visible tags, without Pony syntax.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-1806ee7843f1_C13-PRESERVE",
+          "question": "REVIEW 3/48 — pair-1806ee7843f1\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C13-PRESERVE (hard)\nAll supplied subject attributes, clothing, action, clock, and workbench relationship remain explicit and correctly bound.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [],
+          "customInput": "A Fail, B Pass. For `pair-1806ee7843f1`:\n\n| Criterion    |        A |    B |\n| ------------ | -------: | ---: |\n| C13-PROFILE  |     Pass | Pass |\n| C13-PRESERVE | **Fail** | Pass |\n\nEvaluator answers:\n\n* `1806ee7843f1 — C13-PROFILE`: **A and B**\n* `1806ee7843f1 — C13-PRESERVE`: **B**\n\nBoth preserve the expected NoobAI structure: `masterpiece, best quality, newest`, comma-separated space-normalized visible tags, with no Pony syntax.\n\nFor preservation, B explicitly retains the required action–object–workbench relationship:\n\n> `repairing a brass clock at a wooden bench`\n\nA instead gives:\n\n> `repairing a brass clock ... wooden workbench`\n\nas separate tags. That does not explicitly bind the repair action to the workbench, which the criterion specifically requires. A also adds extra props and presentation details such as a screwdriver, exposed gears, workshop, lighting, and framing, but the decisive issue is the missing explicit workbench relationship.\n\n**Result: C13-PROFILE → A and B; C13-PRESERVE → B.**\n"
+        },
+        {
+          "id": "pair-d22bceb917bb_C09-ROUTING",
+          "question": "REVIEW 4/48 — pair-d22bceb917bb\n\nREQUEST\nCritique the following image prompt for visible clarity, composition, and ambiguity. Identify strengths and concrete problems, but do not rewrite it, provide a replacement prompt, or add variants. Prompt: `A mysterious traveler in a beautiful place, cinematic, amazing lighting, dynamic composition.`\n\nOUTPUT A\n## Strengths\n- **Simple scene structure:** One traveler within a setting gives the image a clear subject–environment foundation without overcrowding.\n- **Consistent mood:** “Mysterious” and “cinematic” suggest an atmospheric treatment without directly conflicting.\n- **Room for exploration:** Its brevity leaves substantial creative freedom, which can be useful when a specific result is not essential.\n\n## Concrete problems\n\n### Visible clarity\n- **“Mysterious traveler” names a role and an impression, not a visible appearance.** No clothing, silhouette, pose, or activity establishes what makes the figure recognizable as a traveler or mysterious.\n- **“Beautiful place” provides no identifiable environment.** It expresses a preference rather than specifying visible terrain, architecture, or other setting features.\n- **“Amazing lighting” is evaluative rather than descriptive.** Light direction, softness, color, and contrast remain unspecified, so it offers little control over visibility or atmosphere.\n\n### Composition\n- **“Dynamic composition” requests an effect without defining its structure.** Framing, viewpoint, subject placement, and directional relationships are all open.\n- **The visual hierarchy is unresolved.** The traveler could dominate the frame or appear tiny within the scenery; both would satisfy the wording but communicate differently.\n- **There is no concrete relationship beyond being “in” the place.** The prompt does not establish how the traveler visually engages with the surroundings.\n\n### Ambiguity\n- **“Cinematic” is a broad stylistic cue.** It does not reliably determine medium, palette, framing, or a particular film aesthetic.\n- **The adjectives permit widely different interpretations.** Mystery could come from obscured identity, surroundings, or lighting, while beauty is entirely subjective. None is prioritized.\n\n**Overall:** This works as a mood seed, but not as a controlled visual brief. Its main weakness is underspecification rather than contradiction: it states the desired impression while leaving nearly all observable decisions to the generator.\n\nOUTPUT B\n## Strengths\n- **Simple subject–setting structure:** One traveler in one location gives the image a manageable starting point without competing subjects.\n- **Consistent mood:** “Mysterious” and “cinematic” suggest an atmospheric treatment and do not inherently conflict.\n- **Creative latitude:** The brevity leaves room for interpretation, which can be useful for exploratory generation.\n\n## Concrete problems\n\n### Visible clarity\n- **“Mysterious traveler” gives a role and mood, but little visible identity.** Appearance, clothing, posture, expression, and equipment are unspecified. Nothing establishes how the viewer would recognize either travel or mystery.\n- **“Beautiful place” is a judgment, not a setting description.** It supplies no terrain, architecture, weather, or distinguishing feature, leaving most of the image undefined.\n- **“Amazing lighting” describes a desired quality rather than a lighting setup.** Source, direction, softness, color, and contrast are all unspecified.\n\n### Composition\n- **“Dynamic composition” does not establish an arrangement.** Framing, viewpoint, subject placement, visual lines, and depth relationships remain open.\n- **The focal hierarchy is unclear.** The prompt does not indicate whether the traveler should dominate or appear small within an expansive environment.\n- **There is no pose or action to support the requested dynamism.** A static scene can still have a dynamic composition, but this prompt supplies neither bodily movement nor spatial structure to create it.\n\n### Ambiguity\n- **“Cinematic” is broad shorthand.** It can influence the overall look, but does not reliably specify a medium, palette, lens feel, or framing.\n- **The modifiers overlap without adding much concrete information.** “Beautiful,” “amazing,” and “cinematic” express aesthetic preferences more than observable features, so outputs may vary widely while loosely satisfying every term.\n\n**Overall:** This works as a mood seed, but not as a controlled visual brief. Its main weakness is not brevity; it is that nearly all its descriptive language evaluates the desired image rather than defining what should be visible.\n\nCRITERION C09-ROUTING (hard)\nThe response is an analysis of the supplied prompt and does not silently turn into prompt writing, rewriting, or variants.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-d22bceb917bb_C09-QUALITY",
+          "question": "REVIEW 4/48 — pair-d22bceb917bb\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C09-QUALITY (advisory)\nThe critique distinguishes useful strengths from specific visible-clarity, composition, and ambiguity problems.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-01619ee3881c_C04-SCOPE",
+          "question": "REVIEW 5/48 — pair-01619ee3881c\n\nREQUEST\nCreate a character-design prompt for an adult lighthouse keeper. Give her weathered olive skin, tightly curled gray hair, a navy cable-knit sweater, orange waterproof bib trousers, black rubber boots, and a brass whistle on a cord. Describe character design only. Return one prompt with no scene, pose, expression, action, camera, lighting, weather, or story.\n\nOUTPUT A\nDesign an adult female lighthouse keeper with weathered olive skin, fine facial lines, and tightly curled gray hair. Her clothing consists of a thick navy cable-knit sweater, orange waterproof bib trousers with broad shoulder straps and reinforced seams, and sturdy black rubber boots with heavy tread; a small brass whistle hangs from a simple cord around her neck.\n\nOUTPUT B\nAn adult female lighthouse keeper with weathered olive skin and tightly curled gray hair. She wears a navy cable-knit sweater beneath orange waterproof bib trousers, black rubber boots, and a brass whistle on a cord around her neck.\n\nCRITERION C04-SCOPE (hard)\nThe prompt remains strictly within character appearance, clothing, and equipment, without scene or presentation expansion.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-01619ee3881c_C04-DETAILS",
+          "question": "REVIEW 5/48 — pair-01619ee3881c\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C04-DETAILS (hard)\nAll supplied physical, clothing, and equipment details remain attached to the single adult lighthouse keeper without incompatible invention.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        }
+      ]
+    }
+  },
+  "recorded_at": "2026-09-23T01:01:21.028Z"
+}

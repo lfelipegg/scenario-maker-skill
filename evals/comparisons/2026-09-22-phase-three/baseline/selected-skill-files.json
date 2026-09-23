@@ -1,0 +1,12 @@
+{
+  "SKILL.md": "ced3f771b9806cc385870263db9aad1d5d23df25360efd5049322e9e0971bbae",
+  "docs/danbooru_tags/danbooru_tags.csv": "a48e1e63b81e8e4fc3091c660fd763e9d05e19beea3b98d1ee78d00ed10ac9d3",
+  "docs/danbooru_tags/danbooru_tags_cooccurrence.csv": "29bf95d3dd2f4b1038ac26b3fee371ebbe67d9b622b32d274c9486dbde56077a",
+  "references/danbooru-tags.md": "770a04ddb101073a185e6060d2707f1d14061f692d0959971b2ea3d87d5ea35f",
+  "references/model-prompts.md": "c4cd059deb6bc017d363bcfb283fc2266def5fc947bc9b1b2c1954916253a5e3",
+  "references/prompt-types.md": "f865bd8babb3cfc067467f0b9124dfb10aaa797477cac73bf4c8b3c709ec7ef0",
+  "references/video-prompts.md": "8a47ea6586232cced0bbe667d6d2c673af88b689c6194bf55618802e95ed11ce",
+  "references/wildcards.md": "4b8bd8963cd20e822101e8a4947eabe98f42ed9687dcf3e112dfd1c244a43268",
+  "scripts/build_danbooru_index.py": "cbc860318e67d69f79fbec792e34f252daa386460e803a9807116c67f5a1f986",
+  "scripts/danbooru_lookup.py": "f399f42d7a6350bac1913b329ba0b4908b4c3f56c0042184a331f5f1d2cb7389"
+}

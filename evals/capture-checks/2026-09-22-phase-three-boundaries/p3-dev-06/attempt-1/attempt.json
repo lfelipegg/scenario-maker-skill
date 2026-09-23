@@ -1,0 +1,85 @@
+{
+  "case_id": "p3-dev-06",
+  "attempt": 1,
+  "revision": "worktree-sha256-e98dcc854a1b0fa30165965bdcb13c11a8b3e25e1d2cca32a66310b70281c51c",
+  "started_at": "2026-09-23T00:33:49.944580+00:00",
+  "elapsed_seconds": 18.56,
+  "command": [
+    "omp",
+    "--cwd",
+    "/tmp/scenario-maker-phase-three-probes-3v7f_54y/candidate/p3-dev-06/attempt-1",
+    "--print",
+    "--mode",
+    "json",
+    "--model",
+    "openai-codex/gpt-6-astra",
+    "--thinking",
+    "high",
+    "--no-session",
+    "--no-title",
+    "--no-prewalk",
+    "--no-skills",
+    "--no-rules",
+    "--no-extensions",
+    "--no-lsp",
+    "--no-pty",
+    "--tools",
+    "read,grep,glob,bash,write",
+    "--approval-mode",
+    "yolo",
+    "--config",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/omp-config.json",
+    "--system-prompt",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/generator-system.txt",
+    "--extension",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/capture.ts",
+    "--max-time",
+    "300s",
+    "Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.\n\nHandle two labeled Preserve adaptations of the source `A crane stands beside the river.` A — rewrite it as concise prose that may retain the source ambiguity. B — rewrite it as an unambiguous prompt that must identify the crane as either a bird or a machine."
+  ],
+  "cwd": "/tmp/scenario-maker-phase-three-probes-3v7f_54y/candidate/p3-dev-06/attempt-1",
+  "execution": {
+    "status": "completed",
+    "exit_code": 0,
+    "error": null,
+    "model_errors": [],
+    "malformed_trace_lines": []
+  },
+  "raw": {
+    "output": "output.txt",
+    "partial_output": null,
+    "trace": "trace.jsonl",
+    "stderr": "stderr.txt",
+    "context": "context.jsonl"
+  },
+  "trace_complete": true,
+  "artifacts": [],
+  "observed_context": [
+    {
+      "type": "eval_context",
+      "systemPrompt": "You are a prompt-writing assistant executing the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md. Read that file and only its applicable references. Resolve its reference and script paths relative to ./selected-skill, not an installed skill. Do not discover or load other skills, repository instructions, past sessions, evaluator files, or web sources.\n\nOnly local read, grep, glob, bash, and write tools are available. Use them for the selected skill's references, local lookup/scripts, supplied fixtures, and requested workspace-local text exports. Keep writes within this fresh workspace. Do not edit the selected skill, execute image/video generation or frame extraction, delegate, switch models, access the network, or inspect credentials. This is prompt writing, not generation. If clarification is necessary, ask in your final response; this non-interactive run cannot receive an answer.\n\nApply the selected skill to the user's request. Do not discuss evaluation or scoring. The workspace starts with no prior conversation or generated outputs.\n",
+      "cwd": "/tmp/scenario-maker-phase-three-probes-3v7f_54y/candidate/p3-dev-06/attempt-1",
+      "model": {
+        "provider": "openai-codex",
+        "id": "gpt-6-astra",
+        "name": "GPT-6-Astra"
+      },
+      "thinking": "high",
+      "tools": [
+        "read",
+        "grep",
+        "glob",
+        "bash",
+        "write"
+      ]
+    }
+  ],
+  "raw_checksums": {
+    "request.txt": "7d09ad9d75f33ac1205c0989cd02c848ae0dd2ea14905cfd314cd91670ed6964",
+    "output.txt": "e0cfc5bf7985d536de21952b718a87619e629afdf94b0d6d6513b442412b575d",
+    "context.jsonl": "613b96570ba09781fdba95157a92b74697a197cb0e5224d79992b98f5e6b1acb",
+    "trace.jsonl": "9decfcc3234eefde4d1c7b80d045a3882d45ece5c3553a9d07e479023e4a4d71",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "comparison_side": "candidate"
+}

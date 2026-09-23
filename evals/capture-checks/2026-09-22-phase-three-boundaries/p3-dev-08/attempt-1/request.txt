@@ -1,0 +1,3 @@
+Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.
+
+Convert this supplied prose scene to generic comma-separated visual phrases in Preserve mode. Keep the exact lettering and all relationships. Source: `Two women stand beside a silver cart. The woman with black hair holds a red cup; the woman with white hair holds a blue plate. A yellow sign on the cart reads exactly "Open late!". The cart is image-left of a green door. No animals appear.` Return only the converted prompt.

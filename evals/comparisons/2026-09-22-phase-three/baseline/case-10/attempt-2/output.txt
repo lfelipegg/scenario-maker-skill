@@ -1,0 +1,14 @@
+### 1. Fidelity to the brief
+- **SDXL prompt:** Explicitly preserves all core elements: green bicycle, leaning against a white brick wall, and soft overcast daylight. Eye-level medium framing and a restrained palette are additions, not requirements of the brief.
+- **Krea 2 prompt:** Preserves the subject, wall, and lighting. “Rests against” suggests leaning but is slightly less explicit about the bicycle’s posture. “Even” is consistent with overcast light; eye-level framing and a restrained palette are added choices.
+
+### 2. Model-appropriate expression
+- **SDXL prompt:** Concise and visually concrete. Its comma-separated phrases are understandable, but they align less closely with the selected skill’s SDXL preference for short natural-language prose. This is a stylistic mismatch, not a reason to assume poor results.
+- **Krea 2 prompt:** A coherent natural-language sentence with clear relationships between subject, setting, and lighting. The selected skill provides no Krea 2 profile, so its general clarity can be assessed, but model-specific suitability cannot be confirmed from that guidance.
+
+### 3. Likely ambiguity
+- **SDXL prompt:** “Medium shot” leaves uncertain whether the entire bicycle, including both wheels, should remain visible. “Restrained color palette” could encourage muted green, though it does not contradict the brief.
+- **Krea 2 prompt:** Eye level specifies viewpoint but not shot size, leaving more freedom in subject scale and cropping. “Rests against” is marginally less precise than “leaning against.” The palette wording carries the same possible muted-color interpretation.
+
+### Overall comparison
+**SDXL is slightly more literal and more constrained in framing; Krea 2 is more fluidly expressed but leaves framing and posture somewhat more open.** Both remain faithful overall. Neither specifies bicycle orientation or exact wall-contact geometry, which is acceptable given the simplicity of the brief.

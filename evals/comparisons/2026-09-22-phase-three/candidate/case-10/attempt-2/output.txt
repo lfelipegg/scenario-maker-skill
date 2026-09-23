@@ -1,0 +1,15 @@
+### SDXL prompt
+
+- **Fidelity:** Explicitly preserves every core detail: green bicycle, leaning relationship, white brick wall, and soft overcast daylight. Eye-level framing, a medium shot, and a restrained palette are additions to the brief, though compatible with it.
+- **Model-appropriate expression:** The short, comma-separated descriptive phrases are reasonable for SDXL. Natural descriptive prose is also appropriate; SDXL does not require tag-style wording. Importantly, the bicycle–wall relationship remains intact rather than being split into disconnected keywords.
+- **Likely ambiguity:** “Medium shot” is less precise for a bicycle than for a person and does not guarantee that both wheels remain in frame. “Restrained color palette” could mean limited hues or reduced saturation, potentially muting the green.
+
+### Krea 2 prompt
+
+- **Fidelity:** Preserves the subject, colors, wall material, and lighting. “Rests against” strongly suggests leaning but is slightly less explicit than the brief’s wording. “Even” is consistent with soft overcast light. Eye-level framing and a restrained palette are additional choices; unlike the SDXL prompt, it does not specify shot size.
+- **Model-appropriate expression:** The sentence is clear, coherent natural-language image prompting. The selected skill does not provide a verified Krea 2 profile, so this supports a general clarity assessment—not a claim that prose is uniquely preferred or required by Krea 2.
+- **Likely ambiguity:** Camera distance and cropping remain open. “Rests against” leaves the bicycle’s tilt somewhat less explicit, while “restrained palette” carries the same limited-hues-versus-muted-saturation ambiguity as the SDXL wording.
+
+### Overall comparison
+
+Both closely match the brief. **The SDXL prompt is slightly more explicit about the required leaning relationship and framing; the Krea 2 prompt reads more fluidly but leaves shot size unspecified.** Their main differences are relational precision and composition—not a demonstrated model-performance advantage. Neither wording guarantees a particular generated result.

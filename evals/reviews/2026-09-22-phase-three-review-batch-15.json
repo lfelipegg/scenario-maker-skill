@@ -1,0 +1,357 @@
+{
+  "batch": 15,
+  "start": 41,
+  "count": 3,
+  "questions": [
+    {
+      "id": "pair-a0c5ab27d3ca_C13-PROFILE",
+      "question": "REVIEW 42/48 — pair-a0c5ab27d3ca\n\nREQUEST\nWrite one NoobAI positive prompt for one adult man with long white hair, amber eyes, a brown leather apron, and blue work gloves, repairing a brass clock at a wooden bench. Return only the comma-separated positive prompt. Use NoobAI's normalized space-separated tag style; no negative prompt, notes, labels, or variants.\n\nOUTPUT A\nmasterpiece, best quality, newest, 1boy, solo, adult male, long hair, white hair, amber eyes, brown leather apron, blue work gloves, repairing a brass clock at a wooden workbench\n\nOUTPUT B\nmasterpiece, best quality, newest, 1boy, solo, adult man, long hair, white hair, amber eyes, brown leather apron, blue work gloves, repairing a brass clock, holding a small screwdriver, exposed clock gears, leaning over a wooden workbench, scattered clockwork tools, workshop, warm window light, three-quarter view, upper body, hands in frame\n\nCRITERION C13-PROFILE (hard)\nThe result preserves the existing NoobAI ordered tag convention, including its quality/model preference opening and space-normalized visible tags, without Pony syntax.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "42/48 C13-PROFILE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-a0c5ab27d3ca_C13-PRESERVE",
+      "question": "REVIEW 42/48 — pair-a0c5ab27d3ca\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C13-PRESERVE (hard)\nAll supplied subject attributes, clothing, action, clock, and workbench relationship remain explicit and correctly bound.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "42/48 C13-PRESERVE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-f46f393e68e4_C03-OUTPUT",
+      "question": "REVIEW 43/48 — pair-f46f393e68e4\n\nREQUEST\nRevise only the jacket color in this prompt from yellow to red. Return only the revised prompt and preserve everything else exactly in meaning: A woman with a short black bob wears a yellow denim jacket and silver hoop earrings, standing beside a blue bicycle under an overcast sky.\n\nOUTPUT A\nA woman with a short black bob wears a red denim jacket and silver hoop earrings, standing beside a blue bicycle under an overcast sky.\n\nOUTPUT B\nA woman with a short black bob wears a red denim jacket and silver hoop earrings, standing beside a blue bicycle under an overcast sky.\n\nCRITERION C03-OUTPUT (hard)\nThe response contains only the revised prompt, not an explanation, comparison, or prompt package.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "43/48 C03-OUTPUT",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-f46f393e68e4_C03-REVISION",
+      "question": "REVIEW 43/48 — pair-f46f393e68e4\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C03-REVISION (hard)\nOnly the jacket color changes from yellow to red; every other supplied fact and relationship remains unchanged in meaning.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "43/48 C03-REVISION",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-8e17fcfe3d98_C02-OUTPUT",
+      "question": "REVIEW 44/48 — pair-8e17fcfe3d98\n\nREQUEST\nAdapt this supplied prompt for local Krea 2 RAW/Turbo. Preserve every scene fact and return only one ready-to-paste prompt with no label, negative prompt, notes, variants, or explanation. Source prompt: A red ceramic teapot sits image-left of a white cup on a dark walnut table. Morning light enters from the right, and the plain cream wall behind them is empty.\n\nOUTPUT A\nA red ceramic teapot sits to the viewer’s left of a white cup on a dark walnut table. Morning light enters from the right, and the plain cream wall behind them is empty.\n\nOUTPUT B\nA red ceramic teapot sits to the viewer’s left of a white cup, both on a dark walnut table. Morning light enters from the right, and the plain cream wall behind them is empty.\n\nCRITERION C02-OUTPUT (hard)\nThe response is exactly one unlabeled prompt, without a package, negative field, notes, variants, or explanation.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "44/48 C02-OUTPUT",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-8e17fcfe3d98_C02-PRESERVE",
+      "question": "REVIEW 44/48 — pair-8e17fcfe3d98\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C02-PRESERVE (hard)\nThe adaptation preserves the two objects, their colors and image-left relationship, table, right-side morning light, and empty cream wall without adding visual facts.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "44/48 C02-PRESERVE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-8e17fcfe3d98_C02-PROFILE",
+      "question": "REVIEW 44/48 — pair-8e17fcfe3d98\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C02-PROFILE (hard)\nThe result uses a coherent natural-language paragraph suitable for the selected local Krea 2 RAW/Turbo contract; detail does not become invention.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "44/48 C02-PROFILE",
+      "multi": false,
+      "recommended": null
+    }
+  ],
+  "response": {
+    "text": "User answers:\npair-a0c5ab27d3ca_C13-PROFILE: Both pass\npair-a0c5ab27d3ca_C13-PRESERVE: \"A Pass, B Fail. A explicitly preserves the required action–object–workbench relationship:\n\nrepairing a brass clock at a wooden workbench\n\nB instead separates repairing a brass clock from leaning over a wooden workbench, so the repair action is not explicitly bound to the bench. It also adds a screwdriver, tools, workshop, lighting, and framing details, but the decisive issue is the weakened required relationship.\"\npair-f46f393e68e4_C03-OUTPUT: Both pass\npair-f46f393e68e4_C03-REVISION: Both pass\npair-8e17fcfe3d98_C02-OUTPUT: Both pass\npair-8e17fcfe3d98_C02-PRESERVE: Both pass\npair-8e17fcfe3d98_C02-PROFILE: Both pass",
+    "details": {
+      "results": [
+        {
+          "id": "pair-a0c5ab27d3ca_C13-PROFILE",
+          "question": "REVIEW 42/48 — pair-a0c5ab27d3ca\n\nREQUEST\nWrite one NoobAI positive prompt for one adult man with long white hair, amber eyes, a brown leather apron, and blue work gloves, repairing a brass clock at a wooden bench. Return only the comma-separated positive prompt. Use NoobAI's normalized space-separated tag style; no negative prompt, notes, labels, or variants.\n\nOUTPUT A\nmasterpiece, best quality, newest, 1boy, solo, adult male, long hair, white hair, amber eyes, brown leather apron, blue work gloves, repairing a brass clock at a wooden workbench\n\nOUTPUT B\nmasterpiece, best quality, newest, 1boy, solo, adult man, long hair, white hair, amber eyes, brown leather apron, blue work gloves, repairing a brass clock, holding a small screwdriver, exposed clock gears, leaning over a wooden workbench, scattered clockwork tools, workshop, warm window light, three-quarter view, upper body, hands in frame\n\nCRITERION C13-PROFILE (hard)\nThe result preserves the existing NoobAI ordered tag convention, including its quality/model preference opening and space-normalized visible tags, without Pony syntax.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-a0c5ab27d3ca_C13-PRESERVE",
+          "question": "REVIEW 42/48 — pair-a0c5ab27d3ca\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C13-PRESERVE (hard)\nAll supplied subject attributes, clothing, action, clock, and workbench relationship remain explicit and correctly bound.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [],
+          "customInput": "A Pass, B Fail. A explicitly preserves the required action–object–workbench relationship:\n\nrepairing a brass clock at a wooden workbench\n\nB instead separates repairing a brass clock from leaning over a wooden workbench, so the repair action is not explicitly bound to the bench. It also adds a screwdriver, tools, workshop, lighting, and framing details, but the decisive issue is the weakened required relationship."
+        },
+        {
+          "id": "pair-f46f393e68e4_C03-OUTPUT",
+          "question": "REVIEW 43/48 — pair-f46f393e68e4\n\nREQUEST\nRevise only the jacket color in this prompt from yellow to red. Return only the revised prompt and preserve everything else exactly in meaning: A woman with a short black bob wears a yellow denim jacket and silver hoop earrings, standing beside a blue bicycle under an overcast sky.\n\nOUTPUT A\nA woman with a short black bob wears a red denim jacket and silver hoop earrings, standing beside a blue bicycle under an overcast sky.\n\nOUTPUT B\nA woman with a short black bob wears a red denim jacket and silver hoop earrings, standing beside a blue bicycle under an overcast sky.\n\nCRITERION C03-OUTPUT (hard)\nThe response contains only the revised prompt, not an explanation, comparison, or prompt package.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-f46f393e68e4_C03-REVISION",
+          "question": "REVIEW 43/48 — pair-f46f393e68e4\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C03-REVISION (hard)\nOnly the jacket color changes from yellow to red; every other supplied fact and relationship remains unchanged in meaning.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-8e17fcfe3d98_C02-OUTPUT",
+          "question": "REVIEW 44/48 — pair-8e17fcfe3d98\n\nREQUEST\nAdapt this supplied prompt for local Krea 2 RAW/Turbo. Preserve every scene fact and return only one ready-to-paste prompt with no label, negative prompt, notes, variants, or explanation. Source prompt: A red ceramic teapot sits image-left of a white cup on a dark walnut table. Morning light enters from the right, and the plain cream wall behind them is empty.\n\nOUTPUT A\nA red ceramic teapot sits to the viewer’s left of a white cup on a dark walnut table. Morning light enters from the right, and the plain cream wall behind them is empty.\n\nOUTPUT B\nA red ceramic teapot sits to the viewer’s left of a white cup, both on a dark walnut table. Morning light enters from the right, and the plain cream wall behind them is empty.\n\nCRITERION C02-OUTPUT (hard)\nThe response is exactly one unlabeled prompt, without a package, negative field, notes, variants, or explanation.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-8e17fcfe3d98_C02-PRESERVE",
+          "question": "REVIEW 44/48 — pair-8e17fcfe3d98\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C02-PRESERVE (hard)\nThe adaptation preserves the two objects, their colors and image-left relationship, table, right-side morning light, and empty cream wall without adding visual facts.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-8e17fcfe3d98_C02-PROFILE",
+          "question": "REVIEW 44/48 — pair-8e17fcfe3d98\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C02-PROFILE (hard)\nThe result uses a coherent natural-language paragraph suitable for the selected local Krea 2 RAW/Turbo contract; detail does not become invention.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        }
+      ]
+    }
+  },
+  "recorded_at": "2026-09-23T01:20:50.048Z"
+}

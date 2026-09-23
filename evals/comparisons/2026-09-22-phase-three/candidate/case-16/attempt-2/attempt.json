@@ -1,0 +1,92 @@
+{
+  "case_id": "case-16",
+  "attempt": 2,
+  "revision": "worktree-sha256-e98dcc854a1b0fa30165965bdcb13c11a8b3e25e1d2cca32a66310b70281c51c",
+  "started_at": "2026-09-23T00:44:19.911965+00:00",
+  "elapsed_seconds": 34.189,
+  "command": [
+    "omp",
+    "--cwd",
+    "/tmp/scenario-maker-eval-cs7zwktn/candidate/case-16/attempt-2",
+    "--print",
+    "--mode",
+    "json",
+    "--model",
+    "openai-codex/gpt-6-astra",
+    "--thinking",
+    "high",
+    "--no-session",
+    "--no-title",
+    "--no-prewalk",
+    "--no-skills",
+    "--no-rules",
+    "--no-extensions",
+    "--no-lsp",
+    "--no-pty",
+    "--tools",
+    "read,grep,glob,bash,write",
+    "--approval-mode",
+    "yolo",
+    "--config",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/omp-config.json",
+    "--system-prompt",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/generator-system.txt",
+    "--extension",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/capture.ts",
+    "--max-time",
+    "300s",
+    "Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.\n\nCreate a ComfyUI wildcard file at `outputs/clothing-fragments.txt` containing exactly four distinct clothing-only fragments suitable for insertion at `[CLOTHING SLOT]` in this host: `score_9, score_8_up, score_7_up, source_anime, rating_safe, 1girl, black hair, [CLOTHING SLOT]`. Each fragment must be one nonempty physical line and describe only one garment or coordinated outfit; do not repeat the host prefix, subject, hair, pose, action, setting, camera, lighting, comments, numbering, headings, or blank lines. After saving, report the actual path, entry count, and that the file is fragment mode outside the file."
+  ],
+  "cwd": "/tmp/scenario-maker-eval-cs7zwktn/candidate/case-16/attempt-2",
+  "execution": {
+    "status": "completed",
+    "exit_code": 0,
+    "error": null,
+    "model_errors": [],
+    "malformed_trace_lines": []
+  },
+  "raw": {
+    "output": "output.txt",
+    "partial_output": null,
+    "trace": "trace.jsonl",
+    "stderr": "stderr.txt",
+    "context": "context.jsonl"
+  },
+  "trace_complete": true,
+  "artifacts": [
+    {
+      "path": "outputs/clothing-fragments.txt",
+      "stored_path": "artifacts/outputs/clothing-fragments.txt",
+      "sha256": "386e716b47714fae1f7ed4f8b0147148871bb3457a007a937d9de28249067681",
+      "bytes": 284
+    }
+  ],
+  "observed_context": [
+    {
+      "type": "eval_context",
+      "systemPrompt": "You are a prompt-writing assistant executing the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md. Read that file and only its applicable references. Resolve its reference and script paths relative to ./selected-skill, not an installed skill. Do not discover or load other skills, repository instructions, past sessions, evaluator files, or web sources.\n\nOnly local read, grep, glob, bash, and write tools are available. Use them for the selected skill's references, local lookup/scripts, supplied fixtures, and requested workspace-local text exports. Keep writes within this fresh workspace. Do not edit the selected skill, execute image/video generation or frame extraction, delegate, switch models, access the network, or inspect credentials. This is prompt writing, not generation. If clarification is necessary, ask in your final response; this non-interactive run cannot receive an answer.\n\nApply the selected skill to the user's request. Do not discuss evaluation or scoring. The workspace starts with no prior conversation or generated outputs.\n",
+      "cwd": "/tmp/scenario-maker-eval-cs7zwktn/candidate/case-16/attempt-2",
+      "model": {
+        "provider": "openai-codex",
+        "id": "gpt-6-astra",
+        "name": "GPT-6-Astra"
+      },
+      "thinking": "high",
+      "tools": [
+        "read",
+        "grep",
+        "glob",
+        "bash",
+        "write"
+      ]
+    }
+  ],
+  "raw_checksums": {
+    "request.txt": "f1ddec4e45826584ec7544f47e449d4ce6ca02a4afa1fa5e7d384c4f34531914",
+    "output.txt": "677defb877c7f9f1d711b23e096c0154be67ecc21d906e9ab71631eaa2ec6068",
+    "context.jsonl": "0e383c43d7d9a9f7e93cf22c36759d22606e2326621e05b6d0eba01bc53bf4e4",
+    "trace.jsonl": "c2467aafca81d1d1de3dd6aadbb52380198b76eb60f1d93627443d4a05e4fb0a",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "comparison_side": "candidate"
+}

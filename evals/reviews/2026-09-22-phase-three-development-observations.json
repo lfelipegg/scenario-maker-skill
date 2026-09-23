@@ -1,0 +1,30 @@
+{
+  "phase": 3,
+  "kind": "model-development-observation",
+  "human": false,
+  "acceptance_eligible": false,
+  "semantic_acceptance": "not-run",
+  "capture_root": "evals/capture-checks/2026-09-22-phase-three-boundaries",
+  "requests": "evals/phase-three-probes.jsonl",
+  "schedule": "one fresh isolated candidate attempt per probe; no retries or replacement attempts",
+  "capture_method": "Disposable driver imported the unchanged evals/run_baseline.py snapshot and capture functions. Only id, request, and fixtures were passed to capture; expected_behavior remained outside the generating sessions.",
+  "execution": {"attempts": 8, "completed": 8, "outputs": 8, "complete_traces": 8, "errors": 0, "timeouts": 0},
+  "integrity": {"raw_files_verified": 40, "generated_artifacts": 0, "candidate_snapshot_files_verified": 18},
+  "observations": [
+    {"id": "p3-dev-01", "observation": "Output retained the wet cobblestone street and pale stone buildings without specifying rain or time of day."},
+    {"id": "p3-dev-02", "observation": "The coat output added garment construction details; the compass output added dial, needle, bezel, and patina details. Neither output described a wearer, supporting surface, hand, or scene."},
+    {"id": "p3-dev-03", "observation": "The closed-roster output explicitly kept two women and an otherwise unoccupied cafe. The open market output introduced vendors, shoppers, porters, stalls, and activity."},
+    {"id": "p3-dev-04", "observation": "A retained the blue mug, white shelf, and bare gray wall; B changed the door to red while retaining the rest of the source; C kept the black foreground bicycle and invented background buildings, lane, ivy, and sky."},
+    {"id": "p3-dev-05", "observation": "The umbrella became folded and red; the courier, navy coat, green mailbox, noon, and holding relationship remained in the output. No unlock confirmation was requested."},
+    {"id": "p3-dev-06", "observation": "A retained the ambiguous word crane. B asked whether crane meant a bird or a machine."},
+    {"id": "p3-dev-07", "observation": "The response identified the conflict between full scene requirements and a one-word limit and asked permission to relax that limit. It did not present an incomplete one-word artifact as satisfying both."},
+    {"id": "p3-dev-08", "observation": "Generic visual phrases retained both women and their separate prop ownership, the silver cart left of the green door, the yellow sign carrying exact Open late! lettering, and the no-animals exclusion."}
+  ],
+  "limitations": [
+    "These are model observations, not human semantic judgments or acceptance results.",
+    "Single development attempts do not establish three-repetition reliability and are not part of the approved 16-case portfolio.",
+    "Raw outputs, traces, requests, and context are retained under each probe's attempt-1 directory.",
+    "The current rubric table enumerates probes 01 through 07; supplementary probe 08 separately exercises the combined cross-format fidelity bundle without modifying any approved request or criterion.",
+    "No rendered-media evaluation or image/video generation occurred; provider immutable snapshot, seed, system fingerprint, and hidden instructions remain unknown."
+  ]
+}

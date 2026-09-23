@@ -2,11 +2,11 @@
 
 ## Authority and scope
 
-This Phase 1 suite implements the 16-case portfolio approved in [issue #16](https://github.com/lfelipegg/scenario-maker-skill/issues/16#issuecomment-5746288781), using the settled boundaries in [#17](https://github.com/lfelipegg/scenario-maker-skill/issues/17#issuecomment-5746449221), [#18](https://github.com/lfelipegg/scenario-maker-skill/issues/18#issuecomment-5746540497), [#19](https://github.com/lfelipegg/scenario-maker-skill/issues/19#issuecomment-5746665421), [#20](https://github.com/lfelipegg/scenario-maker-skill/issues/20#issuecomment-5746782536), and [#21](https://github.com/lfelipegg/scenario-maker-skill/issues/21#issuecomment-5746874984). It evaluates observable prompt-writing behavior and requested files, not rendered image or video quality.
+This evaluation suite implements the unchanged 16-case portfolio approved in [issue #16](https://github.com/lfelipegg/scenario-maker-skill/issues/16#issuecomment-5746288781), using the settled boundaries in [#17](https://github.com/lfelipegg/scenario-maker-skill/issues/17#issuecomment-5746449221), [#18](https://github.com/lfelipegg/scenario-maker-skill/issues/18#issuecomment-5746540497), [#19](https://github.com/lfelipegg/scenario-maker-skill/issues/19#issuecomment-5746665421), [#20](https://github.com/lfelipegg/scenario-maker-skill/issues/20#issuecomment-5746782536), and [#21](https://github.com/lfelipegg/scenario-maker-skill/issues/21#issuecomment-5746874984). Phase 3 applies the model-neutral scene-planning and preservation work authorized by [issue #5](https://github.com/lfelipegg/scenario-maker-skill/issues/5) and the invention/preservation contract in decision #17. It evaluates observable prompt-writing behavior and requested files, not rendered image or video quality.
 
 The fixed starting revision is `5fcc3d0eded83c6a9aaf472a1dc8d5ce24011d9d`. Baseline failures are valid evidence. Phase 1 accepts a reviewed case set and honest, complete baseline capture; it does not require the fixed revision to satisfy future behavior.
 
-On 2026-09-22 the maintainer approved keeping all 16 requests unchanged while moving only the existing `C07-COUNT` criterion's `mandatory_phase` from 6 to 2. This criterion-scheduling change creates a new cohort for future evaluation; it does not alter or relabel the immutable original Phase 1 evidence.
+On 2026-09-22 the maintainer approved keeping all 16 requests unchanged while moving only the existing `C07-COUNT` criterion's `mandatory_phase` from 6 to 2. This criterion-scheduling change creates a new cohort for future evaluation; it does not alter or relabel the immutable original Phase 1 evidence. Phase 3 does not change any request or criterion text in that portfolio.
 
 The generating session MUST receive the case request and its declared fixtures, but MUST NOT receive this rubric, criteria, expected judgments, prior outputs, or reviewer notes.
 
@@ -34,6 +34,29 @@ Cases appear in this exact order in `evals/cases.jsonl`.
 | 16 | Clothing-fragment wildcard export | Four clothing-only lines at `outputs/clothing-fragments.txt`, plus truthful external report | Export, fragment compatibility, and report P6 |
 
 Existing-profile/route criteria are eligible for the original-baseline no-regression set immediately when all three original attempts pass; their scheduled repair phase does not postpone that protection. An inconsistent baseline remains an existing failure until its criterion's repair phase, rather than blocking unrelated earlier phases. No H3, Wan 2.2, Flux, Qwen, automatic skill-discovery, or other later Phase 7 case substitutes for these existing routes.
+
+## Phase 3 coverage and acceptance schedule
+
+Phase 3 consumes the model-neutral operation, scene-description, preservation, permission, and conflict rules in [`references/scene-composition.md`](../references/scene-composition.md) and [`references/constraints-and-revisions.md`](../references/constraints-and-revisions.md). Decision #17 is binding: Preserve, Balanced, and Explore grant invention permission only within the already selected operation and scope. A mode name never broadens adaptation or a narrow revision, and only an explicit compound permission opens its named local area.
+
+The unchanged portfolio maps issue #5 and decision #17 as follows:
+
+| Boundary | Existing portfolio coverage | Phase 3 scheduling |
+| --- | --- | --- |
+| Adaptation changes model-facing expression without changing the scene | Case 02 `C02-PRESERVE`; case 15 `C15-PRESERVE` also protects a supplied first frame | Hard and due in P3 |
+| Cross-format conversion preserves subject count, colors, props, relationships, and exact lettering | Distributed coverage: cases 02, 12, and 13 preserve counts, attributes, props, and relationships; case 06 preserves and binds exact lettering. No one unchanged case combines the entire bundle | Hard preservation and lettering criteria are due in P3; target-profile expression remains P4 |
+| Narrow revision changes only the requested detail | Case 03 `C03-REVISION` | Hard and due in P3 |
+| Character-design scope excludes scene and presentation invention | Case 04 `C04-SCOPE` and `C04-DETAILS` | Hard and due in P3 |
+| Expansion preserves supplied facts, necessary implications, exclusions, and locks | Case 08 `C08-PRESERVE` is due in P3; cases 05 and 07 retain dedicated exclusion and controlled-lock coverage | P3 preservation is due now; protected P5/P6 criteria also block regressions without changing their scheduled repair phases |
+| Motion and source-image conversions preserve supplied content while applying only authorized temporal changes | Cases 14–15 preservation criteria | Hard and due in P3 |
+| Critique does not silently replace; create/compare routes retain their requested operation | Cases 09–10 routing criteria | Already due in P2 and remains required |
+| Clothing-only fragment scope remains narrow | Case 16 `C16-FRAGMENTS` | Scheduled repair remains P6; its original-baseline protection already blocks regressions |
+
+No single existing request exhausts every decision #17 edge. The development-only probes below document uncovered plausible boundaries without modifying, replacing, or enlarging the approved 16-case human acceptance portfolio.
+
+For Phase 3 candidate acceptance, run the same three repetitions of all 16 unchanged cases. Every applicable hard criterion due through Phase 3 must pass all three candidate repetitions; every `method: maintainer` decision among them requires explicit human review. Phase 1 trace requirements and every hard Phase 2 requirement remain due and cannot regress. The candidate must also preserve every check in the immutable original-baseline no-regression set. A future-phase criterion remains reported but does not block Phase 3 unless it is independently protected by that original-baseline set.
+
+Advisory criteria never compensate for a hard failure. Phase 3 acceptance does not imply acceptance of P4–P7 repairs, any supplemental probe, or rendered-media quality.
 
 ## Fixed fixture
 
@@ -93,6 +116,24 @@ Report per case and criterion as counts across all three attempts, not as a sing
 At Phase 1, acceptance requires the reviewable portfolio and complete, honest evidence rather than prompt success. For later phases, each applicable hard criterion due by that phase must pass all three candidate repetitions; `failed` or `not-run` blocks that criterion. Future-phase criteria remain visible but do not block an earlier phase.
 
 The **original baseline no-regression set** consists only of checks that pass all three attempts in the first immutable 48-attempt baseline. Those checks remain protected even if a later baseline rerun varies. Checks passing only one or two baseline attempts are recorded as existing mixed failures with their scheduled repair phase; zero-pass checks are recorded failures. Such baseline inconsistency does not by itself block an unrelated phase, but a hard requirement must pass every repetition when its repair phase is due. Newly accepted hard requirements join the protected set as their phases complete.
+
+## Development-only supplementary probes
+
+`evals/phase-three-probes.jsonl` is a compact development aid for decision #17 boundaries that the unchanged portfolio does not isolate. It is **DEVELOPMENT-ONLY**: its records are not approved cases, do not replace or add to the 16-case portfolio, are not inputs to the evaluator or capture schedule, and must not be mixed into a 48- or 96-attempt cohort.
+
+Development runs may observe a probe response and record the raw output, including whether the assistant returned an artifact or requested clarification. Such observation is diagnostic only; it cannot produce a semantic pass or an acceptance claim. The expected behaviors for every probe require human semantic judgment if the maintainer later promotes that exact probe into an acceptance portfolio. Until such approval, no probe needs or receives an acceptance review:
+
+| Probe | Boundary observed during development | Acceptance status |
+| --- | --- | --- |
+| `p3-dev-01` | Preserve does not infer rain, night, or other facts from a sparse wet-street source | Development observation only; human semantic review required if promoted |
+| `p3-dev-02` | Balanced clothing and isolated-asset scopes add local design detail without wearers, support props, or scenes | Development observation only; human semantic review required if promoted |
+| `p3-dev-03` | Explore respects a closed subject roster but may populate an explicitly open roster | Development observation only; human semantic review required if promoted |
+| `p3-dev-04` | Mode names cannot broaden adaptation or narrow revision; explicit compound background permission applies only to the background | Development observation only; human semantic review required if promoted |
+| `p3-dev-05` | A later specific instruction locally replaces a prior lock and establishes the new preserved detail | Development observation only; human semantic review required if promoted |
+| `p3-dev-06` | Faithfully expressible ambiguity is preserved, while a forced interpretation triggers clarification | Development observation only; human semantic review required if promoted |
+| `p3-dev-07` | Incompatible exact-text and hard-length requirements trigger clarification rather than omission, alteration, or overrun | Development observation only; human semantic review required if promoted |
+
+The current evaluator intentionally has no probe schema or probe-scoring path. Do not infer a pass from keyword presence, output shape, or a model grader.
 
 ## Raw evidence and immutability
 
@@ -178,4 +219,4 @@ python3 evals/evaluate.py --cases evals/cases.jsonl --results evals/comparisons/
 
 These runs provide mechanical scores and independently anonymized review material. The evaluator does **not** currently create a shared randomized label map that binds each baseline/candidate case-and-attempt pair. Before paired blind preference review, an integration step must combine the two review packets by exact `{case_id, attempt}`, assign two randomized side labels per pair, and retain the shared label mapping outside both review cards and immutable raw trees. Do not infer or fabricate paired review support from separate evaluator runs.
 
-The maintainer remains the final semantic reviewer. Candidate acceptance requires all applicable hard Phase 2 criteria to pass all three candidate attempts, completed human judgments for maintainer criteria, and comparison against the protected original-baseline no-regression set. A fresh paired baseline rerun measures contemporaneous environment variance; it is not a replacement for, or relabeling of, the first immutable baseline. Record scheduling and every observed environment difference. Latency and cost remain advisory.
+The maintainer remains the final semantic reviewer. Candidate acceptance for any target phase requires all applicable hard criteria due through that phase to pass all three candidate attempts, completed human judgments for maintainer criteria, and comparison against the protected original-baseline no-regression set. A fresh paired baseline rerun measures contemporaneous environment variance; it is not a replacement for, or relabeling of, the first immutable baseline. Record scheduling and every observed environment difference. Latency and cost remain advisory.

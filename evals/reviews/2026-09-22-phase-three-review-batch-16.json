@@ -1,0 +1,456 @@
+{
+  "batch": 16,
+  "start": 44,
+  "count": 4,
+  "questions": [
+    {
+      "id": "pair-66a2479877c7_C11-PROFILE",
+      "question": "REVIEW 45/48 — pair-66a2479877c7\n\nREQUEST\nWrite one positive prompt for Illustrious in explicitly requested Danbooru Version for one adult woman with grey hair, green eyes, a black turtleneck, and white gloves, standing in a library. Before answering, use the existing local Danbooru lookup script to confirm the canonical spelling `grey_hair`; do not read raw CSV files and do not add related candidates. Return only the comma-separated positive prompt, with no negative prompt, notes, or explanation.\n\nOUTPUT A\nmasterpiece, best_quality, highres, 1girl, solo, adult, grey_hair, green_eyes, black_sweater, turtleneck, white_gloves, standing, library, indoors, bookshelf, full_body\n\nOBSERVABLE LOOKUP (A)\n{\n  \"availability\": \"available\",\n  \"calls\": [\n    {\n      \"args\": {\n        \"async\": false,\n        \"command\": \"python3 scripts/danbooru_lookup.py tag grey_hair\",\n        \"cwd\": \"<redacted>\",\n        \"pty\": false,\n        \"timeout\": 60\n      },\n      \"result_content\": [\n        {\n          \"text\": \"grey_hair [general] count=574323\\naliases: 白髪, 銀髪, 銀髪ロング\\n\\n\\nWall time: 34.79 seconds\",\n          \"type\": \"text\"\n        }\n      ]\n    }\n  ],\n  \"trace_complete\": true\n}\n\nOUTPUT B\nhighres, 1girl, solo, adult, grey_hair, green_eyes, turtleneck, black_sweater, white_gloves, standing, library\n\nOBSERVABLE LOOKUP (B)\n{\n  \"availability\": \"available\",\n  \"calls\": [\n    {\n      \"args\": {\n        \"async\": false,\n        \"command\": \"python3 scripts/danbooru_lookup.py tag grey_hair\",\n        \"cwd\": \"<redacted>\",\n        \"pty\": false,\n        \"timeout\": 60\n      },\n      \"result_content\": [\n        {\n          \"text\": \"grey_hair [general] count=574323\\naliases: 白髪, 銀髪, 銀髪ロング\\n\\n\\nWall time: 35.35 seconds\",\n          \"type\": \"text\"\n        }\n      ]\n    }\n  ],\n  \"trace_complete\": true\n}\n\nCRITERION C11-PROFILE (hard)\nThe prompt preserves the existing Illustrious convention: comma-separated Danbooru-style tags with restrained quality/composition guidance, lower_snake_case canonical forms where applicable, and no Pony prefix.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "45/48 C11-PROFILE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-66a2479877c7_C11-CONSTRAINTS",
+      "question": "REVIEW 45/48 — pair-66a2479877c7\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C11-CONSTRAINTS (hard)\nThe canonical grey-hair result is used for the requested woman, all requested visible facts remain represented, and no optional related candidate changes the scene.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "45/48 C11-CONSTRAINTS",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-66a2479877c7_C11-LOOKUP-EVIDENCE",
+      "question": "REVIEW 45/48 — pair-66a2479877c7\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C11-LOOKUP-EVIDENCE (hard)\nThe captured tool results confirm grey_hair using the selected revision’s local lookup script. A mere spelling echo is not confirmation; missing usable trace evidence is not-run.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "45/48 C11-LOOKUP-EVIDENCE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-bc7d1f085b65_C08-PRESERVE",
+      "question": "REVIEW 46/48 — pair-bc7d1f085b65\n\nREQUEST\nExpand this brief into one ready-to-paste text-to-image prompt of at most 55 words: `A rust-red rowboat tied to a weathered dock on a still lake before dawn.` Return only the prompt. Do not add people, buildings, other boats, animals, or active weather.\n\nOUTPUT A\nA single rust-red rowboat with chipped paint is tied by rope to a weathered wooden dock on a still lake before dawn. Cool blue light reveals rough dock grain and the boat’s muted reflection in glasslike water. Low framing emphasizes the hull against the broad, empty lake and dim horizon.\n\nOUTPUT B\nA rust-red rowboat with chipped paint is tied by a coarse rope to a weathered wooden dock on a mirror-still lake before dawn. Photorealistic wide composition places the boat off-center beside silver-gray planks, with crisp reflections, cool indigo light, a faint pale horizon, and open water fading into the distance.\n\nCRITERION C08-PRESERVE (hard)\nThe expansion preserves every supplied scene fact and adds no forbidden subject, prop, or active weather.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "46/48 C08-PRESERVE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-bc7d1f085b65_C08-STYLE",
+      "question": "REVIEW 46/48 — pair-bc7d1f085b65\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C08-STYLE (advisory)\nWithin the limit, the prompt adds useful visible detail rather than padding or hidden story.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "46/48 C08-STYLE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-aaeb9a75038b_C03-OUTPUT",
+      "question": "REVIEW 47/48 — pair-aaeb9a75038b\n\nREQUEST\nRevise only the jacket color in this prompt from yellow to red. Return only the revised prompt and preserve everything else exactly in meaning: A woman with a short black bob wears a yellow denim jacket and silver hoop earrings, standing beside a blue bicycle under an overcast sky.\n\nOUTPUT A\nA woman with a short black bob wears a red denim jacket and silver hoop earrings, standing beside a blue bicycle under an overcast sky.\n\nOUTPUT B\nA woman with a short black bob wears a red denim jacket and silver hoop earrings, standing beside a blue bicycle under an overcast sky.\n\nCRITERION C03-OUTPUT (hard)\nThe response contains only the revised prompt, not an explanation, comparison, or prompt package.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "47/48 C03-OUTPUT",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-aaeb9a75038b_C03-REVISION",
+      "question": "REVIEW 47/48 — pair-aaeb9a75038b\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C03-REVISION (hard)\nOnly the jacket color changes from yellow to red; every other supplied fact and relationship remains unchanged in meaning.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "47/48 C03-REVISION",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-873b1aa9cd4f_C16-FRAGMENTS",
+      "question": "REVIEW 48/48 — pair-873b1aa9cd4f\n\nREQUEST\nCreate a ComfyUI wildcard file at `outputs/clothing-fragments.txt` containing exactly four distinct clothing-only fragments suitable for insertion at `[CLOTHING SLOT]` in this host: `score_9, score_8_up, score_7_up, source_anime, rating_safe, 1girl, black hair, [CLOTHING SLOT]`. Each fragment must be one nonempty physical line and describe only one garment or coordinated outfit; do not repeat the host prefix, subject, hair, pose, action, setting, camera, lighting, comments, numbering, headings, or blank lines. After saving, report the actual path, entry count, and that the file is fragment mode outside the file.\n\nOUTPUT A\nSaved `outputs/clothing-fragments.txt` with exactly **4 distinct entries**, one per line, in **fragment mode** (clothing only).\n\nGENERATED FILE (A)\n{\n  \"availability\": \"available\",\n  \"path\": \"outputs/clothing-fragments.txt\",\n  \"text\": \"navy blue knee-length dress, white Peter Pan collar, long sleeves, pleated skirt\\ncream cable-knit sweater, brown high-waisted corduroy trousers\\nsage green hooded raincoat, double-breasted buttons, patch pockets\\nburgundy tailored blazer, ivory collared blouse, matching burgundy ankle-length trousers\\n\"\n}\n\nOUTPUT B\nSaved: `outputs/clothing-fragments.txt`\n- Entry count: **4**\n- Mode: **fragment mode** — clothing-only entries for `[CLOTHING SLOT]`.\n\nGENERATED FILE (B)\n{\n  \"availability\": \"available\",\n  \"path\": \"outputs/clothing-fragments.txt\",\n  \"text\": \"navy blue long-sleeved midi dress, white Peter Pan collar, pleated skirt\\ncream cable-knit sweater, brown corduroy trousers\\nsage green utility jumpsuit, long sleeves, patch pockets, belted waist\\nburgundy tailored blazer, ivory blouse, matching burgundy ankle-length trousers\\n\"\n}\n\nCRITERION C16-FRAGMENTS (hard)\nEach of the four entries is a distinct insertion-compatible clothing-only fragment; none repeats host-owned prefixes or introduces subject, hair, pose, action, setting, camera, or lighting content.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "48/48 C16-FRAGMENTS",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-873b1aa9cd4f_C16-REPORT",
+      "question": "REVIEW 48/48 — pair-873b1aa9cd4f\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C16-REPORT (hard)\nThe response truthfully reports the actual saved path, actual count of four, and fragment mode outside the selection file.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "48/48 C16-REPORT",
+      "multi": false,
+      "recommended": null
+    }
+  ],
+  "response": {
+    "text": "User answers:\npair-66a2479877c7_C11-PROFILE: Both pass\npair-66a2479877c7_C11-CONSTRAINTS: Both pass\npair-66a2479877c7_C11-LOOKUP-EVIDENCE: Both pass\npair-bc7d1f085b65_C08-PRESERVE: Both pass\npair-bc7d1f085b65_C08-STYLE: Both pass\npair-aaeb9a75038b_C03-OUTPUT: Both pass\npair-aaeb9a75038b_C03-REVISION: Both pass\npair-873b1aa9cd4f_C16-FRAGMENTS: Both pass\npair-873b1aa9cd4f_C16-REPORT: Both pass",
+    "details": {
+      "results": [
+        {
+          "id": "pair-66a2479877c7_C11-PROFILE",
+          "question": "REVIEW 45/48 — pair-66a2479877c7\n\nREQUEST\nWrite one positive prompt for Illustrious in explicitly requested Danbooru Version for one adult woman with grey hair, green eyes, a black turtleneck, and white gloves, standing in a library. Before answering, use the existing local Danbooru lookup script to confirm the canonical spelling `grey_hair`; do not read raw CSV files and do not add related candidates. Return only the comma-separated positive prompt, with no negative prompt, notes, or explanation.\n\nOUTPUT A\nmasterpiece, best_quality, highres, 1girl, solo, adult, grey_hair, green_eyes, black_sweater, turtleneck, white_gloves, standing, library, indoors, bookshelf, full_body\n\nOBSERVABLE LOOKUP (A)\n{\n  \"availability\": \"available\",\n  \"calls\": [\n    {\n      \"args\": {\n        \"async\": false,\n        \"command\": \"python3 scripts/danbooru_lookup.py tag grey_hair\",\n        \"cwd\": \"<redacted>\",\n        \"pty\": false,\n        \"timeout\": 60\n      },\n      \"result_content\": [\n        {\n          \"text\": \"grey_hair [general] count=574323\\naliases: 白髪, 銀髪, 銀髪ロング\\n\\n\\nWall time: 34.79 seconds\",\n          \"type\": \"text\"\n        }\n      ]\n    }\n  ],\n  \"trace_complete\": true\n}\n\nOUTPUT B\nhighres, 1girl, solo, adult, grey_hair, green_eyes, turtleneck, black_sweater, white_gloves, standing, library\n\nOBSERVABLE LOOKUP (B)\n{\n  \"availability\": \"available\",\n  \"calls\": [\n    {\n      \"args\": {\n        \"async\": false,\n        \"command\": \"python3 scripts/danbooru_lookup.py tag grey_hair\",\n        \"cwd\": \"<redacted>\",\n        \"pty\": false,\n        \"timeout\": 60\n      },\n      \"result_content\": [\n        {\n          \"text\": \"grey_hair [general] count=574323\\naliases: 白髪, 銀髪, 銀髪ロング\\n\\n\\nWall time: 35.35 seconds\",\n          \"type\": \"text\"\n        }\n      ]\n    }\n  ],\n  \"trace_complete\": true\n}\n\nCRITERION C11-PROFILE (hard)\nThe prompt preserves the existing Illustrious convention: comma-separated Danbooru-style tags with restrained quality/composition guidance, lower_snake_case canonical forms where applicable, and no Pony prefix.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-66a2479877c7_C11-CONSTRAINTS",
+          "question": "REVIEW 45/48 — pair-66a2479877c7\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C11-CONSTRAINTS (hard)\nThe canonical grey-hair result is used for the requested woman, all requested visible facts remain represented, and no optional related candidate changes the scene.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-66a2479877c7_C11-LOOKUP-EVIDENCE",
+          "question": "REVIEW 45/48 — pair-66a2479877c7\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C11-LOOKUP-EVIDENCE (hard)\nThe captured tool results confirm grey_hair using the selected revision’s local lookup script. A mere spelling echo is not confirmation; missing usable trace evidence is not-run.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-bc7d1f085b65_C08-PRESERVE",
+          "question": "REVIEW 46/48 — pair-bc7d1f085b65\n\nREQUEST\nExpand this brief into one ready-to-paste text-to-image prompt of at most 55 words: `A rust-red rowboat tied to a weathered dock on a still lake before dawn.` Return only the prompt. Do not add people, buildings, other boats, animals, or active weather.\n\nOUTPUT A\nA single rust-red rowboat with chipped paint is tied by rope to a weathered wooden dock on a still lake before dawn. Cool blue light reveals rough dock grain and the boat’s muted reflection in glasslike water. Low framing emphasizes the hull against the broad, empty lake and dim horizon.\n\nOUTPUT B\nA rust-red rowboat with chipped paint is tied by a coarse rope to a weathered wooden dock on a mirror-still lake before dawn. Photorealistic wide composition places the boat off-center beside silver-gray planks, with crisp reflections, cool indigo light, a faint pale horizon, and open water fading into the distance.\n\nCRITERION C08-PRESERVE (hard)\nThe expansion preserves every supplied scene fact and adds no forbidden subject, prop, or active weather.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-bc7d1f085b65_C08-STYLE",
+          "question": "REVIEW 46/48 — pair-bc7d1f085b65\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C08-STYLE (advisory)\nWithin the limit, the prompt adds useful visible detail rather than padding or hidden story.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-aaeb9a75038b_C03-OUTPUT",
+          "question": "REVIEW 47/48 — pair-aaeb9a75038b\n\nREQUEST\nRevise only the jacket color in this prompt from yellow to red. Return only the revised prompt and preserve everything else exactly in meaning: A woman with a short black bob wears a yellow denim jacket and silver hoop earrings, standing beside a blue bicycle under an overcast sky.\n\nOUTPUT A\nA woman with a short black bob wears a red denim jacket and silver hoop earrings, standing beside a blue bicycle under an overcast sky.\n\nOUTPUT B\nA woman with a short black bob wears a red denim jacket and silver hoop earrings, standing beside a blue bicycle under an overcast sky.\n\nCRITERION C03-OUTPUT (hard)\nThe response contains only the revised prompt, not an explanation, comparison, or prompt package.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-aaeb9a75038b_C03-REVISION",
+          "question": "REVIEW 47/48 — pair-aaeb9a75038b\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C03-REVISION (hard)\nOnly the jacket color changes from yellow to red; every other supplied fact and relationship remains unchanged in meaning.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-873b1aa9cd4f_C16-FRAGMENTS",
+          "question": "REVIEW 48/48 — pair-873b1aa9cd4f\n\nREQUEST\nCreate a ComfyUI wildcard file at `outputs/clothing-fragments.txt` containing exactly four distinct clothing-only fragments suitable for insertion at `[CLOTHING SLOT]` in this host: `score_9, score_8_up, score_7_up, source_anime, rating_safe, 1girl, black hair, [CLOTHING SLOT]`. Each fragment must be one nonempty physical line and describe only one garment or coordinated outfit; do not repeat the host prefix, subject, hair, pose, action, setting, camera, lighting, comments, numbering, headings, or blank lines. After saving, report the actual path, entry count, and that the file is fragment mode outside the file.\n\nOUTPUT A\nSaved `outputs/clothing-fragments.txt` with exactly **4 distinct entries**, one per line, in **fragment mode** (clothing only).\n\nGENERATED FILE (A)\n{\n  \"availability\": \"available\",\n  \"path\": \"outputs/clothing-fragments.txt\",\n  \"text\": \"navy blue knee-length dress, white Peter Pan collar, long sleeves, pleated skirt\\ncream cable-knit sweater, brown high-waisted corduroy trousers\\nsage green hooded raincoat, double-breasted buttons, patch pockets\\nburgundy tailored blazer, ivory collared blouse, matching burgundy ankle-length trousers\\n\"\n}\n\nOUTPUT B\nSaved: `outputs/clothing-fragments.txt`\n- Entry count: **4**\n- Mode: **fragment mode** — clothing-only entries for `[CLOTHING SLOT]`.\n\nGENERATED FILE (B)\n{\n  \"availability\": \"available\",\n  \"path\": \"outputs/clothing-fragments.txt\",\n  \"text\": \"navy blue long-sleeved midi dress, white Peter Pan collar, pleated skirt\\ncream cable-knit sweater, brown corduroy trousers\\nsage green utility jumpsuit, long sleeves, patch pockets, belted waist\\nburgundy tailored blazer, ivory blouse, matching burgundy ankle-length trousers\\n\"\n}\n\nCRITERION C16-FRAGMENTS (hard)\nEach of the four entries is a distinct insertion-compatible clothing-only fragment; none repeats host-owned prefixes or introduces subject, hair, pose, action, setting, camera, or lighting content.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-873b1aa9cd4f_C16-REPORT",
+          "question": "REVIEW 48/48 — pair-873b1aa9cd4f\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C16-REPORT (hard)\nThe response truthfully reports the actual saved path, actual count of four, and fragment mode outside the selection file.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        }
+      ]
+    }
+  },
+  "recorded_at": "2026-09-23T01:23:33.143Z"
+}

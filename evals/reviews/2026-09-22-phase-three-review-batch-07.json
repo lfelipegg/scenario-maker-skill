@@ -1,0 +1,260 @@
+{
+  "batch": 7,
+  "start": 17,
+  "count": 3,
+  "questions": [
+    {
+      "id": "pair-250ac91fb33a_C08-PRESERVE",
+      "question": "REVIEW 18/48 — pair-250ac91fb33a\n\nREQUEST\nExpand this brief into one ready-to-paste text-to-image prompt of at most 55 words: `A rust-red rowboat tied to a weathered dock on a still lake before dawn.` Return only the prompt. Do not add people, buildings, other boats, animals, or active weather.\n\nOUTPUT A\nAn empty rust-red rowboat, its paint chipped along the gunwale, is tied to a weathered wooden dock on a still lake before dawn. Cool blue-gray light reveals rough planks and mirrorlike reflections. Frame the dock diagonally beside the boat, with open water fading toward a pale, unobstructed horizon.\n\nOUTPUT B\nA rust-red rowboat with chipped paint rests on a mirror-still lake before dawn, secured by a frayed rope to a weathered wooden dock. Low-angle framing follows silvered planks toward the boat, its reflection crisp beneath it. Faint blue predawn light reveals wood grain against dark water and a pale horizon.\n\nCRITERION C08-PRESERVE (hard)\nThe expansion preserves every supplied scene fact and adds no forbidden subject, prop, or active weather.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "18/48 C08-PRESERVE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-250ac91fb33a_C08-STYLE",
+      "question": "REVIEW 18/48 — pair-250ac91fb33a\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C08-STYLE (advisory)\nWithin the limit, the prompt adds useful visible detail rather than padding or hidden story.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "18/48 C08-STYLE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-04bfe1a95b5d_C07-DISTINCTNESS",
+      "question": "REVIEW 19/48 — pair-04bfe1a95b5d\n\nREQUEST\nCreate exactly four genuinely different composition variants of this fixed scene. Number them 1 through 4 and give one complete prompt per numbered entry. Vary only composition (framing, viewpoint, and placement within the image); hold lighting and all physical scene facts fixed. Fixed scene: a red cube image-left of a blue sphere on a gray table; a sign behind them reads exactly `OPEN`; both objects and the sign are fully visible; plain gray backdrop; diffuse frontal light with weak shadows.\n\nOUTPUT A\n1. A tight, straight-on composition with the complete arrangement centered and narrow margins around it. A red cube sits image-left of a blue sphere on a gray table; behind them, a sign reads exactly “OPEN”. Both objects and the entire sign are fully visible and unobstructed against a plain gray backdrop, under diffuse frontal light with weak shadows.\n\n2. A wide, straight-on composition places the complete arrangement in the lower-left portion of the image, leaving generous plain gray negative space above and to the right. A red cube sits image-left of a blue sphere on a gray table; behind them, a sign reads exactly “OPEN”. Both objects and the entire sign are fully visible and unobstructed, with a plain gray backdrop and diffuse frontal light with weak shadows.\n\n3. A moderately elevated, downward-looking composition centers the complete arrangement, showing more of the gray tabletop while keeping the sign’s face readable. A red cube sits image-left of a blue sphere on the table; behind them, a sign reads exactly “OPEN”. Both objects and the entire sign are fully visible and unobstructed against a plain gray backdrop, under diffuse frontal light with weak shadows.\n\n4. A tall portrait composition, viewed straight on, places the complete arrangement across the upper third of the image, with an expansive gray tabletop foreground below. A red cube sits image-left of a blue sphere on the gray table; behind them, a sign reads exactly “OPEN”. Both objects and the entire sign are fully visible and unobstructed against a plain gray backdrop, under diffuse frontal light with weak shadows.\n\nOUTPUT B\n1. A centered, straight-on medium shot of a red cube image-left of a blue sphere on a gray table, with a sign behind them reading exactly “OPEN.” Frame the arrangement with balanced margins; both objects and the entire sign are fully visible and unobstructed. Use a plain gray backdrop and diffuse frontal light with weak shadows.\n\n2. A wide horizontal shot of a red cube image-left of a blue sphere on a gray table, with a sign behind them reading exactly “OPEN.” Place the whole arrangement in the left third of the image, leaving broad negative space to the right without changing the subjects’ relative positions. Both objects and the entire sign are fully visible and unobstructed. Use a plain gray backdrop and diffuse frontal light with weak shadows.\n\n3. A moderately elevated three-quarter view of a red cube image-left of a blue sphere on a gray table, with a sign behind them reading exactly “OPEN.” Look down gently to reveal more tabletop and the cube’s top, keeping the arrangement centered and the sign clearly readable. Both objects and the entire sign are fully visible and unobstructed. Use a plain gray backdrop and diffuse frontal light with weak shadows.\n\n4. A straight-on portrait-format shot of a red cube image-left of a blue sphere on a gray table, with a sign behind them reading exactly “OPEN.” Position the complete arrangement low in the frame, with generous empty backdrop above and narrow side margins, without changing the subjects’ relative positions. Both objects and the entire sign are fully visible and unobstructed. Use a plain gray backdrop and diffuse frontal light with weak shadows.\n\nCRITERION C07-DISTINCTNESS (hard)\nAll four entries communicate genuinely different compositions rather than paraphrases or changes outside composition.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "19/48 C07-DISTINCTNESS",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-04bfe1a95b5d_C07-PRESERVE",
+      "question": "REVIEW 19/48 — pair-04bfe1a95b5d\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C07-PRESERVE (hard)\nEvery variant preserves all non-composition facts, exact lettering, visibility, and fixed lighting while maintaining the cube's image-left relation to the sphere.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "19/48 C07-PRESERVE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-3522d2bd692b_C06-TEXT-BINDING",
+      "question": "REVIEW 20/48 — pair-3522d2bd692b\n\nREQUEST\nWrite one text-to-image prompt for a small neighborhood bakery at dusk. A rectangular sign centered above the door must visibly read exactly `OPEN` in uppercase, with no other visible lettering anywhere. Return only the prompt.\n\nOUTPUT A\nA small neighborhood bakery at dusk, viewed straight on, with warm interior light contrasting against the cool blue evening and a softly textured brick facade. A rectangular sign centered directly above the entrance door clearly and visibly reads exactly “OPEN” in crisp uppercase letters; the entire sign is unobstructed and legible, with no other visible lettering anywhere in the image.\n\nOUTPUT B\nA photorealistic, straight-on view of a small neighborhood bakery at dusk, warm amber light spilling through windows onto the sidewalk, with bread and pastries displayed inside beneath a deep blue evening sky. A clearly visible rectangular sign centered directly above the door reads exactly “OPEN” in crisp, uppercase letters; this is the only visible lettering anywhere in the image, with no other text, numbers, logos, labels, or watermarks.\n\nCRITERION C06-TEXT-BINDING (hard)\nThe prompt clearly binds exact uppercase OPEN to the rectangular sign centered above the bakery door and excludes other visible lettering.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "20/48 C06-TEXT-BINDING",
+      "multi": false,
+      "recommended": null
+    }
+  ],
+  "response": {
+    "text": "User answers:\npair-250ac91fb33a_C08-PRESERVE: Both pass\npair-250ac91fb33a_C08-STYLE: Both pass\npair-04bfe1a95b5d_C07-DISTINCTNESS: Both pass\npair-04bfe1a95b5d_C07-PRESERVE: Both pass\npair-3522d2bd692b_C06-TEXT-BINDING: Both pass",
+    "details": {
+      "results": [
+        {
+          "id": "pair-250ac91fb33a_C08-PRESERVE",
+          "question": "REVIEW 18/48 — pair-250ac91fb33a\n\nREQUEST\nExpand this brief into one ready-to-paste text-to-image prompt of at most 55 words: `A rust-red rowboat tied to a weathered dock on a still lake before dawn.` Return only the prompt. Do not add people, buildings, other boats, animals, or active weather.\n\nOUTPUT A\nAn empty rust-red rowboat, its paint chipped along the gunwale, is tied to a weathered wooden dock on a still lake before dawn. Cool blue-gray light reveals rough planks and mirrorlike reflections. Frame the dock diagonally beside the boat, with open water fading toward a pale, unobstructed horizon.\n\nOUTPUT B\nA rust-red rowboat with chipped paint rests on a mirror-still lake before dawn, secured by a frayed rope to a weathered wooden dock. Low-angle framing follows silvered planks toward the boat, its reflection crisp beneath it. Faint blue predawn light reveals wood grain against dark water and a pale horizon.\n\nCRITERION C08-PRESERVE (hard)\nThe expansion preserves every supplied scene fact and adds no forbidden subject, prop, or active weather.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-250ac91fb33a_C08-STYLE",
+          "question": "REVIEW 18/48 — pair-250ac91fb33a\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C08-STYLE (advisory)\nWithin the limit, the prompt adds useful visible detail rather than padding or hidden story.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-04bfe1a95b5d_C07-DISTINCTNESS",
+          "question": "REVIEW 19/48 — pair-04bfe1a95b5d\n\nREQUEST\nCreate exactly four genuinely different composition variants of this fixed scene. Number them 1 through 4 and give one complete prompt per numbered entry. Vary only composition (framing, viewpoint, and placement within the image); hold lighting and all physical scene facts fixed. Fixed scene: a red cube image-left of a blue sphere on a gray table; a sign behind them reads exactly `OPEN`; both objects and the sign are fully visible; plain gray backdrop; diffuse frontal light with weak shadows.\n\nOUTPUT A\n1. A tight, straight-on composition with the complete arrangement centered and narrow margins around it. A red cube sits image-left of a blue sphere on a gray table; behind them, a sign reads exactly “OPEN”. Both objects and the entire sign are fully visible and unobstructed against a plain gray backdrop, under diffuse frontal light with weak shadows.\n\n2. A wide, straight-on composition places the complete arrangement in the lower-left portion of the image, leaving generous plain gray negative space above and to the right. A red cube sits image-left of a blue sphere on a gray table; behind them, a sign reads exactly “OPEN”. Both objects and the entire sign are fully visible and unobstructed, with a plain gray backdrop and diffuse frontal light with weak shadows.\n\n3. A moderately elevated, downward-looking composition centers the complete arrangement, showing more of the gray tabletop while keeping the sign’s face readable. A red cube sits image-left of a blue sphere on the table; behind them, a sign reads exactly “OPEN”. Both objects and the entire sign are fully visible and unobstructed against a plain gray backdrop, under diffuse frontal light with weak shadows.\n\n4. A tall portrait composition, viewed straight on, places the complete arrangement across the upper third of the image, with an expansive gray tabletop foreground below. A red cube sits image-left of a blue sphere on the gray table; behind them, a sign reads exactly “OPEN”. Both objects and the entire sign are fully visible and unobstructed against a plain gray backdrop, under diffuse frontal light with weak shadows.\n\nOUTPUT B\n1. A centered, straight-on medium shot of a red cube image-left of a blue sphere on a gray table, with a sign behind them reading exactly “OPEN.” Frame the arrangement with balanced margins; both objects and the entire sign are fully visible and unobstructed. Use a plain gray backdrop and diffuse frontal light with weak shadows.\n\n2. A wide horizontal shot of a red cube image-left of a blue sphere on a gray table, with a sign behind them reading exactly “OPEN.” Place the whole arrangement in the left third of the image, leaving broad negative space to the right without changing the subjects’ relative positions. Both objects and the entire sign are fully visible and unobstructed. Use a plain gray backdrop and diffuse frontal light with weak shadows.\n\n3. A moderately elevated three-quarter view of a red cube image-left of a blue sphere on a gray table, with a sign behind them reading exactly “OPEN.” Look down gently to reveal more tabletop and the cube’s top, keeping the arrangement centered and the sign clearly readable. Both objects and the entire sign are fully visible and unobstructed. Use a plain gray backdrop and diffuse frontal light with weak shadows.\n\n4. A straight-on portrait-format shot of a red cube image-left of a blue sphere on a gray table, with a sign behind them reading exactly “OPEN.” Position the complete arrangement low in the frame, with generous empty backdrop above and narrow side margins, without changing the subjects’ relative positions. Both objects and the entire sign are fully visible and unobstructed. Use a plain gray backdrop and diffuse frontal light with weak shadows.\n\nCRITERION C07-DISTINCTNESS (hard)\nAll four entries communicate genuinely different compositions rather than paraphrases or changes outside composition.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-04bfe1a95b5d_C07-PRESERVE",
+          "question": "REVIEW 19/48 — pair-04bfe1a95b5d\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C07-PRESERVE (hard)\nEvery variant preserves all non-composition facts, exact lettering, visibility, and fixed lighting while maintaining the cube's image-left relation to the sphere.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-3522d2bd692b_C06-TEXT-BINDING",
+          "question": "REVIEW 20/48 — pair-3522d2bd692b\n\nREQUEST\nWrite one text-to-image prompt for a small neighborhood bakery at dusk. A rectangular sign centered above the door must visibly read exactly `OPEN` in uppercase, with no other visible lettering anywhere. Return only the prompt.\n\nOUTPUT A\nA small neighborhood bakery at dusk, viewed straight on, with warm interior light contrasting against the cool blue evening and a softly textured brick facade. A rectangular sign centered directly above the entrance door clearly and visibly reads exactly “OPEN” in crisp uppercase letters; the entire sign is unobstructed and legible, with no other visible lettering anywhere in the image.\n\nOUTPUT B\nA photorealistic, straight-on view of a small neighborhood bakery at dusk, warm amber light spilling through windows onto the sidewalk, with bread and pastries displayed inside beneath a deep blue evening sky. A clearly visible rectangular sign centered directly above the door reads exactly “OPEN” in crisp, uppercase letters; this is the only visible lettering anywhere in the image, with no other text, numbers, logos, labels, or watermarks.\n\nCRITERION C06-TEXT-BINDING (hard)\nThe prompt clearly binds exact uppercase OPEN to the rectangular sign centered above the bakery door and excludes other visible lettering.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        }
+      ]
+    }
+  },
+  "recorded_at": "2026-09-23T01:08:31.012Z"
+}

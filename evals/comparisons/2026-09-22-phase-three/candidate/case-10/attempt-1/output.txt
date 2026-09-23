@@ -1,0 +1,15 @@
+### 1. Fidelity to the brief
+- **SDXL prompt:** Explicitly preserves every core detail: green bicycle, leaning relationship, white brick wall, and soft overcast daylight. Eye-level framing, a medium shot, and a restrained palette are additional choices not specified in the brief.
+- **Krea 2 prompt:** Preserves the subject, colors, wall material, and lighting. “Rests against” strongly suggests leaning but is slightly less explicit. “Even” is consistent with soft overcast light. Eye-level framing and a restrained palette are additional choices; shot size remains unspecified.
+
+### 2. Model-appropriate expression
+- **SDXL prompt:** The short, comma-separated descriptive phrases are clear and reasonable for SDXL. Natural descriptive prose is the selected skill’s preferred SDXL default, but that is a preference—not a requirement that makes this prompt unsuitable.
+- **Krea 2 prompt:** The complete sentence communicates the scene and relationships clearly as a general image prompt. The selected skill provides no verified Krea 2 profile, so its prose style cannot be endorsed as specifically optimized for that model.
+
+### 3. Likely ambiguity
+- **SDXL prompt:** “Leaning against” makes the required relationship explicit. “Medium shot” constrains framing but leaves uncertainty about whether the entire bicycle should be visible. “Eye-level” does not establish an exact camera height.
+- **Krea 2 prompt:** “Rests against” leaves slightly more room in the bicycle’s posture, and eye-level framing alone leaves camera distance and crop open.
+- **Both:** “Restrained palette” could mean fewer colors or reduced saturation, potentially muting the green. Neither specifies bicycle orientation or exact wall-contact point; these are open details rather than contradictions.
+
+### 4. Overall comparison
+**SDXL is marginally more explicit about the brief’s required pose and more constrained in framing. Krea 2 expresses essentially the same scene in smoother prose but leaves shot size open.** Both are faithful overall; wording alone does not establish which model will render the scene more accurately.

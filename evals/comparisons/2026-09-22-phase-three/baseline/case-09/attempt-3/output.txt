@@ -1,0 +1,22 @@
+## Strengths
+- **Simple subject–setting structure:** One traveler in one location gives the image a manageable starting point without competing subjects.
+- **Consistent mood:** “Mysterious” and “cinematic” suggest an atmospheric treatment and do not inherently conflict.
+- **Creative latitude:** The brevity leaves room for interpretation, which can be useful for exploratory generation.
+
+## Concrete problems
+
+### Visible clarity
+- **“Mysterious traveler” gives a role and mood, but little visible identity.** Appearance, clothing, posture, expression, and equipment are unspecified. Nothing establishes how the viewer would recognize either travel or mystery.
+- **“Beautiful place” is a judgment, not a setting description.** It supplies no terrain, architecture, weather, or distinguishing feature, leaving most of the image undefined.
+- **“Amazing lighting” describes a desired quality rather than a lighting setup.** Source, direction, softness, color, and contrast are all unspecified.
+
+### Composition
+- **“Dynamic composition” does not establish an arrangement.** Framing, viewpoint, subject placement, visual lines, and depth relationships remain open.
+- **The focal hierarchy is unclear.** The prompt does not indicate whether the traveler should dominate or appear small within an expansive environment.
+- **There is no pose or action to support the requested dynamism.** A static scene can still have a dynamic composition, but this prompt supplies neither bodily movement nor spatial structure to create it.
+
+### Ambiguity
+- **“Cinematic” is broad shorthand.** It can influence the overall look, but does not reliably specify a medium, palette, lens feel, or framing.
+- **The modifiers overlap without adding much concrete information.** “Beautiful,” “amazing,” and “cinematic” express aesthetic preferences more than observable features, so outputs may vary widely while loosely satisfying every term.
+
+**Overall:** This works as a mood seed, but not as a controlled visual brief. Its main weakness is not brevity; it is that nearly all its descriptive language evaluates the desired image rather than defining what should be visible.

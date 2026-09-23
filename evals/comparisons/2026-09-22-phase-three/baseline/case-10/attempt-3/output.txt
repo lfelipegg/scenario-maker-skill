@@ -1,0 +1,15 @@
+### 1. Fidelity to the brief
+- **SDXL prompt:** Explicitly preserves all core details: green bicycle, leaning pose, white brick wall, and soft overcast daylight. Eye-level framing, a medium shot, and a restrained palette add constraints not requested in the brief, but do not inherently contradict it.
+- **Krea 2 prompt:** Preserves the subject, wall, and lighting. “Rests against” strongly suggests leaning, but is slightly less explicit than “leaning against.” “Even” is consistent with overcast light; eye-level framing and a restrained palette are additional choices.
+
+### 2. Model-appropriate expression
+- **SDXL prompt:** Clear, compact descriptive phrases should be workable. However, the selected skill’s SDXL profile favors concise natural-language prose—not a requirement for comma-separated tags. This prompt is understandable, but less aligned with that preferred expression.
+- **Krea 2 prompt:** Uses a coherent natural-language sentence with clear relationships between subject, setting, and lighting. The selected skill provides no Krea 2 profile, so this supports a judgment of general prompt clarity, not a verified claim of Krea-specific optimization.
+
+### 3. Likely ambiguity
+- **SDXL prompt:** “Medium shot” gives more framing guidance, but its meaning for a bicycle is imprecise and could permit cropped wheels. “Eye-level” establishes camera height only loosely.
+- **Krea 2 prompt:** Leaves shot distance unspecified, allowing more variation in framing. “Rests against” leaves the exact tilt and support arrangement slightly more open.
+- **Both:** “Restrained palette” is subjective and could encourage a more muted green than intended. Neither specifies bicycle orientation or exact wall contact, though these omissions are reasonable for this simple brief.
+
+### Overall comparison
+**SDXL has a slight edge in literal fidelity and framing specificity; Krea 2 has smoother sentence-level expression but leaves framing more open.** Both closely match the brief. Wording alone does not establish which model will produce the more faithful image.

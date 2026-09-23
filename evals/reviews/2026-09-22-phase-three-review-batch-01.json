@@ -1,0 +1,260 @@
+{
+  "batch": 1,
+  "start": 0,
+  "count": 2,
+  "questions": [
+    {
+      "id": "pair-19ec5b7228f3_C09-ROUTING",
+      "question": "REVIEW 1/48 — pair-19ec5b7228f3\n\nREQUEST\nCritique the following image prompt for visible clarity, composition, and ambiguity. Identify strengths and concrete problems, but do not rewrite it, provide a replacement prompt, or add variants. Prompt: `A mysterious traveler in a beautiful place, cinematic, amazing lighting, dynamic composition.`\n\nOUTPUT A\n## Strengths\n- **Simple subject–setting structure:** A traveler in a place is easy to parse, with no competing subjects or contradictory instructions.\n- **Coherent mood:** “Mysterious” and “cinematic” suggest an atmospheric image.\n- **Creative latitude:** Its brevity leaves room for interpretation, which can be useful for exploratory generation.\n\n## Concrete problems\n\n### Visible clarity\n- **“Mysterious traveler” supplies a role and impression, not a visible identity.** Appearance, clothing, posture, and action are unspecified. The image may show a person without clearly communicating either travel or mystery.\n- **“Beautiful place” is subjective and visually unanchored.** It establishes neither the kind of environment nor its distinguishing features.\n- **“Amazing lighting” expresses approval rather than a lighting setup.** Source, direction, softness, color, and contrast remain undefined.\n\n### Composition\n- **“Dynamic composition” names a desired effect without establishing its structure.** There is no guidance on framing, viewpoint, subject placement, or directional movement.\n- **The visual hierarchy is unresolved.** The traveler could dominate the frame or appear tiny within the setting; either fits the wording but produces a substantially different image.\n- **The subject–environment relationship is minimal.** “In” establishes presence, but not interaction, depth, or how the viewer’s eye should move between person and place.\n\n### Ambiguity\n- **“Cinematic” is a broad style cue.** It does not reliably specify medium, palette, framing, or a particular film aesthetic.\n- **Mystery is not the same as vagueness.** Leaving the traveler’s story unknown can support intrigue; leaving nearly every visible feature undefined mainly reduces control.\n- **The adjectives are compatible but weakly constraining.** Results could vary widely while still satisfying the prompt.\n\n**Overall:** This is a workable mood seed, but not a precise visual brief. Its main weakness is reliance on desired impressions instead of observable details and spatial relationships—not its short length.\n\nOUTPUT B\n## Overall assessment\nThe prompt establishes a mood, but not a clearly defined image. It leaves most visible and compositional decisions to the generator—useful for open-ended exploration, less useful for a predictable result.\n\n### Strengths\n- **Clear primary subject:** “A traveler” gives the scene a recognizable human focus.\n- **Consistent mood:** “Mysterious” and “cinematic” suggest an atmospheric treatment without contradicting each other.\n- **Simple structure:** There are no competing subjects or overloaded instructions.\n\n### Concrete problems\n- **The traveler lacks visible definition.** Appearance, clothing, pose, and activity are unspecified. Nothing establishes how the figure will read as a traveler rather than simply a person.\n- **“Mysterious” has no observable basis.** The prompt does not indicate what about the figure or scene conveys mystery. A model may supply a familiar visual cliché or barely express the quality.\n- **“A beautiful place” leaves the setting almost entirely open.** It identifies neither an environment nor any distinctive features. “Beautiful” is a subjective judgment, not a description of what should appear.\n- **“Amazing lighting” offers praise rather than direction.** Light source, direction, softness, color, and contrast are all undefined, despite their strong influence on visibility and mood.\n- **“Dynamic composition” does not establish an arrangement.** Framing, camera angle, subject placement, scale, and depth remain unspecified. It is also unclear whether “dynamic” means implied movement or an energetic layout.\n- **“Cinematic” is broad.** It suggests a general aesthetic but does not resolve the medium, framing, palette, or lighting treatment.\n\n**Main compositional ambiguity:** The prompt never establishes whether the traveler or the location should dominate. A close character portrait and a sweeping landscape with a tiny figure could both satisfy it, yet communicate very different images.\n\nCRITERION C09-ROUTING (hard)\nThe response is an analysis of the supplied prompt and does not silently turn into prompt writing, rewriting, or variants.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "1/48 C09-ROUTING",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-19ec5b7228f3_C09-QUALITY",
+      "question": "REVIEW 1/48 — pair-19ec5b7228f3\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C09-QUALITY (advisory)\nThe critique distinguishes useful strengths from specific visible-clarity, composition, and ambiguity problems.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "1/48 C09-QUALITY",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-b5751d4ad969_C01-OUTPUT",
+      "question": "REVIEW 2/48 — pair-b5751d4ad969\n\nREQUEST\nWrite one SDXL text-to-image prompt for a glass greenhouse on a windswept cliff at sunrise. Use comma-separated visual phrases only. Return only the prompt: no label, negative prompt, notes, variants, or explanation.\n\nOUTPUT A\nglass greenhouse perched on a windswept cliff at sunrise, transparent panes in slender weathered steel frames, warm golden reflections across the glass, rugged wind-scoured rock, sheer cliff face falling away beneath the greenhouse, low sun at the horizon, pale peach sky, cool blue shadows, long angled light across the cliff top, wide-angle composition, photorealistic architectural detail\n\nOUTPUT B\nglass greenhouse on a windswept coastal cliff, slender weathered steel frame, transparent panes revealing lush plants, cliffside grasses bent by strong wind, rugged rock face above crashing waves, sunrise over the ocean, warm golden reflections across the glass, pale pink sky, drifting sea mist, long shadows, wide three-quarter view, photorealistic architectural photography\n\nCRITERION C01-OUTPUT (hard)\nThe response is exactly one unlabeled comma-separated visual-phrase prompt, with no negative prompt, notes, variants, or wrapper.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "2/48 C01-OUTPUT",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-b5751d4ad969_C01-PROFILE",
+      "question": "REVIEW 2/48 — pair-b5751d4ad969\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C01-PROFILE (hard)\nThe prompt expresses the requested greenhouse, cliff, wind, and sunrise in a compact SDXL-compatible phrase dialect without importing another profile's boilerplate.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "2/48 C01-PROFILE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-b5751d4ad969_C01-STYLE",
+      "question": "REVIEW 2/48 — pair-b5751d4ad969\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C01-STYLE (advisory)\nThe selected visual phrasing is concise, coherent, and immediately usable.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "2/48 C01-STYLE",
+      "multi": false,
+      "recommended": null
+    }
+  ],
+  "response": {
+    "text": "User answers:\npair-19ec5b7228f3_C09-ROUTING: Both pass\npair-19ec5b7228f3_C09-QUALITY: Both pass\npair-b5751d4ad969_C01-OUTPUT: Both pass\npair-b5751d4ad969_C01-PROFILE: Both pass\npair-b5751d4ad969_C01-STYLE: Both pass",
+    "details": {
+      "results": [
+        {
+          "id": "pair-19ec5b7228f3_C09-ROUTING",
+          "question": "REVIEW 1/48 — pair-19ec5b7228f3\n\nREQUEST\nCritique the following image prompt for visible clarity, composition, and ambiguity. Identify strengths and concrete problems, but do not rewrite it, provide a replacement prompt, or add variants. Prompt: `A mysterious traveler in a beautiful place, cinematic, amazing lighting, dynamic composition.`\n\nOUTPUT A\n## Strengths\n- **Simple subject–setting structure:** A traveler in a place is easy to parse, with no competing subjects or contradictory instructions.\n- **Coherent mood:** “Mysterious” and “cinematic” suggest an atmospheric image.\n- **Creative latitude:** Its brevity leaves room for interpretation, which can be useful for exploratory generation.\n\n## Concrete problems\n\n### Visible clarity\n- **“Mysterious traveler” supplies a role and impression, not a visible identity.** Appearance, clothing, posture, and action are unspecified. The image may show a person without clearly communicating either travel or mystery.\n- **“Beautiful place” is subjective and visually unanchored.** It establishes neither the kind of environment nor its distinguishing features.\n- **“Amazing lighting” expresses approval rather than a lighting setup.** Source, direction, softness, color, and contrast remain undefined.\n\n### Composition\n- **“Dynamic composition” names a desired effect without establishing its structure.** There is no guidance on framing, viewpoint, subject placement, or directional movement.\n- **The visual hierarchy is unresolved.** The traveler could dominate the frame or appear tiny within the setting; either fits the wording but produces a substantially different image.\n- **The subject–environment relationship is minimal.** “In” establishes presence, but not interaction, depth, or how the viewer’s eye should move between person and place.\n\n### Ambiguity\n- **“Cinematic” is a broad style cue.** It does not reliably specify medium, palette, framing, or a particular film aesthetic.\n- **Mystery is not the same as vagueness.** Leaving the traveler’s story unknown can support intrigue; leaving nearly every visible feature undefined mainly reduces control.\n- **The adjectives are compatible but weakly constraining.** Results could vary widely while still satisfying the prompt.\n\n**Overall:** This is a workable mood seed, but not a precise visual brief. Its main weakness is reliance on desired impressions instead of observable details and spatial relationships—not its short length.\n\nOUTPUT B\n## Overall assessment\nThe prompt establishes a mood, but not a clearly defined image. It leaves most visible and compositional decisions to the generator—useful for open-ended exploration, less useful for a predictable result.\n\n### Strengths\n- **Clear primary subject:** “A traveler” gives the scene a recognizable human focus.\n- **Consistent mood:** “Mysterious” and “cinematic” suggest an atmospheric treatment without contradicting each other.\n- **Simple structure:** There are no competing subjects or overloaded instructions.\n\n### Concrete problems\n- **The traveler lacks visible definition.** Appearance, clothing, pose, and activity are unspecified. Nothing establishes how the figure will read as a traveler rather than simply a person.\n- **“Mysterious” has no observable basis.** The prompt does not indicate what about the figure or scene conveys mystery. A model may supply a familiar visual cliché or barely express the quality.\n- **“A beautiful place” leaves the setting almost entirely open.** It identifies neither an environment nor any distinctive features. “Beautiful” is a subjective judgment, not a description of what should appear.\n- **“Amazing lighting” offers praise rather than direction.** Light source, direction, softness, color, and contrast are all undefined, despite their strong influence on visibility and mood.\n- **“Dynamic composition” does not establish an arrangement.** Framing, camera angle, subject placement, scale, and depth remain unspecified. It is also unclear whether “dynamic” means implied movement or an energetic layout.\n- **“Cinematic” is broad.** It suggests a general aesthetic but does not resolve the medium, framing, palette, or lighting treatment.\n\n**Main compositional ambiguity:** The prompt never establishes whether the traveler or the location should dominate. A close character portrait and a sweeping landscape with a tiny figure could both satisfy it, yet communicate very different images.\n\nCRITERION C09-ROUTING (hard)\nThe response is an analysis of the supplied prompt and does not silently turn into prompt writing, rewriting, or variants.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-19ec5b7228f3_C09-QUALITY",
+          "question": "REVIEW 1/48 — pair-19ec5b7228f3\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C09-QUALITY (advisory)\nThe critique distinguishes useful strengths from specific visible-clarity, composition, and ambiguity problems.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-b5751d4ad969_C01-OUTPUT",
+          "question": "REVIEW 2/48 — pair-b5751d4ad969\n\nREQUEST\nWrite one SDXL text-to-image prompt for a glass greenhouse on a windswept cliff at sunrise. Use comma-separated visual phrases only. Return only the prompt: no label, negative prompt, notes, variants, or explanation.\n\nOUTPUT A\nglass greenhouse perched on a windswept cliff at sunrise, transparent panes in slender weathered steel frames, warm golden reflections across the glass, rugged wind-scoured rock, sheer cliff face falling away beneath the greenhouse, low sun at the horizon, pale peach sky, cool blue shadows, long angled light across the cliff top, wide-angle composition, photorealistic architectural detail\n\nOUTPUT B\nglass greenhouse on a windswept coastal cliff, slender weathered steel frame, transparent panes revealing lush plants, cliffside grasses bent by strong wind, rugged rock face above crashing waves, sunrise over the ocean, warm golden reflections across the glass, pale pink sky, drifting sea mist, long shadows, wide three-quarter view, photorealistic architectural photography\n\nCRITERION C01-OUTPUT (hard)\nThe response is exactly one unlabeled comma-separated visual-phrase prompt, with no negative prompt, notes, variants, or wrapper.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-b5751d4ad969_C01-PROFILE",
+          "question": "REVIEW 2/48 — pair-b5751d4ad969\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C01-PROFILE (hard)\nThe prompt expresses the requested greenhouse, cliff, wind, and sunrise in a compact SDXL-compatible phrase dialect without importing another profile's boilerplate.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-b5751d4ad969_C01-STYLE",
+          "question": "REVIEW 2/48 — pair-b5751d4ad969\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C01-STYLE (advisory)\nThe selected visual phrasing is concise, coherent, and immediately usable.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        }
+      ]
+    }
+  },
+  "recorded_at": "2026-09-23T00:58:16.506Z"
+}

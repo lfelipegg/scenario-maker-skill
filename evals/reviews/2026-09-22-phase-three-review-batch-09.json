@@ -1,0 +1,308 @@
+{
+  "batch": 9,
+  "start": 23,
+  "count": 3,
+  "questions": [
+    {
+      "id": "pair-e5811375195f_C07-DISTINCTNESS",
+      "question": "REVIEW 24/48 — pair-e5811375195f\n\nREQUEST\nCreate exactly four genuinely different composition variants of this fixed scene. Number them 1 through 4 and give one complete prompt per numbered entry. Vary only composition (framing, viewpoint, and placement within the image); hold lighting and all physical scene facts fixed. Fixed scene: a red cube image-left of a blue sphere on a gray table; a sign behind them reads exactly `OPEN`; both objects and the sign are fully visible; plain gray backdrop; diffuse frontal light with weak shadows.\n\nOUTPUT A\n1. Frame a red cube image-left of a blue sphere on a gray table, with a sign behind them reading exactly `OPEN`, against a plain gray backdrop. Use an eye-level frontal viewpoint and a centered medium shot, with balanced margins around the arrangement; both objects and the entire sign are fully visible. Use diffuse frontal light with weak shadows.\n\n2. Frame a red cube image-left of a blue sphere on a gray table, with a sign behind them reading exactly `OPEN`, against a plain gray backdrop. Use a wide frontal shot, placing the whole arrangement in the lower-left portion of the image through framing, with generous empty gray space above and to the right; both objects and the entire sign are fully visible. Use diffuse frontal light with weak shadows.\n\n3. Frame a red cube image-left of a blue sphere on a gray table, with a sign behind them reading exactly `OPEN`, against a plain gray backdrop. Use a moderately elevated three-quarter viewpoint and tight framing, showing more of the tabletop while keeping the arrangement large in the image; both objects and the entire sign remain fully visible and uncropped, with the lettering unobstructed. Use diffuse frontal light with weak shadows.\n\n4. Frame a red cube image-left of a blue sphere on a gray table, with a sign behind them reading exactly `OPEN`, against a plain gray backdrop. Use a slightly low frontal viewpoint and a right-weighted composition, keeping the arrangement in the right half of the image with broad empty space to the left; both objects and the entire sign are fully visible, with the lettering unobstructed. Use diffuse frontal light with weak shadows.\n\nOUTPUT B\n1. Frame the scene straight-on in a centered medium shot, with balanced margins around the arrangement. A red cube sits image-left of a blue sphere on a gray table; a sign behind them reads exactly “OPEN.” Both objects and the entire sign are fully visible and unobstructed, against a plain gray backdrop under diffuse frontal light with weak shadows.\n\n2. Use a wide horizontal frame with the entire arrangement small in the lower-left quadrant, leaving generous plain gray negative space above and to the right. A red cube sits image-left of a blue sphere on a gray table; a sign behind them reads exactly “OPEN.” Both objects and the entire sign are fully visible and unobstructed, against a plain gray backdrop under diffuse frontal light with weak shadows.\n\n3. Use a moderately elevated frontal viewpoint, looking slightly downward in a tight frame around the arrangement, revealing more of the tabletop and the cube’s top face without cropping any object or the sign. A red cube sits image-left of a blue sphere on a gray table; a sign behind them reads exactly “OPEN.” Both objects and the entire sign are fully visible and unobstructed, against a plain gray backdrop under diffuse frontal light with weak shadows.\n\n4. Use a tall portrait frame and a straight-on viewpoint, centering the arrangement horizontally within the bottom third, with a large uninterrupted area of gray backdrop above. A red cube sits image-left of a blue sphere on a gray table; a sign behind them reads exactly “OPEN.” Both objects and the entire sign are fully visible and unobstructed, against a plain gray backdrop under diffuse frontal light with weak shadows.\n\nCRITERION C07-DISTINCTNESS (hard)\nAll four entries communicate genuinely different compositions rather than paraphrases or changes outside composition.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "24/48 C07-DISTINCTNESS",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-e5811375195f_C07-PRESERVE",
+      "question": "REVIEW 24/48 — pair-e5811375195f\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C07-PRESERVE (hard)\nEvery variant preserves all non-composition facts, exact lettering, visibility, and fixed lighting while maintaining the cube's image-left relation to the sphere.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "24/48 C07-PRESERVE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-f21774e7c137_C10-ROUTING",
+      "question": "REVIEW 25/48 — pair-f21774e7c137\n\nREQUEST\nCompare these two supplied prompts for fidelity to the same brief, model-appropriate expression, and likely ambiguity. Keep the answer as a labeled comparison; do not merge, rewrite, or replace either prompt and do not produce a third prompt. Brief: a green bicycle leaning against a white brick wall in soft overcast daylight. SDXL prompt: `green bicycle leaning against a white brick wall, soft overcast daylight, eye-level medium shot, restrained color palette`. Krea 2 prompt: `A green bicycle rests against a white brick wall under soft, even overcast daylight, framed at eye level with a restrained palette.`\n\nOUTPUT A\n### SDXL prompt\n\n- **Fidelity:** Explicitly preserves every core detail: green bicycle, leaning relationship, white brick wall, and soft overcast daylight. Eye-level framing, a medium shot, and a restrained palette are additions to the brief, though compatible with it.\n- **Model-appropriate expression:** The short, comma-separated descriptive phrases are reasonable for SDXL. Natural descriptive prose is also appropriate; SDXL does not require tag-style wording. Importantly, the bicycle–wall relationship remains intact rather than being split into disconnected keywords.\n- **Likely ambiguity:** “Medium shot” is less precise for a bicycle than for a person and does not guarantee that both wheels remain in frame. “Restrained color palette” could mean limited hues or reduced saturation, potentially muting the green.\n\n### Krea 2 prompt\n\n- **Fidelity:** Preserves the subject, colors, wall material, and lighting. “Rests against” strongly suggests leaning but is slightly less explicit than the brief’s wording. “Even” is consistent with soft overcast light. Eye-level framing and a restrained palette are additional choices; unlike the SDXL prompt, it does not specify shot size.\n- **Model-appropriate expression:** The sentence is clear, coherent natural-language image prompting. The selected skill does not provide a verified Krea 2 profile, so this supports a general clarity assessment—not a claim that prose is uniquely preferred or required by Krea 2.\n- **Likely ambiguity:** Camera distance and cropping remain open. “Rests against” leaves the bicycle’s tilt somewhat less explicit, while “restrained palette” carries the same limited-hues-versus-muted-saturation ambiguity as the SDXL wording.\n\n### Overall comparison\n\nBoth closely match the brief. **The SDXL prompt is slightly more explicit about the required leaning relationship and framing; the Krea 2 prompt reads more fluidly but leaves shot size unspecified.** Their main differences are relational precision and composition—not a demonstrated model-performance advantage. Neither wording guarantees a particular generated result.\n\nOUTPUT B\n### 1. Fidelity to the brief\n- **SDXL prompt:** Explicitly preserves all core elements: green bicycle, leaning against a white brick wall, and soft overcast daylight. Eye-level medium framing and a restrained palette are additions, not requirements of the brief.\n- **Krea 2 prompt:** Preserves the subject, wall, and lighting. “Rests against” suggests leaning but is slightly less explicit about the bicycle’s posture. “Even” is consistent with overcast light; eye-level framing and a restrained palette are added choices.\n\n### 2. Model-appropriate expression\n- **SDXL prompt:** Concise and visually concrete. Its comma-separated phrases are understandable, but they align less closely with the selected skill’s SDXL preference for short natural-language prose. This is a stylistic mismatch, not a reason to assume poor results.\n- **Krea 2 prompt:** A coherent natural-language sentence with clear relationships between subject, setting, and lighting. The selected skill provides no Krea 2 profile, so its general clarity can be assessed, but model-specific suitability cannot be confirmed from that guidance.\n\n### 3. Likely ambiguity\n- **SDXL prompt:** “Medium shot” leaves uncertain whether the entire bicycle, including both wheels, should remain visible. “Restrained color palette” could encourage muted green, though it does not contradict the brief.\n- **Krea 2 prompt:** Eye level specifies viewpoint but not shot size, leaving more freedom in subject scale and cropping. “Rests against” is marginally less precise than “leaning against.” The palette wording carries the same possible muted-color interpretation.\n\n### Overall comparison\n**SDXL is slightly more literal and more constrained in framing; Krea 2 is more fluidly expressed but leaves framing and posture somewhat more open.** Both remain faithful overall. Neither specifies bicycle orientation or exact wall-contact geometry, which is acceptable given the simplicity of the brief.\n\nCRITERION C10-ROUTING (hard)\nThe response remains a labeled comparison of both supplied prompts and does not collapse into one new or rewritten prompt.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "25/48 C10-ROUTING",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-f21774e7c137_C10-ANALYSIS",
+      "question": "REVIEW 25/48 — pair-f21774e7c137\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C10-ANALYSIS (advisory)\nThe comparison separately addresses scene fidelity, profile-appropriate expression, and ambiguity for both prompts.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "25/48 C10-ANALYSIS",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-d0df1860a0e1_C16-FRAGMENTS",
+      "question": "REVIEW 26/48 — pair-d0df1860a0e1\n\nREQUEST\nCreate a ComfyUI wildcard file at `outputs/clothing-fragments.txt` containing exactly four distinct clothing-only fragments suitable for insertion at `[CLOTHING SLOT]` in this host: `score_9, score_8_up, score_7_up, source_anime, rating_safe, 1girl, black hair, [CLOTHING SLOT]`. Each fragment must be one nonempty physical line and describe only one garment or coordinated outfit; do not repeat the host prefix, subject, hair, pose, action, setting, camera, lighting, comments, numbering, headings, or blank lines. After saving, report the actual path, entry count, and that the file is fragment mode outside the file.\n\nOUTPUT A\nSaved `outputs/clothing-fragments.txt` with exactly **4 distinct entries**, one per line, in **fragment mode** (clothing only).\n\nGENERATED FILE (A)\n{\n  \"availability\": \"available\",\n  \"path\": \"outputs/clothing-fragments.txt\",\n  \"text\": \"navy blue midi dress, long sleeves, white Peter Pan collar, pleated skirt\\ncream cable-knit sweater, brown high-waisted corduroy trousers\\nforest green double-breasted wool coat, brass buttons, wide lapels\\nburgundy blazer, ivory button-up shirt, matching burgundy straight-leg trousers\\n\"\n}\n\nOUTPUT B\nSaved: `outputs/clothing-fragments.txt`\n- Entry count: **4 distinct clothing-only fragments**\n- Mode: **fragment mode**, for insertion at `[CLOTHING SLOT]`\n\nGENERATED FILE (B)\n{\n  \"availability\": \"available\",\n  \"path\": \"outputs/clothing-fragments.txt\",\n  \"text\": \"navy blue long-sleeved midi dress with a white Peter Pan collar and pearl buttons\\ncream cable-knit turtleneck sweater with a brown plaid pleated skirt\\nsage green button-front jumpsuit with long sleeves and a matching fabric belt\\nburgundy tailored blazer with matching straight-leg trousers and a white collared shirt\\n\"\n}\n\nCRITERION C16-FRAGMENTS (hard)\nEach of the four entries is a distinct insertion-compatible clothing-only fragment; none repeats host-owned prefixes or introduces subject, hair, pose, action, setting, camera, or lighting content.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "26/48 C16-FRAGMENTS",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-d0df1860a0e1_C16-REPORT",
+      "question": "REVIEW 26/48 — pair-d0df1860a0e1\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C16-REPORT (hard)\nThe response truthfully reports the actual saved path, actual count of four, and fragment mode outside the selection file.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "26/48 C16-REPORT",
+      "multi": false,
+      "recommended": null
+    }
+  ],
+  "response": {
+    "text": "User answers:\npair-e5811375195f_C07-DISTINCTNESS: Both pass\npair-e5811375195f_C07-PRESERVE: Both pass\npair-f21774e7c137_C10-ROUTING: Both pass\npair-f21774e7c137_C10-ANALYSIS: \"Both Fail. Both fail C10-ANALYSIS because their model-profile analysis conflicts with the settled guidance. The decision explicitly establishes SDXL → compact ordinary-English phrases, Very Short by default and local Krea 2 RAW/Turbo → natural-language paragraph, Medium detail.\n\nA incorrectly says the selected skill has no verified Krea 2 profile. B makes the same Krea 2 error and additionally characterizes SDXL as preferring short natural-language prose rather than the established compact-phrase default.\n\nTheir fidelity and ambiguity analysis is otherwise substantive, but the criterion specifically requires correct profile-appropriate expression for both prompts.\"\npair-d0df1860a0e1_C16-FRAGMENTS: Both pass\npair-d0df1860a0e1_C16-REPORT: Both pass",
+    "details": {
+      "results": [
+        {
+          "id": "pair-e5811375195f_C07-DISTINCTNESS",
+          "question": "REVIEW 24/48 — pair-e5811375195f\n\nREQUEST\nCreate exactly four genuinely different composition variants of this fixed scene. Number them 1 through 4 and give one complete prompt per numbered entry. Vary only composition (framing, viewpoint, and placement within the image); hold lighting and all physical scene facts fixed. Fixed scene: a red cube image-left of a blue sphere on a gray table; a sign behind them reads exactly `OPEN`; both objects and the sign are fully visible; plain gray backdrop; diffuse frontal light with weak shadows.\n\nOUTPUT A\n1. Frame a red cube image-left of a blue sphere on a gray table, with a sign behind them reading exactly `OPEN`, against a plain gray backdrop. Use an eye-level frontal viewpoint and a centered medium shot, with balanced margins around the arrangement; both objects and the entire sign are fully visible. Use diffuse frontal light with weak shadows.\n\n2. Frame a red cube image-left of a blue sphere on a gray table, with a sign behind them reading exactly `OPEN`, against a plain gray backdrop. Use a wide frontal shot, placing the whole arrangement in the lower-left portion of the image through framing, with generous empty gray space above and to the right; both objects and the entire sign are fully visible. Use diffuse frontal light with weak shadows.\n\n3. Frame a red cube image-left of a blue sphere on a gray table, with a sign behind them reading exactly `OPEN`, against a plain gray backdrop. Use a moderately elevated three-quarter viewpoint and tight framing, showing more of the tabletop while keeping the arrangement large in the image; both objects and the entire sign remain fully visible and uncropped, with the lettering unobstructed. Use diffuse frontal light with weak shadows.\n\n4. Frame a red cube image-left of a blue sphere on a gray table, with a sign behind them reading exactly `OPEN`, against a plain gray backdrop. Use a slightly low frontal viewpoint and a right-weighted composition, keeping the arrangement in the right half of the image with broad empty space to the left; both objects and the entire sign are fully visible, with the lettering unobstructed. Use diffuse frontal light with weak shadows.\n\nOUTPUT B\n1. Frame the scene straight-on in a centered medium shot, with balanced margins around the arrangement. A red cube sits image-left of a blue sphere on a gray table; a sign behind them reads exactly “OPEN.” Both objects and the entire sign are fully visible and unobstructed, against a plain gray backdrop under diffuse frontal light with weak shadows.\n\n2. Use a wide horizontal frame with the entire arrangement small in the lower-left quadrant, leaving generous plain gray negative space above and to the right. A red cube sits image-left of a blue sphere on a gray table; a sign behind them reads exactly “OPEN.” Both objects and the entire sign are fully visible and unobstructed, against a plain gray backdrop under diffuse frontal light with weak shadows.\n\n3. Use a moderately elevated frontal viewpoint, looking slightly downward in a tight frame around the arrangement, revealing more of the tabletop and the cube’s top face without cropping any object or the sign. A red cube sits image-left of a blue sphere on a gray table; a sign behind them reads exactly “OPEN.” Both objects and the entire sign are fully visible and unobstructed, against a plain gray backdrop under diffuse frontal light with weak shadows.\n\n4. Use a tall portrait frame and a straight-on viewpoint, centering the arrangement horizontally within the bottom third, with a large uninterrupted area of gray backdrop above. A red cube sits image-left of a blue sphere on a gray table; a sign behind them reads exactly “OPEN.” Both objects and the entire sign are fully visible and unobstructed, against a plain gray backdrop under diffuse frontal light with weak shadows.\n\nCRITERION C07-DISTINCTNESS (hard)\nAll four entries communicate genuinely different compositions rather than paraphrases or changes outside composition.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-e5811375195f_C07-PRESERVE",
+          "question": "REVIEW 24/48 — pair-e5811375195f\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C07-PRESERVE (hard)\nEvery variant preserves all non-composition facts, exact lettering, visibility, and fixed lighting while maintaining the cube's image-left relation to the sphere.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-f21774e7c137_C10-ROUTING",
+          "question": "REVIEW 25/48 — pair-f21774e7c137\n\nREQUEST\nCompare these two supplied prompts for fidelity to the same brief, model-appropriate expression, and likely ambiguity. Keep the answer as a labeled comparison; do not merge, rewrite, or replace either prompt and do not produce a third prompt. Brief: a green bicycle leaning against a white brick wall in soft overcast daylight. SDXL prompt: `green bicycle leaning against a white brick wall, soft overcast daylight, eye-level medium shot, restrained color palette`. Krea 2 prompt: `A green bicycle rests against a white brick wall under soft, even overcast daylight, framed at eye level with a restrained palette.`\n\nOUTPUT A\n### SDXL prompt\n\n- **Fidelity:** Explicitly preserves every core detail: green bicycle, leaning relationship, white brick wall, and soft overcast daylight. Eye-level framing, a medium shot, and a restrained palette are additions to the brief, though compatible with it.\n- **Model-appropriate expression:** The short, comma-separated descriptive phrases are reasonable for SDXL. Natural descriptive prose is also appropriate; SDXL does not require tag-style wording. Importantly, the bicycle–wall relationship remains intact rather than being split into disconnected keywords.\n- **Likely ambiguity:** “Medium shot” is less precise for a bicycle than for a person and does not guarantee that both wheels remain in frame. “Restrained color palette” could mean limited hues or reduced saturation, potentially muting the green.\n\n### Krea 2 prompt\n\n- **Fidelity:** Preserves the subject, colors, wall material, and lighting. “Rests against” strongly suggests leaning but is slightly less explicit than the brief’s wording. “Even” is consistent with soft overcast light. Eye-level framing and a restrained palette are additional choices; unlike the SDXL prompt, it does not specify shot size.\n- **Model-appropriate expression:** The sentence is clear, coherent natural-language image prompting. The selected skill does not provide a verified Krea 2 profile, so this supports a general clarity assessment—not a claim that prose is uniquely preferred or required by Krea 2.\n- **Likely ambiguity:** Camera distance and cropping remain open. “Rests against” leaves the bicycle’s tilt somewhat less explicit, while “restrained palette” carries the same limited-hues-versus-muted-saturation ambiguity as the SDXL wording.\n\n### Overall comparison\n\nBoth closely match the brief. **The SDXL prompt is slightly more explicit about the required leaning relationship and framing; the Krea 2 prompt reads more fluidly but leaves shot size unspecified.** Their main differences are relational precision and composition—not a demonstrated model-performance advantage. Neither wording guarantees a particular generated result.\n\nOUTPUT B\n### 1. Fidelity to the brief\n- **SDXL prompt:** Explicitly preserves all core elements: green bicycle, leaning against a white brick wall, and soft overcast daylight. Eye-level medium framing and a restrained palette are additions, not requirements of the brief.\n- **Krea 2 prompt:** Preserves the subject, wall, and lighting. “Rests against” suggests leaning but is slightly less explicit about the bicycle’s posture. “Even” is consistent with overcast light; eye-level framing and a restrained palette are added choices.\n\n### 2. Model-appropriate expression\n- **SDXL prompt:** Concise and visually concrete. Its comma-separated phrases are understandable, but they align less closely with the selected skill’s SDXL preference for short natural-language prose. This is a stylistic mismatch, not a reason to assume poor results.\n- **Krea 2 prompt:** A coherent natural-language sentence with clear relationships between subject, setting, and lighting. The selected skill provides no Krea 2 profile, so its general clarity can be assessed, but model-specific suitability cannot be confirmed from that guidance.\n\n### 3. Likely ambiguity\n- **SDXL prompt:** “Medium shot” leaves uncertain whether the entire bicycle, including both wheels, should remain visible. “Restrained color palette” could encourage muted green, though it does not contradict the brief.\n- **Krea 2 prompt:** Eye level specifies viewpoint but not shot size, leaving more freedom in subject scale and cropping. “Rests against” is marginally less precise than “leaning against.” The palette wording carries the same possible muted-color interpretation.\n\n### Overall comparison\n**SDXL is slightly more literal and more constrained in framing; Krea 2 is more fluidly expressed but leaves framing and posture somewhat more open.** Both remain faithful overall. Neither specifies bicycle orientation or exact wall-contact geometry, which is acceptable given the simplicity of the brief.\n\nCRITERION C10-ROUTING (hard)\nThe response remains a labeled comparison of both supplied prompts and does not collapse into one new or rewritten prompt.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-f21774e7c137_C10-ANALYSIS",
+          "question": "REVIEW 25/48 — pair-f21774e7c137\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C10-ANALYSIS (advisory)\nThe comparison separately addresses scene fidelity, profile-appropriate expression, and ambiguity for both prompts.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [],
+          "customInput": "Both Fail. Both fail C10-ANALYSIS because their model-profile analysis conflicts with the settled guidance. The decision explicitly establishes SDXL → compact ordinary-English phrases, Very Short by default and local Krea 2 RAW/Turbo → natural-language paragraph, Medium detail.\n\nA incorrectly says the selected skill has no verified Krea 2 profile. B makes the same Krea 2 error and additionally characterizes SDXL as preferring short natural-language prose rather than the established compact-phrase default.\n\nTheir fidelity and ambiguity analysis is otherwise substantive, but the criterion specifically requires correct profile-appropriate expression for both prompts."
+        },
+        {
+          "id": "pair-d0df1860a0e1_C16-FRAGMENTS",
+          "question": "REVIEW 26/48 — pair-d0df1860a0e1\n\nREQUEST\nCreate a ComfyUI wildcard file at `outputs/clothing-fragments.txt` containing exactly four distinct clothing-only fragments suitable for insertion at `[CLOTHING SLOT]` in this host: `score_9, score_8_up, score_7_up, source_anime, rating_safe, 1girl, black hair, [CLOTHING SLOT]`. Each fragment must be one nonempty physical line and describe only one garment or coordinated outfit; do not repeat the host prefix, subject, hair, pose, action, setting, camera, lighting, comments, numbering, headings, or blank lines. After saving, report the actual path, entry count, and that the file is fragment mode outside the file.\n\nOUTPUT A\nSaved `outputs/clothing-fragments.txt` with exactly **4 distinct entries**, one per line, in **fragment mode** (clothing only).\n\nGENERATED FILE (A)\n{\n  \"availability\": \"available\",\n  \"path\": \"outputs/clothing-fragments.txt\",\n  \"text\": \"navy blue midi dress, long sleeves, white Peter Pan collar, pleated skirt\\ncream cable-knit sweater, brown high-waisted corduroy trousers\\nforest green double-breasted wool coat, brass buttons, wide lapels\\nburgundy blazer, ivory button-up shirt, matching burgundy straight-leg trousers\\n\"\n}\n\nOUTPUT B\nSaved: `outputs/clothing-fragments.txt`\n- Entry count: **4 distinct clothing-only fragments**\n- Mode: **fragment mode**, for insertion at `[CLOTHING SLOT]`\n\nGENERATED FILE (B)\n{\n  \"availability\": \"available\",\n  \"path\": \"outputs/clothing-fragments.txt\",\n  \"text\": \"navy blue long-sleeved midi dress with a white Peter Pan collar and pearl buttons\\ncream cable-knit turtleneck sweater with a brown plaid pleated skirt\\nsage green button-front jumpsuit with long sleeves and a matching fabric belt\\nburgundy tailored blazer with matching straight-leg trousers and a white collared shirt\\n\"\n}\n\nCRITERION C16-FRAGMENTS (hard)\nEach of the four entries is a distinct insertion-compatible clothing-only fragment; none repeats host-owned prefixes or introduces subject, hair, pose, action, setting, camera, or lighting content.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-d0df1860a0e1_C16-REPORT",
+          "question": "REVIEW 26/48 — pair-d0df1860a0e1\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C16-REPORT (hard)\nThe response truthfully reports the actual saved path, actual count of four, and fragment mode outside the selection file.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        }
+      ]
+    }
+  },
+  "recorded_at": "2026-09-23T01:11:44.174Z"
+}

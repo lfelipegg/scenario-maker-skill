@@ -1,0 +1,407 @@
+{
+  "batch": 14,
+  "start": 38,
+  "count": 3,
+  "questions": [
+    {
+      "id": "pair-7362402c52c0_C01-OUTPUT",
+      "question": "REVIEW 39/48 — pair-7362402c52c0\n\nREQUEST\nWrite one SDXL text-to-image prompt for a glass greenhouse on a windswept cliff at sunrise. Use comma-separated visual phrases only. Return only the prompt: no label, negative prompt, notes, variants, or explanation.\n\nOUTPUT A\nglass greenhouse on a windswept cliff, transparent panes in a slender steel frame, steep weathered rock face, exposed rugged clifftop, sunrise at the horizon, warm amber light refracting through glass, pale peach sky, cool blue shadows across fractured stone, wide three-quarter view, crisp architectural detail, photorealistic textures\n\nOUTPUT B\nglass greenhouse perched on a rugged windswept coastal cliff, slender steel framework and transparent panes, lush plants visible inside, grasses bent toward the sea, crashing waves far below, sunrise over the ocean horizon, warm golden light reflected across the glass, pale pink clouds and drifting sea mist, long shadows over weathered rock, wide three-quarter view, photorealistic architectural landscape photography\n\nCRITERION C01-OUTPUT (hard)\nThe response is exactly one unlabeled comma-separated visual-phrase prompt, with no negative prompt, notes, variants, or wrapper.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "39/48 C01-OUTPUT",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-7362402c52c0_C01-PROFILE",
+      "question": "REVIEW 39/48 — pair-7362402c52c0\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C01-PROFILE (hard)\nThe prompt expresses the requested greenhouse, cliff, wind, and sunrise in a compact SDXL-compatible phrase dialect without importing another profile's boilerplate.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "39/48 C01-PROFILE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-7362402c52c0_C01-STYLE",
+      "question": "REVIEW 39/48 — pair-7362402c52c0\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C01-STYLE (advisory)\nThe selected visual phrasing is concise, coherent, and immediately usable.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "39/48 C01-STYLE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-1ef5ecf71c64_C04-SCOPE",
+      "question": "REVIEW 40/48 — pair-1ef5ecf71c64\n\nREQUEST\nCreate a character-design prompt for an adult lighthouse keeper. Give her weathered olive skin, tightly curled gray hair, a navy cable-knit sweater, orange waterproof bib trousers, black rubber boots, and a brass whistle on a cord. Describe character design only. Return one prompt with no scene, pose, expression, action, camera, lighting, weather, or story.\n\nOUTPUT A\nAn adult female lighthouse keeper with weathered olive skin and tightly curled gray hair. Her clothing consists of a navy cable-knit sweater, orange waterproof bib trousers, and black rubber boots, with a brass whistle on a cord around her neck.\n\nOUTPUT B\nAn adult female lighthouse keeper with weathered olive skin, fine facial lines, and tightly curled gray hair. Her practical wardrobe consists of a navy cable-knit sweater with thick ribbed cuffs, orange waterproof bib trousers with broad adjustable straps and reinforced knees, sturdy black rubber boots with thick soles, and a small brass whistle on a simple cord around her neck.\n\nCRITERION C04-SCOPE (hard)\nThe prompt remains strictly within character appearance, clothing, and equipment, without scene or presentation expansion.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "40/48 C04-SCOPE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-1ef5ecf71c64_C04-DETAILS",
+      "question": "REVIEW 40/48 — pair-1ef5ecf71c64\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C04-DETAILS (hard)\nAll supplied physical, clothing, and equipment details remain attached to the single adult lighthouse keeper without incompatible invention.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "40/48 C04-DETAILS",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-11ea54b4181c_C14-ROUTE",
+      "question": "REVIEW 41/48 — pair-11ea54b4181c\n\nREQUEST\nWrite one Wan text-to-video prompt. A yellow paper boat drifts along a narrow rain-filled gutter beside a gray curb; raindrops ripple the water and push tiny leaves past it. The camera makes a slow low tracking move alongside the boat, then gently pulls back as it reaches a storm drain. Photorealistic macro cinematography, cool overcast light. Return one cohesive paragraph only, with no shot list, label, notes, variants, or generation.\n\nOUTPUT A\nA yellow paper boat drifts along a narrow rain-filled gutter beside a gray curb, gently bobbing as raindrops spread overlapping ripples and push tiny leaves past its folded hull. In one continuous move, the camera tracks slowly alongside at water level, then gently pulls back as the boat reaches a storm drain, revealing water streaming between the dark metal bars. Photorealistic macro cinematography, shallow depth of field, crisp paper folds, wet concrete textures, and soft reflections under cool overcast light.\n\nOUTPUT B\nA yellow paper boat drifts along a narrow rain-filled gutter beside a gray curb, its folded paper texture sharply visible as raindrops spread overlapping ripples across the water and push tiny leaves past it. In one continuous low, water-level tracking move, the camera slowly follows alongside the boat, then gently pulls back as it reaches a storm drain, widening the view of the gutter in photorealistic macro cinematography with shallow depth of field and cool, soft overcast light.\n\nCRITERION C14-ROUTE (hard)\nThe output follows the existing Wan route as one cohesive cinematic paragraph rather than a shot list or image prompt.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "41/48 C14-ROUTE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-11ea54b4181c_C14-MOTION",
+      "question": "REVIEW 41/48 — pair-11ea54b4181c\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C14-MOTION (hard)\nThe paragraph preserves subject motion, environmental motion, camera progression, scene, atmosphere, and stylization without invisible story or audio invention.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "41/48 C14-MOTION",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-11ea54b4181c_C14-STYLE",
+      "question": "REVIEW 41/48 — pair-11ea54b4181c\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C14-STYLE (advisory)\nCamera language and progression are clear without becoming muddy or repetitive.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "41/48 C14-STYLE",
+      "multi": false,
+      "recommended": null
+    }
+  ],
+  "response": {
+    "text": "User answers:\npair-7362402c52c0_C01-OUTPUT: Both pass\npair-7362402c52c0_C01-PROFILE: Both pass\npair-7362402c52c0_C01-STYLE: Both pass\npair-1ef5ecf71c64_C04-SCOPE: Both pass\npair-1ef5ecf71c64_C04-DETAILS: Both pass\npair-11ea54b4181c_C14-ROUTE: Both pass\npair-11ea54b4181c_C14-MOTION: Both pass\npair-11ea54b4181c_C14-STYLE: Both pass",
+    "details": {
+      "results": [
+        {
+          "id": "pair-7362402c52c0_C01-OUTPUT",
+          "question": "REVIEW 39/48 — pair-7362402c52c0\n\nREQUEST\nWrite one SDXL text-to-image prompt for a glass greenhouse on a windswept cliff at sunrise. Use comma-separated visual phrases only. Return only the prompt: no label, negative prompt, notes, variants, or explanation.\n\nOUTPUT A\nglass greenhouse on a windswept cliff, transparent panes in a slender steel frame, steep weathered rock face, exposed rugged clifftop, sunrise at the horizon, warm amber light refracting through glass, pale peach sky, cool blue shadows across fractured stone, wide three-quarter view, crisp architectural detail, photorealistic textures\n\nOUTPUT B\nglass greenhouse perched on a rugged windswept coastal cliff, slender steel framework and transparent panes, lush plants visible inside, grasses bent toward the sea, crashing waves far below, sunrise over the ocean horizon, warm golden light reflected across the glass, pale pink clouds and drifting sea mist, long shadows over weathered rock, wide three-quarter view, photorealistic architectural landscape photography\n\nCRITERION C01-OUTPUT (hard)\nThe response is exactly one unlabeled comma-separated visual-phrase prompt, with no negative prompt, notes, variants, or wrapper.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-7362402c52c0_C01-PROFILE",
+          "question": "REVIEW 39/48 — pair-7362402c52c0\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C01-PROFILE (hard)\nThe prompt expresses the requested greenhouse, cliff, wind, and sunrise in a compact SDXL-compatible phrase dialect without importing another profile's boilerplate.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-7362402c52c0_C01-STYLE",
+          "question": "REVIEW 39/48 — pair-7362402c52c0\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C01-STYLE (advisory)\nThe selected visual phrasing is concise, coherent, and immediately usable.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-1ef5ecf71c64_C04-SCOPE",
+          "question": "REVIEW 40/48 — pair-1ef5ecf71c64\n\nREQUEST\nCreate a character-design prompt for an adult lighthouse keeper. Give her weathered olive skin, tightly curled gray hair, a navy cable-knit sweater, orange waterproof bib trousers, black rubber boots, and a brass whistle on a cord. Describe character design only. Return one prompt with no scene, pose, expression, action, camera, lighting, weather, or story.\n\nOUTPUT A\nAn adult female lighthouse keeper with weathered olive skin and tightly curled gray hair. Her clothing consists of a navy cable-knit sweater, orange waterproof bib trousers, and black rubber boots, with a brass whistle on a cord around her neck.\n\nOUTPUT B\nAn adult female lighthouse keeper with weathered olive skin, fine facial lines, and tightly curled gray hair. Her practical wardrobe consists of a navy cable-knit sweater with thick ribbed cuffs, orange waterproof bib trousers with broad adjustable straps and reinforced knees, sturdy black rubber boots with thick soles, and a small brass whistle on a simple cord around her neck.\n\nCRITERION C04-SCOPE (hard)\nThe prompt remains strictly within character appearance, clothing, and equipment, without scene or presentation expansion.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-1ef5ecf71c64_C04-DETAILS",
+          "question": "REVIEW 40/48 — pair-1ef5ecf71c64\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C04-DETAILS (hard)\nAll supplied physical, clothing, and equipment details remain attached to the single adult lighthouse keeper without incompatible invention.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-11ea54b4181c_C14-ROUTE",
+          "question": "REVIEW 41/48 — pair-11ea54b4181c\n\nREQUEST\nWrite one Wan text-to-video prompt. A yellow paper boat drifts along a narrow rain-filled gutter beside a gray curb; raindrops ripple the water and push tiny leaves past it. The camera makes a slow low tracking move alongside the boat, then gently pulls back as it reaches a storm drain. Photorealistic macro cinematography, cool overcast light. Return one cohesive paragraph only, with no shot list, label, notes, variants, or generation.\n\nOUTPUT A\nA yellow paper boat drifts along a narrow rain-filled gutter beside a gray curb, gently bobbing as raindrops spread overlapping ripples and push tiny leaves past its folded hull. In one continuous move, the camera tracks slowly alongside at water level, then gently pulls back as the boat reaches a storm drain, revealing water streaming between the dark metal bars. Photorealistic macro cinematography, shallow depth of field, crisp paper folds, wet concrete textures, and soft reflections under cool overcast light.\n\nOUTPUT B\nA yellow paper boat drifts along a narrow rain-filled gutter beside a gray curb, its folded paper texture sharply visible as raindrops spread overlapping ripples across the water and push tiny leaves past it. In one continuous low, water-level tracking move, the camera slowly follows alongside the boat, then gently pulls back as it reaches a storm drain, widening the view of the gutter in photorealistic macro cinematography with shallow depth of field and cool, soft overcast light.\n\nCRITERION C14-ROUTE (hard)\nThe output follows the existing Wan route as one cohesive cinematic paragraph rather than a shot list or image prompt.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-11ea54b4181c_C14-MOTION",
+          "question": "REVIEW 41/48 — pair-11ea54b4181c\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C14-MOTION (hard)\nThe paragraph preserves subject motion, environmental motion, camera progression, scene, atmosphere, and stylization without invisible story or audio invention.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-11ea54b4181c_C14-STYLE",
+          "question": "REVIEW 41/48 — pair-11ea54b4181c\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C14-STYLE (advisory)\nCamera language and progression are clear without becoming muddy or repetitive.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        }
+      ]
+    }
+  },
+  "recorded_at": "2026-09-23T01:19:29.917Z"
+}

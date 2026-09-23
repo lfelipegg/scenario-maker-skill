@@ -1,0 +1,259 @@
+{
+  "batch": 13,
+  "start": 35,
+  "count": 3,
+  "questions": [
+    {
+      "id": "pair-c5ca8ec4afa3_C12-PROFILE",
+      "question": "REVIEW 36/48 — pair-c5ca8ec4afa3\n\nREQUEST\nWrite one Pony Diffusion V6 XL positive prompt for one adult woman with auburn hair, round glasses, a teal raincoat, and a folded red umbrella, standing at an empty tram stop at night. Use the safe anime source/rating dialect. Return only the comma-separated positive prompt: no negative prompt, notes, labels, or variants.\n\nOUTPUT A\nscore_9, score_8_up, score_7_up, source_anime, rating_safe, 1girl, solo, adult woman, auburn hair, round glasses, teal raincoat, holding a folded red umbrella at her side, standing, empty tram stop, night, vacant bench, glass shelter, tram tracks, wet pavement, streetlamp reflections, soft overhead lighting, full body, three-quarter view\n\nOUTPUT B\nscore_9, score_8_up, score_7_up, source_anime, rating_safe, 1girl, solo, adult woman, auburn hair, round glasses, teal raincoat, holding a folded red umbrella, standing at an otherwise empty tram stop, night\n\nCRITERION C12-PROFILE (hard)\nThe positive prompt starts with the existing Pony score/source/rating convention, uses source_anime and rating_safe, remains comma-separated, and avoids generic masterpiece/best quality boilerplate.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "36/48 C12-PROFILE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-c5ca8ec4afa3_C12-PRESERVE",
+      "question": "REVIEW 36/48 — pair-c5ca8ec4afa3\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C12-PRESERVE (hard)\nThe single adult subject retains every supplied attribute and prop, and the tram stop remains empty apart from her.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "36/48 C12-PRESERVE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-5a01becead20_C08-PRESERVE",
+      "question": "REVIEW 37/48 — pair-5a01becead20\n\nREQUEST\nExpand this brief into one ready-to-paste text-to-image prompt of at most 55 words: `A rust-red rowboat tied to a weathered dock on a still lake before dawn.` Return only the prompt. Do not add people, buildings, other boats, animals, or active weather.\n\nOUTPUT A\nA rust-red rowboat with chipped paint is tied by rope to a weathered dock on a still lake before dawn. Cool blue light reveals rough wood grain and the boat’s muted reflection; the dock extends diagonally into the frame, surrounded by smooth, unbroken water beneath a pale, empty sky.\n\nOUTPUT B\nA rust-red rowboat with chipped paint rests on a glass-still lake before dawn, secured by a coarse rope to a weathered wooden dock. Low shoreline framing places silver-gray dock planks diagonally across the foreground; cool indigo light reveals wood grain and crisp reflections beneath a faintly lavender horizon. Photorealistic, restrained colors.\n\nCRITERION C08-PRESERVE (hard)\nThe expansion preserves every supplied scene fact and adds no forbidden subject, prop, or active weather.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "37/48 C08-PRESERVE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-5a01becead20_C08-STYLE",
+      "question": "REVIEW 37/48 — pair-5a01becead20\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C08-STYLE (advisory)\nWithin the limit, the prompt adds useful visible detail rather than padding or hidden story.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "37/48 C08-STYLE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-ec16c305a3a7_C06-TEXT-BINDING",
+      "question": "REVIEW 38/48 — pair-ec16c305a3a7\n\nREQUEST\nWrite one text-to-image prompt for a small neighborhood bakery at dusk. A rectangular sign centered above the door must visibly read exactly `OPEN` in uppercase, with no other visible lettering anywhere. Return only the prompt.\n\nOUTPUT A\nA photorealistic, straight-on view of a small neighborhood bakery at dusk, with warm amber windows displaying bread and pastries, a brick facade, and a quiet sidewalk beneath a blue-violet sky. A fully visible rectangular sign centered directly above the door reads exactly “OPEN” in crisp, high-contrast uppercase letters; this sign is the only visible lettering anywhere, with no other words, numbers, logos, labels, or watermarks.\n\nOUTPUT B\nA small neighborhood bakery at dusk, viewed straight on, with a warm amber interior glow contrasting against soft blue evening light. A rectangular sign centered directly above the door clearly displays exactly “OPEN” in crisp, uppercase letters, fully visible and unobstructed; no other visible lettering, words, numbers, logos, or watermarks appear anywhere in the image.\n\nCRITERION C06-TEXT-BINDING (hard)\nThe prompt clearly binds exact uppercase OPEN to the rectangular sign centered above the bakery door and excludes other visible lettering.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "A and B satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both fail this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Leave both not-run for this criterion.",
+          "preview": null
+        }
+      ],
+      "header": "38/48 C06-TEXT-BINDING",
+      "multi": false,
+      "recommended": null
+    }
+  ],
+  "response": {
+    "text": "User answers:\npair-c5ca8ec4afa3_C12-PROFILE: Both pass\npair-c5ca8ec4afa3_C12-PRESERVE: \"B cleanly preserves the required woman, auburn hair, round glasses, teal raincoat, folded red umbrella, and explicitly keeps her standing at an otherwise empty tram stop at night.\n\nA preserves those required facts but adds several independent scene/presentation details: vacant bench, glass shelter, tram tracks, wet pavement, streetlamp reflections, lighting, and framing. Under the linked create→Balanced rule, those exceed the allowed invention boundary for this preservation criterion.\"\npair-5a01becead20_C08-PRESERVE: Both pass\npair-5a01becead20_C08-STYLE: Both pass\npair-ec16c305a3a7_C06-TEXT-BINDING: Both pass",
+    "details": {
+      "results": [
+        {
+          "id": "pair-c5ca8ec4afa3_C12-PROFILE",
+          "question": "REVIEW 36/48 — pair-c5ca8ec4afa3\n\nREQUEST\nWrite one Pony Diffusion V6 XL positive prompt for one adult woman with auburn hair, round glasses, a teal raincoat, and a folded red umbrella, standing at an empty tram stop at night. Use the safe anime source/rating dialect. Return only the comma-separated positive prompt: no negative prompt, notes, labels, or variants.\n\nOUTPUT A\nscore_9, score_8_up, score_7_up, source_anime, rating_safe, 1girl, solo, adult woman, auburn hair, round glasses, teal raincoat, holding a folded red umbrella at her side, standing, empty tram stop, night, vacant bench, glass shelter, tram tracks, wet pavement, streetlamp reflections, soft overhead lighting, full body, three-quarter view\n\nOUTPUT B\nscore_9, score_8_up, score_7_up, source_anime, rating_safe, 1girl, solo, adult woman, auburn hair, round glasses, teal raincoat, holding a folded red umbrella, standing at an otherwise empty tram stop, night\n\nCRITERION C12-PROFILE (hard)\nThe positive prompt starts with the existing Pony score/source/rating convention, uses source_anime and rating_safe, remains comma-separated, and avoids generic masterpiece/best quality boilerplate.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-c5ca8ec4afa3_C12-PRESERVE",
+          "question": "REVIEW 36/48 — pair-c5ca8ec4afa3\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C12-PRESERVE (hard)\nThe single adult subject retains every supplied attribute and prop, and the tram stop remains empty apart from her.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [],
+          "customInput": "B cleanly preserves the required woman, auburn hair, round glasses, teal raincoat, folded red umbrella, and explicitly keeps her standing at an otherwise empty tram stop at night.\n\nA preserves those required facts but adds several independent scene/presentation details: vacant bench, glass shelter, tram tracks, wet pavement, streetlamp reflections, lighting, and framing. Under the linked create→Balanced rule, those exceed the allowed invention boundary for this preservation criterion."
+        },
+        {
+          "id": "pair-5a01becead20_C08-PRESERVE",
+          "question": "REVIEW 37/48 — pair-5a01becead20\n\nREQUEST\nExpand this brief into one ready-to-paste text-to-image prompt of at most 55 words: `A rust-red rowboat tied to a weathered dock on a still lake before dawn.` Return only the prompt. Do not add people, buildings, other boats, animals, or active weather.\n\nOUTPUT A\nA rust-red rowboat with chipped paint is tied by rope to a weathered dock on a still lake before dawn. Cool blue light reveals rough wood grain and the boat’s muted reflection; the dock extends diagonally into the frame, surrounded by smooth, unbroken water beneath a pale, empty sky.\n\nOUTPUT B\nA rust-red rowboat with chipped paint rests on a glass-still lake before dawn, secured by a coarse rope to a weathered wooden dock. Low shoreline framing places silver-gray dock planks diagonally across the foreground; cool indigo light reveals wood grain and crisp reflections beneath a faintly lavender horizon. Photorealistic, restrained colors.\n\nCRITERION C08-PRESERVE (hard)\nThe expansion preserves every supplied scene fact and adds no forbidden subject, prop, or active weather.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-5a01becead20_C08-STYLE",
+          "question": "REVIEW 37/48 — pair-5a01becead20\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C08-STYLE (advisory)\nWithin the limit, the prompt adds useful visible detail rather than padding or hidden story.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-ec16c305a3a7_C06-TEXT-BINDING",
+          "question": "REVIEW 38/48 — pair-ec16c305a3a7\n\nREQUEST\nWrite one text-to-image prompt for a small neighborhood bakery at dusk. A rectangular sign centered above the door must visibly read exactly `OPEN` in uppercase, with no other visible lettering anywhere. Return only the prompt.\n\nOUTPUT A\nA photorealistic, straight-on view of a small neighborhood bakery at dusk, with warm amber windows displaying bread and pastries, a brick facade, and a quiet sidewalk beneath a blue-violet sky. A fully visible rectangular sign centered directly above the door reads exactly “OPEN” in crisp, high-contrast uppercase letters; this sign is the only visible lettering anywhere, with no other words, numbers, logos, labels, or watermarks.\n\nOUTPUT B\nA small neighborhood bakery at dusk, viewed straight on, with a warm amber interior glow contrasting against soft blue evening light. A rectangular sign centered directly above the door clearly displays exactly “OPEN” in crisp, uppercase letters, fully visible and unobstructed; no other visible lettering, words, numbers, logos, or watermarks appear anywhere in the image.\n\nCRITERION C06-TEXT-BINDING (hard)\nThe prompt clearly binds exact uppercase OPEN to the rectangular sign centered above the bakery door and excludes other visible lettering.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        }
+      ]
+    }
+  },
+  "recorded_at": "2026-09-23T01:18:07.699Z"
+}
