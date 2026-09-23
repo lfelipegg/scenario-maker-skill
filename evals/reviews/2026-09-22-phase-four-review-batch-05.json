@@ -1,0 +1,407 @@
+{
+  "batch": 5,
+  "start": 12,
+  "count": 3,
+  "questions": [
+    {
+      "id": "pair-8857b833759c_C15-ROUTE",
+      "question": "REVIEW 13/48 — pair-8857b833759c\n\nREQUEST\nInspect the supplied source image and write one image-to-video prompt that starts from it. Preserve its simple synthetic subject shapes, colors, initial composition, and flat graphic style. Animate only subtle water ripples and a slow cloud drift, with a very gentle camera push-in. Apart from these authorized temporal changes, do not add, remove, recolor, or reposition objects. Return only the prompt, with no label, notes, variants, or generation.\n\nFIXTURE\n[\n  {\n    \"availability\": \"available binary fixture; inspect the repository path\",\n    \"bytes\": 522,\n    \"path\": \"case15-geometric-source.png\",\n    \"sha256\": \"96d3453296fdd1239b21aeda140412632b643d96cb3980986739da4470bd8ded\",\n    \"text\": null\n  }\n]\n\nOUTPUT A\nStart from the supplied image exactly: a geometric sailboat with a red hull, dark mast, white left sail and yellow right sail on flat blue water beneath a pale blue sky and single white cloud. Animate only subtle water ripples and slow cloud drift, with a very gentle camera push-in. Keep the boat motionless and preserve all shapes, colors, initial composition and flat graphic edges; no additions, removals, recoloring, deformation or object repositioning beyond the authorized motion.\n\nOUTPUT B\nStart from the supplied image, preserving its initial composition, simple geometric shapes, flat colors, and graphic style: the red sailboat hull, dark mast, white left sail, yellow right sail, blue water with three pale ripple strokes, pale blue sky, and single white cloud at upper right. Animate only subtle movement in the existing water ripples and a slow drift of the cloud, retaining its shape. Apply a very gentle camera push-in. Keep the boat and sails motionless. Apart from these authorized changes, do not add, remove, recolor, reshape, or reposition anything; introduce no textures, shading, or realistic detail.\n\nCRITERION C15-ROUTE (hard)\nThe response is an image-to-video prompt grounded in the supplied image as the first frame, not a text-to-video scene re-creation.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "13/48 C15-ROUTE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-8857b833759c_C15-PRESERVE",
+      "question": "REVIEW 13/48 — pair-8857b833759c\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C15-PRESERVE (hard)\nThe prompt accurately preserves the fixture's visible synthetic shapes, colors, composition, and flat style while limiting changes to the requested motions and gentle push-in.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "13/48 C15-PRESERVE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-6991b1afacae_C05-OUTPUT",
+      "question": "REVIEW 14/48 — pair-6991b1afacae\n\nREQUEST\nWrite one text-to-image prompt for an empty sunlit stone courtyard with a dry fountain, ivy on the walls, and closed wooden doors. No people, animals, statues, silhouettes, or reflections of figures may appear. Return only the prompt and do not add a negative-prompt field.\n\nOUTPUT A\nAn empty stone courtyard bathed in warm sunlight, with a plain dry fountain and its bare, waterless basin. Green ivy climbs the weathered stone walls, and every wooden door is fully closed. Sunlight reveals rough masonry and wood grain, casting crisp architectural shadows across the paving. The entire scene is unoccupied, with no people, animals, statues, silhouettes, or reflections of figures anywhere in view.\n\nOUTPUT B\nA wide, eye-level architectural photograph of an empty sunlit stone courtyard, centered on a plain, dry fountain with a visibly empty basin, surrounded by ivy-covered walls and closed wooden doors. Warm light reveals weathered stone textures and casts crisp botanical shadows across the paving; the entire scene contains only architecture and vegetation, with no people, animals, statues, silhouettes, or reflections of figures.\n\nCRITERION C05-OUTPUT (hard)\nThe response is one prompt only and does not create an unsolicited negative-prompt field.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "14/48 C05-OUTPUT",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-6991b1afacae_C05-EXCLUSION",
+      "question": "REVIEW 14/48 — pair-6991b1afacae\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C05-EXCLUSION (hard)\nThe positive scene remains an empty courtyard and does not introduce any excluded living or figure-like subject directly or through optional detail.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "14/48 C05-EXCLUSION",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-6991b1afacae_C05-STYLE",
+      "question": "REVIEW 14/48 — pair-6991b1afacae\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C05-STYLE (advisory)\nThe exclusion is communicated naturally without overwhelming the requested visual scene.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "14/48 C05-STYLE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-2bf690d5f93d_C14-ROUTE",
+      "question": "REVIEW 15/48 — pair-2bf690d5f93d\n\nREQUEST\nWrite one Wan text-to-video prompt. A yellow paper boat drifts along a narrow rain-filled gutter beside a gray curb; raindrops ripple the water and push tiny leaves past it. The camera makes a slow low tracking move alongside the boat, then gently pulls back as it reaches a storm drain. Photorealistic macro cinematography, cool overcast light. Return one cohesive paragraph only, with no shot list, label, notes, variants, or generation.\n\nOUTPUT A\nA yellow paper boat drifts and gently bobs along a narrow rain-filled gutter beside a gray concrete curb, while falling raindrops spread overlapping ripples and nudge tiny leaves past its folded hull. In one continuous shot, the camera tracks slowly alongside at water level, then gently pulls back as the boat reaches a storm drain, revealing water streaming between the dark metal bars. Photorealistic macro cinematography, shallow depth of field, crisp paper creases, wet concrete textures, and cool overcast light reflected on the moving water.\n\nOUTPUT B\nA yellow paper boat drifts along a narrow rain-filled gutter beside a gray curb, its folded paper texture sharply detailed. Raindrops strike the water, spreading overlapping ripples that push tiny leaves past the boat. The camera tracks slowly alongside at water level, then gently pulls back as the boat reaches a storm drain. Photorealistic macro cinematography with shallow depth of field and cool, diffuse overcast light reflecting softly across the rainwater.\n\nCRITERION C14-ROUTE (hard)\nThe output follows the existing Wan route as one cohesive cinematic paragraph rather than a shot list or image prompt.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "15/48 C14-ROUTE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-2bf690d5f93d_C14-MOTION",
+      "question": "REVIEW 15/48 — pair-2bf690d5f93d\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C14-MOTION (hard)\nThe paragraph preserves subject motion, environmental motion, camera progression, scene, atmosphere, and stylization without invisible story or audio invention.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "15/48 C14-MOTION",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-2bf690d5f93d_C14-STYLE",
+      "question": "REVIEW 15/48 — pair-2bf690d5f93d\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C14-STYLE (advisory)\nCamera language and progression are clear without becoming muddy or repetitive.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "15/48 C14-STYLE",
+      "multi": false,
+      "recommended": null
+    }
+  ],
+  "response": {
+    "text": "User answers:\npair-8857b833759c_C15-ROUTE: Both pass\npair-8857b833759c_C15-PRESERVE: Both pass\npair-6991b1afacae_C05-OUTPUT: Both pass\npair-6991b1afacae_C05-EXCLUSION: Both pass\npair-6991b1afacae_C05-STYLE: Both pass\npair-2bf690d5f93d_C14-ROUTE: Both pass\npair-2bf690d5f93d_C14-MOTION: Both pass\npair-2bf690d5f93d_C14-STYLE: Both pass",
+    "details": {
+      "results": [
+        {
+          "id": "pair-8857b833759c_C15-ROUTE",
+          "question": "REVIEW 13/48 — pair-8857b833759c\n\nREQUEST\nInspect the supplied source image and write one image-to-video prompt that starts from it. Preserve its simple synthetic subject shapes, colors, initial composition, and flat graphic style. Animate only subtle water ripples and a slow cloud drift, with a very gentle camera push-in. Apart from these authorized temporal changes, do not add, remove, recolor, or reposition objects. Return only the prompt, with no label, notes, variants, or generation.\n\nFIXTURE\n[\n  {\n    \"availability\": \"available binary fixture; inspect the repository path\",\n    \"bytes\": 522,\n    \"path\": \"case15-geometric-source.png\",\n    \"sha256\": \"96d3453296fdd1239b21aeda140412632b643d96cb3980986739da4470bd8ded\",\n    \"text\": null\n  }\n]\n\nOUTPUT A\nStart from the supplied image exactly: a geometric sailboat with a red hull, dark mast, white left sail and yellow right sail on flat blue water beneath a pale blue sky and single white cloud. Animate only subtle water ripples and slow cloud drift, with a very gentle camera push-in. Keep the boat motionless and preserve all shapes, colors, initial composition and flat graphic edges; no additions, removals, recoloring, deformation or object repositioning beyond the authorized motion.\n\nOUTPUT B\nStart from the supplied image, preserving its initial composition, simple geometric shapes, flat colors, and graphic style: the red sailboat hull, dark mast, white left sail, yellow right sail, blue water with three pale ripple strokes, pale blue sky, and single white cloud at upper right. Animate only subtle movement in the existing water ripples and a slow drift of the cloud, retaining its shape. Apply a very gentle camera push-in. Keep the boat and sails motionless. Apart from these authorized changes, do not add, remove, recolor, reshape, or reposition anything; introduce no textures, shading, or realistic detail.\n\nCRITERION C15-ROUTE (hard)\nThe response is an image-to-video prompt grounded in the supplied image as the first frame, not a text-to-video scene re-creation.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-8857b833759c_C15-PRESERVE",
+          "question": "REVIEW 13/48 — pair-8857b833759c\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C15-PRESERVE (hard)\nThe prompt accurately preserves the fixture's visible synthetic shapes, colors, composition, and flat style while limiting changes to the requested motions and gentle push-in.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-6991b1afacae_C05-OUTPUT",
+          "question": "REVIEW 14/48 — pair-6991b1afacae\n\nREQUEST\nWrite one text-to-image prompt for an empty sunlit stone courtyard with a dry fountain, ivy on the walls, and closed wooden doors. No people, animals, statues, silhouettes, or reflections of figures may appear. Return only the prompt and do not add a negative-prompt field.\n\nOUTPUT A\nAn empty stone courtyard bathed in warm sunlight, with a plain dry fountain and its bare, waterless basin. Green ivy climbs the weathered stone walls, and every wooden door is fully closed. Sunlight reveals rough masonry and wood grain, casting crisp architectural shadows across the paving. The entire scene is unoccupied, with no people, animals, statues, silhouettes, or reflections of figures anywhere in view.\n\nOUTPUT B\nA wide, eye-level architectural photograph of an empty sunlit stone courtyard, centered on a plain, dry fountain with a visibly empty basin, surrounded by ivy-covered walls and closed wooden doors. Warm light reveals weathered stone textures and casts crisp botanical shadows across the paving; the entire scene contains only architecture and vegetation, with no people, animals, statues, silhouettes, or reflections of figures.\n\nCRITERION C05-OUTPUT (hard)\nThe response is one prompt only and does not create an unsolicited negative-prompt field.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-6991b1afacae_C05-EXCLUSION",
+          "question": "REVIEW 14/48 — pair-6991b1afacae\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C05-EXCLUSION (hard)\nThe positive scene remains an empty courtyard and does not introduce any excluded living or figure-like subject directly or through optional detail.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-6991b1afacae_C05-STYLE",
+          "question": "REVIEW 14/48 — pair-6991b1afacae\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C05-STYLE (advisory)\nThe exclusion is communicated naturally without overwhelming the requested visual scene.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-2bf690d5f93d_C14-ROUTE",
+          "question": "REVIEW 15/48 — pair-2bf690d5f93d\n\nREQUEST\nWrite one Wan text-to-video prompt. A yellow paper boat drifts along a narrow rain-filled gutter beside a gray curb; raindrops ripple the water and push tiny leaves past it. The camera makes a slow low tracking move alongside the boat, then gently pulls back as it reaches a storm drain. Photorealistic macro cinematography, cool overcast light. Return one cohesive paragraph only, with no shot list, label, notes, variants, or generation.\n\nOUTPUT A\nA yellow paper boat drifts and gently bobs along a narrow rain-filled gutter beside a gray concrete curb, while falling raindrops spread overlapping ripples and nudge tiny leaves past its folded hull. In one continuous shot, the camera tracks slowly alongside at water level, then gently pulls back as the boat reaches a storm drain, revealing water streaming between the dark metal bars. Photorealistic macro cinematography, shallow depth of field, crisp paper creases, wet concrete textures, and cool overcast light reflected on the moving water.\n\nOUTPUT B\nA yellow paper boat drifts along a narrow rain-filled gutter beside a gray curb, its folded paper texture sharply detailed. Raindrops strike the water, spreading overlapping ripples that push tiny leaves past the boat. The camera tracks slowly alongside at water level, then gently pulls back as the boat reaches a storm drain. Photorealistic macro cinematography with shallow depth of field and cool, diffuse overcast light reflecting softly across the rainwater.\n\nCRITERION C14-ROUTE (hard)\nThe output follows the existing Wan route as one cohesive cinematic paragraph rather than a shot list or image prompt.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-2bf690d5f93d_C14-MOTION",
+          "question": "REVIEW 15/48 — pair-2bf690d5f93d\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C14-MOTION (hard)\nThe paragraph preserves subject motion, environmental motion, camera progression, scene, atmosphere, and stylization without invisible story or audio invention.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-2bf690d5f93d_C14-STYLE",
+          "question": "REVIEW 15/48 — pair-2bf690d5f93d\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C14-STYLE (advisory)\nCamera language and progression are clear without becoming muddy or repetitive.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        }
+      ]
+    }
+  },
+  "recorded_at": "2026-09-23T02:12:10.378Z"
+}

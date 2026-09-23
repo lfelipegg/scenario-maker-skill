@@ -1,0 +1,15 @@
+### 1. Fidelity to the brief
+- **SDXL prompt:** Explicitly preserves every required element: green bicycle, leaning against a white brick wall, and soft overcast daylight. Eye-level framing, a medium shot, and a restrained palette are additions, but do not inherently contradict the brief.
+- **Krea 2 prompt:** Also preserves the core scene. “Rests against” reasonably conveys leaning, though it is slightly less explicit about the bicycle’s tilt. “Soft, even” is consistent with overcast daylight. Eye-level framing and a restrained palette are additional choices.
+
+### 2. Model-appropriate expression
+- **SDXL prompt:** Clear, compact, and concrete. Its comma-separated phrases are workable, although the selected skill’s SDXL guidance favors natural descriptive prose over tag-like phrasing. This is a modest stylistic mismatch, not a fundamental problem.
+- **Krea 2 prompt:** A cohesive natural-language sentence with clear subject–setting relationships. The selected skill has no Krea 2-specific profile, so its expression can be assessed as sound general image prompting, but not verified as specifically optimized for Krea 2.
+
+### 3. Likely ambiguity
+- **SDXL prompt:** “Medium shot” provides a framing cue but does not reliably specify whether the entire bicycle should remain visible; cropping is possible. “Leaning against” makes the intended physical relationship comparatively explicit.
+- **Krea 2 prompt:** Specifies viewing height but not shot distance, leaving more latitude for subject size and surrounding wall space. “Rests against” leaves slightly more room for interpretation of the bicycle’s posture.
+- **Both:** “Restrained palette” could encourage a muted green, though the brief does not specify saturation. Neither fixes the bicycle’s orientation or contact point with the wall; these are ordinary open details rather than contradictions.
+
+### Overall comparison
+Both are faithful and low in ambiguity for this simple brief. **SDXL is more explicit about posture and framing; Krea 2 is more fluid in prose but leaves shot distance open.** Wording alone does not establish which model would render the scene more faithfully.

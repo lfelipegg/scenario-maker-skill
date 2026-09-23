@@ -1,0 +1,85 @@
+{
+  "case_id": "p4-dev-10",
+  "attempt": 1,
+  "revision": "worktree-sha256-550085c5e6d4cbd793ba7553fbb8ec724db7375c081ec063a8e4107130deec07",
+  "started_at": "2026-09-23T01:46:45.260833+00:00",
+  "elapsed_seconds": 53.824,
+  "command": [
+    "omp",
+    "--cwd",
+    "/tmp/scenario-phase-four-probes-hijmou5f/candidate/p4-dev-10/attempt-1",
+    "--print",
+    "--mode",
+    "json",
+    "--model",
+    "openai-codex/gpt-6-astra",
+    "--thinking",
+    "high",
+    "--no-session",
+    "--no-title",
+    "--no-prewalk",
+    "--no-skills",
+    "--no-rules",
+    "--no-extensions",
+    "--no-lsp",
+    "--no-pty",
+    "--tools",
+    "read,grep,glob,bash,write",
+    "--approval-mode",
+    "yolo",
+    "--config",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/omp-config.json",
+    "--system-prompt",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/generator-system.txt",
+    "--extension",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/capture.ts",
+    "--max-time",
+    "300s",
+    "Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.\n\nCompare local Krea 2 RAW/Turbo with hosted Krea 2 Medium/Large/Medium Turbo for prompt syntax, negative conditioning, Creativity controls, and prompt enhancement. Keep this as analysis."
+  ],
+  "cwd": "/tmp/scenario-phase-four-probes-hijmou5f/candidate/p4-dev-10/attempt-1",
+  "execution": {
+    "status": "completed",
+    "exit_code": 0,
+    "error": null,
+    "model_errors": [],
+    "malformed_trace_lines": []
+  },
+  "raw": {
+    "output": "output.txt",
+    "partial_output": null,
+    "trace": "trace.jsonl",
+    "stderr": "stderr.txt",
+    "context": "context.jsonl"
+  },
+  "trace_complete": true,
+  "artifacts": [],
+  "observed_context": [
+    {
+      "type": "eval_context",
+      "systemPrompt": "You are a prompt-writing assistant executing the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md. Read that file and only its applicable references. Resolve its reference and script paths relative to ./selected-skill, not an installed skill. Do not discover or load other skills, repository instructions, past sessions, evaluator files, or web sources.\n\nOnly local read, grep, glob, bash, and write tools are available. Use them for the selected skill's references, local lookup/scripts, supplied fixtures, and requested workspace-local text exports. Keep writes within this fresh workspace. Do not edit the selected skill, execute image/video generation or frame extraction, delegate, switch models, access the network, or inspect credentials. This is prompt writing, not generation. If clarification is necessary, ask in your final response; this non-interactive run cannot receive an answer.\n\nApply the selected skill to the user's request. Do not discuss evaluation or scoring. The workspace starts with no prior conversation or generated outputs.\n",
+      "cwd": "/tmp/scenario-phase-four-probes-hijmou5f/candidate/p4-dev-10/attempt-1",
+      "model": {
+        "provider": "openai-codex",
+        "id": "gpt-6-astra",
+        "name": "GPT-6-Astra"
+      },
+      "thinking": "high",
+      "tools": [
+        "read",
+        "grep",
+        "glob",
+        "bash",
+        "write"
+      ]
+    }
+  ],
+  "raw_checksums": {
+    "request.txt": "15a5b82d686d529e4227883f23018258326185297acc31600b92e88973518422",
+    "output.txt": "b120f4e39f1d466ec30f4a460f3d3ec6507d2023094deafb1181289c48ae7e4a",
+    "context.jsonl": "74f9d0547f7f97988ad66dd80da100f0fe25259c316229e81dffe1c53fd10599",
+    "trace.jsonl": "c445a5a42e299f137246ca1117e225706be1ddf3b52ce45dce8c84551a3fa799",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "comparison_side": "candidate"
+}

@@ -1,0 +1,10 @@
+{
+  "attempts": 2,
+  "completed": 2,
+  "errors": 0,
+  "timeouts": 0,
+  "outputs": 2,
+  "trace_complete": 2,
+  "semantic_review": "not-run",
+  "acceptance": "not assessed"
+}

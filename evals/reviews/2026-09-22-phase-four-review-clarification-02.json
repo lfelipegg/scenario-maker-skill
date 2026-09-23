@@ -1,0 +1,15 @@
+{
+  "recorded_at": "2026-09-23T02:26:40.005Z",
+  "question_id": "pair-3b69db926630_C10-ANALYSIS_confirmation",
+  "original_batch": "evals/reviews/2026-09-22-phase-four-review-batch-15.json",
+  "criterion_decision": "pair-3b69db926630_C10-ANALYSIS",
+  "question": "Map the Partial advisory judgment for A to passed, failed, or not-run; B remains passed.",
+  "selected_option": "A passed",
+  "human": true,
+  "reviewer": "human:maintainer",
+  "resolved_states": {
+    "A": "passed",
+    "B": "passed"
+  },
+  "rationale": "Maintainer explicitly selected A passed after the noted model-profile errors were restated. Original caveat remains retained."
+}

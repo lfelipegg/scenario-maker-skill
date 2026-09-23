@@ -1,0 +1,407 @@
+{
+  "batch": 16,
+  "start": 45,
+  "count": 3,
+  "questions": [
+    {
+      "id": "pair-e7b85aad8aee_C01-OUTPUT",
+      "question": "REVIEW 46/48 — pair-e7b85aad8aee\n\nREQUEST\nWrite one SDXL text-to-image prompt for a glass greenhouse on a windswept cliff at sunrise. Use comma-separated visual phrases only. Return only the prompt: no label, negative prompt, notes, variants, or explanation.\n\nOUTPUT A\nglass greenhouse on a windswept cliff at sunrise, transparent panes in slender weathered metal frames, steep rugged rock face, low golden sun on the horizon, amber reflections across the glass roof, pale peach sky, cool blue shadows in the cliff crevices, wide composition emphasizing the exposed cliff edge\n\nOUTPUT B\nglass greenhouse on a windswept coastal cliff at sunrise, slender steel framework, transparent panes glowing with golden reflections, lush plants visible inside, cliffside grasses bent by strong wind, white surf far below, drifting sea mist, low amber sun on the horizon, warm highlights against cool blue shadows, wide three-quarter view, photorealistic architectural photography\n\nCRITERION C01-OUTPUT (hard)\nThe response is exactly one unlabeled comma-separated visual-phrase prompt, with no negative prompt, notes, variants, or wrapper.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "46/48 C01-OUTPUT",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-e7b85aad8aee_C01-PROFILE",
+      "question": "REVIEW 46/48 — pair-e7b85aad8aee\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C01-PROFILE (hard)\nThe prompt expresses the requested greenhouse, cliff, wind, and sunrise in a compact SDXL-compatible phrase dialect without importing another profile's boilerplate.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "46/48 C01-PROFILE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-e7b85aad8aee_C01-STYLE",
+      "question": "REVIEW 46/48 — pair-e7b85aad8aee\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C01-STYLE (advisory)\nThe selected visual phrasing is concise, coherent, and immediately usable.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "46/48 C01-STYLE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-1b286d06b3ed_C02-OUTPUT",
+      "question": "REVIEW 47/48 — pair-1b286d06b3ed\n\nREQUEST\nAdapt this supplied prompt for local Krea 2 RAW/Turbo. Preserve every scene fact and return only one ready-to-paste prompt with no label, negative prompt, notes, variants, or explanation. Source prompt: A red ceramic teapot sits image-left of a white cup on a dark walnut table. Morning light enters from the right, and the plain cream wall behind them is empty.\n\nOUTPUT A\nA red ceramic teapot sits to the left of a white cup as viewed in the image, both resting on a dark walnut table. Morning light enters from the right, illuminating the objects against a plain, empty cream wall behind them.\n\nOUTPUT B\nA red ceramic teapot sits on a dark walnut table, to the left of a white cup as viewed in the image. Morning light enters from the right. Behind the teapot and cup, a plain cream wall remains empty.\n\nCRITERION C02-OUTPUT (hard)\nThe response is exactly one unlabeled prompt, without a package, negative field, notes, variants, or explanation.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "47/48 C02-OUTPUT",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-1b286d06b3ed_C02-PRESERVE",
+      "question": "REVIEW 47/48 — pair-1b286d06b3ed\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C02-PRESERVE (hard)\nThe adaptation preserves the two objects, their colors and image-left relationship, table, right-side morning light, and empty cream wall without adding visual facts.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "47/48 C02-PRESERVE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-1b286d06b3ed_C02-PROFILE",
+      "question": "REVIEW 47/48 — pair-1b286d06b3ed\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C02-PROFILE (hard)\nThe result uses a coherent natural-language paragraph suitable for the selected local Krea 2 RAW/Turbo contract; detail does not become invention.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "47/48 C02-PROFILE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-3a6902812cff_C10-ROUTING",
+      "question": "REVIEW 48/48 — pair-3a6902812cff\n\nREQUEST\nCompare these two supplied prompts for fidelity to the same brief, model-appropriate expression, and likely ambiguity. Keep the answer as a labeled comparison; do not merge, rewrite, or replace either prompt and do not produce a third prompt. Brief: a green bicycle leaning against a white brick wall in soft overcast daylight. SDXL prompt: `green bicycle leaning against a white brick wall, soft overcast daylight, eye-level medium shot, restrained color palette`. Krea 2 prompt: `A green bicycle rests against a white brick wall under soft, even overcast daylight, framed at eye level with a restrained palette.`\n\nOUTPUT A\n### 1. Fidelity to the brief\n- **SDXL prompt:** Explicitly preserves every required element: green bicycle, leaning against a white brick wall, and soft overcast daylight. Eye-level framing, a medium shot, and a restrained palette are additions, but do not inherently contradict the brief.\n- **Krea 2 prompt:** Also preserves the core scene. “Rests against” reasonably conveys leaning, though it is slightly less explicit about the bicycle’s tilt. “Soft, even” is consistent with overcast daylight. Eye-level framing and a restrained palette are additional choices.\n\n### 2. Model-appropriate expression\n- **SDXL prompt:** Clear, compact, and concrete. Its comma-separated phrases are workable, although the selected skill’s SDXL guidance favors natural descriptive prose over tag-like phrasing. This is a modest stylistic mismatch, not a fundamental problem.\n- **Krea 2 prompt:** A cohesive natural-language sentence with clear subject–setting relationships. The selected skill has no Krea 2-specific profile, so its expression can be assessed as sound general image prompting, but not verified as specifically optimized for Krea 2.\n\n### 3. Likely ambiguity\n- **SDXL prompt:** “Medium shot” provides a framing cue but does not reliably specify whether the entire bicycle should remain visible; cropping is possible. “Leaning against” makes the intended physical relationship comparatively explicit.\n- **Krea 2 prompt:** Specifies viewing height but not shot distance, leaving more latitude for subject size and surrounding wall space. “Rests against” leaves slightly more room for interpretation of the bicycle’s posture.\n- **Both:** “Restrained palette” could encourage a muted green, though the brief does not specify saturation. Neither fixes the bicycle’s orientation or contact point with the wall; these are ordinary open details rather than contradictions.\n\n### Overall comparison\nBoth are faithful and low in ambiguity for this simple brief. **SDXL is more explicit about posture and framing; Krea 2 is more fluid in prose but leaves shot distance open.** Wording alone does not establish which model would render the scene more faithfully.\n\nOUTPUT B\n| Criterion | SDXL prompt | Krea 2 prompt |\n|---|---|---|\n| **Fidelity to the brief** | Explicitly preserves the green bicycle, its **leaning** relationship to the white brick wall, and soft overcast daylight. Adds eye-level medium framing and a restrained color palette, neither specified in the brief. | Preserves the subject, colors, wall material, and lighting. “Rests against” conveys support/contact but is slightly less explicit about leaning. Adds eye-level framing and a restrained palette; “even” is a compatible elaboration of the overcast lighting. |\n| **Model-appropriate expression** | Compact, comma-separated ordinary-English phrases fit SDXL’s recommended presentation well. The bicycle–wall relationship stays intact rather than becoming disconnected keywords. | The cohesive natural-language sentence fits local Krea 2 RAW/Turbo guidance well. Its brevity is appropriate for this sparse scene; a preference for detailed prose does not require padding. |\n| **Likely ambiguity** | “Medium shot” gives some framing guidance but does not establish whether the entire bicycle is visible. “Restrained color palette” could mean limited hues or muted saturation, potentially affecting the green’s vividness. | “Rests against” leaves the bicycle’s precise posture slightly more open. Eye level specifies viewpoint, not shot distance, so framing is less constrained than in the SDXL prompt. “Restrained palette” carries the same color-treatment ambiguity. |\n\n**Overall comparison:** Both communicate the same core scene and suit their respective presentation defaults. The SDXL prompt has a slight edge in literal relationship fidelity and framing specificity; the Krea 2 prompt remains substantially faithful but leaves posture and shot distance more open. Both introduce aesthetic choices beyond the brief. These are wording-level observations, not evidence that either model will render the scene more reliably.\n\nCRITERION C10-ROUTING (hard)\nThe response remains a labeled comparison of both supplied prompts and does not collapse into one new or rewritten prompt.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "48/48 C10-ROUTING",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-3a6902812cff_C10-ANALYSIS",
+      "question": "REVIEW 48/48 — pair-3a6902812cff\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C10-ANALYSIS (advisory)\nThe comparison separately addresses scene fidelity, profile-appropriate expression, and ambiguity for both prompts.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "48/48 C10-ANALYSIS",
+      "multi": false,
+      "recommended": null
+    }
+  ],
+  "response": {
+    "text": "User answers:\npair-e7b85aad8aee_C01-OUTPUT: Both pass\npair-e7b85aad8aee_C01-PROFILE: Both pass\npair-e7b85aad8aee_C01-STYLE: Both pass\npair-1b286d06b3ed_C02-OUTPUT: Both pass\npair-1b286d06b3ed_C02-PRESERVE: Both pass\npair-1b286d06b3ed_C02-PROFILE: Both pass\npair-3a6902812cff_C10-ROUTING: Both pass\npair-3a6902812cff_C10-ANALYSIS: Both pass",
+    "details": {
+      "results": [
+        {
+          "id": "pair-e7b85aad8aee_C01-OUTPUT",
+          "question": "REVIEW 46/48 — pair-e7b85aad8aee\n\nREQUEST\nWrite one SDXL text-to-image prompt for a glass greenhouse on a windswept cliff at sunrise. Use comma-separated visual phrases only. Return only the prompt: no label, negative prompt, notes, variants, or explanation.\n\nOUTPUT A\nglass greenhouse on a windswept cliff at sunrise, transparent panes in slender weathered metal frames, steep rugged rock face, low golden sun on the horizon, amber reflections across the glass roof, pale peach sky, cool blue shadows in the cliff crevices, wide composition emphasizing the exposed cliff edge\n\nOUTPUT B\nglass greenhouse on a windswept coastal cliff at sunrise, slender steel framework, transparent panes glowing with golden reflections, lush plants visible inside, cliffside grasses bent by strong wind, white surf far below, drifting sea mist, low amber sun on the horizon, warm highlights against cool blue shadows, wide three-quarter view, photorealistic architectural photography\n\nCRITERION C01-OUTPUT (hard)\nThe response is exactly one unlabeled comma-separated visual-phrase prompt, with no negative prompt, notes, variants, or wrapper.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-e7b85aad8aee_C01-PROFILE",
+          "question": "REVIEW 46/48 — pair-e7b85aad8aee\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C01-PROFILE (hard)\nThe prompt expresses the requested greenhouse, cliff, wind, and sunrise in a compact SDXL-compatible phrase dialect without importing another profile's boilerplate.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-e7b85aad8aee_C01-STYLE",
+          "question": "REVIEW 46/48 — pair-e7b85aad8aee\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C01-STYLE (advisory)\nThe selected visual phrasing is concise, coherent, and immediately usable.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-1b286d06b3ed_C02-OUTPUT",
+          "question": "REVIEW 47/48 — pair-1b286d06b3ed\n\nREQUEST\nAdapt this supplied prompt for local Krea 2 RAW/Turbo. Preserve every scene fact and return only one ready-to-paste prompt with no label, negative prompt, notes, variants, or explanation. Source prompt: A red ceramic teapot sits image-left of a white cup on a dark walnut table. Morning light enters from the right, and the plain cream wall behind them is empty.\n\nOUTPUT A\nA red ceramic teapot sits to the left of a white cup as viewed in the image, both resting on a dark walnut table. Morning light enters from the right, illuminating the objects against a plain, empty cream wall behind them.\n\nOUTPUT B\nA red ceramic teapot sits on a dark walnut table, to the left of a white cup as viewed in the image. Morning light enters from the right. Behind the teapot and cup, a plain cream wall remains empty.\n\nCRITERION C02-OUTPUT (hard)\nThe response is exactly one unlabeled prompt, without a package, negative field, notes, variants, or explanation.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-1b286d06b3ed_C02-PRESERVE",
+          "question": "REVIEW 47/48 — pair-1b286d06b3ed\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C02-PRESERVE (hard)\nThe adaptation preserves the two objects, their colors and image-left relationship, table, right-side morning light, and empty cream wall without adding visual facts.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-1b286d06b3ed_C02-PROFILE",
+          "question": "REVIEW 47/48 — pair-1b286d06b3ed\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C02-PROFILE (hard)\nThe result uses a coherent natural-language paragraph suitable for the selected local Krea 2 RAW/Turbo contract; detail does not become invention.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-3a6902812cff_C10-ROUTING",
+          "question": "REVIEW 48/48 — pair-3a6902812cff\n\nREQUEST\nCompare these two supplied prompts for fidelity to the same brief, model-appropriate expression, and likely ambiguity. Keep the answer as a labeled comparison; do not merge, rewrite, or replace either prompt and do not produce a third prompt. Brief: a green bicycle leaning against a white brick wall in soft overcast daylight. SDXL prompt: `green bicycle leaning against a white brick wall, soft overcast daylight, eye-level medium shot, restrained color palette`. Krea 2 prompt: `A green bicycle rests against a white brick wall under soft, even overcast daylight, framed at eye level with a restrained palette.`\n\nOUTPUT A\n### 1. Fidelity to the brief\n- **SDXL prompt:** Explicitly preserves every required element: green bicycle, leaning against a white brick wall, and soft overcast daylight. Eye-level framing, a medium shot, and a restrained palette are additions, but do not inherently contradict the brief.\n- **Krea 2 prompt:** Also preserves the core scene. “Rests against” reasonably conveys leaning, though it is slightly less explicit about the bicycle’s tilt. “Soft, even” is consistent with overcast daylight. Eye-level framing and a restrained palette are additional choices.\n\n### 2. Model-appropriate expression\n- **SDXL prompt:** Clear, compact, and concrete. Its comma-separated phrases are workable, although the selected skill’s SDXL guidance favors natural descriptive prose over tag-like phrasing. This is a modest stylistic mismatch, not a fundamental problem.\n- **Krea 2 prompt:** A cohesive natural-language sentence with clear subject–setting relationships. The selected skill has no Krea 2-specific profile, so its expression can be assessed as sound general image prompting, but not verified as specifically optimized for Krea 2.\n\n### 3. Likely ambiguity\n- **SDXL prompt:** “Medium shot” provides a framing cue but does not reliably specify whether the entire bicycle should remain visible; cropping is possible. “Leaning against” makes the intended physical relationship comparatively explicit.\n- **Krea 2 prompt:** Specifies viewing height but not shot distance, leaving more latitude for subject size and surrounding wall space. “Rests against” leaves slightly more room for interpretation of the bicycle’s posture.\n- **Both:** “Restrained palette” could encourage a muted green, though the brief does not specify saturation. Neither fixes the bicycle’s orientation or contact point with the wall; these are ordinary open details rather than contradictions.\n\n### Overall comparison\nBoth are faithful and low in ambiguity for this simple brief. **SDXL is more explicit about posture and framing; Krea 2 is more fluid in prose but leaves shot distance open.** Wording alone does not establish which model would render the scene more faithfully.\n\nOUTPUT B\n| Criterion | SDXL prompt | Krea 2 prompt |\n|---|---|---|\n| **Fidelity to the brief** | Explicitly preserves the green bicycle, its **leaning** relationship to the white brick wall, and soft overcast daylight. Adds eye-level medium framing and a restrained color palette, neither specified in the brief. | Preserves the subject, colors, wall material, and lighting. “Rests against” conveys support/contact but is slightly less explicit about leaning. Adds eye-level framing and a restrained palette; “even” is a compatible elaboration of the overcast lighting. |\n| **Model-appropriate expression** | Compact, comma-separated ordinary-English phrases fit SDXL’s recommended presentation well. The bicycle–wall relationship stays intact rather than becoming disconnected keywords. | The cohesive natural-language sentence fits local Krea 2 RAW/Turbo guidance well. Its brevity is appropriate for this sparse scene; a preference for detailed prose does not require padding. |\n| **Likely ambiguity** | “Medium shot” gives some framing guidance but does not establish whether the entire bicycle is visible. “Restrained color palette” could mean limited hues or muted saturation, potentially affecting the green’s vividness. | “Rests against” leaves the bicycle’s precise posture slightly more open. Eye level specifies viewpoint, not shot distance, so framing is less constrained than in the SDXL prompt. “Restrained palette” carries the same color-treatment ambiguity. |\n\n**Overall comparison:** Both communicate the same core scene and suit their respective presentation defaults. The SDXL prompt has a slight edge in literal relationship fidelity and framing specificity; the Krea 2 prompt remains substantially faithful but leaves posture and shot distance more open. Both introduce aesthetic choices beyond the brief. These are wording-level observations, not evidence that either model will render the scene more reliably.\n\nCRITERION C10-ROUTING (hard)\nThe response remains a labeled comparison of both supplied prompts and does not collapse into one new or rewritten prompt.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-3a6902812cff_C10-ANALYSIS",
+          "question": "REVIEW 48/48 — pair-3a6902812cff\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C10-ANALYSIS (advisory)\nThe comparison separately addresses scene fidelity, profile-appropriate expression, and ambiguity for both prompts.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        }
+      ]
+    }
+  },
+  "recorded_at": "2026-09-23T02:25:47.659Z"
+}

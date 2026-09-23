@@ -1,0 +1,15 @@
+{
+  "recorded_at": "2026-09-23T02:17:40.987Z",
+  "question_id": "pair-124b83876925_C13-PRESERVE_confirmation",
+  "original_batch": "evals/reviews/2026-09-22-phase-four-review-batch-09.json",
+  "criterion_decision": "pair-124b83876925_C13-PRESERVE",
+  "question": "Original answer begins Both Fail, but its table marks A PASS and B FAIL. Which states should be recorded?",
+  "selected_option": "A passes; B fails",
+  "human": true,
+  "reviewer": "human:maintainer",
+  "resolved_states": {
+    "A": "passed",
+    "B": "failed"
+  },
+  "rationale": "Maintainer explicitly selected the table interpretation. Original contradictory response retained unchanged."
+}

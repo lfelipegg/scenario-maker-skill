@@ -1,0 +1,358 @@
+{
+  "batch": 3,
+  "start": 6,
+  "count": 3,
+  "questions": [
+    {
+      "id": "pair-1dd4c9eccece_C15-ROUTE",
+      "question": "REVIEW 7/48 — pair-1dd4c9eccece\n\nREQUEST\nInspect the supplied source image and write one image-to-video prompt that starts from it. Preserve its simple synthetic subject shapes, colors, initial composition, and flat graphic style. Animate only subtle water ripples and a slow cloud drift, with a very gentle camera push-in. Apart from these authorized temporal changes, do not add, remove, recolor, or reposition objects. Return only the prompt, with no label, notes, variants, or generation.\n\nFIXTURE\n[\n  {\n    \"availability\": \"available binary fixture; inspect the repository path\",\n    \"bytes\": 522,\n    \"path\": \"case15-geometric-source.png\",\n    \"sha256\": \"96d3453296fdd1239b21aeda140412632b643d96cb3980986739da4470bd8ded\",\n    \"text\": null\n  }\n]\n\nOUTPUT A\nStart from the supplied image, preserving the red geometric hull, white and yellow triangular sails, dark mast, blue water, pale blue sky, white cloud, and exact initial composition in the same flat graphic style. Animate only subtle water ripples and slow cloud drift, with a very gentle camera push-in; keep the boat motionless, shapes and colors unchanged, and all other objects fixed relative to one another, with no additions, removals, or other changes.\n\nOUTPUT B\nStart from the supplied image exactly: a simple geometric sailboat with a red hull, dark mast, white left sail and yellow right sail, blue water with pale ripple strokes, and a pale blue sky with one white cloud at upper right. Preserve the original shapes, colors, initial composition, and flat graphic style. Animate only subtle water ripples and slow cloud drift, with a very gentle camera push-in. Keep the boat and sails rigid and still, without bobbing or fluttering. Apart from these authorized changes, add, remove, recolor, or reposition nothing.\n\nCRITERION C15-ROUTE (hard)\nThe response is an image-to-video prompt grounded in the supplied image as the first frame, not a text-to-video scene re-creation.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "7/48 C15-ROUTE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-1dd4c9eccece_C15-PRESERVE",
+      "question": "REVIEW 7/48 — pair-1dd4c9eccece\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C15-PRESERVE (hard)\nThe prompt accurately preserves the fixture's visible synthetic shapes, colors, composition, and flat style while limiting changes to the requested motions and gentle push-in.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "7/48 C15-PRESERVE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-2c83e6afd852_C11-PROFILE",
+      "question": "REVIEW 8/48 — pair-2c83e6afd852\n\nREQUEST\nWrite one positive prompt for Illustrious in explicitly requested Danbooru Version for one adult woman with grey hair, green eyes, a black turtleneck, and white gloves, standing in a library. Before answering, use the existing local Danbooru lookup script to confirm the canonical spelling `grey_hair`; do not read raw CSV files and do not add related candidates. Return only the comma-separated positive prompt, with no negative prompt, notes, or explanation.\n\nOUTPUT A\nmasterpiece, best_quality, highres, 1girl, solo, mature_female, grey_hair, green_eyes, black_sweater, turtleneck, white_gloves, standing, library, indoors, bookshelf\n\nOBSERVABLE LOOKUP (A)\n{\n  \"availability\": \"available\",\n  \"calls\": [\n    {\n      \"args\": {\n        \"async\": false,\n        \"command\": \"python3 scripts/danbooru_lookup.py tag grey_hair\",\n        \"cwd\": \"<redacted>\",\n        \"pty\": false,\n        \"timeout\": 60\n      },\n      \"result_content\": [\n        {\n          \"text\": \"grey_hair [general] count=574323\\naliases: 白髪, 銀髪, 銀髪ロング\\n\\n\\nWall time: 31.13 seconds\",\n          \"type\": \"text\"\n        }\n      ]\n    }\n  ],\n  \"trace_complete\": true\n}\n\nOUTPUT B\n1girl, solo, adult, grey_hair, green_eyes, black_sweater, turtleneck, white_gloves, standing, library\n\nOBSERVABLE LOOKUP (B)\n{\n  \"availability\": \"available\",\n  \"calls\": [\n    {\n      \"args\": {\n        \"async\": false,\n        \"command\": \"python3 scripts/danbooru_lookup.py tag grey_hair\",\n        \"cwd\": \"<redacted>\",\n        \"pty\": false,\n        \"timeout\": 120\n      },\n      \"result_content\": [\n        {\n          \"text\": \"grey_hair [general] count=574323\\naliases: 白髪, 銀髪, 銀髪ロング\\n\\n\\nWall time: 31.23 seconds\",\n          \"type\": \"text\"\n        }\n      ]\n    }\n  ],\n  \"trace_complete\": true\n}\n\nCRITERION C11-PROFILE (hard)\nThe prompt preserves the existing Illustrious convention: comma-separated Danbooru-style tags with restrained quality/composition guidance, lower_snake_case canonical forms where applicable, and no Pony prefix.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "8/48 C11-PROFILE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-2c83e6afd852_C11-CONSTRAINTS",
+      "question": "REVIEW 8/48 — pair-2c83e6afd852\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C11-CONSTRAINTS (hard)\nThe canonical grey-hair result is used for the requested woman, all requested visible facts remain represented, and no optional related candidate changes the scene.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "8/48 C11-CONSTRAINTS",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-2c83e6afd852_C11-LOOKUP-EVIDENCE",
+      "question": "REVIEW 8/48 — pair-2c83e6afd852\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C11-LOOKUP-EVIDENCE (hard)\nThe captured tool results confirm grey_hair using the selected revision’s local lookup script. A mere spelling echo is not confirmation; missing usable trace evidence is not-run.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "8/48 C11-LOOKUP-EVIDENCE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-b93bd8647039_C08-PRESERVE",
+      "question": "REVIEW 9/48 — pair-b93bd8647039\n\nREQUEST\nExpand this brief into one ready-to-paste text-to-image prompt of at most 55 words: `A rust-red rowboat tied to a weathered dock on a still lake before dawn.` Return only the prompt. Do not add people, buildings, other boats, animals, or active weather.\n\nOUTPUT A\nA rust-red rowboat with chipped paint lies tied to a weathered wooden dock on a still lake before dawn. Silver-gray planks show rough grain beneath cool blue twilight. The hull and dock reflect clearly in glassy water, framed low and wide against an empty horizon, with subdued contrast and natural textures.\n\nOUTPUT B\nA rust-red rowboat with chipped paint is secured by a coarse rope to a weathered wooden dock on a mirror-still lake before dawn. Photorealistic wide composition, dock extending diagonally from the foreground, crisp wood grain, soft blue predawn light, faint pale horizon, and undisturbed reflections across otherwise empty water.\n\nCRITERION C08-PRESERVE (hard)\nThe expansion preserves every supplied scene fact and adds no forbidden subject, prop, or active weather.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "9/48 C08-PRESERVE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-b93bd8647039_C08-STYLE",
+      "question": "REVIEW 9/48 — pair-b93bd8647039\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C08-STYLE (advisory)\nWithin the limit, the prompt adds useful visible detail rather than padding or hidden story.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "9/48 C08-STYLE",
+      "multi": false,
+      "recommended": null
+    }
+  ],
+  "response": {
+    "text": "User answers:\npair-1dd4c9eccece_C15-ROUTE: Both pass\npair-1dd4c9eccece_C15-PRESERVE: Both pass\npair-2c83e6afd852_C11-PROFILE: Both pass\npair-2c83e6afd852_C11-CONSTRAINTS: Both pass\npair-2c83e6afd852_C11-LOOKUP-EVIDENCE: Both pass\npair-b93bd8647039_C08-PRESERVE: Both pass\npair-b93bd8647039_C08-STYLE: Both pass",
+    "details": {
+      "results": [
+        {
+          "id": "pair-1dd4c9eccece_C15-ROUTE",
+          "question": "REVIEW 7/48 — pair-1dd4c9eccece\n\nREQUEST\nInspect the supplied source image and write one image-to-video prompt that starts from it. Preserve its simple synthetic subject shapes, colors, initial composition, and flat graphic style. Animate only subtle water ripples and a slow cloud drift, with a very gentle camera push-in. Apart from these authorized temporal changes, do not add, remove, recolor, or reposition objects. Return only the prompt, with no label, notes, variants, or generation.\n\nFIXTURE\n[\n  {\n    \"availability\": \"available binary fixture; inspect the repository path\",\n    \"bytes\": 522,\n    \"path\": \"case15-geometric-source.png\",\n    \"sha256\": \"96d3453296fdd1239b21aeda140412632b643d96cb3980986739da4470bd8ded\",\n    \"text\": null\n  }\n]\n\nOUTPUT A\nStart from the supplied image, preserving the red geometric hull, white and yellow triangular sails, dark mast, blue water, pale blue sky, white cloud, and exact initial composition in the same flat graphic style. Animate only subtle water ripples and slow cloud drift, with a very gentle camera push-in; keep the boat motionless, shapes and colors unchanged, and all other objects fixed relative to one another, with no additions, removals, or other changes.\n\nOUTPUT B\nStart from the supplied image exactly: a simple geometric sailboat with a red hull, dark mast, white left sail and yellow right sail, blue water with pale ripple strokes, and a pale blue sky with one white cloud at upper right. Preserve the original shapes, colors, initial composition, and flat graphic style. Animate only subtle water ripples and slow cloud drift, with a very gentle camera push-in. Keep the boat and sails rigid and still, without bobbing or fluttering. Apart from these authorized changes, add, remove, recolor, or reposition nothing.\n\nCRITERION C15-ROUTE (hard)\nThe response is an image-to-video prompt grounded in the supplied image as the first frame, not a text-to-video scene re-creation.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-1dd4c9eccece_C15-PRESERVE",
+          "question": "REVIEW 7/48 — pair-1dd4c9eccece\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C15-PRESERVE (hard)\nThe prompt accurately preserves the fixture's visible synthetic shapes, colors, composition, and flat style while limiting changes to the requested motions and gentle push-in.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-2c83e6afd852_C11-PROFILE",
+          "question": "REVIEW 8/48 — pair-2c83e6afd852\n\nREQUEST\nWrite one positive prompt for Illustrious in explicitly requested Danbooru Version for one adult woman with grey hair, green eyes, a black turtleneck, and white gloves, standing in a library. Before answering, use the existing local Danbooru lookup script to confirm the canonical spelling `grey_hair`; do not read raw CSV files and do not add related candidates. Return only the comma-separated positive prompt, with no negative prompt, notes, or explanation.\n\nOUTPUT A\nmasterpiece, best_quality, highres, 1girl, solo, mature_female, grey_hair, green_eyes, black_sweater, turtleneck, white_gloves, standing, library, indoors, bookshelf\n\nOBSERVABLE LOOKUP (A)\n{\n  \"availability\": \"available\",\n  \"calls\": [\n    {\n      \"args\": {\n        \"async\": false,\n        \"command\": \"python3 scripts/danbooru_lookup.py tag grey_hair\",\n        \"cwd\": \"<redacted>\",\n        \"pty\": false,\n        \"timeout\": 60\n      },\n      \"result_content\": [\n        {\n          \"text\": \"grey_hair [general] count=574323\\naliases: 白髪, 銀髪, 銀髪ロング\\n\\n\\nWall time: 31.13 seconds\",\n          \"type\": \"text\"\n        }\n      ]\n    }\n  ],\n  \"trace_complete\": true\n}\n\nOUTPUT B\n1girl, solo, adult, grey_hair, green_eyes, black_sweater, turtleneck, white_gloves, standing, library\n\nOBSERVABLE LOOKUP (B)\n{\n  \"availability\": \"available\",\n  \"calls\": [\n    {\n      \"args\": {\n        \"async\": false,\n        \"command\": \"python3 scripts/danbooru_lookup.py tag grey_hair\",\n        \"cwd\": \"<redacted>\",\n        \"pty\": false,\n        \"timeout\": 120\n      },\n      \"result_content\": [\n        {\n          \"text\": \"grey_hair [general] count=574323\\naliases: 白髪, 銀髪, 銀髪ロング\\n\\n\\nWall time: 31.23 seconds\",\n          \"type\": \"text\"\n        }\n      ]\n    }\n  ],\n  \"trace_complete\": true\n}\n\nCRITERION C11-PROFILE (hard)\nThe prompt preserves the existing Illustrious convention: comma-separated Danbooru-style tags with restrained quality/composition guidance, lower_snake_case canonical forms where applicable, and no Pony prefix.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-2c83e6afd852_C11-CONSTRAINTS",
+          "question": "REVIEW 8/48 — pair-2c83e6afd852\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C11-CONSTRAINTS (hard)\nThe canonical grey-hair result is used for the requested woman, all requested visible facts remain represented, and no optional related candidate changes the scene.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-2c83e6afd852_C11-LOOKUP-EVIDENCE",
+          "question": "REVIEW 8/48 — pair-2c83e6afd852\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C11-LOOKUP-EVIDENCE (hard)\nThe captured tool results confirm grey_hair using the selected revision’s local lookup script. A mere spelling echo is not confirmation; missing usable trace evidence is not-run.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-b93bd8647039_C08-PRESERVE",
+          "question": "REVIEW 9/48 — pair-b93bd8647039\n\nREQUEST\nExpand this brief into one ready-to-paste text-to-image prompt of at most 55 words: `A rust-red rowboat tied to a weathered dock on a still lake before dawn.` Return only the prompt. Do not add people, buildings, other boats, animals, or active weather.\n\nOUTPUT A\nA rust-red rowboat with chipped paint lies tied to a weathered wooden dock on a still lake before dawn. Silver-gray planks show rough grain beneath cool blue twilight. The hull and dock reflect clearly in glassy water, framed low and wide against an empty horizon, with subdued contrast and natural textures.\n\nOUTPUT B\nA rust-red rowboat with chipped paint is secured by a coarse rope to a weathered wooden dock on a mirror-still lake before dawn. Photorealistic wide composition, dock extending diagonally from the foreground, crisp wood grain, soft blue predawn light, faint pale horizon, and undisturbed reflections across otherwise empty water.\n\nCRITERION C08-PRESERVE (hard)\nThe expansion preserves every supplied scene fact and adds no forbidden subject, prop, or active weather.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-b93bd8647039_C08-STYLE",
+          "question": "REVIEW 9/48 — pair-b93bd8647039\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C08-STYLE (advisory)\nWithin the limit, the prompt adds useful visible detail rather than padding or hidden story.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        }
+      ]
+    }
+  },
+  "recorded_at": "2026-09-23T02:10:02.313Z"
+}

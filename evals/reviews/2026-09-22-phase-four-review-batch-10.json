@@ -1,0 +1,308 @@
+{
+  "batch": 10,
+  "start": 27,
+  "count": 3,
+  "questions": [
+    {
+      "id": "pair-fac745d6567a_C04-SCOPE",
+      "question": "REVIEW 28/48 — pair-fac745d6567a\n\nREQUEST\nCreate a character-design prompt for an adult lighthouse keeper. Give her weathered olive skin, tightly curled gray hair, a navy cable-knit sweater, orange waterproof bib trousers, black rubber boots, and a brass whistle on a cord. Describe character design only. Return one prompt with no scene, pose, expression, action, camera, lighting, weather, or story.\n\nOUTPUT A\nAn adult female lighthouse keeper with weathered olive skin and tightly curled gray hair. She wears a navy cable-knit sweater beneath orange waterproof bib trousers, black rubber boots, and a brass whistle on a cord around her neck.\n\nOUTPUT B\nAn adult female lighthouse keeper with weathered olive skin, fine facial lines, and tightly curled gray hair. Her clothing consists of a navy cable-knit sweater with thick braided texture, orange waterproof bib trousers with broad shoulder straps and reinforced seams, black rubber boots with sturdy soles, and a brass whistle on a simple cord around her neck.\n\nCRITERION C04-SCOPE (hard)\nThe prompt remains strictly within character appearance, clothing, and equipment, without scene or presentation expansion.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "28/48 C04-SCOPE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-fac745d6567a_C04-DETAILS",
+      "question": "REVIEW 28/48 — pair-fac745d6567a\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C04-DETAILS (hard)\nAll supplied physical, clothing, and equipment details remain attached to the single adult lighthouse keeper without incompatible invention.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "28/48 C04-DETAILS",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-c51c5c91ec0e_C15-ROUTE",
+      "question": "REVIEW 29/48 — pair-c51c5c91ec0e\n\nREQUEST\nInspect the supplied source image and write one image-to-video prompt that starts from it. Preserve its simple synthetic subject shapes, colors, initial composition, and flat graphic style. Animate only subtle water ripples and a slow cloud drift, with a very gentle camera push-in. Apart from these authorized temporal changes, do not add, remove, recolor, or reposition objects. Return only the prompt, with no label, notes, variants, or generation.\n\nFIXTURE\n[\n  {\n    \"availability\": \"available binary fixture; inspect the repository path\",\n    \"bytes\": 522,\n    \"path\": \"case15-geometric-source.png\",\n    \"sha256\": \"96d3453296fdd1239b21aeda140412632b643d96cb3980986739da4470bd8ded\",\n    \"text\": null\n  }\n]\n\nOUTPUT A\nStart from the supplied image, preserving its initial composition: a geometric red-hulled sailboat with a dark mast, white left sail and yellow right sail, blue water, pale blue sky, and one white cloud at upper right. Keep the simple shapes, original colors, and flat graphic style unchanged. Animate only subtle rippling of the existing water marks and a slow drift of the cloud, with a very gentle camera push-in. Keep the boat and sails motionless. Apart from these authorized changes, do not add, remove, recolor, reshape, or reposition anything.\n\nOUTPUT B\nStart from the supplied image, preserving the red boat, white and yellow triangular sails, dark mast, pale blue sky, white cloud, blue water, and light ripple marks in their exact initial composition and flat geometric style. Gently animate only the existing water ripples and a slow cloud drift, with a very gentle, smooth camera push-in. Keep the boat and sails still, all shapes and colors unchanged, and lighting constant; do not add, remove, or reposition anything except through the specified motion.\n\nCRITERION C15-ROUTE (hard)\nThe response is an image-to-video prompt grounded in the supplied image as the first frame, not a text-to-video scene re-creation.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "29/48 C15-ROUTE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-c51c5c91ec0e_C15-PRESERVE",
+      "question": "REVIEW 29/48 — pair-c51c5c91ec0e\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C15-PRESERVE (hard)\nThe prompt accurately preserves the fixture's visible synthetic shapes, colors, composition, and flat style while limiting changes to the requested motions and gentle push-in.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "29/48 C15-PRESERVE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-404eb9e2f2ca_C12-PROFILE",
+      "question": "REVIEW 30/48 — pair-404eb9e2f2ca\n\nREQUEST\nWrite one Pony Diffusion V6 XL positive prompt for one adult woman with auburn hair, round glasses, a teal raincoat, and a folded red umbrella, standing at an empty tram stop at night. Use the safe anime source/rating dialect. Return only the comma-separated positive prompt: no negative prompt, notes, labels, or variants.\n\nOUTPUT A\nscore_9, score_8_up, score_7_up, source_anime, rating_safe, 1girl, solo, adult woman, auburn hair, round glasses, teal raincoat, folded red umbrella, standing at an otherwise empty tram stop, night\n\nOUTPUT B\nscore_9, score_8_up, score_7_up, source_anime, rating_safe, 1girl, solo, adult woman, auburn hair, round glasses, teal raincoat, holding a folded red umbrella at her side, standing, empty tram stop, night, glass shelter, empty bench, tram tracks, wet pavement, streetlight reflections, soft overhead lighting, full body\n\nCRITERION C12-PROFILE (hard)\nThe positive prompt starts with the existing Pony score/source/rating convention, uses source_anime and rating_safe, remains comma-separated, and avoids generic masterpiece/best quality boilerplate.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "30/48 C12-PROFILE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-404eb9e2f2ca_C12-PRESERVE",
+      "question": "REVIEW 30/48 — pair-404eb9e2f2ca\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C12-PRESERVE (hard)\nThe single adult subject retains every supplied attribute and prop, and the tram stop remains empty apart from her.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "30/48 C12-PRESERVE",
+      "multi": false,
+      "recommended": null
+    }
+  ],
+  "response": {
+    "text": "User answers:\npair-fac745d6567a_C04-SCOPE: Both pass\npair-fac745d6567a_C04-DETAILS: Both pass\npair-c51c5c91ec0e_C15-ROUTE: Both pass\npair-c51c5c91ec0e_C15-PRESERVE: Both pass\npair-404eb9e2f2ca_C12-PROFILE: Both pass\npair-404eb9e2f2ca_C12-PRESERVE: \"A pass, B fail. B — FAIL on preservation\n\nB adds:\n\nglass shelter\nempty bench\ntram tracks\nwet pavement\nstreetlight reflections\nsoft overhead lighting\nfull body\n\nIssue #17 says create defaults to Balanced, which allows local completion but not new independent props or scene facts. The shelter, bench, tracks, and wet pavement exceed that boundary.\"",
+    "details": {
+      "results": [
+        {
+          "id": "pair-fac745d6567a_C04-SCOPE",
+          "question": "REVIEW 28/48 — pair-fac745d6567a\n\nREQUEST\nCreate a character-design prompt for an adult lighthouse keeper. Give her weathered olive skin, tightly curled gray hair, a navy cable-knit sweater, orange waterproof bib trousers, black rubber boots, and a brass whistle on a cord. Describe character design only. Return one prompt with no scene, pose, expression, action, camera, lighting, weather, or story.\n\nOUTPUT A\nAn adult female lighthouse keeper with weathered olive skin and tightly curled gray hair. She wears a navy cable-knit sweater beneath orange waterproof bib trousers, black rubber boots, and a brass whistle on a cord around her neck.\n\nOUTPUT B\nAn adult female lighthouse keeper with weathered olive skin, fine facial lines, and tightly curled gray hair. Her clothing consists of a navy cable-knit sweater with thick braided texture, orange waterproof bib trousers with broad shoulder straps and reinforced seams, black rubber boots with sturdy soles, and a brass whistle on a simple cord around her neck.\n\nCRITERION C04-SCOPE (hard)\nThe prompt remains strictly within character appearance, clothing, and equipment, without scene or presentation expansion.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-fac745d6567a_C04-DETAILS",
+          "question": "REVIEW 28/48 — pair-fac745d6567a\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C04-DETAILS (hard)\nAll supplied physical, clothing, and equipment details remain attached to the single adult lighthouse keeper without incompatible invention.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-c51c5c91ec0e_C15-ROUTE",
+          "question": "REVIEW 29/48 — pair-c51c5c91ec0e\n\nREQUEST\nInspect the supplied source image and write one image-to-video prompt that starts from it. Preserve its simple synthetic subject shapes, colors, initial composition, and flat graphic style. Animate only subtle water ripples and a slow cloud drift, with a very gentle camera push-in. Apart from these authorized temporal changes, do not add, remove, recolor, or reposition objects. Return only the prompt, with no label, notes, variants, or generation.\n\nFIXTURE\n[\n  {\n    \"availability\": \"available binary fixture; inspect the repository path\",\n    \"bytes\": 522,\n    \"path\": \"case15-geometric-source.png\",\n    \"sha256\": \"96d3453296fdd1239b21aeda140412632b643d96cb3980986739da4470bd8ded\",\n    \"text\": null\n  }\n]\n\nOUTPUT A\nStart from the supplied image, preserving its initial composition: a geometric red-hulled sailboat with a dark mast, white left sail and yellow right sail, blue water, pale blue sky, and one white cloud at upper right. Keep the simple shapes, original colors, and flat graphic style unchanged. Animate only subtle rippling of the existing water marks and a slow drift of the cloud, with a very gentle camera push-in. Keep the boat and sails motionless. Apart from these authorized changes, do not add, remove, recolor, reshape, or reposition anything.\n\nOUTPUT B\nStart from the supplied image, preserving the red boat, white and yellow triangular sails, dark mast, pale blue sky, white cloud, blue water, and light ripple marks in their exact initial composition and flat geometric style. Gently animate only the existing water ripples and a slow cloud drift, with a very gentle, smooth camera push-in. Keep the boat and sails still, all shapes and colors unchanged, and lighting constant; do not add, remove, or reposition anything except through the specified motion.\n\nCRITERION C15-ROUTE (hard)\nThe response is an image-to-video prompt grounded in the supplied image as the first frame, not a text-to-video scene re-creation.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-c51c5c91ec0e_C15-PRESERVE",
+          "question": "REVIEW 29/48 — pair-c51c5c91ec0e\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C15-PRESERVE (hard)\nThe prompt accurately preserves the fixture's visible synthetic shapes, colors, composition, and flat style while limiting changes to the requested motions and gentle push-in.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-404eb9e2f2ca_C12-PROFILE",
+          "question": "REVIEW 30/48 — pair-404eb9e2f2ca\n\nREQUEST\nWrite one Pony Diffusion V6 XL positive prompt for one adult woman with auburn hair, round glasses, a teal raincoat, and a folded red umbrella, standing at an empty tram stop at night. Use the safe anime source/rating dialect. Return only the comma-separated positive prompt: no negative prompt, notes, labels, or variants.\n\nOUTPUT A\nscore_9, score_8_up, score_7_up, source_anime, rating_safe, 1girl, solo, adult woman, auburn hair, round glasses, teal raincoat, folded red umbrella, standing at an otherwise empty tram stop, night\n\nOUTPUT B\nscore_9, score_8_up, score_7_up, source_anime, rating_safe, 1girl, solo, adult woman, auburn hair, round glasses, teal raincoat, holding a folded red umbrella at her side, standing, empty tram stop, night, glass shelter, empty bench, tram tracks, wet pavement, streetlight reflections, soft overhead lighting, full body\n\nCRITERION C12-PROFILE (hard)\nThe positive prompt starts with the existing Pony score/source/rating convention, uses source_anime and rating_safe, remains comma-separated, and avoids generic masterpiece/best quality boilerplate.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-404eb9e2f2ca_C12-PRESERVE",
+          "question": "REVIEW 30/48 — pair-404eb9e2f2ca\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C12-PRESERVE (hard)\nThe single adult subject retains every supplied attribute and prop, and the tram stop remains empty apart from her.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [],
+          "customInput": "A pass, B fail. B — FAIL on preservation\n\nB adds:\n\nglass shelter\nempty bench\ntram tracks\nwet pavement\nstreetlight reflections\nsoft overhead lighting\nfull body\n\nIssue #17 says create defaults to Balanced, which allows local completion but not new independent props or scene facts. The shelter, bench, tracks, and wet pavement exceed that boundary."
+        }
+      ]
+    }
+  },
+  "recorded_at": "2026-09-23T02:18:31.428Z"
+}

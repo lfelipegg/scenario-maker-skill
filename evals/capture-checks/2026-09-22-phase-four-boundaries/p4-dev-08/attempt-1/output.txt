@@ -1,0 +1,2 @@
+Positive prompt: A red cube rests on a gray surface.
+Negative prompt: logos

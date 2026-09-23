@@ -1,0 +1,15 @@
+### 1. Fidelity to the brief
+- **SDXL prompt:** Explicitly preserves all core details: a green bicycle, leaning against a white brick wall, in soft overcast daylight. Eye-level framing, a medium shot, and a restrained palette are additions, not requirements of the brief.
+- **Krea 2 prompt:** Preserves the subject, wall, and lighting. “Rests against” strongly suggests leaning but is slightly less explicit about the bicycle’s posture. “Even” is consistent with overcast light. Eye-level framing and a restrained palette are additional choices.
+
+### 2. Model-appropriate expression
+- **SDXL prompt:** Its short, concrete, comma-separated phrases are understandable and usable. However, the selected skill’s SDXL profile favors concise natural-language prose rather than tag-like phrasing. This is a stylistic mismatch with that preference, not a reason to assume failure.
+- **Krea 2 prompt:** The complete sentence clearly connects subject, setting, lighting, and framing. It fits general natural-language image-prompt guidance. The selected skill has no Krea 2-specific profile, so its model-specific suitability cannot be confirmed from that guidance.
+
+### 3. Likely ambiguity
+- **SDXL prompt:** “Leaning against” clearly specifies the physical relationship. “Medium shot” narrows framing, but its application to a bicycle is imprecise and may leave uncertainty about whether both wheels remain fully visible.
+- **Krea 2 prompt:** “Rests against” leaves slightly more latitude in posture. Eye level specifies camera height, not shot distance, so framing is more open-ended than in the SDXL prompt.
+- **Both:** “Restrained palette” could mean fewer colors or reduced saturation; the latter might mute the bicycle’s green. Neither specifies a green shade or rendering style, but neither is required by the brief.
+
+### Overall comparison
+**The SDXL prompt is marginally more literal and compositionally constrained. The Krea 2 prompt is more fluent but leaves shot distance and posture slightly more open.** Both are faithful overall; wording alone does not establish which model would produce the better image.

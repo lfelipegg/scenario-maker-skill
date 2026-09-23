@@ -1,0 +1,3 @@
+Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.
+
+Write one SDXL text-to-image prompt for a glass greenhouse on a windswept cliff at sunrise. Use comma-separated visual phrases only. Return only the prompt: no label, negative prompt, notes, variants, or explanation.

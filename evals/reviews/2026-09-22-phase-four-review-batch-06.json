@@ -1,0 +1,309 @@
+{
+  "batch": 6,
+  "start": 15,
+  "count": 3,
+  "questions": [
+    {
+      "id": "pair-974090058d56_C07-DISTINCTNESS",
+      "question": "REVIEW 16/48 — pair-974090058d56\n\nREQUEST\nCreate exactly four genuinely different composition variants of this fixed scene. Number them 1 through 4 and give one complete prompt per numbered entry. Vary only composition (framing, viewpoint, and placement within the image); hold lighting and all physical scene facts fixed. Fixed scene: a red cube image-left of a blue sphere on a gray table; a sign behind them reads exactly `OPEN`; both objects and the sign are fully visible; plain gray backdrop; diffuse frontal light with weak shadows.\n\nOUTPUT A\n1. Use a straight-on, tightly framed composition with the complete arrangement centered and a small margin around it. A red cube sits image-left of a blue sphere on a gray table, with a sign behind them reading exactly `OPEN`; both objects and the entire sign are fully visible and unobstructed against a plain gray backdrop, under diffuse frontal light with weak shadows.\n\n2. Use a wide, straight-on composition with the complete arrangement in the lower-left portion of the image, leaving generous gray negative space above and to the right. A red cube sits image-left of a blue sphere on a gray table, with a sign behind them reading exactly `OPEN`; both objects and the entire sign are fully visible and unobstructed against a plain gray backdrop, under diffuse frontal light with weak shadows.\n\n3. Use a moderately elevated viewpoint looking gently downward, framing the complete arrangement in the right half of the image with open tabletop extending across the left foreground. A red cube sits image-left of a blue sphere on a gray table, with a sign behind them reading exactly `OPEN`; both objects and the entire sign are fully visible and unobstructed against a plain gray backdrop, under diffuse frontal light with weak shadows.\n\n4. Use a low frontal viewpoint just above tabletop height, with the complete arrangement centered horizontally in the lower third of a tall frame and ample gray negative space overhead. A red cube sits image-left of a blue sphere on a gray table, with a sign behind them reading exactly `OPEN`; both objects and the entire sign are fully visible and unobstructed against a plain gray backdrop, under diffuse frontal light with weak shadows.\n\nOUTPUT B\n1. A tight, straight-on composition with the entire arrangement centered and filling most of the frame, leaving narrow margins without cropping. A red cube sits image-left of a blue sphere on a gray table; a sign behind them reads exactly “OPEN”. Both objects and the entire sign are fully visible and unobstructed. Plain gray backdrop; diffuse frontal light with weak shadows.\n\n2. A wide horizontal composition viewed straight-on, with the entire arrangement grouped in the right third and broad empty space to the left. A red cube sits image-left of a blue sphere on a gray table; a sign behind them reads exactly “OPEN”. Both objects and the entire sign are fully visible and unobstructed. Plain gray backdrop; diffuse frontal light with weak shadows.\n\n3. An elevated frontal viewpoint looking gently downward, with the entire arrangement near the upper center of the frame and a broad expanse of gray tabletop filling the foreground. A red cube sits image-left of a blue sphere on the gray table; a sign behind them reads exactly “OPEN”. Both objects and the entire sign are fully visible and unobstructed. Plain gray backdrop; diffuse frontal light with weak shadows.\n\n4. A tall portrait composition viewed straight-on, with the entire arrangement centered horizontally in the lower third and generous empty backdrop above. A red cube sits image-left of a blue sphere on a gray table; a sign behind them reads exactly “OPEN”. Both objects and the entire sign are fully visible and unobstructed. Plain gray backdrop; diffuse frontal light with weak shadows.\n\nCRITERION C07-DISTINCTNESS (hard)\nAll four entries communicate genuinely different compositions rather than paraphrases or changes outside composition.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "16/48 C07-DISTINCTNESS",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-974090058d56_C07-PRESERVE",
+      "question": "REVIEW 16/48 — pair-974090058d56\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C07-PRESERVE (hard)\nEvery variant preserves all non-composition facts, exact lettering, visibility, and fixed lighting while maintaining the cube's image-left relation to the sphere.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "16/48 C07-PRESERVE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-606614709e8e_C04-SCOPE",
+      "question": "REVIEW 17/48 — pair-606614709e8e\n\nREQUEST\nCreate a character-design prompt for an adult lighthouse keeper. Give her weathered olive skin, tightly curled gray hair, a navy cable-knit sweater, orange waterproof bib trousers, black rubber boots, and a brass whistle on a cord. Describe character design only. Return one prompt with no scene, pose, expression, action, camera, lighting, weather, or story.\n\nOUTPUT A\nAn adult female lighthouse keeper with weathered olive skin, fine facial lines, and tightly curled gray hair. Her practical clothing consists of a navy cable-knit sweater with thick ribbed cuffs, orange waterproof bib trousers with broad adjustable straps and reinforced seams, black rubber boots with sturdy soles, and a brass whistle on a simple cord around her neck.\n\nOUTPUT B\nAn adult female lighthouse keeper with weathered olive skin and tightly curled gray hair. She wears a navy cable-knit sweater beneath orange waterproof bib trousers, black rubber boots, and a brass whistle on a cord around her neck.\n\nCRITERION C04-SCOPE (hard)\nThe prompt remains strictly within character appearance, clothing, and equipment, without scene or presentation expansion.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "17/48 C04-SCOPE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-606614709e8e_C04-DETAILS",
+      "question": "REVIEW 17/48 — pair-606614709e8e\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C04-DETAILS (hard)\nAll supplied physical, clothing, and equipment details remain attached to the single adult lighthouse keeper without incompatible invention.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "17/48 C04-DETAILS",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-55ed5adea711_C03-OUTPUT",
+      "question": "REVIEW 18/48 — pair-55ed5adea711\n\nREQUEST\nRevise only the jacket color in this prompt from yellow to red. Return only the revised prompt and preserve everything else exactly in meaning: A woman with a short black bob wears a yellow denim jacket and silver hoop earrings, standing beside a blue bicycle under an overcast sky.\n\nOUTPUT A\nA woman with a short black bob wears a red denim jacket and silver hoop earrings, standing beside a blue bicycle under an overcast sky.\n\nOUTPUT B\nA woman with a short black bob wears a red denim jacket and silver hoop earrings, standing beside a blue bicycle under an overcast sky.\n\nCRITERION C03-OUTPUT (hard)\nThe response contains only the revised prompt, not an explanation, comparison, or prompt package.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "18/48 C03-OUTPUT",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-55ed5adea711_C03-REVISION",
+      "question": "REVIEW 18/48 — pair-55ed5adea711\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C03-REVISION (hard)\nOnly the jacket color changes from yellow to red; every other supplied fact and relationship remains unchanged in meaning.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "18/48 C03-REVISION",
+      "multi": false,
+      "recommended": null
+    }
+  ],
+  "response": {
+    "text": "User answers:\npair-974090058d56_C07-DISTINCTNESS: Both pass\npair-974090058d56_C07-PRESERVE: Both pass\npair-606614709e8e_C04-SCOPE: Both pass\npair-606614709e8e_C04-DETAILS: Both pass\npair-55ed5adea711_C03-OUTPUT: Both pass\npair-55ed5adea711_C03-REVISION: Both pass",
+    "details": {
+      "results": [
+        {
+          "id": "pair-974090058d56_C07-DISTINCTNESS",
+          "question": "REVIEW 16/48 — pair-974090058d56\n\nREQUEST\nCreate exactly four genuinely different composition variants of this fixed scene. Number them 1 through 4 and give one complete prompt per numbered entry. Vary only composition (framing, viewpoint, and placement within the image); hold lighting and all physical scene facts fixed. Fixed scene: a red cube image-left of a blue sphere on a gray table; a sign behind them reads exactly `OPEN`; both objects and the sign are fully visible; plain gray backdrop; diffuse frontal light with weak shadows.\n\nOUTPUT A\n1. Use a straight-on, tightly framed composition with the complete arrangement centered and a small margin around it. A red cube sits image-left of a blue sphere on a gray table, with a sign behind them reading exactly `OPEN`; both objects and the entire sign are fully visible and unobstructed against a plain gray backdrop, under diffuse frontal light with weak shadows.\n\n2. Use a wide, straight-on composition with the complete arrangement in the lower-left portion of the image, leaving generous gray negative space above and to the right. A red cube sits image-left of a blue sphere on a gray table, with a sign behind them reading exactly `OPEN`; both objects and the entire sign are fully visible and unobstructed against a plain gray backdrop, under diffuse frontal light with weak shadows.\n\n3. Use a moderately elevated viewpoint looking gently downward, framing the complete arrangement in the right half of the image with open tabletop extending across the left foreground. A red cube sits image-left of a blue sphere on a gray table, with a sign behind them reading exactly `OPEN`; both objects and the entire sign are fully visible and unobstructed against a plain gray backdrop, under diffuse frontal light with weak shadows.\n\n4. Use a low frontal viewpoint just above tabletop height, with the complete arrangement centered horizontally in the lower third of a tall frame and ample gray negative space overhead. A red cube sits image-left of a blue sphere on a gray table, with a sign behind them reading exactly `OPEN`; both objects and the entire sign are fully visible and unobstructed against a plain gray backdrop, under diffuse frontal light with weak shadows.\n\nOUTPUT B\n1. A tight, straight-on composition with the entire arrangement centered and filling most of the frame, leaving narrow margins without cropping. A red cube sits image-left of a blue sphere on a gray table; a sign behind them reads exactly “OPEN”. Both objects and the entire sign are fully visible and unobstructed. Plain gray backdrop; diffuse frontal light with weak shadows.\n\n2. A wide horizontal composition viewed straight-on, with the entire arrangement grouped in the right third and broad empty space to the left. A red cube sits image-left of a blue sphere on a gray table; a sign behind them reads exactly “OPEN”. Both objects and the entire sign are fully visible and unobstructed. Plain gray backdrop; diffuse frontal light with weak shadows.\n\n3. An elevated frontal viewpoint looking gently downward, with the entire arrangement near the upper center of the frame and a broad expanse of gray tabletop filling the foreground. A red cube sits image-left of a blue sphere on the gray table; a sign behind them reads exactly “OPEN”. Both objects and the entire sign are fully visible and unobstructed. Plain gray backdrop; diffuse frontal light with weak shadows.\n\n4. A tall portrait composition viewed straight-on, with the entire arrangement centered horizontally in the lower third and generous empty backdrop above. A red cube sits image-left of a blue sphere on a gray table; a sign behind them reads exactly “OPEN”. Both objects and the entire sign are fully visible and unobstructed. Plain gray backdrop; diffuse frontal light with weak shadows.\n\nCRITERION C07-DISTINCTNESS (hard)\nAll four entries communicate genuinely different compositions rather than paraphrases or changes outside composition.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-974090058d56_C07-PRESERVE",
+          "question": "REVIEW 16/48 — pair-974090058d56\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C07-PRESERVE (hard)\nEvery variant preserves all non-composition facts, exact lettering, visibility, and fixed lighting while maintaining the cube's image-left relation to the sphere.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-606614709e8e_C04-SCOPE",
+          "question": "REVIEW 17/48 — pair-606614709e8e\n\nREQUEST\nCreate a character-design prompt for an adult lighthouse keeper. Give her weathered olive skin, tightly curled gray hair, a navy cable-knit sweater, orange waterproof bib trousers, black rubber boots, and a brass whistle on a cord. Describe character design only. Return one prompt with no scene, pose, expression, action, camera, lighting, weather, or story.\n\nOUTPUT A\nAn adult female lighthouse keeper with weathered olive skin, fine facial lines, and tightly curled gray hair. Her practical clothing consists of a navy cable-knit sweater with thick ribbed cuffs, orange waterproof bib trousers with broad adjustable straps and reinforced seams, black rubber boots with sturdy soles, and a brass whistle on a simple cord around her neck.\n\nOUTPUT B\nAn adult female lighthouse keeper with weathered olive skin and tightly curled gray hair. She wears a navy cable-knit sweater beneath orange waterproof bib trousers, black rubber boots, and a brass whistle on a cord around her neck.\n\nCRITERION C04-SCOPE (hard)\nThe prompt remains strictly within character appearance, clothing, and equipment, without scene or presentation expansion.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-606614709e8e_C04-DETAILS",
+          "question": "REVIEW 17/48 — pair-606614709e8e\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C04-DETAILS (hard)\nAll supplied physical, clothing, and equipment details remain attached to the single adult lighthouse keeper without incompatible invention.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-55ed5adea711_C03-OUTPUT",
+          "question": "REVIEW 18/48 — pair-55ed5adea711\n\nREQUEST\nRevise only the jacket color in this prompt from yellow to red. Return only the revised prompt and preserve everything else exactly in meaning: A woman with a short black bob wears a yellow denim jacket and silver hoop earrings, standing beside a blue bicycle under an overcast sky.\n\nOUTPUT A\nA woman with a short black bob wears a red denim jacket and silver hoop earrings, standing beside a blue bicycle under an overcast sky.\n\nOUTPUT B\nA woman with a short black bob wears a red denim jacket and silver hoop earrings, standing beside a blue bicycle under an overcast sky.\n\nCRITERION C03-OUTPUT (hard)\nThe response contains only the revised prompt, not an explanation, comparison, or prompt package.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-55ed5adea711_C03-REVISION",
+          "question": "REVIEW 18/48 — pair-55ed5adea711\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C03-REVISION (hard)\nOnly the jacket color changes from yellow to red; every other supplied fact and relationship remains unchanged in meaning.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        }
+      ]
+    }
+  },
+  "recorded_at": "2026-09-23T02:13:30.975Z"
+}

@@ -1,0 +1,97 @@
+{
+  "recorded_at": "2026-09-23T02:31:48.826Z",
+  "phase": 4,
+  "accepted": true,
+  "reviewer": "human:maintainer",
+  "explicit_selection": "Accept and close Phase Four",
+  "authorization": "Record acceptance, close issue 6, and update parent implementation roadmap only; no commit, push, or later-phase implementation.",
+  "candidate_revision": "worktree-sha256-550085c5e6d4cbd793ba7553fbb8ec724db7375c081ec063a8e4107130deec07",
+  "baseline_revision": "5fcc3d0eded83c6a9aaf472a1dc8d5ce24011d9d",
+  "reviewed_handoff": "evals/reviews/2026-09-22-phase-four-reviewed-handoff.json",
+  "authoritative_results": {
+    "candidate": "evals/results/2026-09-22-phase-four-reviewed-candidate",
+    "baseline": "evals/results/2026-09-22-phase-four-reviewed-baseline"
+  },
+  "effective_review_ledgers": {
+    "candidate": "evals/reviews/2026-09-22-phase-four-candidate-human.jsonl",
+    "baseline": "evals/reviews/2026-09-22-phase-four-baseline-human.jsonl"
+  },
+  "acceptance_comment": "https://github.com/lfelipegg/scenario-maker-skill/issues/6#issuecomment-5787924527",
+  "issue": {
+    "number": 6,
+    "state": "closed"
+  },
+  "parent_roadmap": {
+    "number": 2,
+    "url": "https://github.com/lfelipegg/scenario-maker-skill/issues/2",
+    "acceptance_index_updated": true
+  },
+  "planning_map_unchanged": 1,
+  "verification": {
+    "capture": {
+      "attempts": 96,
+      "completed": 96,
+      "errors": 0,
+      "timeouts": 0,
+      "outputs": 96,
+      "trace_complete": 96,
+      "semantic_review": "not-run",
+      "acceptance": "not assessed"
+    },
+    "candidate": {
+      "mechanical": {
+        "passed": 63,
+        "failed": 0,
+        "not-run": 0
+      },
+      "human": {
+        "passed": 108,
+        "failed": 0,
+        "not-run": 0
+      },
+      "due_phase_four_hard": {
+        "passed": 126,
+        "failed": 0,
+        "not-run": 0
+      },
+      "original_protected_hard": {
+        "passed": 153,
+        "failed": 0,
+        "not-run": 0
+      },
+      "accepted_phase_two_hard": {
+        "passed": 78,
+        "failed": 0,
+        "not-run": 0
+      },
+      "accepted_phase_three_hard": {
+        "passed": 111,
+        "failed": 0,
+        "not-run": 0
+      }
+    },
+    "human_rows": 216,
+    "criterion_decisions": 108,
+    "review_batches": 16,
+    "custom_rationales": 7,
+    "pre_unblinding_clarifications": 2,
+    "post_unblinding_corrections": false
+  },
+  "limitations": [
+    "Prompt-text checks do not establish rendered-media quality; no image/video generation performed.",
+    "Eleven probes are development-only observations, not approved acceptance cases.",
+    "Requested model identity does not prove immutable provider snapshot; hidden state, seed and fingerprint remain unknown.",
+    "Local auto-approved tools are not an OS sandbox.",
+    "Candidate content-addressed worktree snapshot is not a Git commit.",
+    "Later phases, commits, and pushes remain separately authorization-gated."
+  ],
+  "ordinary_use": {
+    "failures": [],
+    "status": "No ordinary-use reports supplied or collected. Synthetic review failures are not ordinary-use evidence. Collect actual failures before any proposal to broaden implementation."
+  },
+  "next_action": "Collect actual ordinary-use failures before broadening implementation; do not start Phase Five or later work.",
+  "original_capture_and_review_evidence_preserved": true,
+  "restricted_paths_unchanged": true,
+  "committed": false,
+  "pushed": false
+}

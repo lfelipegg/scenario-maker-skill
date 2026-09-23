@@ -1,0 +1,16 @@
+### 1. Fidelity to the brief
+- **SDXL:** Explicitly preserves all core details: green bicycle, leaning relationship, white brick wall, and soft overcast daylight. “Eye-level medium shot” and “restrained color palette” add presentation constraints absent from the brief.
+- **Krea 2:** Preserves the subject, colors, wall material, and lighting. “Rests against” strongly suggests the intended leaning relationship, but is slightly less explicit than “leaning against.” “Even” is consistent with soft overcast light. Eye-level framing and a restrained palette are additional constraints here too.
+
+### 2. Model-appropriate expression
+- **SDXL:** Compact, comma-separated natural-language phrases suit SDXL’s phrase-oriented prompting guidance. The bicycle’s attributes and relationship remain connected rather than becoming disconnected keywords.
+- **Krea 2:** The cohesive natural-language sentence suits the open Krea 2 RAW/Turbo guidance. Its brevity is appropriate for this simple brief; a preference for detailed prose does not require padding.
+- **Comparison:** Both use suitable expression for their respective targets. These are presentation preferences, not mandatory grammars or evidence that either will render better.
+
+### 3. Likely ambiguity
+- **SDXL:** “Medium shot” narrows framing but is imprecise for a bicycle and could allow cropping rather than showing the whole bicycle.
+- **Krea 2:** Eye level specifies viewpoint but not shot distance, leaving framing more open. “Rests against” leaves slightly more latitude about the bicycle’s tilt and support.
+- **Both:** “Restrained palette” could mean fewer colors or reduced saturation; the latter could mute the green. Neither specifies bicycle type or orientation, but those are also unspecified in the brief—not fidelity failures.
+
+### Overall comparison
+**SDXL is marginally more explicit about the required leaning pose; Krea 2 is nearly equivalent in scene meaning but less restrictive about framing.** Both are model-appropriate and closely faithful, though neither is a strictly detail-neutral restatement because both add viewpoint and palette choices. Actual rendering quality cannot be determined from wording alone.

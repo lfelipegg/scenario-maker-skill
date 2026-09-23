@@ -1,0 +1,3 @@
+The official Krea 2 reference CLI accepts only a positive prompt, with no negative-prompt argument. With `oss_turbo` and CFG `0.0`, the sampler also skips negative conditioning, so a negative prompt containing `logos` would have no effect.
+
+Would you prefer a positive-only prompt describing the brass key and blue cloth as plain and unbranded, or a positive/negative pair for a workflow that supports negative conditioning?

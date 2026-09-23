@@ -1,0 +1,309 @@
+{
+  "batch": 13,
+  "start": 36,
+  "count": 3,
+  "questions": [
+    {
+      "id": "pair-2572a3cc440f_C14-ROUTE",
+      "question": "REVIEW 37/48 — pair-2572a3cc440f\n\nREQUEST\nWrite one Wan text-to-video prompt. A yellow paper boat drifts along a narrow rain-filled gutter beside a gray curb; raindrops ripple the water and push tiny leaves past it. The camera makes a slow low tracking move alongside the boat, then gently pulls back as it reaches a storm drain. Photorealistic macro cinematography, cool overcast light. Return one cohesive paragraph only, with no shot list, label, notes, variants, or generation.\n\nOUTPUT A\nA yellow paper boat drifts along a narrow rain-filled gutter beside a gray curb, its folded edges sharply detailed as raindrops spread overlapping ripples across the water and nudge tiny leaves past it. The camera tracks slowly alongside the boat at water level, then gently pulls back as it reaches a storm drain. Photorealistic macro cinematography with shallow depth of field, delicate water textures, and cool, diffuse overcast light.\n\nOUTPUT B\nA yellow paper boat drifts along a narrow rain-filled gutter beside a gray curb, bobbing gently as raindrops spread overlapping ripples and push tiny leaves past its folded hull. In one continuous shot, the camera tracks slowly alongside at water level, then gently pulls back as the boat reaches a storm drain, revealing the dark grate ahead; photorealistic macro cinematography captures damp paper fibers, wet concrete, and shimmering water under cool overcast light, with shallow depth of field.\n\nCRITERION C14-ROUTE (hard)\nThe output follows the existing Wan route as one cohesive cinematic paragraph rather than a shot list or image prompt.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "37/48 C14-ROUTE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-2572a3cc440f_C14-MOTION",
+      "question": "REVIEW 37/48 — pair-2572a3cc440f\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C14-MOTION (hard)\nThe paragraph preserves subject motion, environmental motion, camera progression, scene, atmosphere, and stylization without invisible story or audio invention.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "37/48 C14-MOTION",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-2572a3cc440f_C14-STYLE",
+      "question": "REVIEW 37/48 — pair-2572a3cc440f\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C14-STYLE (advisory)\nCamera language and progression are clear without becoming muddy or repetitive.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "37/48 C14-STYLE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-407b1e714858_C06-TEXT-BINDING",
+      "question": "REVIEW 38/48 — pair-407b1e714858\n\nREQUEST\nWrite one text-to-image prompt for a small neighborhood bakery at dusk. A rectangular sign centered above the door must visibly read exactly `OPEN` in uppercase, with no other visible lettering anywhere. Return only the prompt.\n\nOUTPUT A\nA small neighborhood bakery at dusk, viewed straight on, with a modest brick facade and warm interior light contrasting with the cool blue evening. A rectangular sign centered directly above the door clearly reads exactly “OPEN” in crisp, uppercase letters, fully visible and unobstructed. This sign contains the only visible lettering in the entire image; all other surfaces are unlettered, with no additional text, logos, or watermarks.\n\nOUTPUT B\nA photorealistic, straight-on view of a small neighborhood bakery at dusk, warm amber windows displaying bread and pastries, brick facade, and a quiet sidewalk beneath a violet-blue sky. A fully visible rectangular sign centered directly above the door reads exactly “OPEN” in crisp, high-contrast uppercase letters; this sign is the only visible lettering anywhere in the image, with no other words, numbers, logos, labels, or watermarks.\n\nCRITERION C06-TEXT-BINDING (hard)\nThe prompt clearly binds exact uppercase OPEN to the rectangular sign centered above the bakery door and excludes other visible lettering.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "38/48 C06-TEXT-BINDING",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-3013f6cc57e2_C07-DISTINCTNESS",
+      "question": "REVIEW 39/48 — pair-3013f6cc57e2\n\nREQUEST\nCreate exactly four genuinely different composition variants of this fixed scene. Number them 1 through 4 and give one complete prompt per numbered entry. Vary only composition (framing, viewpoint, and placement within the image); hold lighting and all physical scene facts fixed. Fixed scene: a red cube image-left of a blue sphere on a gray table; a sign behind them reads exactly `OPEN`; both objects and the sign are fully visible; plain gray backdrop; diffuse frontal light with weak shadows.\n\nOUTPUT A\n1. Use a tight, straight-on composition with the complete arrangement centered and narrow margins around it. A red cube sits image-left of a blue sphere on a gray table, with a sign behind them reading exactly `OPEN`; both objects and the entire sign are fully visible and unobstructed, against a plain gray backdrop under diffuse frontal light with weak shadows.\n\n2. Use a wide, straight-on composition with the complete arrangement in the lower-left portion of the image, leaving generous empty gray space above and to the right. A red cube sits image-left of a blue sphere on a gray table, with a sign behind them reading exactly `OPEN`; both objects and the entire sign are fully visible and unobstructed, against a plain gray backdrop under diffuse frontal light with weak shadows.\n\n3. Use an elevated three-quarter viewpoint looking gently downward, centering the complete arrangement with ample tabletop visible in the foreground while keeping the sign’s face readable. A red cube sits image-left of a blue sphere on a gray table, with a sign behind them reading exactly `OPEN`; both objects and the entire sign are fully visible and unobstructed, against a plain gray backdrop under diffuse frontal light with weak shadows.\n\n4. Use a low, near-tabletop frontal viewpoint in a tall portrait frame, placing the complete arrangement across the lower portion with a large expanse of empty gray backdrop above; keep the viewpoint high enough to avoid occlusion. A red cube sits image-left of a blue sphere on a gray table, with a sign behind them reading exactly `OPEN`; both objects and the entire sign are fully visible and unobstructed, under diffuse frontal light with weak shadows.\n\nOUTPUT B\n1. Frame a red cube image-left of a blue sphere on a gray table in a tight, centered, straight-on composition. A sign behind them reads exactly “OPEN”. Both objects and the entire sign are fully visible and unobstructed, with a small margin around the grouping. Use a plain gray backdrop and diffuse frontal light with weak shadows.\n\n2. Use a wide, straight-on composition, placing the complete grouping in the lower-left portion of the image, with generous empty gray space above and to the right. A red cube sits image-left of a blue sphere on a gray table; a sign behind them reads exactly “OPEN”. Both objects and the entire sign are fully visible and unobstructed. Use a plain gray backdrop and diffuse frontal light with weak shadows.\n\n3. View the scene from a moderately elevated front three-quarter angle, framing the grouping at medium distance in the right third of the image, with open space to the left. A red cube remains image-left of a blue sphere on a gray table; a sign behind them reads exactly “OPEN”. Both objects and the entire sign are fully visible and unobstructed. Use a plain gray backdrop and diffuse frontal light with weak shadows.\n\n4. Use a low frontal viewpoint just above tabletop height, with the grouping centered horizontally in the upper half of the image and a broad expanse of gray tabletop in the foreground. A red cube sits image-left of a blue sphere; a sign behind them reads exactly “OPEN”. Choose the sightline so both objects and the entire sign remain fully visible and unobstructed. Use a plain gray backdrop and diffuse frontal light with weak shadows.\n\nCRITERION C07-DISTINCTNESS (hard)\nAll four entries communicate genuinely different compositions rather than paraphrases or changes outside composition.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "39/48 C07-DISTINCTNESS",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-3013f6cc57e2_C07-PRESERVE",
+      "question": "REVIEW 39/48 — pair-3013f6cc57e2\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C07-PRESERVE (hard)\nEvery variant preserves all non-composition facts, exact lettering, visibility, and fixed lighting while maintaining the cube's image-left relation to the sphere.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "39/48 C07-PRESERVE",
+      "multi": false,
+      "recommended": null
+    }
+  ],
+  "response": {
+    "text": "User answers:\npair-2572a3cc440f_C14-ROUTE: Both pass\npair-2572a3cc440f_C14-MOTION: Both pass\npair-2572a3cc440f_C14-STYLE: Both pass\npair-407b1e714858_C06-TEXT-BINDING: Both pass\npair-3013f6cc57e2_C07-DISTINCTNESS: Both pass\npair-3013f6cc57e2_C07-PRESERVE: Both pass",
+    "details": {
+      "results": [
+        {
+          "id": "pair-2572a3cc440f_C14-ROUTE",
+          "question": "REVIEW 37/48 — pair-2572a3cc440f\n\nREQUEST\nWrite one Wan text-to-video prompt. A yellow paper boat drifts along a narrow rain-filled gutter beside a gray curb; raindrops ripple the water and push tiny leaves past it. The camera makes a slow low tracking move alongside the boat, then gently pulls back as it reaches a storm drain. Photorealistic macro cinematography, cool overcast light. Return one cohesive paragraph only, with no shot list, label, notes, variants, or generation.\n\nOUTPUT A\nA yellow paper boat drifts along a narrow rain-filled gutter beside a gray curb, its folded edges sharply detailed as raindrops spread overlapping ripples across the water and nudge tiny leaves past it. The camera tracks slowly alongside the boat at water level, then gently pulls back as it reaches a storm drain. Photorealistic macro cinematography with shallow depth of field, delicate water textures, and cool, diffuse overcast light.\n\nOUTPUT B\nA yellow paper boat drifts along a narrow rain-filled gutter beside a gray curb, bobbing gently as raindrops spread overlapping ripples and push tiny leaves past its folded hull. In one continuous shot, the camera tracks slowly alongside at water level, then gently pulls back as the boat reaches a storm drain, revealing the dark grate ahead; photorealistic macro cinematography captures damp paper fibers, wet concrete, and shimmering water under cool overcast light, with shallow depth of field.\n\nCRITERION C14-ROUTE (hard)\nThe output follows the existing Wan route as one cohesive cinematic paragraph rather than a shot list or image prompt.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-2572a3cc440f_C14-MOTION",
+          "question": "REVIEW 37/48 — pair-2572a3cc440f\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C14-MOTION (hard)\nThe paragraph preserves subject motion, environmental motion, camera progression, scene, atmosphere, and stylization without invisible story or audio invention.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-2572a3cc440f_C14-STYLE",
+          "question": "REVIEW 37/48 — pair-2572a3cc440f\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C14-STYLE (advisory)\nCamera language and progression are clear without becoming muddy or repetitive.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-407b1e714858_C06-TEXT-BINDING",
+          "question": "REVIEW 38/48 — pair-407b1e714858\n\nREQUEST\nWrite one text-to-image prompt for a small neighborhood bakery at dusk. A rectangular sign centered above the door must visibly read exactly `OPEN` in uppercase, with no other visible lettering anywhere. Return only the prompt.\n\nOUTPUT A\nA small neighborhood bakery at dusk, viewed straight on, with a modest brick facade and warm interior light contrasting with the cool blue evening. A rectangular sign centered directly above the door clearly reads exactly “OPEN” in crisp, uppercase letters, fully visible and unobstructed. This sign contains the only visible lettering in the entire image; all other surfaces are unlettered, with no additional text, logos, or watermarks.\n\nOUTPUT B\nA photorealistic, straight-on view of a small neighborhood bakery at dusk, warm amber windows displaying bread and pastries, brick facade, and a quiet sidewalk beneath a violet-blue sky. A fully visible rectangular sign centered directly above the door reads exactly “OPEN” in crisp, high-contrast uppercase letters; this sign is the only visible lettering anywhere in the image, with no other words, numbers, logos, labels, or watermarks.\n\nCRITERION C06-TEXT-BINDING (hard)\nThe prompt clearly binds exact uppercase OPEN to the rectangular sign centered above the bakery door and excludes other visible lettering.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-3013f6cc57e2_C07-DISTINCTNESS",
+          "question": "REVIEW 39/48 — pair-3013f6cc57e2\n\nREQUEST\nCreate exactly four genuinely different composition variants of this fixed scene. Number them 1 through 4 and give one complete prompt per numbered entry. Vary only composition (framing, viewpoint, and placement within the image); hold lighting and all physical scene facts fixed. Fixed scene: a red cube image-left of a blue sphere on a gray table; a sign behind them reads exactly `OPEN`; both objects and the sign are fully visible; plain gray backdrop; diffuse frontal light with weak shadows.\n\nOUTPUT A\n1. Use a tight, straight-on composition with the complete arrangement centered and narrow margins around it. A red cube sits image-left of a blue sphere on a gray table, with a sign behind them reading exactly `OPEN`; both objects and the entire sign are fully visible and unobstructed, against a plain gray backdrop under diffuse frontal light with weak shadows.\n\n2. Use a wide, straight-on composition with the complete arrangement in the lower-left portion of the image, leaving generous empty gray space above and to the right. A red cube sits image-left of a blue sphere on a gray table, with a sign behind them reading exactly `OPEN`; both objects and the entire sign are fully visible and unobstructed, against a plain gray backdrop under diffuse frontal light with weak shadows.\n\n3. Use an elevated three-quarter viewpoint looking gently downward, centering the complete arrangement with ample tabletop visible in the foreground while keeping the sign’s face readable. A red cube sits image-left of a blue sphere on a gray table, with a sign behind them reading exactly `OPEN`; both objects and the entire sign are fully visible and unobstructed, against a plain gray backdrop under diffuse frontal light with weak shadows.\n\n4. Use a low, near-tabletop frontal viewpoint in a tall portrait frame, placing the complete arrangement across the lower portion with a large expanse of empty gray backdrop above; keep the viewpoint high enough to avoid occlusion. A red cube sits image-left of a blue sphere on a gray table, with a sign behind them reading exactly `OPEN`; both objects and the entire sign are fully visible and unobstructed, under diffuse frontal light with weak shadows.\n\nOUTPUT B\n1. Frame a red cube image-left of a blue sphere on a gray table in a tight, centered, straight-on composition. A sign behind them reads exactly “OPEN”. Both objects and the entire sign are fully visible and unobstructed, with a small margin around the grouping. Use a plain gray backdrop and diffuse frontal light with weak shadows.\n\n2. Use a wide, straight-on composition, placing the complete grouping in the lower-left portion of the image, with generous empty gray space above and to the right. A red cube sits image-left of a blue sphere on a gray table; a sign behind them reads exactly “OPEN”. Both objects and the entire sign are fully visible and unobstructed. Use a plain gray backdrop and diffuse frontal light with weak shadows.\n\n3. View the scene from a moderately elevated front three-quarter angle, framing the grouping at medium distance in the right third of the image, with open space to the left. A red cube remains image-left of a blue sphere on a gray table; a sign behind them reads exactly “OPEN”. Both objects and the entire sign are fully visible and unobstructed. Use a plain gray backdrop and diffuse frontal light with weak shadows.\n\n4. Use a low frontal viewpoint just above tabletop height, with the grouping centered horizontally in the upper half of the image and a broad expanse of gray tabletop in the foreground. A red cube sits image-left of a blue sphere; a sign behind them reads exactly “OPEN”. Choose the sightline so both objects and the entire sign remain fully visible and unobstructed. Use a plain gray backdrop and diffuse frontal light with weak shadows.\n\nCRITERION C07-DISTINCTNESS (hard)\nAll four entries communicate genuinely different compositions rather than paraphrases or changes outside composition.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-3013f6cc57e2_C07-PRESERVE",
+          "question": "REVIEW 39/48 — pair-3013f6cc57e2\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C07-PRESERVE (hard)\nEvery variant preserves all non-composition facts, exact lettering, visibility, and fixed lighting while maintaining the cube's image-left relation to the sphere.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        }
+      ]
+    }
+  },
+  "recorded_at": "2026-09-23T02:22:08.347Z"
+}

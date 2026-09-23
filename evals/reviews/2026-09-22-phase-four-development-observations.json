@@ -1,0 +1,211 @@
+{
+  "recorded_at": "2026-09-23T01:48:29.604Z",
+  "phase": 4,
+  "kind": "development-only observations",
+  "acceptance_eligible": false,
+  "candidate_revision": "worktree-sha256-550085c5e6d4cbd793ba7553fbb8ec724db7375c081ec063a8e4107130deec07",
+  "raw_root": "evals/capture-checks/2026-09-22-phase-four-boundaries",
+  "probes_file": "evals/phase-four-probes.jsonl",
+  "capture_driver": {
+    "source": "import concurrent.futures\nimport importlib.util\nimport json\nfrom pathlib import Path\nimport subprocess\nimport tempfile\nfrom types import SimpleNamespace\n\nroot = Path('/home/mothmanex/.agents/skills/scenario-maker')\nspec = importlib.util.spec_from_file_location('capture_runner', root / 'evals/run_baseline.py')\nrunner = importlib.util.module_from_spec(spec)\nspec.loader.exec_module(runner)\ncases = [json.loads(line) for line in (root / 'evals/phase-four-probes.jsonl').read_text().splitlines() if line.strip()]\ndestination = root / 'evals/capture-checks/2026-09-22-phase-four-boundaries'\ndestination.mkdir(parents=True, exist_ok=False)\nfiles, identity = runner.retain_worktree_snapshot(destination / 'candidate-source-snapshot')\nrevision = f'worktree-sha256-{identity}'\nversion = subprocess.run(['omp', '--help'], text=True, capture_output=True, check=True).stdout.splitlines()[0]\nmanifest = runner.capture_manifest('phase-four-development-only-probes', SimpleNamespace(timeout=300, jobs=3, smoke=True), version, cases, runner.PROVENANCE_FILES + ['phase-four-probes.jsonl'], revision)\nmanifest.update(acceptance_eligible=False, baseline_executed=False, expected_behaviors_exposed_to_generator=False, source_files=files, candidate_snapshot='candidate-source-snapshot', command=['python3', '/tmp/scenario-phase-four-probes.py'], driver_sha256=runner.digest(Path(__file__)))\nrunner.save_json(destination / 'manifest.json', manifest)\nwith tempfile.TemporaryDirectory(prefix='scenario-phase-four-probes-') as temp:\n    with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:\n        futures = [pool.submit(runner.capture, {key: case[key] for key in ('id', 'request', 'fixtures')}, 1, destination / 'candidate-source-snapshot', destination, 300, Path(temp), revision, 'candidate') for case in cases]\n        records = [future.result() for future in concurrent.futures.as_completed(futures)]\nrunner.save_summary(destination, records)\n",
+    "sha256": "1435be8fbf4e2c5eea1af6b59ac4bad92fbafbea59c271e23d71b0d264531fa0"
+  },
+  "execution": {
+    "attempts": 11,
+    "completed": 11,
+    "errors": 0,
+    "timeouts": 0,
+    "outputs": 11,
+    "trace_complete": 11,
+    "semantic_review": "not-run",
+    "acceptance": "not assessed"
+  },
+  "observations": [
+    {
+      "id": "p4-dev-01",
+      "output": "red cube image-left of a blue sphere; sign reading \"Open late!\"",
+      "status": "completed",
+      "trace_complete": true,
+      "acceptance_state": "not-run",
+      "human_semantic_review": false
+    },
+    {
+      "id": "p4-dev-02",
+      "output": "A red cube is positioned to the left of a blue sphere from the viewer’s perspective. A sign reads \"Open late!\"",
+      "status": "completed",
+      "trace_complete": true,
+      "acceptance_state": "not-run",
+      "human_semantic_review": false
+    },
+    {
+      "id": "p4-dev-03",
+      "output": "red cube to the image-left of a blue sphere; sign reading \"Open late!\"",
+      "status": "completed",
+      "trace_complete": true,
+      "acceptance_state": "not-run",
+      "human_semantic_review": false
+    },
+    {
+      "id": "p4-dev-04",
+      "output": "A red cube is to the left of a blue sphere as viewed in the image. A sign reads \"Open late!\"",
+      "status": "completed",
+      "trace_complete": true,
+      "acceptance_state": "not-run",
+      "human_semantic_review": false
+    },
+    {
+      "id": "p4-dev-05",
+      "output": "A red cube is positioned to the left of a blue sphere from the viewer’s perspective. A sign displays the exact words \"Open late!\"",
+      "status": "completed",
+      "trace_complete": true,
+      "acceptance_state": "not-run",
+      "human_semantic_review": false
+    },
+    {
+      "id": "p4-dev-06",
+      "output": "A red cube is positioned to the left of a blue sphere from the viewer’s perspective. A sign displays the exact text \"Open late!\"",
+      "status": "completed",
+      "trace_complete": true,
+      "acceptance_state": "not-run",
+      "human_semantic_review": false
+    },
+    {
+      "id": "p4-dev-07",
+      "output": "red cube image-left of a blue sphere, sign reading \"Open late!\"",
+      "status": "completed",
+      "trace_complete": true,
+      "acceptance_state": "not-run",
+      "human_semantic_review": false
+    },
+    {
+      "id": "p4-dev-08",
+      "output": "Positive prompt: A red cube rests on a gray surface.\nNegative prompt: logos",
+      "status": "completed",
+      "trace_complete": true,
+      "acceptance_state": "not-run",
+      "human_semantic_review": false
+    },
+    {
+      "id": "p4-dev-09",
+      "output": "The official Krea 2 reference CLI accepts only a positive prompt, with no negative-prompt argument. With `oss_turbo` and CFG `0.0`, the sampler also skips negative conditioning, so a negative prompt containing `logos` would have no effect.\n\nWould you prefer a positive-only prompt describing the brass key and blue cloth as plain and unbranded, or a positive/negative pair for a workflow that supports negative conditioning?",
+      "status": "completed",
+      "trace_complete": true,
+      "acceptance_state": "not-run",
+      "human_semantic_review": false
+    },
+    {
+      "id": "p4-dev-10",
+      "output": "## Core distinction\n\n**Local Krea 2 RAW/Turbo and hosted Krea 2 Medium/Large/Medium Turbo are distinct targets—not interchangeable names.** In particular, local Turbo should not be treated as hosted Medium Turbo.\n\nThe selected skill’s references document the local checkpoints and establish this boundary, but do not provide complete per-tier hosted specifications. The comparison below separates documented local behavior from hosted details that remain unverified.\n\n| Area | Local Krea 2 RAW / Turbo | Hosted Krea 2 Medium / Large / Medium Turbo |\n|---|---|---|\n| **Prompt syntax** | Portable natural-language text is the recommended baseline. There is no official rigid clause order or required quality-token prefix. Quote exact visible lettering and clearly bind attributes and actions to their subjects. | The local profile does not establish separate syntax rules for these hosted tiers. Plain descriptive text is a conservative starting point, not proof that every hosted interface accepts the same special syntax. |\n| **Length and structure** | The skill defaults to one cohesive paragraph of roughly 150 tokens. This is a writing preference—not a checkpoint requirement or token limit. Longer detailed prompts are recommended in the referenced guidance, but minimal prompts remain supported. | Do not transfer the local profile’s length default as a hosted requirement or assume different hosted sizes require different prompt lengths. No such per-tier rule is established here. |\n| **Negative conditioning** | Support depends on the execution path. The official CLI exposes a positive prompt but no negative argument. The lower-level sampler accepts `negative_prompts` and uses that branch when guidance is greater than zero. Recommended Turbo guidance is `0.0`, which skips it. | Negative-prompt availability and actual consumption are not established by these references. Neither the hosted tier’s name nor local sampler support proves that a hosted UI or endpoint consumes negatives. |\n| **Creativity controls** | Hosted **Creativity** and **Generative Sliders** are not local prompt syntax. Local sampler parameters such as CFG, steps, and `mu` are separate controls; no equivalence to hosted Creativity is established. | Creativity belongs to the hosted interface/control layer, not the text grammar. Its availability, range, defaults, and precise effects across the three tiers are not specified in the supplied references. |\n| **Prompt enhancement** | Enhancement is a separate workflow step, not intrinsic checkpoint behavior. Krea’s `expansion.txt` is an optional helper-LLM system prompt; using RAW or Turbo does not itself mean that helper has run. | Do not assume hosted enhancement uses the same helper, is enabled by default, or preserves wording identically. The supplied references do not establish its per-tier implementation or defaults. |\n\n### Important local RAW–Turbo difference\n\nRAW is the open **undistilled base checkpoint**; Turbo is the open **eight-step distilled checkpoint**. Their documented reference settings are:\n\n- **RAW:** 52 steps, CFG 3.5.\n- **Turbo:** 8 steps, CFG 0.0, `mu=1.15`.\n\nThese are **sampler settings, not words to insert into a prompt**. RAW’s positive guidance makes the lower-level negative-conditioning branch eligible, but it does not establish that a particular CLI, adapter, or graph supplies negative conditioning. A visible negative socket alone is insufficient evidence.\n\n### Practical interpretation\n\nThe most portable component is the **scene description**: subjects, attribute bindings, relationships, composition, and exact quoted lettering. Special weighting syntax, negative channels, Creativity settings, and enhancement behavior should be assessed separately for the actual interface.\n\nFor enhancement, the optional local helper’s stated contract emphasizes faithful expansion, preserved medium and lettering, and no invented objects or unsupported specificity. That is an instruction to the helper—not a guarantee about an unknown downstream enhancer.\n\n**Bottom line:** transfer clear descriptive content between local and hosted workflows, but do not transfer assumptions about controls or conditioning. The available documentation supports concrete RAW/Turbo distinctions; it does not support a claimed Medium-versus-Large-versus-Medium-Turbo feature matrix.",
+      "status": "completed",
+      "trace_complete": true,
+      "acceptance_state": "not-run",
+      "human_semantic_review": false
+    },
+    {
+      "id": "p4-dev-11",
+      "output": "logos, watermarks",
+      "status": "completed",
+      "trace_complete": true,
+      "acceptance_state": "not-run",
+      "human_semantic_review": false
+    }
+  ],
+  "interpretation": "Observed requested prompt shapes, sparse adaptations at all detail levels, exact lettering, requested relevant SDXL negative text, and a clarification for the non-consuming Turbo CLI. These are diagnostic observations only, not semantic passes or rendered-media evidence.",
+  "paired_smoke": {
+    "root": "evals/capture-checks/2026-09-22-phase-four-paired-smoke",
+    "observations": [
+      {
+        "side": "baseline",
+        "execution": {
+          "status": "completed",
+          "exit_code": 0,
+          "error": null,
+          "model_errors": [],
+          "malformed_trace_lines": []
+        },
+        "trace_complete": true,
+        "rawVerified": 5,
+        "output": "Saved to `outputs/smoke.txt`.",
+        "artifacts": [
+          {
+            "path": "outputs/smoke.txt",
+            "text": "A red cube rests at the center of a smooth gray surface, viewed from a three-quarter angle with its top and two sides visible. Soft studio lighting highlights its crisp edges and casts a gentle shadow to the right against a plain gray background, creating a clean, minimalist still life.\n"
+          }
+        ],
+        "contextTypes": [
+          "eval_context",
+          "provider_request"
+        ],
+        "observed_context": [
+          {
+            "type": "eval_context",
+            "systemPrompt": "You are a prompt-writing assistant executing the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md. Read that file and only its applicable references. Resolve its reference and script paths relative to ./selected-skill, not an installed skill. Do not discover or load other skills, repository instructions, past sessions, evaluator files, or web sources.\n\nOnly local read, grep, glob, bash, and write tools are available. Use them for the selected skill's references, local lookup/scripts, supplied fixtures, and requested workspace-local text exports. Keep writes within this fresh workspace. Do not edit the selected skill, execute image/video generation or frame extraction, delegate, switch models, access the network, or inspect credentials. This is prompt writing, not generation. If clarification is necessary, ask in your final response; this non-interactive run cannot receive an answer.\n\nApply the selected skill to the user's request. Do not discuss evaluation or scoring. The workspace starts with no prior conversation or generated outputs.\n",
+            "cwd": "/tmp/scenario-maker-eval-8nmkmttb/baseline/capture-smoke/attempt-1",
+            "model": {
+              "provider": "openai-codex",
+              "id": "gpt-6-astra",
+              "name": "GPT-6-Astra"
+            },
+            "thinking": "high",
+            "tools": [
+              "read",
+              "grep",
+              "glob",
+              "bash",
+              "write"
+            ]
+          }
+        ]
+      },
+      {
+        "side": "candidate",
+        "execution": {
+          "status": "completed",
+          "exit_code": 0,
+          "error": null,
+          "model_errors": [],
+          "malformed_trace_lines": []
+        },
+        "trace_complete": true,
+        "rawVerified": 5,
+        "output": "Saved one prompt to `outputs/smoke.txt`.",
+        "artifacts": [
+          {
+            "path": "outputs/smoke.txt",
+            "text": "A red cube rests on a gray surface.\n"
+          }
+        ],
+        "contextTypes": [
+          "eval_context",
+          "provider_request"
+        ],
+        "observed_context": [
+          {
+            "type": "eval_context",
+            "systemPrompt": "You are a prompt-writing assistant executing the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md. Read that file and only its applicable references. Resolve its reference and script paths relative to ./selected-skill, not an installed skill. Do not discover or load other skills, repository instructions, past sessions, evaluator files, or web sources.\n\nOnly local read, grep, glob, bash, and write tools are available. Use them for the selected skill's references, local lookup/scripts, supplied fixtures, and requested workspace-local text exports. Keep writes within this fresh workspace. Do not edit the selected skill, execute image/video generation or frame extraction, delegate, switch models, access the network, or inspect credentials. This is prompt writing, not generation. If clarification is necessary, ask in your final response; this non-interactive run cannot receive an answer.\n\nApply the selected skill to the user's request. Do not discuss evaluation or scoring. The workspace starts with no prior conversation or generated outputs.\n",
+            "cwd": "/tmp/scenario-maker-eval-8nmkmttb/candidate/capture-smoke/attempt-1",
+            "model": {
+              "provider": "openai-codex",
+              "id": "gpt-6-astra",
+              "name": "GPT-6-Astra"
+            },
+            "thinking": "high",
+            "tools": [
+              "read",
+              "grep",
+              "glob",
+              "bash",
+              "write"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "reference_integrity": {
+    "checked_local_links": 43,
+    "source_files": 16
+  },
+  "ordinary_use_failures_collected": [],
+  "ordinary_use_status": "Not collected: these are synthetic development probes, not actual ordinary-use reports."
+}

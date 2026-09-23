@@ -1,0 +1,358 @@
+{
+  "batch": 1,
+  "start": 0,
+  "count": 3,
+  "questions": [
+    {
+      "id": "pair-fbdc949c8c7d_C05-OUTPUT",
+      "question": "REVIEW 1/48 — pair-fbdc949c8c7d\n\nREQUEST\nWrite one text-to-image prompt for an empty sunlit stone courtyard with a dry fountain, ivy on the walls, and closed wooden doors. No people, animals, statues, silhouettes, or reflections of figures may appear. Return only the prompt and do not add a negative-prompt field.\n\nOUTPUT A\nA wide, sunlit view of an empty stone courtyard centers on a plain, unadorned dry fountain with a visibly waterless basin, surrounded by weathered paving, ivy-covered walls, and closed wooden doors. Warm daylight reveals rough stone textures and casts crisp architectural shadows; the entire scene contains only architecture and vegetation, with no people, animals, statues, silhouettes, or reflections of figures.\n\nOUTPUT B\nAn empty stone courtyard bathed in warm sunlight, with a dry stone fountain and a visibly waterless basin. Green ivy climbs the textured stone walls, and every wooden door is firmly closed. Sunlight reveals weathered paving and natural wood grain. The entire scene is unoccupied, with no people, animals, statues, silhouettes, or reflections of figures anywhere.\n\nCRITERION C05-OUTPUT (hard)\nThe response is one prompt only and does not create an unsolicited negative-prompt field.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "1/48 C05-OUTPUT",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-fbdc949c8c7d_C05-EXCLUSION",
+      "question": "REVIEW 1/48 — pair-fbdc949c8c7d\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C05-EXCLUSION (hard)\nThe positive scene remains an empty courtyard and does not introduce any excluded living or figure-like subject directly or through optional detail.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "1/48 C05-EXCLUSION",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-fbdc949c8c7d_C05-STYLE",
+      "question": "REVIEW 1/48 — pair-fbdc949c8c7d\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C05-STYLE (advisory)\nThe exclusion is communicated naturally without overwhelming the requested visual scene.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "1/48 C05-STYLE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-c0afb8046685_C16-FRAGMENTS",
+      "question": "REVIEW 2/48 — pair-c0afb8046685\n\nREQUEST\nCreate a ComfyUI wildcard file at `outputs/clothing-fragments.txt` containing exactly four distinct clothing-only fragments suitable for insertion at `[CLOTHING SLOT]` in this host: `score_9, score_8_up, score_7_up, source_anime, rating_safe, 1girl, black hair, [CLOTHING SLOT]`. Each fragment must be one nonempty physical line and describe only one garment or coordinated outfit; do not repeat the host prefix, subject, hair, pose, action, setting, camera, lighting, comments, numbering, headings, or blank lines. After saving, report the actual path, entry count, and that the file is fragment mode outside the file.\n\nOUTPUT A\nSaved `outputs/clothing-fragments.txt`.\n\n- **Entry count:** 4 distinct clothing-only fragments\n- **Mode:** Fragment mode, suitable for insertion at `[CLOTHING SLOT]`\n\nGENERATED FILES (A)\n[\n  {\n    \"availability\": \"available\",\n    \"path\": \"outputs/clothing-fragments.txt\",\n    \"text\": \"navy blue long-sleeved midi dress with a white collar and pleated skirt\\ncream cable-knit sweater with brown corduroy trousers\\nforest green zip-up jacket with beige cargo pants\\nburgundy high-neck blouse with a charcoal ankle-length skirt\\n\"\n  }\n]\n\nOUTPUT B\nSaved `outputs/clothing-fragments.txt` with exactly **4 distinct entries**, one per line, in **fragment mode** (clothing-only).\n\nGENERATED FILES (B)\n[\n  {\n    \"availability\": \"available\",\n    \"path\": \"outputs/clothing-fragments.txt\",\n    \"text\": \"navy blue long-sleeved midi dress, white Peter Pan collar, pleated skirt\\ncream cable-knit turtleneck sweater, brown high-waisted corduroy trousers\\nsage green linen jumpsuit, short sleeves, button front, matching fabric belt\\nburgundy double-breasted wool coat, notched lapels, brass buttons\\n\"\n  }\n]\n\nCRITERION C16-FRAGMENTS (hard)\nEach of the four entries is a distinct insertion-compatible clothing-only fragment; none repeats host-owned prefixes or introduces subject, hair, pose, action, setting, camera, or lighting content.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "2/48 C16-FRAGMENTS",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-c0afb8046685_C16-REPORT",
+      "question": "REVIEW 2/48 — pair-c0afb8046685\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C16-REPORT (hard)\nThe response truthfully reports the actual saved path, actual count of four, and fragment mode outside the selection file.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "2/48 C16-REPORT",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-b7243876c9f7_C13-PROFILE",
+      "question": "REVIEW 3/48 — pair-b7243876c9f7\n\nREQUEST\nWrite one NoobAI positive prompt for one adult man with long white hair, amber eyes, a brown leather apron, and blue work gloves, repairing a brass clock at a wooden bench. Return only the comma-separated positive prompt. Use NoobAI's normalized space-separated tag style; no negative prompt, notes, labels, or variants.\n\nOUTPUT A\nmasterpiece, best quality, newest, 1boy, solo, adult man, long hair, white hair, amber eyes, brown leather apron, blue work gloves, repairing a brass clock, holding a small screwdriver, exposed clock gears, wooden workbench, scattered clockmaking tools, workshop interior, warm task lighting, three-quarter view, medium shot\n\nOUTPUT B\nmasterpiece, best quality, newest, 1boy, solo, adult man, long hair, white hair, amber eyes, brown leather apron, blue work gloves, repairing a brass clock at a wooden workbench\n\nCRITERION C13-PROFILE (hard)\nThe result preserves the existing NoobAI ordered tag convention, including its quality/model preference opening and space-normalized visible tags, without Pony syntax.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "3/48 C13-PROFILE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-b7243876c9f7_C13-PRESERVE",
+      "question": "REVIEW 3/48 — pair-b7243876c9f7\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C13-PRESERVE (hard)\nAll supplied subject attributes, clothing, action, clock, and workbench relationship remain explicit and correctly bound.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "3/48 C13-PRESERVE",
+      "multi": false,
+      "recommended": null
+    }
+  ],
+  "response": {
+    "text": "User answers:\npair-fbdc949c8c7d_C05-OUTPUT: Both pass\npair-fbdc949c8c7d_C05-EXCLUSION: Both pass\npair-fbdc949c8c7d_C05-STYLE: Both pass\npair-c0afb8046685_C16-FRAGMENTS: Both pass\npair-c0afb8046685_C16-REPORT: Both pass\npair-b7243876c9f7_C13-PROFILE: Both pass\npair-b7243876c9f7_C13-PRESERVE: Both pass",
+    "details": {
+      "results": [
+        {
+          "id": "pair-fbdc949c8c7d_C05-OUTPUT",
+          "question": "REVIEW 1/48 — pair-fbdc949c8c7d\n\nREQUEST\nWrite one text-to-image prompt for an empty sunlit stone courtyard with a dry fountain, ivy on the walls, and closed wooden doors. No people, animals, statues, silhouettes, or reflections of figures may appear. Return only the prompt and do not add a negative-prompt field.\n\nOUTPUT A\nA wide, sunlit view of an empty stone courtyard centers on a plain, unadorned dry fountain with a visibly waterless basin, surrounded by weathered paving, ivy-covered walls, and closed wooden doors. Warm daylight reveals rough stone textures and casts crisp architectural shadows; the entire scene contains only architecture and vegetation, with no people, animals, statues, silhouettes, or reflections of figures.\n\nOUTPUT B\nAn empty stone courtyard bathed in warm sunlight, with a dry stone fountain and a visibly waterless basin. Green ivy climbs the textured stone walls, and every wooden door is firmly closed. Sunlight reveals weathered paving and natural wood grain. The entire scene is unoccupied, with no people, animals, statues, silhouettes, or reflections of figures anywhere.\n\nCRITERION C05-OUTPUT (hard)\nThe response is one prompt only and does not create an unsolicited negative-prompt field.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-fbdc949c8c7d_C05-EXCLUSION",
+          "question": "REVIEW 1/48 — pair-fbdc949c8c7d\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C05-EXCLUSION (hard)\nThe positive scene remains an empty courtyard and does not introduce any excluded living or figure-like subject directly or through optional detail.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-fbdc949c8c7d_C05-STYLE",
+          "question": "REVIEW 1/48 — pair-fbdc949c8c7d\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C05-STYLE (advisory)\nThe exclusion is communicated naturally without overwhelming the requested visual scene.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-c0afb8046685_C16-FRAGMENTS",
+          "question": "REVIEW 2/48 — pair-c0afb8046685\n\nREQUEST\nCreate a ComfyUI wildcard file at `outputs/clothing-fragments.txt` containing exactly four distinct clothing-only fragments suitable for insertion at `[CLOTHING SLOT]` in this host: `score_9, score_8_up, score_7_up, source_anime, rating_safe, 1girl, black hair, [CLOTHING SLOT]`. Each fragment must be one nonempty physical line and describe only one garment or coordinated outfit; do not repeat the host prefix, subject, hair, pose, action, setting, camera, lighting, comments, numbering, headings, or blank lines. After saving, report the actual path, entry count, and that the file is fragment mode outside the file.\n\nOUTPUT A\nSaved `outputs/clothing-fragments.txt`.\n\n- **Entry count:** 4 distinct clothing-only fragments\n- **Mode:** Fragment mode, suitable for insertion at `[CLOTHING SLOT]`\n\nGENERATED FILES (A)\n[\n  {\n    \"availability\": \"available\",\n    \"path\": \"outputs/clothing-fragments.txt\",\n    \"text\": \"navy blue long-sleeved midi dress with a white collar and pleated skirt\\ncream cable-knit sweater with brown corduroy trousers\\nforest green zip-up jacket with beige cargo pants\\nburgundy high-neck blouse with a charcoal ankle-length skirt\\n\"\n  }\n]\n\nOUTPUT B\nSaved `outputs/clothing-fragments.txt` with exactly **4 distinct entries**, one per line, in **fragment mode** (clothing-only).\n\nGENERATED FILES (B)\n[\n  {\n    \"availability\": \"available\",\n    \"path\": \"outputs/clothing-fragments.txt\",\n    \"text\": \"navy blue long-sleeved midi dress, white Peter Pan collar, pleated skirt\\ncream cable-knit turtleneck sweater, brown high-waisted corduroy trousers\\nsage green linen jumpsuit, short sleeves, button front, matching fabric belt\\nburgundy double-breasted wool coat, notched lapels, brass buttons\\n\"\n  }\n]\n\nCRITERION C16-FRAGMENTS (hard)\nEach of the four entries is a distinct insertion-compatible clothing-only fragment; none repeats host-owned prefixes or introduces subject, hair, pose, action, setting, camera, or lighting content.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-c0afb8046685_C16-REPORT",
+          "question": "REVIEW 2/48 — pair-c0afb8046685\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C16-REPORT (hard)\nThe response truthfully reports the actual saved path, actual count of four, and fragment mode outside the selection file.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-b7243876c9f7_C13-PROFILE",
+          "question": "REVIEW 3/48 — pair-b7243876c9f7\n\nREQUEST\nWrite one NoobAI positive prompt for one adult man with long white hair, amber eyes, a brown leather apron, and blue work gloves, repairing a brass clock at a wooden bench. Return only the comma-separated positive prompt. Use NoobAI's normalized space-separated tag style; no negative prompt, notes, labels, or variants.\n\nOUTPUT A\nmasterpiece, best quality, newest, 1boy, solo, adult man, long hair, white hair, amber eyes, brown leather apron, blue work gloves, repairing a brass clock, holding a small screwdriver, exposed clock gears, wooden workbench, scattered clockmaking tools, workshop interior, warm task lighting, three-quarter view, medium shot\n\nOUTPUT B\nmasterpiece, best quality, newest, 1boy, solo, adult man, long hair, white hair, amber eyes, brown leather apron, blue work gloves, repairing a brass clock at a wooden workbench\n\nCRITERION C13-PROFILE (hard)\nThe result preserves the existing NoobAI ordered tag convention, including its quality/model preference opening and space-normalized visible tags, without Pony syntax.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-b7243876c9f7_C13-PRESERVE",
+          "question": "REVIEW 3/48 — pair-b7243876c9f7\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C13-PRESERVE (hard)\nAll supplied subject attributes, clothing, action, clock, and workbench relationship remain explicit and correctly bound.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        }
+      ]
+    }
+  },
+  "recorded_at": "2026-09-23T02:06:03.058Z"
+}

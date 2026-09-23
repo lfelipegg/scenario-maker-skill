@@ -1,0 +1,307 @@
+{
+  "batch": 9,
+  "start": 24,
+  "count": 3,
+  "questions": [
+    {
+      "id": "pair-573ab1e293f0_C03-OUTPUT",
+      "question": "REVIEW 25/48 — pair-573ab1e293f0\n\nREQUEST\nRevise only the jacket color in this prompt from yellow to red. Return only the revised prompt and preserve everything else exactly in meaning: A woman with a short black bob wears a yellow denim jacket and silver hoop earrings, standing beside a blue bicycle under an overcast sky.\n\nOUTPUT A\nA woman with a short black bob wears a red denim jacket and silver hoop earrings, standing beside a blue bicycle under an overcast sky.\n\nOUTPUT B\nA woman with a short black bob wears a red denim jacket and silver hoop earrings, standing beside a blue bicycle under an overcast sky.\n\nCRITERION C03-OUTPUT (hard)\nThe response contains only the revised prompt, not an explanation, comparison, or prompt package.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "25/48 C03-OUTPUT",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-573ab1e293f0_C03-REVISION",
+      "question": "REVIEW 25/48 — pair-573ab1e293f0\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C03-REVISION (hard)\nOnly the jacket color changes from yellow to red; every other supplied fact and relationship remains unchanged in meaning.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "25/48 C03-REVISION",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-c204c15bb25d_C12-PROFILE",
+      "question": "REVIEW 26/48 — pair-c204c15bb25d\n\nREQUEST\nWrite one Pony Diffusion V6 XL positive prompt for one adult woman with auburn hair, round glasses, a teal raincoat, and a folded red umbrella, standing at an empty tram stop at night. Use the safe anime source/rating dialect. Return only the comma-separated positive prompt: no negative prompt, notes, labels, or variants.\n\nOUTPUT A\nscore_9, score_8_up, score_7_up, source_anime, rating_safe, 1girl, solo, adult woman, auburn hair, round glasses, teal raincoat, holding a folded red umbrella at her side, standing, empty tram stop, night, glass shelter, empty bench, tram tracks, wet pavement, soft streetlight, reflected lights, full body\n\nOUTPUT B\nscore_9, score_8_up, score_7_up, source_anime, rating_safe, 1girl, solo, adult woman, auburn hair, round glasses, teal raincoat, holding a folded red umbrella, standing at an otherwise empty tram stop, night\n\nCRITERION C12-PROFILE (hard)\nThe positive prompt starts with the existing Pony score/source/rating convention, uses source_anime and rating_safe, remains comma-separated, and avoids generic masterpiece/best quality boilerplate.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "26/48 C12-PROFILE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-c204c15bb25d_C12-PRESERVE",
+      "question": "REVIEW 26/48 — pair-c204c15bb25d\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C12-PRESERVE (hard)\nThe single adult subject retains every supplied attribute and prop, and the tram stop remains empty apart from her.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "26/48 C12-PRESERVE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-124b83876925_C13-PROFILE",
+      "question": "REVIEW 27/48 — pair-124b83876925\n\nREQUEST\nWrite one NoobAI positive prompt for one adult man with long white hair, amber eyes, a brown leather apron, and blue work gloves, repairing a brass clock at a wooden bench. Return only the comma-separated positive prompt. Use NoobAI's normalized space-separated tag style; no negative prompt, notes, labels, or variants.\n\nOUTPUT A\nmasterpiece, best quality, newest, 1boy, solo, adult man, long hair, white hair, amber eyes, brown leather apron, blue work gloves, repairing a brass clock at a wooden workbench\n\nOUTPUT B\nmasterpiece, best quality, newest, 1boy, solo, adult man, long hair, white hair, amber eyes, brown leather apron, blue work gloves, repairing a brass clock, holding a screwdriver, exposed clock gears, leaning over a wooden workbench, clockwork tools, workshop, soft window light, three quarter view, upper body, detailed hands\n\nCRITERION C13-PROFILE (hard)\nThe result preserves the existing NoobAI ordered tag convention, including its quality/model preference opening and space-normalized visible tags, without Pony syntax.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "27/48 C13-PROFILE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-124b83876925_C13-PRESERVE",
+      "question": "REVIEW 27/48 — pair-124b83876925\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C13-PRESERVE (hard)\nAll supplied subject attributes, clothing, action, clock, and workbench relationship remain explicit and correctly bound.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "27/48 C13-PRESERVE",
+      "multi": false,
+      "recommended": null
+    }
+  ],
+  "response": {
+    "text": "User answers:\npair-573ab1e293f0_C03-OUTPUT: Both pass\npair-573ab1e293f0_C03-REVISION: Both pass\npair-c204c15bb25d_C12-PROFILE: Both pass\npair-c204c15bb25d_C12-PRESERVE: \"A fail, b pass. Why A fails\n\nA preserves the required woman and all her attributes, but adds:\n\nglass shelter\nempty bench\ntram tracks\nwet pavement\nsoft streetlight\nreflected lights\n\nFor operation: create, Issue #17 makes Balanced the default. Balanced permits filling local unspecified details, but says “No new independent subjects, props, or events.”\n\nThe glass shelter, bench, and tram tracks are new independent scene elements. wet pavement is also a new visual fact. So even though the tram stop remains empty of other people, A exceeds the permitted invention boundary.\n\nWhy B passes\n\nB stays tightly within the requested scene:\n\nholding a folded red umbrella, standing at an otherwise empty tram stop, night\n\nIt preserves every required detail and makes the “empty apart from her” condition explicit without adding unrelated scene content.\"\npair-124b83876925_C13-PROFILE: Both pass\npair-124b83876925_C13-PRESERVE: \"Both Fail. | Output | C13-PROFILE | C13-PRESERVE | Overall  | Notes                                                                                                                                                                                                                                                                                                                                                                                                                                                                |\n| ------ | ----------- | ------------ | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| **A**  | **PASS**    | **PASS**     | **PASS** | Preserves the NoobAI opening convention with `masterpiece, best quality, newest`, uses comma-separated space-normalized tags rather than underscore normalization, and avoids Pony syntax. All required facts are explicit and correctly bound: one adult man, long white hair, amber eyes, brown leather apron, blue work gloves, and repairing a brass clock at a wooden workbench.                                                                                |\n| **B**  | **PASS**    | **FAIL**     | **FAIL** | The NoobAI profile formatting itself is correct, but it invents substantial unsupported content: `holding a screwdriver`, `exposed clock gears`, `clockwork tools`, `workshop`, `soft window light`, `three quarter view`, `upper body`, and `detailed hands`. Under the settled default **Balanced** mode for `create`, new independent props such as a screwdriver/tools are not permitted, and the extra scene/presentation details go beyond what was requested. |\n\"",
+    "details": {
+      "results": [
+        {
+          "id": "pair-573ab1e293f0_C03-OUTPUT",
+          "question": "REVIEW 25/48 — pair-573ab1e293f0\n\nREQUEST\nRevise only the jacket color in this prompt from yellow to red. Return only the revised prompt and preserve everything else exactly in meaning: A woman with a short black bob wears a yellow denim jacket and silver hoop earrings, standing beside a blue bicycle under an overcast sky.\n\nOUTPUT A\nA woman with a short black bob wears a red denim jacket and silver hoop earrings, standing beside a blue bicycle under an overcast sky.\n\nOUTPUT B\nA woman with a short black bob wears a red denim jacket and silver hoop earrings, standing beside a blue bicycle under an overcast sky.\n\nCRITERION C03-OUTPUT (hard)\nThe response contains only the revised prompt, not an explanation, comparison, or prompt package.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-573ab1e293f0_C03-REVISION",
+          "question": "REVIEW 25/48 — pair-573ab1e293f0\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C03-REVISION (hard)\nOnly the jacket color changes from yellow to red; every other supplied fact and relationship remains unchanged in meaning.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-c204c15bb25d_C12-PROFILE",
+          "question": "REVIEW 26/48 — pair-c204c15bb25d\n\nREQUEST\nWrite one Pony Diffusion V6 XL positive prompt for one adult woman with auburn hair, round glasses, a teal raincoat, and a folded red umbrella, standing at an empty tram stop at night. Use the safe anime source/rating dialect. Return only the comma-separated positive prompt: no negative prompt, notes, labels, or variants.\n\nOUTPUT A\nscore_9, score_8_up, score_7_up, source_anime, rating_safe, 1girl, solo, adult woman, auburn hair, round glasses, teal raincoat, holding a folded red umbrella at her side, standing, empty tram stop, night, glass shelter, empty bench, tram tracks, wet pavement, soft streetlight, reflected lights, full body\n\nOUTPUT B\nscore_9, score_8_up, score_7_up, source_anime, rating_safe, 1girl, solo, adult woman, auburn hair, round glasses, teal raincoat, holding a folded red umbrella, standing at an otherwise empty tram stop, night\n\nCRITERION C12-PROFILE (hard)\nThe positive prompt starts with the existing Pony score/source/rating convention, uses source_anime and rating_safe, remains comma-separated, and avoids generic masterpiece/best quality boilerplate.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-c204c15bb25d_C12-PRESERVE",
+          "question": "REVIEW 26/48 — pair-c204c15bb25d\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C12-PRESERVE (hard)\nThe single adult subject retains every supplied attribute and prop, and the tram stop remains empty apart from her.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [],
+          "customInput": "A fail, b pass. Why A fails\n\nA preserves the required woman and all her attributes, but adds:\n\nglass shelter\nempty bench\ntram tracks\nwet pavement\nsoft streetlight\nreflected lights\n\nFor operation: create, Issue #17 makes Balanced the default. Balanced permits filling local unspecified details, but says “No new independent subjects, props, or events.”\n\nThe glass shelter, bench, and tram tracks are new independent scene elements. wet pavement is also a new visual fact. So even though the tram stop remains empty of other people, A exceeds the permitted invention boundary.\n\nWhy B passes\n\nB stays tightly within the requested scene:\n\nholding a folded red umbrella, standing at an otherwise empty tram stop, night\n\nIt preserves every required detail and makes the “empty apart from her” condition explicit without adding unrelated scene content."
+        },
+        {
+          "id": "pair-124b83876925_C13-PROFILE",
+          "question": "REVIEW 27/48 — pair-124b83876925\n\nREQUEST\nWrite one NoobAI positive prompt for one adult man with long white hair, amber eyes, a brown leather apron, and blue work gloves, repairing a brass clock at a wooden bench. Return only the comma-separated positive prompt. Use NoobAI's normalized space-separated tag style; no negative prompt, notes, labels, or variants.\n\nOUTPUT A\nmasterpiece, best quality, newest, 1boy, solo, adult man, long hair, white hair, amber eyes, brown leather apron, blue work gloves, repairing a brass clock at a wooden workbench\n\nOUTPUT B\nmasterpiece, best quality, newest, 1boy, solo, adult man, long hair, white hair, amber eyes, brown leather apron, blue work gloves, repairing a brass clock, holding a screwdriver, exposed clock gears, leaning over a wooden workbench, clockwork tools, workshop, soft window light, three quarter view, upper body, detailed hands\n\nCRITERION C13-PROFILE (hard)\nThe result preserves the existing NoobAI ordered tag convention, including its quality/model preference opening and space-normalized visible tags, without Pony syntax.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-124b83876925_C13-PRESERVE",
+          "question": "REVIEW 27/48 — pair-124b83876925\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C13-PRESERVE (hard)\nAll supplied subject attributes, clothing, action, clock, and workbench relationship remain explicit and correctly bound.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [],
+          "customInput": "Both Fail. | Output | C13-PROFILE | C13-PRESERVE | Overall  | Notes                                                                                                                                                                                                                                                                                                                                                                                                                                                                |\n| ------ | ----------- | ------------ | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| **A**  | **PASS**    | **PASS**     | **PASS** | Preserves the NoobAI opening convention with `masterpiece, best quality, newest`, uses comma-separated space-normalized tags rather than underscore normalization, and avoids Pony syntax. All required facts are explicit and correctly bound: one adult man, long white hair, amber eyes, brown leather apron, blue work gloves, and repairing a brass clock at a wooden workbench.                                                                                |\n| **B**  | **PASS**    | **FAIL**     | **FAIL** | The NoobAI profile formatting itself is correct, but it invents substantial unsupported content: `holding a screwdriver`, `exposed clock gears`, `clockwork tools`, `workshop`, `soft window light`, `three quarter view`, `upper body`, and `detailed hands`. Under the settled default **Balanced** mode for `create`, new independent props such as a screwdriver/tools are not permitted, and the extra scene/presentation details go beyond what was requested. |\n"
+        }
+      ]
+    }
+  },
+  "recorded_at": "2026-09-23T02:16:53.021Z"
+}

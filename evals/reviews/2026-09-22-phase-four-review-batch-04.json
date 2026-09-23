@@ -1,0 +1,260 @@
+{
+  "batch": 4,
+  "start": 9,
+  "count": 3,
+  "questions": [
+    {
+      "id": "pair-8bcb1c9a6ed5_C06-TEXT-BINDING",
+      "question": "REVIEW 10/48 — pair-8bcb1c9a6ed5\n\nREQUEST\nWrite one text-to-image prompt for a small neighborhood bakery at dusk. A rectangular sign centered above the door must visibly read exactly `OPEN` in uppercase, with no other visible lettering anywhere. Return only the prompt.\n\nOUTPUT A\nA small neighborhood bakery at dusk, viewed straight on, with a modest brick facade in soft blue twilight and warm interior light. A rectangular sign centered directly above the door clearly reads exactly “OPEN” in large, crisp uppercase letters, fully visible and unobstructed. This sign is the only visible lettering anywhere in the image; all other surfaces are unlettered, with no additional text, logos, or watermarks.\n\nOUTPUT B\nA small neighborhood bakery at dusk, viewed straight on, with warm amber light spilling through windows filled with unlabelled loaves and pastries, brick walls, and a quiet sidewalk beneath a deep blue sky. A clearly visible rectangular sign centered directly above the door reads exactly “OPEN” in crisp uppercase letters; no other visible lettering, words, numbers, logos, or watermarks anywhere in the image, photorealistic detail.\n\nCRITERION C06-TEXT-BINDING (hard)\nThe prompt clearly binds exact uppercase OPEN to the rectangular sign centered above the bakery door and excludes other visible lettering.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "10/48 C06-TEXT-BINDING",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-d754d3e894db_C16-FRAGMENTS",
+      "question": "REVIEW 11/48 — pair-d754d3e894db\n\nREQUEST\nCreate a ComfyUI wildcard file at `outputs/clothing-fragments.txt` containing exactly four distinct clothing-only fragments suitable for insertion at `[CLOTHING SLOT]` in this host: `score_9, score_8_up, score_7_up, source_anime, rating_safe, 1girl, black hair, [CLOTHING SLOT]`. Each fragment must be one nonempty physical line and describe only one garment or coordinated outfit; do not repeat the host prefix, subject, hair, pose, action, setting, camera, lighting, comments, numbering, headings, or blank lines. After saving, report the actual path, entry count, and that the file is fragment mode outside the file.\n\nOUTPUT A\nSaved `outputs/clothing-fragments.txt` with exactly **4 distinct entries** in **fragment mode** (clothing-only, one entry per line).\n\nGENERATED FILES (A)\n[\n  {\n    \"availability\": \"available\",\n    \"path\": \"outputs/clothing-fragments.txt\",\n    \"text\": \"navy blue long-sleeved midi dress with a white collar and pleated skirt\\ncream cable-knit sweater and brown corduroy trousers\\nforest green hooded jacket and black cargo pants\\nwhite button-up blouse and burgundy ankle-length skirt\\n\"\n  }\n]\n\nOUTPUT B\nSaved `outputs/clothing-fragments.txt` with exactly **4 distinct entries** in **fragment mode** (clothing-only).\n\nGENERATED FILES (B)\n[\n  {\n    \"availability\": \"available\",\n    \"path\": \"outputs/clothing-fragments.txt\",\n    \"text\": \"navy blue long-sleeved midi dress with a white Peter Pan collar and a pleated skirt\\ncream cable-knit turtleneck sweater with brown high-waisted corduroy trousers\\nsage green button-front cardigan over a white blouse with a charcoal ankle-length skirt\\nburgundy double-breasted wool coat with notched lapels and matching fabric buttons\\n\"\n  }\n]\n\nCRITERION C16-FRAGMENTS (hard)\nEach of the four entries is a distinct insertion-compatible clothing-only fragment; none repeats host-owned prefixes or introduces subject, hair, pose, action, setting, camera, or lighting content.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "11/48 C16-FRAGMENTS",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-d754d3e894db_C16-REPORT",
+      "question": "REVIEW 11/48 — pair-d754d3e894db\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C16-REPORT (hard)\nThe response truthfully reports the actual saved path, actual count of four, and fragment mode outside the selection file.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "11/48 C16-REPORT",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-d3e643ae9ae5_C09-ROUTING",
+      "question": "REVIEW 12/48 — pair-d3e643ae9ae5\n\nREQUEST\nCritique the following image prompt for visible clarity, composition, and ambiguity. Identify strengths and concrete problems, but do not rewrite it, provide a replacement prompt, or add variants. Prompt: `A mysterious traveler in a beautiful place, cinematic, amazing lighting, dynamic composition.`\n\nOUTPUT A\n## Strengths\n- **Simple subject hierarchy:** One traveler provides a potential focal point without competing subjects or excessive instructions.\n- **Consistent mood:** “Mysterious” and “cinematic” suggest an atmospheric image and do not inherently conflict.\n- **Creative flexibility:** The brevity leaves substantial interpretive freedom, which can be useful for exploratory generation.\n\n## Concrete problems\n\n### Visible clarity\n- **“Mysterious traveler” is a concept without visible anchors.** Appearance, clothing, posture, expression, and activity are unspecified. The image may show a person without clearly communicating either travel or mystery.\n- **“Beautiful place” does not establish a setting.** There is no environment, terrain, architecture, weather, or distinctive feature to make the location recognizable.\n- **“Amazing lighting” expresses approval rather than a lighting setup.** It gives no direction, source, softness, color, or contrast, so it cannot reliably guide what becomes illuminated or concealed.\n\n### Composition\n- **“Dynamic composition” names an intended effect, not an arrangement.** Framing, viewpoint, subject placement, and directional lines are all undefined.\n- **The relationship between traveler and setting is unresolved.** The prompt does not indicate whether the person dominates the frame or appears small within an expansive location. Either interpretation could substantially change the image.\n- **There is no pose or action to support visual energy.** A static figure in a centered composition would still satisfy much of the wording.\n\n### Ambiguity\n- **“Cinematic” is a broad stylistic cue.** It could imply dramatically different palettes, contrast levels, framing choices, and degrees of realism.\n- **The adjectives are not contradictory, but they are underdetermined.** Different outputs could satisfy every phrase while sharing little visual resemblance.\n\n**Overall:** This works as a mood brief, but not as a precise visual specification. Its main weakness is reliance on subjective effects rather than observable details and spatial relationships.\n\nOUTPUT B\n## Strengths\n- **Simple central idea:** A traveler in a setting establishes a subject–environment relationship without competing narrative elements.\n- **Consistent artistic intent:** “Mysterious” and “cinematic” suggest an atmospheric image, while “dynamic composition” signals a desire for visual energy.\n- **Concise and open-ended:** There are no obvious contradictions. The looseness can be useful for exploratory results when consistency is not important.\n\n## Concrete problems\n\n### Visible clarity\n- **“Mysterious traveler” describes an impression more than an appearance.** No visible characteristics, pose, or action establish either the mystery or the traveler’s identity. The model must invent how those ideas look.\n- **“Beautiful place” does not identify a setting.** It provides no environmental features, scale, or spatial structure, so it offers little control over what appears around the traveler.\n- **“Amazing lighting” expresses approval rather than a lighting setup.** Source, direction, softness, color, and contrast are unspecified; the phrase does not establish how the subject will be illuminated or separated from the background.\n\n### Composition\n- **“Dynamic composition” names an outcome without defining an arrangement.** Framing, viewpoint, subject placement, and directional movement are all open.\n- **Visual hierarchy is unresolved.** The prompt does not establish whether the traveler should dominate the frame or serve as a small figure within an expansive setting.\n- **The subject has no defined interaction with the environment.** Merely being “in” a place leaves the pose and spatial relationship too vague to support a particular visual narrative.\n\n### Ambiguity\n- **“Cinematic” is a broad stylistic cue.** It can influence lighting, color, framing, or realism, but it does not select a coherent treatment by itself.\n- **Most descriptors are subjective.** Different interpretations could all satisfy the wording while producing substantially different images. That flexibility is useful for exploration but weak for repeatable art direction.\n\n**Overall:** The prompt communicates a mood more clearly than a visible scene. Its main limitation is not brevity, but the lack of concrete visual anchors for the subject, setting, lighting, and composition.\n\nCRITERION C09-ROUTING (hard)\nThe response is an analysis of the supplied prompt and does not silently turn into prompt writing, rewriting, or variants.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "12/48 C09-ROUTING",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-d3e643ae9ae5_C09-QUALITY",
+      "question": "REVIEW 12/48 — pair-d3e643ae9ae5\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C09-QUALITY (advisory)\nThe critique distinguishes useful strengths from specific visible-clarity, composition, and ambiguity problems.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "12/48 C09-QUALITY",
+      "multi": false,
+      "recommended": null
+    }
+  ],
+  "response": {
+    "text": "User answers:\npair-8bcb1c9a6ed5_C06-TEXT-BINDING: Both pass\npair-d754d3e894db_C16-FRAGMENTS: Both pass\npair-d754d3e894db_C16-REPORT: Both pass\npair-d3e643ae9ae5_C09-ROUTING: Both pass\npair-d3e643ae9ae5_C09-QUALITY: Both pass",
+    "details": {
+      "results": [
+        {
+          "id": "pair-8bcb1c9a6ed5_C06-TEXT-BINDING",
+          "question": "REVIEW 10/48 — pair-8bcb1c9a6ed5\n\nREQUEST\nWrite one text-to-image prompt for a small neighborhood bakery at dusk. A rectangular sign centered above the door must visibly read exactly `OPEN` in uppercase, with no other visible lettering anywhere. Return only the prompt.\n\nOUTPUT A\nA small neighborhood bakery at dusk, viewed straight on, with a modest brick facade in soft blue twilight and warm interior light. A rectangular sign centered directly above the door clearly reads exactly “OPEN” in large, crisp uppercase letters, fully visible and unobstructed. This sign is the only visible lettering anywhere in the image; all other surfaces are unlettered, with no additional text, logos, or watermarks.\n\nOUTPUT B\nA small neighborhood bakery at dusk, viewed straight on, with warm amber light spilling through windows filled with unlabelled loaves and pastries, brick walls, and a quiet sidewalk beneath a deep blue sky. A clearly visible rectangular sign centered directly above the door reads exactly “OPEN” in crisp uppercase letters; no other visible lettering, words, numbers, logos, or watermarks anywhere in the image, photorealistic detail.\n\nCRITERION C06-TEXT-BINDING (hard)\nThe prompt clearly binds exact uppercase OPEN to the rectangular sign centered above the bakery door and excludes other visible lettering.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-d754d3e894db_C16-FRAGMENTS",
+          "question": "REVIEW 11/48 — pair-d754d3e894db\n\nREQUEST\nCreate a ComfyUI wildcard file at `outputs/clothing-fragments.txt` containing exactly four distinct clothing-only fragments suitable for insertion at `[CLOTHING SLOT]` in this host: `score_9, score_8_up, score_7_up, source_anime, rating_safe, 1girl, black hair, [CLOTHING SLOT]`. Each fragment must be one nonempty physical line and describe only one garment or coordinated outfit; do not repeat the host prefix, subject, hair, pose, action, setting, camera, lighting, comments, numbering, headings, or blank lines. After saving, report the actual path, entry count, and that the file is fragment mode outside the file.\n\nOUTPUT A\nSaved `outputs/clothing-fragments.txt` with exactly **4 distinct entries** in **fragment mode** (clothing-only, one entry per line).\n\nGENERATED FILES (A)\n[\n  {\n    \"availability\": \"available\",\n    \"path\": \"outputs/clothing-fragments.txt\",\n    \"text\": \"navy blue long-sleeved midi dress with a white collar and pleated skirt\\ncream cable-knit sweater and brown corduroy trousers\\nforest green hooded jacket and black cargo pants\\nwhite button-up blouse and burgundy ankle-length skirt\\n\"\n  }\n]\n\nOUTPUT B\nSaved `outputs/clothing-fragments.txt` with exactly **4 distinct entries** in **fragment mode** (clothing-only).\n\nGENERATED FILES (B)\n[\n  {\n    \"availability\": \"available\",\n    \"path\": \"outputs/clothing-fragments.txt\",\n    \"text\": \"navy blue long-sleeved midi dress with a white Peter Pan collar and a pleated skirt\\ncream cable-knit turtleneck sweater with brown high-waisted corduroy trousers\\nsage green button-front cardigan over a white blouse with a charcoal ankle-length skirt\\nburgundy double-breasted wool coat with notched lapels and matching fabric buttons\\n\"\n  }\n]\n\nCRITERION C16-FRAGMENTS (hard)\nEach of the four entries is a distinct insertion-compatible clothing-only fragment; none repeats host-owned prefixes or introduces subject, hair, pose, action, setting, camera, or lighting content.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-d754d3e894db_C16-REPORT",
+          "question": "REVIEW 11/48 — pair-d754d3e894db\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C16-REPORT (hard)\nThe response truthfully reports the actual saved path, actual count of four, and fragment mode outside the selection file.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-d3e643ae9ae5_C09-ROUTING",
+          "question": "REVIEW 12/48 — pair-d3e643ae9ae5\n\nREQUEST\nCritique the following image prompt for visible clarity, composition, and ambiguity. Identify strengths and concrete problems, but do not rewrite it, provide a replacement prompt, or add variants. Prompt: `A mysterious traveler in a beautiful place, cinematic, amazing lighting, dynamic composition.`\n\nOUTPUT A\n## Strengths\n- **Simple subject hierarchy:** One traveler provides a potential focal point without competing subjects or excessive instructions.\n- **Consistent mood:** “Mysterious” and “cinematic” suggest an atmospheric image and do not inherently conflict.\n- **Creative flexibility:** The brevity leaves substantial interpretive freedom, which can be useful for exploratory generation.\n\n## Concrete problems\n\n### Visible clarity\n- **“Mysterious traveler” is a concept without visible anchors.** Appearance, clothing, posture, expression, and activity are unspecified. The image may show a person without clearly communicating either travel or mystery.\n- **“Beautiful place” does not establish a setting.** There is no environment, terrain, architecture, weather, or distinctive feature to make the location recognizable.\n- **“Amazing lighting” expresses approval rather than a lighting setup.** It gives no direction, source, softness, color, or contrast, so it cannot reliably guide what becomes illuminated or concealed.\n\n### Composition\n- **“Dynamic composition” names an intended effect, not an arrangement.** Framing, viewpoint, subject placement, and directional lines are all undefined.\n- **The relationship between traveler and setting is unresolved.** The prompt does not indicate whether the person dominates the frame or appears small within an expansive location. Either interpretation could substantially change the image.\n- **There is no pose or action to support visual energy.** A static figure in a centered composition would still satisfy much of the wording.\n\n### Ambiguity\n- **“Cinematic” is a broad stylistic cue.** It could imply dramatically different palettes, contrast levels, framing choices, and degrees of realism.\n- **The adjectives are not contradictory, but they are underdetermined.** Different outputs could satisfy every phrase while sharing little visual resemblance.\n\n**Overall:** This works as a mood brief, but not as a precise visual specification. Its main weakness is reliance on subjective effects rather than observable details and spatial relationships.\n\nOUTPUT B\n## Strengths\n- **Simple central idea:** A traveler in a setting establishes a subject–environment relationship without competing narrative elements.\n- **Consistent artistic intent:** “Mysterious” and “cinematic” suggest an atmospheric image, while “dynamic composition” signals a desire for visual energy.\n- **Concise and open-ended:** There are no obvious contradictions. The looseness can be useful for exploratory results when consistency is not important.\n\n## Concrete problems\n\n### Visible clarity\n- **“Mysterious traveler” describes an impression more than an appearance.** No visible characteristics, pose, or action establish either the mystery or the traveler’s identity. The model must invent how those ideas look.\n- **“Beautiful place” does not identify a setting.** It provides no environmental features, scale, or spatial structure, so it offers little control over what appears around the traveler.\n- **“Amazing lighting” expresses approval rather than a lighting setup.** Source, direction, softness, color, and contrast are unspecified; the phrase does not establish how the subject will be illuminated or separated from the background.\n\n### Composition\n- **“Dynamic composition” names an outcome without defining an arrangement.** Framing, viewpoint, subject placement, and directional movement are all open.\n- **Visual hierarchy is unresolved.** The prompt does not establish whether the traveler should dominate the frame or serve as a small figure within an expansive setting.\n- **The subject has no defined interaction with the environment.** Merely being “in” a place leaves the pose and spatial relationship too vague to support a particular visual narrative.\n\n### Ambiguity\n- **“Cinematic” is a broad stylistic cue.** It can influence lighting, color, framing, or realism, but it does not select a coherent treatment by itself.\n- **Most descriptors are subjective.** Different interpretations could all satisfy the wording while producing substantially different images. That flexibility is useful for exploration but weak for repeatable art direction.\n\n**Overall:** The prompt communicates a mood more clearly than a visible scene. Its main limitation is not brevity, but the lack of concrete visual anchors for the subject, setting, lighting, and composition.\n\nCRITERION C09-ROUTING (hard)\nThe response is an analysis of the supplied prompt and does not silently turn into prompt writing, rewriting, or variants.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-d3e643ae9ae5_C09-QUALITY",
+          "question": "REVIEW 12/48 — pair-d3e643ae9ae5\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C09-QUALITY (advisory)\nThe critique distinguishes useful strengths from specific visible-clarity, composition, and ambiguity problems.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        }
+      ]
+    }
+  },
+  "recorded_at": "2026-09-23T02:10:43.920Z"
+}

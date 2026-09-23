@@ -1,0 +1,3 @@
+Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.
+
+Adapt this source to SDXL as compact phrases at Long detail. Return only the prompt: A red cube is image-left of a blue sphere. A sign reads "Open late!".

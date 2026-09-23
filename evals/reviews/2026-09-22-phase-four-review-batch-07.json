@@ -1,0 +1,358 @@
+{
+  "batch": 7,
+  "start": 18,
+  "count": 3,
+  "questions": [
+    {
+      "id": "pair-2e25a72d3f9d_C11-PROFILE",
+      "question": "REVIEW 19/48 — pair-2e25a72d3f9d\n\nREQUEST\nWrite one positive prompt for Illustrious in explicitly requested Danbooru Version for one adult woman with grey hair, green eyes, a black turtleneck, and white gloves, standing in a library. Before answering, use the existing local Danbooru lookup script to confirm the canonical spelling `grey_hair`; do not read raw CSV files and do not add related candidates. Return only the comma-separated positive prompt, with no negative prompt, notes, or explanation.\n\nOUTPUT A\n1girl, solo, adult, grey_hair, green_eyes, black_sweater, turtleneck, white_gloves, standing, library\n\nOBSERVABLE LOOKUP (A)\n{\n  \"availability\": \"available\",\n  \"calls\": [\n    {\n      \"args\": {\n        \"async\": false,\n        \"command\": \"python3 scripts/danbooru_lookup.py tag grey_hair\",\n        \"cwd\": \"<redacted>\",\n        \"pty\": false,\n        \"timeout\": 60\n      },\n      \"result_content\": [\n        {\n          \"text\": \"grey_hair [general] count=574323\\naliases: 白髪, 銀髪, 銀髪ロング\\n\\n\\nWall time: 30.87 seconds\",\n          \"type\": \"text\"\n        }\n      ]\n    }\n  ],\n  \"trace_complete\": true\n}\n\nOUTPUT B\nmasterpiece, best_quality, highres, 1girl, solo, mature_female, grey_hair, green_eyes, black_sweater, turtleneck, white_gloves, standing, library, indoors\n\nOBSERVABLE LOOKUP (B)\n{\n  \"availability\": \"available\",\n  \"calls\": [\n    {\n      \"args\": {\n        \"async\": false,\n        \"command\": \"python3 scripts/danbooru_lookup.py tag grey_hair\",\n        \"cwd\": \"<redacted>\",\n        \"pty\": false,\n        \"timeout\": 60\n      },\n      \"result_content\": [\n        {\n          \"text\": \"grey_hair [general] count=574323\\naliases: 白髪, 銀髪, 銀髪ロング\\n\\n\\nWall time: 30.35 seconds\",\n          \"type\": \"text\"\n        }\n      ]\n    }\n  ],\n  \"trace_complete\": true\n}\n\nCRITERION C11-PROFILE (hard)\nThe prompt preserves the existing Illustrious convention: comma-separated Danbooru-style tags with restrained quality/composition guidance, lower_snake_case canonical forms where applicable, and no Pony prefix.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "19/48 C11-PROFILE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-2e25a72d3f9d_C11-CONSTRAINTS",
+      "question": "REVIEW 19/48 — pair-2e25a72d3f9d\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C11-CONSTRAINTS (hard)\nThe canonical grey-hair result is used for the requested woman, all requested visible facts remain represented, and no optional related candidate changes the scene.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "19/48 C11-CONSTRAINTS",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-2e25a72d3f9d_C11-LOOKUP-EVIDENCE",
+      "question": "REVIEW 19/48 — pair-2e25a72d3f9d\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C11-LOOKUP-EVIDENCE (hard)\nThe captured tool results confirm grey_hair using the selected revision’s local lookup script. A mere spelling echo is not confirmation; missing usable trace evidence is not-run.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "19/48 C11-LOOKUP-EVIDENCE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-6669b7f81286_C08-PRESERVE",
+      "question": "REVIEW 20/48 — pair-6669b7f81286\n\nREQUEST\nExpand this brief into one ready-to-paste text-to-image prompt of at most 55 words: `A rust-red rowboat tied to a weathered dock on a still lake before dawn.` Return only the prompt. Do not add people, buildings, other boats, animals, or active weather.\n\nOUTPUT A\nA rust-red rowboat with chipped paint is tied by rope to a weathered wooden dock on a still lake before dawn. Cool blue light reveals rough dock planks and the boat’s worn edges. Mirrorlike water reflects both beneath a pale horizon, with the dock leading diagonally into the quiet composition.\n\nOUTPUT B\nA rust-red rowboat with chipped paint is tied by coarse rope to a weathered wooden dock on a glassy lake before dawn. Low, wide framing follows the dock’s silver-gray planks toward the boat, its crisp reflection mirrored in dark water beneath a pale blue horizon. Photorealistic textures, subdued light, minimalist composition.\n\nCRITERION C08-PRESERVE (hard)\nThe expansion preserves every supplied scene fact and adds no forbidden subject, prop, or active weather.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "20/48 C08-PRESERVE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-6669b7f81286_C08-STYLE",
+      "question": "REVIEW 20/48 — pair-6669b7f81286\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C08-STYLE (advisory)\nWithin the limit, the prompt adds useful visible detail rather than padding or hidden story.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "20/48 C08-STYLE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-eaef53be0738_C07-DISTINCTNESS",
+      "question": "REVIEW 21/48 — pair-eaef53be0738\n\nREQUEST\nCreate exactly four genuinely different composition variants of this fixed scene. Number them 1 through 4 and give one complete prompt per numbered entry. Vary only composition (framing, viewpoint, and placement within the image); hold lighting and all physical scene facts fixed. Fixed scene: a red cube image-left of a blue sphere on a gray table; a sign behind them reads exactly `OPEN`; both objects and the sign are fully visible; plain gray backdrop; diffuse frontal light with weak shadows.\n\nOUTPUT A\n1. A tight, centered, straight-on composition with a small margin around the complete grouping. A red cube sits image-left of a blue sphere on a gray table; a sign behind them reads exactly “OPEN”. Both objects and the entire sign are fully visible and unobscured, with the lettering clearly readable. Plain gray backdrop; diffuse frontal light with weak shadows.\n\n2. A wide, straight-on composition with the complete grouping in the lower-left portion of the image, leaving generous empty gray space above and to the right. A red cube sits image-left of a blue sphere on a gray table; a sign behind them reads exactly “OPEN”. Both objects and the entire sign are fully visible and unobscured, with the lettering clearly readable. Plain gray backdrop; diffuse frontal light with weak shadows.\n\n3. A moderately elevated three-quarter view looking gently down across the gray table, with the complete grouping in the upper-right portion of the image and open tabletop extending toward the lower-left foreground. A red cube sits image-left of a blue sphere; a sign behind them reads exactly “OPEN”. Both objects and the entire sign are fully visible and unobscured, with the lettering clearly readable. Plain gray backdrop; diffuse frontal light with weak shadows.\n\n4. A low frontal viewpoint just above tabletop height, using a wide horizontal frame with the complete grouping centered across the image and generous lateral margins. A red cube sits image-left of a blue sphere on a gray table; a sign behind them reads exactly “OPEN”. Both objects and the entire sign are fully visible and unobscured, with the lettering clearly readable. Plain gray backdrop; diffuse frontal light with weak shadows.\n\nOUTPUT B\n1. A straight-on, centered medium shot of a red cube image-left of a blue sphere on a gray table, with a sign behind them reading exactly “OPEN.” Both objects and the entire sign are fully visible and unobstructed, with balanced margins around the group. Plain gray backdrop; diffuse frontal light with weak shadows.\n\n2. A wide horizontal composition of a red cube image-left of a blue sphere on a gray table, with a sign behind them reading exactly “OPEN.” Frame the complete group in the lower-left portion of the image, leaving broad empty gray space above and to the right; both objects and the entire sign remain fully visible and unobstructed. Plain gray backdrop; diffuse frontal light with weak shadows.\n\n3. An elevated front three-quarter view looking gently downward at a red cube image-left of a blue sphere on a gray table, with a sign behind them reading exactly “OPEN.” Use tight framing around the complete group, showing more tabletop while keeping both objects and the entire sign fully visible, unobstructed, and the lettering clearly readable. Plain gray backdrop; diffuse frontal light with weak shadows.\n\n4. A tall portrait composition viewed straight-on from just above tabletop height, showing a red cube image-left of a blue sphere on a gray table, with a sign behind them reading exactly “OPEN.” Place the complete group in the upper half of the frame, leaving a generous expanse of empty tabletop foreground; both objects and the entire sign are fully visible and unobstructed. Plain gray backdrop; diffuse frontal light with weak shadows.\n\nCRITERION C07-DISTINCTNESS (hard)\nAll four entries communicate genuinely different compositions rather than paraphrases or changes outside composition.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "21/48 C07-DISTINCTNESS",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-eaef53be0738_C07-PRESERVE",
+      "question": "REVIEW 21/48 — pair-eaef53be0738\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C07-PRESERVE (hard)\nEvery variant preserves all non-composition facts, exact lettering, visibility, and fixed lighting while maintaining the cube's image-left relation to the sphere.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "21/48 C07-PRESERVE",
+      "multi": false,
+      "recommended": null
+    }
+  ],
+  "response": {
+    "text": "User answers:\npair-2e25a72d3f9d_C11-PROFILE: Both pass\npair-2e25a72d3f9d_C11-CONSTRAINTS: Both pass\npair-2e25a72d3f9d_C11-LOOKUP-EVIDENCE: Both pass\npair-6669b7f81286_C08-PRESERVE: Both pass\npair-6669b7f81286_C08-STYLE: Both pass\npair-eaef53be0738_C07-DISTINCTNESS: Both pass\npair-eaef53be0738_C07-PRESERVE: Both pass",
+    "details": {
+      "results": [
+        {
+          "id": "pair-2e25a72d3f9d_C11-PROFILE",
+          "question": "REVIEW 19/48 — pair-2e25a72d3f9d\n\nREQUEST\nWrite one positive prompt for Illustrious in explicitly requested Danbooru Version for one adult woman with grey hair, green eyes, a black turtleneck, and white gloves, standing in a library. Before answering, use the existing local Danbooru lookup script to confirm the canonical spelling `grey_hair`; do not read raw CSV files and do not add related candidates. Return only the comma-separated positive prompt, with no negative prompt, notes, or explanation.\n\nOUTPUT A\n1girl, solo, adult, grey_hair, green_eyes, black_sweater, turtleneck, white_gloves, standing, library\n\nOBSERVABLE LOOKUP (A)\n{\n  \"availability\": \"available\",\n  \"calls\": [\n    {\n      \"args\": {\n        \"async\": false,\n        \"command\": \"python3 scripts/danbooru_lookup.py tag grey_hair\",\n        \"cwd\": \"<redacted>\",\n        \"pty\": false,\n        \"timeout\": 60\n      },\n      \"result_content\": [\n        {\n          \"text\": \"grey_hair [general] count=574323\\naliases: 白髪, 銀髪, 銀髪ロング\\n\\n\\nWall time: 30.87 seconds\",\n          \"type\": \"text\"\n        }\n      ]\n    }\n  ],\n  \"trace_complete\": true\n}\n\nOUTPUT B\nmasterpiece, best_quality, highres, 1girl, solo, mature_female, grey_hair, green_eyes, black_sweater, turtleneck, white_gloves, standing, library, indoors\n\nOBSERVABLE LOOKUP (B)\n{\n  \"availability\": \"available\",\n  \"calls\": [\n    {\n      \"args\": {\n        \"async\": false,\n        \"command\": \"python3 scripts/danbooru_lookup.py tag grey_hair\",\n        \"cwd\": \"<redacted>\",\n        \"pty\": false,\n        \"timeout\": 60\n      },\n      \"result_content\": [\n        {\n          \"text\": \"grey_hair [general] count=574323\\naliases: 白髪, 銀髪, 銀髪ロング\\n\\n\\nWall time: 30.35 seconds\",\n          \"type\": \"text\"\n        }\n      ]\n    }\n  ],\n  \"trace_complete\": true\n}\n\nCRITERION C11-PROFILE (hard)\nThe prompt preserves the existing Illustrious convention: comma-separated Danbooru-style tags with restrained quality/composition guidance, lower_snake_case canonical forms where applicable, and no Pony prefix.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-2e25a72d3f9d_C11-CONSTRAINTS",
+          "question": "REVIEW 19/48 — pair-2e25a72d3f9d\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C11-CONSTRAINTS (hard)\nThe canonical grey-hair result is used for the requested woman, all requested visible facts remain represented, and no optional related candidate changes the scene.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-2e25a72d3f9d_C11-LOOKUP-EVIDENCE",
+          "question": "REVIEW 19/48 — pair-2e25a72d3f9d\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C11-LOOKUP-EVIDENCE (hard)\nThe captured tool results confirm grey_hair using the selected revision’s local lookup script. A mere spelling echo is not confirmation; missing usable trace evidence is not-run.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-6669b7f81286_C08-PRESERVE",
+          "question": "REVIEW 20/48 — pair-6669b7f81286\n\nREQUEST\nExpand this brief into one ready-to-paste text-to-image prompt of at most 55 words: `A rust-red rowboat tied to a weathered dock on a still lake before dawn.` Return only the prompt. Do not add people, buildings, other boats, animals, or active weather.\n\nOUTPUT A\nA rust-red rowboat with chipped paint is tied by rope to a weathered wooden dock on a still lake before dawn. Cool blue light reveals rough dock planks and the boat’s worn edges. Mirrorlike water reflects both beneath a pale horizon, with the dock leading diagonally into the quiet composition.\n\nOUTPUT B\nA rust-red rowboat with chipped paint is tied by coarse rope to a weathered wooden dock on a glassy lake before dawn. Low, wide framing follows the dock’s silver-gray planks toward the boat, its crisp reflection mirrored in dark water beneath a pale blue horizon. Photorealistic textures, subdued light, minimalist composition.\n\nCRITERION C08-PRESERVE (hard)\nThe expansion preserves every supplied scene fact and adds no forbidden subject, prop, or active weather.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-6669b7f81286_C08-STYLE",
+          "question": "REVIEW 20/48 — pair-6669b7f81286\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C08-STYLE (advisory)\nWithin the limit, the prompt adds useful visible detail rather than padding or hidden story.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-eaef53be0738_C07-DISTINCTNESS",
+          "question": "REVIEW 21/48 — pair-eaef53be0738\n\nREQUEST\nCreate exactly four genuinely different composition variants of this fixed scene. Number them 1 through 4 and give one complete prompt per numbered entry. Vary only composition (framing, viewpoint, and placement within the image); hold lighting and all physical scene facts fixed. Fixed scene: a red cube image-left of a blue sphere on a gray table; a sign behind them reads exactly `OPEN`; both objects and the sign are fully visible; plain gray backdrop; diffuse frontal light with weak shadows.\n\nOUTPUT A\n1. A tight, centered, straight-on composition with a small margin around the complete grouping. A red cube sits image-left of a blue sphere on a gray table; a sign behind them reads exactly “OPEN”. Both objects and the entire sign are fully visible and unobscured, with the lettering clearly readable. Plain gray backdrop; diffuse frontal light with weak shadows.\n\n2. A wide, straight-on composition with the complete grouping in the lower-left portion of the image, leaving generous empty gray space above and to the right. A red cube sits image-left of a blue sphere on a gray table; a sign behind them reads exactly “OPEN”. Both objects and the entire sign are fully visible and unobscured, with the lettering clearly readable. Plain gray backdrop; diffuse frontal light with weak shadows.\n\n3. A moderately elevated three-quarter view looking gently down across the gray table, with the complete grouping in the upper-right portion of the image and open tabletop extending toward the lower-left foreground. A red cube sits image-left of a blue sphere; a sign behind them reads exactly “OPEN”. Both objects and the entire sign are fully visible and unobscured, with the lettering clearly readable. Plain gray backdrop; diffuse frontal light with weak shadows.\n\n4. A low frontal viewpoint just above tabletop height, using a wide horizontal frame with the complete grouping centered across the image and generous lateral margins. A red cube sits image-left of a blue sphere on a gray table; a sign behind them reads exactly “OPEN”. Both objects and the entire sign are fully visible and unobscured, with the lettering clearly readable. Plain gray backdrop; diffuse frontal light with weak shadows.\n\nOUTPUT B\n1. A straight-on, centered medium shot of a red cube image-left of a blue sphere on a gray table, with a sign behind them reading exactly “OPEN.” Both objects and the entire sign are fully visible and unobstructed, with balanced margins around the group. Plain gray backdrop; diffuse frontal light with weak shadows.\n\n2. A wide horizontal composition of a red cube image-left of a blue sphere on a gray table, with a sign behind them reading exactly “OPEN.” Frame the complete group in the lower-left portion of the image, leaving broad empty gray space above and to the right; both objects and the entire sign remain fully visible and unobstructed. Plain gray backdrop; diffuse frontal light with weak shadows.\n\n3. An elevated front three-quarter view looking gently downward at a red cube image-left of a blue sphere on a gray table, with a sign behind them reading exactly “OPEN.” Use tight framing around the complete group, showing more tabletop while keeping both objects and the entire sign fully visible, unobstructed, and the lettering clearly readable. Plain gray backdrop; diffuse frontal light with weak shadows.\n\n4. A tall portrait composition viewed straight-on from just above tabletop height, showing a red cube image-left of a blue sphere on a gray table, with a sign behind them reading exactly “OPEN.” Place the complete group in the upper half of the frame, leaving a generous expanse of empty tabletop foreground; both objects and the entire sign are fully visible and unobstructed. Plain gray backdrop; diffuse frontal light with weak shadows.\n\nCRITERION C07-DISTINCTNESS (hard)\nAll four entries communicate genuinely different compositions rather than paraphrases or changes outside composition.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-eaef53be0738_C07-PRESERVE",
+          "question": "REVIEW 21/48 — pair-eaef53be0738\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C07-PRESERVE (hard)\nEvery variant preserves all non-composition facts, exact lettering, visibility, and fixed lighting while maintaining the cube's image-left relation to the sphere.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        }
+      ]
+    }
+  },
+  "recorded_at": "2026-09-23T02:14:35.400Z"
+}

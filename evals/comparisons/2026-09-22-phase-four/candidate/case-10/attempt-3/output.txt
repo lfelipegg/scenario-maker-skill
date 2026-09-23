@@ -1,0 +1,23 @@
+### 1. Fidelity to the brief
+
+- **SDXL:** Explicitly preserves all core details: the green bicycle, its leaning relationship to the white brick wall, and soft overcast daylight. “Eye-level medium shot” and “restrained color palette” add presentation choices not specified in the brief.
+- **Krea 2:** Preserves the subject, colors, wall material, and lighting. “Rests against” naturally suggests leaning but is slightly less explicit about the bicycle’s tilt. “Even” is consistent with soft overcast light. Eye-level framing and a restrained palette are additional presentation choices here too.
+
+**Comparison:** Both are highly faithful. SDXL states the required leaning relationship more precisely; neither is a strictly brief-only description.
+
+### 2. Model-appropriate expression
+
+- **SDXL:** Compact, comma-separated ordinary-English phrases suit SDXL’s phrase-oriented prompting guidance. The bicycle’s attributes and relationship remain together rather than becoming disconnected keywords.
+- **Krea 2:** The cohesive natural-language sentence suits local Krea 2 RAW/Turbo guidance. Its brevity is appropriate for this sparse scene; a preference for detailed prose does not require padding.
+
+**Comparison:** Both use suitable expression for their respective models. These are compatible presentation preferences, not mandatory grammars or evidence that one will render better.
+
+### 3. Likely ambiguity
+
+- **SDXL:** “Medium shot” supplies framing guidance, but its crop is less clearly defined for a bicycle than for a person; it does not guarantee both wheels remain fully visible.
+- **Krea 2:** “Framed at eye level” specifies viewpoint without specifying shot distance, leaving more freedom in subject size and cropping. “Rests against” leaves marginally more latitude in the exact leaning pose.
+- **Both:** “Restrained palette” could mean a limited range of colors or muted saturation. It is compatible with green and white, but may encourage a less vivid green. Neither specifies bicycle orientation or exact wall-contact point; those are open choices rather than failures to preserve the brief.
+
+### Overall comparison
+
+**SDXL is slightly more explicit about pose and framing; Krea 2 expresses essentially the same scene in fluent prose with more framing latitude.** Both are clear and model-appropriate. The main differences concern specificity, not a demonstrable advantage in rendered quality.

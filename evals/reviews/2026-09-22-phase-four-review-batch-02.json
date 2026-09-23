@@ -1,0 +1,357 @@
+{
+  "batch": 2,
+  "start": 3,
+  "count": 3,
+  "questions": [
+    {
+      "id": "pair-3bbe94f070d0_C08-PRESERVE",
+      "question": "REVIEW 4/48 — pair-3bbe94f070d0\n\nREQUEST\nExpand this brief into one ready-to-paste text-to-image prompt of at most 55 words: `A rust-red rowboat tied to a weathered dock on a still lake before dawn.` Return only the prompt. Do not add people, buildings, other boats, animals, or active weather.\n\nOUTPUT A\nA rust-red rowboat with chipped paint rests on a glass-still lake before dawn, secured by coarse rope to a weathered wooden dock. Low, three-quarter framing follows silvered planks toward the boat, its reflection crisp beneath it. Soft blue predawn light reveals wood grain against an open, pale horizon; photorealistic textures, muted colors.\n\nOUTPUT B\nA rust-red rowboat with chipped paint lies tied to a weathered dock on a still lake before dawn. Cool blue light reveals the dock’s splintered grain and the boat’s dark reflection in glasslike water. The dock angles through the foreground toward the boat, framed against an empty expanse of lake.\n\nCRITERION C08-PRESERVE (hard)\nThe expansion preserves every supplied scene fact and adds no forbidden subject, prop, or active weather.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "4/48 C08-PRESERVE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-3bbe94f070d0_C08-STYLE",
+      "question": "REVIEW 4/48 — pair-3bbe94f070d0\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C08-STYLE (advisory)\nWithin the limit, the prompt adds useful visible detail rather than padding or hidden story.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "4/48 C08-STYLE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-496b7417802b_C12-PROFILE",
+      "question": "REVIEW 5/48 — pair-496b7417802b\n\nREQUEST\nWrite one Pony Diffusion V6 XL positive prompt for one adult woman with auburn hair, round glasses, a teal raincoat, and a folded red umbrella, standing at an empty tram stop at night. Use the safe anime source/rating dialect. Return only the comma-separated positive prompt: no negative prompt, notes, labels, or variants.\n\nOUTPUT A\nscore_9, score_8_up, score_7_up, source_anime, rating_safe, 1girl, solo, adult woman, auburn hair, round glasses, teal raincoat, holding a folded red umbrella at her side, standing, empty tram stop, night, glass shelter, vacant bench, tram tracks, wet pavement, streetlight reflections, soft overhead lighting, full body, eye-level view\n\nOUTPUT B\nscore_9, score_8_up, score_7_up, source_anime, rating_safe, 1girl, solo, adult woman, auburn hair, round glasses, teal raincoat, holding a folded red umbrella, standing at an otherwise empty tram stop, night\n\nCRITERION C12-PROFILE (hard)\nThe positive prompt starts with the existing Pony score/source/rating convention, uses source_anime and rating_safe, remains comma-separated, and avoids generic masterpiece/best quality boilerplate.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "5/48 C12-PROFILE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-496b7417802b_C12-PRESERVE",
+      "question": "REVIEW 5/48 — pair-496b7417802b\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C12-PRESERVE (hard)\nThe single adult subject retains every supplied attribute and prop, and the tram stop remains empty apart from her.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "5/48 C12-PRESERVE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-a3ee06b62a64_C11-PROFILE",
+      "question": "REVIEW 6/48 — pair-a3ee06b62a64\n\nREQUEST\nWrite one positive prompt for Illustrious in explicitly requested Danbooru Version for one adult woman with grey hair, green eyes, a black turtleneck, and white gloves, standing in a library. Before answering, use the existing local Danbooru lookup script to confirm the canonical spelling `grey_hair`; do not read raw CSV files and do not add related candidates. Return only the comma-separated positive prompt, with no negative prompt, notes, or explanation.\n\nOUTPUT A\nmasterpiece, best_quality, highres, 1girl, solo, mature_female, grey_hair, green_eyes, black_sweater, turtleneck, white_gloves, standing, library, indoors\n\nOBSERVABLE LOOKUP (A)\n{\n  \"availability\": \"available\",\n  \"calls\": [\n    {\n      \"args\": {\n        \"async\": false,\n        \"command\": \"python3 scripts/danbooru_lookup.py tag grey_hair\",\n        \"cwd\": \"<redacted>\",\n        \"pty\": false,\n        \"timeout\": 60\n      },\n      \"result_content\": [\n        {\n          \"text\": \"grey_hair [general] count=574323\\naliases: 白髪, 銀髪, 銀髪ロング\\n\\n\\nWall time: 30.54 seconds\",\n          \"type\": \"text\"\n        }\n      ]\n    }\n  ],\n  \"trace_complete\": true\n}\n\nOUTPUT B\n1girl, solo, adult, grey_hair, green_eyes, black_sweater, turtleneck, white_gloves, standing, library\n\nOBSERVABLE LOOKUP (B)\n{\n  \"availability\": \"available\",\n  \"calls\": [\n    {\n      \"args\": {\n        \"async\": false,\n        \"command\": \"python3 scripts/danbooru_lookup.py tag grey_hair\",\n        \"cwd\": \"<redacted>\",\n        \"pty\": false,\n        \"timeout\": 60\n      },\n      \"result_content\": [\n        {\n          \"text\": \"grey_hair [general] count=574323\\naliases: 白髪, 銀髪, 銀髪ロング\\n\\n\\nWall time: 30.57 seconds\",\n          \"type\": \"text\"\n        }\n      ]\n    }\n  ],\n  \"trace_complete\": true\n}\n\nCRITERION C11-PROFILE (hard)\nThe prompt preserves the existing Illustrious convention: comma-separated Danbooru-style tags with restrained quality/composition guidance, lower_snake_case canonical forms where applicable, and no Pony prefix.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "6/48 C11-PROFILE",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-a3ee06b62a64_C11-CONSTRAINTS",
+      "question": "REVIEW 6/48 — pair-a3ee06b62a64\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C11-CONSTRAINTS (hard)\nThe canonical grey-hair result is used for the requested woman, all requested visible facts remain represented, and no optional related candidate changes the scene.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "6/48 C11-CONSTRAINTS",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-a3ee06b62a64_C11-LOOKUP-EVIDENCE",
+      "question": "REVIEW 6/48 — pair-a3ee06b62a64\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C11-LOOKUP-EVIDENCE (hard)\nThe captured tool results confirm grey_hair using the selected revision’s local lookup script. A mere spelling echo is not confirmation; missing usable trace evidence is not-run.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "6/48 C11-LOOKUP-EVIDENCE",
+      "multi": false,
+      "recommended": null
+    }
+  ],
+  "response": {
+    "text": "User answers:\npair-3bbe94f070d0_C08-PRESERVE: Both pass\npair-3bbe94f070d0_C08-STYLE: Both pass\npair-496b7417802b_C12-PROFILE: Both pass\npair-496b7417802b_C12-PRESERVE: \"B Pass, A fails. A — likely FAIL\n\nThe required content is all present and correctly bound:\n\none adult woman\nauburn hair\nround glasses\nteal raincoat\nfolded red umbrella\ntram stop\nnight\nsolo\n\nThe problem is the extra material:\n\nglass shelter, vacant bench, tram tracks, wet pavement, streetlight reflections\n\nIssue #17 says create defaults to Balanced, and Balanced may fill local unspecified details but:\n\n“No new independent subjects, props, or events.”\n\nA glass shelter, vacant bench, and tram tracks are additional independent scene objects/props rather than merely refinements of an already supplied object.\n\nwet pavement is also a new scene fact. It does not necessarily imply active rain, but it still was not supplied.\n\nThe lighting/framing additions are less problematic because full-scene scope can support presentation details, but the extra physical scene contents are the stronger issue.\n\nThe criterion itself is narrowly phrased around keeping the tram stop empty apart from her, and A does satisfy that in the human-subject sense. But because that criterion points to Issue #17’s preservation rules, I would evaluate the unauthorized prop invention as a failure.\"\npair-a3ee06b62a64_C11-PROFILE: Both pass\npair-a3ee06b62a64_C11-CONSTRAINTS: Both pass\npair-a3ee06b62a64_C11-LOOKUP-EVIDENCE: Both pass",
+    "details": {
+      "results": [
+        {
+          "id": "pair-3bbe94f070d0_C08-PRESERVE",
+          "question": "REVIEW 4/48 — pair-3bbe94f070d0\n\nREQUEST\nExpand this brief into one ready-to-paste text-to-image prompt of at most 55 words: `A rust-red rowboat tied to a weathered dock on a still lake before dawn.` Return only the prompt. Do not add people, buildings, other boats, animals, or active weather.\n\nOUTPUT A\nA rust-red rowboat with chipped paint rests on a glass-still lake before dawn, secured by coarse rope to a weathered wooden dock. Low, three-quarter framing follows silvered planks toward the boat, its reflection crisp beneath it. Soft blue predawn light reveals wood grain against an open, pale horizon; photorealistic textures, muted colors.\n\nOUTPUT B\nA rust-red rowboat with chipped paint lies tied to a weathered dock on a still lake before dawn. Cool blue light reveals the dock’s splintered grain and the boat’s dark reflection in glasslike water. The dock angles through the foreground toward the boat, framed against an empty expanse of lake.\n\nCRITERION C08-PRESERVE (hard)\nThe expansion preserves every supplied scene fact and adds no forbidden subject, prop, or active weather.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-3bbe94f070d0_C08-STYLE",
+          "question": "REVIEW 4/48 — pair-3bbe94f070d0\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C08-STYLE (advisory)\nWithin the limit, the prompt adds useful visible detail rather than padding or hidden story.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-496b7417802b_C12-PROFILE",
+          "question": "REVIEW 5/48 — pair-496b7417802b\n\nREQUEST\nWrite one Pony Diffusion V6 XL positive prompt for one adult woman with auburn hair, round glasses, a teal raincoat, and a folded red umbrella, standing at an empty tram stop at night. Use the safe anime source/rating dialect. Return only the comma-separated positive prompt: no negative prompt, notes, labels, or variants.\n\nOUTPUT A\nscore_9, score_8_up, score_7_up, source_anime, rating_safe, 1girl, solo, adult woman, auburn hair, round glasses, teal raincoat, holding a folded red umbrella at her side, standing, empty tram stop, night, glass shelter, vacant bench, tram tracks, wet pavement, streetlight reflections, soft overhead lighting, full body, eye-level view\n\nOUTPUT B\nscore_9, score_8_up, score_7_up, source_anime, rating_safe, 1girl, solo, adult woman, auburn hair, round glasses, teal raincoat, holding a folded red umbrella, standing at an otherwise empty tram stop, night\n\nCRITERION C12-PROFILE (hard)\nThe positive prompt starts with the existing Pony score/source/rating convention, uses source_anime and rating_safe, remains comma-separated, and avoids generic masterpiece/best quality boilerplate.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-496b7417802b_C12-PRESERVE",
+          "question": "REVIEW 5/48 — pair-496b7417802b\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C12-PRESERVE (hard)\nThe single adult subject retains every supplied attribute and prop, and the tram stop remains empty apart from her.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [],
+          "customInput": "B Pass, A fails. A — likely FAIL\n\nThe required content is all present and correctly bound:\n\none adult woman\nauburn hair\nround glasses\nteal raincoat\nfolded red umbrella\ntram stop\nnight\nsolo\n\nThe problem is the extra material:\n\nglass shelter, vacant bench, tram tracks, wet pavement, streetlight reflections\n\nIssue #17 says create defaults to Balanced, and Balanced may fill local unspecified details but:\n\n“No new independent subjects, props, or events.”\n\nA glass shelter, vacant bench, and tram tracks are additional independent scene objects/props rather than merely refinements of an already supplied object.\n\nwet pavement is also a new scene fact. It does not necessarily imply active rain, but it still was not supplied.\n\nThe lighting/framing additions are less problematic because full-scene scope can support presentation details, but the extra physical scene contents are the stronger issue.\n\nThe criterion itself is narrowly phrased around keeping the tram stop empty apart from her, and A does satisfy that in the human-subject sense. But because that criterion points to Issue #17’s preservation rules, I would evaluate the unauthorized prop invention as a failure."
+        },
+        {
+          "id": "pair-a3ee06b62a64_C11-PROFILE",
+          "question": "REVIEW 6/48 — pair-a3ee06b62a64\n\nREQUEST\nWrite one positive prompt for Illustrious in explicitly requested Danbooru Version for one adult woman with grey hair, green eyes, a black turtleneck, and white gloves, standing in a library. Before answering, use the existing local Danbooru lookup script to confirm the canonical spelling `grey_hair`; do not read raw CSV files and do not add related candidates. Return only the comma-separated positive prompt, with no negative prompt, notes, or explanation.\n\nOUTPUT A\nmasterpiece, best_quality, highres, 1girl, solo, mature_female, grey_hair, green_eyes, black_sweater, turtleneck, white_gloves, standing, library, indoors\n\nOBSERVABLE LOOKUP (A)\n{\n  \"availability\": \"available\",\n  \"calls\": [\n    {\n      \"args\": {\n        \"async\": false,\n        \"command\": \"python3 scripts/danbooru_lookup.py tag grey_hair\",\n        \"cwd\": \"<redacted>\",\n        \"pty\": false,\n        \"timeout\": 60\n      },\n      \"result_content\": [\n        {\n          \"text\": \"grey_hair [general] count=574323\\naliases: 白髪, 銀髪, 銀髪ロング\\n\\n\\nWall time: 30.54 seconds\",\n          \"type\": \"text\"\n        }\n      ]\n    }\n  ],\n  \"trace_complete\": true\n}\n\nOUTPUT B\n1girl, solo, adult, grey_hair, green_eyes, black_sweater, turtleneck, white_gloves, standing, library\n\nOBSERVABLE LOOKUP (B)\n{\n  \"availability\": \"available\",\n  \"calls\": [\n    {\n      \"args\": {\n        \"async\": false,\n        \"command\": \"python3 scripts/danbooru_lookup.py tag grey_hair\",\n        \"cwd\": \"<redacted>\",\n        \"pty\": false,\n        \"timeout\": 60\n      },\n      \"result_content\": [\n        {\n          \"text\": \"grey_hair [general] count=574323\\naliases: 白髪, 銀髪, 銀髪ロング\\n\\n\\nWall time: 30.57 seconds\",\n          \"type\": \"text\"\n        }\n      ]\n    }\n  ],\n  \"trace_complete\": true\n}\n\nCRITERION C11-PROFILE (hard)\nThe prompt preserves the existing Illustrious convention: comma-separated Danbooru-style tags with restrained quality/composition guidance, lower_snake_case canonical forms where applicable, and no Pony prefix.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-a3ee06b62a64_C11-CONSTRAINTS",
+          "question": "REVIEW 6/48 — pair-a3ee06b62a64\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C11-CONSTRAINTS (hard)\nThe canonical grey-hair result is used for the requested woman, all requested visible facts remain represented, and no optional related candidate changes the scene.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-a3ee06b62a64_C11-LOOKUP-EVIDENCE",
+          "question": "REVIEW 6/48 — pair-a3ee06b62a64\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C11-LOOKUP-EVIDENCE (hard)\nThe captured tool results confirm grey_hair using the selected revision’s local lookup script. A mere spelling echo is not confirmation; missing usable trace evidence is not-run.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        }
+      ]
+    }
+  },
+  "recorded_at": "2026-09-23T02:08:01.964Z"
+}

@@ -1,0 +1,3 @@
+Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.
+
+Create a character-design prompt for an adult lighthouse keeper. Give her weathered olive skin, tightly curled gray hair, a navy cable-knit sweater, orange waterproof bib trousers, black rubber boots, and a brass whistle on a cord. Describe character design only. Return one prompt with no scene, pose, expression, action, camera, lighting, weather, or story.

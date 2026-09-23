@@ -1,0 +1,15 @@
+### 1. Fidelity to the brief
+- **SDXL:** Explicitly preserves all core details: green bicycle, leaning pose, white brick wall, and soft overcast daylight. Eye-level framing, a medium shot, and a restrained palette are additions, not requirements of the brief.
+- **Krea 2:** Preserves the subject, colors, wall material, and lighting. “Rests against” strongly suggests leaning but is slightly less explicit. “Even” is consistent with overcast light. Eye-level framing and a restrained palette are added constraints.
+
+### 2. Model-appropriate expression
+- **SDXL:** The short, comma-separated visual phrases are clear and usable. However, the selected skill’s SDXL profile favors concise natural-language prose; this prompt is more phrase-based than that preferred default, without being inherently unsuitable.
+- **Krea 2:** The cohesive sentence clearly connects subject, setting, lighting, and framing. The selected skill provides no Krea 2 profile, so this is a judgment of general prompt clarity—not confirmation of a Krea-specific preferred format.
+
+### 3. Likely ambiguity
+- **SDXL:** “Medium shot” is less precise for a bicycle than for a person and could lead to partial cropping. “Leaning against” makes the intended physical relationship explicit.
+- **Krea 2:** Eye level specifies viewpoint but not shot distance, leaving the bicycle’s size within the frame more open. “Rests against” leaves slightly more latitude in its posture.
+- **Both:** “Restrained palette” could mean fewer colors or reduced saturation, potentially muting the bicycle’s green. Neither specifies the green’s shade, bicycle orientation, or exact wall contact point; these are ordinary open choices rather than contradictions.
+
+### 4. Overall comparison
+**SDXL has a slight edge in literal fidelity and framing specificity. Krea 2 has smoother sentence-level expression but leaves shot distance and the leaning pose somewhat less explicit.** Both communicate the brief well; wording alone does not establish which model will render it more faithfully.

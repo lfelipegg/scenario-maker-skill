@@ -58,6 +58,26 @@ For Phase 3 candidate acceptance, run the same three repetitions of all 16 uncha
 
 Advisory criteria never compensate for a hard failure. Phase 3 acceptance does not imply acceptance of P4–P7 repairs, any supplemental probe, or rendered-media quality.
 
+## Phase 4 coverage and acceptance schedule
+
+Phase 4 implements [modular model profiles and Krea 2 support](https://github.com/lfelipegg/scenario-maker-skill/issues/6), authorized and claimed in [this record](https://github.com/lfelipegg/scenario-maker-skill/issues/6#issuecomment-5787501931). [Decision #19](https://github.com/lfelipegg/scenario-maker-skill/issues/19#issuecomment-5746665421) supplies settled presets and detail controls. The [model index](../references/model-prompts.md) routes to separate profiles; this phase does not retune the migrated Illustrious/Pony/NoobAI conventions or implement Phase 5.
+
+All 16 requests, criteria, severities, and due phases remain unchanged. Existing cases already schedule the following behavior for Phase 4:
+
+| Boundary | Portfolio criteria | Evidence |
+| --- | --- | --- |
+| SDXL compact phrases honor explicit output constraints | `C01-PROFILE`, `C01-OUTPUT` | Human hard judgments |
+| Krea 2 natural-language adaptation preserves the supplied scene without detail-driven invention | `C02-PROFILE`, `C02-PRESERVE`, `C02-OUTPUT` | Human hard judgments |
+| Comparison distinguishes fidelity, expression, and ambiguity for both profiles | `C10-ANALYSIS`; `C10-ROUTING` remains hard | Human advisory analysis; no upgrade or weakening of severity |
+| Legacy Illustrious/Pony/NoobAI profile conventions survive migration | `C11-PROFILE`, `C12-PROFILE`, `C13-PROFILE` and existing protected content criteria | Human hard judgments |
+| Core routing, scope, scene preservation, exact lettering, and existing video/export behavior remain protected | All hard checks due through Phase 3 and the immutable original no-regression set | Mechanical and human checks according to each unchanged criterion |
+
+Run the full 96-attempt paired cohort against the fixed original revision. All hard checks due through Phase 4 must pass every repetition, as must the original baseline protection set and newly accepted Phase Two/Three hard requirements. Later baseline variance never removes a protection. Missing human judgments remain `not-run` and block acceptance. The three accepted Phase Three `C10-ANALYSIS` failures are advisory findings for this phase, not a reason to rewrite earlier evidence.
+
+`evals/phase-four-probes.jsonl` supplements development coverage of both SDXL presets, all Krea detail levels, explicit formatting, exact lettering and relationships, negative-channel consumption, and identity/interface boundaries. These are single-run development observations, not additions to the approved acceptance portfolio and not semantic passes. The same separation from rubric exposure and immutable raw capture applies. Index/link checks establish reference integrity, not generated-media quality.
+
+After this milestone, collect actual ordinary-use failures before proposing broader implementation. Synthetic probes, baseline failures, and hypothetical risks are not ordinary-use reports. Keep later phases unstarted; Phase Four authorization does not authorize committing or pushing.
+
 ## Fixed fixture
 
 `evals/fixtures/case15-geometric-source.png` is a deterministic 128 × 80 RGBA PNG authored from flat geometric raster primitives. It depicts pale-cyan sky above blue water, a red-hulled sailboat with a dark mast, a yellow right sail and white left sail, a white cloud in the upper right, and three pale horizontal ripple marks. It contains no generated or private material.

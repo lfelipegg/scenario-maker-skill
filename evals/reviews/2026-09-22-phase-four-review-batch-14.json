@@ -1,0 +1,309 @@
+{
+  "batch": 14,
+  "start": 39,
+  "count": 3,
+  "questions": [
+    {
+      "id": "pair-f733d7ec1044_C09-ROUTING",
+      "question": "REVIEW 40/48 — pair-f733d7ec1044\n\nREQUEST\nCritique the following image prompt for visible clarity, composition, and ambiguity. Identify strengths and concrete problems, but do not rewrite it, provide a replacement prompt, or add variants. Prompt: `A mysterious traveler in a beautiful place, cinematic, amazing lighting, dynamic composition.`\n\nOUTPUT A\n## Strengths\n- **Simple scene structure:** One traveler in a setting provides an understandable starting point without competing subjects or contradictory instructions.\n- **Consistent mood:** “Mysterious” and “cinematic” suggest an atmospheric image.\n- **Creative latitude:** Its brevity leaves room for interpretation, which can be useful for exploratory generation.\n\n## Concrete problems\n\n### Visible clarity\n- **“Mysterious traveler” describes an impression more than an appearance.** There are no visible cues establishing either mystery or travel, and no specified pose or action.\n- **“Beautiful place” supplies a judgment, not a setting.** It establishes no recognizable environment, physical features, or spatial context.\n- **“Amazing lighting” is similarly subjective.** Light direction, softness, color, and contrast are unspecified, so the phrase offers little control over visibility or atmosphere.\n\n### Composition\n- **“Dynamic composition” names a desired effect without defining an arrangement.** Framing, viewpoint, subject placement, and directional movement remain open.\n- **The visual hierarchy is unresolved.** It is unclear whether the traveler should dominate the image or appear small within an expansive setting.\n- **The subject’s relationship to the surroundings is minimal.** “In” establishes presence, but not depth, interaction, or a clear path for the viewer’s eye.\n\n### Ambiguity\n- **“Cinematic” covers many incompatible looks.** It does not settle the medium, palette, genre, or photographic treatment.\n- **The broad adjectives compound uncertainty.** Different interpretations could satisfy every phrase while producing substantially different images.\n- **Mood is clearer than content.** The prompt communicates how the image should feel more effectively than what should visibly appear.\n\n**Overall:** This is a workable mood seed, but a weak specification for a controlled image. Its main limitation is not brevity; it is the reliance on subjective praise and broad aesthetic labels rather than observable details and spatial relationships.\n\nOUTPUT B\n## Overall assessment\nThe prompt establishes a mood, but provides little control over what will actually be visible. It works as an open-ended creative seed rather than a precise image specification.\n\n### Strengths\n- **Simple subject–setting structure:** A traveler in a location gives the image a basic focal subject and context.\n- **Consistent mood:** “Mysterious” and “cinematic” suggest a compatible atmospheric direction.\n- **Concise and noncontradictory:** There are no competing details or overloaded instructions.\n\n### Concrete problems\n\n| Phrase | Clarity or composition issue |\n|---|---|\n| **“A mysterious traveler”** | “Traveler” identifies a role without specifying recognizable appearance, clothing, equipment, pose, or action. “Mysterious” describes an intended impression but supplies no visible cues to establish it. |\n| **“In a beautiful place”** | Neither the environment nor its defining features are specified. “Beautiful” is subjective, leaving landscape, architecture, era, weather, and palette open to interpretation. |\n| **“Cinematic”** | Offers a broad aesthetic cue, but does not establish a medium, framing, lens feel, color treatment, or particular visual style. |\n| **“Amazing lighting”** | States a desired quality rather than a lighting setup. Source, direction, softness, color, and contrast remain unspecified. |\n| **“Dynamic composition”** | Requests an effect without defining subject placement, camera angle, perspective, visual diagonals, or movement. It does not establish how the viewer’s eye should move through the scene. |\n\n### Main composition gap\nThere is no clear hierarchy between the traveler and the setting. A close portrait and a vast landscape with a tiny figure could both satisfy the wording, yet deliver very different images. The absence of a pose or action also leaves the traveler’s relationship to the environment unclear.\n\n**Bottom line:** The main weakness is not brevity—it is that evaluative adjectives do most of the work while visible scene details and spatial relationships remain undefined.\n\nCRITERION C09-ROUTING (hard)\nThe response is an analysis of the supplied prompt and does not silently turn into prompt writing, rewriting, or variants.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "40/48 C09-ROUTING",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-f733d7ec1044_C09-QUALITY",
+      "question": "REVIEW 40/48 — pair-f733d7ec1044\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C09-QUALITY (advisory)\nThe critique distinguishes useful strengths from specific visible-clarity, composition, and ambiguity problems.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "40/48 C09-QUALITY",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-b868bf43c2cd_C06-TEXT-BINDING",
+      "question": "REVIEW 41/48 — pair-b868bf43c2cd\n\nREQUEST\nWrite one text-to-image prompt for a small neighborhood bakery at dusk. A rectangular sign centered above the door must visibly read exactly `OPEN` in uppercase, with no other visible lettering anywhere. Return only the prompt.\n\nOUTPUT A\nA small neighborhood bakery at dusk, viewed straight on, with warm interior light contrasting against the soft blue evening. A rectangular sign centered directly above the entrance door visibly reads exactly “OPEN” in clear, crisp uppercase letters. Keep the entire sign unobstructed and easily legible. No other visible lettering anywhere in the image; all other surfaces remain unlettered.\n\nOUTPUT B\nA photorealistic, straight-on view of a small neighborhood bakery at dusk, with warm amber light spilling through windows displaying bread and pastries onto a quiet sidewalk beneath a blue-violet sky. A rectangular sign centered directly above the door clearly reads exactly “OPEN” in crisp, uppercase letters; keep the sign unobstructed and sharply legible, with no other visible lettering, numbers, logos, or watermarks anywhere in the image.\n\nCRITERION C06-TEXT-BINDING (hard)\nThe prompt clearly binds exact uppercase OPEN to the rectangular sign centered above the bakery door and excludes other visible lettering.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "41/48 C06-TEXT-BINDING",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-5c2931e26e89_C05-OUTPUT",
+      "question": "REVIEW 42/48 — pair-5c2931e26e89\n\nREQUEST\nWrite one text-to-image prompt for an empty sunlit stone courtyard with a dry fountain, ivy on the walls, and closed wooden doors. No people, animals, statues, silhouettes, or reflections of figures may appear. Return only the prompt and do not add a negative-prompt field.\n\nOUTPUT A\nA wide, eye-level view of an empty sunlit stone courtyard, centered on a plain dry fountain with a visibly empty basin, ivy climbing weathered walls, and closed wooden doors. Warm sunlight reveals rough stone textures and casts crisp architectural shadows across pale paving; the entire scene is unoccupied, with no people, animals, statues, silhouettes, or reflections of figures anywhere.\n\nOUTPUT B\nAn empty stone courtyard bathed in warm sunlight, with a plain dry stone fountain and a completely waterless basin. Green ivy climbs the textured stone walls around closed wooden doors. Sunlight reveals weathered paving and wood grain, with shadows cast only by architecture and foliage. The entire scene is unoccupied, with no people, animals, statues, silhouettes, or reflections of figures anywhere.\n\nCRITERION C05-OUTPUT (hard)\nThe response is one prompt only and does not create an unsolicited negative-prompt field.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "42/48 C05-OUTPUT",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-5c2931e26e89_C05-EXCLUSION",
+      "question": "REVIEW 42/48 — pair-5c2931e26e89\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C05-EXCLUSION (hard)\nThe positive scene remains an empty courtyard and does not introduce any excluded living or figure-like subject directly or through optional detail.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "42/48 C05-EXCLUSION",
+      "multi": false,
+      "recommended": null
+    },
+    {
+      "id": "pair-5c2931e26e89_C05-STYLE",
+      "question": "REVIEW 42/48 — pair-5c2931e26e89\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C05-STYLE (advisory)\nThe exclusion is communicated naturally without overwhelming the requested visual scene.",
+      "options": [
+        {
+          "label": "Both pass",
+          "description": "Both outputs satisfy this criterion.",
+          "preview": null
+        },
+        {
+          "label": "A only",
+          "description": "A passes; B fails.",
+          "preview": null
+        },
+        {
+          "label": "B only",
+          "description": "B passes; A fails.",
+          "preview": null
+        },
+        {
+          "label": "Neither",
+          "description": "Both outputs violate this criterion.",
+          "preview": null
+        },
+        {
+          "label": "Not reviewed",
+          "description": "Both remain not-run. Use custom input for mixed not-run states or a rationale.",
+          "preview": null
+        }
+      ],
+      "header": "42/48 C05-STYLE",
+      "multi": false,
+      "recommended": null
+    }
+  ],
+  "response": {
+    "text": "User answers:\npair-f733d7ec1044_C09-ROUTING: Both pass\npair-f733d7ec1044_C09-QUALITY: Both pass\npair-b868bf43c2cd_C06-TEXT-BINDING: Both pass\npair-5c2931e26e89_C05-OUTPUT: Both pass\npair-5c2931e26e89_C05-EXCLUSION: Both pass\npair-5c2931e26e89_C05-STYLE: Both pass",
+    "details": {
+      "results": [
+        {
+          "id": "pair-f733d7ec1044_C09-ROUTING",
+          "question": "REVIEW 40/48 — pair-f733d7ec1044\n\nREQUEST\nCritique the following image prompt for visible clarity, composition, and ambiguity. Identify strengths and concrete problems, but do not rewrite it, provide a replacement prompt, or add variants. Prompt: `A mysterious traveler in a beautiful place, cinematic, amazing lighting, dynamic composition.`\n\nOUTPUT A\n## Strengths\n- **Simple scene structure:** One traveler in a setting provides an understandable starting point without competing subjects or contradictory instructions.\n- **Consistent mood:** “Mysterious” and “cinematic” suggest an atmospheric image.\n- **Creative latitude:** Its brevity leaves room for interpretation, which can be useful for exploratory generation.\n\n## Concrete problems\n\n### Visible clarity\n- **“Mysterious traveler” describes an impression more than an appearance.** There are no visible cues establishing either mystery or travel, and no specified pose or action.\n- **“Beautiful place” supplies a judgment, not a setting.** It establishes no recognizable environment, physical features, or spatial context.\n- **“Amazing lighting” is similarly subjective.** Light direction, softness, color, and contrast are unspecified, so the phrase offers little control over visibility or atmosphere.\n\n### Composition\n- **“Dynamic composition” names a desired effect without defining an arrangement.** Framing, viewpoint, subject placement, and directional movement remain open.\n- **The visual hierarchy is unresolved.** It is unclear whether the traveler should dominate the image or appear small within an expansive setting.\n- **The subject’s relationship to the surroundings is minimal.** “In” establishes presence, but not depth, interaction, or a clear path for the viewer’s eye.\n\n### Ambiguity\n- **“Cinematic” covers many incompatible looks.** It does not settle the medium, palette, genre, or photographic treatment.\n- **The broad adjectives compound uncertainty.** Different interpretations could satisfy every phrase while producing substantially different images.\n- **Mood is clearer than content.** The prompt communicates how the image should feel more effectively than what should visibly appear.\n\n**Overall:** This is a workable mood seed, but a weak specification for a controlled image. Its main limitation is not brevity; it is the reliance on subjective praise and broad aesthetic labels rather than observable details and spatial relationships.\n\nOUTPUT B\n## Overall assessment\nThe prompt establishes a mood, but provides little control over what will actually be visible. It works as an open-ended creative seed rather than a precise image specification.\n\n### Strengths\n- **Simple subject–setting structure:** A traveler in a location gives the image a basic focal subject and context.\n- **Consistent mood:** “Mysterious” and “cinematic” suggest a compatible atmospheric direction.\n- **Concise and noncontradictory:** There are no competing details or overloaded instructions.\n\n### Concrete problems\n\n| Phrase | Clarity or composition issue |\n|---|---|\n| **“A mysterious traveler”** | “Traveler” identifies a role without specifying recognizable appearance, clothing, equipment, pose, or action. “Mysterious” describes an intended impression but supplies no visible cues to establish it. |\n| **“In a beautiful place”** | Neither the environment nor its defining features are specified. “Beautiful” is subjective, leaving landscape, architecture, era, weather, and palette open to interpretation. |\n| **“Cinematic”** | Offers a broad aesthetic cue, but does not establish a medium, framing, lens feel, color treatment, or particular visual style. |\n| **“Amazing lighting”** | States a desired quality rather than a lighting setup. Source, direction, softness, color, and contrast remain unspecified. |\n| **“Dynamic composition”** | Requests an effect without defining subject placement, camera angle, perspective, visual diagonals, or movement. It does not establish how the viewer’s eye should move through the scene. |\n\n### Main composition gap\nThere is no clear hierarchy between the traveler and the setting. A close portrait and a vast landscape with a tiny figure could both satisfy the wording, yet deliver very different images. The absence of a pose or action also leaves the traveler’s relationship to the environment unclear.\n\n**Bottom line:** The main weakness is not brevity—it is that evaluative adjectives do most of the work while visible scene details and spatial relationships remain undefined.\n\nCRITERION C09-ROUTING (hard)\nThe response is an analysis of the supplied prompt and does not silently turn into prompt writing, rewriting, or variants.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-f733d7ec1044_C09-QUALITY",
+          "question": "REVIEW 40/48 — pair-f733d7ec1044\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C09-QUALITY (advisory)\nThe critique distinguishes useful strengths from specific visible-clarity, composition, and ambiguity problems.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-b868bf43c2cd_C06-TEXT-BINDING",
+          "question": "REVIEW 41/48 — pair-b868bf43c2cd\n\nREQUEST\nWrite one text-to-image prompt for a small neighborhood bakery at dusk. A rectangular sign centered above the door must visibly read exactly `OPEN` in uppercase, with no other visible lettering anywhere. Return only the prompt.\n\nOUTPUT A\nA small neighborhood bakery at dusk, viewed straight on, with warm interior light contrasting against the soft blue evening. A rectangular sign centered directly above the entrance door visibly reads exactly “OPEN” in clear, crisp uppercase letters. Keep the entire sign unobstructed and easily legible. No other visible lettering anywhere in the image; all other surfaces remain unlettered.\n\nOUTPUT B\nA photorealistic, straight-on view of a small neighborhood bakery at dusk, with warm amber light spilling through windows displaying bread and pastries onto a quiet sidewalk beneath a blue-violet sky. A rectangular sign centered directly above the door clearly reads exactly “OPEN” in crisp, uppercase letters; keep the sign unobstructed and sharply legible, with no other visible lettering, numbers, logos, or watermarks anywhere in the image.\n\nCRITERION C06-TEXT-BINDING (hard)\nThe prompt clearly binds exact uppercase OPEN to the rectangular sign centered above the bakery door and excludes other visible lettering.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-5c2931e26e89_C05-OUTPUT",
+          "question": "REVIEW 42/48 — pair-5c2931e26e89\n\nREQUEST\nWrite one text-to-image prompt for an empty sunlit stone courtyard with a dry fountain, ivy on the walls, and closed wooden doors. No people, animals, statues, silhouettes, or reflections of figures may appear. Return only the prompt and do not add a negative-prompt field.\n\nOUTPUT A\nA wide, eye-level view of an empty sunlit stone courtyard, centered on a plain dry fountain with a visibly empty basin, ivy climbing weathered walls, and closed wooden doors. Warm sunlight reveals rough stone textures and casts crisp architectural shadows across pale paving; the entire scene is unoccupied, with no people, animals, statues, silhouettes, or reflections of figures anywhere.\n\nOUTPUT B\nAn empty stone courtyard bathed in warm sunlight, with a plain dry stone fountain and a completely waterless basin. Green ivy climbs the textured stone walls around closed wooden doors. Sunlight reveals weathered paving and wood grain, with shadows cast only by architecture and foliage. The entire scene is unoccupied, with no people, animals, statues, silhouettes, or reflections of figures anywhere.\n\nCRITERION C05-OUTPUT (hard)\nThe response is one prompt only and does not create an unsolicited negative-prompt field.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-5c2931e26e89_C05-EXCLUSION",
+          "question": "REVIEW 42/48 — pair-5c2931e26e89\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C05-EXCLUSION (hard)\nThe positive scene remains an empty courtyard and does not introduce any excluded living or figure-like subject directly or through optional detail.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        },
+        {
+          "id": "pair-5c2931e26e89_C05-STYLE",
+          "question": "REVIEW 42/48 — pair-5c2931e26e89\nRefer to the A/B outputs shown for this pair.\n\nCRITERION C05-STYLE (advisory)\nThe exclusion is communicated naturally without overwhelming the requested visual scene.",
+          "options": [
+            "Both pass",
+            "A only",
+            "B only",
+            "Neither",
+            "Not reviewed"
+          ],
+          "multi": false,
+          "selectedOptions": [
+            "Both pass"
+          ]
+        }
+      ]
+    }
+  },
+  "recorded_at": "2026-09-23T02:23:16.023Z"
+}

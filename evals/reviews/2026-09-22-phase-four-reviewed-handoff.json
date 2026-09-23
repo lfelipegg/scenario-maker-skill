@@ -1,0 +1,1222 @@
+{
+  "recorded_at": "2026-09-23T02:28:38.880Z",
+  "phase": 4,
+  "status": "All candidate hard gates pass after completed blinded maintainer review; awaiting explicit Phase Four acceptance and tracker closure authorization.",
+  "authorization": {
+    "selection": "Authorize and claim Phase Four",
+    "claim_comment": "https://github.com/lfelipegg/scenario-maker-skill/issues/6#issuecomment-5787501931",
+    "commit": false,
+    "push": false,
+    "later_phases": false
+  },
+  "candidate_revision": "worktree-sha256-550085c5e6d4cbd793ba7553fbb8ec724db7375c081ec063a8e4107130deec07",
+  "baseline_revision": "5fcc3d0eded83c6a9aaf472a1dc8d5ce24011d9d",
+  "capture_root": "evals/comparisons/2026-09-22-phase-four",
+  "capture_execution": {
+    "attempts": 96,
+    "completed": 96,
+    "errors": 0,
+    "timeouts": 0,
+    "outputs": 96,
+    "trace_complete": 96,
+    "semantic_review": "not-run",
+    "acceptance": "not assessed"
+  },
+  "integrity": {
+    "attempts": 96,
+    "rawFiles": 480,
+    "artifacts": 6,
+    "candidateSnapshotFiles": 23,
+    "observedContexts": [
+      {
+        "model": {
+          "provider": "openai-codex",
+          "id": "gpt-6-astra",
+          "name": "GPT-6-Astra"
+        },
+        "thinking": "high",
+        "tools": [
+          "read",
+          "grep",
+          "glob",
+          "bash",
+          "write"
+        ]
+      }
+    ],
+    "sourceMatchesSmoke": true,
+    "protectedFilesUnchanged": 4,
+    "checkedLocalLinks": 43
+  },
+  "source_changes": [
+    "SKILL.md",
+    "references/model-prompts.md",
+    "references/models/sdxl.md",
+    "references/models/krea-2.md",
+    "references/models/illustrious.md",
+    "references/models/pony-v6.md",
+    "references/models/noobai.md",
+    "references/prompt-types.md",
+    "references/characters.md"
+  ],
+  "evaluation_changes": [
+    "evals/rubric.md",
+    "evals/phase-four-probes.jsonl"
+  ],
+  "approved_cases_unchanged": true,
+  "result_directories": {
+    "candidate": "evals/results/2026-09-22-phase-four-reviewed-candidate",
+    "baseline": "evals/results/2026-09-22-phase-four-reviewed-baseline"
+  },
+  "candidate_gates": {
+    "mechanical": {
+      "passed": 63,
+      "failed": 0,
+      "not-run": 0
+    },
+    "human": {
+      "passed": 108,
+      "failed": 0,
+      "not-run": 0
+    },
+    "due_phase_four_hard": {
+      "passed": 126,
+      "failed": 0,
+      "not-run": 0
+    },
+    "original_protected_hard": {
+      "passed": 153,
+      "failed": 0,
+      "not-run": 0
+    },
+    "accepted_phase_two_hard": {
+      "passed": 78,
+      "failed": 0,
+      "not-run": 0
+    },
+    "accepted_phase_three_hard": {
+      "passed": 111,
+      "failed": 0,
+      "not-run": 0
+    }
+  },
+  "baseline_counts": {
+    "mechanical": {
+      "passed": 63,
+      "failed": 0,
+      "not-run": 0
+    },
+    "human": {
+      "passed": 102,
+      "failed": 6,
+      "not-run": 0
+    }
+  },
+  "per_case": [
+    {
+      "case_id": "case-01",
+      "criteria": [
+        {
+          "criterion_id": "C01-OUTPUT",
+          "severity": "hard",
+          "mandatory_phase": 2,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        },
+        {
+          "criterion_id": "C01-PROFILE",
+          "severity": "hard",
+          "mandatory_phase": 4,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        },
+        {
+          "criterion_id": "C01-STYLE",
+          "severity": "advisory",
+          "mandatory_phase": 4,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        },
+        {
+          "criterion_id": "C01-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "case-02",
+      "criteria": [
+        {
+          "criterion_id": "C02-OUTPUT",
+          "severity": "hard",
+          "mandatory_phase": 2,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        },
+        {
+          "criterion_id": "C02-PRESERVE",
+          "severity": "hard",
+          "mandatory_phase": 3,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        },
+        {
+          "criterion_id": "C02-PROFILE",
+          "severity": "hard",
+          "mandatory_phase": 4,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        },
+        {
+          "criterion_id": "C02-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "case-03",
+      "criteria": [
+        {
+          "criterion_id": "C03-OUTPUT",
+          "severity": "hard",
+          "mandatory_phase": 2,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        },
+        {
+          "criterion_id": "C03-REVISION",
+          "severity": "hard",
+          "mandatory_phase": 3,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        },
+        {
+          "criterion_id": "C03-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "case-04",
+      "criteria": [
+        {
+          "criterion_id": "C04-SCOPE",
+          "severity": "hard",
+          "mandatory_phase": 3,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        },
+        {
+          "criterion_id": "C04-DETAILS",
+          "severity": "hard",
+          "mandatory_phase": 3,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        },
+        {
+          "criterion_id": "C04-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "case-05",
+      "criteria": [
+        {
+          "criterion_id": "C05-OUTPUT",
+          "severity": "hard",
+          "mandatory_phase": 2,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        },
+        {
+          "criterion_id": "C05-EXCLUSION",
+          "severity": "hard",
+          "mandatory_phase": 5,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        },
+        {
+          "criterion_id": "C05-STYLE",
+          "severity": "advisory",
+          "mandatory_phase": 5,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        },
+        {
+          "criterion_id": "C05-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "case-06",
+      "criteria": [
+        {
+          "criterion_id": "C06-TEXT-PRESENCE",
+          "severity": "hard",
+          "mandatory_phase": 3,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        },
+        {
+          "criterion_id": "C06-TEXT-BINDING",
+          "severity": "hard",
+          "mandatory_phase": 3,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        },
+        {
+          "criterion_id": "C06-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "case-07",
+      "criteria": [
+        {
+          "criterion_id": "C07-COUNT",
+          "severity": "hard",
+          "mandatory_phase": 2,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        },
+        {
+          "criterion_id": "C07-DISTINCTNESS",
+          "severity": "hard",
+          "mandatory_phase": 6,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        },
+        {
+          "criterion_id": "C07-PRESERVE",
+          "severity": "hard",
+          "mandatory_phase": 6,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        },
+        {
+          "criterion_id": "C07-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "case-08",
+      "criteria": [
+        {
+          "criterion_id": "C08-LIMIT",
+          "severity": "hard",
+          "mandatory_phase": 2,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        },
+        {
+          "criterion_id": "C08-PRESERVE",
+          "severity": "hard",
+          "mandatory_phase": 3,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        },
+        {
+          "criterion_id": "C08-STYLE",
+          "severity": "advisory",
+          "mandatory_phase": 3,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        },
+        {
+          "criterion_id": "C08-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "case-09",
+      "criteria": [
+        {
+          "criterion_id": "C09-ROUTING",
+          "severity": "hard",
+          "mandatory_phase": 2,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        },
+        {
+          "criterion_id": "C09-QUALITY",
+          "severity": "advisory",
+          "mandatory_phase": 2,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        },
+        {
+          "criterion_id": "C09-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "case-10",
+      "criteria": [
+        {
+          "criterion_id": "C10-ROUTING",
+          "severity": "hard",
+          "mandatory_phase": 2,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        },
+        {
+          "criterion_id": "C10-ANALYSIS",
+          "severity": "advisory",
+          "mandatory_phase": 4,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        },
+        {
+          "criterion_id": "C10-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "case-11",
+      "criteria": [
+        {
+          "criterion_id": "C11-CANONICAL-TEXT",
+          "severity": "hard",
+          "mandatory_phase": 5,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        },
+        {
+          "criterion_id": "C11-PROFILE",
+          "severity": "hard",
+          "mandatory_phase": 4,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        },
+        {
+          "criterion_id": "C11-CONSTRAINTS",
+          "severity": "hard",
+          "mandatory_phase": 5,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        },
+        {
+          "criterion_id": "C11-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        },
+        {
+          "criterion_id": "C11-LOOKUP-EVIDENCE",
+          "severity": "hard",
+          "mandatory_phase": 5,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "case-12",
+      "criteria": [
+        {
+          "criterion_id": "C12-PROFILE",
+          "severity": "hard",
+          "mandatory_phase": 4,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        },
+        {
+          "criterion_id": "C12-PRESERVE",
+          "severity": "hard",
+          "mandatory_phase": 3,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 0,
+            "failed": 3,
+            "not-run": 0
+          }
+        },
+        {
+          "criterion_id": "C12-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "case-13",
+      "criteria": [
+        {
+          "criterion_id": "C13-PROFILE",
+          "severity": "hard",
+          "mandatory_phase": 4,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        },
+        {
+          "criterion_id": "C13-PRESERVE",
+          "severity": "hard",
+          "mandatory_phase": 3,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 1,
+            "failed": 2,
+            "not-run": 0
+          }
+        },
+        {
+          "criterion_id": "C13-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "case-14",
+      "criteria": [
+        {
+          "criterion_id": "C14-ROUTE",
+          "severity": "hard",
+          "mandatory_phase": 2,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        },
+        {
+          "criterion_id": "C14-MOTION",
+          "severity": "hard",
+          "mandatory_phase": 3,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 2,
+            "failed": 1,
+            "not-run": 0
+          }
+        },
+        {
+          "criterion_id": "C14-STYLE",
+          "severity": "advisory",
+          "mandatory_phase": 3,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        },
+        {
+          "criterion_id": "C14-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "case-15",
+      "criteria": [
+        {
+          "criterion_id": "C15-ROUTE",
+          "severity": "hard",
+          "mandatory_phase": 2,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        },
+        {
+          "criterion_id": "C15-PRESERVE",
+          "severity": "hard",
+          "mandatory_phase": 3,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        },
+        {
+          "criterion_id": "C15-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "case-16",
+      "criteria": [
+        {
+          "criterion_id": "C16-EXPORT",
+          "severity": "hard",
+          "mandatory_phase": 6,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        },
+        {
+          "criterion_id": "C16-FRAGMENTS",
+          "severity": "hard",
+          "mandatory_phase": 6,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        },
+        {
+          "criterion_id": "C16-REPORT",
+          "severity": "hard",
+          "mandatory_phase": 6,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        },
+        {
+          "criterion_id": "C16-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "candidate": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 0,
+            "not-run": 0
+          }
+        }
+      ]
+    }
+  ],
+  "review": {
+    "human_rows": 216,
+    "criterion_decisions": 108,
+    "batches": 16,
+    "custom_rationales": 7,
+    "pre_unblinding_clarifications": [
+      "evals/reviews/2026-09-22-phase-four-review-clarification-01.json",
+      "evals/reviews/2026-09-22-phase-four-review-clarification-02.json"
+    ],
+    "post_unblinding_corrections": false,
+    "paired_cards": "evals/reviews/2026-09-22-phase-four-paired-cards.jsonl",
+    "paired_mapping": "evals/reviews/2026-09-22-phase-four-paired-mapping.jsonl",
+    "provenance": "evals/reviews/2026-09-22-phase-four-human-provenance.jsonl",
+    "candidate_ledger": "evals/reviews/2026-09-22-phase-four-candidate-human.jsonl",
+    "baseline_ledger": "evals/reviews/2026-09-22-phase-four-baseline-human.jsonl",
+    "advisory_caveat": "For pair-3b69db926630 C10-ANALYSIS the maintainer reported inaccurate model-profile claims in baseline output A but explicitly chose passed after clarification. This caveat is preserved; no model overrode the human state."
+  },
+  "protection": {
+    "original_baseline_summary": "evals/results/2026-09-21-human-review-24/summary.json",
+    "original_protected_criteria": [
+      "C01-OUTPUT",
+      "C01-PROFILE",
+      "C01-TRACE",
+      "C02-OUTPUT",
+      "C02-PRESERVE",
+      "C02-PROFILE",
+      "C02-TRACE",
+      "C03-OUTPUT",
+      "C03-REVISION",
+      "C03-TRACE",
+      "C04-SCOPE",
+      "C04-DETAILS",
+      "C04-TRACE",
+      "C05-OUTPUT",
+      "C05-EXCLUSION",
+      "C05-TRACE",
+      "C06-TEXT-PRESENCE",
+      "C06-TEXT-BINDING",
+      "C06-TRACE",
+      "C07-COUNT",
+      "C07-DISTINCTNESS",
+      "C07-PRESERVE",
+      "C07-TRACE",
+      "C08-LIMIT",
+      "C08-PRESERVE",
+      "C08-TRACE",
+      "C09-ROUTING",
+      "C09-TRACE",
+      "C10-ROUTING",
+      "C10-TRACE",
+      "C11-CANONICAL-TEXT",
+      "C11-PROFILE",
+      "C11-CONSTRAINTS",
+      "C11-TRACE",
+      "C11-LOOKUP-EVIDENCE",
+      "C12-PROFILE",
+      "C12-PRESERVE",
+      "C12-TRACE",
+      "C13-PROFILE",
+      "C13-PRESERVE",
+      "C13-TRACE",
+      "C14-ROUTE",
+      "C14-MOTION",
+      "C14-TRACE",
+      "C15-ROUTE",
+      "C15-PRESERVE",
+      "C15-TRACE",
+      "C16-EXPORT",
+      "C16-FRAGMENTS",
+      "C16-REPORT",
+      "C16-TRACE"
+    ],
+    "phase_two_acceptance": "evals/reviews/2026-09-22-phase-two-bounded-fix-acceptance.json",
+    "phase_three_acceptance": "evals/reviews/2026-09-22-phase-three-acceptance.json",
+    "phase_two_criteria": [
+      "C01-OUTPUT",
+      "C01-TRACE",
+      "C02-OUTPUT",
+      "C02-TRACE",
+      "C03-OUTPUT",
+      "C03-TRACE",
+      "C04-TRACE",
+      "C05-OUTPUT",
+      "C05-TRACE",
+      "C06-TRACE",
+      "C07-COUNT",
+      "C07-TRACE",
+      "C08-LIMIT",
+      "C08-TRACE",
+      "C09-ROUTING",
+      "C09-TRACE",
+      "C10-ROUTING",
+      "C10-TRACE",
+      "C11-TRACE",
+      "C12-TRACE",
+      "C13-TRACE",
+      "C14-ROUTE",
+      "C14-TRACE",
+      "C15-ROUTE",
+      "C15-TRACE",
+      "C16-TRACE"
+    ],
+    "phase_three_criteria": [
+      "C01-OUTPUT",
+      "C01-TRACE",
+      "C02-OUTPUT",
+      "C02-PRESERVE",
+      "C02-TRACE",
+      "C03-OUTPUT",
+      "C03-REVISION",
+      "C03-TRACE",
+      "C04-SCOPE",
+      "C04-DETAILS",
+      "C04-TRACE",
+      "C05-OUTPUT",
+      "C05-TRACE",
+      "C06-TEXT-PRESENCE",
+      "C06-TEXT-BINDING",
+      "C06-TRACE",
+      "C07-COUNT",
+      "C07-TRACE",
+      "C08-LIMIT",
+      "C08-PRESERVE",
+      "C08-TRACE",
+      "C09-ROUTING",
+      "C09-TRACE",
+      "C10-ROUTING",
+      "C10-TRACE",
+      "C11-TRACE",
+      "C12-PRESERVE",
+      "C12-TRACE",
+      "C13-PRESERVE",
+      "C13-TRACE",
+      "C14-ROUTE",
+      "C14-MOTION",
+      "C14-TRACE",
+      "C15-ROUTE",
+      "C15-PRESERVE",
+      "C15-TRACE",
+      "C16-TRACE"
+    ],
+    "policy": "Fresh baseline failures do not remove any original or accepted hard protection."
+  },
+  "development": {
+    "probes": 11,
+    "evidence": "evals/reviews/2026-09-22-phase-four-development-observations.json",
+    "acceptance_eligible": false
+  },
+  "ordinary_use": {
+    "failures": [],
+    "status": "No ordinary-use reports supplied or collected. Synthetic review failures are not ordinary-use evidence. Collect actual failures before any proposal to broaden implementation."
+  },
+  "cleanup": {
+    "disposable_driver_removed": true,
+    "driver_source_retained_in_development_evidence": true,
+    "historical_handoff": "docs/next-steps.md intentionally unchanged; historical Phase One handoff",
+    "no_changelog_present": true
+  },
+  "limitations": [
+    "Prompt-text checks do not establish rendered-media quality; no image/video generation performed.",
+    "Eleven probes are development-only observations, not approved acceptance cases.",
+    "Requested model identity does not prove immutable provider snapshot; hidden state, seed and fingerprint remain unknown.",
+    "Local auto-approved tools are not an OS sandbox.",
+    "Candidate content-addressed worktree snapshot is not a Git commit.",
+    "Later phases, commits, and pushes remain separately authorization-gated."
+  ],
+  "committed_by_this_session": false,
+  "pushed_by_this_session": false,
+  "starting_commit_supplied_by_maintainer": "c2ae5601da8948206f2b0144845147166f7c93f0",
+  "phase_five_or_later_started": false
+}

@@ -1,0 +1,30 @@
+## Core distinction
+
+**Local Krea 2 RAW/Turbo and hosted Krea 2 Medium/Large/Medium Turbo are distinct targets—not interchangeable names.** In particular, local Turbo should not be treated as hosted Medium Turbo.
+
+The selected skill’s references document the local checkpoints and establish this boundary, but do not provide complete per-tier hosted specifications. The comparison below separates documented local behavior from hosted details that remain unverified.
+
+| Area | Local Krea 2 RAW / Turbo | Hosted Krea 2 Medium / Large / Medium Turbo |
+|---|---|---|
+| **Prompt syntax** | Portable natural-language text is the recommended baseline. There is no official rigid clause order or required quality-token prefix. Quote exact visible lettering and clearly bind attributes and actions to their subjects. | The local profile does not establish separate syntax rules for these hosted tiers. Plain descriptive text is a conservative starting point, not proof that every hosted interface accepts the same special syntax. |
+| **Length and structure** | The skill defaults to one cohesive paragraph of roughly 150 tokens. This is a writing preference—not a checkpoint requirement or token limit. Longer detailed prompts are recommended in the referenced guidance, but minimal prompts remain supported. | Do not transfer the local profile’s length default as a hosted requirement or assume different hosted sizes require different prompt lengths. No such per-tier rule is established here. |
+| **Negative conditioning** | Support depends on the execution path. The official CLI exposes a positive prompt but no negative argument. The lower-level sampler accepts `negative_prompts` and uses that branch when guidance is greater than zero. Recommended Turbo guidance is `0.0`, which skips it. | Negative-prompt availability and actual consumption are not established by these references. Neither the hosted tier’s name nor local sampler support proves that a hosted UI or endpoint consumes negatives. |
+| **Creativity controls** | Hosted **Creativity** and **Generative Sliders** are not local prompt syntax. Local sampler parameters such as CFG, steps, and `mu` are separate controls; no equivalence to hosted Creativity is established. | Creativity belongs to the hosted interface/control layer, not the text grammar. Its availability, range, defaults, and precise effects across the three tiers are not specified in the supplied references. |
+| **Prompt enhancement** | Enhancement is a separate workflow step, not intrinsic checkpoint behavior. Krea’s `expansion.txt` is an optional helper-LLM system prompt; using RAW or Turbo does not itself mean that helper has run. | Do not assume hosted enhancement uses the same helper, is enabled by default, or preserves wording identically. The supplied references do not establish its per-tier implementation or defaults. |
+
+### Important local RAW–Turbo difference
+
+RAW is the open **undistilled base checkpoint**; Turbo is the open **eight-step distilled checkpoint**. Their documented reference settings are:
+
+- **RAW:** 52 steps, CFG 3.5.
+- **Turbo:** 8 steps, CFG 0.0, `mu=1.15`.
+
+These are **sampler settings, not words to insert into a prompt**. RAW’s positive guidance makes the lower-level negative-conditioning branch eligible, but it does not establish that a particular CLI, adapter, or graph supplies negative conditioning. A visible negative socket alone is insufficient evidence.
+
+### Practical interpretation
+
+The most portable component is the **scene description**: subjects, attribute bindings, relationships, composition, and exact quoted lettering. Special weighting syntax, negative channels, Creativity settings, and enhancement behavior should be assessed separately for the actual interface.
+
+For enhancement, the optional local helper’s stated contract emphasizes faithful expansion, preserved medium and lettering, and no invented objects or unsupported specificity. That is an instruction to the helper—not a guarantee about an unknown downstream enhancer.
+
+**Bottom line:** transfer clear descriptive content between local and hosted workflows, but do not transfer assumptions about controls or conditioning. The available documentation supports concrete RAW/Turbo distinctions; it does not support a claimed Medium-versus-Large-versus-Medium-Turbo feature matrix.
