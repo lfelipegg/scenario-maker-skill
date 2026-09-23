@@ -1,0 +1,3 @@
+Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.
+
+Create exactly four genuinely different composition variants of this fixed scene. Number them 1 through 4 and give one complete prompt per numbered entry. Vary only composition (framing, viewpoint, and placement within the image); hold lighting and all physical scene facts fixed. Fixed scene: a red cube image-left of a blue sphere on a gray table; a sign behind them reads exactly `OPEN`; both objects and the sign are fully visible; plain gray backdrop; diffuse frontal light with weak shadows.

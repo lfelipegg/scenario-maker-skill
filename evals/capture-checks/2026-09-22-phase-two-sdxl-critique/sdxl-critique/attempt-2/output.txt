@@ -1,0 +1,17 @@
+The prompt establishes a mood, but **it describes the desired impression more clearly than the image itself**. SDXL has considerable freedom to invent the subject, setting, and framing.
+
+### Visible clarity
+- **“A mysterious traveler”** identifies a role, not a recognizable appearance or action. Clothing, equipment, posture, and face visibility would make the traveler readable. Mystery could be conveyed through a shadowed face or a partially obscured silhouette rather than the adjective alone.
+- **“A beautiful place”** leaves the environment almost entirely unspecified. Concrete terrain, architecture, vegetation, or weather would give the image a distinct setting.
+- **“Amazing lighting”** expresses approval without specifying a visible effect. Light source, direction, color, and softness would provide stronger guidance.
+
+### Composition
+- **“Dynamic composition”** does not establish framing, subject placement, or visual movement. A diagonal path, off-center traveler, or wind-blown clothing could each create dynamism—but produce different images.
+- The prompt does not choose between a traveler-focused portrait and an expansive landscape with a small figure. That decision matters: it determines whether facial and clothing details or the environment carry the image.
+- There is no clear foreground–background relationship or focal hierarchy to guide attention.
+
+### Ambiguity
+- **“Cinematic”** is a useful broad stylistic cue, but it leaves genre, palette, contrast, and medium open.
+- Nothing directly contradicts anything else; the main issue is **underspecification**, not conflicting instructions. That openness can help exploration, but makes results less predictable.
+
+**Priority:** Define the traveler’s visible appearance and action, name the setting, choose the framing, and describe one concrete lighting setup. For SDXL, concise descriptive prose would improve control more than adding further quality adjectives.

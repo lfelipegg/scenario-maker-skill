@@ -1,0 +1,85 @@
+{
+  "case_id": "case-08",
+  "attempt": 1,
+  "revision": "5fcc3d0eded83c6a9aaf472a1dc8d5ce24011d9d",
+  "started_at": "2026-09-22T22:33:48.492110+00:00",
+  "elapsed_seconds": 14.313,
+  "command": [
+    "omp",
+    "--cwd",
+    "/tmp/scenario-maker-eval-o5an0ixo/baseline/case-08/attempt-1",
+    "--print",
+    "--mode",
+    "json",
+    "--model",
+    "openai-codex/gpt-6-astra",
+    "--thinking",
+    "high",
+    "--no-session",
+    "--no-title",
+    "--no-prewalk",
+    "--no-skills",
+    "--no-rules",
+    "--no-extensions",
+    "--no-lsp",
+    "--no-pty",
+    "--tools",
+    "read,grep,glob,bash,write",
+    "--approval-mode",
+    "yolo",
+    "--config",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/omp-config.json",
+    "--system-prompt",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/generator-system.txt",
+    "--extension",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/capture.ts",
+    "--max-time",
+    "300s",
+    "Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.\n\nExpand this brief into one ready-to-paste text-to-image prompt of at most 55 words: `A rust-red rowboat tied to a weathered dock on a still lake before dawn.` Return only the prompt. Do not add people, buildings, other boats, animals, or active weather."
+  ],
+  "cwd": "/tmp/scenario-maker-eval-o5an0ixo/baseline/case-08/attempt-1",
+  "execution": {
+    "status": "completed",
+    "exit_code": 0,
+    "error": null,
+    "model_errors": [],
+    "malformed_trace_lines": []
+  },
+  "raw": {
+    "output": "output.txt",
+    "partial_output": null,
+    "trace": "trace.jsonl",
+    "stderr": "stderr.txt",
+    "context": "context.jsonl"
+  },
+  "trace_complete": true,
+  "artifacts": [],
+  "observed_context": [
+    {
+      "type": "eval_context",
+      "systemPrompt": "You are a prompt-writing assistant executing the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md. Read that file and only its applicable references. Resolve its reference and script paths relative to ./selected-skill, not an installed skill. Do not discover or load other skills, repository instructions, past sessions, evaluator files, or web sources.\n\nOnly local read, grep, glob, bash, and write tools are available. Use them for the selected skill's references, local lookup/scripts, supplied fixtures, and requested workspace-local text exports. Keep writes within this fresh workspace. Do not edit the selected skill, execute image/video generation or frame extraction, delegate, switch models, access the network, or inspect credentials. This is prompt writing, not generation. If clarification is necessary, ask in your final response; this non-interactive run cannot receive an answer.\n\nApply the selected skill to the user's request. Do not discuss evaluation or scoring. The workspace starts with no prior conversation or generated outputs.\n",
+      "cwd": "/tmp/scenario-maker-eval-o5an0ixo/baseline/case-08/attempt-1",
+      "model": {
+        "provider": "openai-codex",
+        "id": "gpt-6-astra",
+        "name": "GPT-6-Astra"
+      },
+      "thinking": "high",
+      "tools": [
+        "read",
+        "grep",
+        "glob",
+        "bash",
+        "write"
+      ]
+    }
+  ],
+  "raw_checksums": {
+    "request.txt": "975ba3bd40a2b63440861ecf9b374cfa7c0b5a77d6b00181c09a9183e38fd24a",
+    "output.txt": "6c495fc3c5ca7b0732088d7d29b8559be2f7dc40b85c643ddccd82fbd883fe30",
+    "context.jsonl": "cd622c7de0ba21ca6867df38d3bbef4c107460c32681c2a0ea326b863f422134",
+    "trace.jsonl": "06ffa9a5b4c0b7d1a0e5f77e122f8d31e616ca3643f00da4151e199e50673e51",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "comparison_side": "baseline"
+}

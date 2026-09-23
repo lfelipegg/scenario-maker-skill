@@ -1,0 +1,23 @@
+## Strengths
+- **Clear basic premise:** One traveler in a setting provides a simple subject–environment relationship without overcrowding the image.
+- **Consistent mood:** “Mysterious” and “cinematic” suggest an atmospheric, dramatic direction.
+- **Concise and flexible:** There are no obvious contradictions. The openness can be useful for exploration, though it limits control.
+
+## Concrete problems
+
+### Visible clarity
+- **“Mysterious traveler” describes an impression more than an appearance.** There are no visible cues in clothing, posture, expression, or equipment to establish either mystery or travel.
+- **“Beautiful place” leaves the environment undefined.** It specifies neither the type of location nor any recognizable features, so the setting could vary dramatically.
+- **No pose or action is specified.** The prompt gives little guidance about what the traveler is visibly doing or how they relate to the surroundings.
+
+### Composition
+- **“Dynamic composition” names a desired effect without defining its structure.** Framing, camera angle, subject placement, and directional lines are all unspecified.
+- **The visual hierarchy is unresolved.** It is unclear whether the traveler should dominate the frame or appear small within an expansive landscape.
+- **Depth and subject separation are unconstrained.** Nothing establishes foreground, background, or contrast between the traveler and the setting.
+
+### Ambiguity
+- **“Amazing lighting” is evaluative rather than descriptive.** It does not identify a light source, direction, softness, color, or shadow pattern.
+- **“Cinematic” is broad shorthand.** It may influence the result, but does not reliably establish a particular palette, framing style, or medium.
+- **Most descriptors express taste rather than observable content.** They leave substantial decisions to the generator, increasing variation without ensuring the intended mood is visibly legible.
+
+**Overall:** This is a workable mood seed, but a weak specification for a controlled image. Its central limitation is not brevity; it is the lack of concrete visual anchors.

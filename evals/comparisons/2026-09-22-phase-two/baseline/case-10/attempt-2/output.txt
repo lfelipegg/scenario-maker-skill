@@ -1,0 +1,19 @@
+### 1. Fidelity to the brief
+- **SDXL prompt:** Explicitly preserves all core details: green bicycle, leaning posture, white brick wall, and soft overcast daylight. Eye-level framing, a medium shot, and a restrained palette are additions, not requirements of the brief.
+- **Krea 2 prompt:** Preserves the subject, wall, and lighting. “Rests against” strongly suggests leaning but is slightly less explicit than “leaning against.” “Even” is consistent with overcast light. Eye-level framing and a restrained palette are additional direction.
+
+**Comparison:** Both are faithful; the SDXL wording is marginally more exact about the bicycle’s posture.
+
+### 2. Model-appropriate expression
+- **SDXL prompt:** The short, comma-separated descriptive phrases are readable and usable. However, the selected skill’s SDXL profile favors concise natural-language prose rather than a phrase-list format. This is a stylistic mismatch with that preference, not a reason to expect failure.
+- **Krea 2 prompt:** The cohesive sentence expresses the scene and relationships clearly. The selected skill has no Krea 2-specific profile, so its prose can be assessed as sound general image-prompt wording, but not verified as specifically optimal for Krea 2.
+
+**Comparison:** The Krea 2 prompt is more fluent prose; that alone does not establish superior performance on its named model.
+
+### 3. Likely ambiguity
+- **SDXL prompt:** “Medium shot” narrows framing but does not clearly establish whether the whole bicycle, including both wheels, should remain visible. “Eye-level” leaves camera height somewhat open for a nonhuman subject.
+- **Krea 2 prompt:** Omitting shot size leaves more freedom over camera distance and cropping. “Rests against” leaves slightly more latitude in the exact leaning posture. Eye-level camera height remains similarly open.
+- **Both:** “Restrained palette” could mean fewer colors or reduced saturation, potentially producing a muted green. Neither specifies bicycle orientation or exact wall contact; those are ordinary open choices rather than contradictions.
+
+### Overall
+**SDXL is slightly more literal and more constrained in framing; Krea 2 is more naturally phrased but leaves framing more open.** Both communicate the brief clearly, and neither contains a major conflict with it.

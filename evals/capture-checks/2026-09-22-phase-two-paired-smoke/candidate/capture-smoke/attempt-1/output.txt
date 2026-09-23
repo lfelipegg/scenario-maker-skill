@@ -1,0 +1,1 @@
+Saved one prompt to `outputs/smoke.txt`.

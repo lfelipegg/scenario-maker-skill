@@ -1,0 +1,3 @@
+Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.
+
+Write one Wan text-to-video prompt. A yellow paper boat drifts along a narrow rain-filled gutter beside a gray curb; raindrops ripple the water and push tiny leaves past it. The camera makes a slow low tracking move alongside the boat, then gently pulls back as it reaches a storm drain. Photorealistic macro cinematography, cool overcast light. Return one cohesive paragraph only, with no shot list, label, notes, variants, or generation.

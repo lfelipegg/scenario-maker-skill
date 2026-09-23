@@ -1,0 +1,85 @@
+{
+  "case_id": "case-09",
+  "attempt": 1,
+  "revision": "worktree-sha256-eec9f105b8186ccf396f1694faf70172a433c89b3f93d0c4bbce1f6e0810a32d",
+  "started_at": "2026-09-22T20:28:49.524458+00:00",
+  "elapsed_seconds": 28.4,
+  "command": [
+    "omp",
+    "--cwd",
+    "/tmp/scenario-maker-eval-8nzhf829/candidate/case-09/attempt-1",
+    "--print",
+    "--mode",
+    "json",
+    "--model",
+    "openai-codex/gpt-6-astra",
+    "--thinking",
+    "high",
+    "--no-session",
+    "--no-title",
+    "--no-prewalk",
+    "--no-skills",
+    "--no-rules",
+    "--no-extensions",
+    "--no-lsp",
+    "--no-pty",
+    "--tools",
+    "read,grep,glob,bash,write",
+    "--approval-mode",
+    "yolo",
+    "--config",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/omp-config.json",
+    "--system-prompt",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/generator-system.txt",
+    "--extension",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/capture.ts",
+    "--max-time",
+    "300s",
+    "Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.\n\nCritique the following image prompt for visible clarity, composition, and ambiguity. Identify strengths and concrete problems, but do not rewrite it, provide a replacement prompt, or add variants. Prompt: `A mysterious traveler in a beautiful place, cinematic, amazing lighting, dynamic composition.`"
+  ],
+  "cwd": "/tmp/scenario-maker-eval-8nzhf829/candidate/case-09/attempt-1",
+  "execution": {
+    "status": "completed",
+    "exit_code": 0,
+    "error": null,
+    "model_errors": [],
+    "malformed_trace_lines": []
+  },
+  "raw": {
+    "output": "output.txt",
+    "partial_output": null,
+    "trace": "trace.jsonl",
+    "stderr": "stderr.txt",
+    "context": "context.jsonl"
+  },
+  "trace_complete": true,
+  "artifacts": [],
+  "observed_context": [
+    {
+      "type": "eval_context",
+      "systemPrompt": "You are a prompt-writing assistant executing the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md. Read that file and only its applicable references. Resolve its reference and script paths relative to ./selected-skill, not an installed skill. Do not discover or load other skills, repository instructions, past sessions, evaluator files, or web sources.\n\nOnly local read, grep, glob, bash, and write tools are available. Use them for the selected skill's references, local lookup/scripts, supplied fixtures, and requested workspace-local text exports. Keep writes within this fresh workspace. Do not edit the selected skill, execute image/video generation or frame extraction, delegate, switch models, access the network, or inspect credentials. This is prompt writing, not generation. If clarification is necessary, ask in your final response; this non-interactive run cannot receive an answer.\n\nApply the selected skill to the user's request. Do not discuss evaluation or scoring. The workspace starts with no prior conversation or generated outputs.\n",
+      "cwd": "/tmp/scenario-maker-eval-8nzhf829/candidate/case-09/attempt-1",
+      "model": {
+        "provider": "openai-codex",
+        "id": "gpt-6-astra",
+        "name": "GPT-6-Astra"
+      },
+      "thinking": "high",
+      "tools": [
+        "read",
+        "grep",
+        "glob",
+        "bash",
+        "write"
+      ]
+    }
+  ],
+  "raw_checksums": {
+    "request.txt": "d3a76ff343f310dbf2bd9f68723a0d005c60a2baf3205a407f192faeddbe4625",
+    "output.txt": "b025737b49a4fd59317cf95ec25db3665ffb68dee18438b6b703bbc35ce6cc90",
+    "context.jsonl": "ae62cbf1e8443ac310ae42914637b0befb2aacc95be6bee11df3732fd21d089d",
+    "trace.jsonl": "2f62181eadebdb811b4a04ceed5d468447b308a2dd8db4b447e7819f82e1e475",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "comparison_side": "candidate"
+}

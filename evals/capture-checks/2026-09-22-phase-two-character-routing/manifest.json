@@ -1,0 +1,50 @@
+{
+  "kind": "phase-two-development-regression-probe",
+  "created_at": "2026-09-22T20:36:52.267181+00:00",
+  "baseline_revision": "5fcc3d0eded83c6a9aaf472a1dc8d5ce24011d9d",
+  "candidate_revision": "worktree-sha256-8cfc630ccbbd60c4bd6d3ee472adbc920d5f8a030c0e824e973fd5a5c0c03b6a",
+  "omp_version": "omp v18.2.9",
+  "model_requested": "openai-codex/gpt-6-astra",
+  "reasoning_requested": "high",
+  "resolved_immutable_snapshot": null,
+  "unknown_metadata": [
+    "immutable provider snapshot",
+    "provider seed",
+    "system fingerprint",
+    "hidden provider instructions"
+  ],
+  "tools_requested": [
+    "read",
+    "grep",
+    "glob",
+    "bash",
+    "write"
+  ],
+  "permissions": "auto-approved local tools; not an OS sandbox",
+  "environment": {
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "TZ": "UTC",
+    "LC_ALL": "C.UTF-8"
+  },
+  "timeout_seconds": 300,
+  "jobs": 1,
+  "scheduling": "case-major submission, repetition ascending; completion order may differ",
+  "attempts_per_case": 3,
+  "evaluation_files": {
+    "generator-system.txt": "97054199856c144ef0116fac7c86cede435c4716cdc12600f71cec780b27cb12",
+    "omp-config.json": "8b998cb4a4b640775cb33a35acc3b3447f1012babb2602b874f7147aecf35b85",
+    "capture.ts": "2a98058006940052f357b0558c0665a48cd9d050e21ca1a6c71847fa4715fd20",
+    "run_baseline.py": "9539a25f8eebc2f723162f1d9dee5cfcdfde6efc6c6de5407cdcf694484c76ce",
+    "cases.jsonl": "64facdad558c9f2111d54b7e1198df0d75d7fa80d9b49817b29478707f1b5d1c",
+    "rubric.md": "45f5d3347306a6939b35f4c852d54132a26cd2db93e683d146cb1f68c832865c",
+    "evaluate.py": "454be4addf369c5bb7e5be14c92ded3b7476bb8d0e8b0e2d0f4e76e64d6c9f8e"
+  },
+  "fixtures": {},
+  "redactions": [],
+  "trace_boundary": "OMP client JSON events and allowlisted provider request body fields; no headers/credentials",
+  "request": "Create a character-design prompt for an adult lighthouse keeper. Give her weathered olive skin, tightly curled gray hair, a navy cable-knit sweater, orange waterproof bib trousers, black rubber boots, and a brass whistle on a cord. Describe character design only. Return one prompt with no scene, pose, expression, action, camera, lighting, weather, or story.",
+  "candidate_source": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/2026-09-22-phase-two-character-routing/candidate-source-snapshot",
+  "acceptance_eligible": false,
+  "purpose": "Three fixed-character routing probes; preserve failed earlier cohort and do not count these as acceptance attempts."
+}

@@ -1,0 +1,15 @@
+### 1. Fidelity to the brief
+- **SDXL prompt:** Explicitly preserves all core elements: a green bicycle, leaning against a white brick wall, in soft overcast daylight. Eye-level framing, a medium shot, and a restrained color palette are additions, but do not directly contradict the brief.
+- **Krea 2 prompt:** Preserves the subject, wall, and lighting. “Rests against” strongly suggests the intended contact, though it is slightly less explicit than “leaning against.” “Even” is consistent with overcast light. Eye-level framing and a restrained palette are compatible additions.
+
+### 2. Model-appropriate expression
+- **SDXL prompt:** Concise, concrete, and readily interpretable. Its comma-separated descriptive phrases are workable, although the selected skill’s SDXL profile favors short natural-language prose rather than phrase lists. This is a stylistic preference, not a requirement that makes the supplied prompt invalid.
+- **Krea 2 prompt:** A coherent sentence with clear visual relationships, consistent with generic image-prompt guidance. The selected skill has no Krea 2-specific profile, so there is no basis here to claim this wording is specifically optimized for that model.
+
+### 3. Likely ambiguity
+- **SDXL prompt:** “Medium shot” constrains framing more than the Krea 2 wording, but its meaning for a bicycle is imprecise and could lead to cropping. “Eye-level” leaves the exact camera height unspecified.
+- **Krea 2 prompt:** Specifies camera level but not shot distance, allowing greater variation in subject size and surrounding wall. “Rests against” leaves slightly more latitude in the bicycle’s posture.
+- **Both:** “Restrained palette” could mean fewer colors or reduced saturation; the latter might mute the bicycle’s green. Neither specifies the viewing angle or exact lean, but those are also unspecified in the brief—not fidelity defects.
+
+### 4. Overall comparison
+**The SDXL prompt has a slight edge in literal fidelity and framing specificity. The Krea 2 prompt has smoother prose but leaves shot distance more open.** Both faithfully describe the requested scene overall; wording alone does not establish which model will render it more accurately.

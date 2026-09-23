@@ -1,0 +1,122 @@
+{
+  "kind": "paired-candidate-comparison-smoke",
+  "created_at": "2026-09-22T20:23:21.529146+00:00",
+  "baseline_revision": "5fcc3d0eded83c6a9aaf472a1dc8d5ce24011d9d",
+  "candidate_revision": "worktree-sha256-eec9f105b8186ccf396f1694faf70172a433c89b3f93d0c4bbce1f6e0810a32d",
+  "omp_version": "omp v18.2.9",
+  "model_requested": "openai-codex/gpt-6-astra",
+  "reasoning_requested": "high",
+  "resolved_immutable_snapshot": null,
+  "unknown_metadata": [
+    "immutable provider snapshot",
+    "provider seed",
+    "system fingerprint",
+    "hidden provider instructions"
+  ],
+  "tools_requested": [
+    "read",
+    "grep",
+    "glob",
+    "bash",
+    "write"
+  ],
+  "permissions": "auto-approved local tools; not an OS sandbox",
+  "environment": {
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "TZ": "UTC",
+    "LC_ALL": "C.UTF-8"
+  },
+  "timeout_seconds": 300,
+  "jobs": 3,
+  "scheduling": "case-major submission, repetition ascending; completion order may differ",
+  "attempts_per_case": 1,
+  "evaluation_files": {
+    "generator-system.txt": "97054199856c144ef0116fac7c86cede435c4716cdc12600f71cec780b27cb12",
+    "omp-config.json": "8b998cb4a4b640775cb33a35acc3b3447f1012babb2602b874f7147aecf35b85",
+    "capture.ts": "2a98058006940052f357b0558c0665a48cd9d050e21ca1a6c71847fa4715fd20",
+    "run_baseline.py": "f4ae4e9ca4ffda81b3f715ca13367fb1e03ea99a7432523773d354da585096e6",
+    "cases.jsonl": "64facdad558c9f2111d54b7e1198df0d75d7fa80d9b49817b29478707f1b5d1c",
+    "rubric.md": "45f5d3347306a6939b35f4c852d54132a26cd2db93e683d146cb1f68c832865c",
+    "evaluate.py": "454be4addf369c5bb7e5be14c92ded3b7476bb8d0e8b0e2d0f4e76e64d6c9f8e"
+  },
+  "fixtures": {},
+  "redactions": [],
+  "trace_boundary": "OMP client JSON events and allowlisted provider request body fields; no headers/credentials",
+  "acceptance_eligible": false,
+  "candidate_snapshot": {
+    "identity": "worktree-sha256-eec9f105b8186ccf396f1694faf70172a433c89b3f93d0c4bbce1f6e0810a32d",
+    "path": "candidate-source-snapshot",
+    "files": {
+      "SKILL.md": "5b31a9c905a9ac1a593bae51fa9aed160b84556be44e51486467f9e3aeccd5d9",
+      "docs/danbooru_tags/danbooru_tags.csv": "a48e1e63b81e8e4fc3091c660fd763e9d05e19beea3b98d1ee78d00ed10ac9d3",
+      "docs/danbooru_tags/danbooru_tags_cooccurrence.csv": "29bf95d3dd2f4b1038ac26b3fee371ebbe67d9b622b32d274c9486dbde56077a",
+      "references/characters.md": "8314b9d33778fe620283e46fc19607571a4e8a166c57c1e512cff041983e7b24",
+      "references/danbooru-tags.md": "c94198e66d942afa1c94e00561f65e7d4bcb132c231a25b42f1ffeed19bea4e2",
+      "references/model-prompts.md": "5b0f28a2baecc85e0c385c73407dff3dcbcedd6ee718b50e9f5848fe831ab224",
+      "references/output-contracts.md": "3dd084d26b4a81a9a8a3f7694dc214a4a977920512b96b27707d2214249c48dc",
+      "references/prompt-types.md": "f2c5e4c35404b8c6f977cb73611b814633441aa88c74dd5216c03755e7eccc8f",
+      "references/routing.md": "205e58cf7cf5d941df56790e97403e0170aad734c61c56aacad6558ab344771c",
+      "references/video-prompts.md": "c893ded0e52587db26c604cc44c8bb71f7f78657a16b12696d3642a1e64c8f8c",
+      "references/wildcard/legs.txt": "173f9e526cb771b523fdcf67f919e3385fff72e1098541069a766681f0c44178",
+      "references/wildcard/partial.txt": "c1abd5817ca348faebd54a5bb7d18937cce86b1d00c3391eb527dc2dd5c7d1df",
+      "references/wildcards.md": "4b8bd8963cd20e822101e8a4947eabe98f42ed9687dcf3e112dfd1c244a43268",
+      "scripts/build_danbooru_index.py": "cbc860318e67d69f79fbec792e34f252daa386460e803a9807116c67f5a1f986",
+      "scripts/character_generator.py": "2bcc1fb2b3f417b56a5c568277efdd177074b00326593f284b556e80df9d995e",
+      "scripts/danbooru_lookup.py": "f399f42d7a6350bac1913b329ba0b4908b4c3f56c0042184a331f5f1d2cb7389"
+    }
+  },
+  "baseline_source": {
+    "kind": "git-revision",
+    "identity": "5fcc3d0eded83c6a9aaf472a1dc8d5ce24011d9d",
+    "files": {
+      "SKILL.md": "ced3f771b9806cc385870263db9aad1d5d23df25360efd5049322e9e0971bbae",
+      "docs/danbooru_tags/danbooru_tags.csv": "a48e1e63b81e8e4fc3091c660fd763e9d05e19beea3b98d1ee78d00ed10ac9d3",
+      "docs/danbooru_tags/danbooru_tags_cooccurrence.csv": "29bf95d3dd2f4b1038ac26b3fee371ebbe67d9b622b32d274c9486dbde56077a",
+      "references/danbooru-tags.md": "770a04ddb101073a185e6060d2707f1d14061f692d0959971b2ea3d87d5ea35f",
+      "references/model-prompts.md": "c4cd059deb6bc017d363bcfb283fc2266def5fc947bc9b1b2c1954916253a5e3",
+      "references/prompt-types.md": "f865bd8babb3cfc067467f0b9124dfb10aaa797477cac73bf4c8b3c709ec7ef0",
+      "references/video-prompts.md": "8a47ea6586232cced0bbe667d6d2c673af88b689c6194bf55618802e95ed11ce",
+      "references/wildcards.md": "4b8bd8963cd20e822101e8a4947eabe98f42ed9687dcf3e112dfd1c244a43268",
+      "scripts/build_danbooru_index.py": "cbc860318e67d69f79fbec792e34f252daa386460e803a9807116c67f5a1f986",
+      "scripts/danbooru_lookup.py": "f399f42d7a6350bac1913b329ba0b4908b4c3f56c0042184a331f5f1d2cb7389"
+    }
+  },
+  "controlled_equal": [
+    "cases and requests",
+    "fixtures",
+    "system instructions",
+    "OMP configuration and capture extension",
+    "model and reasoning request",
+    "tools and permissions",
+    "timeout and concurrency limit"
+  ],
+  "environment_differences": [
+    {
+      "field": "selected skill source",
+      "baseline": "git revision 5fcc3d0eded83c6a9aaf472a1dc8d5ce24011d9d",
+      "candidate": "worktree-sha256-eec9f105b8186ccf396f1694faf70172a433c89b3f93d0c4bbce1f6e0810a32d",
+      "purpose": "the sole intentional treatment difference"
+    }
+  ],
+  "schedule": [
+    {
+      "position": 1,
+      "case_id": "capture-smoke",
+      "attempt": 1,
+      "side": "baseline"
+    },
+    {
+      "position": 2,
+      "case_id": "capture-smoke",
+      "attempt": 1,
+      "side": "candidate"
+    }
+  ],
+  "schedule_policy": "adjacent baseline/candidate submissions for each case and repetition; at most jobs processes in flight; completion order may differ",
+  "retry_policy": "none; every error and timeout is retained in its original slot",
+  "side_results": {
+    "baseline": "baseline",
+    "candidate": "candidate"
+  }
+}

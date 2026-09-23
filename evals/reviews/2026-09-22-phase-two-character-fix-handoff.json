@@ -1,0 +1,1040 @@
+{
+  "kind": "phase-two-review-ready-handoff",
+  "created_at": "2026-09-22T20:49:28.271Z",
+  "issue": "https://github.com/lfelipegg/scenario-maker-skill/issues/4",
+  "candidate_identity": "worktree-sha256-8cfc630ccbbd60c4bd6d3ee472adbc920d5f8a030c0e824e973fd5a5c0c03b6a",
+  "cohort": "evals/comparisons/2026-09-22-phase-two-character-fix",
+  "execution": {
+    "attempts": 96,
+    "completed": 96,
+    "errors": 0,
+    "timeouts": 0,
+    "outputs": 96,
+    "trace_complete": 96,
+    "semantic_review": "not-run",
+    "acceptance": "not assessed"
+  },
+  "evaluation": {
+    "baseline": {
+      "counts": {
+        "mechanical": {
+          "passed": 63,
+          "failed": 0,
+          "not-run": 0
+        },
+        "maintainer": {
+          "passed": 0,
+          "failed": 0,
+          "not-run": 108
+        }
+      },
+      "warnings": [],
+      "mechanicalIssues": []
+    },
+    "candidate": {
+      "counts": {
+        "mechanical": {
+          "passed": 63,
+          "failed": 0,
+          "not-run": 0
+        },
+        "maintainer": {
+          "passed": 0,
+          "failed": 0,
+          "not-run": 108
+        }
+      },
+      "warnings": [],
+      "mechanicalIssues": []
+    }
+  },
+  "integrity": {
+    "attempts": 96,
+    "rawFiles": 480,
+    "artifacts": 6,
+    "candidateSnapshotFiles": 16,
+    "sharedContext": {
+      "model": {
+        "provider": "openai-codex",
+        "id": "gpt-6-astra",
+        "name": "GPT-6-Astra"
+      },
+      "thinking": "high",
+      "tools": [
+        "read",
+        "grep",
+        "glob",
+        "bash",
+        "write"
+      ]
+    },
+    "captureRunnerMatchesCurrent": true
+  },
+  "paired_review": {
+    "packet": "evals/reviews/2026-09-22-phase-two-character-fix-paired.jsonl",
+    "private_mapping": "evals/reviews/2026-09-22-phase-two-character-fix-mapping.jsonl",
+    "pairs": 48,
+    "rule": "Present the paired packet only; keep the label mapping separate from the reviewer. Import explicit human judgments into the appropriate side-specific review file only after resolving labels."
+  },
+  "original_no_regression_set": {
+    "source": "evals/results/2026-09-21-human-review-24/summary.json",
+    "criteria": [
+      {
+        "case_id": "case-01",
+        "criterion_id": "C01-OUTPUT",
+        "method": "maintainer",
+        "mandatory_phase": 2
+      },
+      {
+        "case_id": "case-01",
+        "criterion_id": "C01-PROFILE",
+        "method": "maintainer",
+        "mandatory_phase": 4
+      },
+      {
+        "case_id": "case-01",
+        "criterion_id": "C01-TRACE",
+        "method": "mechanical",
+        "mandatory_phase": 1
+      },
+      {
+        "case_id": "case-02",
+        "criterion_id": "C02-OUTPUT",
+        "method": "maintainer",
+        "mandatory_phase": 2
+      },
+      {
+        "case_id": "case-02",
+        "criterion_id": "C02-PRESERVE",
+        "method": "maintainer",
+        "mandatory_phase": 3
+      },
+      {
+        "case_id": "case-02",
+        "criterion_id": "C02-PROFILE",
+        "method": "maintainer",
+        "mandatory_phase": 4
+      },
+      {
+        "case_id": "case-02",
+        "criterion_id": "C02-TRACE",
+        "method": "mechanical",
+        "mandatory_phase": 1
+      },
+      {
+        "case_id": "case-03",
+        "criterion_id": "C03-OUTPUT",
+        "method": "maintainer",
+        "mandatory_phase": 2
+      },
+      {
+        "case_id": "case-03",
+        "criterion_id": "C03-REVISION",
+        "method": "maintainer",
+        "mandatory_phase": 3
+      },
+      {
+        "case_id": "case-03",
+        "criterion_id": "C03-TRACE",
+        "method": "mechanical",
+        "mandatory_phase": 1
+      },
+      {
+        "case_id": "case-04",
+        "criterion_id": "C04-SCOPE",
+        "method": "maintainer",
+        "mandatory_phase": 3
+      },
+      {
+        "case_id": "case-04",
+        "criterion_id": "C04-DETAILS",
+        "method": "maintainer",
+        "mandatory_phase": 3
+      },
+      {
+        "case_id": "case-04",
+        "criterion_id": "C04-TRACE",
+        "method": "mechanical",
+        "mandatory_phase": 1
+      },
+      {
+        "case_id": "case-05",
+        "criterion_id": "C05-OUTPUT",
+        "method": "maintainer",
+        "mandatory_phase": 2
+      },
+      {
+        "case_id": "case-05",
+        "criterion_id": "C05-EXCLUSION",
+        "method": "maintainer",
+        "mandatory_phase": 5
+      },
+      {
+        "case_id": "case-05",
+        "criterion_id": "C05-TRACE",
+        "method": "mechanical",
+        "mandatory_phase": 1
+      },
+      {
+        "case_id": "case-06",
+        "criterion_id": "C06-TEXT-PRESENCE",
+        "method": "mechanical",
+        "mandatory_phase": 3
+      },
+      {
+        "case_id": "case-06",
+        "criterion_id": "C06-TEXT-BINDING",
+        "method": "maintainer",
+        "mandatory_phase": 3
+      },
+      {
+        "case_id": "case-06",
+        "criterion_id": "C06-TRACE",
+        "method": "mechanical",
+        "mandatory_phase": 1
+      },
+      {
+        "case_id": "case-07",
+        "criterion_id": "C07-COUNT",
+        "method": "mechanical",
+        "mandatory_phase": 6
+      },
+      {
+        "case_id": "case-07",
+        "criterion_id": "C07-DISTINCTNESS",
+        "method": "maintainer",
+        "mandatory_phase": 6
+      },
+      {
+        "case_id": "case-07",
+        "criterion_id": "C07-PRESERVE",
+        "method": "maintainer",
+        "mandatory_phase": 6
+      },
+      {
+        "case_id": "case-07",
+        "criterion_id": "C07-TRACE",
+        "method": "mechanical",
+        "mandatory_phase": 1
+      },
+      {
+        "case_id": "case-08",
+        "criterion_id": "C08-LIMIT",
+        "method": "mechanical",
+        "mandatory_phase": 2
+      },
+      {
+        "case_id": "case-08",
+        "criterion_id": "C08-PRESERVE",
+        "method": "maintainer",
+        "mandatory_phase": 3
+      },
+      {
+        "case_id": "case-08",
+        "criterion_id": "C08-TRACE",
+        "method": "mechanical",
+        "mandatory_phase": 1
+      },
+      {
+        "case_id": "case-09",
+        "criterion_id": "C09-ROUTING",
+        "method": "maintainer",
+        "mandatory_phase": 2
+      },
+      {
+        "case_id": "case-09",
+        "criterion_id": "C09-TRACE",
+        "method": "mechanical",
+        "mandatory_phase": 1
+      },
+      {
+        "case_id": "case-10",
+        "criterion_id": "C10-ROUTING",
+        "method": "maintainer",
+        "mandatory_phase": 2
+      },
+      {
+        "case_id": "case-10",
+        "criterion_id": "C10-TRACE",
+        "method": "mechanical",
+        "mandatory_phase": 1
+      },
+      {
+        "case_id": "case-11",
+        "criterion_id": "C11-CANONICAL-TEXT",
+        "method": "mechanical",
+        "mandatory_phase": 5
+      },
+      {
+        "case_id": "case-11",
+        "criterion_id": "C11-PROFILE",
+        "method": "maintainer",
+        "mandatory_phase": 4
+      },
+      {
+        "case_id": "case-11",
+        "criterion_id": "C11-CONSTRAINTS",
+        "method": "maintainer",
+        "mandatory_phase": 5
+      },
+      {
+        "case_id": "case-11",
+        "criterion_id": "C11-TRACE",
+        "method": "mechanical",
+        "mandatory_phase": 1
+      },
+      {
+        "case_id": "case-11",
+        "criterion_id": "C11-LOOKUP-EVIDENCE",
+        "method": "maintainer",
+        "mandatory_phase": 5
+      },
+      {
+        "case_id": "case-12",
+        "criterion_id": "C12-PROFILE",
+        "method": "maintainer",
+        "mandatory_phase": 4
+      },
+      {
+        "case_id": "case-12",
+        "criterion_id": "C12-PRESERVE",
+        "method": "maintainer",
+        "mandatory_phase": 3
+      },
+      {
+        "case_id": "case-12",
+        "criterion_id": "C12-TRACE",
+        "method": "mechanical",
+        "mandatory_phase": 1
+      },
+      {
+        "case_id": "case-13",
+        "criterion_id": "C13-PROFILE",
+        "method": "maintainer",
+        "mandatory_phase": 4
+      },
+      {
+        "case_id": "case-13",
+        "criterion_id": "C13-PRESERVE",
+        "method": "maintainer",
+        "mandatory_phase": 3
+      },
+      {
+        "case_id": "case-13",
+        "criterion_id": "C13-TRACE",
+        "method": "mechanical",
+        "mandatory_phase": 1
+      },
+      {
+        "case_id": "case-14",
+        "criterion_id": "C14-ROUTE",
+        "method": "maintainer",
+        "mandatory_phase": 2
+      },
+      {
+        "case_id": "case-14",
+        "criterion_id": "C14-MOTION",
+        "method": "maintainer",
+        "mandatory_phase": 3
+      },
+      {
+        "case_id": "case-14",
+        "criterion_id": "C14-TRACE",
+        "method": "mechanical",
+        "mandatory_phase": 1
+      },
+      {
+        "case_id": "case-15",
+        "criterion_id": "C15-ROUTE",
+        "method": "maintainer",
+        "mandatory_phase": 2
+      },
+      {
+        "case_id": "case-15",
+        "criterion_id": "C15-PRESERVE",
+        "method": "maintainer",
+        "mandatory_phase": 3
+      },
+      {
+        "case_id": "case-15",
+        "criterion_id": "C15-TRACE",
+        "method": "mechanical",
+        "mandatory_phase": 1
+      },
+      {
+        "case_id": "case-16",
+        "criterion_id": "C16-EXPORT",
+        "method": "mechanical",
+        "mandatory_phase": 6
+      },
+      {
+        "case_id": "case-16",
+        "criterion_id": "C16-FRAGMENTS",
+        "method": "maintainer",
+        "mandatory_phase": 6
+      },
+      {
+        "case_id": "case-16",
+        "criterion_id": "C16-REPORT",
+        "method": "maintainer",
+        "mandatory_phase": 6
+      },
+      {
+        "case_id": "case-16",
+        "criterion_id": "C16-TRACE",
+        "method": "mechanical",
+        "mandatory_phase": 1
+      }
+    ]
+  },
+  "outstanding_candidate_hard_gates": [
+    {
+      "case_id": "case-01",
+      "attempt": 1,
+      "criterion_id": "C01-OUTPUT",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-01",
+      "attempt": 1,
+      "criterion_id": "C01-PROFILE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-01",
+      "attempt": 2,
+      "criterion_id": "C01-OUTPUT",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-01",
+      "attempt": 2,
+      "criterion_id": "C01-PROFILE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-01",
+      "attempt": 3,
+      "criterion_id": "C01-OUTPUT",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-01",
+      "attempt": 3,
+      "criterion_id": "C01-PROFILE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-02",
+      "attempt": 1,
+      "criterion_id": "C02-OUTPUT",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-02",
+      "attempt": 1,
+      "criterion_id": "C02-PRESERVE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-02",
+      "attempt": 1,
+      "criterion_id": "C02-PROFILE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-02",
+      "attempt": 2,
+      "criterion_id": "C02-OUTPUT",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-02",
+      "attempt": 2,
+      "criterion_id": "C02-PRESERVE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-02",
+      "attempt": 2,
+      "criterion_id": "C02-PROFILE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-02",
+      "attempt": 3,
+      "criterion_id": "C02-OUTPUT",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-02",
+      "attempt": 3,
+      "criterion_id": "C02-PRESERVE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-02",
+      "attempt": 3,
+      "criterion_id": "C02-PROFILE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-03",
+      "attempt": 1,
+      "criterion_id": "C03-OUTPUT",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-03",
+      "attempt": 1,
+      "criterion_id": "C03-REVISION",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-03",
+      "attempt": 2,
+      "criterion_id": "C03-OUTPUT",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-03",
+      "attempt": 2,
+      "criterion_id": "C03-REVISION",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-03",
+      "attempt": 3,
+      "criterion_id": "C03-OUTPUT",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-03",
+      "attempt": 3,
+      "criterion_id": "C03-REVISION",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-04",
+      "attempt": 1,
+      "criterion_id": "C04-SCOPE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-04",
+      "attempt": 1,
+      "criterion_id": "C04-DETAILS",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-04",
+      "attempt": 2,
+      "criterion_id": "C04-SCOPE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-04",
+      "attempt": 2,
+      "criterion_id": "C04-DETAILS",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-04",
+      "attempt": 3,
+      "criterion_id": "C04-SCOPE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-04",
+      "attempt": 3,
+      "criterion_id": "C04-DETAILS",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-05",
+      "attempt": 1,
+      "criterion_id": "C05-OUTPUT",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-05",
+      "attempt": 1,
+      "criterion_id": "C05-EXCLUSION",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-05",
+      "attempt": 2,
+      "criterion_id": "C05-OUTPUT",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-05",
+      "attempt": 2,
+      "criterion_id": "C05-EXCLUSION",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-05",
+      "attempt": 3,
+      "criterion_id": "C05-OUTPUT",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-05",
+      "attempt": 3,
+      "criterion_id": "C05-EXCLUSION",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-06",
+      "attempt": 1,
+      "criterion_id": "C06-TEXT-BINDING",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-06",
+      "attempt": 2,
+      "criterion_id": "C06-TEXT-BINDING",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-06",
+      "attempt": 3,
+      "criterion_id": "C06-TEXT-BINDING",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-07",
+      "attempt": 1,
+      "criterion_id": "C07-DISTINCTNESS",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-07",
+      "attempt": 1,
+      "criterion_id": "C07-PRESERVE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-07",
+      "attempt": 2,
+      "criterion_id": "C07-DISTINCTNESS",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-07",
+      "attempt": 2,
+      "criterion_id": "C07-PRESERVE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-07",
+      "attempt": 3,
+      "criterion_id": "C07-DISTINCTNESS",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-07",
+      "attempt": 3,
+      "criterion_id": "C07-PRESERVE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-08",
+      "attempt": 1,
+      "criterion_id": "C08-PRESERVE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-08",
+      "attempt": 2,
+      "criterion_id": "C08-PRESERVE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-08",
+      "attempt": 3,
+      "criterion_id": "C08-PRESERVE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-09",
+      "attempt": 1,
+      "criterion_id": "C09-ROUTING",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-09",
+      "attempt": 2,
+      "criterion_id": "C09-ROUTING",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-09",
+      "attempt": 3,
+      "criterion_id": "C09-ROUTING",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-10",
+      "attempt": 1,
+      "criterion_id": "C10-ROUTING",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-10",
+      "attempt": 2,
+      "criterion_id": "C10-ROUTING",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-10",
+      "attempt": 3,
+      "criterion_id": "C10-ROUTING",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-11",
+      "attempt": 1,
+      "criterion_id": "C11-PROFILE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-11",
+      "attempt": 1,
+      "criterion_id": "C11-CONSTRAINTS",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-11",
+      "attempt": 1,
+      "criterion_id": "C11-LOOKUP-EVIDENCE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-11",
+      "attempt": 2,
+      "criterion_id": "C11-PROFILE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-11",
+      "attempt": 2,
+      "criterion_id": "C11-CONSTRAINTS",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-11",
+      "attempt": 2,
+      "criterion_id": "C11-LOOKUP-EVIDENCE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-11",
+      "attempt": 3,
+      "criterion_id": "C11-PROFILE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-11",
+      "attempt": 3,
+      "criterion_id": "C11-CONSTRAINTS",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-11",
+      "attempt": 3,
+      "criterion_id": "C11-LOOKUP-EVIDENCE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-12",
+      "attempt": 1,
+      "criterion_id": "C12-PROFILE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-12",
+      "attempt": 1,
+      "criterion_id": "C12-PRESERVE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-12",
+      "attempt": 2,
+      "criterion_id": "C12-PROFILE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-12",
+      "attempt": 2,
+      "criterion_id": "C12-PRESERVE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-12",
+      "attempt": 3,
+      "criterion_id": "C12-PROFILE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-12",
+      "attempt": 3,
+      "criterion_id": "C12-PRESERVE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-13",
+      "attempt": 1,
+      "criterion_id": "C13-PROFILE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-13",
+      "attempt": 1,
+      "criterion_id": "C13-PRESERVE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-13",
+      "attempt": 2,
+      "criterion_id": "C13-PROFILE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-13",
+      "attempt": 2,
+      "criterion_id": "C13-PRESERVE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-13",
+      "attempt": 3,
+      "criterion_id": "C13-PROFILE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-13",
+      "attempt": 3,
+      "criterion_id": "C13-PRESERVE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-14",
+      "attempt": 1,
+      "criterion_id": "C14-ROUTE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-14",
+      "attempt": 1,
+      "criterion_id": "C14-MOTION",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-14",
+      "attempt": 2,
+      "criterion_id": "C14-ROUTE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-14",
+      "attempt": 2,
+      "criterion_id": "C14-MOTION",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-14",
+      "attempt": 3,
+      "criterion_id": "C14-ROUTE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-14",
+      "attempt": 3,
+      "criterion_id": "C14-MOTION",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-15",
+      "attempt": 1,
+      "criterion_id": "C15-ROUTE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-15",
+      "attempt": 1,
+      "criterion_id": "C15-PRESERVE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-15",
+      "attempt": 2,
+      "criterion_id": "C15-ROUTE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-15",
+      "attempt": 2,
+      "criterion_id": "C15-PRESERVE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-15",
+      "attempt": 3,
+      "criterion_id": "C15-ROUTE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-15",
+      "attempt": 3,
+      "criterion_id": "C15-PRESERVE",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-16",
+      "attempt": 1,
+      "criterion_id": "C16-FRAGMENTS",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-16",
+      "attempt": 1,
+      "criterion_id": "C16-REPORT",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-16",
+      "attempt": 2,
+      "criterion_id": "C16-FRAGMENTS",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-16",
+      "attempt": 2,
+      "criterion_id": "C16-REPORT",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-16",
+      "attempt": 3,
+      "criterion_id": "C16-FRAGMENTS",
+      "method": "maintainer",
+      "state": "not-run"
+    },
+    {
+      "case_id": "case-16",
+      "attempt": 3,
+      "criterion_id": "C16-REPORT",
+      "method": "maintainer",
+      "state": "not-run"
+    }
+  ],
+  "initial_cohort": {
+    "path": "evals/comparisons/2026-09-22-phase-two",
+    "handoff": "evals/reviews/2026-09-22-phase-two-initial-handoff.json",
+    "status": "Retained intact; not substituted or merged into corrected cohort."
+  },
+  "development_probes": {
+    "sdxl_critique": "evals/capture-checks/2026-09-22-phase-two-sdxl-critique",
+    "sdxl_critique_source": "worktree-sha256-eec9f105b8186ccf396f1694faf70172a433c89b3f93d0c4bbce1f6e0810a32d",
+    "character_routing": "evals/capture-checks/2026-09-22-phase-two-character-routing",
+    "observation": "Three SDXL critique probes return analysis without replacement prompts. Three post-fix character probes pass trace policy with only reference reads. Probes are not cohort acceptance slots."
+  },
+  "regression_test": {
+    "command": "python3 -m unittest discover -s evals -p test_evaluate.py",
+    "passed": 1
+  },
+  "acceptance": "Pending maintainer semantic review; no Phase 2 acceptance or closure recorded.",
+  "commit_or_push_authorized": false,
+  "later_phases_started": false
+}

@@ -1,0 +1,1 @@
+Saved `outputs/clothing-fragments.txt` with exactly **4 distinct clothing-only entries**, one per line. The file is in **fragment mode**.

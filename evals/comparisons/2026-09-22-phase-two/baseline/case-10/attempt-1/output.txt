@@ -1,0 +1,15 @@
+### 1. Fidelity to the brief
+- **SDXL:** Closely matches every requested element, including the explicit action “leaning against.” Eye-level framing, a medium shot, and a restrained palette are additional choices, not requirements of the brief.
+- **Krea 2:** Preserves the subject, wall, and lighting. “Rests against” suggests leaning but is slightly less explicit about the bicycle’s posture. “Even” is consistent with soft overcast daylight. Eye level and a restrained palette are also additions.
+
+### 2. Model-appropriate expression
+- **SDXL:** The short, comma-separated visual phrases are clear and usable. However, the selected skill’s SDXL profile favors concise natural-language prose; this prompt is less aligned with that preference, though it is not an excessive tag stack.
+- **Krea 2:** The cohesive sentence clearly links the subject, setting, lighting, and composition. The selected skill provides no Krea 2-specific profile, so its wording can be assessed as clear general image prompting—not confirmed as uniquely suited to Krea 2.
+
+### 3. Likely ambiguity
+- **SDXL:** “Medium shot” gives framing guidance but does not establish whether the entire bicycle, including both wheels, should be visible. The leaning relationship is explicit, although exact contact and angle remain unspecified.
+- **Krea 2:** Eye level specifies camera height but not shot size, leaving more latitude for cropping and subject scale. “Rests against” leaves slightly more room for interpretation than “leaning against.”
+- **Both:** “Restrained palette” could mean fewer colors or reduced saturation; the latter might mute the green. Neither specifies bicycle orientation or which components are green. These are modest open choices rather than contradictions.
+
+### Overall comparison
+**SDXL is marginally more literal and compositionally constrained; Krea 2 is more fluidly expressed but leaves framing more open.** Both remain faithful to the core brief. Their wording alone does not establish which model would produce the more faithful image.

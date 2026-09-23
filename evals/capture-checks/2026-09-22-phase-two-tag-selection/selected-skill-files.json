@@ -1,0 +1,18 @@
+{
+  "SKILL.md": "0be6fe16627860c312100c06497f8c5e2aa4f875bf1688d88f668ca0e843b799",
+  "docs/danbooru_tags/danbooru_tags.csv": "a48e1e63b81e8e4fc3091c660fd763e9d05e19beea3b98d1ee78d00ed10ac9d3",
+  "docs/danbooru_tags/danbooru_tags_cooccurrence.csv": "29bf95d3dd2f4b1038ac26b3fee371ebbe67d9b622b32d274c9486dbde56077a",
+  "references/characters.md": "874ea8f9081760a7aabbb0f4882dacf72b9405031bdeab5633345c3321464ace",
+  "references/danbooru-tags.md": "55de86c030d6557539edf3d086b6106042e85b181311aa55a650f4ea3683c668",
+  "references/model-prompts.md": "5b0f28a2baecc85e0c385c73407dff3dcbcedd6ee718b50e9f5848fe831ab224",
+  "references/output-contracts.md": "ca58960916e33ab1f1ccc655c1b4d41efaa52e495faeb6a16273d979985dbb77",
+  "references/prompt-types.md": "0ea2383f8990eea1ec21ab08125a0809b4ccf3eebc7917471251a305539f1128",
+  "references/routing.md": "eba3055b2fe793fa664a17af62aa95b13b81ca442aad1a8777d6820ce0451aba",
+  "references/video-prompts.md": "c893ded0e52587db26c604cc44c8bb71f7f78657a16b12696d3642a1e64c8f8c",
+  "references/wildcard/legs.txt": "173f9e526cb771b523fdcf67f919e3385fff72e1098541069a766681f0c44178",
+  "references/wildcard/partial.txt": "c1abd5817ca348faebd54a5bb7d18937cce86b1d00c3391eb527dc2dd5c7d1df",
+  "references/wildcards.md": "4b8bd8963cd20e822101e8a4947eabe98f42ed9687dcf3e112dfd1c244a43268",
+  "scripts/build_danbooru_index.py": "cbc860318e67d69f79fbec792e34f252daa386460e803a9807116c67f5a1f986",
+  "scripts/character_generator.py": "2bcc1fb2b3f417b56a5c568277efdd177074b00326593f284b556e80df9d995e",
+  "scripts/danbooru_lookup.py": "f399f42d7a6350bac1913b329ba0b4908b4c3f56c0042184a331f5f1d2cb7389"
+}

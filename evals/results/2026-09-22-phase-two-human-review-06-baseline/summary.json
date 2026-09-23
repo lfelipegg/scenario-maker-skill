@@ -1,0 +1,1147 @@
+{
+  "groups": [
+    {
+      "attempt_slots_per_case": 3,
+      "baseline_hard_gate_counts": {},
+      "cases": [
+        {
+          "all_criterion_state_counts": {
+            "failed": 0,
+            "not-run": 0,
+            "passed": 12
+          },
+          "case_id": "case-01",
+          "criteria": [
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": false,
+              "counts": {
+                "failed": 0,
+                "not-run": 0,
+                "passed": 3
+              },
+              "criterion_id": "C01-OUTPUT",
+              "description": "The response is exactly one unlabeled comma-separated visual-phrase prompt, with no negative prompt, notes, variants, or wrapper.",
+              "mandatory_phase": 2,
+              "method": "maintainer",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": false
+            },
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": false,
+              "counts": {
+                "failed": 0,
+                "not-run": 0,
+                "passed": 3
+              },
+              "criterion_id": "C01-PROFILE",
+              "description": "The prompt expresses the requested greenhouse, cliff, wind, and sunrise in a compact SDXL-compatible phrase dialect without importing another profile's boilerplate.",
+              "mandatory_phase": 4,
+              "method": "maintainer",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": false
+            },
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": false,
+              "counts": {
+                "failed": 0,
+                "not-run": 0,
+                "passed": 3
+              },
+              "criterion_id": "C01-STYLE",
+              "description": "The selected visual phrasing is concise, coherent, and immediately usable.",
+              "mandatory_phase": 4,
+              "method": "maintainer",
+              "mixed_outcomes": false,
+              "severity": "advisory",
+              "unreviewed_or_unavailable": false
+            },
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": false,
+              "counts": {
+                "failed": 0,
+                "not-run": 0,
+                "passed": 3
+              },
+              "criterion_id": "C01-TRACE",
+              "description": "Observable execution uses no prohibited research, delegation, model switching, or image/video generation actions.",
+              "mandatory_phase": 1,
+              "method": "mechanical",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": false
+            }
+          ],
+          "hard_outcome": "passed",
+          "slot_count": 3,
+          "title": "SDXL tags only without negative prompt"
+        },
+        {
+          "all_criterion_state_counts": {
+            "failed": 0,
+            "not-run": 0,
+            "passed": 12
+          },
+          "case_id": "case-02",
+          "criteria": [
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": false,
+              "counts": {
+                "failed": 0,
+                "not-run": 0,
+                "passed": 3
+              },
+              "criterion_id": "C02-OUTPUT",
+              "description": "The response is exactly one unlabeled prompt, without a package, negative field, notes, variants, or explanation.",
+              "mandatory_phase": 2,
+              "method": "maintainer",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": false
+            },
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": false,
+              "counts": {
+                "failed": 0,
+                "not-run": 0,
+                "passed": 3
+              },
+              "criterion_id": "C02-PRESERVE",
+              "description": "The adaptation preserves the two objects, their colors and image-left relationship, table, right-side morning light, and empty cream wall without adding visual facts.",
+              "mandatory_phase": 3,
+              "method": "maintainer",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": false
+            },
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": false,
+              "counts": {
+                "failed": 0,
+                "not-run": 0,
+                "passed": 3
+              },
+              "criterion_id": "C02-PROFILE",
+              "description": "The result uses a coherent natural-language paragraph suitable for the selected local Krea 2 RAW/Turbo contract; detail does not become invention.",
+              "mandatory_phase": 4,
+              "method": "maintainer",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": false
+            },
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": false,
+              "counts": {
+                "failed": 0,
+                "not-run": 0,
+                "passed": 3
+              },
+              "criterion_id": "C02-TRACE",
+              "description": "Observable execution uses no prohibited research, delegation, model switching, or image/video generation actions.",
+              "mandatory_phase": 1,
+              "method": "mechanical",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": false
+            }
+          ],
+          "hard_outcome": "passed",
+          "slot_count": 3,
+          "title": "Adapt a supplied scene prompt to local Krea 2"
+        },
+        {
+          "all_criterion_state_counts": {
+            "failed": 0,
+            "not-run": 0,
+            "passed": 9
+          },
+          "case_id": "case-03",
+          "criteria": [
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": false,
+              "counts": {
+                "failed": 0,
+                "not-run": 0,
+                "passed": 3
+              },
+              "criterion_id": "C03-OUTPUT",
+              "description": "The response contains only the revised prompt, not an explanation, comparison, or prompt package.",
+              "mandatory_phase": 2,
+              "method": "maintainer",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": false
+            },
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": false,
+              "counts": {
+                "failed": 0,
+                "not-run": 0,
+                "passed": 3
+              },
+              "criterion_id": "C03-REVISION",
+              "description": "Only the jacket color changes from yellow to red; every other supplied fact and relationship remains unchanged in meaning.",
+              "mandatory_phase": 3,
+              "method": "maintainer",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": false
+            },
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": false,
+              "counts": {
+                "failed": 0,
+                "not-run": 0,
+                "passed": 3
+              },
+              "criterion_id": "C03-TRACE",
+              "description": "Observable execution uses no prohibited research, delegation, model switching, or image/video generation actions.",
+              "mandatory_phase": 1,
+              "method": "mechanical",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": false
+            }
+          ],
+          "hard_outcome": "passed",
+          "slot_count": 3,
+          "title": "Revise only a jacket color"
+        },
+        {
+          "all_criterion_state_counts": {
+            "failed": 0,
+            "not-run": 0,
+            "passed": 9
+          },
+          "case_id": "case-04",
+          "criteria": [
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": false,
+              "counts": {
+                "failed": 0,
+                "not-run": 0,
+                "passed": 3
+              },
+              "criterion_id": "C04-SCOPE",
+              "description": "The prompt remains strictly within character appearance, clothing, and equipment, without scene or presentation expansion.",
+              "mandatory_phase": 3,
+              "method": "maintainer",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": false
+            },
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": false,
+              "counts": {
+                "failed": 0,
+                "not-run": 0,
+                "passed": 3
+              },
+              "criterion_id": "C04-DETAILS",
+              "description": "All supplied physical, clothing, and equipment details remain attached to the single adult lighthouse keeper without incompatible invention.",
+              "mandatory_phase": 3,
+              "method": "maintainer",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": false
+            },
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": false,
+              "counts": {
+                "failed": 0,
+                "not-run": 0,
+                "passed": 3
+              },
+              "criterion_id": "C04-TRACE",
+              "description": "Observable execution uses no prohibited research, delegation, randomized character generation, model switching, or image/video generation actions.",
+              "mandatory_phase": 1,
+              "method": "mechanical",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": false
+            }
+          ],
+          "hard_outcome": "passed",
+          "slot_count": 3,
+          "title": "Character design without scene expansion"
+        },
+        {
+          "all_criterion_state_counts": {
+            "failed": 0,
+            "not-run": 0,
+            "passed": 12
+          },
+          "case_id": "case-05",
+          "criteria": [
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": false,
+              "counts": {
+                "failed": 0,
+                "not-run": 0,
+                "passed": 3
+              },
+              "criterion_id": "C05-OUTPUT",
+              "description": "The response is one prompt only and does not create an unsolicited negative-prompt field.",
+              "mandatory_phase": 2,
+              "method": "maintainer",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": false
+            },
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": false,
+              "counts": {
+                "failed": 0,
+                "not-run": 0,
+                "passed": 3
+              },
+              "criterion_id": "C05-EXCLUSION",
+              "description": "The positive scene remains an empty courtyard and does not introduce any excluded living or figure-like subject directly or through optional detail.",
+              "mandatory_phase": 5,
+              "method": "maintainer",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": false
+            },
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": false,
+              "counts": {
+                "failed": 0,
+                "not-run": 0,
+                "passed": 3
+              },
+              "criterion_id": "C05-STYLE",
+              "description": "The exclusion is communicated naturally without overwhelming the requested visual scene.",
+              "mandatory_phase": 5,
+              "method": "maintainer",
+              "mixed_outcomes": false,
+              "severity": "advisory",
+              "unreviewed_or_unavailable": false
+            },
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": false,
+              "counts": {
+                "failed": 0,
+                "not-run": 0,
+                "passed": 3
+              },
+              "criterion_id": "C05-TRACE",
+              "description": "Observable execution uses no prohibited research, delegation, model switching, or image/video generation actions.",
+              "mandatory_phase": 1,
+              "method": "mechanical",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": false
+            }
+          ],
+          "hard_outcome": "passed",
+          "slot_count": 3,
+          "title": "Empty courtyard with no people"
+        },
+        {
+          "all_criterion_state_counts": {
+            "failed": 0,
+            "not-run": 0,
+            "passed": 9
+          },
+          "case_id": "case-06",
+          "criteria": [
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": false,
+              "counts": {
+                "failed": 0,
+                "not-run": 0,
+                "passed": 3
+              },
+              "criterion_id": "C06-TEXT-PRESENCE",
+              "description": "The final output literally contains the exact uppercase text OPEN.",
+              "mandatory_phase": 3,
+              "method": "mechanical",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": false
+            },
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": false,
+              "counts": {
+                "failed": 0,
+                "not-run": 0,
+                "passed": 3
+              },
+              "criterion_id": "C06-TEXT-BINDING",
+              "description": "The prompt clearly binds exact uppercase OPEN to the rectangular sign centered above the bakery door and excludes other visible lettering.",
+              "mandatory_phase": 3,
+              "method": "maintainer",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": false
+            },
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": false,
+              "counts": {
+                "failed": 0,
+                "not-run": 0,
+                "passed": 3
+              },
+              "criterion_id": "C06-TRACE",
+              "description": "Observable execution uses no prohibited research, delegation, model switching, or image/video generation actions.",
+              "mandatory_phase": 1,
+              "method": "mechanical",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": false
+            }
+          ],
+          "hard_outcome": "passed",
+          "slot_count": 3,
+          "title": "Preserve exact required lettering"
+        },
+        {
+          "all_criterion_state_counts": {
+            "failed": 0,
+            "not-run": 6,
+            "passed": 6
+          },
+          "case_id": "case-07",
+          "criteria": [
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": false,
+              "counts": {
+                "failed": 0,
+                "not-run": 0,
+                "passed": 3
+              },
+              "criterion_id": "C07-COUNT",
+              "description": "The response has exactly four entries whose lines begin with numbered list markers.",
+              "mandatory_phase": 2,
+              "method": "mechanical",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": false
+            },
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": true,
+              "counts": {
+                "failed": 0,
+                "not-run": 3,
+                "passed": 0
+              },
+              "criterion_id": "C07-DISTINCTNESS",
+              "description": "All four entries communicate genuinely different compositions rather than paraphrases or changes outside composition.",
+              "mandatory_phase": 6,
+              "method": "maintainer",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": true
+            },
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": true,
+              "counts": {
+                "failed": 0,
+                "not-run": 3,
+                "passed": 0
+              },
+              "criterion_id": "C07-PRESERVE",
+              "description": "Every variant preserves all non-composition facts, exact lettering, visibility, and fixed lighting while maintaining the cube's image-left relation to the sphere.",
+              "mandatory_phase": 6,
+              "method": "maintainer",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": true
+            },
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": false,
+              "counts": {
+                "failed": 0,
+                "not-run": 0,
+                "passed": 3
+              },
+              "criterion_id": "C07-TRACE",
+              "description": "Observable execution uses no prohibited research, delegation, model switching, or image/video generation actions.",
+              "mandatory_phase": 1,
+              "method": "mechanical",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": false
+            }
+          ],
+          "hard_outcome": "not-run",
+          "slot_count": 3,
+          "title": "Four controlled composition variants"
+        },
+        {
+          "all_criterion_state_counts": {
+            "failed": 0,
+            "not-run": 6,
+            "passed": 6
+          },
+          "case_id": "case-08",
+          "criteria": [
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": false,
+              "counts": {
+                "failed": 0,
+                "not-run": 0,
+                "passed": 3
+              },
+              "criterion_id": "C08-LIMIT",
+              "description": "The entire final output contains at most 55 Unicode whitespace-separated tokens.",
+              "mandatory_phase": 2,
+              "method": "mechanical",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": false
+            },
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": true,
+              "counts": {
+                "failed": 0,
+                "not-run": 3,
+                "passed": 0
+              },
+              "criterion_id": "C08-PRESERVE",
+              "description": "The expansion preserves every supplied scene fact and adds no forbidden subject, prop, or active weather.",
+              "mandatory_phase": 3,
+              "method": "maintainer",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": true
+            },
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": false,
+              "counts": {
+                "failed": 0,
+                "not-run": 3,
+                "passed": 0
+              },
+              "criterion_id": "C08-STYLE",
+              "description": "Within the limit, the prompt adds useful visible detail rather than padding or hidden story.",
+              "mandatory_phase": 3,
+              "method": "maintainer",
+              "mixed_outcomes": false,
+              "severity": "advisory",
+              "unreviewed_or_unavailable": true
+            },
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": false,
+              "counts": {
+                "failed": 0,
+                "not-run": 0,
+                "passed": 3
+              },
+              "criterion_id": "C08-TRACE",
+              "description": "Observable execution uses no prohibited research, delegation, model switching, or image/video generation actions.",
+              "mandatory_phase": 1,
+              "method": "mechanical",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": false
+            }
+          ],
+          "hard_outcome": "not-run",
+          "slot_count": 3,
+          "title": "Expand a brief within 55 words"
+        },
+        {
+          "all_criterion_state_counts": {
+            "failed": 0,
+            "not-run": 6,
+            "passed": 3
+          },
+          "case_id": "case-09",
+          "criteria": [
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": true,
+              "counts": {
+                "failed": 0,
+                "not-run": 3,
+                "passed": 0
+              },
+              "criterion_id": "C09-ROUTING",
+              "description": "The response is an analysis of the supplied prompt and does not silently turn into prompt writing, rewriting, or variants.",
+              "mandatory_phase": 2,
+              "method": "maintainer",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": true
+            },
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": false,
+              "counts": {
+                "failed": 0,
+                "not-run": 3,
+                "passed": 0
+              },
+              "criterion_id": "C09-QUALITY",
+              "description": "The critique distinguishes useful strengths from specific visible-clarity, composition, and ambiguity problems.",
+              "mandatory_phase": 2,
+              "method": "maintainer",
+              "mixed_outcomes": false,
+              "severity": "advisory",
+              "unreviewed_or_unavailable": true
+            },
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": false,
+              "counts": {
+                "failed": 0,
+                "not-run": 0,
+                "passed": 3
+              },
+              "criterion_id": "C09-TRACE",
+              "description": "Observable execution uses no prohibited research, delegation, model switching, or image/video generation actions.",
+              "mandatory_phase": 1,
+              "method": "mechanical",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": false
+            }
+          ],
+          "hard_outcome": "not-run",
+          "slot_count": 3,
+          "title": "Critique without silent replacement"
+        },
+        {
+          "all_criterion_state_counts": {
+            "failed": 0,
+            "not-run": 6,
+            "passed": 3
+          },
+          "case_id": "case-10",
+          "criteria": [
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": true,
+              "counts": {
+                "failed": 0,
+                "not-run": 3,
+                "passed": 0
+              },
+              "criterion_id": "C10-ROUTING",
+              "description": "The response remains a labeled comparison of both supplied prompts and does not collapse into one new or rewritten prompt.",
+              "mandatory_phase": 2,
+              "method": "maintainer",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": true
+            },
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": false,
+              "counts": {
+                "failed": 0,
+                "not-run": 3,
+                "passed": 0
+              },
+              "criterion_id": "C10-ANALYSIS",
+              "description": "The comparison separately addresses scene fidelity, profile-appropriate expression, and ambiguity for both prompts.",
+              "mandatory_phase": 4,
+              "method": "maintainer",
+              "mixed_outcomes": false,
+              "severity": "advisory",
+              "unreviewed_or_unavailable": true
+            },
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": false,
+              "counts": {
+                "failed": 0,
+                "not-run": 0,
+                "passed": 3
+              },
+              "criterion_id": "C10-TRACE",
+              "description": "Observable execution uses no prohibited research, delegation, model switching, or image/video generation actions.",
+              "mandatory_phase": 1,
+              "method": "mechanical",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": false
+            }
+          ],
+          "hard_outcome": "not-run",
+          "slot_count": 3,
+          "title": "Compare supplied SDXL and Krea 2 prompts"
+        },
+        {
+          "all_criterion_state_counts": {
+            "failed": 0,
+            "not-run": 9,
+            "passed": 6
+          },
+          "case_id": "case-11",
+          "criteria": [
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": false,
+              "counts": {
+                "failed": 0,
+                "not-run": 0,
+                "passed": 3
+              },
+              "criterion_id": "C11-CANONICAL-TEXT",
+              "description": "The final output literally contains grey_hair.",
+              "mandatory_phase": 5,
+              "method": "mechanical",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": false
+            },
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": true,
+              "counts": {
+                "failed": 0,
+                "not-run": 3,
+                "passed": 0
+              },
+              "criterion_id": "C11-PROFILE",
+              "description": "The prompt preserves the existing Illustrious convention: comma-separated Danbooru-style tags with restrained quality/composition guidance, lower_snake_case canonical forms where applicable, and no Pony prefix.",
+              "mandatory_phase": 4,
+              "method": "maintainer",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": true
+            },
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": true,
+              "counts": {
+                "failed": 0,
+                "not-run": 3,
+                "passed": 0
+              },
+              "criterion_id": "C11-CONSTRAINTS",
+              "description": "The canonical grey-hair result is used for the requested woman, all requested visible facts remain represented, and no optional related candidate changes the scene.",
+              "mandatory_phase": 5,
+              "method": "maintainer",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": true
+            },
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": false,
+              "counts": {
+                "failed": 0,
+                "not-run": 0,
+                "passed": 3
+              },
+              "criterion_id": "C11-TRACE",
+              "description": "Observable execution uses only permitted local lookup/file tooling and no raw-CSV reads, web research, delegation, model switching, related-tag expansion, or image/video generation.",
+              "mandatory_phase": 1,
+              "method": "mechanical",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": false
+            },
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": true,
+              "counts": {
+                "failed": 0,
+                "not-run": 3,
+                "passed": 0
+              },
+              "criterion_id": "C11-LOOKUP-EVIDENCE",
+              "description": "The captured tool results confirm grey_hair using the selected revision’s local lookup script. A mere spelling echo is not confirmation; missing usable trace evidence is not-run.",
+              "mandatory_phase": 5,
+              "method": "maintainer",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": true
+            }
+          ],
+          "hard_outcome": "not-run",
+          "slot_count": 3,
+          "title": "Illustrious Danbooru output with targeted local lookup"
+        },
+        {
+          "all_criterion_state_counts": {
+            "failed": 0,
+            "not-run": 6,
+            "passed": 3
+          },
+          "case_id": "case-12",
+          "criteria": [
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": true,
+              "counts": {
+                "failed": 0,
+                "not-run": 3,
+                "passed": 0
+              },
+              "criterion_id": "C12-PROFILE",
+              "description": "The positive prompt starts with the existing Pony score/source/rating convention, uses source_anime and rating_safe, remains comma-separated, and avoids generic masterpiece/best quality boilerplate.",
+              "mandatory_phase": 4,
+              "method": "maintainer",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": true
+            },
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": true,
+              "counts": {
+                "failed": 0,
+                "not-run": 3,
+                "passed": 0
+              },
+              "criterion_id": "C12-PRESERVE",
+              "description": "The single adult subject retains every supplied attribute and prop, and the tram stop remains empty apart from her.",
+              "mandatory_phase": 3,
+              "method": "maintainer",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": true
+            },
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": false,
+              "counts": {
+                "failed": 0,
+                "not-run": 0,
+                "passed": 3
+              },
+              "criterion_id": "C12-TRACE",
+              "description": "Observable execution uses no prohibited research, delegation, model switching, or image/video generation actions.",
+              "mandatory_phase": 1,
+              "method": "mechanical",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": false
+            }
+          ],
+          "hard_outcome": "not-run",
+          "slot_count": 3,
+          "title": "Preserve the existing Pony profile"
+        },
+        {
+          "all_criterion_state_counts": {
+            "failed": 0,
+            "not-run": 6,
+            "passed": 3
+          },
+          "case_id": "case-13",
+          "criteria": [
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": true,
+              "counts": {
+                "failed": 0,
+                "not-run": 3,
+                "passed": 0
+              },
+              "criterion_id": "C13-PROFILE",
+              "description": "The result preserves the existing NoobAI ordered tag convention, including its quality/model preference opening and space-normalized visible tags, without Pony syntax.",
+              "mandatory_phase": 4,
+              "method": "maintainer",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": true
+            },
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": true,
+              "counts": {
+                "failed": 0,
+                "not-run": 3,
+                "passed": 0
+              },
+              "criterion_id": "C13-PRESERVE",
+              "description": "All supplied subject attributes, clothing, action, clock, and workbench relationship remain explicit and correctly bound.",
+              "mandatory_phase": 3,
+              "method": "maintainer",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": true
+            },
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": false,
+              "counts": {
+                "failed": 0,
+                "not-run": 0,
+                "passed": 3
+              },
+              "criterion_id": "C13-TRACE",
+              "description": "Observable execution uses no prohibited research, delegation, model switching, or image/video generation actions.",
+              "mandatory_phase": 1,
+              "method": "mechanical",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": false
+            }
+          ],
+          "hard_outcome": "not-run",
+          "slot_count": 3,
+          "title": "Preserve the existing NoobAI profile"
+        },
+        {
+          "all_criterion_state_counts": {
+            "failed": 0,
+            "not-run": 9,
+            "passed": 3
+          },
+          "case_id": "case-14",
+          "criteria": [
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": true,
+              "counts": {
+                "failed": 0,
+                "not-run": 3,
+                "passed": 0
+              },
+              "criterion_id": "C14-ROUTE",
+              "description": "The output follows the existing Wan route as one cohesive cinematic paragraph rather than a shot list or image prompt.",
+              "mandatory_phase": 2,
+              "method": "maintainer",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": true
+            },
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": true,
+              "counts": {
+                "failed": 0,
+                "not-run": 3,
+                "passed": 0
+              },
+              "criterion_id": "C14-MOTION",
+              "description": "The paragraph preserves subject motion, environmental motion, camera progression, scene, atmosphere, and stylization without invisible story or audio invention.",
+              "mandatory_phase": 3,
+              "method": "maintainer",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": true
+            },
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": false,
+              "counts": {
+                "failed": 0,
+                "not-run": 3,
+                "passed": 0
+              },
+              "criterion_id": "C14-STYLE",
+              "description": "Camera language and progression are clear without becoming muddy or repetitive.",
+              "mandatory_phase": 3,
+              "method": "maintainer",
+              "mixed_outcomes": false,
+              "severity": "advisory",
+              "unreviewed_or_unavailable": true
+            },
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": false,
+              "counts": {
+                "failed": 0,
+                "not-run": 0,
+                "passed": 3
+              },
+              "criterion_id": "C14-TRACE",
+              "description": "Observable execution uses no prohibited research, delegation, model switching, or image/video generation actions.",
+              "mandatory_phase": 1,
+              "method": "mechanical",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": false
+            }
+          ],
+          "hard_outcome": "not-run",
+          "slot_count": 3,
+          "title": "Preserve the existing Wan text-to-video route"
+        },
+        {
+          "all_criterion_state_counts": {
+            "failed": 0,
+            "not-run": 6,
+            "passed": 3
+          },
+          "case_id": "case-15",
+          "criteria": [
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": true,
+              "counts": {
+                "failed": 0,
+                "not-run": 3,
+                "passed": 0
+              },
+              "criterion_id": "C15-ROUTE",
+              "description": "The response is an image-to-video prompt grounded in the supplied image as the first frame, not a text-to-video scene re-creation.",
+              "mandatory_phase": 2,
+              "method": "maintainer",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": true
+            },
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": true,
+              "counts": {
+                "failed": 0,
+                "not-run": 3,
+                "passed": 0
+              },
+              "criterion_id": "C15-PRESERVE",
+              "description": "The prompt accurately preserves the fixture's visible synthetic shapes, colors, composition, and flat style while limiting changes to the requested motions and gentle push-in.",
+              "mandatory_phase": 3,
+              "method": "maintainer",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": true
+            },
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": false,
+              "counts": {
+                "failed": 0,
+                "not-run": 0,
+                "passed": 3
+              },
+              "criterion_id": "C15-TRACE",
+              "description": "Observable execution uses only permitted fixture inspection and no prohibited research, delegation, model switching, or image/video generation actions.",
+              "mandatory_phase": 1,
+              "method": "mechanical",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": false
+            }
+          ],
+          "hard_outcome": "not-run",
+          "slot_count": 3,
+          "title": "Image-to-video from a fixed geometric source"
+        },
+        {
+          "all_criterion_state_counts": {
+            "failed": 0,
+            "not-run": 6,
+            "passed": 6
+          },
+          "case_id": "case-16",
+          "criteria": [
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": false,
+              "counts": {
+                "failed": 0,
+                "not-run": 0,
+                "passed": 3
+              },
+              "criterion_id": "C16-EXPORT",
+              "description": "The requested file exists at outputs/clothing-fragments.txt with exactly four nonblank physical lines, no blank entries, and no exact duplicate lines.",
+              "mandatory_phase": 6,
+              "method": "mechanical",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": false
+            },
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": true,
+              "counts": {
+                "failed": 0,
+                "not-run": 3,
+                "passed": 0
+              },
+              "criterion_id": "C16-FRAGMENTS",
+              "description": "Each of the four entries is a distinct insertion-compatible clothing-only fragment; none repeats host-owned prefixes or introduces subject, hair, pose, action, setting, camera, or lighting content.",
+              "mandatory_phase": 6,
+              "method": "maintainer",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": true
+            },
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": true,
+              "counts": {
+                "failed": 0,
+                "not-run": 3,
+                "passed": 0
+              },
+              "criterion_id": "C16-REPORT",
+              "description": "The response truthfully reports the actual saved path, actual count of four, and fragment mode outside the selection file.",
+              "mandatory_phase": 6,
+              "method": "maintainer",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": true
+            },
+            {
+              "baseline_classification": null,
+              "blocks_acceptance_when_due": false,
+              "counts": {
+                "failed": 0,
+                "not-run": 0,
+                "passed": 3
+              },
+              "criterion_id": "C16-TRACE",
+              "description": "Observable execution writes only the requested artifact and uses no prohibited research, delegation, model switching, or image/video generation actions.",
+              "mandatory_phase": 1,
+              "method": "mechanical",
+              "mixed_outcomes": false,
+              "severity": "hard",
+              "unreviewed_or_unavailable": false
+            }
+          ],
+          "hard_outcome": "not-run",
+          "slot_count": 3,
+          "title": "Export four clothing-only wildcard fragments"
+        }
+      ],
+      "cohort": ".",
+      "kind": "paired-baseline-rerun",
+      "revision": "5fcc3d0eded83c6a9aaf472a1dc8d5ce24011d9d"
+    }
+  ],
+  "limitations": [
+    "Mechanical checks inspect captured final text/files only; they do not infer semantic preservation, exclusions, style, or relationships from keywords.",
+    "Trace policy inspects observable OMP tool_execution_start events only. It is not an enforced shell sandbox and cannot establish hidden provider behavior.",
+    "Unknown tool-event shapes and ambiguous shell commands are not-run; complete traces with observed forbidden tools/actions fail.",
+    "Trace path checks recognize only selected-skill, fixtures, and outputs; direct raw Danbooru data access, URIs, and image ?q processing are prohibited.",
+    "Human semantic passes require imported review records with human=true and a reviewer identifier beginning with 'human:'."
+  ],
+  "protocol": "Scenario Maker Phase 1 prompt-behavior evaluation",
+  "states": [
+    "passed",
+    "failed",
+    "not-run"
+  ],
+  "warnings": []
+}

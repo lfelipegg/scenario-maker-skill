@@ -1,0 +1,15 @@
+### 1. Fidelity to the brief
+- **SDXL prompt:** Directly preserves all required elements: green bicycle, leaning posture, white brick wall, and soft overcast daylight. Eye-level framing, a medium shot, and a restrained palette are additional constraints, but none inherently contradicts the brief.
+- **Krea 2 prompt:** Preserves the subject, wall, and lighting. “Rests against” strongly suggests the intended pose but is slightly less explicit than “leaning against.” “Even” lighting is consistent with overcast daylight. It adds eye-level framing and a restrained palette without specifying shot size.
+
+### 2. Model-appropriate expression
+- **SDXL prompt:** Clear and compact, with concrete visual phrases rather than excessive tags. However, the selected skill’s SDXL guidance favors concise natural-language prose; this comma-separated formulation is usable but less aligned with that preference. Prose is a preference, not a strict syntax requirement.
+- **Krea 2 prompt:** A coherent natural-language sentence with clear relationships among the visual elements. The selected skill does not provide a Krea 2 profile, so its clarity can be assessed, but a specifically Krea-optimized format cannot be confirmed from that guidance.
+
+### 3. Likely ambiguity
+- **SDXL prompt:** More explicit about posture and framing. “Medium shot” is somewhat open to interpretation for a bicycle and could lead to cropping rather than showing the entire bicycle.
+- **Krea 2 prompt:** Leaves camera distance and subject coverage open. “Rests against” also leaves slightly more latitude in the bicycle’s angle and support.
+- **Both:** “Restrained palette” could mean fewer colors or reduced saturation, potentially muting the green. Neither specifies bicycle type, viewing direction, or exact lean angle; these are ordinary unspecified details rather than contradictions.
+
+### Overall comparison
+**The SDXL prompt has a slight edge in literal fidelity and framing specificity. The Krea 2 prompt has smoother prose but leaves more compositional latitude.** Both closely match the brief; wording alone does not establish which model will render it more faithfully.

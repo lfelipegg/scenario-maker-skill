@@ -1,0 +1,85 @@
+{
+  "case_id": "case-14",
+  "attempt": 2,
+  "revision": "worktree-sha256-eec9f105b8186ccf396f1694faf70172a433c89b3f93d0c4bbce1f6e0810a32d",
+  "started_at": "2026-09-22T20:33:26.611804+00:00",
+  "elapsed_seconds": 16.854,
+  "command": [
+    "omp",
+    "--cwd",
+    "/tmp/scenario-maker-eval-8nzhf829/candidate/case-14/attempt-2",
+    "--print",
+    "--mode",
+    "json",
+    "--model",
+    "openai-codex/gpt-6-astra",
+    "--thinking",
+    "high",
+    "--no-session",
+    "--no-title",
+    "--no-prewalk",
+    "--no-skills",
+    "--no-rules",
+    "--no-extensions",
+    "--no-lsp",
+    "--no-pty",
+    "--tools",
+    "read,grep,glob,bash,write",
+    "--approval-mode",
+    "yolo",
+    "--config",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/omp-config.json",
+    "--system-prompt",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/generator-system.txt",
+    "--extension",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/capture.ts",
+    "--max-time",
+    "300s",
+    "Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.\n\nWrite one Wan text-to-video prompt. A yellow paper boat drifts along a narrow rain-filled gutter beside a gray curb; raindrops ripple the water and push tiny leaves past it. The camera makes a slow low tracking move alongside the boat, then gently pulls back as it reaches a storm drain. Photorealistic macro cinematography, cool overcast light. Return one cohesive paragraph only, with no shot list, label, notes, variants, or generation."
+  ],
+  "cwd": "/tmp/scenario-maker-eval-8nzhf829/candidate/case-14/attempt-2",
+  "execution": {
+    "status": "completed",
+    "exit_code": 0,
+    "error": null,
+    "model_errors": [],
+    "malformed_trace_lines": []
+  },
+  "raw": {
+    "output": "output.txt",
+    "partial_output": null,
+    "trace": "trace.jsonl",
+    "stderr": "stderr.txt",
+    "context": "context.jsonl"
+  },
+  "trace_complete": true,
+  "artifacts": [],
+  "observed_context": [
+    {
+      "type": "eval_context",
+      "systemPrompt": "You are a prompt-writing assistant executing the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md. Read that file and only its applicable references. Resolve its reference and script paths relative to ./selected-skill, not an installed skill. Do not discover or load other skills, repository instructions, past sessions, evaluator files, or web sources.\n\nOnly local read, grep, glob, bash, and write tools are available. Use them for the selected skill's references, local lookup/scripts, supplied fixtures, and requested workspace-local text exports. Keep writes within this fresh workspace. Do not edit the selected skill, execute image/video generation or frame extraction, delegate, switch models, access the network, or inspect credentials. This is prompt writing, not generation. If clarification is necessary, ask in your final response; this non-interactive run cannot receive an answer.\n\nApply the selected skill to the user's request. Do not discuss evaluation or scoring. The workspace starts with no prior conversation or generated outputs.\n",
+      "cwd": "/tmp/scenario-maker-eval-8nzhf829/candidate/case-14/attempt-2",
+      "model": {
+        "provider": "openai-codex",
+        "id": "gpt-6-astra",
+        "name": "GPT-6-Astra"
+      },
+      "thinking": "high",
+      "tools": [
+        "read",
+        "grep",
+        "glob",
+        "bash",
+        "write"
+      ]
+    }
+  ],
+  "raw_checksums": {
+    "request.txt": "7de1526186b78b44db64d407c0ede931b38c612f4d0d0fc7e627cf6e80cca7fc",
+    "output.txt": "7a03d9312d8a1626d662dc588a33914532a20b3e1262134b51af5ccc180d7b2a",
+    "context.jsonl": "58a2f689d546185daf592053c78175335660ab7229b05dd1481f2276345b7d69",
+    "trace.jsonl": "8b980c39c3c873d83b4ca5eeb44ed81bccadc12e388b26fadbd4bf9ce3116d07",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "comparison_side": "candidate"
+}

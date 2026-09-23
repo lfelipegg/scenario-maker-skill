@@ -1,0 +1,92 @@
+{
+  "case_id": "capture-smoke",
+  "attempt": 1,
+  "revision": "worktree-sha256-eec9f105b8186ccf396f1694faf70172a433c89b3f93d0c4bbce1f6e0810a32d",
+  "started_at": "2026-09-22T20:23:21.536228+00:00",
+  "elapsed_seconds": 17.666,
+  "command": [
+    "omp",
+    "--cwd",
+    "/tmp/scenario-maker-eval-k0rwav7b/candidate/capture-smoke/attempt-1",
+    "--print",
+    "--mode",
+    "json",
+    "--model",
+    "openai-codex/gpt-6-astra",
+    "--thinking",
+    "high",
+    "--no-session",
+    "--no-title",
+    "--no-prewalk",
+    "--no-skills",
+    "--no-rules",
+    "--no-extensions",
+    "--no-lsp",
+    "--no-pty",
+    "--tools",
+    "read,grep,glob,bash,write",
+    "--approval-mode",
+    "yolo",
+    "--config",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/omp-config.json",
+    "--system-prompt",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/generator-system.txt",
+    "--extension",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/capture.ts",
+    "--max-time",
+    "300s",
+    "Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.\n\nRead the selected skill and its applicable prompt-type reference. Write one very short still-image prompt about a red cube on a gray surface to outputs/smoke.txt. Report the saved path."
+  ],
+  "cwd": "/tmp/scenario-maker-eval-k0rwav7b/candidate/capture-smoke/attempt-1",
+  "execution": {
+    "status": "completed",
+    "exit_code": 0,
+    "error": null,
+    "model_errors": [],
+    "malformed_trace_lines": []
+  },
+  "raw": {
+    "output": "output.txt",
+    "partial_output": null,
+    "trace": "trace.jsonl",
+    "stderr": "stderr.txt",
+    "context": "context.jsonl"
+  },
+  "trace_complete": true,
+  "artifacts": [
+    {
+      "path": "outputs/smoke.txt",
+      "stored_path": "artifacts/outputs/smoke.txt",
+      "sha256": "68d90fff404d88905dceaf76a38285d6437d476df543a1343571a3ea65a67659",
+      "bytes": 129
+    }
+  ],
+  "observed_context": [
+    {
+      "type": "eval_context",
+      "systemPrompt": "You are a prompt-writing assistant executing the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md. Read that file and only its applicable references. Resolve its reference and script paths relative to ./selected-skill, not an installed skill. Do not discover or load other skills, repository instructions, past sessions, evaluator files, or web sources.\n\nOnly local read, grep, glob, bash, and write tools are available. Use them for the selected skill's references, local lookup/scripts, supplied fixtures, and requested workspace-local text exports. Keep writes within this fresh workspace. Do not edit the selected skill, execute image/video generation or frame extraction, delegate, switch models, access the network, or inspect credentials. This is prompt writing, not generation. If clarification is necessary, ask in your final response; this non-interactive run cannot receive an answer.\n\nApply the selected skill to the user's request. Do not discuss evaluation or scoring. The workspace starts with no prior conversation or generated outputs.\n",
+      "cwd": "/tmp/scenario-maker-eval-k0rwav7b/candidate/capture-smoke/attempt-1",
+      "model": {
+        "provider": "openai-codex",
+        "id": "gpt-6-astra",
+        "name": "GPT-6-Astra"
+      },
+      "thinking": "high",
+      "tools": [
+        "read",
+        "grep",
+        "glob",
+        "bash",
+        "write"
+      ]
+    }
+  ],
+  "raw_checksums": {
+    "request.txt": "0934a2fdb829fed0cd8b96851645ac36e7cec0d70994f81630031529b83e90e4",
+    "output.txt": "49bb4da2bdb126cf11873cd3ae0d68557ee43cccb7e706f56914aa091dced0ef",
+    "context.jsonl": "fdba2f13a6c539a787ed55edc1b9ddd5668f44634d14ca9306d1c0eb597bba02",
+    "trace.jsonl": "0cc8c0e37339aa3357fee837dd733c0387a5c04a5f7318e85bb10227f1841aa1",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "comparison_side": "candidate"
+}

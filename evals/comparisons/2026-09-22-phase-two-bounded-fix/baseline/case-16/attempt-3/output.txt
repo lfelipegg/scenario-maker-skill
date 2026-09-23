@@ -1,0 +1,3 @@
+Saved: `outputs/clothing-fragments.txt`
+- **Entry count:** 4 distinct clothing-only fragments
+- **Mode:** Fragment mode, for insertion at `[CLOTHING SLOT]`

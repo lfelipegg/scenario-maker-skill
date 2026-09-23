@@ -1,0 +1,15 @@
+### 1. Fidelity to the brief
+- **SDXL prompt:** Explicitly preserves every required detail: a green bicycle, leaning against a white brick wall, in soft overcast daylight. Eye-level framing, a medium shot, and a restrained palette are additional choices, not requirements of the brief.
+- **Krea 2 prompt:** Preserves the subject, wall, and lighting. “Rests against” strongly suggests the intended pose but is slightly less explicit than “leaning against.” “Even” is consistent with soft overcast illumination. Eye-level framing and a restrained palette are added choices.
+
+### 2. Model-appropriate expression
+- **SDXL prompt:** Its short, comma-separated visual phrases remain clear and usable. The selected skill recommends concise natural-language prose for SDXL, but that is a preference—not a requirement. This is not an overloaded tag stack, and its subject–wall relationship remains intact.
+- **Krea 2 prompt:** The cohesive sentence clearly connects subject, setting, lighting, and composition. It is sound generic image-prompt prose; the selected skill supplies no verified Krea 2 profile, so a model-specific advantage cannot be established.
+
+### 3. Likely ambiguity
+- **SDXL prompt:** “Medium shot” specifies framing more than the Krea 2 wording does, but its meaning for a bicycle is imprecise and could allow cropping. “Eye-level” specifies camera height rather than the bicycle’s viewing angle.
+- **Krea 2 prompt:** Leaves shot distance and crop open. “Rests against” introduces a little more uncertainty about the bicycle’s exact lean.
+- **Both:** “Restrained palette” could mean fewer colors or muted saturation, potentially weakening the green’s prominence. Neither specifies the shade of green or the bicycle’s orientation; these are open choices rather than failures to follow the brief.
+
+### 4. Overall comparison
+**The SDXL prompt has a slight edge in literal fidelity and framing specificity. The Krea 2 prompt offers smoother prose while leaving framing more open.** Both communicate the brief well; wording alone does not establish which model would render it more faithfully.

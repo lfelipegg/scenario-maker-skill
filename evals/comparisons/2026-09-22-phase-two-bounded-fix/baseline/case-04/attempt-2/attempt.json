@@ -1,0 +1,85 @@
+{
+  "case_id": "case-04",
+  "attempt": 2,
+  "revision": "5fcc3d0eded83c6a9aaf472a1dc8d5ce24011d9d",
+  "started_at": "2026-09-22T22:31:14.352914+00:00",
+  "elapsed_seconds": 12.915,
+  "command": [
+    "omp",
+    "--cwd",
+    "/tmp/scenario-maker-eval-o5an0ixo/baseline/case-04/attempt-2",
+    "--print",
+    "--mode",
+    "json",
+    "--model",
+    "openai-codex/gpt-6-astra",
+    "--thinking",
+    "high",
+    "--no-session",
+    "--no-title",
+    "--no-prewalk",
+    "--no-skills",
+    "--no-rules",
+    "--no-extensions",
+    "--no-lsp",
+    "--no-pty",
+    "--tools",
+    "read,grep,glob,bash,write",
+    "--approval-mode",
+    "yolo",
+    "--config",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/omp-config.json",
+    "--system-prompt",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/generator-system.txt",
+    "--extension",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/capture.ts",
+    "--max-time",
+    "300s",
+    "Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.\n\nCreate a character-design prompt for an adult lighthouse keeper. Give her weathered olive skin, tightly curled gray hair, a navy cable-knit sweater, orange waterproof bib trousers, black rubber boots, and a brass whistle on a cord. Describe character design only. Return one prompt with no scene, pose, expression, action, camera, lighting, weather, or story."
+  ],
+  "cwd": "/tmp/scenario-maker-eval-o5an0ixo/baseline/case-04/attempt-2",
+  "execution": {
+    "status": "completed",
+    "exit_code": 0,
+    "error": null,
+    "model_errors": [],
+    "malformed_trace_lines": []
+  },
+  "raw": {
+    "output": "output.txt",
+    "partial_output": null,
+    "trace": "trace.jsonl",
+    "stderr": "stderr.txt",
+    "context": "context.jsonl"
+  },
+  "trace_complete": true,
+  "artifacts": [],
+  "observed_context": [
+    {
+      "type": "eval_context",
+      "systemPrompt": "You are a prompt-writing assistant executing the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md. Read that file and only its applicable references. Resolve its reference and script paths relative to ./selected-skill, not an installed skill. Do not discover or load other skills, repository instructions, past sessions, evaluator files, or web sources.\n\nOnly local read, grep, glob, bash, and write tools are available. Use them for the selected skill's references, local lookup/scripts, supplied fixtures, and requested workspace-local text exports. Keep writes within this fresh workspace. Do not edit the selected skill, execute image/video generation or frame extraction, delegate, switch models, access the network, or inspect credentials. This is prompt writing, not generation. If clarification is necessary, ask in your final response; this non-interactive run cannot receive an answer.\n\nApply the selected skill to the user's request. Do not discuss evaluation or scoring. The workspace starts with no prior conversation or generated outputs.\n",
+      "cwd": "/tmp/scenario-maker-eval-o5an0ixo/baseline/case-04/attempt-2",
+      "model": {
+        "provider": "openai-codex",
+        "id": "gpt-6-astra",
+        "name": "GPT-6-Astra"
+      },
+      "thinking": "high",
+      "tools": [
+        "read",
+        "grep",
+        "glob",
+        "bash",
+        "write"
+      ]
+    }
+  ],
+  "raw_checksums": {
+    "request.txt": "e918b04fa82ad73efef1c5ff16fb9382f93ceafcd5ddfdba8e853cc6eb76ce22",
+    "output.txt": "997d693211a744929c7aa12ad0c5633b97f2b87a66696d00425aca01b20fe878",
+    "context.jsonl": "1506567f0ab258699c7ca8487bcbe60acaead560b191ab98d73f158a6d0a85af",
+    "trace.jsonl": "1f61508ece900d12f0f2df981dd5df51ea063b30e800ce05a5ecc3d1d2c0b2d3",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "comparison_side": "baseline"
+}

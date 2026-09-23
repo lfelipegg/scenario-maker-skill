@@ -1,0 +1,15 @@
+### 1. Fidelity to the brief
+- **SDXL:** Explicitly preserves every required element: a green bicycle, leaning against a white brick wall, in soft overcast daylight. Eye-level framing, a medium shot, and a restrained color palette are additions, not requirements of the brief.
+- **Krea 2:** Preserves the subject, colors, wall material, and lighting. “Rests against” strongly suggests the intended leaning relationship but is slightly less explicit than “leaning against.” “Even” is consistent with soft overcast light. Eye-level framing and a restrained palette are additional choices.
+
+### 2. Model-appropriate expression
+- **SDXL:** The compact, comma-separated visual phrases are clear and usable. Although the selected skill favors concise natural prose for SDXL, that is a preference—not a syntax requirement. This prompt retains the important spatial relationship rather than merely listing objects.
+- **Krea 2:** The complete sentence reads naturally and connects the scene elements clearly. The selected skill does not provide a verified Krea 2 profile, so its general linguistic clarity can be assessed, but a Krea-specific advantage or requirement cannot be established here.
+
+### 3. Likely ambiguity
+- **SDXL:** “Medium shot” gives some framing direction but is less standardized for a bicycle than for a person; it does not guarantee the entire bicycle will remain visible. “Restrained color palette” could mean limited hues or reduced saturation, potentially muting the green.
+- **Krea 2:** Eye level specifies viewpoint but not shot distance, leaving more framing latitude. “Rests against” leaves the degree of lean less explicit. “Restrained palette” carries the same color ambiguity as the SDXL wording.
+- **Both:** Neither specifies the exact shade of green or bicycle orientation. These are open details in the brief, not fidelity failures.
+
+### 4. Overall comparison
+**The SDXL prompt has a slight edge in literal fidelity and framing specificity.** The Krea 2 prompt offers smoother prose while leaving shot distance more open. Both closely match the brief; wording alone does not establish which model would render it more faithfully.

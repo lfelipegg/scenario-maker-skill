@@ -1,0 +1,5 @@
+Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.
+
+Inspect the supplied source image and write one image-to-video prompt that starts from it. Preserve its simple synthetic subject shapes, colors, initial composition, and flat graphic style. Animate only subtle water ripples and a slow cloud drift, with a very gentle camera push-in. Apart from these authorized temporal changes, do not add, remove, recolor, or reposition objects. Return only the prompt, with no label, notes, variants, or generation.
+
+Supplied local fixtures: fixtures/case15-geometric-source.png

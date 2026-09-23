@@ -1,0 +1,1597 @@
+{
+  "recorded_at": "2026-09-23T00:15:24.795Z",
+  "phase": 2,
+  "status": "All applicable candidate hard gates pass; awaiting explicit maintainer phase acceptance and tracker closure authorization.",
+  "candidate_revision": "worktree-sha256-ae52dc49b658c5000ead00ec21976417e713af05b89a1826f9b322625947a8fa",
+  "baseline_revision": "5fcc3d0eded83c6a9aaf472a1dc8d5ce24011d9d",
+  "capture_root": "evals/comparisons/2026-09-22-phase-two-bounded-fix",
+  "capture_execution": {
+    "attempts": 96,
+    "completed": 96,
+    "outputs": 96,
+    "complete_traces": 96,
+    "errors": 0,
+    "timeouts": 0
+  },
+  "integrity": {
+    "attempts": 96,
+    "rawFiles": 480,
+    "artifacts": 6,
+    "candidateSnapshotFiles": 16,
+    "sharedContext": {
+      "model": {
+        "provider": "openai-codex",
+        "id": "gpt-6-astra",
+        "name": "GPT-6-Astra"
+      },
+      "thinking": "high",
+      "tools": [
+        "read",
+        "grep",
+        "glob",
+        "bash",
+        "write"
+      ]
+    },
+    "captureRunnerMatchesCurrent": true
+  },
+  "results": {
+    "baseline": {
+      "mechanical": {
+        "passed": 63,
+        "failed": 0,
+        "not-run": 0
+      },
+      "human": {
+        "passed": 98,
+        "failed": 10,
+        "not-run": 0
+      },
+      "duePhaseTwoHard": {
+        "passed": 78,
+        "failed": 0,
+        "not-run": 0
+      },
+      "originalProtectedHard": {
+        "passed": 146,
+        "failed": 7,
+        "not-run": 0
+      },
+      "allHard": {
+        "passed": 146,
+        "failed": 7,
+        "not-run": 0
+      },
+      "advisory": {
+        "passed": 15,
+        "failed": 3,
+        "not-run": 0
+      },
+      "criterionResults": [
+        {
+          "case_id": "case-01",
+          "criterion_id": "C01-OUTPUT",
+          "severity": "hard",
+          "mandatory_phase": 2,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-01",
+          "criterion_id": "C01-PROFILE",
+          "severity": "hard",
+          "mandatory_phase": 4,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-01",
+          "criterion_id": "C01-STYLE",
+          "severity": "advisory",
+          "mandatory_phase": 4,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-01",
+          "criterion_id": "C01-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "method": "mechanical",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-02",
+          "criterion_id": "C02-OUTPUT",
+          "severity": "hard",
+          "mandatory_phase": 2,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-02",
+          "criterion_id": "C02-PRESERVE",
+          "severity": "hard",
+          "mandatory_phase": 3,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-02",
+          "criterion_id": "C02-PROFILE",
+          "severity": "hard",
+          "mandatory_phase": 4,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-02",
+          "criterion_id": "C02-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "method": "mechanical",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-03",
+          "criterion_id": "C03-OUTPUT",
+          "severity": "hard",
+          "mandatory_phase": 2,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-03",
+          "criterion_id": "C03-REVISION",
+          "severity": "hard",
+          "mandatory_phase": 3,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-03",
+          "criterion_id": "C03-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "method": "mechanical",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-04",
+          "criterion_id": "C04-SCOPE",
+          "severity": "hard",
+          "mandatory_phase": 3,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-04",
+          "criterion_id": "C04-DETAILS",
+          "severity": "hard",
+          "mandatory_phase": 3,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-04",
+          "criterion_id": "C04-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "method": "mechanical",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-05",
+          "criterion_id": "C05-OUTPUT",
+          "severity": "hard",
+          "mandatory_phase": 2,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-05",
+          "criterion_id": "C05-EXCLUSION",
+          "severity": "hard",
+          "mandatory_phase": 5,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-05",
+          "criterion_id": "C05-STYLE",
+          "severity": "advisory",
+          "mandatory_phase": 5,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-05",
+          "criterion_id": "C05-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "method": "mechanical",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-06",
+          "criterion_id": "C06-TEXT-PRESENCE",
+          "severity": "hard",
+          "mandatory_phase": 3,
+          "method": "mechanical",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-06",
+          "criterion_id": "C06-TEXT-BINDING",
+          "severity": "hard",
+          "mandatory_phase": 3,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-06",
+          "criterion_id": "C06-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "method": "mechanical",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-07",
+          "criterion_id": "C07-COUNT",
+          "severity": "hard",
+          "mandatory_phase": 2,
+          "method": "mechanical",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-07",
+          "criterion_id": "C07-DISTINCTNESS",
+          "severity": "hard",
+          "mandatory_phase": 6,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-07",
+          "criterion_id": "C07-PRESERVE",
+          "severity": "hard",
+          "mandatory_phase": 6,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-07",
+          "criterion_id": "C07-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "method": "mechanical",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-08",
+          "criterion_id": "C08-LIMIT",
+          "severity": "hard",
+          "mandatory_phase": 2,
+          "method": "mechanical",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-08",
+          "criterion_id": "C08-PRESERVE",
+          "severity": "hard",
+          "mandatory_phase": 3,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-08",
+          "criterion_id": "C08-STYLE",
+          "severity": "advisory",
+          "mandatory_phase": 3,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-08",
+          "criterion_id": "C08-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "method": "mechanical",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-09",
+          "criterion_id": "C09-ROUTING",
+          "severity": "hard",
+          "mandatory_phase": 2,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-09",
+          "criterion_id": "C09-QUALITY",
+          "severity": "advisory",
+          "mandatory_phase": 2,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-09",
+          "criterion_id": "C09-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "method": "mechanical",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-10",
+          "criterion_id": "C10-ROUTING",
+          "severity": "hard",
+          "mandatory_phase": 2,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-10",
+          "criterion_id": "C10-ANALYSIS",
+          "severity": "advisory",
+          "mandatory_phase": 4,
+          "method": "maintainer",
+          "passed": 0,
+          "failed": 3,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-10",
+          "criterion_id": "C10-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "method": "mechanical",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-11",
+          "criterion_id": "C11-CANONICAL-TEXT",
+          "severity": "hard",
+          "mandatory_phase": 5,
+          "method": "mechanical",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-11",
+          "criterion_id": "C11-PROFILE",
+          "severity": "hard",
+          "mandatory_phase": 4,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-11",
+          "criterion_id": "C11-CONSTRAINTS",
+          "severity": "hard",
+          "mandatory_phase": 5,
+          "method": "maintainer",
+          "passed": 2,
+          "failed": 1,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-11",
+          "criterion_id": "C11-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "method": "mechanical",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-11",
+          "criterion_id": "C11-LOOKUP-EVIDENCE",
+          "severity": "hard",
+          "mandatory_phase": 5,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-12",
+          "criterion_id": "C12-PROFILE",
+          "severity": "hard",
+          "mandatory_phase": 4,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-12",
+          "criterion_id": "C12-PRESERVE",
+          "severity": "hard",
+          "mandatory_phase": 3,
+          "method": "maintainer",
+          "passed": 0,
+          "failed": 3,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-12",
+          "criterion_id": "C12-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "method": "mechanical",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-13",
+          "criterion_id": "C13-PROFILE",
+          "severity": "hard",
+          "mandatory_phase": 4,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-13",
+          "criterion_id": "C13-PRESERVE",
+          "severity": "hard",
+          "mandatory_phase": 3,
+          "method": "maintainer",
+          "passed": 0,
+          "failed": 3,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-13",
+          "criterion_id": "C13-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "method": "mechanical",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-14",
+          "criterion_id": "C14-ROUTE",
+          "severity": "hard",
+          "mandatory_phase": 2,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-14",
+          "criterion_id": "C14-MOTION",
+          "severity": "hard",
+          "mandatory_phase": 3,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-14",
+          "criterion_id": "C14-STYLE",
+          "severity": "advisory",
+          "mandatory_phase": 3,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-14",
+          "criterion_id": "C14-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "method": "mechanical",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-15",
+          "criterion_id": "C15-ROUTE",
+          "severity": "hard",
+          "mandatory_phase": 2,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-15",
+          "criterion_id": "C15-PRESERVE",
+          "severity": "hard",
+          "mandatory_phase": 3,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-15",
+          "criterion_id": "C15-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "method": "mechanical",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-16",
+          "criterion_id": "C16-EXPORT",
+          "severity": "hard",
+          "mandatory_phase": 6,
+          "method": "mechanical",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-16",
+          "criterion_id": "C16-FRAGMENTS",
+          "severity": "hard",
+          "mandatory_phase": 6,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-16",
+          "criterion_id": "C16-REPORT",
+          "severity": "hard",
+          "mandatory_phase": 6,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-16",
+          "criterion_id": "C16-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "method": "mechanical",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        }
+      ],
+      "reviewRows": 108,
+      "duplicateReviewKeys": 0,
+      "warnings": []
+    },
+    "candidate": {
+      "mechanical": {
+        "passed": 63,
+        "failed": 0,
+        "not-run": 0
+      },
+      "human": {
+        "passed": 105,
+        "failed": 3,
+        "not-run": 0
+      },
+      "duePhaseTwoHard": {
+        "passed": 78,
+        "failed": 0,
+        "not-run": 0
+      },
+      "originalProtectedHard": {
+        "passed": 153,
+        "failed": 0,
+        "not-run": 0
+      },
+      "allHard": {
+        "passed": 153,
+        "failed": 0,
+        "not-run": 0
+      },
+      "advisory": {
+        "passed": 15,
+        "failed": 3,
+        "not-run": 0
+      },
+      "criterionResults": [
+        {
+          "case_id": "case-01",
+          "criterion_id": "C01-OUTPUT",
+          "severity": "hard",
+          "mandatory_phase": 2,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-01",
+          "criterion_id": "C01-PROFILE",
+          "severity": "hard",
+          "mandatory_phase": 4,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-01",
+          "criterion_id": "C01-STYLE",
+          "severity": "advisory",
+          "mandatory_phase": 4,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-01",
+          "criterion_id": "C01-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "method": "mechanical",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-02",
+          "criterion_id": "C02-OUTPUT",
+          "severity": "hard",
+          "mandatory_phase": 2,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-02",
+          "criterion_id": "C02-PRESERVE",
+          "severity": "hard",
+          "mandatory_phase": 3,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-02",
+          "criterion_id": "C02-PROFILE",
+          "severity": "hard",
+          "mandatory_phase": 4,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-02",
+          "criterion_id": "C02-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "method": "mechanical",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-03",
+          "criterion_id": "C03-OUTPUT",
+          "severity": "hard",
+          "mandatory_phase": 2,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-03",
+          "criterion_id": "C03-REVISION",
+          "severity": "hard",
+          "mandatory_phase": 3,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-03",
+          "criterion_id": "C03-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "method": "mechanical",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-04",
+          "criterion_id": "C04-SCOPE",
+          "severity": "hard",
+          "mandatory_phase": 3,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-04",
+          "criterion_id": "C04-DETAILS",
+          "severity": "hard",
+          "mandatory_phase": 3,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-04",
+          "criterion_id": "C04-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "method": "mechanical",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-05",
+          "criterion_id": "C05-OUTPUT",
+          "severity": "hard",
+          "mandatory_phase": 2,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-05",
+          "criterion_id": "C05-EXCLUSION",
+          "severity": "hard",
+          "mandatory_phase": 5,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-05",
+          "criterion_id": "C05-STYLE",
+          "severity": "advisory",
+          "mandatory_phase": 5,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-05",
+          "criterion_id": "C05-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "method": "mechanical",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-06",
+          "criterion_id": "C06-TEXT-PRESENCE",
+          "severity": "hard",
+          "mandatory_phase": 3,
+          "method": "mechanical",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-06",
+          "criterion_id": "C06-TEXT-BINDING",
+          "severity": "hard",
+          "mandatory_phase": 3,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-06",
+          "criterion_id": "C06-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "method": "mechanical",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-07",
+          "criterion_id": "C07-COUNT",
+          "severity": "hard",
+          "mandatory_phase": 2,
+          "method": "mechanical",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-07",
+          "criterion_id": "C07-DISTINCTNESS",
+          "severity": "hard",
+          "mandatory_phase": 6,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-07",
+          "criterion_id": "C07-PRESERVE",
+          "severity": "hard",
+          "mandatory_phase": 6,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-07",
+          "criterion_id": "C07-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "method": "mechanical",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-08",
+          "criterion_id": "C08-LIMIT",
+          "severity": "hard",
+          "mandatory_phase": 2,
+          "method": "mechanical",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-08",
+          "criterion_id": "C08-PRESERVE",
+          "severity": "hard",
+          "mandatory_phase": 3,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-08",
+          "criterion_id": "C08-STYLE",
+          "severity": "advisory",
+          "mandatory_phase": 3,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-08",
+          "criterion_id": "C08-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "method": "mechanical",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-09",
+          "criterion_id": "C09-ROUTING",
+          "severity": "hard",
+          "mandatory_phase": 2,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-09",
+          "criterion_id": "C09-QUALITY",
+          "severity": "advisory",
+          "mandatory_phase": 2,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-09",
+          "criterion_id": "C09-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "method": "mechanical",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-10",
+          "criterion_id": "C10-ROUTING",
+          "severity": "hard",
+          "mandatory_phase": 2,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-10",
+          "criterion_id": "C10-ANALYSIS",
+          "severity": "advisory",
+          "mandatory_phase": 4,
+          "method": "maintainer",
+          "passed": 0,
+          "failed": 3,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-10",
+          "criterion_id": "C10-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "method": "mechanical",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-11",
+          "criterion_id": "C11-CANONICAL-TEXT",
+          "severity": "hard",
+          "mandatory_phase": 5,
+          "method": "mechanical",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-11",
+          "criterion_id": "C11-PROFILE",
+          "severity": "hard",
+          "mandatory_phase": 4,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-11",
+          "criterion_id": "C11-CONSTRAINTS",
+          "severity": "hard",
+          "mandatory_phase": 5,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-11",
+          "criterion_id": "C11-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "method": "mechanical",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-11",
+          "criterion_id": "C11-LOOKUP-EVIDENCE",
+          "severity": "hard",
+          "mandatory_phase": 5,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-12",
+          "criterion_id": "C12-PROFILE",
+          "severity": "hard",
+          "mandatory_phase": 4,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-12",
+          "criterion_id": "C12-PRESERVE",
+          "severity": "hard",
+          "mandatory_phase": 3,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-12",
+          "criterion_id": "C12-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "method": "mechanical",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-13",
+          "criterion_id": "C13-PROFILE",
+          "severity": "hard",
+          "mandatory_phase": 4,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-13",
+          "criterion_id": "C13-PRESERVE",
+          "severity": "hard",
+          "mandatory_phase": 3,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-13",
+          "criterion_id": "C13-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "method": "mechanical",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-14",
+          "criterion_id": "C14-ROUTE",
+          "severity": "hard",
+          "mandatory_phase": 2,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-14",
+          "criterion_id": "C14-MOTION",
+          "severity": "hard",
+          "mandatory_phase": 3,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-14",
+          "criterion_id": "C14-STYLE",
+          "severity": "advisory",
+          "mandatory_phase": 3,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-14",
+          "criterion_id": "C14-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "method": "mechanical",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-15",
+          "criterion_id": "C15-ROUTE",
+          "severity": "hard",
+          "mandatory_phase": 2,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-15",
+          "criterion_id": "C15-PRESERVE",
+          "severity": "hard",
+          "mandatory_phase": 3,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-15",
+          "criterion_id": "C15-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "method": "mechanical",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-16",
+          "criterion_id": "C16-EXPORT",
+          "severity": "hard",
+          "mandatory_phase": 6,
+          "method": "mechanical",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-16",
+          "criterion_id": "C16-FRAGMENTS",
+          "severity": "hard",
+          "mandatory_phase": 6,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-16",
+          "criterion_id": "C16-REPORT",
+          "severity": "hard",
+          "mandatory_phase": 6,
+          "method": "maintainer",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        },
+        {
+          "case_id": "case-16",
+          "criterion_id": "C16-TRACE",
+          "severity": "hard",
+          "mandatory_phase": 1,
+          "method": "mechanical",
+          "passed": 3,
+          "failed": 0,
+          "not-run": 0
+        }
+      ],
+      "reviewRows": 108,
+      "duplicateReviewKeys": 0,
+      "warnings": []
+    }
+  },
+  "result_directories": {
+    "baseline": "evals/results/2026-09-22-phase-two-bounded-review-17-baseline",
+    "candidate": "evals/results/2026-09-22-phase-two-bounded-review-17-candidate"
+  },
+  "review": {
+    "packet": "evals/reviews/2026-09-22-phase-two-bounded-fix-paired.jsonl",
+    "packet_sha256": "62e663cc0b0c78cab2ee0e07e2f22f3d58b0e9e34951376531db39670fc73807",
+    "mapping": "evals/reviews/2026-09-22-phase-two-bounded-fix-mapping.jsonl",
+    "original_ledgers": {
+      "baseline": "evals/reviews/2026-09-22-phase-two-bounded-fix-baseline-human.jsonl",
+      "candidate": "evals/reviews/2026-09-22-phase-two-bounded-fix-candidate-human.jsonl"
+    },
+    "effective_ledgers": {
+      "baseline": "evals/reviews/2026-09-22-phase-two-bounded-fix-baseline-human-corrected.jsonl",
+      "candidate": "evals/reviews/2026-09-22-phase-two-bounded-fix-candidate-human-corrected.jsonl"
+    },
+    "provenance": "evals/reviews/2026-09-22-phase-two-bounded-fix-human-provenance.jsonl",
+    "clarifications": "evals/reviews/2026-09-22-phase-two-bounded-fix-clarifications.jsonl",
+    "pairs": 48,
+    "criterion_pairs": 108,
+    "human_rows": 216,
+    "duplicate_keys": 0,
+    "clarification_policy": "Original responses, ledgers, and evaluations retained. One off-topic rationale clarified without a state change. One reversed-label preservation judgment explicitly corrected by the human after unblinding; only the two affected side rows differ in derived corrected ledgers."
+  },
+  "protected_original_baseline": "evals/results/2026-09-21-human-review-24/summary.json",
+  "protected_criteria": [
+    {
+      "case_id": "case-01",
+      "criterion_id": "C01-OUTPUT",
+      "method": "maintainer",
+      "mandatory_phase": 2
+    },
+    {
+      "case_id": "case-01",
+      "criterion_id": "C01-PROFILE",
+      "method": "maintainer",
+      "mandatory_phase": 4
+    },
+    {
+      "case_id": "case-01",
+      "criterion_id": "C01-TRACE",
+      "method": "mechanical",
+      "mandatory_phase": 1
+    },
+    {
+      "case_id": "case-02",
+      "criterion_id": "C02-OUTPUT",
+      "method": "maintainer",
+      "mandatory_phase": 2
+    },
+    {
+      "case_id": "case-02",
+      "criterion_id": "C02-PRESERVE",
+      "method": "maintainer",
+      "mandatory_phase": 3
+    },
+    {
+      "case_id": "case-02",
+      "criterion_id": "C02-PROFILE",
+      "method": "maintainer",
+      "mandatory_phase": 4
+    },
+    {
+      "case_id": "case-02",
+      "criterion_id": "C02-TRACE",
+      "method": "mechanical",
+      "mandatory_phase": 1
+    },
+    {
+      "case_id": "case-03",
+      "criterion_id": "C03-OUTPUT",
+      "method": "maintainer",
+      "mandatory_phase": 2
+    },
+    {
+      "case_id": "case-03",
+      "criterion_id": "C03-REVISION",
+      "method": "maintainer",
+      "mandatory_phase": 3
+    },
+    {
+      "case_id": "case-03",
+      "criterion_id": "C03-TRACE",
+      "method": "mechanical",
+      "mandatory_phase": 1
+    },
+    {
+      "case_id": "case-04",
+      "criterion_id": "C04-SCOPE",
+      "method": "maintainer",
+      "mandatory_phase": 3
+    },
+    {
+      "case_id": "case-04",
+      "criterion_id": "C04-DETAILS",
+      "method": "maintainer",
+      "mandatory_phase": 3
+    },
+    {
+      "case_id": "case-04",
+      "criterion_id": "C04-TRACE",
+      "method": "mechanical",
+      "mandatory_phase": 1
+    },
+    {
+      "case_id": "case-05",
+      "criterion_id": "C05-OUTPUT",
+      "method": "maintainer",
+      "mandatory_phase": 2
+    },
+    {
+      "case_id": "case-05",
+      "criterion_id": "C05-EXCLUSION",
+      "method": "maintainer",
+      "mandatory_phase": 5
+    },
+    {
+      "case_id": "case-05",
+      "criterion_id": "C05-TRACE",
+      "method": "mechanical",
+      "mandatory_phase": 1
+    },
+    {
+      "case_id": "case-06",
+      "criterion_id": "C06-TEXT-PRESENCE",
+      "method": "mechanical",
+      "mandatory_phase": 3
+    },
+    {
+      "case_id": "case-06",
+      "criterion_id": "C06-TEXT-BINDING",
+      "method": "maintainer",
+      "mandatory_phase": 3
+    },
+    {
+      "case_id": "case-06",
+      "criterion_id": "C06-TRACE",
+      "method": "mechanical",
+      "mandatory_phase": 1
+    },
+    {
+      "case_id": "case-07",
+      "criterion_id": "C07-COUNT",
+      "method": "mechanical",
+      "mandatory_phase": 6
+    },
+    {
+      "case_id": "case-07",
+      "criterion_id": "C07-DISTINCTNESS",
+      "method": "maintainer",
+      "mandatory_phase": 6
+    },
+    {
+      "case_id": "case-07",
+      "criterion_id": "C07-PRESERVE",
+      "method": "maintainer",
+      "mandatory_phase": 6
+    },
+    {
+      "case_id": "case-07",
+      "criterion_id": "C07-TRACE",
+      "method": "mechanical",
+      "mandatory_phase": 1
+    },
+    {
+      "case_id": "case-08",
+      "criterion_id": "C08-LIMIT",
+      "method": "mechanical",
+      "mandatory_phase": 2
+    },
+    {
+      "case_id": "case-08",
+      "criterion_id": "C08-PRESERVE",
+      "method": "maintainer",
+      "mandatory_phase": 3
+    },
+    {
+      "case_id": "case-08",
+      "criterion_id": "C08-TRACE",
+      "method": "mechanical",
+      "mandatory_phase": 1
+    },
+    {
+      "case_id": "case-09",
+      "criterion_id": "C09-ROUTING",
+      "method": "maintainer",
+      "mandatory_phase": 2
+    },
+    {
+      "case_id": "case-09",
+      "criterion_id": "C09-TRACE",
+      "method": "mechanical",
+      "mandatory_phase": 1
+    },
+    {
+      "case_id": "case-10",
+      "criterion_id": "C10-ROUTING",
+      "method": "maintainer",
+      "mandatory_phase": 2
+    },
+    {
+      "case_id": "case-10",
+      "criterion_id": "C10-TRACE",
+      "method": "mechanical",
+      "mandatory_phase": 1
+    },
+    {
+      "case_id": "case-11",
+      "criterion_id": "C11-CANONICAL-TEXT",
+      "method": "mechanical",
+      "mandatory_phase": 5
+    },
+    {
+      "case_id": "case-11",
+      "criterion_id": "C11-PROFILE",
+      "method": "maintainer",
+      "mandatory_phase": 4
+    },
+    {
+      "case_id": "case-11",
+      "criterion_id": "C11-CONSTRAINTS",
+      "method": "maintainer",
+      "mandatory_phase": 5
+    },
+    {
+      "case_id": "case-11",
+      "criterion_id": "C11-TRACE",
+      "method": "mechanical",
+      "mandatory_phase": 1
+    },
+    {
+      "case_id": "case-11",
+      "criterion_id": "C11-LOOKUP-EVIDENCE",
+      "method": "maintainer",
+      "mandatory_phase": 5
+    },
+    {
+      "case_id": "case-12",
+      "criterion_id": "C12-PROFILE",
+      "method": "maintainer",
+      "mandatory_phase": 4
+    },
+    {
+      "case_id": "case-12",
+      "criterion_id": "C12-PRESERVE",
+      "method": "maintainer",
+      "mandatory_phase": 3
+    },
+    {
+      "case_id": "case-12",
+      "criterion_id": "C12-TRACE",
+      "method": "mechanical",
+      "mandatory_phase": 1
+    },
+    {
+      "case_id": "case-13",
+      "criterion_id": "C13-PROFILE",
+      "method": "maintainer",
+      "mandatory_phase": 4
+    },
+    {
+      "case_id": "case-13",
+      "criterion_id": "C13-PRESERVE",
+      "method": "maintainer",
+      "mandatory_phase": 3
+    },
+    {
+      "case_id": "case-13",
+      "criterion_id": "C13-TRACE",
+      "method": "mechanical",
+      "mandatory_phase": 1
+    },
+    {
+      "case_id": "case-14",
+      "criterion_id": "C14-ROUTE",
+      "method": "maintainer",
+      "mandatory_phase": 2
+    },
+    {
+      "case_id": "case-14",
+      "criterion_id": "C14-MOTION",
+      "method": "maintainer",
+      "mandatory_phase": 3
+    },
+    {
+      "case_id": "case-14",
+      "criterion_id": "C14-TRACE",
+      "method": "mechanical",
+      "mandatory_phase": 1
+    },
+    {
+      "case_id": "case-15",
+      "criterion_id": "C15-ROUTE",
+      "method": "maintainer",
+      "mandatory_phase": 2
+    },
+    {
+      "case_id": "case-15",
+      "criterion_id": "C15-PRESERVE",
+      "method": "maintainer",
+      "mandatory_phase": 3
+    },
+    {
+      "case_id": "case-15",
+      "criterion_id": "C15-TRACE",
+      "method": "mechanical",
+      "mandatory_phase": 1
+    },
+    {
+      "case_id": "case-16",
+      "criterion_id": "C16-EXPORT",
+      "method": "mechanical",
+      "mandatory_phase": 6
+    },
+    {
+      "case_id": "case-16",
+      "criterion_id": "C16-FRAGMENTS",
+      "method": "maintainer",
+      "mandatory_phase": 6
+    },
+    {
+      "case_id": "case-16",
+      "criterion_id": "C16-REPORT",
+      "method": "maintainer",
+      "mandatory_phase": 6
+    },
+    {
+      "case_id": "case-16",
+      "criterion_id": "C16-TRACE",
+      "method": "mechanical",
+      "mandatory_phase": 1
+    }
+  ],
+  "limitations": [
+    "C10-ANALYSIS fails all three repetitions on both sides; advisory Phase 4 profile work remains out of scope.",
+    "One human correction occurred after side identity was exposed during diagnosis; recorded explicitly, not represented as blinded.",
+    "No rendered-media quality assessment or image/video generation.",
+    "Provider immutable snapshot, seed, system fingerprint, and hidden provider instructions are unknown.",
+    "Local tool auto-approval is not an OS sandbox.",
+    "Worktree content identity is not a Git commit; no commit or push authorized."
+  ],
+  "scope": "Phase 2 routing/output contracts plus explicitly authorized bounded repairs only; no Phase 3+ implementation.",
+  "phase_acceptance": false
+}

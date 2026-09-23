@@ -1,0 +1,23 @@
+## Strengths
+- **Simple subject–setting structure:** One traveler in one location gives the image a potential focal point without overcrowding it.
+- **Coherent mood:** “Mysterious” and “cinematic” suggest an atmospheric direction and do not inherently conflict.
+- **Creative latitude:** Its brevity leaves room for interpretation, which can be useful for exploratory generation.
+
+## Concrete problems
+
+### Visible clarity
+- **“Mysterious traveler” is not visually defined.** There is no appearance, clothing, posture, expression, or action to establish either travel or mystery. The intended identity and mood depend on the model’s assumptions.
+- **“Beautiful place” supplies an evaluation, not a setting.** It identifies no landscape, architecture, spatial features, or other visible elements.
+- **“Amazing lighting” describes desired quality rather than light behavior.** Direction, source, softness, color, and contrast are unspecified, so the phrase offers little control over visibility or atmosphere.
+
+### Composition
+- **“Dynamic composition” requests an effect without defining an arrangement.** There is no framing, camera angle, subject placement, or directional structure to guide the viewer’s eye.
+- **The visual hierarchy is unresolved.** The prompt does not establish whether the traveler or the location should dominate, or how large the figure should appear within the frame.
+- **Subject–environment interaction is absent.** Beyond being “in” the place, the traveler has no specified pose, action, or spatial relationship that could organize the scene.
+
+### Ambiguity
+- **“Cinematic” is a broad style cue.** It may influence framing, color grading, lighting, or realism, but does not specify which interpretation matters.
+- **Most modifiers are subjective.** “Mysterious,” “beautiful,” “amazing,” and “dynamic” allow widely different outcomes without providing a clear basis for judging whether the intended image was achieved.
+- **The ambiguity is not a contradiction.** The prompt’s main weakness is under-specification, not incompatible instructions.
+
+**Overall:** It communicates a mood more clearly than a visible scene. It is a usable exploratory seed, but offers weak control over subject readability, composition, and consistency across outputs.

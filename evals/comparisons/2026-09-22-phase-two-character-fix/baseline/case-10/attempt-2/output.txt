@@ -1,0 +1,15 @@
+### 1. Fidelity to the brief
+- **SDXL prompt:** Explicitly preserves all core elements: a green bicycle, leaning against a white brick wall, in soft overcast daylight. Eye-level framing, a medium shot, and a restrained palette are additions, not requirements of the brief.
+- **Krea 2 prompt:** Preserves the subject, wall, and lighting. “Rests against” suggests the intended support relationship but is slightly less explicit than “leaning against.” “Even” is consistent with overcast light. Eye-level framing and a restrained palette are added choices.
+
+### 2. Model-appropriate expression
+- **SDXL prompt:** Its short, concrete, comma-separated phrases are understandable and usable. However, the selected skill’s SDXL profile favors concise natural-language prose over tag-style phrasing. This is a mild stylistic mismatch, not a fundamental problem.
+- **Krea 2 prompt:** The cohesive sentence clearly connects the subject, setting, lighting, and composition. It fits the skill’s generic image-prompt guidance; the skill provides no Krea 2-specific profile, so a stronger claim about model-specific suitability is not supported.
+
+### 3. Likely ambiguity
+- **SDXL prompt:** “Leaning against” clearly specifies the pose. “Medium shot” leaves uncertain how much of the bicycle should be visible and could permit cropping. “Eye-level” is less precise for a bicycle than for a human subject.
+- **Krea 2 prompt:** “Rests against” leaves slightly more latitude in the bicycle’s angle and posture. Eye level specifies viewpoint but not shot distance, so framing is more open than in the SDXL version.
+- **Both:** “Restrained palette” could mean fewer colors or reduced saturation, potentially muting the green. Neither specifies bicycle type or exact green shade, but those are freedoms left by the brief rather than fidelity failures.
+
+### 4. Overall comparison
+**Both are faithful and concise.** The SDXL prompt has a slight edge in literal pose fidelity and framing specificity; the Krea 2 prompt has smoother natural-language expression. Neither wording alone establishes which model will produce the more faithful image.

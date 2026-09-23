@@ -6,6 +6,8 @@ This Phase 1 suite implements the 16-case portfolio approved in [issue #16](http
 
 The fixed starting revision is `5fcc3d0eded83c6a9aaf472a1dc8d5ce24011d9d`. Baseline failures are valid evidence. Phase 1 accepts a reviewed case set and honest, complete baseline capture; it does not require the fixed revision to satisfy future behavior.
 
+On 2026-09-22 the maintainer approved keeping all 16 requests unchanged while moving only the existing `C07-COUNT` criterion's `mandatory_phase` from 6 to 2. This criterion-scheduling change creates a new cohort for future evaluation; it does not alter or relabel the immutable original Phase 1 evidence.
+
 The generating session MUST receive the case request and its declared fixtures, but MUST NOT receive this rubric, criteria, expected judgments, prior outputs, or reviewer notes.
 
 ## Concrete portfolio
@@ -20,7 +22,7 @@ Cases appear in this exact order in `evals/cases.jsonl`.
 | 04 | Character design only | Adult lighthouse keeper with fixed anatomy, clothing, and equipment; no scene treatment | Character scope and preservation P3 |
 | 05 | Empty courtyard with no people | Empty courtyard plus scoped exclusions; no unsolicited negative field | Routing P2; exclusion handling P5 |
 | 06 | Exact required lettering `OPEN` | Bakery sign centered above door; literal presence and semantic binding checked separately | Exact text and preservation P3 |
-| 07 | Four composition variants | Fixed cube/sphere/sign scene; only composition may vary | Count, distinctness, and preservation P6 |
+| 07 | Four composition variants | Fixed cube/sphere/sign scene; only composition may vary | Count P2; distinctness and preservation P6 |
 | 08 | Expand within an explicit word limit | Rowboat brief; complete output limited to 55 words | Output/limit P2; preservation P3 |
 | 09 | Critique without replacement | Critique a vague prompt; no rewrite or variants | Critique routing P2 |
 | 10 | Compare SDXL and Krea 2 prompts | Labeled analysis of two supplied prompts; no merged third prompt | Comparison routing P2; profile analysis P4 |
@@ -127,7 +129,7 @@ A changed case, criterion, fixture, environment, or capture mechanism creates a 
 1. Have the maintainer review `evals/cases.jsonl`, this rubric, and the fixture before any baseline model call.
 2. Use fresh, isolated workspaces and sessions for each case, revision, and repetition. Load only the selected Scenario Maker revision and its applicable references. Hold instructions, fixture bytes, settings, tools, and permissions constant.
 3. Permit local Danbooru lookup for case 11, fixture inspection for case 15, and the requested fixture-local file write for case 16. Do not permit web research, other skills, delegation, model switching, or image/video generation. Do not provide this rubric to the generator.
-4. Capture the fixed baseline with `python3 evals/run_baseline.py --out evals/baseline/<new-cohort>`. The runner owns the fixed revision and 16 × 3 schedule; do not add unsupported flags. A development `--smoke` capture is one separate smoke attempt and is never acceptance evidence.
+4. Capture the fixed original-baseline behavior with `python3 evals/run_baseline.py --out evals/baseline/<new-cohort>`. This mode still owns the fixed revision and 16 × 3 schedule; it does not read the worktree as the selected skill. A development `--smoke` capture is one separate smoke attempt and is never acceptance evidence.
 5. Evaluate into a separate directory with `python3 evals/evaluate.py --cases evals/cases.jsonl --results evals/baseline/<cohort> --out evals/results/<new-review-dir> [--reviews PATH]`. Mechanical checks never fill semantic judgments.
 6. Confirm all 48 attempt manifests and raw evidence references exist, record limitations, then freeze the cohort. Do not run or fabricate missing human review.
 
@@ -135,9 +137,9 @@ Reference environment from the decision: OMP observed `18.2.6`, requested model 
 
 ### Capture boundary
 
-`run_baseline.py` only captures the fixed baseline; it does not implement a candidate comparison. It refuses an existing output directory. Default scheduling submits cases in portfolio order, repetitions 1–3, with at most three fresh OMP processes in flight and a 300-second limit per attempt. Errors and timeouts are retained without replacement.
+Without `--candidate-worktree`, `run_baseline.py` preserves the fixed original-baseline capture path. It refuses an existing output directory. Default scheduling submits cases in portfolio order, repetitions 1–3, with at most three fresh OMP processes in flight and a 300-second limit per attempt. Errors and timeouts are retained without replacement. The optional paired path is specified below.
 
-Each attempt uses a separate temporary workspace outside this repository, an explicit selected-skill path exported from the fixed revision, and independent fixture/cache paths. Selected source files are read-only hardlinks to one per-cohort snapshot; CSVs are not recopied for each attempt. Only requested generated text artifacts are copied back. Raw source content is recoverable through the fixed revision and `selected-skill-files.json` hashes.
+Each fixed-baseline attempt uses a separate temporary workspace outside this repository, an explicit selected-skill path exported from the fixed revision, and independent fixture/cache paths. Selected source files are read-only hardlinks to one per-cohort snapshot; CSVs are not recopied for each attempt. Candidate attempts have the same isolation but hardlink the retained candidate snapshot. Only requested generated text artifacts are copied back. Fixed source content is recoverable through its Git revision and file hashes; candidate source content is recoverable through the retained content-addressed snapshot and file hashes.
 
 `omp-config.json` disables discovery, external research surfaces, automatic retries/model fallback, compaction, advisor, memory, title generation, and media generation. CLI flags expose only local `read`, `grep`, `glob`, `bash`, and `write`. This is a controlled tool/prompt policy, **not an OS filesystem/network sandbox**. The capture extension replaces inherited system instructions with the exact `generator-system.txt` contents; it does not load the rubric or future prompt policies.
 
@@ -147,6 +149,33 @@ The manifest records the actual host/model request, command, scheduling, deadlin
 
 ## Later paired cohorts
 
-A complete candidate comparison contains 96 attempts: three fixed-baseline and three candidate attempts for each of the same 16 cases. Rerun the fixed revision alongside every candidate under the same recorded environment, interleave baseline and candidate execution, and preserve case/repetition identity.
+A complete candidate comparison contains 96 attempts: three fixed-baseline and three candidate attempts for each of the same 16 cases. The paired runner reruns the fixed revision alongside a content-addressed snapshot of the current worktree, interleaves adjacent baseline/candidate submissions for each case and repetition, and preserves case/repetition identity. The configured `--jobs` value is the maximum number of OMP processes in flight. There are no retries or replacement slots: errors, timeouts, partial output, and missing output remain evidence.
 
-Present paired outputs to the maintainer under anonymous randomized labels. Randomize labels without breaking the case/repetition pair; store the label mapping separately from review cards and raw attempt directories. Do not invent a candidate side for the baseline-only cohort. Record scheduling and every environment difference. Latency and cost remain advisory.
+The candidate source is not a Git revision. `--candidate-worktree` copies the current `SKILL.md`, `references/`, source scripts, and the same tracked Danbooru CSV inputs used by the baseline into `candidate-source-snapshot/`, excludes caches, bytecode, and the generated SQLite index, hashes every retained file, and identifies the source as `worktree-sha256-<manifest-hash>`. The retained immutable source snapshot plus its file manifest is the recovery authority for that side. The baseline side remains recoverable from the fixed Git revision and its file manifest. Never describe the worktree identity as a commit.
+
+Freeze the intended source files before invoking a paired capture, then run:
+
+```text
+python3 evals/run_baseline.py --candidate-worktree --out evals/comparisons/<new-cohort>
+```
+
+The output path must not already exist. The comparison root records the ordered submission schedule, source identities, capture-tool provenance, controlled-equal settings, the intentional selected-source difference, and a summary. Raw attempts are independently evaluable beneath `baseline/` and `candidate/`. A full run must contain exactly 16 cases × 3 attempts × 2 sides.
+
+Before an expensive full run, the same path may be exercised with one separate pair:
+
+```text
+python3 evals/run_baseline.py --candidate-worktree --smoke --out evals/capture-checks/<new-paired-smoke>
+```
+
+Paired smoke checks capture mechanics only. It is not one of the 96 attempts, cannot establish semantic or mechanical acceptance, and must not be merged into a full cohort.
+
+Run the existing evaluator separately for each side:
+
+```text
+python3 evals/evaluate.py --cases evals/cases.jsonl --results evals/comparisons/<cohort>/baseline --out evals/results/<baseline-review-dir>
+python3 evals/evaluate.py --cases evals/cases.jsonl --results evals/comparisons/<cohort>/candidate --out evals/results/<candidate-review-dir>
+```
+
+These runs provide mechanical scores and independently anonymized review material. The evaluator does **not** currently create a shared randomized label map that binds each baseline/candidate case-and-attempt pair. Before paired blind preference review, an integration step must combine the two review packets by exact `{case_id, attempt}`, assign two randomized side labels per pair, and retain the shared label mapping outside both review cards and immutable raw trees. Do not infer or fabricate paired review support from separate evaluator runs.
+
+The maintainer remains the final semantic reviewer. Candidate acceptance requires all applicable hard Phase 2 criteria to pass all three candidate attempts, completed human judgments for maintainer criteria, and comparison against the protected original-baseline no-regression set. A fresh paired baseline rerun measures contemporaneous environment variance; it is not a replacement for, or relabeling of, the first immutable baseline. Record scheduling and every observed environment difference. Latency and cost remain advisory.

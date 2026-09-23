@@ -1,0 +1,14 @@
+### 1. Fidelity to the brief
+- **SDXL prompt:** Explicitly preserves all core details: a green bicycle, leaning against a white brick wall, in soft overcast daylight. Eye-level framing, a medium shot, and a restrained palette are additions—not contradictions—but narrow the brief’s visual possibilities.
+- **Krea 2 prompt:** Also preserves the core scene. “Rests against” strongly suggests leaning, though it is slightly less explicit. “Even” is consistent with soft overcast lighting. Eye-level framing and a restrained palette are additional constraints.
+
+### 2. Model-appropriate expression
+- **SDXL prompt:** The short, concrete, comma-separated phrases are readily understandable. However, the selected skill’s SDXL profile favors concise natural-language prose rather than tag-like phrasing. This is a stylistic mismatch with that preference, not evidence that the prompt will fail.
+- **Krea 2 prompt:** The cohesive sentence clearly connects subject, wall, lighting, and framing. It fits general natural-language image-prompt guidance. The selected skill has no Krea 2 profile, so a stronger claim about model-specific optimization is not supported.
+
+### 3. Likely ambiguity
+- **SDXL prompt:** “Leaning against” gives a clear physical relationship. “Medium shot” adds framing guidance but does not reliably specify whether both wheels and the entire bicycle remain visible. “Restrained color palette” could mean fewer colors or muted saturation, potentially weakening the green.
+- **Krea 2 prompt:** “Rests against” is marginally less precise about posture. Eye level specifies viewpoint but not shot size, leaving more freedom in cropping and subject scale. “Restrained palette” has the same color ambiguity as the SDXL version.
+
+### Overall comparison
+**Both are faithful and low-ambiguity descriptions of the brief.** The SDXL prompt is more explicit about leaning and shot size; the Krea 2 prompt has more cohesive prose but leaves framing looser. Neither specifies a rendering style, so photographic versus illustrated treatment remains open. Wording alone does not establish which model will produce the more faithful image.

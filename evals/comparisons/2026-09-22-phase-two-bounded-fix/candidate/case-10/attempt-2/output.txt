@@ -1,0 +1,12 @@
+### SDXL prompt
+- **Fidelity:** Explicitly preserves all brief essentials: the green bicycle, its leaning relationship to the white brick wall, and soft overcast daylight. Eye-level framing, a medium shot, and a restrained palette are additions, but do not inherently contradict the brief.
+- **Model-appropriate expression:** The concise comma-separated phrases are intelligible for SDXL, especially because the subject–wall relationship remains intact. The selected skill favors natural descriptive prose for SDXL, but that is a preference—not a requirement or evidence that this wording will perform poorly.
+- **Likely ambiguity:** “Medium shot” provides framing guidance without guaranteeing the entire bicycle is visible. “Restrained color palette” could mean fewer colors or muted saturation, potentially reducing the bicycle’s green intensity.
+
+### Krea 2 prompt
+- **Fidelity:** Preserves the subject, wall, and lighting. “Rests against” suggests support/contact but is slightly less explicit about a visible lean than “leaning against.” “Even” is consistent with soft overcast illumination. Like the SDXL version, it adds eye-level framing and palette restraint.
+- **Model-appropriate expression:** The sentence is clear, coherent natural-language image prompting. The selected skill supplies no verified Krea 2 profile, so its specific syntax preferences or comparative performance cannot be established from that guidance.
+- **Likely ambiguity:** Eye level specifies viewpoint but not shot distance, leaving framing more open than the SDXL prompt. “Restrained palette” has the same interpretive uncertainty as in the SDXL version.
+
+### Overall comparison
+Both closely match the brief. **The SDXL prompt is slightly more explicit about the required lean and more constrained in framing; the Krea 2 prompt is more fluid prose but leaves more compositional latitude.** Neither contains a clear contradiction. Wording alone does not establish which model will render the scene more faithfully.

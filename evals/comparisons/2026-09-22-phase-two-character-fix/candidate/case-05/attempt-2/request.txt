@@ -1,0 +1,3 @@
+Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.
+
+Write one text-to-image prompt for an empty sunlit stone courtyard with a dry fountain, ivy on the walls, and closed wooden doors. No people, animals, statues, silhouettes, or reflections of figures may appear. Return only the prompt and do not add a negative-prompt field.

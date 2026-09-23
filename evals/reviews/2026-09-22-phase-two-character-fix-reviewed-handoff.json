@@ -1,0 +1,144 @@
+{
+  "kind": "phase-two-reviewed-blocked-handoff",
+  "created_at": "2026-09-22T22:13:46.824Z",
+  "issue": "https://github.com/lfelipegg/scenario-maker-skill/issues/4",
+  "candidate_identity": "worktree-sha256-8cfc630ccbbd60c4bd6d3ee472adbc920d5f8a030c0e824e973fd5a5c0c03b6a",
+  "cohort": "evals/comparisons/2026-09-22-phase-two-character-fix",
+  "execution": {
+    "attempts": 96,
+    "completed": 96,
+    "errors": 0,
+    "timeouts": 0,
+    "outputs": 96,
+    "trace_complete": 96,
+    "semantic_review": "not-run",
+    "acceptance": "not assessed"
+  },
+  "mechanical_per_side": {
+    "passed": 63,
+    "failed": 0,
+    "not-run": 0
+  },
+  "human_results": {
+    "baseline": {
+      "out": "evals/results/2026-09-22-phase-two-human-review-16-baseline",
+      "human": {
+        "passed": 98,
+        "failed": 10,
+        "not-run": 0
+      },
+      "warnings": []
+    },
+    "candidate": {
+      "out": "evals/results/2026-09-22-phase-two-human-review-16-candidate",
+      "human": {
+        "passed": 98,
+        "failed": 10,
+        "not-run": 0
+      },
+      "warnings": []
+    }
+  },
+  "review_ledgers": {
+    "baseline": {
+      "path": "evals/reviews/2026-09-22-phase-two-character-fix-baseline-human.jsonl",
+      "rows": 108,
+      "duplicate_keys": 0,
+      "sha256": "e38745ece43a780a6444012e3416a790ca9c50a617b1c294d6886686c5aaea2a"
+    },
+    "candidate": {
+      "path": "evals/reviews/2026-09-22-phase-two-character-fix-candidate-human.jsonl",
+      "rows": 108,
+      "duplicate_keys": 0,
+      "sha256": "42446f9bab0363c8f0c12d4787b3388284a83e7f3f4e46cf2baf2507eb41608b"
+    }
+  },
+  "provenance": {
+    "path": "evals/reviews/2026-09-22-phase-two-character-fix-human-provenance.jsonl",
+    "records": 51,
+    "criterion_keys": 108,
+    "duplicate_criterion_keys": 0,
+    "sha256": "631f00855c397cd57debbcb28541006fdea10b8310caac3a604c0e75a868e350"
+  },
+  "scored_hashes": {
+    "baseline": {
+      "scores.jsonl": "4a77385602e783867bf6f41f5833c673a2ce89937763cef0af9f316bd2f764aa",
+      "summary.json": "7d2b7a667d0e84603beef70944448ebd810d2e9f2c59b13e3a54cc2d2995a399"
+    },
+    "candidate": {
+      "scores.jsonl": "c09a2084d54a35762559cdf896a16a6ae4bb884c66d33d64b3b6088df4565f4b",
+      "summary.json": "8838c5026cef319bca648b369826c673c63d612786d6b3da959dcd7c976369e0"
+    }
+  },
+  "candidate_blocking_hard_failures": [
+    {
+      "case_id": "case-11",
+      "attempt": 2,
+      "criterion_id": "C11-PROFILE",
+      "state": "failed",
+      "phase": 4,
+      "evidence": "Blinded pair-ac5846ac0e04, output B: The spaced prose phrase adult woman violates the requested Danbooru-style formatting under this criterion."
+    },
+    {
+      "case_id": "case-11",
+      "attempt": 3,
+      "criterion_id": "C11-PROFILE",
+      "state": "failed",
+      "phase": 4,
+      "evidence": "Blinded pair-0dc78c947134, output B: The spaced prose phrase adult woman violates the requested Danbooru-style formatting under this criterion."
+    },
+    {
+      "case_id": "case-12",
+      "attempt": 1,
+      "criterion_id": "C12-PRESERVE",
+      "state": "failed",
+      "phase": 3,
+      "evidence": "Blinded pair-51197479237b, output A: Retains the woman and supplied attributes but adds unsupported scene/presentation details, including infrastructure/props and wet-pavement conditions, exceeding the maintainer’s stated preservation boundary."
+    },
+    {
+      "case_id": "case-12",
+      "attempt": 2,
+      "criterion_id": "C12-PRESERVE",
+      "state": "failed",
+      "phase": 3,
+      "evidence": "Blinded pair-056530b35cc7, output A: Retains the woman and supplied attributes but adds unsupported scene/presentation details, including infrastructure/props and wet-pavement conditions, exceeding the maintainer’s stated preservation boundary."
+    },
+    {
+      "case_id": "case-12",
+      "attempt": 3,
+      "criterion_id": "C12-PRESERVE",
+      "state": "failed",
+      "phase": 3,
+      "evidence": "Blinded pair-4606f403a688, output B: Retains the woman and supplied attributes but adds unsupported scene/presentation details, including infrastructure/props and wet-pavement conditions, exceeding the maintainer’s stated preservation boundary."
+    },
+    {
+      "case_id": "case-13",
+      "attempt": 1,
+      "criterion_id": "C13-PRESERVE",
+      "state": "failed",
+      "phase": 3,
+      "evidence": "Blinded pair-db0e933dcf59, output B: Retains core supplied details but adds unsupported props, actions, and scene/presentation details, including a screwdriver and extra tools, beyond the maintainer’s stated Balanced-create preservation boundary."
+    },
+    {
+      "case_id": "case-13",
+      "attempt": 2,
+      "criterion_id": "C13-PRESERVE",
+      "state": "failed",
+      "phase": 3,
+      "evidence": "Blinded pair-47acb7e15f55, output A: Retains core supplied details but adds unsupported props, actions, and scene/presentation details, including a screwdriver and extra tools, beyond the maintainer’s stated Balanced-create preservation boundary."
+    }
+  ],
+  "advisory_failures": "C10-ANALYSIS attempts 1-3 on both sides: legacy SDXL/Krea 2 profile guidance contradicts the settled profile decision. Scheduled Phase 4; advisory, not a hard blocker.",
+  "review_boundary_notes": [
+    "All user selections and full custom responses are retained; no model-granted semantic acceptance.",
+    "C13 attempt-3 blinded output A was accepted for explicit repair-at-workbench binding despite acknowledged additions; the first two pairs were rejected for unsupported invention. Preserve those judgments rather than silently broadening or narrowing the criterion.",
+    "Fresh baseline failures do not shrink the original protected 3-of-3 hard set.",
+    "Literal/relational fallback must preserve the settled ordinary-Danbooru policy; do not resolve profile failures by inventing canonical tags or changing adult appearance to mature without authorization."
+  ],
+  "source_image_shown_to_reviewer": "evals/fixtures/case15-geometric-source.png",
+  "phase_two_accepted": false,
+  "phase_two_issue_closed": false,
+  "commit_or_push_authorized": false,
+  "later_phases_started": false,
+  "next_decision": "Resolve the seven candidate hard-gate failures or pause explicitly; no acceptance can be inferred from completed review or mechanical success."
+}

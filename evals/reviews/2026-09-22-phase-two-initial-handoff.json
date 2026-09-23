@@ -1,0 +1,70 @@
+{
+  "kind": "phase-two-initial-cohort-review-handoff",
+  "created_at": "2026-09-22T20:38:55.403Z",
+  "cohort": "evals/comparisons/2026-09-22-phase-two",
+  "candidate_identity": "worktree-sha256-eec9f105b8186ccf396f1694faf70172a433c89b3f93d0c4bbce1f6e0810a32d",
+  "mechanical": {
+    "baseline": {
+      "counts": {
+        "mechanical": {
+          "passed": 63,
+          "failed": 0,
+          "not-run": 0
+        },
+        "maintainer": {
+          "passed": 0,
+          "failed": 0,
+          "not-run": 108
+        }
+      },
+      "warnings": [],
+      "failures": []
+    },
+    "candidate": {
+      "counts": {
+        "mechanical": {
+          "passed": 60,
+          "failed": 0,
+          "not-run": 3
+        },
+        "maintainer": {
+          "passed": 0,
+          "failed": 0,
+          "not-run": 108
+        }
+      },
+      "warnings": [],
+      "failures": []
+    }
+  },
+  "integrity": {
+    "attempts": 96,
+    "rawFiles": 480,
+    "artifacts": 6,
+    "candidateSnapshotFiles": 16,
+    "sharedContext": {
+      "model": {
+        "provider": "openai-codex",
+        "id": "gpt-6-astra",
+        "name": "GPT-6-Astra"
+      },
+      "thinking": "high",
+      "tools": [
+        "read",
+        "grep",
+        "glob",
+        "bash",
+        "write"
+      ]
+    },
+    "captureRunnerMatchesCurrent": true
+  },
+  "paired_packet": "evals/reviews/2026-09-22-phase-two-initial-paired.jsonl",
+  "private_mapping": "evals/reviews/2026-09-22-phase-two-initial-mapping.jsonl",
+  "status": "Not accepted. Three candidate C04-TRACE slots are not-run; raw traces show unwanted random-generator calls. A corrected source is undergoing a separate complete paired cohort.",
+  "human_review": "not-run",
+  "source_fix": "references/characters.md limits the random generator to randomized requests or explicit generator use.",
+  "fixed_character_probe": "evals/capture-checks/2026-09-22-phase-two-character-routing",
+  "sdxl_critique_probe": "evals/capture-checks/2026-09-22-phase-two-sdxl-critique",
+  "probe_observation": "Fixed character routing uses only reads in all three post-fix probes. All three SDXL probes return critique analysis without a replacement prompt. These are development observations, not human semantic acceptance."
+}

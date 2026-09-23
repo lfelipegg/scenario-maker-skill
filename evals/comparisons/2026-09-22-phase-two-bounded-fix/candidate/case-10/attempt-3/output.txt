@@ -1,0 +1,17 @@
+### 1. Fidelity to the brief
+- **SDXL prompt:** Explicitly preserves every core detail: green bicycle, leaning against a white brick wall, and soft overcast daylight.
+- **Krea 2 prompt:** Preserves the subject, wall, and lighting. “Rests against” strongly suggests the intended pose, but is slightly less explicit about leaning.
+- **Comparison:** Both are highly faithful. Both add eye-level framing and a restrained palette beyond the brief; SDXL also adds a medium shot. “Even” in the Krea 2 prompt is consistent with soft overcast lighting rather than a meaningful scene change.
+
+### 2. Model-appropriate expression
+- **SDXL prompt:** The concise comma-separated visual phrases are suitable, and the bicycle–wall relationship remains intact. The skill recommends natural descriptive prose as SDXL’s default, but this is a preference, not a syntax requirement; the supplied wording is not inappropriate.
+- **Krea 2 prompt:** The full sentence is clear, coherent natural-language image prompting. The selected skill does not provide a verified Krea 2 profile, so its model-specific suitability cannot be established beyond that general assessment.
+- **Comparison:** Neither wording alone supports a claim of better rendering performance.
+
+### 3. Likely ambiguity
+- **SDXL prompt:** “Leaning against” clearly specifies the relationship. “Medium shot” adds framing guidance but does not reliably establish whether the whole bicycle, including both wheels, stays in frame.
+- **Krea 2 prompt:** “Rests against” leaves slightly more latitude in the bicycle’s angle and support. Eye-level framing specifies viewpoint but not shot size, leaving crop and subject scale more open.
+- **Both:** “Restrained palette” could mean fewer colors or reduced saturation, potentially muting the bicycle’s green. Neither specifies bicycle type, exact green shade, or orientation; these are ordinary open choices, not fidelity failures.
+
+### Overall comparison
+**SDXL is marginally more explicit about the required pose and framing. Krea 2 expresses essentially the same scene in smoother prose, with slightly more compositional latitude.** Both communicate the brief clearly; the main differences concern specificity, not substantive scene content.
