@@ -15,6 +15,25 @@ Scenario Maker is an agent skill for writing, refining, critiquing, and batching
 - Produce requested negative prompts, controlled variants, exploratory variants, and randomized character batches.
 - Save ComfyUI wildcard batches as newline-separated `.txt` files.
 
+## Supported models
+
+The skill provides model-specific **prompt-writing guidance**, not model execution. Name the target in your request to select its conventions.
+
+| Model | Covered versions or variants | Default prompt style |
+| --- | --- | --- |
+| [SDXL](references/models/sdxl.md) | Stable Diffusion XL 1.0 Base | Compact natural-language phrases. |
+| [Local Krea 2](references/models/krea-2.md) | Open RAW and Turbo checkpoints | A cohesive natural-language paragraph; Medium detail by default. |
+| [Illustrious XL](references/models/illustrious.md) | Official v0.1 and v1.0 bases; aliases include `Illustrious` and `ILXL` | Danbooru-style tags. |
+| [NoobAI XL](references/models/noobai.md) | 1.1 epsilon-prediction and V-Pred 1.0 | Tags and short visual phrases, with spaces instead of underscores. |
+| [Pony Diffusion](references/models/pony-v6.md) | V6 XL; aliases include `Pony` and `PDXL` | Tags and short visual phrases using applicable score/source/rating conventions. |
+| [Wan](references/video-prompts.md#wan-video-format) | Wan-style text-to-video and image-to-video guidance; no version-specific profile | One cohesive cinematic paragraph describing authorized motion and scene details. |
+
+Explicit format requests override these presentation defaults. For example, you can ask for Illustrious prose or an SDXL tag prompt.
+
+**Coverage boundaries:** local Krea 2 guidance does not cover hosted Medium, Large, or Medium Turbo. Model-family names do not automatically extend support to newer releases, fine-tunes, or merges. Specify the exact checkpoint and interface when their differences matter.
+
+For other models, the skill can write generic image or video prompts, but it does not claim model-specific syntax or capabilities without supporting guidance. With no model named, it uses generic task guidance rather than guessing a target.
+
 ## Getting started
 
 1. Make this directory available to an assistant that supports agent skills, using that application's skill installation or discovery mechanism. Keep `SKILL.md`, `references/`, `scripts/`, and `docs/` together so the skill can access its supporting instructions and lookup data.
