@@ -1,0 +1,84 @@
+{
+  "case_id": "wild-09",
+  "attempt": 1,
+  "revision": "worktree-sha256:90a06bc0f7837b714af8f91f22bc3ce895ba6853fd69068bdda0c880bf742939",
+  "started_at": "2026-09-23T16:15:12.196284+00:00",
+  "elapsed_seconds": 14.632,
+  "command": [
+    "omp",
+    "--cwd",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/wild-conflict-recapture-20260923T161511913976Z/wild-conflict-recapture-nas21q0p/baseline/wild-09/attempt-1",
+    "--print",
+    "--mode",
+    "json",
+    "--model",
+    "openai-codex/gpt-6-astra",
+    "--thinking",
+    "high",
+    "--no-session",
+    "--no-title",
+    "--no-prewalk",
+    "--no-skills",
+    "--no-rules",
+    "--no-extensions",
+    "--no-lsp",
+    "--no-pty",
+    "--tools",
+    "read,grep,glob,bash,write",
+    "--approval-mode",
+    "yolo",
+    "--config",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/omp-config.json",
+    "--system-prompt",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/generator-system.txt",
+    "--extension",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/capture.ts",
+    "--max-time",
+    "300s",
+    "Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.\n\nWild mode: create a bakery at dusk with a rectangular sign above its door reading exactly \"OPEN\". The entire response must be exactly one word."
+  ],
+  "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/wild-conflict-recapture-20260923T161511913976Z/wild-conflict-recapture-nas21q0p/baseline/wild-09/attempt-1",
+  "execution": {
+    "status": "completed",
+    "exit_code": 0,
+    "error": null,
+    "model_errors": [],
+    "malformed_trace_lines": []
+  },
+  "raw": {
+    "output": "output.txt",
+    "partial_output": null,
+    "trace": "trace.jsonl",
+    "stderr": "stderr.txt",
+    "context": "context.jsonl"
+  },
+  "trace_complete": true,
+  "artifacts": [],
+  "observed_context": [
+    {
+      "type": "eval_context",
+      "systemPrompt": "You are a prompt-writing assistant executing the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md. Read that file and only its applicable references. Resolve its reference and script paths relative to ./selected-skill, not an installed skill. Do not discover or load other skills, repository instructions, past sessions, evaluator files, or web sources.\n\nOnly local read, grep, glob, bash, and write tools are available. Use them for the selected skill's references, local lookup/scripts, supplied fixtures, and requested workspace-local text exports. Keep writes within this fresh workspace. Do not edit the selected skill, execute image/video generation or frame extraction, delegate, switch models, access the network, or inspect credentials. This is prompt writing, not generation. If clarification is necessary, ask in your final response; this non-interactive run cannot receive an answer.\n\nApply the selected skill to the user's request. Do not discuss evaluation or scoring. The workspace starts with no prior conversation or generated outputs.\n",
+      "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/wild-conflict-recapture-20260923T161511913976Z/wild-conflict-recapture-nas21q0p/baseline/wild-09/attempt-1",
+      "model": {
+        "provider": "openai-codex",
+        "id": "gpt-6-astra",
+        "name": "GPT-6-Astra"
+      },
+      "thinking": "high",
+      "tools": [
+        "read",
+        "grep",
+        "glob",
+        "bash",
+        "write"
+      ]
+    }
+  ],
+  "raw_checksums": {
+    "request.txt": "d1852d643191a6120e955fa3aae764612eee48bd14e79dffb8efd727825d92d1",
+    "output.txt": "d357f8dd69a6e25be994f34f5dfe88822b026e19b7b07688f1de0fe47ddca56c",
+    "context.jsonl": "a86dee63acb67ca4c0f184fd0182611015bc17cb0d47728e38b3c8fa26b3d064",
+    "trace.jsonl": "7de46e8ed7d4076eb5a837eb641833d7e118ae8e7fe1e51b0db6493f2e4d0998",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

@@ -1,0 +1,19 @@
+subject_definitions:
+<Subject 1> is the black-haired adult vendor; <Picture 1> supplies only their facial identity and red coat.
+
+summary:
+[reference generation] In two shots, <Subject 1> sells bottled dawn at a night market, speaking one uninterrupted English line across the cut.
+
+retention_analysis:
+<Subject 1> ([Shot 1–2]): fully_preserved — retain the referenced face and red coat, with black hair. Do not transfer the picture’s pose, background, composition, or lighting.
+
+detailed_description:
+Live-action magical realism, amber lanterns against indigo night.
+[Shot 1] A slow push-in frames <Subject 1> behind a market counter lined with glass bottles containing tiny glowing sunrises. They uncork one bottle and begin speaking in a warm, lightly husky mid-register voice, lips synchronized: <d>[English] Take a little dawn<scenetrans></d>. The same audio continues uninterrupted across the cut.
+[Shot 2] Cut to a close-up of the open bottle between their red sleeves. Golden light spills across the counter as a miniature sun rises inside the glass. Now off camera but still speaking diegetically, <Subject 1> (S1) completes the same utterance without restarting: <d>[English] <scenetrans>home with you.</d>
+
+overall_soundscape:
+Soft market footsteps, canvas awnings rustling, a cork pop and delicate glass clinks beneath the vendor’s voice. No other speech or diegetic music.
+
+non_diegetic_music:
+N/A — no music.

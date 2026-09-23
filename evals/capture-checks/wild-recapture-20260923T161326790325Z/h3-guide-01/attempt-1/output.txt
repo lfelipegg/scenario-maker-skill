@@ -1,0 +1,21 @@
+subject_definitions:
+<Subject 1> is Mira, whose appearance comes from <Picture 1>.
+<Subject 2> is Jo, whose appearance comes from <Picture 2>.
+<Audio 1> supplies only the warm voice timbre for <Subject 1> (S2), not source words, delivery, or a copied audio signal.
+
+summary:
+[reference generation + audio reference] <Subject 2> speaks first, <Subject 1> replies, then both speak together. Preserve their respective referenced appearances.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1]): fully_preserved - retain Mira's appearance from <Picture 1>; no background or pose transfer.
+<Subject 2> (appears in [Shot 1]): fully_preserved - retain Jo's appearance from <Picture 2>; no background or pose transfer.
+<Audio 1>: reference - apply only its warm timbre to Mira's voice throughout her dialogue, including the shared final line.
+
+detailed_description:
+[Shot 1] <Subject 2> (S1) says, <d>[English] Ready?</d> Then <Subject 1> (S2) replies with the warm timbre referenced from <Audio 1>, <d>[English] Yes!</d> Then <Subject 2> and <Subject 1> (S1,S2) say together in unison, <d>[English] Go!</d> No additional dialogue.
+
+overall_soundscape:
+No additional ambience, sound effects, or non-verbal vocal sounds.
+
+non_diegetic_music:
+N/A — no non-diegetic music.

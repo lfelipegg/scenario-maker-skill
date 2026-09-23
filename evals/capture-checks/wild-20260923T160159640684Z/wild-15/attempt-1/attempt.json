@@ -1,0 +1,84 @@
+{
+  "case_id": "wild-15",
+  "attempt": 1,
+  "revision": "worktree-sha256:986c39c89ea44276ebbad5fdb5f55e363f547e8ef6c130d13e7cbce0f587f7ea",
+  "started_at": "2026-09-23T16:03:50.626716+00:00",
+  "elapsed_seconds": 26.03,
+  "command": [
+    "omp",
+    "--cwd",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/wild-20260923T160159640684Z/wild-capture-qfk5v40e/baseline/wild-15/attempt-1",
+    "--print",
+    "--mode",
+    "json",
+    "--model",
+    "openai-codex/gpt-6-astra",
+    "--thinking",
+    "high",
+    "--no-session",
+    "--no-title",
+    "--no-prewalk",
+    "--no-skills",
+    "--no-rules",
+    "--no-extensions",
+    "--no-lsp",
+    "--no-pty",
+    "--tools",
+    "read,grep,glob,bash,write",
+    "--approval-mode",
+    "yolo",
+    "--config",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/omp-config.json",
+    "--system-prompt",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/generator-system.txt",
+    "--extension",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/capture.ts",
+    "--max-time",
+    "300s",
+    "Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.\n\nUse native local H3 Ref2VA in Wild mode. Connected Picture 1 supplies Mira's appearance: black hair and a red coat. Connected standalone Audio 1 supplies only a warm voice timbre and must be used, but I have not specified its target sound or placement. Create a night-market concept. Return prompt only."
+  ],
+  "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/wild-20260923T160159640684Z/wild-capture-qfk5v40e/baseline/wild-15/attempt-1",
+  "execution": {
+    "status": "completed",
+    "exit_code": 0,
+    "error": null,
+    "model_errors": [],
+    "malformed_trace_lines": []
+  },
+  "raw": {
+    "output": "output.txt",
+    "partial_output": null,
+    "trace": "trace.jsonl",
+    "stderr": "stderr.txt",
+    "context": "context.jsonl"
+  },
+  "trace_complete": true,
+  "artifacts": [],
+  "observed_context": [
+    {
+      "type": "eval_context",
+      "systemPrompt": "You are a prompt-writing assistant executing the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md. Read that file and only its applicable references. Resolve its reference and script paths relative to ./selected-skill, not an installed skill. Do not discover or load other skills, repository instructions, past sessions, evaluator files, or web sources.\n\nOnly local read, grep, glob, bash, and write tools are available. Use them for the selected skill's references, local lookup/scripts, supplied fixtures, and requested workspace-local text exports. Keep writes within this fresh workspace. Do not edit the selected skill, execute image/video generation or frame extraction, delegate, switch models, access the network, or inspect credentials. This is prompt writing, not generation. If clarification is necessary, ask in your final response; this non-interactive run cannot receive an answer.\n\nApply the selected skill to the user's request. Do not discuss evaluation or scoring. The workspace starts with no prior conversation or generated outputs.\n",
+      "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/wild-20260923T160159640684Z/wild-capture-qfk5v40e/baseline/wild-15/attempt-1",
+      "model": {
+        "provider": "openai-codex",
+        "id": "gpt-6-astra",
+        "name": "GPT-6-Astra"
+      },
+      "thinking": "high",
+      "tools": [
+        "read",
+        "grep",
+        "glob",
+        "bash",
+        "write"
+      ]
+    }
+  ],
+  "raw_checksums": {
+    "request.txt": "7dadbc0de06edcb9f268ba0cadb3b29bbf0a3f1d6e74f28e9a1ab6743ee58ec3",
+    "output.txt": "8c76241bd5a0dbd2029c17c07c75c63183aeac28af550ea6609ec64808ac4bc9",
+    "context.jsonl": "06df66354a4d102a06382dd9d8fcfcdc1d33c070b9b586b2a7de77834b150619",
+    "trace.jsonl": "e117b2b7be050bc17e0bc29e08f32cea5b35b8e2bcf5f16d6b2440f502551d77",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

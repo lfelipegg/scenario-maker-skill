@@ -1,0 +1,84 @@
+{
+  "case_id": "wild-05",
+  "attempt": 1,
+  "revision": "worktree-sha256:986c39c89ea44276ebbad5fdb5f55e363f547e8ef6c130d13e7cbce0f587f7ea",
+  "started_at": "2026-09-23T16:02:22.024603+00:00",
+  "elapsed_seconds": 22.17,
+  "command": [
+    "omp",
+    "--cwd",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/wild-20260923T160159640684Z/wild-capture-qfk5v40e/baseline/wild-05/attempt-1",
+    "--print",
+    "--mode",
+    "json",
+    "--model",
+    "openai-codex/gpt-6-astra",
+    "--thinking",
+    "high",
+    "--no-session",
+    "--no-title",
+    "--no-prewalk",
+    "--no-skills",
+    "--no-rules",
+    "--no-extensions",
+    "--no-lsp",
+    "--no-pty",
+    "--tools",
+    "read,grep,glob,bash,write",
+    "--approval-mode",
+    "yolo",
+    "--config",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/omp-config.json",
+    "--system-prompt",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/generator-system.txt",
+    "--extension",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/capture.ts",
+    "--max-time",
+    "300s",
+    "Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.\n\nCreate two labeled Wild designs: A, clothing-only, a moss-green coat; B, isolated asset, a brass compass with cracked glass."
+  ],
+  "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/wild-20260923T160159640684Z/wild-capture-qfk5v40e/baseline/wild-05/attempt-1",
+  "execution": {
+    "status": "completed",
+    "exit_code": 0,
+    "error": null,
+    "model_errors": [],
+    "malformed_trace_lines": []
+  },
+  "raw": {
+    "output": "output.txt",
+    "partial_output": null,
+    "trace": "trace.jsonl",
+    "stderr": "stderr.txt",
+    "context": "context.jsonl"
+  },
+  "trace_complete": true,
+  "artifacts": [],
+  "observed_context": [
+    {
+      "type": "eval_context",
+      "systemPrompt": "You are a prompt-writing assistant executing the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md. Read that file and only its applicable references. Resolve its reference and script paths relative to ./selected-skill, not an installed skill. Do not discover or load other skills, repository instructions, past sessions, evaluator files, or web sources.\n\nOnly local read, grep, glob, bash, and write tools are available. Use them for the selected skill's references, local lookup/scripts, supplied fixtures, and requested workspace-local text exports. Keep writes within this fresh workspace. Do not edit the selected skill, execute image/video generation or frame extraction, delegate, switch models, access the network, or inspect credentials. This is prompt writing, not generation. If clarification is necessary, ask in your final response; this non-interactive run cannot receive an answer.\n\nApply the selected skill to the user's request. Do not discuss evaluation or scoring. The workspace starts with no prior conversation or generated outputs.\n",
+      "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/wild-20260923T160159640684Z/wild-capture-qfk5v40e/baseline/wild-05/attempt-1",
+      "model": {
+        "provider": "openai-codex",
+        "id": "gpt-6-astra",
+        "name": "GPT-6-Astra"
+      },
+      "thinking": "high",
+      "tools": [
+        "read",
+        "grep",
+        "glob",
+        "bash",
+        "write"
+      ]
+    }
+  ],
+  "raw_checksums": {
+    "request.txt": "27d83a5ab09d2067d8ae1f5204e2cb19d606138dc92a6d7d01d2be7f03143344",
+    "output.txt": "5bf078d4ef69794ac3910f0a1d2c4c898e6d165ef1a1e8986f80f5f204c70a74",
+    "context.jsonl": "2f82f8f7e9272ed25c5780b03c4c2ed00164fcb71046fcc6dc9b265e5c9b97da",
+    "trace.jsonl": "cffa21082730e7c70046eec30e5633f7eafe507591ea5d51c49cd3516c4c6dbb",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

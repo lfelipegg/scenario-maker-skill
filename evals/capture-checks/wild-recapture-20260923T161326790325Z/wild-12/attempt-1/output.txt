@@ -1,0 +1,19 @@
+subject_definitions:
+<Subject 1> is the black-haired adult vendor; <Picture 1> supplies only the vendor’s face and red coat, not pose, setting, lighting, or sound.
+
+summary:
+[reference generation] In two shots, <Subject 1> sells bottled miniature moons at a night market, speaking one original English line continuously across the cut.
+
+retention_analysis:
+<Subject 1> ([Shot 1–2]): fully_preserved — retain the referenced face and red coat, with black hair consistent throughout.
+
+detailed_description:
+Tactile cinematic realism with amber market lanterns contrasting against silver moonlight.
+[Shot 1] Medium close-up: <Subject 1> lifts a glass jar containing a tiny floating moon above a crowded stall counter. The camera gently pushes closer. <Subject 1> (S1), speaking in a warm, lightly raspy low register with an unhurried delivery, begins, <d>[English] Take a little moonlight<scenetrans></d>. The same vocal audio continues uninterrupted across the cut.
+[Shot 2] Cut to a close-up of the jar cradled against the red coat; its miniature moon pulls a silver tide around the inside of the glass. <Subject 1> (S1), now speaking diegetically off camera, finishes without restarting, <d>[English] <scenetrans>home with you.</d>
+
+overall_soundscape:
+Soft market footsteps, canvas awnings rustling, and a delicate glass clink beneath the single spoken line. No other intelligible speech or diegetic music.
+
+non_diegetic_music:
+N/A — no music.

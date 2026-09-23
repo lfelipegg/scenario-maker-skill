@@ -1,0 +1,3 @@
+Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.
+
+Produce two labeled Explore prompts. A — `Exactly two women sit at a cafe table`; keep that subject roster closed. B — `Design a bustling market`; populate the explicitly open scene with compatible activity.

@@ -1,0 +1,84 @@
+{
+  "case_id": "p3-dev-07",
+  "attempt": 1,
+  "revision": "worktree-sha256:90a06bc0f7837b714af8f91f22bc3ce895ba6853fd69068bdda0c880bf742939",
+  "started_at": "2026-09-23T16:15:12.196857+00:00",
+  "elapsed_seconds": 17.233,
+  "command": [
+    "omp",
+    "--cwd",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/wild-conflict-recapture-20260923T161511913976Z/wild-conflict-recapture-nas21q0p/baseline/p3-dev-07/attempt-1",
+    "--print",
+    "--mode",
+    "json",
+    "--model",
+    "openai-codex/gpt-6-astra",
+    "--thinking",
+    "high",
+    "--no-session",
+    "--no-title",
+    "--no-prewalk",
+    "--no-skills",
+    "--no-rules",
+    "--no-extensions",
+    "--no-lsp",
+    "--no-pty",
+    "--tools",
+    "read,grep,glob,bash,write",
+    "--approval-mode",
+    "yolo",
+    "--config",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/omp-config.json",
+    "--system-prompt",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/generator-system.txt",
+    "--extension",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/capture.ts",
+    "--max-time",
+    "300s",
+    "Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.\n\nWrite a complete prompt for a small bakery at dusk with a rectangular sign centered above the door that visibly reads exactly `OPEN` in uppercase and no other lettering. The entire response must be exactly one word."
+  ],
+  "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/wild-conflict-recapture-20260923T161511913976Z/wild-conflict-recapture-nas21q0p/baseline/p3-dev-07/attempt-1",
+  "execution": {
+    "status": "completed",
+    "exit_code": 0,
+    "error": null,
+    "model_errors": [],
+    "malformed_trace_lines": []
+  },
+  "raw": {
+    "output": "output.txt",
+    "partial_output": null,
+    "trace": "trace.jsonl",
+    "stderr": "stderr.txt",
+    "context": "context.jsonl"
+  },
+  "trace_complete": true,
+  "artifacts": [],
+  "observed_context": [
+    {
+      "type": "eval_context",
+      "systemPrompt": "You are a prompt-writing assistant executing the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md. Read that file and only its applicable references. Resolve its reference and script paths relative to ./selected-skill, not an installed skill. Do not discover or load other skills, repository instructions, past sessions, evaluator files, or web sources.\n\nOnly local read, grep, glob, bash, and write tools are available. Use them for the selected skill's references, local lookup/scripts, supplied fixtures, and requested workspace-local text exports. Keep writes within this fresh workspace. Do not edit the selected skill, execute image/video generation or frame extraction, delegate, switch models, access the network, or inspect credentials. This is prompt writing, not generation. If clarification is necessary, ask in your final response; this non-interactive run cannot receive an answer.\n\nApply the selected skill to the user's request. Do not discuss evaluation or scoring. The workspace starts with no prior conversation or generated outputs.\n",
+      "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/wild-conflict-recapture-20260923T161511913976Z/wild-conflict-recapture-nas21q0p/baseline/p3-dev-07/attempt-1",
+      "model": {
+        "provider": "openai-codex",
+        "id": "gpt-6-astra",
+        "name": "GPT-6-Astra"
+      },
+      "thinking": "high",
+      "tools": [
+        "read",
+        "grep",
+        "glob",
+        "bash",
+        "write"
+      ]
+    }
+  ],
+  "raw_checksums": {
+    "request.txt": "1cc530b0e1bd9c2f990e2164d6311e23ba679b6d3c9c8c7d2c5c5119b1a88dd8",
+    "output.txt": "2e26f64ec92a6009192204a5a828e3eb372c9d940108863bf402679e25cc1a31",
+    "context.jsonl": "1397b2a7f0586582ca13c035f1f2f7b4fdcbb37d0f7c1669d736c372fcbf56ed",
+    "trace.jsonl": "9e5721fc179d6d7b7b8fac9b60d70ebf84d85b4b5b33457b22e6f894dd4d1766",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

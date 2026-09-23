@@ -13,6 +13,12 @@ The conventions for expressing a scene for a particular model or checkpoint, inc
 **Task profile**:
 What must be communicated for an activity such as still-image creation, image editing, text-to-video, or image-to-video. It is distinct from how a model prefers that information expressed.
 
+**Invention mode**:
+The degree and kind of creative freedom available when developing unspecified content, within the requested operation, scope, and supplied facts.
+
+**Wild**:
+An invention mode that develops an idea around a bold, coherent concept while retaining every supplied fact and constraint.
+
 **Locked detail**:
 An attribute or relationship that must survive adaptation, revision, or variation unless the user explicitly permits changing it.
 

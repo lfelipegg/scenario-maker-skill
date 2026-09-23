@@ -1,0 +1,84 @@
+{
+  "case_id": "p3-dev-04",
+  "attempt": 1,
+  "revision": "worktree-sha256:986c39c89ea44276ebbad5fdb5f55e363f547e8ef6c130d13e7cbce0f587f7ea",
+  "started_at": "2026-09-23T16:04:59.628918+00:00",
+  "elapsed_seconds": 18.612,
+  "command": [
+    "omp",
+    "--cwd",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/wild-20260923T160159640684Z/wild-capture-qfk5v40e/baseline/p3-dev-04/attempt-1",
+    "--print",
+    "--mode",
+    "json",
+    "--model",
+    "openai-codex/gpt-6-astra",
+    "--thinking",
+    "high",
+    "--no-session",
+    "--no-title",
+    "--no-prewalk",
+    "--no-skills",
+    "--no-rules",
+    "--no-extensions",
+    "--no-lsp",
+    "--no-pty",
+    "--tools",
+    "read,grep,glob,bash,write",
+    "--approval-mode",
+    "yolo",
+    "--config",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/omp-config.json",
+    "--system-prompt",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/generator-system.txt",
+    "--extension",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/capture.ts",
+    "--max-time",
+    "300s",
+    "Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.\n\nReturn three labeled results. A — Adapt in Explore mode: `A blue mug on a white shelf against a bare gray wall.` B — Revise in Explore mode by changing only the blue front door to red: `A blue front door beneath a brass porch light, with two square windows and white siding.` C — Adapt and invent background details: `A black bicycle in the foreground against an unspecified background.`"
+  ],
+  "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/wild-20260923T160159640684Z/wild-capture-qfk5v40e/baseline/p3-dev-04/attempt-1",
+  "execution": {
+    "status": "completed",
+    "exit_code": 0,
+    "error": null,
+    "model_errors": [],
+    "malformed_trace_lines": []
+  },
+  "raw": {
+    "output": "output.txt",
+    "partial_output": null,
+    "trace": "trace.jsonl",
+    "stderr": "stderr.txt",
+    "context": "context.jsonl"
+  },
+  "trace_complete": true,
+  "artifacts": [],
+  "observed_context": [
+    {
+      "type": "eval_context",
+      "systemPrompt": "You are a prompt-writing assistant executing the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md. Read that file and only its applicable references. Resolve its reference and script paths relative to ./selected-skill, not an installed skill. Do not discover or load other skills, repository instructions, past sessions, evaluator files, or web sources.\n\nOnly local read, grep, glob, bash, and write tools are available. Use them for the selected skill's references, local lookup/scripts, supplied fixtures, and requested workspace-local text exports. Keep writes within this fresh workspace. Do not edit the selected skill, execute image/video generation or frame extraction, delegate, switch models, access the network, or inspect credentials. This is prompt writing, not generation. If clarification is necessary, ask in your final response; this non-interactive run cannot receive an answer.\n\nApply the selected skill to the user's request. Do not discuss evaluation or scoring. The workspace starts with no prior conversation or generated outputs.\n",
+      "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/wild-20260923T160159640684Z/wild-capture-qfk5v40e/baseline/p3-dev-04/attempt-1",
+      "model": {
+        "provider": "openai-codex",
+        "id": "gpt-6-astra",
+        "name": "GPT-6-Astra"
+      },
+      "thinking": "high",
+      "tools": [
+        "read",
+        "grep",
+        "glob",
+        "bash",
+        "write"
+      ]
+    }
+  ],
+  "raw_checksums": {
+    "request.txt": "d86b0b75a6cd9086dbc6049ad83f647592e724a21019213b26cf90d9229d46c7",
+    "output.txt": "bd60cfbd85766b56d994f9c264de27a98213e9f2a204a64a449274c383df32a8",
+    "context.jsonl": "20fecd38e7e451b0702ebe39cbeba1b82554b1cb1010315ecff06ce143ae55c9",
+    "trace.jsonl": "dabe826cc541da10d40b59d809ff1c99cbe45bf6e24e81de0aa4812d973a2083",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

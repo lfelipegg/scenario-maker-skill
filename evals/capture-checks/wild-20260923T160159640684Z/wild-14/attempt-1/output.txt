@@ -1,0 +1,7 @@
+For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.
+
+integrated_multimodal_description: [Shot 1] Begin exactly from <Picture 1>: one woman in a red coat beside a closed curtain and a sign reading "Open late!" Preserve the image’s appearance, composition, colors, and lighting. In one continuous shot, only the curtain moves: a slow ripple travels down its folds, reverses upward, then subsides into its original drape. The curtain remains closed, revealing nothing behind it. The woman stays completely motionless, without blinking, breathing movement, gestures, or movement of her hair or coat. The sign and its exact lettering, all other objects, the background, and lighting remain still and unchanged. The camera remains fixed, with no cuts, zoom, reframing, or focus changes. Complete silence throughout, including no fabric sounds.
+
+overall_soundscape: N/A — complete silence.
+
+non_diegetic_music: N/A — no music.

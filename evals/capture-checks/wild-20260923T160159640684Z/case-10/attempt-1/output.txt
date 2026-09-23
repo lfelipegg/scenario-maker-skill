@@ -1,0 +1,16 @@
+### 1. Fidelity to the brief
+- **SDXL:** Explicitly preserves all core details: the green bicycle, its leaning relationship to the white brick wall, and soft overcast daylight. “Eye-level medium shot” and “restrained color palette” add composition and styling choices absent from the brief, though neither directly contradicts it.
+- **Krea 2:** Preserves the subject, colors, wall material, and lighting. “Rests against” strongly suggests leaning but is slightly less explicit about the bicycle’s posture. “Even” is consistent with soft overcast illumination. Eye-level framing and a restrained palette are additional choices, as in the SDXL prompt.
+
+### 2. Model-appropriate expression
+- **SDXL:** Compact, comma-separated ordinary-English phrases suit SDXL’s recommended presentation. The subject and its relationship to the wall remain connected rather than reduced to disconnected keywords.
+- **Krea 2:** The cohesive natural-language sentence suits Krea 2’s prose-oriented guidance. Its brevity is appropriate for this sparse brief; a preference for detailed prose does not require padding.
+- **Comparison:** Both use suitable expression for their targets. These are presentation preferences, not mandatory grammars or guarantees of better rendered results.
+
+### 3. Likely ambiguity
+- **SDXL:** “Leaning against” is precise. “Medium shot,” however, leaves some uncertainty about cropping an object such as a bicycle; it does not guarantee that both wheels remain fully visible.
+- **Krea 2:** “Rests against” leaves slightly more latitude in posture. Eye level specifies viewpoint but not shot size, so framing is more open than in the SDXL prompt.
+- **Both:** “Restrained palette” could mean limited colors, muted saturation, or both, potentially affecting how vivid the green appears. Bicycle type, orientation, and exact green shade remain unspecified, consistent with the brief rather than constituting fidelity failures.
+
+### Overall comparison
+**SDXL is marginally more explicit about the required leaning relationship and more constrained in framing. Krea 2 communicates essentially the same scene in appropriate prose but leaves shot size open.** Both are faithful overall, with compatible yet unrequested styling additions; wording alone does not establish which will produce the better image.

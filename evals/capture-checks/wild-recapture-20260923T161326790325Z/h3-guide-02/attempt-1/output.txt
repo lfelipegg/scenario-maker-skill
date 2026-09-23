@@ -1,0 +1,7 @@
+For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.
+
+integrated_multimodal_description: [Shot 1] Hold <Picture 1> completely still throughout: Noor remains seated at the desk with her mouth closed. Preserve her appearance, pose, clothing, all objects, composition, lighting, and visual style exactly as in the opening image. No subject movement, environmental movement, camera movement, or cuts. Noor (S1) says in an off-screen voiceover, <d>[English] I remember.</d> Noor's lips remain completely closed and motionless throughout. This is Noor's own voice, not a separate narrator.
+
+overall_soundscape: No ambience, sound effects, non-verbal vocal sounds, or other audio beyond Noor's specified voiceover.
+
+non_diegetic_music: N/A

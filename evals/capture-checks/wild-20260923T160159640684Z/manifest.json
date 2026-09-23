@@ -1,0 +1,260 @@
+{
+  "kind": "wild-development-observation",
+  "created_at": "2026-09-23T16:02:00.122009+00:00",
+  "revision": "worktree-sha256:986c39c89ea44276ebbad5fdb5f55e363f547e8ef6c130d13e7cbce0f587f7ea",
+  "omp_help": "omp v18.2.9\n\nUSAGE\n  $ omp [COMMAND]\n\nARGUMENTS\n  MESSAGES   Messages to send (prefix files with @)\n\nFLAGS\n      --model=<value>                   Model to use (fuzzy match: \"opus\", \"gpt-5.2\", or \"openai/gpt-5.2\")\n      --smol=<value>                    Smol/fast model for lightweight tasks (or PI_SMOL_MODEL env)\n      --slow=<value>                    Slow/reasoning model for thorough analysis (or PI_SLOW_MODEL env)\n      --plan=<value>                    Plan model for architectural planning (or PI_PLAN_MODEL env)\n      --prewalk                         Switch from the active model to a fast/cheap model at the first edit/write after the plan's todo list exists (default off; see prewalk.enabled)\n      --no-prewalk                      Disable prewalk even if prewalk.enabled is set\n      --prewalk-into=<value>            Target model for prewalk (default the \"smol\" role)\n      --plan-yolo                       Force read-only plan mode at start, auto-approve the plan on the model's first resolve call, then switch to --plan-yolo-into to implement it\n      --plan-yolo-into=<value>          Target model for plan-yolo execution (default the \"smol\" role)\n      --provider=<value>                Provider to use (legacy; prefer --model)\n      --api-key=<value>                 API key (defaults to env vars)\n      --system-prompt=<value>           System prompt (default: coding assistant prompt)\n      --system-prompt-template=<value>  Handlebars system prompt template (mutually exclusive with --system-prompt)\n      --append-system-prompt=<value>    Append text or file contents to the system prompt\n      --allow-home                      Allow starting in ~ without auto-switching to a temp dir\n      --profile=<value>                 Use an isolated profile for auth, sessions, settings, and caches\n      --alias=<value>                   Create a shell shortcut for the selected profile and exit\n      --cwd=<value>                     Directory to start in (overrides the launch cwd)\n      --mode=<value>                    Output mode: text (default), json, rpc, or rpc-ui\n      --config=<value>                  Load an extra config.yml-style overlay for this run (repeatable)\n      --add-dir=<value>                 Add a workspace directory beyond the working directory (repeatable)\n  -p, --print                           Non-interactive mode: process prompt and exit\n  -c, --continue                        Continue previous session\n  -r, --resume=<value>                  Resume a session (by ID prefix, path, or picker if omitted)\n      --from-claude                     Import a Claude Code session into OMP\n      --from-codex                      Import a Codex session into OMP\n      --session-dir=<value>             Directory for session storage and lookup\n      --no-session                      Don't save session (ephemeral)\n      --models=<value>                  Comma-separated model patterns for Ctrl+P cycling\n      --no-tools                        Disable all built-in tools\n      --no-lsp                          Disable LSP tools, formatting, and diagnostics\n      --no-pty                          Disable PTY-based interactive bash execution\n      --tools=<value>                   Comma-separated list of tools to enable (default: all)\n      --thinking=<value>                Set thinking level: off, minimal, low, medium, high, xhigh, max, auto\n      --service-tier=<value>            OpenAI service tier for this session (none omits service_tier)\n      --hide-thinking                   Hide thinking blocks in TUI output (display only, does not disable model thinking)\n      --advisor                         Enable the advisor runtime (passively reviews each turn and injects notes)\n      --external-thinking               Use a private scratchpad while disabling supported GPT, Claude, and Gemini reasoning (at your own risk: providers have flagged this request shape as abuse)\n      --hook=<value>                    Load a hook/extension file (can be used multiple times)\n  -e, --extension=<value>               Load an extension file (can be used multiple times)\n      --no-extensions                   Disable extension discovery (explicit -e paths still work)\n      --no-skills                       Disable skills discovery and loading\n      --skills=<value>                  Comma-separated glob patterns to filter skills (e.g., git-*,docker)\n      --no-rules                        Disable rules discovery and loading\n      --export=<value>                  Export session file to HTML and exit\n      --no-title                        Disable title auto-generation\n      --print-thoughts                  Include thinking blocks in print mode text output\n      --max-time=<value>                Stop the session after this duration (e.g., 600, 10m, 1h)\n      --auto-approve                    Auto-approve all tool calls (skip approval prompts)\n      --approval-mode=<value>           Override tools.approvalMode for this session (always-ask|write|yolo)\n\nEXAMPLES\n  # Interactive mode\n    omp\n  # Interactive mode with initial prompt\n    omp \"List all .ts files in src/\"\n  # Include files in initial message\n    omp @prompt.md @image.png \"What color is the sky?\"\n  # Non-interactive mode (process and exit)\n    omp -p \"List all .ts files in src/\"\n  # Continue previous session\n    omp --continue \"What did we discuss?\"\n  # Create a shell shortcut for a work profile\n    omp --profile work --alias omp-work\n  # Use different model (fuzzy matching)\n    omp --model opus \"Help me refactor this code\"\n  # Limit model cycling to specific models\n    omp --models claude-sonnet,claude-haiku,gpt-4o\n  # Export a session file to HTML\n    omp --export ~/.omp/agent/sessions/--path--/session.jsonl\n\nCOMMANDS\n  acp            Run Oh My Pi as an ACP (Agent Client Protocol) server over stdio\n  agents         Manage bundled task agents\n  auth-broker    Manage the omp auth-broker (credential vault)\n  auth-gateway   Run an auth-gateway forward proxy backed by the configured broker\n  bench          Benchmark models: TTFT/prefill vs decode throughput with p50/p95, across chat, prefill, generation, and prompt-cache workloads\n  browser-relay  Run the local CDP relay that lets the browser prelude drive your own Chrome tabs\n  cleanse        Detect and fix project diagnostics with weighted parallel subagents\n  collab         List active local Collab host metadata without URLs; use collab link <instanceId|pid> to retrieve a control link (--view for view-only)\n  commit         Generate a commit message and update changelogs\n  completions    Print a shell completion script (bash, zsh, or fish)\n  compress       Rewrite a text file into the dense prompt register, reporting what it drops\n  config         Manage configuration settings\n  dry-balance    Dry-run OAuth account balancing across random session ids\n  find           Semantic search: describe a behavior, get the files and line ranges that implement it\n  gallery        Preview tool, composer, and status-line renderers in a deterministic visual gallery\n  gc             Run storage garbage collection\n  git            Interactive fullscreen git UI: split diff viewer, staging sidebar, and commit composer\n  grep           Test grep tool\n  grievances     View, clean, or push reported tool issues (auto-QA grievances)\n  if-bench       Benchmark instruction following and working memory: one cached thread of glyph array actions with a moving cat-sound directive\n  images         Inspect, diagnose, probe, and purge image publication backends\n  install        Install or link an extension package (alias of `plugin install`/`plugin link`)\n  join           Join a shared collab session (same as /join)\n  models         List, search, and refresh available models\n  plugin         Manage plugins (install, uninstall, list, etc.)\n  ps             List and control daemon-supervised background processes (logs, stop, kill, restart)\n  read           Show what the read tool will return for a path, URL, or internal URI\n  render         Draw a session's entire thread through the production transcript pipeline (with repaint timing)\n  say            Synthesize text with the local TTS engine and play it through the speakers\n  search         Test web search providers\n  setup          Run onboarding setup or install dependencies for optional features\n  share          Share a saved session via an encrypted link (same as /share)\n  shell          Interactive shell console\n  ssh            Manage SSH host configurations\n  stats          View usage statistics\n  stream         Broadcast local omp session screens and chat to your public live channel\n  tiny-models    Download tiny local models (session titles + memory)\n  token          Get the API key or OAuth token for a provider\n  ttsr           Inspect and test Time-Traveling Stream Rules (TTSR)\n  update         Check for and install updates\n  usage          Show provider usage limits for every authenticated account\n  worktree       Add, list, or clear git worktrees (clone-first when enabled)\n\nEnvironment Variables:\n  # Core Providers\n  ANTHROPIC_API_KEY          - Anthropic Claude models\n  ANTHROPIC_OAUTH_TOKEN      - Anthropic OAuth (takes precedence over API key)\n  CLAUDE_CODE_USE_FOUNDRY    - Enable Anthropic Foundry mode (uses Foundry endpoint + mTLS)\n  FOUNDRY_BASE_URL           - Anthropic Foundry base URL (e.g., https://<foundry-host>)\n  ANTHROPIC_FOUNDRY_API_KEY  - Anthropic token used as Authorization: Bearer <token> in Foundry mode\n  ANTHROPIC_CUSTOM_HEADERS   - Extra headers for Foundry or any custom ANTHROPIC_BASE_URL gateway (e.g., \"user-id: USERNAME\")\n  CLAUDE_CODE_CLIENT_CERT    - Client certificate (PEM path or inline PEM) for mTLS\n  CLAUDE_CODE_CLIENT_KEY     - Client private key (PEM path or inline PEM) for mTLS\n  NODE_EXTRA_CA_CERTS        - CA bundle path (or inline PEM) for server certificate validation\n  OPENAI_API_KEY             - OpenAI GPT models\n  GEMINI_API_KEY             - Google Gemini models\n  COPILOT_GITHUB_TOKEN      - GitHub Copilot\n\n  # Additional LLM Providers\n  AZURE_OPENAI_API_KEY       - Azure OpenAI models\n  GROQ_API_KEY               - Groq models\n  CEREBRAS_API_KEY           - Cerebras models\n  XAI_API_KEY                - xAI Grok models\n  OPENROUTER_API_KEY         - OpenRouter aggregated models\n  KILO_API_KEY               - Kilo Gateway models\n  MISTRAL_API_KEY            - Mistral models\n  ZAI_API_KEY                - z.ai models (ZhipuAI/GLM)\n  UMANS_AI_CODING_PLAN_API_KEY - Umans AI Coding Plan models\n  ABLITERATION_API_KEY       - Abliteration uncensored GLM models\n  UMANS_WEBSEARCH_PROVIDER    - Umans gateway web search backend (native or exa)\n  MINIMAX_API_KEY            - MiniMax models\n  OPENCODE_API_KEY           - OpenCode Zen/OpenCode Go models\n  CURSOR_ACCESS_TOKEN        - Cursor AI models\n  CLINE_API_KEY              - ClinePass subscription models\n  COMMAND_CODE_API_KEY       - Command Code Provider API models\n  CHARM_HYPER_API_KEY        - Charm Hyper inference gateway models\n  AI_GATEWAY_API_KEY         - Vercel AI Gateway\n  WAFER_SERVERLESS_API_KEY   - Wafer Serverless (pay-as-you-go)\n  YOLO_AUTO_API_KEY          - Yolo-Auto flat-rate Qwen models\n  SINGULARITYAPI_DEV_API_KEY - SingularityAPI universal gateway (300+ models)\n  SINGULARITYAPI_TECH_API_KEY - SingularityAPI reserved DeepSeek lanes\n\n  # Cloud Providers\n  AWS_PROFILE                - AWS Bedrock (or AWS_ACCESS_KEY_ID + AWS_SECRET_ACCESS_KEY)\n  GOOGLE_CLOUD_PROJECT       - Google Vertex AI (requires GOOGLE_CLOUD_LOCATION)\n  GOOGLE_APPLICATION_CREDENTIALS - Service account for Vertex AI\n\n  # Search & Tools\n  EXA_API_KEY                - Exa web search\n  BRAVE_API_KEY              - Brave web search\n  PERPLEXITY_API_KEY         - Perplexity web search API key (optional; anonymous fallback)\n  PERPLEXITY_COOKIES         - Perplexity web search (session cookie)\n  TAVILY_API_KEY             - Tavily web search\n  TINYFISH_API_KEY           - TinyFish web search\n  FIRECRAWL_API_KEY          - Firecrawl web search + fetch reader backend\n  ANTHROPIC_SEARCH_API_KEY   - Anthropic web search (override; isolates search from main ANTHROPIC_API_KEY)\n  ANTHROPIC_SEARCH_BASE_URL  - Anthropic web search base URL (override; pairs with ANTHROPIC_SEARCH_API_KEY)\n  TYPESAFE_API_KEY           - TypeSafe System One judgments (auto thinking, unexpected-stop, AI staging, eval judge())\n\n  # Configuration\n  OMP_PROFILE                 - Named profile for isolated agent state (same as --profile)\n  Use `omp --profile <name> --alias <command>` to create a shell shortcut for a profile\n  PI_CODING_AGENT_DIR        - Session storage directory (default: ~/.omp/agent)\n  PI_PACKAGE_DIR             - Override package directory (for Nix/Guix store paths)\n  PI_SMOL_MODEL              - Override smol/fast model (see --smol)\n  PI_SLOW_MODEL              - Override slow/reasoning model (see --slow)\n  PI_PLAN_MODEL              - Override planning model (see --plan)\n  PI_NO_PTY                  - Disable PTY-based interactive bash execution\n  For complete environment variable reference, see:\n  docs/environment-variables.md\nAvailable Tools (default-enabled unless noted):\n  read          - Read file contents\n  bash          - Execute bash commands\n  edit          - Edit files with find/replace\n  write         - Write files (creates/overwrites)\n  grep          - Search file contents\n  glob          - Find files by glob pattern\n  lsp           - Language server protocol (code intelligence)\n  python        - Execute Python code (requires: omp setup python)\n  notebook      - Edit Jupyter notebooks\n  browser       - Browser automation (Puppeteer)\n  computer      - Native host desktop capture and input (disabled by default)\n  task          - Launch sub-agents for parallel tasks\n  todo          - Manage todo/task lists\n  web_search    - Search the web\n  ask           - Ask user questions (interactive mode only)\n\nPlugin Options:\n  --plugin-dir <path>        Load plugin from directory (repeatable)\n\nUseful Commands:\n  omp agents unpack           - Export bundled subagents to ~/.omp/agent/agents (default)\n  omp agents unpack --project - Export bundled subagents to ./.omp/agents\n",
+  "cases": [
+    {
+      "id": "wild-01",
+      "request": "Wild mode: create one still-image prompt for a night market. Return prompt only.",
+      "fixtures": []
+    },
+    {
+      "id": "wild-02",
+      "request": "Create one still-image prompt for a night market; go wild with the concept. Return prompt only.",
+      "fixtures": []
+    },
+    {
+      "id": "wild-03",
+      "request": "Create a clothing-only prompt for a green coat with wildflower embroidery. Return prompt only.",
+      "fixtures": []
+    },
+    {
+      "id": "wild-04",
+      "request": "Create a still-image prompt in Wild mode: exactly two women wearing red coats sit at a table beneath a sign reading exactly \"Open late!\". No other people or animals. Return prompt only.",
+      "fixtures": []
+    },
+    {
+      "id": "wild-05",
+      "request": "Create two labeled Wild designs: A, clothing-only, a moss-green coat; B, isolated asset, a brass compass with cracked glass.",
+      "fixtures": []
+    },
+    {
+      "id": "wild-06",
+      "request": "Return two labeled results in Wild mode. A: adapt to prose the source \"A blue mug on a white shelf against a bare gray wall.\" B: revise only the door color to red in \"A blue front door beneath a brass porch light, with two square windows and white siding.\"",
+      "fixtures": []
+    },
+    {
+      "id": "wild-07",
+      "request": "Wild: create a still-image concept around a bank. Choose the direction and return one finished prompt.",
+      "fixtures": []
+    },
+    {
+      "id": "wild-08",
+      "request": "Adapt this existing source in Wild mode into an unambiguous prompt that identifies crane as either bird or machine: \"A crane stands beside the river.\"",
+      "fixtures": []
+    },
+    {
+      "id": "wild-09",
+      "request": "Wild mode: create a bakery at dusk with a rectangular sign above its door reading exactly \"OPEN\". The entire response must be exactly one word.",
+      "fixtures": []
+    },
+    {
+      "id": "wild-10",
+      "request": "Create three numbered Wild still-image prompts for an abandoned greenhouse. Each must retain an abandoned greenhouse. No explanations.",
+      "fixtures": []
+    },
+    {
+      "id": "wild-11",
+      "request": "Use native local MiniMax H3 Ref2VA for a new night-market video concept in Wild mode. Connected Picture 1 supplies only a vendor's appearance: an adult woman with black hair and a red coat. Preserve her appearance, but no setting, action, or audio comes from that reference. Develop the concept and return prompt only in the default H3 structure.",
+      "fixtures": []
+    },
+    {
+      "id": "wild-12",
+      "request": "Use native local MiniMax H3 Ref2VA, Wild mode. Connected Picture 1 supplies only a black-haired adult vendor's face and red coat. Create a night-market concept with two shots and one short original English spoken line continuing across the cut. Choose the line and voice. No music, no timestamps. Return prompt only in the default H3 structure.",
+      "fixtures": []
+    },
+    {
+      "id": "wild-13",
+      "request": "Animate this described opening image using native local H3 FL2VA; go wild. Picture 1 shows one adult woman in a red coat standing beside a stall whose sign reads \"Open late!\". She is the only person; no animals. Return prompt only in the default H3 structure.",
+      "fixtures": []
+    },
+    {
+      "id": "wild-14",
+      "request": "Use native local H3 FL2VA, Wild mode. Picture 1 shows one woman in a red coat beside a closed curtain and a sign reading \"Open late!\". Only the curtain may move. Keep all other visual content still, camera fixed, one continuous shot, complete silence. Return prompt only.",
+      "fixtures": []
+    },
+    {
+      "id": "wild-15",
+      "request": "Use native local H3 Ref2VA in Wild mode. Connected Picture 1 supplies Mira's appearance: black hair and a red coat. Connected standalone Audio 1 supplies only a warm voice timbre and must be used, but I have not specified its target sound or placement. Create a night-market concept. Return prompt only.",
+      "fixtures": []
+    },
+    {
+      "id": "wild-16",
+      "request": "Use native local H3 Ref2VA, Wild mode, for a frame-derived still edit. Picture 1 shows a hand holding a yellow mug labeled \"MORNING\" over a wooden table. Change only the mug to cobalt blue. Keep everything else, including composition and lettering. I will extract the first output frame. Return prompt only.",
+      "fixtures": []
+    },
+    {
+      "id": "wild-17",
+      "request": "Wild mode: create exactly three clothing-only green-coat fragments as a wildcard file at outputs/wild-coats.txt. No wearers or scenes.",
+      "fixtures": []
+    },
+    {
+      "id": "wild-18",
+      "request": "Wild mode: create one grounded, physically plausible character design for an adult witch in a red coat. Appearance, clothing, and equipment only; no magic effects, pose, expression, setting, camera, or lighting. Return prompt only.",
+      "fixtures": []
+    },
+    {
+      "id": "wild-19",
+      "request": "Create a still-image prompt for a night market in Explore mode. Return prompt only.",
+      "fixtures": []
+    },
+    {
+      "id": "p3-dev-01",
+      "request": "Adapt this source into one concise ready-to-paste prompt in Preserve mode: `A wet cobblestone street between pale stone buildings.` Return only the adapted prompt.",
+      "fixtures": []
+    },
+    {
+      "id": "p3-dev-02",
+      "request": "Produce two labeled Balanced expansions. A — clothing scope: `a moss-green field coat`. B — isolated-asset scope: `a brass compass with cracked glass`. Keep each result strictly within its stated scope.",
+      "fixtures": []
+    },
+    {
+      "id": "p3-dev-03",
+      "request": "Produce two labeled Explore prompts. A — `Exactly two women sit at a cafe table`; keep that subject roster closed. B — `Design a bustling market`; populate the explicitly open scene with compatible activity.",
+      "fixtures": []
+    },
+    {
+      "id": "p3-dev-04",
+      "request": "Return three labeled results. A — Adapt in Explore mode: `A blue mug on a white shelf against a bare gray wall.` B — Revise in Explore mode by changing only the blue front door to red: `A blue front door beneath a brass porch light, with two square windows and white siding.` C — Adapt and invent background details: `A black bicycle in the foreground against an unspecified background.`",
+      "fixtures": []
+    },
+    {
+      "id": "p3-dev-05",
+      "request": "Revise only the umbrella in this locked prompt. Source: `A courier in a navy coat holds a locked yellow umbrella beside a green mailbox at noon.` Later instruction: `Change the locked umbrella to a folded red umbrella.` Return only the revised prompt.",
+      "fixtures": []
+    },
+    {
+      "id": "p3-dev-06",
+      "request": "Handle two labeled Preserve adaptations of the source `A crane stands beside the river.` A — rewrite it as concise prose that may retain the source ambiguity. B — rewrite it as an unambiguous prompt that must identify the crane as either a bird or a machine.",
+      "fixtures": []
+    },
+    {
+      "id": "p3-dev-07",
+      "request": "Write a complete prompt for a small bakery at dusk with a rectangular sign centered above the door that visibly reads exactly `OPEN` in uppercase and no other lettering. The entire response must be exactly one word.",
+      "fixtures": []
+    },
+    {
+      "id": "p3-dev-08",
+      "request": "Convert this supplied prose scene to generic comma-separated visual phrases in Preserve mode. Keep the exact lettering and all relationships. Source: `Two women stand beside a silver cart. The woman with black hair holds a red cup; the woman with white hair holds a blue plate. A yellow sign on the cart reads exactly \"Open late!\". The cart is image-left of a green door. No animals appear.` Return only the converted prompt.",
+      "fixtures": []
+    },
+    {
+      "id": "case-01",
+      "request": "Write one SDXL text-to-image prompt for a glass greenhouse on a windswept cliff at sunrise. Use comma-separated visual phrases only. Return only the prompt: no label, negative prompt, notes, variants, or explanation.",
+      "fixtures": []
+    },
+    {
+      "id": "case-02",
+      "request": "Adapt this supplied prompt for local Krea 2 RAW/Turbo. Preserve every scene fact and return only one ready-to-paste prompt with no label, negative prompt, notes, variants, or explanation. Source prompt: A red ceramic teapot sits image-left of a white cup on a dark walnut table. Morning light enters from the right, and the plain cream wall behind them is empty.",
+      "fixtures": []
+    },
+    {
+      "id": "case-03",
+      "request": "Revise only the jacket color in this prompt from yellow to red. Return only the revised prompt and preserve everything else exactly in meaning: A woman with a short black bob wears a yellow denim jacket and silver hoop earrings, standing beside a blue bicycle under an overcast sky.",
+      "fixtures": []
+    },
+    {
+      "id": "case-04",
+      "request": "Create a character-design prompt for an adult lighthouse keeper. Give her weathered olive skin, tightly curled gray hair, a navy cable-knit sweater, orange waterproof bib trousers, black rubber boots, and a brass whistle on a cord. Describe character design only. Return one prompt with no scene, pose, expression, action, camera, lighting, weather, or story.",
+      "fixtures": []
+    },
+    {
+      "id": "case-05",
+      "request": "Write one text-to-image prompt for an empty sunlit stone courtyard with a dry fountain, ivy on the walls, and closed wooden doors. No people, animals, statues, silhouettes, or reflections of figures may appear. Return only the prompt and do not add a negative-prompt field.",
+      "fixtures": []
+    },
+    {
+      "id": "case-06",
+      "request": "Write one text-to-image prompt for a small neighborhood bakery at dusk. A rectangular sign centered above the door must visibly read exactly `OPEN` in uppercase, with no other visible lettering anywhere. Return only the prompt.",
+      "fixtures": []
+    },
+    {
+      "id": "case-07",
+      "request": "Create exactly four genuinely different composition variants of this fixed scene. Number them 1 through 4 and give one complete prompt per numbered entry. Vary only composition (framing, viewpoint, and placement within the image); hold lighting and all physical scene facts fixed. Fixed scene: a red cube image-left of a blue sphere on a gray table; a sign behind them reads exactly `OPEN`; both objects and the sign are fully visible; plain gray backdrop; diffuse frontal light with weak shadows.",
+      "fixtures": []
+    },
+    {
+      "id": "case-08",
+      "request": "Expand this brief into one ready-to-paste text-to-image prompt of at most 55 words: `A rust-red rowboat tied to a weathered dock on a still lake before dawn.` Return only the prompt. Do not add people, buildings, other boats, animals, or active weather.",
+      "fixtures": []
+    },
+    {
+      "id": "case-09",
+      "request": "Critique the following image prompt for visible clarity, composition, and ambiguity. Identify strengths and concrete problems, but do not rewrite it, provide a replacement prompt, or add variants. Prompt: `A mysterious traveler in a beautiful place, cinematic, amazing lighting, dynamic composition.`",
+      "fixtures": []
+    },
+    {
+      "id": "case-10",
+      "request": "Compare these two supplied prompts for fidelity to the same brief, model-appropriate expression, and likely ambiguity. Keep the answer as a labeled comparison; do not merge, rewrite, or replace either prompt and do not produce a third prompt. Brief: a green bicycle leaning against a white brick wall in soft overcast daylight. SDXL prompt: `green bicycle leaning against a white brick wall, soft overcast daylight, eye-level medium shot, restrained color palette`. Krea 2 prompt: `A green bicycle rests against a white brick wall under soft, even overcast daylight, framed at eye level with a restrained palette.`",
+      "fixtures": []
+    },
+    {
+      "id": "case-11",
+      "request": "Write one positive prompt for Illustrious in explicitly requested Danbooru Version for one adult woman with grey hair, green eyes, a black turtleneck, and white gloves, standing in a library. Before answering, use the existing local Danbooru lookup script to confirm the canonical spelling `grey_hair`; do not read raw CSV files and do not add related candidates. Return only the comma-separated positive prompt, with no negative prompt, notes, or explanation.",
+      "fixtures": []
+    },
+    {
+      "id": "case-12",
+      "request": "Write one Pony Diffusion V6 XL positive prompt for one adult woman with auburn hair, round glasses, a teal raincoat, and a folded red umbrella, standing at an empty tram stop at night. Use the safe anime source/rating dialect. Return only the comma-separated positive prompt: no negative prompt, notes, labels, or variants.",
+      "fixtures": []
+    },
+    {
+      "id": "case-13",
+      "request": "Write one NoobAI positive prompt for one adult man with long white hair, amber eyes, a brown leather apron, and blue work gloves, repairing a brass clock at a wooden bench. Return only the comma-separated positive prompt. Use NoobAI's normalized space-separated tag style; no negative prompt, notes, labels, or variants.",
+      "fixtures": []
+    },
+    {
+      "id": "case-14",
+      "request": "Write one Wan text-to-video prompt. A yellow paper boat drifts along a narrow rain-filled gutter beside a gray curb; raindrops ripple the water and push tiny leaves past it. The camera makes a slow low tracking move alongside the boat, then gently pulls back as it reaches a storm drain. Photorealistic macro cinematography, cool overcast light. Return one cohesive paragraph only, with no shot list, label, notes, variants, or generation.",
+      "fixtures": []
+    },
+    {
+      "id": "case-15",
+      "request": "Inspect the supplied source image and write one image-to-video prompt that starts from it. Preserve its simple synthetic subject shapes, colors, initial composition, and flat graphic style. Animate only subtle water ripples and a slow cloud drift, with a very gentle camera push-in. Apart from these authorized temporal changes, do not add, remove, recolor, or reposition objects. Return only the prompt, with no label, notes, variants, or generation.",
+      "fixtures": [
+        "case15-geometric-source.png"
+      ]
+    },
+    {
+      "id": "case-16",
+      "request": "Create a ComfyUI wildcard file at `outputs/clothing-fragments.txt` containing exactly four distinct clothing-only fragments suitable for insertion at `[CLOTHING SLOT]` in this host: `score_9, score_8_up, score_7_up, source_anime, rating_safe, 1girl, black hair, [CLOTHING SLOT]`. Each fragment must be one nonempty physical line and describe only one garment or coordinated outfit; do not repeat the host prefix, subject, hair, pose, action, setting, camera, lighting, comments, numbering, headings, or blank lines. After saving, report the actual path, entry count, and that the file is fragment mode outside the file.",
+      "fixtures": []
+    },
+    {
+      "id": "h3-dev-01",
+      "request": "Write a Medium-detail prompt for H3 Ref2VA full-reference generation. Connected references: the first image is Mira's identity and face only; the second image supplies only her silver raincoat; the first video supplies only the dancer's footwork and locked-off camera; the first standalone audio supplies only the violin timbre. Create Mira performing that footwork in the silver raincoat on the described empty station platform, with no dialogue.",
+      "fixtures": []
+    },
+    {
+      "id": "h3-dev-03",
+      "request": "For H3 Ref2VA, edit the described connected base video: two bakers stand behind a pine counter, the baker on image-left wears a white apron, the baker on image-right wears a black apron, and a wall sign reads exactly \"Open late!\". A connected supplemental image supplies only a blue floral fabric. Change only the image-left baker's apron to that fabric; keep both bakers, their positions, the other apron, counter, lighting, and sign unchanged. Exclude hats.",
+      "fixtures": []
+    },
+    {
+      "id": "h3-guide-01",
+      "request": "Use native local MiniMax H3. Author only prompt text, not generation. Use the default H3 structured format and return prompt only. Ref2VA. Connected Picture 1 supplies Mira's appearance; Picture 2 supplies Jo's appearance; standalone Audio 1 supplies only Mira's warm timbre. Define Mira as Subject 1 and Jo as Subject 2. Jo says exactly `Ready?`, Mira says exactly `Yes!`, then both say exactly `Go!` together. No other sound or music is requested.",
+      "fixtures": []
+    },
+    {
+      "id": "h3-guide-02",
+      "request": "Use native local MiniMax H3. Author only prompt text, not generation. Use the default H3 structured format and return prompt only. FL2VA one-opening-image route. Picture 1 shows Noor seated at a desk with her mouth closed. Hold the image still. Noor's own off-screen voiceover says exactly `I remember.` Her lips must not move. No other audio.",
+      "fixtures": []
+    }
+  ],
+  "attempts_per_request": 1,
+  "provenance_sha256": {
+    "generator-system.txt": "97054199856c144ef0116fac7c86cede435c4716cdc12600f71cec780b27cb12",
+    "omp-config.json": "8b998cb4a4b640775cb33a35acc3b3447f1012babb2602b874f7147aecf35b85",
+    "capture.ts": "2a98058006940052f357b0558c0665a48cd9d050e21ca1a6c71847fa4715fd20",
+    "run_baseline.py": "9539a25f8eebc2f723162f1d9dee5cfcdfde6efc6c6de5407cdcf694484c76ce",
+    "cases.jsonl": "64facdad558c9f2111d54b7e1198df0d75d7fa80d9b49817b29478707f1b5d1c",
+    "rubric.md": "e241ff78d8981197d829d2057def39eedfc61dcb0d06ced4d1382684455a0d1a",
+    "evaluate.py": "454be4addf369c5bb7e5be14c92ded3b7476bb8d0e8b0e2d0f4e76e64d6c9f8e",
+    "wild-probes.jsonl": "09a72a465f823403b4860a0e28ccae364d817fdeb81ca9ebf98dbbc5c590ae01",
+    "phase-three-probes.jsonl": "84dd4defd89295853bf80c4165a3e1b52cf3f2f07d87b8430483469d6936e6e7",
+    "h3-probes.jsonl": "d2309b3a47d0bd02072f8c7212911becced6f9840759837cf10e013958c5b03d",
+    "h3-guide-probes.jsonl": "e5ad62ac602ab972f0b144e900b04be4446ca990982e6a4e0110dcd540cfe251"
+  },
+  "formal_acceptance": false
+}

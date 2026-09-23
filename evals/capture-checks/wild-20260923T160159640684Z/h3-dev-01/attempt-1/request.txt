@@ -1,0 +1,3 @@
+Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.
+
+Write a Medium-detail prompt for H3 Ref2VA full-reference generation. Connected references: the first image is Mira's identity and face only; the second image supplies only her silver raincoat; the first video supplies only the dancer's footwork and locked-off camera; the first standalone audio supplies only the violin timbre. Create Mira performing that footwork in the silver raincoat on the described empty station platform, with no dialogue.

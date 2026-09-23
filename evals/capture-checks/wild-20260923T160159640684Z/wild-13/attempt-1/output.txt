@@ -1,0 +1,7 @@
+For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.
+
+integrated_multimodal_description: [Shot 1] Begin with Picture 1’s exact composition, appearance, setting, and visual style: one adult woman in a red coat standing beside the stall, its sign reading "Open late!" After the unchanged opening, shadows begin sweeping around the stall like accelerated clock hands. Daylight and darkness chase each other overhead, curling into a luminous spiral while the woman and stall remain an island of steady illumination. She raises her chin to follow the spiral; her red coat’s hem lifts and ripples. The camera slowly dollies backward, revealing the swirling light widening around them, then the spiral contracts into a thin glowing halo around the stall. She remains beside it throughout, retaining her identity and red coat. Keep the stall intact and its sign stationary, legible, and exactly "Open late!" She remains the only person; no animals appear.
+
+overall_soundscape: A rising rush of air, soft coat-fabric flutter, and accelerating clocklike clicks that resolve into one resonant chime as the halo settles.
+
+non_diegetic_music: Sparse celesta notes accelerate over a sustained low synth tone, resolving into a shimmering held chord.

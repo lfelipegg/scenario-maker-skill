@@ -1,0 +1,18 @@
+subject_definitions:
+<Subject 1> is the adult woman vendor from <Picture 1>, preserving her appearance, black hair, and red coat. The picture supplies appearance only, not setting, action, camera, or audio.
+
+summary:
+[reference generation] At a night market, <Subject 1> sells miniature thunderstorms sealed in glass jars.
+
+retention_analysis:
+<Subject 1> (throughout [Shot 1]): fully_preserved — her referenced appearance, black hair, and red coat remain unchanged.
+
+detailed_description:
+Tactile magical realism, amber stall lights against blue-black night.
+[Shot 1] Track slowly along a market counter lined with jars containing revolving storm clouds, then settle on <Subject 1>. She lifts a tiny cloud from a copper basin with a ladle and lowers it into an empty jar. Rain begins inside the glass; a branching lightning flash illuminates her unchanged face and red coat. A small thunderclap sounds as she screws the lid shut, becoming abruptly muffled when it seals. She slides the jar toward the camera while shoppers pass beneath patchwork awnings behind her.
+
+overall_soundscape:
+Low market bustle, glass clinks, delicate rain ticking inside jars, and bottled thunder. All sounds are newly authored, not taken from the reference.
+
+non_diegetic_music:
+Sparse celesta notes over a soft sustained bass tone, leaving space for the tiny storm sounds.

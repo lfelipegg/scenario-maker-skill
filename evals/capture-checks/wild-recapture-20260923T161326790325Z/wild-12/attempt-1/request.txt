@@ -1,0 +1,3 @@
+Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.
+
+Use native local MiniMax H3 Ref2VA, Wild mode. Connected Picture 1 supplies only a black-haired adult vendor's face and red coat. Create a night-market concept with two shots and one short original English spoken line continuing across the cut. Choose the line and voice. No music, no timestamps. Return prompt only in the default H3 structure.

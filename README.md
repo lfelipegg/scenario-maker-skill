@@ -94,10 +94,37 @@ Supplied facts and **locked details** remain protected: subject counts, colors, 
 | **Preserve** | Reword or reorganize without introducing new visual facts. Default for adaptation and revision. |
 | **Balanced** | Fill unspecified local details without adding independent subjects, props, actions, or events. Default for creation and expansion. |
 | **Explore** | Add compatible ideas within the requested scope; additional subjects require an open roster or explicit permission. |
+| **Wild** | Develop a bold, coherent concept by making decisive choices only in unspecified, permitted dimensions while preserving every supplied fact and constraint. |
 
-Modes do not broaden the request. A clothing description does not become a full scene, and “change only the jacket color” still permits only that change, even in Explore mode.
+Modes do not broaden the request. A clothing description does not become a full scene, and “change only the jacket color” still permits only that change, even in Explore or Wild mode. Wild activates when named explicitly or clearly delegated with language such as “go wild with the concept”; ordinary vagueness, “improve this,” wild animals, or the mere desire for a creative result does not activate it. Wild is concept-led rather than merely additive: its details reinforce one organizing idea instead of accumulating more objects or adjectives.
 
 ## Example requests
+
+### Develop a vague still seed in Wild
+
+```text
+Wild mode: create one still-image prompt for a night market.
+Choose a bold, coherent direction. Return prompt only.
+```
+
+### Keep Wild clothing-only
+
+```text
+Create one clothing-only design in Wild mode: a moss-green coat.
+No wearer, pose, setting, camera, lighting, or independent props.
+Return prompt only.
+```
+
+### Animate an H3 opening image in Wild
+
+```text
+Animate this described opening image using native local H3 FL2VA; go wild.
+Picture 1 shows one adult woman in a red coat beside a stall whose sign reads
+exactly "Open late!". She is the only person; no animals. Preserve the actual
+opening, then develop the future animation. Return prompt only.
+```
+
+These requests ask Scenario Maker to write prompts; they do not run image or video generation.
 
 ### Adapt an existing prompt
 
