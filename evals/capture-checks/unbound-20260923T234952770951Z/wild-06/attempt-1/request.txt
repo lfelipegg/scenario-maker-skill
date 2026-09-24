@@ -1,0 +1,3 @@
+Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.
+
+Return two labeled results in Wild mode. A: adapt to prose the source "A blue mug on a white shelf against a bare gray wall." B: revise only the door color to red in "A blue front door beneath a brass porch light, with two square windows and white siding."

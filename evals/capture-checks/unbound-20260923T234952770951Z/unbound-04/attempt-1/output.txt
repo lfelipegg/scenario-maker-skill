@@ -1,0 +1,7 @@
+For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.
+
+integrated_multimodal_description: [Shot 1] Begin with the image’s flat, low-resolution geometric illustration: a red-hulled sailboat with a dark mast, white left sail and yellow right sail, blue water with pale horizontal ripples, light-blue sky, and one white cloud at upper right. Keep the camera fixed and preserve the simple shapes, colors, and stepped edges. A breeze carries the boat steadily rightward as the ripple marks slide past. The hull rocks gently, then rides over a single low swell, lifting its bow before settling level again. A thin pale wake trails behind and gradually separates into short horizontal marks. The cloud drifts slightly left. End with the boat fully visible on the right, gliding smoothly across calm water.
+
+overall_soundscape: Soft wind and gentle water lapping, with a brief fuller splash as the bow settles.
+
+non_diegetic_music: A sparse, softly plucked melody resolves on a sustained note as the boat steadies.

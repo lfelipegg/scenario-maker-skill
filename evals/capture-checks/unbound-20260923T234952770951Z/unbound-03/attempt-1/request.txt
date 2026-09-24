@@ -1,0 +1,5 @@
+Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.
+
+Unbound: write one Wan image-to-video prompt from the supplied image. Return prompt only.
+
+Supplied local fixtures: fixtures/case15-geometric-source.png

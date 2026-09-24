@@ -1,0 +1,3 @@
+Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.
+
+Unbound: write an image-to-video prompt from my opening image. I have not supplied an image or a description.

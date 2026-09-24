@@ -1,0 +1,3 @@
+Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.
+
+Use native local H3 Ref2VA, Wild mode, for a frame-derived still edit. Picture 1 shows a hand holding a yellow mug labeled "MORNING" over a wooden table. Change only the mug to cobalt blue. Keep everything else, including composition and lettering. I will extract the first output frame. Return prompt only.

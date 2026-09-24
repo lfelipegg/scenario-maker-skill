@@ -1,0 +1,85 @@
+{
+  "case_id": "wild-15",
+  "attempt": 1,
+  "revision": "worktree-sha256-8c1db4ecf911696e5a7492cf07d67e101e538ebdf8d2f67eceb7c383dd9961da",
+  "started_at": "2026-09-23T23:51:40.822479+00:00",
+  "elapsed_seconds": 29.042,
+  "command": [
+    "omp",
+    "--cwd",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/wild-15/attempt-1",
+    "--print",
+    "--mode",
+    "json",
+    "--model",
+    "openai-codex/gpt-6-astra",
+    "--thinking",
+    "high",
+    "--no-session",
+    "--no-title",
+    "--no-prewalk",
+    "--no-skills",
+    "--no-rules",
+    "--no-extensions",
+    "--no-lsp",
+    "--no-pty",
+    "--tools",
+    "read,grep,glob,bash,write",
+    "--approval-mode",
+    "yolo",
+    "--config",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/omp-config.json",
+    "--system-prompt",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/generator-system.txt",
+    "--extension",
+    "/home/mothmanex/.agents/skills/scenario-maker/evals/capture.ts",
+    "--max-time",
+    "300s",
+    "Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.\n\nUse native local H3 Ref2VA in Wild mode. Connected Picture 1 supplies Mira's appearance: black hair and a red coat. Connected standalone Audio 1 supplies only a warm voice timbre and must be used, but I have not specified its target sound or placement. Create a night-market concept. Return prompt only."
+  ],
+  "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/wild-15/attempt-1",
+  "execution": {
+    "status": "completed",
+    "exit_code": 0,
+    "error": null,
+    "model_errors": [],
+    "malformed_trace_lines": []
+  },
+  "raw": {
+    "output": "output.txt",
+    "partial_output": null,
+    "trace": "trace.jsonl",
+    "stderr": "stderr.txt",
+    "context": "context.jsonl"
+  },
+  "trace_complete": true,
+  "artifacts": [],
+  "observed_context": [
+    {
+      "type": "eval_context",
+      "systemPrompt": "You are a prompt-writing assistant executing the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md. Read that file and only its applicable references. Resolve its reference and script paths relative to ./selected-skill, not an installed skill. Do not discover or load other skills, repository instructions, past sessions, evaluator files, or web sources.\n\nOnly local read, grep, glob, bash, and write tools are available. Use them for the selected skill's references, local lookup/scripts, supplied fixtures, and requested workspace-local text exports. Keep writes within this fresh workspace. Do not edit the selected skill, execute image/video generation or frame extraction, delegate, switch models, access the network, or inspect credentials. This is prompt writing, not generation. If clarification is necessary, ask in your final response; this non-interactive run cannot receive an answer.\n\nApply the selected skill to the user's request. Do not discuss evaluation or scoring. The workspace starts with no prior conversation or generated outputs.\n",
+      "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/wild-15/attempt-1",
+      "model": {
+        "provider": "openai-codex",
+        "id": "gpt-6-astra",
+        "name": "GPT-6-Astra"
+      },
+      "thinking": "high",
+      "tools": [
+        "read",
+        "grep",
+        "glob",
+        "bash",
+        "write"
+      ]
+    }
+  ],
+  "raw_checksums": {
+    "request.txt": "7dadbc0de06edcb9f268ba0cadb3b29bbf0a3f1d6e74f28e9a1ab6743ee58ec3",
+    "output.txt": "fb5fe2828011cd66d8fb7f2341ada6f1ef320bc096a58c424cf3120253a188f4",
+    "context.jsonl": "043537ef4c92b6efd649ded6fa3b3775e4ba5466a6292d3bfda4fce2bc1a56fe",
+    "trace.jsonl": "01a412d02ba3110680a898b03e0793641dbd0e608347b2eb8cf18a1077f8ac5e",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "comparison_side": "candidate"
+}

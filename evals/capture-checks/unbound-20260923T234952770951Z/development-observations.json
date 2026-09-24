@@ -1,0 +1,267 @@
+{
+  "kind": "development-only diagnostic observations",
+  "formal_acceptance": false,
+  "review_method": "Assistant read every captured output against probe observations; inspected actual fixture and image tool traces. No semantic pass/fail grade or human acceptance is claimed.",
+  "model": "openai-codex/gpt-6-astra",
+  "omp_version": "omp/18.2.11",
+  "source_identity": "8c1db4ecf911696e5a7492cf07d67e101e538ebdf8d2f67eceb7c383dd9961da",
+  "execution": {
+    "attempts": 19,
+    "completed": 19,
+    "complete_traces": 19,
+    "artifacts": "Prompt text only; no generated images/videos.",
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 /tmp/unbound-smoke.py"
+  },
+  "fixture": {
+    "path": "evals/fixtures/case15-geometric-source.png",
+    "sha256": "96d3453296fdd1239b21aeda140412632b643d96cb3980986739da4470bd8ded",
+    "observed_pixels": "Red hull, dark mast, white left sail, yellow right sail, pale-cyan sky, blue water, upper-right white cloud, three pale horizontal ripple marks."
+  },
+  "image_provenance": [
+    {
+      "id": "unbound-03",
+      "trace": "unbound-03/attempt-1/trace.jsonl",
+      "request": "unbound-03/attempt-1/request.txt",
+      "toolCallId": "call_9gZyf5zhgK8CnLFv8pD9N3gj|fc_0c1472f1abe62ec9016ab465a9324487d1b0b5cd86ac985b6d",
+      "tool": "read",
+      "args": {
+        "path": "fixtures/case15-geometric-source.png"
+      },
+      "isError": false,
+      "result_content": [
+        {
+          "type": "text",
+          "text": "Read image file [image/webp]\n[Image: original 128x80, displayed at 320x200. Multiply coordinates by 0.40 to map to original image.]"
+        },
+        {
+          "type": "image",
+          "mimeType": "image/webp",
+          "base64_length": 2220
+        }
+      ],
+      "note": "Generator request contains only the exact request plus fixture path, not its description or expected behavior. The read result contains actual image content."
+    },
+    {
+      "id": "unbound-04",
+      "trace": "unbound-04/attempt-1/trace.jsonl",
+      "request": "unbound-04/attempt-1/request.txt",
+      "toolCallId": "call_PVPula4aqJ3K5D80snLdATUr|fc_0c2b4abaf1adba4a016ab465c1536087d1afe9e5c44bb42b7f",
+      "tool": "read",
+      "args": {
+        "path": "fixtures/case15-geometric-source.png"
+      },
+      "isError": false,
+      "result_content": [
+        {
+          "type": "text",
+          "text": "Read image file [image/webp]\n[Image: original 128x80, displayed at 320x200. Multiply coordinates by 0.40 to map to original image.]"
+        },
+        {
+          "type": "image",
+          "mimeType": "image/webp",
+          "base64_length": 2220
+        }
+      ],
+      "note": "Generator request contains only the exact request plus fixture path, not its description or expected behavior. The read result contains actual image content."
+    }
+  ],
+  "observations": [
+    {
+      "id": "unbound-01",
+      "output": "unbound-01/attempt-1/output.txt",
+      "trace": "unbound-01/attempt-1/trace.jsonl",
+      "observed": "Authors a freestanding doorway on a salt flat containing a vertical ocean, with lighting, composition, and realistic texture. The described wave and spilling water fit one still frame; no temporal sequence, question, rationale, or extra result.",
+      "violations_observed": [],
+      "tools": [
+        "read"
+      ]
+    },
+    {
+      "id": "unbound-02",
+      "output": "unbound-02/attempt-1/output.txt",
+      "trace": "unbound-02/attempt-1/trace.jsonl",
+      "observed": "Whole-scenario delegation produces a skater watching a distant under-ice light approach, reveal a luminous jellyfish, pass below the boots, and fill the frame with trailing blue filaments. The reveal and closing image provide a connected visual payoff. No model or audio support is guessed.",
+      "violations_observed": [],
+      "tools": [
+        "read"
+      ]
+    },
+    {
+      "id": "unbound-03",
+      "output": "unbound-03/attempt-1/output.txt",
+      "trace": "unbound-03/attempt-1/trace.jsonl",
+      "observed": "One Wan paragraph explicitly starts from the supplied illustration and preserves its red boat, dark mast, white left/yellow right sails, blue water, cyan sky, cloud, shapes, and palette. Chooses rightward gliding, a swell, bow lift/lowering, and settling rocking with a wake. No opening replacement, optional motion question, or soundtrack assumption. Pixel inspection is recorded separately.",
+      "violations_observed": [],
+      "tools": [
+        "read"
+      ]
+    },
+    {
+      "id": "unbound-04",
+      "output": "unbound-04/attempt-1/output.txt",
+      "trace": "unbound-04/attempt-1/trace.jsonl",
+      "observed": "Uses the exact I2VA opening anchor and only integrated_multimodal_description, overall_soundscape, and non_diegetic_music. Preserves the geometric sailboat scene and opening, then develops a breeze, rightward travel, low swell, settling bow, pale wake, and drifting cloud; ends with the boat visible and gliding on calm water. Adds permitted wind/water sound and a resolving plucked melody without fabricated references or times. Pixel inspection is recorded separately.",
+      "violations_observed": [],
+      "tools": [
+        "read",
+        "grep"
+      ]
+    },
+    {
+      "id": "unbound-05",
+      "output": "unbound-05/attempt-1/output.txt",
+      "trace": "unbound-05/attempt-1/trace.jsonl",
+      "observed": "Preserves exactly one adult woman, red coat, exact Open late! lettering, and no animals. Only curtain ripples, never opening to reveal new content, then settles. All other visuals remain still; fixed camera and one continuous shot. Both audio sections explicitly use N/A for complete silence/no music.",
+      "violations_observed": [],
+      "tools": [
+        "read"
+      ]
+    },
+    {
+      "id": "unbound-06",
+      "output": "unbound-06/attempt-1/output.txt",
+      "trace": "unbound-06/attempt-1/trace.jsonl",
+      "observed": "A is a moss-green garment-only wool coat with leaf-shaped collar, branching seams, inset pockets, horn buttons, and tonal embroidery; explicitly excludes wearer/mannequin/scene. B preserves only blue mug, white shelf, bare gray wall.",
+      "violations_observed": [],
+      "tools": [
+        "read"
+      ]
+    },
+    {
+      "id": "unbound-07",
+      "output": "unbound-07/attempt-1/output.txt",
+      "trace": "unbound-07/attempt-1/trace.jsonl",
+      "observed": "Requests the missing opening image or a brief description. Does not fabricate source content; offers to decide later action/camera/ending after receiving evidence.",
+      "violations_observed": [],
+      "tools": [
+        "read"
+      ]
+    },
+    {
+      "id": "unbound-08",
+      "output": "unbound-08/attempt-1/output.txt",
+      "trace": "unbound-08/attempt-1/trace.jsonl",
+      "observed": "Asks which target sound uses the existing warm-timbre reference and where it is heard. Does not silently assign speech, voiceover, or singing as the role.",
+      "violations_observed": [],
+      "tools": [
+        "read"
+      ]
+    },
+    {
+      "id": "unbound-09",
+      "output": "unbound-09/attempt-1/output.txt",
+      "trace": "unbound-09/attempt-1/trace.jsonl",
+      "observed": "Six-section Ref2VA prompt identifies the edit base, retains hand/table/composition/lighting/exact MORNING label, and places cobalt-blue recoloring completely in the first output frame. Explicitly rejects a later transition; later motion/camera and audio remain Unspecified. No I2VA anchor or generation/extraction claim.",
+      "violations_observed": [],
+      "tools": [
+        "read"
+      ]
+    },
+    {
+      "id": "unbound-10",
+      "output": "unbound-10/attempt-1/output.txt",
+      "trace": "unbound-10/attempt-1/trace.jsonl",
+      "observed": "Exactly three numbered complete single-frame concepts: ocean doorway with diver; bakery doorway with baker/fox; cliff doorway with giant moth and small figure. Each retains a doorway, coherent composition and visual treatment; no fourth alternative or explanation.",
+      "violations_observed": [],
+      "tools": [
+        "read"
+      ]
+    },
+    {
+      "id": "unbound-11",
+      "output": "unbound-11/attempt-1/output.txt",
+      "trace": "unbound-11/attempt-1/trace.jsonl",
+      "observed": "Chooses a financial bank interpretation and develops an Art Deco bank receiving bottled sunlight, with teller/vault, coherent amber-blue lighting, symmetrical framing, and oil-paint treatment. Does not ask which meaning or write a temporal sequence.",
+      "violations_observed": [],
+      "tools": [
+        "read"
+      ]
+    },
+    {
+      "id": "unbound-12",
+      "output": "unbound-12/attempt-1/output.txt",
+      "trace": "unbound-12/attempt-1/trace.jsonl",
+      "observed": "Asks whether the existing source crane is a bird or construction machine rather than inventing an interpretation.",
+      "violations_observed": [],
+      "tools": [
+        "read"
+      ]
+    },
+    {
+      "id": "wild-03",
+      "output": "wild-03/attempt-1/output.txt",
+      "trace": "wild-03/attempt-1/trace.jsonl",
+      "observed": "Keeps the green coat and wildflower embroidery; local wool/tailoring/buttons/flower-thread details only, no wearer, setting, or independent props. Observable behavior remains within Balanced garment completion.",
+      "violations_observed": [],
+      "tools": [
+        "read"
+      ]
+    },
+    {
+      "id": "wild-06",
+      "output": "wild-06/attempt-1/output.txt",
+      "trace": "wild-06/attempt-1/trace.jsonl",
+      "observed": "A preserves the blue mug/white shelf/bare gray wall; B changes only the front door to red and retains brass porch light, two square windows, white siding.",
+      "violations_observed": [],
+      "tools": [
+        "read"
+      ]
+    },
+    {
+      "id": "wild-13",
+      "output": "wild-13/attempt-1/output.txt",
+      "trace": "wild-13/attempt-1/trace.jsonl",
+      "observed": "Exact I2VA anchor and three sections. Retains woman, red coat, stall, exact Open late! sign, only-person/no-animals constraints. Chooses a golden-light clock sequence, hand movement, camera arc, and supported audio; finishes with her lowering her hand beside the unchanged stall. No optional-motion question or media-inspection claim.",
+      "violations_observed": [],
+      "tools": [
+        "read"
+      ]
+    },
+    {
+      "id": "wild-14",
+      "output": "wild-14/attempt-1/output.txt",
+      "trace": "wild-14/attempt-1/trace.jsonl",
+      "observed": "Only curtain ripples and settles; curtain remains closed. Woman and all other visuals stay frozen, camera fixed, no cuts or lighting drift. N/A explicitly represents complete silence and no music.",
+      "violations_observed": [],
+      "tools": [
+        "read"
+      ]
+    },
+    {
+      "id": "wild-15",
+      "output": "wild-15/attempt-1/output.txt",
+      "trace": "wild-15/attempt-1/trace.jsonl",
+      "observed": "Asks the missing target sound and placement for Audio 1 warm timbre, rather than selecting a reference role.",
+      "violations_observed": [],
+      "tools": [
+        "read"
+      ]
+    },
+    {
+      "id": "wild-16",
+      "output": "wild-16/attempt-1/output.txt",
+      "trace": "wild-16/attempt-1/trace.jsonl",
+      "observed": "Complete mug recoloring already exists in first output frame; hand/table/composition/lighting/exact MORNING lettering retained. Later motion/camera and audio remain unspecified; no later transformation, FL2VA anchor, generation, or extraction.",
+      "violations_observed": [],
+      "tools": [
+        "read"
+      ]
+    },
+    {
+      "id": "wild-19",
+      "output": "wild-19/attempt-1/output.txt",
+      "trace": "wild-19/attempt-1/trace.jsonl",
+      "observed": "Explore produces a populated lantern-lit market with food, pottery, fabric stalls, shoppers, a cook, layered composition, and visual atmosphere. Compatible creative additions remain allowed.",
+      "violations_observed": [],
+      "tools": [
+        "read"
+      ]
+    }
+  ],
+  "limits": [
+    "One attempt per probe/control; not a reliability estimate or formal acceptance cohort.",
+    "No image/video generation or rendered-media quality was tested.",
+    "Pixel inspection is established only for the two actual-image probes; textual source probes are not image-capability evidence."
+  ],
+  "conclusion": "No behavioral defect identified in these 19 captured responses. No corrective rule edits or reruns were needed."
+}

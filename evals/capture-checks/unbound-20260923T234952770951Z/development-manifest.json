@@ -1,0 +1,202 @@
+{
+  "kind": "development-only",
+  "omp_version": "omp/18.2.11",
+  "model": "openai-codex/gpt-6-astra",
+  "source_identity": "8c1db4ecf911696e5a7492cf07d67e101e538ebdf8d2f67eceb7c383dd9961da",
+  "source_files": {
+    "SKILL.md": "fc81220e59be88384fd1339cfc42deeb7ef0a9d9793b7faacb23ff901ad2c8f5",
+    "docs/danbooru_tags/danbooru_tags.csv": "a48e1e63b81e8e4fc3091c660fd763e9d05e19beea3b98d1ee78d00ed10ac9d3",
+    "docs/danbooru_tags/danbooru_tags_cooccurrence.csv": "29bf95d3dd2f4b1038ac26b3fee371ebbe67d9b622b32d274c9486dbde56077a",
+    "references/characters.md": "88e020a5d1cce0adf6d6a8f4617299809612d9ae3639de4fa4b56c5ce5681eef",
+    "references/constraints-and-revisions.md": "681d52117b0ab85902c024d41da45098a8b67393fd2db50d57d2a0af4500471f",
+    "references/danbooru-tags.md": "b221bc80c15d6722d60fad93a5c336d03a0753f0f42d656011387a24f96a66b5",
+    "references/model-prompts.md": "a0af42cebeb8f7e2577b27b844594e86822f67fff5fe538c9e07507f5b795a03",
+    "references/models/illustrious.md": "e133da9dedaeffb42de8b2e6f22638222ce0d5abfd1e29e30fbdedbf5ef53bd0",
+    "references/models/krea-2.md": "19b1b2517fe66a52505adbd72a3d24cf0bf55746330a4c6f51e819a2709b2748",
+    "references/models/minimax-h3.md": "8aac47bf8b134658876b20f2654cb7ec0f50b366ceef132d8b2c1be852dc1ec0",
+    "references/models/minimax_h3/VIDEO_PROMPT_WRITING_GUIDE_base_en.md": "2cfebc096a6e08370f288d468d90b60f7f9bcb938f94bf090816e910e48e75fc",
+    "references/models/minimax_h3/VIDEO_PROMPT_WRITING_GUIDE_ref_en.md": "1e574f356716ad55612247ffb7bbccbcdb484ad96599d63c7dca1af186b1fab7",
+    "references/models/noobai.md": "0f251e9b5bff7bdd330e979765cf8441eb25cb3499722ab8ddf0f84ad2e51c63",
+    "references/models/pony-v6.md": "00ec07731b7844371a88db9c652cae9a4d440daf6b32926bc500d6ee910179af",
+    "references/models/sdxl.md": "cd776ab3f9e575f3c21832c17bab1a3080763981fe374455bd61dcc8488ef8af",
+    "references/output-contracts.md": "0b2f1294927409e89597c97449e16f8fe25b11f7d59767733544f5bd91011d18",
+    "references/prompt-types.md": "31e714d16dafe666cbd19c548febad6827537bde0f2b584895d84589cc2f08a9",
+    "references/routing.md": "f1a8a6512ed3925d86d92902f465d847692a7eb2c661a881d598e2c30f83657e",
+    "references/scene-composition.md": "659d3a5dcbbd3ef296d81196a68f3714ad74c599baeccafcb83459fecc40512a",
+    "references/video-prompts.md": "4fefc1c62b72a5bf8883cfc5577001dbc67c796eb1f53751f560c3c23e0bf3c7",
+    "references/wildcard/legs.txt": "173f9e526cb771b523fdcf67f919e3385fff72e1098541069a766681f0c44178",
+    "references/wildcard/partial.txt": "c1abd5817ca348faebd54a5bb7d18937cce86b1d00c3391eb527dc2dd5c7d1df",
+    "references/wildcards.md": "4b8bd8963cd20e822101e8a4947eabe98f42ed9687dcf3e112dfd1c244a43268",
+    "scripts/build_danbooru_index.py": "cbc860318e67d69f79fbec792e34f252daa386460e803a9807116c67f5a1f986",
+    "scripts/character_generator.py": "2bcc1fb2b3f417b56a5c568277efdd177074b00326593f284b556e80df9d995e",
+    "scripts/danbooru_lookup.py": "f399f42d7a6350bac1913b329ba0b4908b4c3f56c0042184a331f5f1d2cb7389"
+  },
+  "inputs": {
+    "evals/unbound-probes.jsonl": "3c788ecf6fca7a5e5d21264b4512ad95acda0503094f0e6df7ffcea732ddf33c",
+    "evals/wild-probes.jsonl": "09a72a465f823403b4860a0e28ccae364d817fdeb81ca9ebf98dbbc5c590ae01",
+    "evals/run_baseline.py": "9539a25f8eebc2f723162f1d9dee5cfcdfde6efc6c6de5407cdcf694484c76ce",
+    "evals/omp-config.json": "8b998cb4a4b640775cb33a35acc3b3447f1012babb2602b874f7147aecf35b85",
+    "evals/generator-system.txt": "97054199856c144ef0116fac7c86cede435c4716cdc12600f71cec780b27cb12",
+    "evals/capture.ts": "2a98058006940052f357b0558c0665a48cd9d050e21ca1a6c71847fa4715fd20",
+    "evals/fixtures/case15-geometric-source.png": "96d3453296fdd1239b21aeda140412632b643d96cb3980986739da4470bd8ded"
+  },
+  "probes": [
+    {
+      "id": "unbound-01",
+      "request": "Unbound: create one still-image prompt from the seed \"a doorway\". Return prompt only.",
+      "fixtures": [],
+      "expected_behavior": [
+        "Chooses a coherent complete visible scenario without optional questions, rationale, or a temporal story. Retains the doorway."
+      ]
+    },
+    {
+      "id": "unbound-02",
+      "request": "Create one text-to-video prompt from \"a light in the distance\". Invent the entire scenario yourself. Return prompt only.",
+      "fixtures": [],
+      "expected_behavior": [
+        "Whole-scenario delegation activates autonomous completion without requiring the name; supplies connected observable progression and a purposeful ending, no guessed model or audio support."
+      ]
+    },
+    {
+      "id": "unbound-03",
+      "request": "Unbound: write one Wan image-to-video prompt from the supplied image. Return prompt only.",
+      "fixtures": [
+        "case15-geometric-source.png"
+      ],
+      "expected_behavior": [
+        "Inspects actual fixture pixels; preserves the opening sailboat, colors, sails, water, cloud, and composition; develops a coherent subsequent sequence rather than just describing the frame. One paragraph, no optional motion question or sound track assumption."
+      ]
+    },
+    {
+      "id": "unbound-04",
+      "request": "Unbound: write one native local MiniMax H3 FL2VA image-to-video prompt from the supplied image. Return prompt only.",
+      "fixtures": [
+        "case15-geometric-source.png"
+      ],
+      "expected_behavior": [
+        "Inspects fixture; exact I2VA anchor and three sections; independently chooses subsequent progression while preserving opening and enduring attributes. Audio choices are permitted, not compulsory; no fabricated reference inputs."
+      ]
+    },
+    {
+      "id": "unbound-05",
+      "request": "Unbound: animate this described opening image using native local H3 FL2VA. Picture 1 shows one adult woman in a red coat beside a closed curtain and a sign reading exactly \"Open late!\". She is the only person; no animals. Only the curtain may move; keep all other visual content still, camera fixed, one continuous shot, complete silence. Return prompt only.",
+      "fixtures": [],
+      "expected_behavior": [
+        "Delegation does not override exact text, coat, closed roster, stillness, camera/shot restrictions, or silence."
+      ]
+    },
+    {
+      "id": "unbound-06",
+      "request": "Return two labeled results in Unbound mode. A: create a clothing-only design for a moss-green coat, no wearer or scene. B: adapt to prose \"A blue mug on a white shelf against a bare gray wall.\"",
+      "fixtures": [],
+      "expected_behavior": [
+        "Complete in-scope coat design without scene; adaptation adds no scene facts."
+      ]
+    },
+    {
+      "id": "unbound-07",
+      "request": "Unbound: write an image-to-video prompt from my opening image. I have not supplied an image or a description.",
+      "fixtures": [],
+      "expected_behavior": [
+        "Requests missing source; does not fabricate one."
+      ]
+    },
+    {
+      "id": "unbound-08",
+      "request": "Use native local H3 Ref2VA in Unbound mode. Picture 1 supplies only Mira's appearance: black hair and a red coat. Standalone Audio 1 supplies only a warm voice timbre and must be used, but its target sound and placement are unspecified. Invent the whole video scenario. Return prompt only.",
+      "fixtures": [],
+      "expected_behavior": [
+        "Clarifies consequential missing audio role; autonomy does not assign existing-reference sound intent silently."
+      ]
+    },
+    {
+      "id": "unbound-09",
+      "request": "Use native local H3 Ref2VA in Unbound mode for a frame-derived still edit. Picture 1 shows a hand holding a yellow mug labeled \"MORNING\" over a wooden table. Change only the mug to cobalt blue, keeping everything else. I will extract the first output frame. Return prompt only.",
+      "fixtures": [],
+      "expected_behavior": [
+        "Complete edit in first output frame; no invented later transition, motion, or soundtrack."
+      ]
+    },
+    {
+      "id": "unbound-10",
+      "request": "Create exactly three numbered still-image prompts in Unbound mode from \"a doorway\". Each must retain a doorway. No explanations.",
+      "fixtures": [],
+      "expected_behavior": [
+        "Exactly three complete, distinct coherent scenarios, not one result or extra alternatives."
+      ]
+    },
+    {
+      "id": "unbound-11",
+      "request": "Unbound: create one still-image concept around a bank. Choose everything else. Return prompt only.",
+      "fixtures": [],
+      "expected_behavior": [
+        "Chooses a plausible new-seed interpretation and completes the scene without asking which meaning."
+      ]
+    },
+    {
+      "id": "unbound-12",
+      "request": "Adapt this existing source in Unbound mode into an unambiguous prompt that identifies crane as either bird or machine: \"A crane stands beside the river.\"",
+      "fixtures": [],
+      "expected_behavior": [
+        "Clarifies required interpretation of source evidence rather than treating it as open creative seed."
+      ]
+    },
+    {
+      "id": "wild-03",
+      "request": "Create a clothing-only prompt for a green coat with wildflower embroidery. Return prompt only.",
+      "fixtures": [],
+      "expected_behavior": [
+        "Ordinary Balanced behavior: local garment completion, no activation from ‘wildflower,’ wearer, setting, or independent props."
+      ]
+    },
+    {
+      "id": "wild-06",
+      "request": "Return two labeled results in Wild mode. A: adapt to prose the source \"A blue mug on a white shelf against a bare gray wall.\" B: revise only the door color to red in \"A blue front door beneath a brass porch light, with two square windows and white siding.\"",
+      "fixtures": [],
+      "expected_behavior": [
+        "A introduces no scene facts; B changes only door color. Wild does not broaden operation."
+      ]
+    },
+    {
+      "id": "wild-13",
+      "request": "Animate this described opening image using native local H3 FL2VA; go wild. Picture 1 shows one adult woman in a red coat standing beside a stall whose sign reads \"Open late!\". She is the only person; no animals. Return prompt only in the default H3 structure.",
+      "fixtures": [],
+      "expected_behavior": [
+        "Exact opening anchor and three sections; chooses future animation without asking what should move. Opening, identity, red coat, lettering, roster, and exclusions remain intact; no fabricated media inspection."
+      ]
+    },
+    {
+      "id": "wild-14",
+      "request": "Use native local H3 FL2VA, Wild mode. Picture 1 shows one woman in a red coat beside a closed curtain and a sign reading \"Open late!\". Only the curtain may move. Keep all other visual content still, camera fixed, one continuous shot, complete silence. Return prompt only.",
+      "fixtures": [],
+      "expected_behavior": [
+        "Only curtain motion; no extra subjects, camera change, cuts, dialogue, score, or sound. Explicit silence uses the profile's existing representation rather than Unspecified."
+      ]
+    },
+    {
+      "id": "wild-15",
+      "request": "Use native local H3 Ref2VA in Wild mode. Connected Picture 1 supplies Mira's appearance: black hair and a red coat. Connected standalone Audio 1 supplies only a warm voice timbre and must be used, but I have not specified its target sound or placement. Create a night-market concept. Return prompt only.",
+      "fixtures": [],
+      "expected_behavior": [
+        "Clarifies the consequential missing audio target role instead of selecting speech/music/placement for the supplied reference. Creative delegation does not reinterpret an unresolved reference contract."
+      ]
+    },
+    {
+      "id": "wild-16",
+      "request": "Use native local H3 Ref2VA, Wild mode, for a frame-derived still edit. Picture 1 shows a hand holding a yellow mug labeled \"MORNING\" over a wooden table. Change only the mug to cobalt blue. Keep everything else, including composition and lettering. I will extract the first output frame. Return prompt only.",
+      "fixtures": [],
+      "expected_behavior": [
+        "Complete color edit in first output frame; no invented later transition, soundtrack, or motion. No FL2VA opening anchor, generation, or extraction."
+      ]
+    },
+    {
+      "id": "wild-19",
+      "request": "Create a still-image prompt for a night market in Explore mode. Return prompt only.",
+      "fixtures": [],
+      "expected_behavior": [
+        "Existing Explore contract remains; creative results are allowed. Do not fail this because it also happens to be bold."
+      ]
+    }
+  ],
+  "attempts_per_probe": 1
+}

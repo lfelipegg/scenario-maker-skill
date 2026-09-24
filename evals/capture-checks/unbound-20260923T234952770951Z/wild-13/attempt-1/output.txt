@@ -1,0 +1,7 @@
+For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.
+
+integrated_multimodal_description: [Shot 1] Begin with Picture 1’s composition, visual style, and established surroundings: one adult woman in a red coat standing beside the stall, its sign reading exactly "Open late!" Preserve her identity, clothing, the stall, and its lettering throughout; she remains the only person, with no animals. After the opening, she raises one hand. A slender ribbon of golden light sweeps around the stall, winding upward into a vast, rotating clockface made of light, without numerals. Its hands accelerate backward while her coat hem flutters. The camera slowly arcs toward a low angle, keeping her and the sign visible. She closes her fist; the luminous clock stops, contracts into a brilliant ring around the sign, then fades. She lowers her hand, still beside the unchanged stall.
+
+overall_soundscape: Soft fabric rustle beneath an accelerating mechanical ticking; a resonant metallic chime accompanies the clock’s collapse, decaying into quiet ambience.
+
+non_diegetic_music: A rising pulse of plucked synthesizer notes resolves into one sustained, shimmering chord.

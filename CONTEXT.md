@@ -19,6 +19,9 @@ The degree and kind of creative freedom available when developing unspecified co
 **Wild**:
 An invention mode that develops an idea around a bold, coherent concept while retaining every supplied fact and constraint.
 
+**Unbound**:
+An invention mode that autonomously develops a complete in-scope scenario from a minimal seed or supplied opening image while retaining every supplied fact and constraint.
+
 **Locked detail**:
 An attribute or relationship that must survive adaptation, revision, or variation unless the user explicitly permits changing it.
 

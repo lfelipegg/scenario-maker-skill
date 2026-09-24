@@ -1,0 +1,19 @@
+subject_definitions:
+<Picture 1> is the visual edit base for the first generated output frame: a hand holding a yellow mug labeled "MORNING" over a wooden table.
+<Subject 1> is the mug from <Picture 1>; only its yellow color changes to cobalt blue.
+
+summary:
+[keyframe completion] The first generated output frame is an edited still based on <Picture 1>, with only <Subject 1>'s color changed to cobalt blue.
+
+retention_analysis:
+<Picture 1> ([Shot 1] edited keyframe): partially_preserved — preserve everything except the mug's yellow color.
+<Subject 1> (appears in [Shot 1]): partially_preserved — retain the same mug, shape, surface finish, position, and exact "MORNING" label; change only yellow to cobalt blue.
+
+detailed_description:
+[Shot 1] The complete recoloring is already present in the first generated output frame, not introduced through a later transition. The same hand holds the same mug, now cobalt blue, over the unchanged wooden table. Preserve the hand and grip, all other objects, background, composition, framing, lighting, and the label's exact lettering "MORNING", appearance, and placement. Everything except the mug's color remains as in <Picture 1>. Later motion and camera behavior are unspecified.
+
+overall_soundscape:
+Unspecified
+
+non_diegetic_music:
+Unspecified

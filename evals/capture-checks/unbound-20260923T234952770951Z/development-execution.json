@@ -1,0 +1,1617 @@
+[
+  {
+    "case_id": "unbound-01",
+    "attempt": 1,
+    "revision": "worktree-sha256-8c1db4ecf911696e5a7492cf07d67e101e538ebdf8d2f67eceb7c383dd9961da",
+    "started_at": "2026-09-23T23:49:53.986808+00:00",
+    "elapsed_seconds": 18.848,
+    "command": [
+      "omp",
+      "--cwd",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/unbound-01/attempt-1",
+      "--print",
+      "--mode",
+      "json",
+      "--model",
+      "openai-codex/gpt-6-astra",
+      "--thinking",
+      "high",
+      "--no-session",
+      "--no-title",
+      "--no-prewalk",
+      "--no-skills",
+      "--no-rules",
+      "--no-extensions",
+      "--no-lsp",
+      "--no-pty",
+      "--tools",
+      "read,grep,glob,bash,write",
+      "--approval-mode",
+      "yolo",
+      "--config",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/omp-config.json",
+      "--system-prompt",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/generator-system.txt",
+      "--extension",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/capture.ts",
+      "--max-time",
+      "300s",
+      "Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.\n\nUnbound: create one still-image prompt from the seed \"a doorway\". Return prompt only."
+    ],
+    "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/unbound-01/attempt-1",
+    "execution": {
+      "status": "completed",
+      "exit_code": 0,
+      "error": null,
+      "model_errors": [],
+      "malformed_trace_lines": []
+    },
+    "raw": {
+      "output": "output.txt",
+      "partial_output": null,
+      "trace": "trace.jsonl",
+      "stderr": "stderr.txt",
+      "context": "context.jsonl"
+    },
+    "trace_complete": true,
+    "artifacts": [],
+    "observed_context": [
+      {
+        "type": "eval_context",
+        "systemPrompt": "You are a prompt-writing assistant executing the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md. Read that file and only its applicable references. Resolve its reference and script paths relative to ./selected-skill, not an installed skill. Do not discover or load other skills, repository instructions, past sessions, evaluator files, or web sources.\n\nOnly local read, grep, glob, bash, and write tools are available. Use them for the selected skill's references, local lookup/scripts, supplied fixtures, and requested workspace-local text exports. Keep writes within this fresh workspace. Do not edit the selected skill, execute image/video generation or frame extraction, delegate, switch models, access the network, or inspect credentials. This is prompt writing, not generation. If clarification is necessary, ask in your final response; this non-interactive run cannot receive an answer.\n\nApply the selected skill to the user's request. Do not discuss evaluation or scoring. The workspace starts with no prior conversation or generated outputs.\n",
+        "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/unbound-01/attempt-1",
+        "model": {
+          "provider": "openai-codex",
+          "id": "gpt-6-astra",
+          "name": "GPT-6-Astra"
+        },
+        "thinking": "high",
+        "tools": [
+          "read",
+          "grep",
+          "glob",
+          "bash",
+          "write"
+        ]
+      }
+    ],
+    "raw_checksums": {
+      "request.txt": "ec70451a926b50d234c0aaec594736c91fab373f4c0c90d0c6ef178aefa3fadd",
+      "output.txt": "ebc4c5af56ed49f2a15c7ff430f0144de52a3c5855c48fdf881c17fc56154fbe",
+      "context.jsonl": "cdf284b0ff4736acaca3074fc8ec06e3de31ed36a296f2b5404f632d2afade11",
+      "trace.jsonl": "9e3cb255e07f0423815dd9fef0ff8774599b4f8e4c24d78ccf108242a44558f6",
+      "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "comparison_side": "candidate"
+  },
+  {
+    "case_id": "unbound-02",
+    "attempt": 1,
+    "revision": "worktree-sha256-8c1db4ecf911696e5a7492cf07d67e101e538ebdf8d2f67eceb7c383dd9961da",
+    "started_at": "2026-09-23T23:49:53.985736+00:00",
+    "elapsed_seconds": 23.585,
+    "command": [
+      "omp",
+      "--cwd",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/unbound-02/attempt-1",
+      "--print",
+      "--mode",
+      "json",
+      "--model",
+      "openai-codex/gpt-6-astra",
+      "--thinking",
+      "high",
+      "--no-session",
+      "--no-title",
+      "--no-prewalk",
+      "--no-skills",
+      "--no-rules",
+      "--no-extensions",
+      "--no-lsp",
+      "--no-pty",
+      "--tools",
+      "read,grep,glob,bash,write",
+      "--approval-mode",
+      "yolo",
+      "--config",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/omp-config.json",
+      "--system-prompt",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/generator-system.txt",
+      "--extension",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/capture.ts",
+      "--max-time",
+      "300s",
+      "Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.\n\nCreate one text-to-video prompt from \"a light in the distance\". Invent the entire scenario yourself. Return prompt only."
+    ],
+    "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/unbound-02/attempt-1",
+    "execution": {
+      "status": "completed",
+      "exit_code": 0,
+      "error": null,
+      "model_errors": [],
+      "malformed_trace_lines": []
+    },
+    "raw": {
+      "output": "output.txt",
+      "partial_output": null,
+      "trace": "trace.jsonl",
+      "stderr": "stderr.txt",
+      "context": "context.jsonl"
+    },
+    "trace_complete": true,
+    "artifacts": [],
+    "observed_context": [
+      {
+        "type": "eval_context",
+        "systemPrompt": "You are a prompt-writing assistant executing the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md. Read that file and only its applicable references. Resolve its reference and script paths relative to ./selected-skill, not an installed skill. Do not discover or load other skills, repository instructions, past sessions, evaluator files, or web sources.\n\nOnly local read, grep, glob, bash, and write tools are available. Use them for the selected skill's references, local lookup/scripts, supplied fixtures, and requested workspace-local text exports. Keep writes within this fresh workspace. Do not edit the selected skill, execute image/video generation or frame extraction, delegate, switch models, access the network, or inspect credentials. This is prompt writing, not generation. If clarification is necessary, ask in your final response; this non-interactive run cannot receive an answer.\n\nApply the selected skill to the user's request. Do not discuss evaluation or scoring. The workspace starts with no prior conversation or generated outputs.\n",
+        "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/unbound-02/attempt-1",
+        "model": {
+          "provider": "openai-codex",
+          "id": "gpt-6-astra",
+          "name": "GPT-6-Astra"
+        },
+        "thinking": "high",
+        "tools": [
+          "read",
+          "grep",
+          "glob",
+          "bash",
+          "write"
+        ]
+      }
+    ],
+    "raw_checksums": {
+      "request.txt": "a31b4ab25b35f774ff97871f48224a4c4c1eb05a3b521d520474090879f70036",
+      "output.txt": "b1c6583a1d218667aff99681457a8524fac78b84e5d15276e913d215b11642f8",
+      "context.jsonl": "5fdd4ab1f79fba624a0c24242eae9acb91940cf859af9b0a60c23a3dd473eb7e",
+      "trace.jsonl": "c943df78ba6f667be7d4cb80d460d1f7ad5739aaffd63d081352147f600a5ec9",
+      "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "comparison_side": "candidate"
+  },
+  {
+    "case_id": "unbound-03",
+    "attempt": 1,
+    "revision": "worktree-sha256-8c1db4ecf911696e5a7492cf07d67e101e538ebdf8d2f67eceb7c383dd9961da",
+    "started_at": "2026-09-23T23:49:53.986456+00:00",
+    "elapsed_seconds": 21.589,
+    "command": [
+      "omp",
+      "--cwd",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/unbound-03/attempt-1",
+      "--print",
+      "--mode",
+      "json",
+      "--model",
+      "openai-codex/gpt-6-astra",
+      "--thinking",
+      "high",
+      "--no-session",
+      "--no-title",
+      "--no-prewalk",
+      "--no-skills",
+      "--no-rules",
+      "--no-extensions",
+      "--no-lsp",
+      "--no-pty",
+      "--tools",
+      "read,grep,glob,bash,write",
+      "--approval-mode",
+      "yolo",
+      "--config",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/omp-config.json",
+      "--system-prompt",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/generator-system.txt",
+      "--extension",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/capture.ts",
+      "--max-time",
+      "300s",
+      "Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.\n\nUnbound: write one Wan image-to-video prompt from the supplied image. Return prompt only.\n\nSupplied local fixtures: fixtures/case15-geometric-source.png"
+    ],
+    "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/unbound-03/attempt-1",
+    "execution": {
+      "status": "completed",
+      "exit_code": 0,
+      "error": null,
+      "model_errors": [],
+      "malformed_trace_lines": []
+    },
+    "raw": {
+      "output": "output.txt",
+      "partial_output": null,
+      "trace": "trace.jsonl",
+      "stderr": "stderr.txt",
+      "context": "context.jsonl"
+    },
+    "trace_complete": true,
+    "artifacts": [],
+    "observed_context": [
+      {
+        "type": "eval_context",
+        "systemPrompt": "You are a prompt-writing assistant executing the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md. Read that file and only its applicable references. Resolve its reference and script paths relative to ./selected-skill, not an installed skill. Do not discover or load other skills, repository instructions, past sessions, evaluator files, or web sources.\n\nOnly local read, grep, glob, bash, and write tools are available. Use them for the selected skill's references, local lookup/scripts, supplied fixtures, and requested workspace-local text exports. Keep writes within this fresh workspace. Do not edit the selected skill, execute image/video generation or frame extraction, delegate, switch models, access the network, or inspect credentials. This is prompt writing, not generation. If clarification is necessary, ask in your final response; this non-interactive run cannot receive an answer.\n\nApply the selected skill to the user's request. Do not discuss evaluation or scoring. The workspace starts with no prior conversation or generated outputs.\n",
+        "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/unbound-03/attempt-1",
+        "model": {
+          "provider": "openai-codex",
+          "id": "gpt-6-astra",
+          "name": "GPT-6-Astra"
+        },
+        "thinking": "high",
+        "tools": [
+          "read",
+          "grep",
+          "glob",
+          "bash",
+          "write"
+        ]
+      }
+    ],
+    "raw_checksums": {
+      "request.txt": "c835ca990eef8dff69851431e37ef435356888b2d73a70090e2d9820802af78b",
+      "output.txt": "bf7402a479fd36cab41cdde608d7450a877e647c4ae025db79b01e52fe19f31c",
+      "context.jsonl": "b5be0cadc0864621d784460f1c7d50dd5b6612622c0fccbe8bb12b8a839b6224",
+      "trace.jsonl": "7a7d793a331f469262c22de875343c8e26d8712bb7878bb9f74fb2f6172a528f",
+      "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "comparison_side": "candidate"
+  },
+  {
+    "case_id": "unbound-04",
+    "attempt": 1,
+    "revision": "worktree-sha256-8c1db4ecf911696e5a7492cf07d67e101e538ebdf8d2f67eceb7c383dd9961da",
+    "started_at": "2026-09-23T23:50:11.533372+00:00",
+    "elapsed_seconds": 36.182,
+    "command": [
+      "omp",
+      "--cwd",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/unbound-04/attempt-1",
+      "--print",
+      "--mode",
+      "json",
+      "--model",
+      "openai-codex/gpt-6-astra",
+      "--thinking",
+      "high",
+      "--no-session",
+      "--no-title",
+      "--no-prewalk",
+      "--no-skills",
+      "--no-rules",
+      "--no-extensions",
+      "--no-lsp",
+      "--no-pty",
+      "--tools",
+      "read,grep,glob,bash,write",
+      "--approval-mode",
+      "yolo",
+      "--config",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/omp-config.json",
+      "--system-prompt",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/generator-system.txt",
+      "--extension",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/capture.ts",
+      "--max-time",
+      "300s",
+      "Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.\n\nUnbound: write one native local MiniMax H3 FL2VA image-to-video prompt from the supplied image. Return prompt only.\n\nSupplied local fixtures: fixtures/case15-geometric-source.png"
+    ],
+    "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/unbound-04/attempt-1",
+    "execution": {
+      "status": "completed",
+      "exit_code": 0,
+      "error": null,
+      "model_errors": [],
+      "malformed_trace_lines": []
+    },
+    "raw": {
+      "output": "output.txt",
+      "partial_output": null,
+      "trace": "trace.jsonl",
+      "stderr": "stderr.txt",
+      "context": "context.jsonl"
+    },
+    "trace_complete": true,
+    "artifacts": [],
+    "observed_context": [
+      {
+        "type": "eval_context",
+        "systemPrompt": "You are a prompt-writing assistant executing the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md. Read that file and only its applicable references. Resolve its reference and script paths relative to ./selected-skill, not an installed skill. Do not discover or load other skills, repository instructions, past sessions, evaluator files, or web sources.\n\nOnly local read, grep, glob, bash, and write tools are available. Use them for the selected skill's references, local lookup/scripts, supplied fixtures, and requested workspace-local text exports. Keep writes within this fresh workspace. Do not edit the selected skill, execute image/video generation or frame extraction, delegate, switch models, access the network, or inspect credentials. This is prompt writing, not generation. If clarification is necessary, ask in your final response; this non-interactive run cannot receive an answer.\n\nApply the selected skill to the user's request. Do not discuss evaluation or scoring. The workspace starts with no prior conversation or generated outputs.\n",
+        "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/unbound-04/attempt-1",
+        "model": {
+          "provider": "openai-codex",
+          "id": "gpt-6-astra",
+          "name": "GPT-6-Astra"
+        },
+        "thinking": "high",
+        "tools": [
+          "read",
+          "grep",
+          "glob",
+          "bash",
+          "write"
+        ]
+      }
+    ],
+    "raw_checksums": {
+      "request.txt": "2d715679bb3355e202219bd033da880983d29c9af5c01e9875447e399e3f791b",
+      "output.txt": "106e8502762e7f006aab5339a3a10eed313b4eacb1000b5b33cd179dbc736a30",
+      "context.jsonl": "6cb3b55c4d8e1e57940f2732725f629263ebbf8b00c23eaa0adbbde350c3883c",
+      "trace.jsonl": "9bde87d5cbc94b3c985930b6a8ba46007a331e4a64b35877b693a274c3ef98e2",
+      "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "comparison_side": "candidate"
+  },
+  {
+    "case_id": "unbound-05",
+    "attempt": 1,
+    "revision": "worktree-sha256-8c1db4ecf911696e5a7492cf07d67e101e538ebdf8d2f67eceb7c383dd9961da",
+    "started_at": "2026-09-23T23:50:14.272883+00:00",
+    "elapsed_seconds": 28.942,
+    "command": [
+      "omp",
+      "--cwd",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/unbound-05/attempt-1",
+      "--print",
+      "--mode",
+      "json",
+      "--model",
+      "openai-codex/gpt-6-astra",
+      "--thinking",
+      "high",
+      "--no-session",
+      "--no-title",
+      "--no-prewalk",
+      "--no-skills",
+      "--no-rules",
+      "--no-extensions",
+      "--no-lsp",
+      "--no-pty",
+      "--tools",
+      "read,grep,glob,bash,write",
+      "--approval-mode",
+      "yolo",
+      "--config",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/omp-config.json",
+      "--system-prompt",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/generator-system.txt",
+      "--extension",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/capture.ts",
+      "--max-time",
+      "300s",
+      "Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.\n\nUnbound: animate this described opening image using native local H3 FL2VA. Picture 1 shows one adult woman in a red coat beside a closed curtain and a sign reading exactly \"Open late!\". She is the only person; no animals. Only the curtain may move; keep all other visual content still, camera fixed, one continuous shot, complete silence. Return prompt only."
+    ],
+    "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/unbound-05/attempt-1",
+    "execution": {
+      "status": "completed",
+      "exit_code": 0,
+      "error": null,
+      "model_errors": [],
+      "malformed_trace_lines": []
+    },
+    "raw": {
+      "output": "output.txt",
+      "partial_output": null,
+      "trace": "trace.jsonl",
+      "stderr": "stderr.txt",
+      "context": "context.jsonl"
+    },
+    "trace_complete": true,
+    "artifacts": [],
+    "observed_context": [
+      {
+        "type": "eval_context",
+        "systemPrompt": "You are a prompt-writing assistant executing the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md. Read that file and only its applicable references. Resolve its reference and script paths relative to ./selected-skill, not an installed skill. Do not discover or load other skills, repository instructions, past sessions, evaluator files, or web sources.\n\nOnly local read, grep, glob, bash, and write tools are available. Use them for the selected skill's references, local lookup/scripts, supplied fixtures, and requested workspace-local text exports. Keep writes within this fresh workspace. Do not edit the selected skill, execute image/video generation or frame extraction, delegate, switch models, access the network, or inspect credentials. This is prompt writing, not generation. If clarification is necessary, ask in your final response; this non-interactive run cannot receive an answer.\n\nApply the selected skill to the user's request. Do not discuss evaluation or scoring. The workspace starts with no prior conversation or generated outputs.\n",
+        "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/unbound-05/attempt-1",
+        "model": {
+          "provider": "openai-codex",
+          "id": "gpt-6-astra",
+          "name": "GPT-6-Astra"
+        },
+        "thinking": "high",
+        "tools": [
+          "read",
+          "grep",
+          "glob",
+          "bash",
+          "write"
+        ]
+      }
+    ],
+    "raw_checksums": {
+      "request.txt": "d9b7c3ae482c517992680214b349b11e47115db158732db5c64d0f6349bc39c2",
+      "output.txt": "539b73622cc816a5edf4f9c1d463368a78504ced4890770ef982b1b5c3ba6f96",
+      "context.jsonl": "73062a5ac1f3efae7b761cb09c3050e4a2906cee32ee690f686d56b1c2685f92",
+      "trace.jsonl": "a25eef5e306d702013674f2b497caa522fba208e24d7ff4bd55d8aa9c97c903b",
+      "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "comparison_side": "candidate"
+  },
+  {
+    "case_id": "unbound-06",
+    "attempt": 1,
+    "revision": "worktree-sha256-8c1db4ecf911696e5a7492cf07d67e101e538ebdf8d2f67eceb7c383dd9961da",
+    "started_at": "2026-09-23T23:50:16.270882+00:00",
+    "elapsed_seconds": 17.891,
+    "command": [
+      "omp",
+      "--cwd",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/unbound-06/attempt-1",
+      "--print",
+      "--mode",
+      "json",
+      "--model",
+      "openai-codex/gpt-6-astra",
+      "--thinking",
+      "high",
+      "--no-session",
+      "--no-title",
+      "--no-prewalk",
+      "--no-skills",
+      "--no-rules",
+      "--no-extensions",
+      "--no-lsp",
+      "--no-pty",
+      "--tools",
+      "read,grep,glob,bash,write",
+      "--approval-mode",
+      "yolo",
+      "--config",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/omp-config.json",
+      "--system-prompt",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/generator-system.txt",
+      "--extension",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/capture.ts",
+      "--max-time",
+      "300s",
+      "Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.\n\nReturn two labeled results in Unbound mode. A: create a clothing-only design for a moss-green coat, no wearer or scene. B: adapt to prose \"A blue mug on a white shelf against a bare gray wall.\""
+    ],
+    "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/unbound-06/attempt-1",
+    "execution": {
+      "status": "completed",
+      "exit_code": 0,
+      "error": null,
+      "model_errors": [],
+      "malformed_trace_lines": []
+    },
+    "raw": {
+      "output": "output.txt",
+      "partial_output": null,
+      "trace": "trace.jsonl",
+      "stderr": "stderr.txt",
+      "context": "context.jsonl"
+    },
+    "trace_complete": true,
+    "artifacts": [],
+    "observed_context": [
+      {
+        "type": "eval_context",
+        "systemPrompt": "You are a prompt-writing assistant executing the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md. Read that file and only its applicable references. Resolve its reference and script paths relative to ./selected-skill, not an installed skill. Do not discover or load other skills, repository instructions, past sessions, evaluator files, or web sources.\n\nOnly local read, grep, glob, bash, and write tools are available. Use them for the selected skill's references, local lookup/scripts, supplied fixtures, and requested workspace-local text exports. Keep writes within this fresh workspace. Do not edit the selected skill, execute image/video generation or frame extraction, delegate, switch models, access the network, or inspect credentials. This is prompt writing, not generation. If clarification is necessary, ask in your final response; this non-interactive run cannot receive an answer.\n\nApply the selected skill to the user's request. Do not discuss evaluation or scoring. The workspace starts with no prior conversation or generated outputs.\n",
+        "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/unbound-06/attempt-1",
+        "model": {
+          "provider": "openai-codex",
+          "id": "gpt-6-astra",
+          "name": "GPT-6-Astra"
+        },
+        "thinking": "high",
+        "tools": [
+          "read",
+          "grep",
+          "glob",
+          "bash",
+          "write"
+        ]
+      }
+    ],
+    "raw_checksums": {
+      "request.txt": "ecd3c84671b1a8008c41910bacb7967762a6e73cbb375b12843da334ed66b423",
+      "output.txt": "3bfcd811d52ee026199d606199ea62e79bdc5e9d6c494428bbe7084f76a57895",
+      "context.jsonl": "a980f76b8fab9acd318c037f214d8140c91675f86c88aaa3d0113f335a9cd10b",
+      "trace.jsonl": "18f9b350cccd19d841a5a6fc5e38dbf2d703b01bc8640ea93da1375ccbb955b4",
+      "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "comparison_side": "candidate"
+  },
+  {
+    "case_id": "unbound-07",
+    "attempt": 1,
+    "revision": "worktree-sha256-8c1db4ecf911696e5a7492cf07d67e101e538ebdf8d2f67eceb7c383dd9961da",
+    "started_at": "2026-09-23T23:50:34.169368+00:00",
+    "elapsed_seconds": 20.728,
+    "command": [
+      "omp",
+      "--cwd",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/unbound-07/attempt-1",
+      "--print",
+      "--mode",
+      "json",
+      "--model",
+      "openai-codex/gpt-6-astra",
+      "--thinking",
+      "high",
+      "--no-session",
+      "--no-title",
+      "--no-prewalk",
+      "--no-skills",
+      "--no-rules",
+      "--no-extensions",
+      "--no-lsp",
+      "--no-pty",
+      "--tools",
+      "read,grep,glob,bash,write",
+      "--approval-mode",
+      "yolo",
+      "--config",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/omp-config.json",
+      "--system-prompt",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/generator-system.txt",
+      "--extension",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/capture.ts",
+      "--max-time",
+      "300s",
+      "Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.\n\nUnbound: write an image-to-video prompt from my opening image. I have not supplied an image or a description."
+    ],
+    "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/unbound-07/attempt-1",
+    "execution": {
+      "status": "completed",
+      "exit_code": 0,
+      "error": null,
+      "model_errors": [],
+      "malformed_trace_lines": []
+    },
+    "raw": {
+      "output": "output.txt",
+      "partial_output": null,
+      "trace": "trace.jsonl",
+      "stderr": "stderr.txt",
+      "context": "context.jsonl"
+    },
+    "trace_complete": true,
+    "artifacts": [],
+    "observed_context": [
+      {
+        "type": "eval_context",
+        "systemPrompt": "You are a prompt-writing assistant executing the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md. Read that file and only its applicable references. Resolve its reference and script paths relative to ./selected-skill, not an installed skill. Do not discover or load other skills, repository instructions, past sessions, evaluator files, or web sources.\n\nOnly local read, grep, glob, bash, and write tools are available. Use them for the selected skill's references, local lookup/scripts, supplied fixtures, and requested workspace-local text exports. Keep writes within this fresh workspace. Do not edit the selected skill, execute image/video generation or frame extraction, delegate, switch models, access the network, or inspect credentials. This is prompt writing, not generation. If clarification is necessary, ask in your final response; this non-interactive run cannot receive an answer.\n\nApply the selected skill to the user's request. Do not discuss evaluation or scoring. The workspace starts with no prior conversation or generated outputs.\n",
+        "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/unbound-07/attempt-1",
+        "model": {
+          "provider": "openai-codex",
+          "id": "gpt-6-astra",
+          "name": "GPT-6-Astra"
+        },
+        "thinking": "high",
+        "tools": [
+          "read",
+          "grep",
+          "glob",
+          "bash",
+          "write"
+        ]
+      }
+    ],
+    "raw_checksums": {
+      "request.txt": "fc3bd8e016db694360cb1c534240b270b8862429b407080b35b30c561f9ad13b",
+      "output.txt": "5d2c3f53778206497d06109721e4258cb93f179fe47a0f3d5f5ee4504f819831",
+      "context.jsonl": "4db451992373c8c367f261afcead82edfe5feda66e08c3dd16dcb2590377695b",
+      "trace.jsonl": "df72517795efb6f558634a373aee2ff307cf09f213412a6553529e277fa7f1ef",
+      "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "comparison_side": "candidate"
+  },
+  {
+    "case_id": "unbound-08",
+    "attempt": 1,
+    "revision": "worktree-sha256-8c1db4ecf911696e5a7492cf07d67e101e538ebdf8d2f67eceb7c383dd9961da",
+    "started_at": "2026-09-23T23:50:41.949873+00:00",
+    "elapsed_seconds": 20.485,
+    "command": [
+      "omp",
+      "--cwd",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/unbound-08/attempt-1",
+      "--print",
+      "--mode",
+      "json",
+      "--model",
+      "openai-codex/gpt-6-astra",
+      "--thinking",
+      "high",
+      "--no-session",
+      "--no-title",
+      "--no-prewalk",
+      "--no-skills",
+      "--no-rules",
+      "--no-extensions",
+      "--no-lsp",
+      "--no-pty",
+      "--tools",
+      "read,grep,glob,bash,write",
+      "--approval-mode",
+      "yolo",
+      "--config",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/omp-config.json",
+      "--system-prompt",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/generator-system.txt",
+      "--extension",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/capture.ts",
+      "--max-time",
+      "300s",
+      "Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.\n\nUse native local H3 Ref2VA in Unbound mode. Picture 1 supplies only Mira's appearance: black hair and a red coat. Standalone Audio 1 supplies only a warm voice timbre and must be used, but its target sound and placement are unspecified. Invent the whole video scenario. Return prompt only."
+    ],
+    "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/unbound-08/attempt-1",
+    "execution": {
+      "status": "completed",
+      "exit_code": 0,
+      "error": null,
+      "model_errors": [],
+      "malformed_trace_lines": []
+    },
+    "raw": {
+      "output": "output.txt",
+      "partial_output": null,
+      "trace": "trace.jsonl",
+      "stderr": "stderr.txt",
+      "context": "context.jsonl"
+    },
+    "trace_complete": true,
+    "artifacts": [],
+    "observed_context": [
+      {
+        "type": "eval_context",
+        "systemPrompt": "You are a prompt-writing assistant executing the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md. Read that file and only its applicable references. Resolve its reference and script paths relative to ./selected-skill, not an installed skill. Do not discover or load other skills, repository instructions, past sessions, evaluator files, or web sources.\n\nOnly local read, grep, glob, bash, and write tools are available. Use them for the selected skill's references, local lookup/scripts, supplied fixtures, and requested workspace-local text exports. Keep writes within this fresh workspace. Do not edit the selected skill, execute image/video generation or frame extraction, delegate, switch models, access the network, or inspect credentials. This is prompt writing, not generation. If clarification is necessary, ask in your final response; this non-interactive run cannot receive an answer.\n\nApply the selected skill to the user's request. Do not discuss evaluation or scoring. The workspace starts with no prior conversation or generated outputs.\n",
+        "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/unbound-08/attempt-1",
+        "model": {
+          "provider": "openai-codex",
+          "id": "gpt-6-astra",
+          "name": "GPT-6-Astra"
+        },
+        "thinking": "high",
+        "tools": [
+          "read",
+          "grep",
+          "glob",
+          "bash",
+          "write"
+        ]
+      }
+    ],
+    "raw_checksums": {
+      "request.txt": "5b663f95e3c5a63a8f36ad5503dc395eecf6eeee609510c37815b4500d68a1d7",
+      "output.txt": "9bd2e473fb54c2c0c85e7e20c51bb245d6893a03855aa0e6a97fba4d16e90a67",
+      "context.jsonl": "73b10c6b46d58dacd493d515bc20ee24014fcb8e17e8d77e0bf52dd773bc6c2d",
+      "trace.jsonl": "23144dc03300e254dde30a15ecd74a7fb67c7a4c9380ecec9735a9866e52144f",
+      "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "comparison_side": "candidate"
+  },
+  {
+    "case_id": "unbound-09",
+    "attempt": 1,
+    "revision": "worktree-sha256-8c1db4ecf911696e5a7492cf07d67e101e538ebdf8d2f67eceb7c383dd9961da",
+    "started_at": "2026-09-23T23:50:46.449516+00:00",
+    "elapsed_seconds": 29.031,
+    "command": [
+      "omp",
+      "--cwd",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/unbound-09/attempt-1",
+      "--print",
+      "--mode",
+      "json",
+      "--model",
+      "openai-codex/gpt-6-astra",
+      "--thinking",
+      "high",
+      "--no-session",
+      "--no-title",
+      "--no-prewalk",
+      "--no-skills",
+      "--no-rules",
+      "--no-extensions",
+      "--no-lsp",
+      "--no-pty",
+      "--tools",
+      "read,grep,glob,bash,write",
+      "--approval-mode",
+      "yolo",
+      "--config",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/omp-config.json",
+      "--system-prompt",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/generator-system.txt",
+      "--extension",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/capture.ts",
+      "--max-time",
+      "300s",
+      "Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.\n\nUse native local H3 Ref2VA in Unbound mode for a frame-derived still edit. Picture 1 shows a hand holding a yellow mug labeled \"MORNING\" over a wooden table. Change only the mug to cobalt blue, keeping everything else. I will extract the first output frame. Return prompt only."
+    ],
+    "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/unbound-09/attempt-1",
+    "execution": {
+      "status": "completed",
+      "exit_code": 0,
+      "error": null,
+      "model_errors": [],
+      "malformed_trace_lines": []
+    },
+    "raw": {
+      "output": "output.txt",
+      "partial_output": null,
+      "trace": "trace.jsonl",
+      "stderr": "stderr.txt",
+      "context": "context.jsonl"
+    },
+    "trace_complete": true,
+    "artifacts": [],
+    "observed_context": [
+      {
+        "type": "eval_context",
+        "systemPrompt": "You are a prompt-writing assistant executing the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md. Read that file and only its applicable references. Resolve its reference and script paths relative to ./selected-skill, not an installed skill. Do not discover or load other skills, repository instructions, past sessions, evaluator files, or web sources.\n\nOnly local read, grep, glob, bash, and write tools are available. Use them for the selected skill's references, local lookup/scripts, supplied fixtures, and requested workspace-local text exports. Keep writes within this fresh workspace. Do not edit the selected skill, execute image/video generation or frame extraction, delegate, switch models, access the network, or inspect credentials. This is prompt writing, not generation. If clarification is necessary, ask in your final response; this non-interactive run cannot receive an answer.\n\nApply the selected skill to the user's request. Do not discuss evaluation or scoring. The workspace starts with no prior conversation or generated outputs.\n",
+        "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/unbound-09/attempt-1",
+        "model": {
+          "provider": "openai-codex",
+          "id": "gpt-6-astra",
+          "name": "GPT-6-Astra"
+        },
+        "thinking": "high",
+        "tools": [
+          "read",
+          "grep",
+          "glob",
+          "bash",
+          "write"
+        ]
+      }
+    ],
+    "raw_checksums": {
+      "request.txt": "5cba765997fbc0b1d94fad76c376ab9fb38d4e06a520122b466a1fb1da1c6fc6",
+      "output.txt": "15652d485a8eb7b7f5157418d4ceb17ad028af8c89c61fa475e74425a9cf95c8",
+      "context.jsonl": "fbaaac9ee4be41950b965ea7ea0f6146b1380b29b2630f306ec0c13cff147cb2",
+      "trace.jsonl": "8600adfaf96fad4284b90f445cec57891d22c7949945e628120ddecb26631a7e",
+      "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "comparison_side": "candidate"
+  },
+  {
+    "case_id": "unbound-10",
+    "attempt": 1,
+    "revision": "worktree-sha256-8c1db4ecf911696e5a7492cf07d67e101e538ebdf8d2f67eceb7c383dd9961da",
+    "started_at": "2026-09-23T23:50:53.633748+00:00",
+    "elapsed_seconds": 28.164,
+    "command": [
+      "omp",
+      "--cwd",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/unbound-10/attempt-1",
+      "--print",
+      "--mode",
+      "json",
+      "--model",
+      "openai-codex/gpt-6-astra",
+      "--thinking",
+      "high",
+      "--no-session",
+      "--no-title",
+      "--no-prewalk",
+      "--no-skills",
+      "--no-rules",
+      "--no-extensions",
+      "--no-lsp",
+      "--no-pty",
+      "--tools",
+      "read,grep,glob,bash,write",
+      "--approval-mode",
+      "yolo",
+      "--config",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/omp-config.json",
+      "--system-prompt",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/generator-system.txt",
+      "--extension",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/capture.ts",
+      "--max-time",
+      "300s",
+      "Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.\n\nCreate exactly three numbered still-image prompts in Unbound mode from \"a doorway\". Each must retain a doorway. No explanations."
+    ],
+    "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/unbound-10/attempt-1",
+    "execution": {
+      "status": "completed",
+      "exit_code": 0,
+      "error": null,
+      "model_errors": [],
+      "malformed_trace_lines": []
+    },
+    "raw": {
+      "output": "output.txt",
+      "partial_output": null,
+      "trace": "trace.jsonl",
+      "stderr": "stderr.txt",
+      "context": "context.jsonl"
+    },
+    "trace_complete": true,
+    "artifacts": [],
+    "observed_context": [
+      {
+        "type": "eval_context",
+        "systemPrompt": "You are a prompt-writing assistant executing the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md. Read that file and only its applicable references. Resolve its reference and script paths relative to ./selected-skill, not an installed skill. Do not discover or load other skills, repository instructions, past sessions, evaluator files, or web sources.\n\nOnly local read, grep, glob, bash, and write tools are available. Use them for the selected skill's references, local lookup/scripts, supplied fixtures, and requested workspace-local text exports. Keep writes within this fresh workspace. Do not edit the selected skill, execute image/video generation or frame extraction, delegate, switch models, access the network, or inspect credentials. This is prompt writing, not generation. If clarification is necessary, ask in your final response; this non-interactive run cannot receive an answer.\n\nApply the selected skill to the user's request. Do not discuss evaluation or scoring. The workspace starts with no prior conversation or generated outputs.\n",
+        "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/unbound-10/attempt-1",
+        "model": {
+          "provider": "openai-codex",
+          "id": "gpt-6-astra",
+          "name": "GPT-6-Astra"
+        },
+        "thinking": "high",
+        "tools": [
+          "read",
+          "grep",
+          "glob",
+          "bash",
+          "write"
+        ]
+      }
+    ],
+    "raw_checksums": {
+      "request.txt": "d4bc29974082c3bb621fb9e83c2613affb8f3f07e867ba13f0fe107e769ee159",
+      "output.txt": "037ed00f52cad1b357fb43241eb0ea5a0d4f1f93c835b2e377db3b357cbcb676",
+      "context.jsonl": "c553f975fa91a1b1e600709f391b454c6d875c87968a932fd24cd4cdc24a3577",
+      "trace.jsonl": "5135d6481cdb5c8497f155d190ae67e3246291f3d0d55df5f300e72695e1b79e",
+      "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "comparison_side": "candidate"
+  },
+  {
+    "case_id": "unbound-11",
+    "attempt": 1,
+    "revision": "worktree-sha256-8c1db4ecf911696e5a7492cf07d67e101e538ebdf8d2f67eceb7c383dd9961da",
+    "started_at": "2026-09-23T23:51:02.442102+00:00",
+    "elapsed_seconds": 21.576,
+    "command": [
+      "omp",
+      "--cwd",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/unbound-11/attempt-1",
+      "--print",
+      "--mode",
+      "json",
+      "--model",
+      "openai-codex/gpt-6-astra",
+      "--thinking",
+      "high",
+      "--no-session",
+      "--no-title",
+      "--no-prewalk",
+      "--no-skills",
+      "--no-rules",
+      "--no-extensions",
+      "--no-lsp",
+      "--no-pty",
+      "--tools",
+      "read,grep,glob,bash,write",
+      "--approval-mode",
+      "yolo",
+      "--config",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/omp-config.json",
+      "--system-prompt",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/generator-system.txt",
+      "--extension",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/capture.ts",
+      "--max-time",
+      "300s",
+      "Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.\n\nUnbound: create one still-image concept around a bank. Choose everything else. Return prompt only."
+    ],
+    "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/unbound-11/attempt-1",
+    "execution": {
+      "status": "completed",
+      "exit_code": 0,
+      "error": null,
+      "model_errors": [],
+      "malformed_trace_lines": []
+    },
+    "raw": {
+      "output": "output.txt",
+      "partial_output": null,
+      "trace": "trace.jsonl",
+      "stderr": "stderr.txt",
+      "context": "context.jsonl"
+    },
+    "trace_complete": true,
+    "artifacts": [],
+    "observed_context": [
+      {
+        "type": "eval_context",
+        "systemPrompt": "You are a prompt-writing assistant executing the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md. Read that file and only its applicable references. Resolve its reference and script paths relative to ./selected-skill, not an installed skill. Do not discover or load other skills, repository instructions, past sessions, evaluator files, or web sources.\n\nOnly local read, grep, glob, bash, and write tools are available. Use them for the selected skill's references, local lookup/scripts, supplied fixtures, and requested workspace-local text exports. Keep writes within this fresh workspace. Do not edit the selected skill, execute image/video generation or frame extraction, delegate, switch models, access the network, or inspect credentials. This is prompt writing, not generation. If clarification is necessary, ask in your final response; this non-interactive run cannot receive an answer.\n\nApply the selected skill to the user's request. Do not discuss evaluation or scoring. The workspace starts with no prior conversation or generated outputs.\n",
+        "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/unbound-11/attempt-1",
+        "model": {
+          "provider": "openai-codex",
+          "id": "gpt-6-astra",
+          "name": "GPT-6-Astra"
+        },
+        "thinking": "high",
+        "tools": [
+          "read",
+          "grep",
+          "glob",
+          "bash",
+          "write"
+        ]
+      }
+    ],
+    "raw_checksums": {
+      "request.txt": "0f6dbc11cd5c395c798da9b9036ad43b23cb1b9756bc3ab3c0e796c5086d9da4",
+      "output.txt": "2c6ed63c2cd4dc97e02ad6b4beae30aef1720cee7706bb26cd5ab8ee96af8004",
+      "context.jsonl": "f797a782488f89ccc130f8219947bfafa70eb55dbd2a64bb588cc3b58087b8b2",
+      "trace.jsonl": "6f7120d1d1f8738fdadb77d3075c952eb36db672763c472fe3069bf340e24de3",
+      "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "comparison_side": "candidate"
+  },
+  {
+    "case_id": "unbound-12",
+    "attempt": 1,
+    "revision": "worktree-sha256-8c1db4ecf911696e5a7492cf07d67e101e538ebdf8d2f67eceb7c383dd9961da",
+    "started_at": "2026-09-23T23:51:14.195859+00:00",
+    "elapsed_seconds": 21.344,
+    "command": [
+      "omp",
+      "--cwd",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/unbound-12/attempt-1",
+      "--print",
+      "--mode",
+      "json",
+      "--model",
+      "openai-codex/gpt-6-astra",
+      "--thinking",
+      "high",
+      "--no-session",
+      "--no-title",
+      "--no-prewalk",
+      "--no-skills",
+      "--no-rules",
+      "--no-extensions",
+      "--no-lsp",
+      "--no-pty",
+      "--tools",
+      "read,grep,glob,bash,write",
+      "--approval-mode",
+      "yolo",
+      "--config",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/omp-config.json",
+      "--system-prompt",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/generator-system.txt",
+      "--extension",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/capture.ts",
+      "--max-time",
+      "300s",
+      "Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.\n\nAdapt this existing source in Unbound mode into an unambiguous prompt that identifies crane as either bird or machine: \"A crane stands beside the river.\""
+    ],
+    "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/unbound-12/attempt-1",
+    "execution": {
+      "status": "completed",
+      "exit_code": 0,
+      "error": null,
+      "model_errors": [],
+      "malformed_trace_lines": []
+    },
+    "raw": {
+      "output": "output.txt",
+      "partial_output": null,
+      "trace": "trace.jsonl",
+      "stderr": "stderr.txt",
+      "context": "context.jsonl"
+    },
+    "trace_complete": true,
+    "artifacts": [],
+    "observed_context": [
+      {
+        "type": "eval_context",
+        "systemPrompt": "You are a prompt-writing assistant executing the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md. Read that file and only its applicable references. Resolve its reference and script paths relative to ./selected-skill, not an installed skill. Do not discover or load other skills, repository instructions, past sessions, evaluator files, or web sources.\n\nOnly local read, grep, glob, bash, and write tools are available. Use them for the selected skill's references, local lookup/scripts, supplied fixtures, and requested workspace-local text exports. Keep writes within this fresh workspace. Do not edit the selected skill, execute image/video generation or frame extraction, delegate, switch models, access the network, or inspect credentials. This is prompt writing, not generation. If clarification is necessary, ask in your final response; this non-interactive run cannot receive an answer.\n\nApply the selected skill to the user's request. Do not discuss evaluation or scoring. The workspace starts with no prior conversation or generated outputs.\n",
+        "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/unbound-12/attempt-1",
+        "model": {
+          "provider": "openai-codex",
+          "id": "gpt-6-astra",
+          "name": "GPT-6-Astra"
+        },
+        "thinking": "high",
+        "tools": [
+          "read",
+          "grep",
+          "glob",
+          "bash",
+          "write"
+        ]
+      }
+    ],
+    "raw_checksums": {
+      "request.txt": "51f3271d31fa7fe2666e781eda6c642defcafa127c62e0ec3361aae2ddad618f",
+      "output.txt": "65267f6c64407c5e509c20fca3c8089a90573c834f6016cea0c605de8baf7e9c",
+      "context.jsonl": "4bc4190b012ebdcac61d7929f442be0b8153d09630e8ad3f9c85117da14a6f70",
+      "trace.jsonl": "ed9e65a4e4f6631ff3397e65c5b5f899ab9356f07538ce280ab680ca0123af4b",
+      "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "comparison_side": "candidate"
+  },
+  {
+    "case_id": "wild-03",
+    "attempt": 1,
+    "revision": "worktree-sha256-8c1db4ecf911696e5a7492cf07d67e101e538ebdf8d2f67eceb7c383dd9961da",
+    "started_at": "2026-09-23T23:51:20.523845+00:00",
+    "elapsed_seconds": 15.826,
+    "command": [
+      "omp",
+      "--cwd",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/wild-03/attempt-1",
+      "--print",
+      "--mode",
+      "json",
+      "--model",
+      "openai-codex/gpt-6-astra",
+      "--thinking",
+      "high",
+      "--no-session",
+      "--no-title",
+      "--no-prewalk",
+      "--no-skills",
+      "--no-rules",
+      "--no-extensions",
+      "--no-lsp",
+      "--no-pty",
+      "--tools",
+      "read,grep,glob,bash,write",
+      "--approval-mode",
+      "yolo",
+      "--config",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/omp-config.json",
+      "--system-prompt",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/generator-system.txt",
+      "--extension",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/capture.ts",
+      "--max-time",
+      "300s",
+      "Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.\n\nCreate a clothing-only prompt for a green coat with wildflower embroidery. Return prompt only."
+    ],
+    "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/wild-03/attempt-1",
+    "execution": {
+      "status": "completed",
+      "exit_code": 0,
+      "error": null,
+      "model_errors": [],
+      "malformed_trace_lines": []
+    },
+    "raw": {
+      "output": "output.txt",
+      "partial_output": null,
+      "trace": "trace.jsonl",
+      "stderr": "stderr.txt",
+      "context": "context.jsonl"
+    },
+    "trace_complete": true,
+    "artifacts": [],
+    "observed_context": [
+      {
+        "type": "eval_context",
+        "systemPrompt": "You are a prompt-writing assistant executing the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md. Read that file and only its applicable references. Resolve its reference and script paths relative to ./selected-skill, not an installed skill. Do not discover or load other skills, repository instructions, past sessions, evaluator files, or web sources.\n\nOnly local read, grep, glob, bash, and write tools are available. Use them for the selected skill's references, local lookup/scripts, supplied fixtures, and requested workspace-local text exports. Keep writes within this fresh workspace. Do not edit the selected skill, execute image/video generation or frame extraction, delegate, switch models, access the network, or inspect credentials. This is prompt writing, not generation. If clarification is necessary, ask in your final response; this non-interactive run cannot receive an answer.\n\nApply the selected skill to the user's request. Do not discuss evaluation or scoring. The workspace starts with no prior conversation or generated outputs.\n",
+        "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/wild-03/attempt-1",
+        "model": {
+          "provider": "openai-codex",
+          "id": "gpt-6-astra",
+          "name": "GPT-6-Astra"
+        },
+        "thinking": "high",
+        "tools": [
+          "read",
+          "grep",
+          "glob",
+          "bash",
+          "write"
+        ]
+      }
+    ],
+    "raw_checksums": {
+      "request.txt": "0dccd6911c1e1182d63d54a94f9d3c29a99194f73d90e90ba99bca042aa5f52b",
+      "output.txt": "8037f8a47d164b3e011519071222fd4acc9440ec5cf4d629374b5301d0e5dbb9",
+      "context.jsonl": "3df511fb9e9ed6dcb110e3c4c93e04725cd4149da27551e60ae5b07190490b2b",
+      "trace.jsonl": "c1733865b1b8a1dbc9a5f38fb7c1ff45348284d9169d4972751d06caee6596d7",
+      "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "comparison_side": "candidate"
+  },
+  {
+    "case_id": "wild-06",
+    "attempt": 1,
+    "revision": "worktree-sha256-8c1db4ecf911696e5a7492cf07d67e101e538ebdf8d2f67eceb7c383dd9961da",
+    "started_at": "2026-09-23T23:51:22.734022+00:00",
+    "elapsed_seconds": 19.365,
+    "command": [
+      "omp",
+      "--cwd",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/wild-06/attempt-1",
+      "--print",
+      "--mode",
+      "json",
+      "--model",
+      "openai-codex/gpt-6-astra",
+      "--thinking",
+      "high",
+      "--no-session",
+      "--no-title",
+      "--no-prewalk",
+      "--no-skills",
+      "--no-rules",
+      "--no-extensions",
+      "--no-lsp",
+      "--no-pty",
+      "--tools",
+      "read,grep,glob,bash,write",
+      "--approval-mode",
+      "yolo",
+      "--config",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/omp-config.json",
+      "--system-prompt",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/generator-system.txt",
+      "--extension",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/capture.ts",
+      "--max-time",
+      "300s",
+      "Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.\n\nReturn two labeled results in Wild mode. A: adapt to prose the source \"A blue mug on a white shelf against a bare gray wall.\" B: revise only the door color to red in \"A blue front door beneath a brass porch light, with two square windows and white siding.\""
+    ],
+    "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/wild-06/attempt-1",
+    "execution": {
+      "status": "completed",
+      "exit_code": 0,
+      "error": null,
+      "model_errors": [],
+      "malformed_trace_lines": []
+    },
+    "raw": {
+      "output": "output.txt",
+      "partial_output": null,
+      "trace": "trace.jsonl",
+      "stderr": "stderr.txt",
+      "context": "context.jsonl"
+    },
+    "trace_complete": true,
+    "artifacts": [],
+    "observed_context": [
+      {
+        "type": "eval_context",
+        "systemPrompt": "You are a prompt-writing assistant executing the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md. Read that file and only its applicable references. Resolve its reference and script paths relative to ./selected-skill, not an installed skill. Do not discover or load other skills, repository instructions, past sessions, evaluator files, or web sources.\n\nOnly local read, grep, glob, bash, and write tools are available. Use them for the selected skill's references, local lookup/scripts, supplied fixtures, and requested workspace-local text exports. Keep writes within this fresh workspace. Do not edit the selected skill, execute image/video generation or frame extraction, delegate, switch models, access the network, or inspect credentials. This is prompt writing, not generation. If clarification is necessary, ask in your final response; this non-interactive run cannot receive an answer.\n\nApply the selected skill to the user's request. Do not discuss evaluation or scoring. The workspace starts with no prior conversation or generated outputs.\n",
+        "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/wild-06/attempt-1",
+        "model": {
+          "provider": "openai-codex",
+          "id": "gpt-6-astra",
+          "name": "GPT-6-Astra"
+        },
+        "thinking": "high",
+        "tools": [
+          "read",
+          "grep",
+          "glob",
+          "bash",
+          "write"
+        ]
+      }
+    ],
+    "raw_checksums": {
+      "request.txt": "2746bd1d8c1985cc7cced56b2f2a62010364f80aeefc299e6196202fcc193419",
+      "output.txt": "f68792a3cd98975c4fc1d7e56960ff415dc7679f71fde3c22218dfc58082052e",
+      "context.jsonl": "2f1b8bfd35f7dbf77a64844b9c5efc576ec40c212c53310ca6b54acae2f94b5b",
+      "trace.jsonl": "72d928d21b0273c0de3a02b5d3f1d666f53ac9124460d4c7a7130623f6dbb256",
+      "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "comparison_side": "candidate"
+  },
+  {
+    "case_id": "wild-13",
+    "attempt": 1,
+    "revision": "worktree-sha256-8c1db4ecf911696e5a7492cf07d67e101e538ebdf8d2f67eceb7c383dd9961da",
+    "started_at": "2026-09-23T23:51:35.574409+00:00",
+    "elapsed_seconds": 34.014,
+    "command": [
+      "omp",
+      "--cwd",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/wild-13/attempt-1",
+      "--print",
+      "--mode",
+      "json",
+      "--model",
+      "openai-codex/gpt-6-astra",
+      "--thinking",
+      "high",
+      "--no-session",
+      "--no-title",
+      "--no-prewalk",
+      "--no-skills",
+      "--no-rules",
+      "--no-extensions",
+      "--no-lsp",
+      "--no-pty",
+      "--tools",
+      "read,grep,glob,bash,write",
+      "--approval-mode",
+      "yolo",
+      "--config",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/omp-config.json",
+      "--system-prompt",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/generator-system.txt",
+      "--extension",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/capture.ts",
+      "--max-time",
+      "300s",
+      "Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.\n\nAnimate this described opening image using native local H3 FL2VA; go wild. Picture 1 shows one adult woman in a red coat standing beside a stall whose sign reads \"Open late!\". She is the only person; no animals. Return prompt only in the default H3 structure."
+    ],
+    "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/wild-13/attempt-1",
+    "execution": {
+      "status": "completed",
+      "exit_code": 0,
+      "error": null,
+      "model_errors": [],
+      "malformed_trace_lines": []
+    },
+    "raw": {
+      "output": "output.txt",
+      "partial_output": null,
+      "trace": "trace.jsonl",
+      "stderr": "stderr.txt",
+      "context": "context.jsonl"
+    },
+    "trace_complete": true,
+    "artifacts": [],
+    "observed_context": [
+      {
+        "type": "eval_context",
+        "systemPrompt": "You are a prompt-writing assistant executing the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md. Read that file and only its applicable references. Resolve its reference and script paths relative to ./selected-skill, not an installed skill. Do not discover or load other skills, repository instructions, past sessions, evaluator files, or web sources.\n\nOnly local read, grep, glob, bash, and write tools are available. Use them for the selected skill's references, local lookup/scripts, supplied fixtures, and requested workspace-local text exports. Keep writes within this fresh workspace. Do not edit the selected skill, execute image/video generation or frame extraction, delegate, switch models, access the network, or inspect credentials. This is prompt writing, not generation. If clarification is necessary, ask in your final response; this non-interactive run cannot receive an answer.\n\nApply the selected skill to the user's request. Do not discuss evaluation or scoring. The workspace starts with no prior conversation or generated outputs.\n",
+        "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/wild-13/attempt-1",
+        "model": {
+          "provider": "openai-codex",
+          "id": "gpt-6-astra",
+          "name": "GPT-6-Astra"
+        },
+        "thinking": "high",
+        "tools": [
+          "read",
+          "grep",
+          "glob",
+          "bash",
+          "write"
+        ]
+      }
+    ],
+    "raw_checksums": {
+      "request.txt": "15dceb75e2321f9d6aa2d791a75510e4c47bd2da0dab8f1a0537d11a71ad6d6c",
+      "output.txt": "a23f39816d11ff20926821c3d00f9aeb07da091903d61cf5ae16f7b56519ce64",
+      "context.jsonl": "82b875fbec37a0b5bd0367266f9f4cca95414a551f0bd74be8b9112ee6b3036c",
+      "trace.jsonl": "b1e97f3f1d4b4c82100a999f52c4dec9abaa835d4eeb35bd74cc0f3c5d825eaf",
+      "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "comparison_side": "candidate"
+  },
+  {
+    "case_id": "wild-14",
+    "attempt": 1,
+    "revision": "worktree-sha256-8c1db4ecf911696e5a7492cf07d67e101e538ebdf8d2f67eceb7c383dd9961da",
+    "started_at": "2026-09-23T23:51:36.357613+00:00",
+    "elapsed_seconds": 29.181,
+    "command": [
+      "omp",
+      "--cwd",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/wild-14/attempt-1",
+      "--print",
+      "--mode",
+      "json",
+      "--model",
+      "openai-codex/gpt-6-astra",
+      "--thinking",
+      "high",
+      "--no-session",
+      "--no-title",
+      "--no-prewalk",
+      "--no-skills",
+      "--no-rules",
+      "--no-extensions",
+      "--no-lsp",
+      "--no-pty",
+      "--tools",
+      "read,grep,glob,bash,write",
+      "--approval-mode",
+      "yolo",
+      "--config",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/omp-config.json",
+      "--system-prompt",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/generator-system.txt",
+      "--extension",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/capture.ts",
+      "--max-time",
+      "300s",
+      "Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.\n\nUse native local H3 FL2VA, Wild mode. Picture 1 shows one woman in a red coat beside a closed curtain and a sign reading \"Open late!\". Only the curtain may move. Keep all other visual content still, camera fixed, one continuous shot, complete silence. Return prompt only."
+    ],
+    "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/wild-14/attempt-1",
+    "execution": {
+      "status": "completed",
+      "exit_code": 0,
+      "error": null,
+      "model_errors": [],
+      "malformed_trace_lines": []
+    },
+    "raw": {
+      "output": "output.txt",
+      "partial_output": null,
+      "trace": "trace.jsonl",
+      "stderr": "stderr.txt",
+      "context": "context.jsonl"
+    },
+    "trace_complete": true,
+    "artifacts": [],
+    "observed_context": [
+      {
+        "type": "eval_context",
+        "systemPrompt": "You are a prompt-writing assistant executing the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md. Read that file and only its applicable references. Resolve its reference and script paths relative to ./selected-skill, not an installed skill. Do not discover or load other skills, repository instructions, past sessions, evaluator files, or web sources.\n\nOnly local read, grep, glob, bash, and write tools are available. Use them for the selected skill's references, local lookup/scripts, supplied fixtures, and requested workspace-local text exports. Keep writes within this fresh workspace. Do not edit the selected skill, execute image/video generation or frame extraction, delegate, switch models, access the network, or inspect credentials. This is prompt writing, not generation. If clarification is necessary, ask in your final response; this non-interactive run cannot receive an answer.\n\nApply the selected skill to the user's request. Do not discuss evaluation or scoring. The workspace starts with no prior conversation or generated outputs.\n",
+        "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/wild-14/attempt-1",
+        "model": {
+          "provider": "openai-codex",
+          "id": "gpt-6-astra",
+          "name": "GPT-6-Astra"
+        },
+        "thinking": "high",
+        "tools": [
+          "read",
+          "grep",
+          "glob",
+          "bash",
+          "write"
+        ]
+      }
+    ],
+    "raw_checksums": {
+      "request.txt": "f33919d8cf161f36f109442ab78e9fa35181dcdb9ce4c0bf8a04df98ce5742fa",
+      "output.txt": "82e2eb55dcf7cc39e5b3c98706b46df17c5bdf87e0eb341ae71fe35112270ff5",
+      "context.jsonl": "f367030f2885c4de7ec557cd5aa81952188c1380fd1250d4987f88d852eef11f",
+      "trace.jsonl": "9e43a7c79edd38549a96be9822543960ce7659b2ec4e70a26f438155267ccb9a",
+      "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "comparison_side": "candidate"
+  },
+  {
+    "case_id": "wild-15",
+    "attempt": 1,
+    "revision": "worktree-sha256-8c1db4ecf911696e5a7492cf07d67e101e538ebdf8d2f67eceb7c383dd9961da",
+    "started_at": "2026-09-23T23:51:40.822479+00:00",
+    "elapsed_seconds": 29.042,
+    "command": [
+      "omp",
+      "--cwd",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/wild-15/attempt-1",
+      "--print",
+      "--mode",
+      "json",
+      "--model",
+      "openai-codex/gpt-6-astra",
+      "--thinking",
+      "high",
+      "--no-session",
+      "--no-title",
+      "--no-prewalk",
+      "--no-skills",
+      "--no-rules",
+      "--no-extensions",
+      "--no-lsp",
+      "--no-pty",
+      "--tools",
+      "read,grep,glob,bash,write",
+      "--approval-mode",
+      "yolo",
+      "--config",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/omp-config.json",
+      "--system-prompt",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/generator-system.txt",
+      "--extension",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/capture.ts",
+      "--max-time",
+      "300s",
+      "Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.\n\nUse native local H3 Ref2VA in Wild mode. Connected Picture 1 supplies Mira's appearance: black hair and a red coat. Connected standalone Audio 1 supplies only a warm voice timbre and must be used, but I have not specified its target sound or placement. Create a night-market concept. Return prompt only."
+    ],
+    "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/wild-15/attempt-1",
+    "execution": {
+      "status": "completed",
+      "exit_code": 0,
+      "error": null,
+      "model_errors": [],
+      "malformed_trace_lines": []
+    },
+    "raw": {
+      "output": "output.txt",
+      "partial_output": null,
+      "trace": "trace.jsonl",
+      "stderr": "stderr.txt",
+      "context": "context.jsonl"
+    },
+    "trace_complete": true,
+    "artifacts": [],
+    "observed_context": [
+      {
+        "type": "eval_context",
+        "systemPrompt": "You are a prompt-writing assistant executing the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md. Read that file and only its applicable references. Resolve its reference and script paths relative to ./selected-skill, not an installed skill. Do not discover or load other skills, repository instructions, past sessions, evaluator files, or web sources.\n\nOnly local read, grep, glob, bash, and write tools are available. Use them for the selected skill's references, local lookup/scripts, supplied fixtures, and requested workspace-local text exports. Keep writes within this fresh workspace. Do not edit the selected skill, execute image/video generation or frame extraction, delegate, switch models, access the network, or inspect credentials. This is prompt writing, not generation. If clarification is necessary, ask in your final response; this non-interactive run cannot receive an answer.\n\nApply the selected skill to the user's request. Do not discuss evaluation or scoring. The workspace starts with no prior conversation or generated outputs.\n",
+        "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/wild-15/attempt-1",
+        "model": {
+          "provider": "openai-codex",
+          "id": "gpt-6-astra",
+          "name": "GPT-6-Astra"
+        },
+        "thinking": "high",
+        "tools": [
+          "read",
+          "grep",
+          "glob",
+          "bash",
+          "write"
+        ]
+      }
+    ],
+    "raw_checksums": {
+      "request.txt": "7dadbc0de06edcb9f268ba0cadb3b29bbf0a3f1d6e74f28e9a1ab6743ee58ec3",
+      "output.txt": "fb5fe2828011cd66d8fb7f2341ada6f1ef320bc096a58c424cf3120253a188f4",
+      "context.jsonl": "043537ef4c92b6efd649ded6fa3b3775e4ba5466a6292d3bfda4fce2bc1a56fe",
+      "trace.jsonl": "01a412d02ba3110680a898b03e0793641dbd0e608347b2eb8cf18a1077f8ac5e",
+      "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "comparison_side": "candidate"
+  },
+  {
+    "case_id": "wild-16",
+    "attempt": 1,
+    "revision": "worktree-sha256-8c1db4ecf911696e5a7492cf07d67e101e538ebdf8d2f67eceb7c383dd9961da",
+    "started_at": "2026-09-23T23:52:04.259860+00:00",
+    "elapsed_seconds": 30.666,
+    "command": [
+      "omp",
+      "--cwd",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/wild-16/attempt-1",
+      "--print",
+      "--mode",
+      "json",
+      "--model",
+      "openai-codex/gpt-6-astra",
+      "--thinking",
+      "high",
+      "--no-session",
+      "--no-title",
+      "--no-prewalk",
+      "--no-skills",
+      "--no-rules",
+      "--no-extensions",
+      "--no-lsp",
+      "--no-pty",
+      "--tools",
+      "read,grep,glob,bash,write",
+      "--approval-mode",
+      "yolo",
+      "--config",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/omp-config.json",
+      "--system-prompt",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/generator-system.txt",
+      "--extension",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/capture.ts",
+      "--max-time",
+      "300s",
+      "Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.\n\nUse native local H3 Ref2VA, Wild mode, for a frame-derived still edit. Picture 1 shows a hand holding a yellow mug labeled \"MORNING\" over a wooden table. Change only the mug to cobalt blue. Keep everything else, including composition and lettering. I will extract the first output frame. Return prompt only."
+    ],
+    "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/wild-16/attempt-1",
+    "execution": {
+      "status": "completed",
+      "exit_code": 0,
+      "error": null,
+      "model_errors": [],
+      "malformed_trace_lines": []
+    },
+    "raw": {
+      "output": "output.txt",
+      "partial_output": null,
+      "trace": "trace.jsonl",
+      "stderr": "stderr.txt",
+      "context": "context.jsonl"
+    },
+    "trace_complete": true,
+    "artifacts": [],
+    "observed_context": [
+      {
+        "type": "eval_context",
+        "systemPrompt": "You are a prompt-writing assistant executing the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md. Read that file and only its applicable references. Resolve its reference and script paths relative to ./selected-skill, not an installed skill. Do not discover or load other skills, repository instructions, past sessions, evaluator files, or web sources.\n\nOnly local read, grep, glob, bash, and write tools are available. Use them for the selected skill's references, local lookup/scripts, supplied fixtures, and requested workspace-local text exports. Keep writes within this fresh workspace. Do not edit the selected skill, execute image/video generation or frame extraction, delegate, switch models, access the network, or inspect credentials. This is prompt writing, not generation. If clarification is necessary, ask in your final response; this non-interactive run cannot receive an answer.\n\nApply the selected skill to the user's request. Do not discuss evaluation or scoring. The workspace starts with no prior conversation or generated outputs.\n",
+        "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/wild-16/attempt-1",
+        "model": {
+          "provider": "openai-codex",
+          "id": "gpt-6-astra",
+          "name": "GPT-6-Astra"
+        },
+        "thinking": "high",
+        "tools": [
+          "read",
+          "grep",
+          "glob",
+          "bash",
+          "write"
+        ]
+      }
+    ],
+    "raw_checksums": {
+      "request.txt": "02d7f6d316301921094ea29e3362137593d5a74ac1f9af86fa472cbdcac82b26",
+      "output.txt": "faa980758713164ff75438f1e89c8e8d0887f183a6a03ddd7db90a9f4cef624a",
+      "context.jsonl": "29db0fe2a2e8a5fc9885b8b6294402c3d4758b8e8d756d232477e627c3b61081",
+      "trace.jsonl": "803797492368a0f4b240f8ca21a7a3fd46a8aa6e26b9c9a565139d27f819dfc3",
+      "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "comparison_side": "candidate"
+  },
+  {
+    "case_id": "wild-19",
+    "attempt": 1,
+    "revision": "worktree-sha256-8c1db4ecf911696e5a7492cf07d67e101e538ebdf8d2f67eceb7c383dd9961da",
+    "started_at": "2026-09-23T23:52:08.311276+00:00",
+    "elapsed_seconds": 19.061,
+    "command": [
+      "omp",
+      "--cwd",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/wild-19/attempt-1",
+      "--print",
+      "--mode",
+      "json",
+      "--model",
+      "openai-codex/gpt-6-astra",
+      "--thinking",
+      "high",
+      "--no-session",
+      "--no-title",
+      "--no-prewalk",
+      "--no-skills",
+      "--no-rules",
+      "--no-extensions",
+      "--no-lsp",
+      "--no-pty",
+      "--tools",
+      "read,grep,glob,bash,write",
+      "--approval-mode",
+      "yolo",
+      "--config",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/omp-config.json",
+      "--system-prompt",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/generator-system.txt",
+      "--extension",
+      "/home/mothmanex/.agents/skills/scenario-maker/evals/capture.ts",
+      "--max-time",
+      "300s",
+      "Use the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md.\n\nCreate a still-image prompt for a night market in Explore mode. Return prompt only."
+    ],
+    "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/wild-19/attempt-1",
+    "execution": {
+      "status": "completed",
+      "exit_code": 0,
+      "error": null,
+      "model_errors": [],
+      "malformed_trace_lines": []
+    },
+    "raw": {
+      "output": "output.txt",
+      "partial_output": null,
+      "trace": "trace.jsonl",
+      "stderr": "stderr.txt",
+      "context": "context.jsonl"
+    },
+    "trace_complete": true,
+    "artifacts": [],
+    "observed_context": [
+      {
+        "type": "eval_context",
+        "systemPrompt": "You are a prompt-writing assistant executing the explicitly selected Scenario Maker skill in ./selected-skill/SKILL.md. Read that file and only its applicable references. Resolve its reference and script paths relative to ./selected-skill, not an installed skill. Do not discover or load other skills, repository instructions, past sessions, evaluator files, or web sources.\n\nOnly local read, grep, glob, bash, and write tools are available. Use them for the selected skill's references, local lookup/scripts, supplied fixtures, and requested workspace-local text exports. Keep writes within this fresh workspace. Do not edit the selected skill, execute image/video generation or frame extraction, delegate, switch models, access the network, or inspect credentials. This is prompt writing, not generation. If clarification is necessary, ask in your final response; this non-interactive run cannot receive an answer.\n\nApply the selected skill to the user's request. Do not discuss evaluation or scoring. The workspace starts with no prior conversation or generated outputs.\n",
+        "cwd": "/home/mothmanex/.agents/skills/scenario-maker/evals/capture-checks/unbound-20260923T234952770951Z/workspaces-ccwgrf_r/candidate/wild-19/attempt-1",
+        "model": {
+          "provider": "openai-codex",
+          "id": "gpt-6-astra",
+          "name": "GPT-6-Astra"
+        },
+        "thinking": "high",
+        "tools": [
+          "read",
+          "grep",
+          "glob",
+          "bash",
+          "write"
+        ]
+      }
+    ],
+    "raw_checksums": {
+      "request.txt": "0ab3e225542ee5b81fd1e3cd21969dd9a79453a4587c33f68c48dde6489d73eb",
+      "output.txt": "b019c0f64110b3f6c728e2f9b5e1a22c9954011807e8c022f8508419f77b4e4c",
+      "context.jsonl": "4923a4eae2c0ff8f54add9a205e5a9e0bf5bf06b544abd6bf35486480084a2e2",
+      "trace.jsonl": "ddc1947828ca95d3de0598955be53d58b18816db6eda57b14531aee16544b517",
+      "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "comparison_side": "candidate"
+  }
+]

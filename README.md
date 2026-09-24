@@ -95,10 +95,27 @@ Supplied facts and **locked details** remain protected: subject counts, colors, 
 | **Balanced** | Fill unspecified local details without adding independent subjects, props, actions, or events. Default for creation and expansion. |
 | **Explore** | Add compatible ideas within the requested scope; additional subjects require an open roster or explicit permission. |
 | **Wild** | Develop a bold, coherent concept by making decisive choices only in unspecified, permitted dimensions while preserving every supplied fact and constraint. |
+| **Unbound** | Autonomously develop a complete in-scope scenario from a minimal seed or supplied opening image, choosing the missing creative direction while retaining every supplied fact and constraint. |
 
-Modes do not broaden the request. A clothing description does not become a full scene, and “change only the jacket color” still permits only that change, even in Explore or Wild mode. Wild activates when named explicitly or clearly delegated with language such as “go wild with the concept”; ordinary vagueness, “improve this,” wild animals, or the mere desire for a creative result does not activate it. Wild is concept-led rather than merely additive: its details reinforce one organizing idea instead of accumulating more objects or adjectives.
+Modes do not broaden the request. A clothing description does not become a full scene, and “change only the jacket color” still permits only that change, even in Explore, Wild, or Unbound mode. Wild activates when named explicitly or clearly delegated with language such as “go wild with the concept”; ordinary vagueness, “improve this,” wild animals, or the mere desire for a creative result does not activate it. Wild is concept-led rather than merely additive: its details reinforce one organizing idea instead of accumulating more objects or adjectives.
+
+Unbound activates when named or when you unmistakably delegate the whole scenario, such as “invent the entire scenario from this seed.” It chooses the premise and missing creative direction for a finished prompt, not a longer response or extra alternatives. “Go wild” alone does not select Unbound, and a specifically named lower mode stays selected. Supplied images remain evidence: invent around the opening, not automatic transformations of established identities or attributes. An image alone does not imply video.
 
 ## Example requests
+
+### Develop a minimal seed in Unbound
+
+```text
+Unbound: create one still-image prompt from the seed “a doorway”. Return prompt only.
+```
+
+### Delegate an image-to-video scenario in Unbound
+
+```text
+[attach an opening image] Unbound: write an image-to-video prompt from this image. Return prompt only.
+```
+
+The second request needs no written scene/action brief: the available image supplies the opening, and Unbound develops the subsequent scenario while preserving supplied facts and constraints.
 
 ### Develop a vague still seed in Wild
 
